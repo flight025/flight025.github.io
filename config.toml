@@ -1,0 +1,39 @@
+baseurl = "https://example.com"
+languageCode = "cn"
+title = "我叼你妈"
+theme = "charaka-hugo-theme"
+copyright = "&copy; <a href=\"https://github.com/flight025\">Nataraj Basappa</a> 2018"
+disqusShortname = ""
+googleAnalytics = ""
+
+[params]
+
+[author]
+  name = "Nataraj Basappa"
+  homepage = "https://natarajmb.com"
+
+[params.highlight]
+  style = "zenburn"
+
+[params.share]
+  enabled = "true"
+
+[[params.social]]
+  url = "about"
+  fa_icon = "fas fa-info"
+
+[[params.social]]
+  url = "https://github.com/flight025"
+  fa_icon = "fab fa-github"
+
+[[params.social]]
+  url = "https://www.zhihu.com/people/a-gan-jing-shen"
+  fa_icon = "fab fa-zhihu"
+
+[[params.social]]
+  url = "https://twitter.com/666GXF"
+  fa_icon = "fab fa-twitter"
+
+[[params.social]]
+  url = "https://space.bilibili.com/14565196"
+  fa_icon = "fab fa-bilibili"	

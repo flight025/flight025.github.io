@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on 奇美拉是耶</title>
+    <link>https://flight025.github.io/post/</link>
+    <description>Recent content in Posts on 奇美拉是耶</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cn</language>
+    <copyright>&amp;copy; &lt;a href=&#34;https://flight025.github.io&#34;&gt;奇美拉是耶&lt;/a&gt; 2020</copyright>
+    <lastBuildDate>Thu, 28 May 2020 21:22:17 +0800</lastBuildDate>
+    
+	<atom:link href="https://flight025.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>First</title>
+      <link>https://flight025.github.io/post/first/</link>
+      <pubDate>Thu, 28 May 2020 21:22:17 +0800</pubDate>
+      
+      <guid>https://flight025.github.io/post/first/</guid>
+      <description>Hello Hugo  aaa bbb dcv 大家好，这是我的第一篇测试博客  </description>
+    </item>
+    
+  </channel>
+</rss>

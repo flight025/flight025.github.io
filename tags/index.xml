@@ -1,68 +1,68 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on 我叼你妈</title>
-    <link>https://example.com/tags/</link>
-    <description>Recent content in Tags on 我叼你妈</description>
+    <title>Tags on 奇美拉是耶</title>
+    <link>https://flight025.github.io/tags/</link>
+    <description>Recent content in Tags on 奇美拉是耶</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cn</language>
-    <copyright>&amp;copy; &lt;a href=&#34;https://github.com/flight025&#34;&gt;Nataraj Basappa&lt;/a&gt; 2018</copyright>
+    <copyright>&amp;copy; &lt;a href=&#34;https://flight025.github.io&#34;&gt;奇美拉是耶&lt;/a&gt; 2020</copyright>
     <lastBuildDate>Wed, 02 Apr 2014 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://example.com/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://flight025.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>development</title>
-      <link>https://example.com/tags/development/</link>
+      <link>https://flight025.github.io/tags/development/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/tags/development/</guid>
+      <guid>https://flight025.github.io/tags/development/</guid>
       <description></description>
     </item>
     
     <item>
       <title>go</title>
-      <link>https://example.com/tags/go/</link>
+      <link>https://flight025.github.io/tags/go/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/tags/go/</guid>
+      <guid>https://flight025.github.io/tags/go/</guid>
       <description></description>
     </item>
     
     <item>
       <title>golang</title>
-      <link>https://example.com/tags/golang/</link>
+      <link>https://flight025.github.io/tags/golang/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/tags/golang/</guid>
+      <guid>https://flight025.github.io/tags/golang/</guid>
       <description></description>
     </item>
     
     <item>
       <title>hugo</title>
-      <link>https://example.com/tags/hugo/</link>
+      <link>https://flight025.github.io/tags/hugo/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/tags/hugo/</guid>
+      <guid>https://flight025.github.io/tags/hugo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>templates</title>
-      <link>https://example.com/tags/templates/</link>
+      <link>https://flight025.github.io/tags/templates/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/tags/templates/</guid>
+      <guid>https://flight025.github.io/tags/templates/</guid>
       <description></description>
     </item>
     
     <item>
       <title>themes</title>
-      <link>https://example.com/tags/themes/</link>
+      <link>https://flight025.github.io/tags/themes/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/tags/themes/</guid>
+      <guid>https://flight025.github.io/tags/themes/</guid>
       <description></description>
     </item>
     
