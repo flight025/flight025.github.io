@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>cn</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://flight025.github.io&#34;&gt;奇美拉是耶&lt;/a&gt; 2020</copyright>
-    <lastBuildDate>Sun, 28 Sep 2014 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 May 2020 19:33:55 +0800</lastBuildDate>
     
 	<atom:link href="https://flight025.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
@@ -31,6 +31,24 @@ We&amp;rsquo;ll start with creating a new site with a very basic template.</desc
       <description>Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
 ▾ &amp;lt;root&amp;gt;/▾ images/logo.png should become
 ▾ &amp;lt;root&amp;gt;/▾ static/▾ images/logo.png Additionally, you&amp;rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.</description>
+    </item>
+    
+    <item>
+      <title>为什么选择hugo搭建我的博客</title>
+      <link>https://flight025.github.io/posts/%E4%B8%BA%E4%BB%80%E4%B9%88%E9%80%89%E6%8B%A9hugo%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/</link>
+      <pubDate>Fri, 29 May 2020 19:33:55 +0800</pubDate>
+      
+      <guid>https://flight025.github.io/posts/%E4%B8%BA%E4%BB%80%E4%B9%88%E9%80%89%E6%8B%A9hugo%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/</guid>
+      <description>为什么我会选择hugo写文章，原因是因为部署快速，没有那么的繁杂方式 1.简单明了 2.采用markdown语法写作 3.静态博客没有没有那么多冗长的插件，打开网页比较快。 以后优点再看。</description>
+    </item>
+    
+    <item>
+      <title>我的第一篇博客</title>
+      <link>https://flight025.github.io/posts/first/</link>
+      <pubDate>Fri, 29 May 2020 19:24:15 +0800</pubDate>
+      
+      <guid>https://flight025.github.io/posts/first/</guid>
+      <description>Hello Hugo  aaa bbb ccc  </description>
     </item>
     
     <item>
