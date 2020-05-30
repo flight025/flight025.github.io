@@ -38,11 +38,6 @@
   </url>
   
   <url>
-    <loc>https://flight025.github.io/about/</loc>
-    <lastmod>2014-04-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://flight025.github.io/posts/goisforlovers/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
   </url>
@@ -100,6 +95,14 @@
   <url>
     <loc>https://flight025.github.io/tags/themes/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://flight025.github.io/%E5%85%B3%E4%BA%8E%E6%88%91/</loc>
+  </url>
+  
+  <url>
+    <loc>https://flight025.github.io/%E5%8F%8B%E9%93%BE/</loc>
   </url>
   
 </urlset>
