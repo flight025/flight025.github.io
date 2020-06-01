@@ -6,7 +6,7 @@
     <description>Recent content in golang on 阿波尔的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <copyright>&amp;copy; &lt;a href=&#34;https://flight025.github.io&#34;&gt;奇美拉是耶&lt;/a&gt; 2020</copyright>
+    <copyright>&amp;copy; &lt;a href=&#34;https://flight025.github.io&#34;&gt;阿波尔的博客&lt;/a&gt; 2020</copyright>
     <lastBuildDate>Wed, 02 Apr 2014 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://flight025.github.io/tags/golang/index.xml" rel="self" type="application/rss+xml" />
@@ -33,7 +33,7 @@ Save it somewhere specific as we will be using it in the next step.
 More complete instructions are available at installing hugo
 Step 2. Build the Docs Hugo has its own example site which happens to also be the documentation site you are reading right now.
 Follow the following steps:
- Clone the hugo repository Go into the repo Run hugo in server mode and build the docs Open your browser to http://localhost:1313  Corresponding pseudo commands:</description>
+ Clone the hugo repository Go into the repo Run hugo in server mode and build the docs Open your browser to http://localhost:1313  本作品采用知识共享署名-非商业性使用-相同方式共享 4.</description>
     </item>
     
   </channel>

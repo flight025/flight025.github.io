@@ -6,7 +6,7 @@
     <description>Recent content in Posts on 阿波尔的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <copyright>&amp;copy; &lt;a href=&#34;https://flight025.github.io&#34;&gt;奇美拉是耶&lt;/a&gt; 2020</copyright>
+    <copyright>&amp;copy; &lt;a href=&#34;https://flight025.github.io&#34;&gt;阿波尔的博客&lt;/a&gt; 2020</copyright>
     <lastBuildDate>Sat, 30 May 2020 10:28:50 +0800</lastBuildDate>
     
 	<atom:link href="https://flight025.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
@@ -50,7 +50,8 @@ We&amp;rsquo;ll start with creating a new site with a very basic template.</desc
 （三）血液特征 1.红细胞的悬浮稳定性 正常人血液中红细胞呈均匀混悬状态。与红细胞膜表面的唾液酸根、正常血浆成分、血浆黏度及血流动力学有关。
 2.粘滞性 正常人全血黏度约为生理盐水黏度的4~5倍,血浆黏度约为生理盐水黏度的1.6倍。血液黏度与血细胞比容和血浆黏度有关,其中,血浆黏度受血浆中纤维蛋白原、球蛋白等大分子蛋白的影响,它们的浓度越高,血浆黏度越高。
 3.凝固性 正常血液离开血管后,在数分钟内便自行凝固,是凝血因子激活的结果。
-（四）血液生理功能 具有运输功能、协调功能、维护机体内环境和防御功能。</description>
+（四）血液生理功能 具有运输功能、协调功能、维护机体内环境和防御功能。
+本作品采用知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议进行许可。</description>
     </item>
     
     <item>
@@ -59,7 +60,8 @@ We&amp;rsquo;ll start with creating a new site with a very basic template.</desc
       <pubDate>Fri, 29 May 2020 19:33:55 +0800</pubDate>
       
       <guid>https://flight025.github.io/posts/%E4%B8%BA%E4%BB%80%E4%B9%88%E9%80%89%E6%8B%A9hugo%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/</guid>
-      <description>为什么我会选择hugo写文章，主要原因是因为部署快速，没有那么多的复杂程序 1.简单明了 2.采用markdown语法写作 3.静态博客没有冗长的插件，打开网页比较快。 以后优点再看吧。</description>
+      <description>为什么我会选择hugo写文章，主要原因是因为部署快速，没有那么多的复杂程序 1.简单明了 2.采用markdown语法写作 3.静态博客没有冗长的插件，打开网页比较快。 以后优点再看吧。
+本作品采用知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议进行许可。</description>
     </item>
     
     <item>
@@ -68,7 +70,10 @@ We&amp;rsquo;ll start with creating a new site with a very basic template.</desc
       <pubDate>Fri, 29 May 2020 19:24:15 +0800</pubDate>
       
       <guid>https://flight025.github.io/posts/first/</guid>
-      <description>Hello Hugo  aaa bbb ccc  </description>
+      <description>Hello Hugo   aaa
+  bbb
+  ccc
+  本作品采用知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议进行许可。</description>
     </item>
     
     <item>
@@ -92,7 +97,7 @@ Save it somewhere specific as we will be using it in the next step.
 More complete instructions are available at installing hugo
 Step 2. Build the Docs Hugo has its own example site which happens to also be the documentation site you are reading right now.
 Follow the following steps:
- Clone the hugo repository Go into the repo Run hugo in server mode and build the docs Open your browser to http://localhost:1313  Corresponding pseudo commands:</description>
+ Clone the hugo repository Go into the repo Run hugo in server mode and build the docs Open your browser to http://localhost:1313  本作品采用知识共享署名-非商业性使用-相同方式共享 4.</description>
     </item>
     
   </channel>
