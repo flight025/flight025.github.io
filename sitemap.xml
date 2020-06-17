@@ -17,21 +17,63 @@
   </url>
   
   <url>
-    <loc>https://flight025.github.io/posts/</loc>
-    <lastmod>2020-06-10T13:16:04+08:00</lastmod>
+    <loc>https://flight025.github.io/categories/</loc>
+    <lastmod>2020-06-17T09:05:09+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://flight025.github.io/posts/%E8%A1%80%E6%B6%B2%E7%9A%84%E6%A0%B7%E6%9C%AC%E9%87%87%E9%9B%863/</loc>
-    <lastmod>2020-06-10T13:16:04+08:00</lastmod>
+    <loc>https://flight025.github.io/tags/hugo/</loc>
+    <lastmod>2020-06-17T09:05:09+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://flight025.github.io/posts/</loc>
+    <lastmod>2020-06-17T09:05:09+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://flight025.github.io/tags/</loc>
+    <lastmod>2020-06-17T09:05:09+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://flight025.github.io/tags/%E5%8D%9A%E5%AE%A2/</loc>
+    <lastmod>2020-06-17T09:05:09+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://flight025.github.io/posts/%E6%9B%B9%E6%93%8D%E6%80%A7%E6%A0%BC%E4%B9%8B%E6%88%91%E8%A7%81/</loc>
+    <lastmod>2020-06-17T09:05:09+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://flight025.github.io/categories/%E8%BD%AF%E4%BB%B6/</loc>
+    <lastmod>2020-06-17T09:05:09+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://flight025.github.io/</loc>
+    <lastmod>2020-06-17T09:05:09+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://flight025.github.io/posts/%E8%A1%80%E6%B6%B2%E7%9A%84%E6%A0%B7%E6%9C%AC%E9%87%87%E9%9B%863/</loc>
     <lastmod>2020-06-10T13:16:04+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -80,13 +122,6 @@
   </url>
   
   <url>
-    <loc>https://flight025.github.io/categories/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://flight025.github.io/categories/development/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -123,20 +158,6 @@
   
   <url>
     <loc>https://flight025.github.io/categories/golang/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://flight025.github.io/tags/hugo/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://flight025.github.io/tags/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
