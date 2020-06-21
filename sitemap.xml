@@ -18,28 +18,49 @@
   
   <url>
     <loc>https://flight025.github.io/categories/</loc>
-    <lastmod>2020-06-10T13:16:04+08:00</lastmod>
+    <lastmod>2020-06-21T12:13:48+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://flight025.github.io/posts/</loc>
-    <lastmod>2020-06-10T13:16:04+08:00</lastmod>
+    <lastmod>2020-06-21T12:13:48+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://flight025.github.io/tags/</loc>
-    <lastmod>2020-06-10T13:16:04+08:00</lastmod>
+    <lastmod>2020-06-21T12:13:48+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://flight025.github.io/categories/%E5%8C%BB%E5%AD%A6%E6%A3%80%E9%AA%8C/</loc>
-    <lastmod>2020-06-10T13:16:04+08:00</lastmod>
+    <lastmod>2020-06-21T12:13:48+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://flight025.github.io/tags/%E6%8A%97%E5%87%9D%E5%89%82/</loc>
+    <lastmod>2020-06-21T12:13:48+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://flight025.github.io/posts/%E6%8A%97%E5%87%9D%E5%89%82%E7%9A%84%E9%80%89%E6%8B%A9/</loc>
+    <lastmod>2020-06-21T12:13:48+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://flight025.github.io/</loc>
+    <lastmod>2020-06-21T12:13:48+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -53,13 +74,6 @@
   
   <url>
     <loc>https://flight025.github.io/posts/%E8%A1%80%E6%B6%B2%E6%A0%B7%E6%9C%AC%E7%9A%84%E9%87%87%E9%9B%863/</loc>
-    <lastmod>2020-06-10T13:16:04+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://flight025.github.io/</loc>
     <lastmod>2020-06-10T13:16:04+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
