@@ -7,10 +7,28 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ZH-CN</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://flight025.github.io&#34;&gt;阿波尔的博客&lt;/a&gt; 2020</copyright>
-    <lastBuildDate>Sun, 21 Jun 2020 12:13:48 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 22 Jun 2020 09:19:50 +0800</lastBuildDate>
     
 	<atom:link href="https://flight025.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>blog</title>
+      <link>https://flight025.github.io/tags/blog/</link>
+      <pubDate>Mon, 22 Jun 2020 09:19:50 +0800</pubDate>
+      
+      <guid>https://flight025.github.io/tags/blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hugo</title>
+      <link>https://flight025.github.io/tags/hugo/</link>
+      <pubDate>Mon, 22 Jun 2020 09:19:50 +0800</pubDate>
+      
+      <guid>https://flight025.github.io/tags/hugo/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>抗凝剂</title>
@@ -36,24 +54,6 @@
       <pubDate>Sat, 30 May 2020 10:28:50 +0800</pubDate>
       
       <guid>https://flight025.github.io/tags/%E8%A1%80%E6%B6%B2%E7%94%9F%E7%90%86/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>blog</title>
-      <link>https://flight025.github.io/tags/blog/</link>
-      <pubDate>Fri, 29 May 2020 19:33:55 +0800</pubDate>
-      
-      <guid>https://flight025.github.io/tags/blog/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>hugo</title>
-      <link>https://flight025.github.io/tags/hugo/</link>
-      <pubDate>Fri, 29 May 2020 19:33:55 +0800</pubDate>
-      
-      <guid>https://flight025.github.io/tags/hugo/</guid>
       <description></description>
     </item>
     
