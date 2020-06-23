@@ -7,10 +7,30 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ZH-CN</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://flight025.github.io&#34;&gt;阿波尔的博客&lt;/a&gt; 2020</copyright>
-    <lastBuildDate>Fri, 29 May 2020 19:33:55 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 22 Jun 2020 09:19:50 +0800</lastBuildDate>
     
 	<atom:link href="https://flight025.github.io/tags/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Hugo博客搭建过程</title>
+      <link>https://flight025.github.io/posts/hugo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/</link>
+      <pubDate>Mon, 22 Jun 2020 09:19:50 +0800</pubDate>
+      
+      <guid>https://flight025.github.io/posts/hugo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/</guid>
+      <description>在搭建之前。我参考了b站视频以及其它分享以hugo框架搭建静态博客的博主们的方法，搭建好了hugo为博客框架的静态博客。 现在，就具体说说是怎么搭建hugo静态博客的。
+1.下载一些相关的必要工具 在搭建博客之前，先准备好所要的软件材料。 1.git工具 2.github（创建博客存储上传文件） 3.hugo博客系统文件 4.用它写作的typora 5.以及搭配typora的PicGo图床工具
+2.环境变量的设置以及配置站点文件 下载好git工具和hugo博客系统文件，然后设置环境变量。 以win10为例，在搜索栏中。输入path，找到编辑系统环境变量。
+找到hugo下载的所在文件目录，复制到PATH中。注意路径不能有中文。 在cmd中命令看看是否安装正确，出现：
+git version git version 2.26.2.windows.1 hugo version Hugo Static Site Generator v0.72.0-8A7EF3CF windows/amd64 BuildDate: 2020-05-31T12:08:42Z 提示安装路径正确。
+安装好后，再在其它盘创建一个根站点，假如命名为###。
+hugo new site ### 然后在###文件中就会得到
+这么多的文件。
+用cd命令打开themes文件，在hugo主题中找一个主题，比如我找的charaka-hugo-theme主题。在cmd中命令如下：
+cd themes git clone https://github.com/natarajmb/charaka-hugo-theme.git 下载好主题包后，把themes中的主题包文件复制覆盖到原###中的根文件中。
+config原配置文件如下：
+baseurl = &amp;quot;https://example.com&amp;quot;（填你的github博客域名） languageCode = &amp;quot;en&amp;quot;（改成ZH-CN） title = &amp;quot;Charaka&amp;quot;（自己可以改成自己喜欢的博客名称） theme = &amp;quot;charaka-hugo-theme&amp;quot; copyright = &amp;quot;&amp;amp;copy; &amp;lt;a href=\&amp;quot;https://github.com/natarajmb\&amp;quot;&amp;gt;Nataraj Basappa&amp;lt;/a&amp;gt; 2018&amp;quot;（这里可以更改为你的连接和申明） disqusShortname = &amp;quot;&amp;quot;（disqus评论用，不过我改成了valine评论系统） googleAnalytics = &amp;quot;&amp;quot;(谷歌分析) [params] [author] name = &amp;quot;Nataraj Basappa&amp;quot; homepage = &amp;quot;https://natarajmb.</description>
+    </item>
     
     <item>
       <title>为什么选择hugo搭建我的博客</title>
