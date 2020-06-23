@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ZH-CN">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+<title>Hugo博客搭建过程 | 阿波尔的博客</title>
+
+<link rel="stylesheet" href="https://flight025.github.io/css/styles.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" 
+integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/zenburn.min.css" crossorigin="anonymous" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script src="https://flight025.github.io/js/highlight.js"></script>
+
+
+
+<link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials.css" />
+<link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials-theme-minima.css" />
+<script type="text/javascript" src="https://flight025.github.io/js/jssocials.js"></script>
+
+
+
+
+<div class="container">
+    <nav class="navbar level">
+      <div class="navbar-brand">
+          <a class="nav-item" href="https://flight025.github.io"><h1 class="title is-3">阿波尔的博客</h1></a>
+      </div>           
+      <div class="navbar-menu has-text-centered is-active">
+          <div class="navbar-end is-centered">
+              
+                <a href="https://flight025.github.io/about" rel="me">
+                  <span class="icon">
+                    <i class="fas fa-info"></i>
+                  </span>
+                </a>
+              
+                <a href="https://github.com/flight025" rel="me">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                </a>
+              
+                <a href="https://www.zhihu.com/people/a-gan-jing-shen" rel="me">
+                  <span class="icon">
+                    <i class="fab fa-zhihu"></i>
+                  </span>
+                </a>
+              
+                <a href="https://twitter.com/666GXF" rel="me">
+                  <span class="icon">
+                    <i class="fab fa-twitter"></i>
+                  </span>
+                </a>
+              
+           </div>
+      </div>
+    </nav>
+  </div>
+
+<div class="container">
+  <h2 class="subtitle is-6">June 22, 2020</h2>
+  <h1 class="subtitle is-size-4-mobile is-size-3-desktop">Hugo博客搭建过程</h1>
+  <div class="content">
+    <p>在搭建之前。我参考了b站视频以及其它分享以hugo框架搭建静态博客的博主们的方法，搭建好了hugo为博客框架的静态博客。
+现在，就具体说说是怎么搭建hugo静态博客的。</p>
+<h2 id="1下载一些相关的必要工具">1.下载一些相关的必要工具</h2>
+<p>在搭建博客之前，先准备好所要的软件材料。
+1.<a href="https://git-scm.com/download">git工具</a>
+2.<a href="https://github.com/">github（创建博客存储上传文件）</a>
+3.<a href="https://github.com/gohugoio/hugo/releases">hugo博客系统文件</a>
+4.<a href="https://typora.io/">用它写作的typora</a>
+5.<a href="https://github.com/Molunerfinn/PicGo/releases">以及搭配typora的PicGo图床工具</a></p>
+<h2 id="2环境变量的设置以及配置站点文件">2.环境变量的设置以及配置站点文件</h2>
+<p>下载好<a href="https://git-scm.com/download">git工具</a>和<a href="https://github.com/gohugoio/hugo/releases">hugo博客系统文件</a>，然后设置环境变量。
+以win10为例，在搜索栏中。输入path，找到编辑系统环境变量。</p>
+<p><img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/%E5%9B%BE%E7%89%87/QQ%E6%88%AA%E5%9B%BE20200622100628.png" alt=""></p>
+<p><img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/%E5%9B%BE%E7%89%87/QQ%E6%88%AA%E5%9B%BE20200622101850.png" alt=""></p>
+<p>找到hugo下载的所在文件目录，复制到PATH中。注意路径不能有中文。
+在cmd中命令看看是否安装正确，出现：</p>
+<pre><code>git version
+git version 2.26.2.windows.1
+hugo version
+Hugo Static Site Generator v0.72.0-8A7EF3CF windows/amd64 BuildDate: 2020-05-31T12:08:42Z
+</code></pre><p>提示安装路径正确。</p>
+<p>安装好后，再在其它盘创建一个根站点，假如命名为###。</p>
+<pre><code>hugo new site ###
+</code></pre><p>然后在###文件中就会得到</p>
+<p><img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/%E5%9B%BE%E7%89%87/%E6%8D%95%E8%8E%B76.PNG" alt=""></p>
+<p>这么多的文件。</p>
+<p>用cd命令打开themes文件，在<a href="https://themes.gohugo.io/">hugo主题</a>中找一个主题，比如我找的<a href="https://themes.gohugo.io/charaka-hugo-theme/">charaka-hugo-theme</a>主题。在cmd中命令如下：</p>
+<pre><code>cd themes
+git clone https://github.com/natarajmb/charaka-hugo-theme.git
+</code></pre><p>下载好主题包后，把themes中的主题包文件复制覆盖到原###中的根文件中。</p>
+<p>config原配置文件如下：</p>
+<pre><code>baseurl = &quot;https://example.com&quot;（填你的github博客域名）
+languageCode = &quot;en&quot;（改成ZH-CN）
+title = &quot;Charaka&quot;（自己可以改成自己喜欢的博客名称）
+theme = &quot;charaka-hugo-theme&quot;
+copyright = &quot;&amp;copy; &lt;a href=\&quot;https://github.com/natarajmb\&quot;&gt;Nataraj Basappa&lt;/a&gt; 2018&quot;（这里可以更改为你的连接和申明）
+disqusShortname = &quot;&quot;（disqus评论用，不过我改成了valine评论系统）
+googleAnalytics = &quot;&quot;(谷歌分析)
+
+[params]
+
+[author]
+  name = &quot;Nataraj Basappa&quot;
+  homepage = &quot;https://natarajmb.com&quot;（博主名称和网站，自己改）
+
+[params.highlight]
+  style = &quot;zenburn&quot;
+
+[params.share]
+  enabled = &quot;true&quot;
+
+[[params.social]]
+  url = &quot;about&quot;
+  fa_icon = &quot;fas fa-info&quot;（关于页面，可以修改）
+
+[[params.social]]
+  url = &quot;https://github.com/natarajmb/&quot;
+  fa_icon = &quot;fab fa-github&quot;（github可以改成自己的）
+
+[[params.social]]
+  url = &quot;https://www.linkedin.com/in/natarajmb/&quot;
+  fa_icon = &quot;fab fa-linkedin-in&quot;（这里我改成了知乎）
+
+[[params.social]]
+  url = &quot;https://twitter.com/natarajmb/&quot;
+  fa_icon = &quot;fab fa-twitter&quot;（推特改成自己的）
+</code></pre><p>上述改好后，大体就完成了。至于怎么添加valine评论系统，在这里。我参考了B站up主<a href="https://www.bilibili.com/video/BV1p7411i76h?from=search&amp;seid=3990097417905613623">CeyCeyChannel</a>的视频教程，有兴趣的可以看看。</p>
+<h2 id="3文章创建和github设置">3.文章创建和github设置</h2>
+<p>你要创建一篇新文章，就得在cmd中命令。</p>
+<pre><code>hugo new post/XXXX.md
+</code></pre><p>由于我的文章创建是在posts，故而有所不同。比如我现在创建的新文章</p>
+<pre><code>title: &quot;Hugo博客搭建过程&quot;（博客文章名称）
+date: 2020-06-22T09:19:50+08:00（时间）
+draft: false （设为false可被编译为HTML，true供本地修改）
+categories: [想法]（归档）
+tags:[&quot;hugo&quot;,&quot;blog&quot;]（分类）
+</code></pre><p>在cmd博客站点根目录中，启动博客预览</p>
+<pre><code>hugo server
+</code></pre><p><img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/%E5%9B%BE%E7%89%87/%E6%8D%95%E8%8E%B7.PNG" alt=""></p>
+<p>打开 http://localhost:1313/可以看到，新文章已经生成。</p>
+<p>​                                                            <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/%E5%9B%BE%E7%89%87/%E6%8D%95%E8%8E%B71.PNG" alt=""></p>
+<p>设置打开<a href="https://github.com/">github</a>，创建自己的仓库。
+新建一个new Repository，然后以（你的用户名.github.io）创建一个。</p>
+<p><img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/%E5%9B%BE%E7%89%87/QQ%E6%88%AA%E5%9B%BE20200622115831.png" alt=""></p>
+<p>​</p>
+<p><img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/%E5%9B%BE%E7%89%87/%E6%8D%95%E8%8E%B72.PNG" alt=""></p>
+<p>设置好  你的用户名.github.io 然后创建仓库。</p>
+<h2 id="4设置静态文件及上传">4.设置静态文件及上传</h2>
+<p>在config文件中，把baseurl改成自己的Repository name.
+设置好config中baseurl和themes的路径。在站点目录下命令</p>
+<pre><code>hugo
+</code></pre><p>生成public文件夹，用于上传。</p>
+<p>如果一切顺利，静态文件就会上传在public中。然后将public本地文件上传到github上。如下：</p>
+<pre><code># cd public（进入public)
+# git init (初始化)
+# git remote add origin https://github.com/XXXXX/XXXXX.github.io.git（链接仓库，注意.git）
+# git add .（添加public中的文件）
+# git commit -m &quot;first commit&quot;（提交文件描述，可以随便写）
+# git pull origin master （取回远程主机某个分支的更新）
+# git push -u origin master （推送本地分支到远程分支）
+</code></pre><h2 id="5图床问题及后续文章更新">5.图床问题及后续文章更新</h2>
+<p>md文章可以添加本地图片及网上图床服务，而网上图床存储又有免费和收费之分。
+这里我选择的是收费图床存储，腾讯云COS作为图床。但是COS上传后必须得打开网站一张张复制链接。很麻烦。这里可以用到 <a href="https://github.com/Molunerfinn/PicGo/releases">Picgo</a> 和<a href="https://typora.io/">typora</a> ，而且二者可以搭配使用。
+首先，依次打开对象储存》储存桶列表》创建储存桶，如下：</p>
+<p>​                                                     <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/%E5%9B%BE%E7%89%87/QQ%E5%9B%BE%E7%89%8720200623092339.png" alt=""></p>
+<p>​                名称自己小写字母填一个，地域这里选择物理位置最近的一个，访问权限选公有读私有写，标签随便填。服务器加密选SSE-COS.点击确定。</p>
+<p>​                                 <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/%E5%9B%BE%E7%89%87/QQ%E6%88%AA%E5%9B%BE20200622134156.png" alt=""></p>
+<p>​               打开<a href="https://console.cloud.tencent.com/cam/capi">api密钥管理</a>，新建密钥。</p>
+<p><img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/%E5%9B%BE%E7%89%87/QQ%E6%88%AA%E5%9B%BE20200622134942.png" alt=""></p>
+<p>​                在Picgo中，选COS为V5。设定上述文件，点击确定保存。</p>
+<p><img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/%E5%9B%BE%E7%89%87/QQ%E6%88%AA%E5%9B%BE20200622135443.png" alt=""></p>
+<p>​       至于picgo和typora搭配。设置如下：picgo打开：</p>
+<p>​                                              <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/%E5%9B%BE%E7%89%87/QQ%E6%88%AA%E5%9B%BE20200622140402.png" alt=""></p>
+<p>​           typora则是：</p>
+<p>​                                                  <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/%E5%9B%BE%E7%89%87/QQ%E6%88%AA%E5%9B%BE20200622140228.png" alt=""></p>
+<p>​       然后点击“验证图片上传选项”。出现如下提示：</p>
+<p>​                                                      <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/%E5%9B%BE%E7%89%87/QQ%E6%88%AA%E5%9B%BE20200622140258.png" alt=""></p>
+<p>代表成功获得图片url，可以直接拖动图片在typora上传了。</p>
+<p>图片问题解决，如果你想以后再写博客文章，你可以运行一下命令：</p>
+<pre><code>hugo new post/你的文章名.md
+</code></pre><p>至于推送文章，你可以用下面的命令：</p>
+<pre><code># hugo
+# cd public
+# git add .
+# git commit -m &quot;XXXXXXX&quot;
+# git pull origin master
+# git push origin master
+</code></pre><p>当然，你也可以把文章自动部署到github，不再赘述。</p>
+<p>基本上，这就是搭建博客的全过程了，想到什么再说。。。</p>
+<hr>
+<p>网页参考：1.<a href="https://www.bilibili.com/video/BV1q4411i7gL?from=search&amp;seid=2919999277428020540">CodeSheep手把手教你从0开始搭建自己的个人博客 |第二种姿势 | hugo</a>2.<a href="https://www.bilibili.com/video/BV14b411K7Fm?from=search&amp;seid=2919999277428020540">hojun_cn：hugo+github博客搭建教程！</a>3.<a href="https://www.bilibili.com/video/BV1p7411i76h?from=search&amp;seid=16196797963561618058">CeyCeyChannel：『手把手』在 HUGO 中添加 Valine 评论系统的过程</a>4.<a href="https://saquarius.com/2019/07/hugo-github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2windows10/">SAquarius的梦想屋：Hugo+github搭建个人博客（windows10）</a></p>
+<p>在此一一感谢。</p>
+<p><img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/%E5%9B%BE%E7%89%87/5067763a0a7b13f43c121cff5a005e79.jpg" alt="东京"></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;license&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;http://creativecommons.org/licenses/by-nc-sa/4.0/&#34;</span>&gt;&lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">alt</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;知识共享许可协议&#34;</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;border-width:0&#34;</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png&#34;</span> /&gt;&lt;/<span style="color:#f92672">a</span>&gt;&lt;<span style="color:#f92672">br</span> /&gt;本作品采用&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;license&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;http://creativecommons.org/licenses/by-nc-sa/4.0/&#34;</span>&gt;知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议&lt;/<span style="color:#f92672">a</span>&gt;进行许可。
+</code></pre></div>
+<div class="meta">
+  
+<ul id="tags">
+  
+    <li> <a href="https://flight025.github.io/tags/hugo">hugo</a> </li>
+  
+    <li> <a href="https://flight025.github.io/tags/blog">blog</a> </li>
+  
+</ul>
+
+
+
+
+
+<ul id="categories">
+  
+    <li><a href="https://flight025.github.io/categories/%E6%83%B3%E6%B3%95">想法</a> </li>
+  
+</ul>
+   
+  </div>
+</div>
+<div class="container has-text-centered">
+    
+    <aside><div id="share"></div></aside>
+    <script type="text/javascript">
+        $("#share").jsSocials({
+            showLabel: false,
+            showCount: false,
+            shares: ["email", "twitter", "facebook", "googleplus", "linkedin", "pinterest", "stumbleupon", "whatsapp"]
+        });
+    </script>
+    
+</div>
+
+
+  <span id="/posts/hugo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/" class="leancloud_visitors" data-flag-title="Hugo博客搭建过程">
+    <span class="post-meta-item-text">文章阅读量 </span>
+    <span class="leancloud-visitors-count">1000000</span>
+    <p></p>
+  </span>
+  <div id="vcomments"></div>
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+  <script type="text/javascript">
+    new Valine({
+        el: '#vcomments' ,
+        appId: 'DWRLmTluDA2JetTAFqtU2sQD-gzGzoHsz',
+        appKey: 'N0eifLdIEufUGuKvCOeHDJ8Q',
+        notify:  false , 
+        verify:  false , 
+        avatar:'mm', 
+        placeholder: '说点什么吧...',
+        visitor:  true 
+    });
+  </script>
+<section class="section">
+  <div class="container has-text-centered">
+    <p>&copy; <a href="https://flight025.github.io">阿波尔的博客</a> 2020</p>
+  </div>
+</section>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-168102390-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
