@@ -224,10 +224,4 @@
     <priority>0.5</priority>
   </url>
   
-  <url>
-    <loc>https://flight025.github.io/%E5%85%B3%E4%BA%8E%E6%88%91/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
 </urlset>
