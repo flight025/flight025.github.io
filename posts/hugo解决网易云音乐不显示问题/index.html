@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ZH-CN">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+<title>Hugo解决网易云音乐不显示问题 | 阿波尔的博客</title>
+
+<link rel="stylesheet" href="https://flight025.github.io/css/styles.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" 
+integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/zenburn.min.css" crossorigin="anonymous" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script src="https://flight025.github.io/js/highlight.js"></script>
+
+
+
+<link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials.css" />
+<link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials-theme-minima.css" />
+<script type="text/javascript" src="https://flight025.github.io/js/jssocials.js"></script>
+
+
+
+
+<div class="container">
+    <nav class="navbar level">
+      <div class="navbar-brand">
+          <a class="nav-item" href="https://flight025.github.io"><h1 class="title is-3">阿波尔的博客</h1></a>
+      </div>           
+      <div class="navbar-menu has-text-centered is-active">
+          <div class="navbar-end is-centered">
+              
+                <a href="https://flight025.github.io/about" rel="me">
+                  <span class="icon">
+                    <i class="fas fa-info"></i>
+                  </span>
+                </a>
+              
+                <a href="https://github.com/flight025" rel="me">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                </a>
+              
+                <a href="https://www.zhihu.com/people/a-gan-jing-shen" rel="me">
+                  <span class="icon">
+                    <i class="fab fa-zhihu"></i>
+                  </span>
+                </a>
+              
+                <a href="https://twitter.com/666GXF" rel="me">
+                  <span class="icon">
+                    <i class="fab fa-twitter"></i>
+                  </span>
+                </a>
+              
+           </div>
+      </div>
+    </nav>
+  </div>
+
+<div class="container">
+  <h2 class="subtitle is-6">June 25, 2020</h2>
+  <h1 class="subtitle is-size-4-mobile is-size-3-desktop">Hugo解决网易云音乐不显示问题</h1>
+  <div class="content">
+    <p>这个问题，是我今天在“关于”页面添加网易云音乐发现的。具体到问题就是HTML文件不能在博客上显示。
+我在“关于”页面上添加网易云音乐，上传了几次。发现还是没有网易云音乐，我就觉得纳闷了。</p>
+<p><img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/%E5%9B%BE%E7%89%87/sdc.PNG" alt=""></p>
+<p>于是我问了关于hugo建站的群，有人说看“关于”网页源代码有没有这个“html代码“。
+打开关于页面，看到了这行代码不是原网易云音乐，显示为“!&ndash; raw HTML omitted &ndash;“。虽然不知道为什么会显示为这样，但是我顺藤摸瓜，在Google搜索关于显示这个代码的原因。</p>
+<p><img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/%E5%9B%BE%E7%89%87/sds.PNG" alt=""></p>
+<p>​    在<a href="https://discourse.gohugo.io/t/raw-html-getting-omitted-in-0-60-0/22032">hugo论坛页面</a>我找到了原因，原来在hugo 0.60.0的版本中，为了安全，html文件会显示为“!&ndash; raw HTML omitted &ndash;“。
+在页面中，解决办法也给出了，即开启为不安全模式，在config.toml站点配置文件中，添加这二行代码：</p>
+<pre><code>[markup.goldmark.renderer]
+unsafe= true
+</code></pre><p>完成打开http://localhost:1313/预览页面，此时就可以看到在原来的位置添加的网易云音乐了。</p>
+<p><img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/%E5%9B%BE%E7%89%87/msk.PNG" alt=""></p>
+<p>这样就解决了网易云音乐不显示的问题😀。
+还有， 今天端午节，祝大家节日快乐。💖😀</p>
+<hr>
+<p>网页参考：1.<a href="https://discourse.gohugo.io/t/raw-html-getting-omitted-in-0-60-0/22032">hugo论坛解决html文件不显示解决办法</a></p>
+<p><img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/%E5%9B%BE%E7%89%87/q5x0hhu3t4z.jpg" alt="上海"></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;license&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;http://creativecommons.org/licenses/by-nc-sa/4.0/&#34;</span>&gt;&lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">alt</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;知识共享许可协议&#34;</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;border-width:0&#34;</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png&#34;</span> /&gt;&lt;/<span style="color:#f92672">a</span>&gt;&lt;<span style="color:#f92672">br</span> /&gt;本作品采用&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;license&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;http://creativecommons.org/licenses/by-nc-sa/4.0/&#34;</span>&gt;知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议&lt;/<span style="color:#f92672">a</span>&gt;进行许可。
+</code></pre></div>
+<div class="meta">
+  
+<ul id="tags">
+  
+    <li> <a href="https://flight025.github.io/tags/hugo">hugo</a> </li>
+  
+    <li> <a href="https://flight025.github.io/tags/blog">blog</a> </li>
+  
+</ul>
+
+
+
+
+
+<ul id="categories">
+  
+    <li><a href="https://flight025.github.io/categories/%E6%83%B3%E6%B3%95">想法</a> </li>
+  
+</ul>
+   
+  </div>
+</div>
+<div class="container has-text-centered">
+    
+    <aside><div id="share"></div></aside>
+    <script type="text/javascript">
+        $("#share").jsSocials({
+            showLabel: false,
+            showCount: false,
+            shares: ["email", "twitter", "facebook", "googleplus", "linkedin", "pinterest", "stumbleupon", "whatsapp"]
+        });
+    </script>
+    
+</div>
+
+
+  <span id="/posts/hugo%E8%A7%A3%E5%86%B3%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90%E4%B8%8D%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/" class="leancloud_visitors" data-flag-title="Hugo解决网易云音乐不显示问题">
+    <span class="post-meta-item-text">文章阅读量 </span>
+    <span class="leancloud-visitors-count">1000000</span>
+    <p></p>
+  </span>
+  <div id="vcomments"></div>
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+  <script type="text/javascript">
+    new Valine({
+        el: '#vcomments' ,
+        appId: 'DWRLmTluDA2JetTAFqtU2sQD-gzGzoHsz',
+        appKey: 'N0eifLdIEufUGuKvCOeHDJ8Q',
+        notify:  false , 
+        verify:  false , 
+        avatar:'mm', 
+        placeholder: '说点什么吧...',
+        visitor:  true 
+    });
+  </script>
+<section class="section">
+  <div class="container has-text-centered">
+    <p>&copy; <a href="https://flight025.github.io">阿波尔的博客</a> 2020</p>
+  </div>
+</section>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-168102390-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
