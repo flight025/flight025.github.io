@@ -41,7 +41,7 @@ We&amp;rsquo;ll start with creating a new site with a very basic template.</desc
       <guid>https://flight025.github.io/posts/hugo%E8%A7%A3%E5%86%B3%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90%E4%B8%8D%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/</guid>
       <description>这个问题，是我今天在“关于”页面添加网易云音乐发现的。具体到问题就是HTML文件不能在博客上显示。 我在“关于”页面上添加网易云音乐，上传了几次。发现还是没有网易云音乐，我就觉得纳闷了。
 于是我问了关于hugo建站的群，有人说看“关于”网页源代码有没有这个“html代码“。 打开关于页面，看到了这行代码不是原网易云音乐，显示为“!&amp;ndash; raw HTML omitted &amp;ndash;“。虽然不知道为什么会显示为这样，但是我顺藤摸瓜，在Google搜索关于显示这个代码的原因。
-​ 在hugo论坛页面我找到了原因，原来在hugo 0.60.0的版本中，为了安全，html文件会显示为“!&amp;ndash; raw HTML omitted &amp;ndash;“。 在页面中，解决办法也给出了，即开启为不安全模式，在config.toml站点配置文件中，添加这二行代码：
+​ 在hugo论坛页面我到了原因，原来在hugo 0.60.0的版本中，为了安全，html文件会显示为“!&amp;ndash; raw HTML omitted &amp;ndash;“。 在页面中，解决办法也给出了，即开启不安全模式，在config.toml站点配置文件中，添加这二行代码：
 [markup.goldmark.renderer] unsafe= true 完成打开http://localhost:1313/预览页面，此时就可以看到在原来的位置添加的网易云音乐了。
 这样就解决了网易云音乐不显示的问题😀。 还有， 今天端午节，祝大家节日快乐。💖😀
  网页参考：1.hugo论坛解决html文件不显示解决办法
