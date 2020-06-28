@@ -1,0 +1,300 @@
+
+<div class="container">
+  <!DOCTYPE html>
+<html lang="zh-cn">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+<title>归档 | 阿波尔的博客</title>
+
+<link rel="stylesheet" href="https://flight025.github.io/css/styles.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" 
+integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/zenburn.min.css" crossorigin="anonymous" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script src="https://flight025.github.io/js/highlight.js"></script>
+
+
+
+<link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials.css" />
+<link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials-theme-minima.css" />
+<script type="text/javascript" src="https://flight025.github.io/js/jssocials.js"></script>
+
+
+
+
+  <div class="container">
+    <nav class="navbar level">
+      <div class="navbar-brand">
+          <a class="nav-item" href="https://flight025.github.io"><h1 class="title is-3">阿波尔的博客</h1></a>
+      </div>           
+      <div class="navbar-menu has-text-centered is-active">
+          <div class="navbar-end is-centered">
+              
+                <a href="https://flight025.github.io/about" rel="me">
+                  <span class="icon">
+                    <i class="fas fa-info"></i>
+                  </span>
+                </a>
+              
+                <a href="https://github.com/flight025" rel="me">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                </a>
+              
+                <a href="https://www.zhihu.com/people/a-gan-jing-shen" rel="me">
+                  <span class="icon">
+                    <i class="fab fa-zhihu"></i>
+                  </span>
+                </a>
+              
+                <a href="https://twitter.com/666GXF" rel="me">
+                  <span class="icon">
+                    <i class="fab fa-twitter"></i>
+                  </span>
+                </a>
+              
+           </div>
+      </div>
+    </nav>
+  </div>
+
+  <main class="container">
+      
+      
+      <h1 class="title is-3">2020</h1>
+      
+      <article class="columns">
+        <div class="column is-2">
+          <h6 class="is-inline" style="white-space: nowrap">Jun 25</h2>
+        </div>
+        <div class="column">
+          <h2 class="subtitle is-inline is-size-4-mobile is-size-3-desktop"><a href="https://flight025.github.io/posts/hugo%E8%A7%A3%E5%86%B3%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90%E4%B8%8D%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/">Hugo解决网易云音乐不显示问题</a></h1>
+          <div class="content is-hidden-mobile">
+            这个问题，是我今天在“关于”页面添加网易云音乐发现的。具体到问题就是HTML文件不能在博客上显示。 我在“关于”页面上添加网易云音乐，上传了几次。发现还是没有网易云音乐，我就觉得纳闷了。
+于是我问了关于hugo建站的群，有人说看“关于”网页源代码有没有这个“html代码“。 打开关于页面，看到了这行代码不是原网易云音乐，显示为“!&ndash; raw HTML omitted &ndash;“。虽然不知道为什么会显示为这样，但我顺藤摸瓜，在Google搜索关于显示这个代码的原因。
+​ 在hugo论坛页面我到了原因，原来在hugo 0.60.0的版本中，为了安全，html文件改用Goldmark。 在页面中，解决办法也给出了，即开启不安全模式，在config.toml站点配置文件中，添加这二行代码：
+[markup.goldmark.renderer] unsafe= true 完成打 …
+            
+          </div>
+      </article>
+      
+      <article class="columns">
+        <div class="column is-2">
+          <h6 class="is-inline" style="white-space: nowrap">Jun 22</h2>
+        </div>
+        <div class="column">
+          <h2 class="subtitle is-inline is-size-4-mobile is-size-3-desktop"><a href="https://flight025.github.io/posts/hugo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/">Hugo博客搭建过程</a></h1>
+          <div class="content is-hidden-mobile">
+            在搭建之前。我参考了b站视频以及其它分享以hugo框架搭建静态博客的博主们的方法，搭建好了hugo为博客框架的静态博客。 现在，就具体说说是怎么搭建hugo静态博客的。
+1.下载一些相关的必要工具 在搭建博客之前，先准备好所要的软件材料。 1.git工具 2.github（创建博客存储上传文件） 3.hugo博客系统文件 4.用它写作的typora 5.以及搭配typora的PicGo图床工具
+2.环境变量的设置以及配置站点文件 下载好git工具和hugo博客系统文件，然后设置环境变量。 以win10为例，在搜索栏中。输入path，找到编辑系统环境变量。
+找到hugo下载的所在文件目录，复制到PATH中。注意路径不能有中文。 在cmd中命令看看是否安装正确，出现：
+git version git version 2.26.2.windows.1 hugo version Hugo …
+            
+            <br>
+            <a class="button is-marginless is-paddingless" href="https://flight025.github.io/posts/hugo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/">
+            <span class="icon-link is-small" style="line-height: 100%">
+                <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+              </span>
+              <p style="padding:0 5px"></p>more</p>
+            </a>
+            
+          </div>
+      </article>
+      
+      <article class="columns">
+        <div class="column is-2">
+          <h6 class="is-inline" style="white-space: nowrap">Jun 21</h2>
+        </div>
+        <div class="column">
+          <h2 class="subtitle is-inline is-size-4-mobile is-size-3-desktop"><a href="https://flight025.github.io/posts/%E6%8A%97%E5%87%9D%E5%89%82%E7%9A%84%E9%80%89%E6%8B%A9/">抗凝剂的选择</a></h1>
+          <div class="content is-hidden-mobile">
+            抗凝剂是用物理或化学方法除去或抑制血液中的某些凝血因子的活性，以阻止血液凝固。能够阻止血液凝固的物质，称为抗凝剂或抗凝物质和使用方法如下：
+1.乙二胺四乙酸盐（EDTA)盐 常用有钠盐（EDTA-Na₂﹒H₂O)或钾盐（EDTA-K₂．H₂O）或钾盐（EDTA-K₂．2H₂O），能与血液中钙离子结合成螯合物，使Ca²⁺失去凝血作用，阻止血液凝固。 EDTA盐对血细胞形态、血小板计数影响很小，适用于血液学检查，尤其是血小板计数。但钠盐溶解度低于钾盐，有时影响抗凝效果。根据国际血液学标准委员会（ICSH）建议，CBC抗凝剂用EDTA-K₂．2H₂O，量为1.5~2.2mg/ml血液。不适用于凝血检查、血小板功能试验。
+2.草酸盐 常用有草酸钠、草酸钾、草酸铵，溶解后解离的草酸根离子能与样本中钙离子形成草酸钙沉淀，使Ca²⁺失去凝血作用，阻止血液凝固。 草酸盐优点是溶解度好、价廉。草酸盐对凝血因 …
+            
+          </div>
+      </article>
+      
+      <article class="columns">
+        <div class="column is-2">
+          <h6 class="is-inline" style="white-space: nowrap">Jun 10</h2>
+        </div>
+        <div class="column">
+          <h2 class="subtitle is-inline is-size-4-mobile is-size-3-desktop"><a href="https://flight025.github.io/posts/%E8%A1%80%E6%B6%B2%E6%A0%B7%E6%9C%AC%E7%9A%84%E9%87%87%E9%9B%863/">血液样本的采集(3)</a></h1>
+          <div class="content is-hidden-mobile">
+            (三)真空采血法 是一种新的静脉采血法。真空采血装置有套滴式、头皮静脉式两种。封闭式采血无需容器之间的转移，减少了溶血现象,能有效保护血液有形成分，保证待验样本原始性状的完整性，使检验结果更可靠，同时，样本转运方便，能有效避免医护人员和患者间的交叉感染。各种真空定量采血容器，根据需要表有不同的色码，适用不同检验项目(表1-1-1)
+(四)方法学评价 1.皮肤采血 缺点是易溶于血、凝血、混入组织液，而且局部皮肤揉擦、针刺深度不一、个体皮肤厚度差异等都影响检查结果，所以，皮肤采血检查结果重复性差、准确性不好。
+2.静脉采血 开放式采血法的操作环节多，难于规范统一，在移液和丢弃注射器可能造成血液污染。封闭式采血法的操作规范，有利于样本收集运送和保存，防止院内血源性传染病。
+(五)质量控制 1.患者 患者活动情况、精神状态、药物、年龄、性别、种族、样本采集时间、吸烟、季节等都会影响检测结果。
+ …
+            
+            <br>
+            <a class="button is-marginless is-paddingless" href="https://flight025.github.io/posts/%E8%A1%80%E6%B6%B2%E6%A0%B7%E6%9C%AC%E7%9A%84%E9%87%87%E9%9B%863/">
+            <span class="icon-link is-small" style="line-height: 100%">
+                <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+              </span>
+              <p style="padding:0 5px"></p>more</p>
+            </a>
+            
+          </div>
+      </article>
+      
+      <article class="columns">
+        <div class="column is-2">
+          <h6 class="is-inline" style="white-space: nowrap">Jun 3</h2>
+        </div>
+        <div class="column">
+          <h2 class="subtitle is-inline is-size-4-mobile is-size-3-desktop"><a href="https://flight025.github.io/posts/%E8%A1%80%E6%B6%B2%E6%A0%B7%E6%9C%AC%E7%9A%84%E9%87%87%E9%9B%862/">血液样本的采集(2)</a></h1>
+          <div class="content is-hidden-mobile">
+            （二）皮肤采血法 1.概叙 曾称为毛细血管采血法，是采集微动脉、微静脉和毛细血管的混合血，同时含细胞间质和细胞内液。通常，选择耳垂或手指部位。耳垂采血痛感较轻。操作方便，但血液循环较差，受气温影响较大，检查结果不够恒定（如红细胞、白细胞、血红蛋白和血细胞比容等测定结果比手指血或静脉血高），一般情况下不宜使用。手指采血操作方便，检查结果比较恒定，WHO推荐采集左手无名指端内侧血液，婴幼儿可采集大拇指或足跟内侧缘血液，严重烧伤患者，可选择皮肤完整处采血。 目前可用激光无痛采指血仪采血，原理是仪器中激光发射器发出一串单脉冲激光束，在一次性耗材（镜头片）的配合下，细微的光束打在手指上，在很短时间内使皮肤组织溶解、挥发，出现一个小孔，而打孔后的残留物或等离子状态，吸附在镜头表面。仪器采血有效避免了皮肤浅层组织液、细胞外液等渗入血液，确保检测结果准确，同时也可消除交叉感染，达到无痛采血的效果。
+2.操 …
+            
+          </div>
+      </article>
+      
+      <article class="columns">
+        <div class="column is-2">
+          <h6 class="is-inline" style="white-space: nowrap">Jun 2</h2>
+        </div>
+        <div class="column">
+          <h2 class="subtitle is-inline is-size-4-mobile is-size-3-desktop"><a href="https://flight025.github.io/posts/%E8%A1%80%E6%B6%B2%E6%A0%B7%E6%9C%AC%E7%9A%84%E9%87%87%E9%9B%861/">血液样本采集（1）</a></h1>
+          <div class="content is-hidden-mobile">
+            采血方法 正确采集血样本是获得准确、可靠实验结果的关键。在样本采集前,应根据实验要求,决定采血方法、所叙血量及适用抗凝剂。
+（一）静脉采血法 1.概叙 静脉采血多用于体表的浅静脉,通常采用肘部静脉、手背静脉、内踝静脉或股静脉。小儿可采颈外静脉血液。根据采血量可选用不同型号注射器,配备相应的针头。某些特殊检查,为避免血小板激活,要使用塑料注射器和硅化处理后的试管或塑料试管。目前,已有商品化的真空采血系统的采血法。
+2.操作方法 (1)准备试管：取合适数量和规格的试管备用。 （2）检查注射器：打开一次性注射器包装,左手持针头下座,右手持针筒,将针头和针筒紧密连接,并使针头斜面对准针筒刻度,抽拉针栓检查有无阻塞和漏气。最后排尽注射器中的空气，备用。 (3)选择静脉：患者取坐位,前臂水平伸直置于桌面枕垫上。暴露穿刺部位,选择容易固定、明显可见的肘部静脉。 （4）消毒：先用30g/L碘酊棉签自所选静 …
+            
+          </div>
+      </article>
+      
+      <article class="columns">
+        <div class="column is-2">
+          <h6 class="is-inline" style="white-space: nowrap">May 30</h2>
+        </div>
+        <div class="column">
+          <h2 class="subtitle is-inline is-size-4-mobile is-size-3-desktop"><a href="https://flight025.github.io/posts/%E7%AC%AC%E4%B8%80%E7%AF%87%E4%B8%B4%E5%BA%8A%E6%A3%80%E9%AA%8C%E5%9F%BA%E7%A1%80/">第一篇临床检验基础</a></h1>
+          <div class="content is-hidden-mobile">
+            第一篇 临床检验基础 第一章 血液样本采集和血涂片制备 一.血液生理概要 （一）血液组成 血液由血细胞（红细胞、白细胞、血小板）和血浆组成。离体后的血液自然凝固,分离出来的淡黄色透明液体称为血清。血液加抗凝剂后分离出来的淡黄色液体称为血浆。血清与血浆差别是：血清缺少某些凝固因子,如凝血因子I（纤维蛋白原）、II（凝血酶原）、V、VIII等。
+全血适用于临床血液学检查,如血细胞计数、分类和形态学检查等。血浆适用于血浆生理性和病理性化学成分的测定,特别是内分泌激素测定;特别是内分泌激素测定,特别是内分泌激素测定;血浆除钙离子外,含有其他全部凝血因子,也适用于血栓与止血的检查。血清适用于临床化学和临床免疫学检查。
+（二）血液理化性质 1.血量 正常人血量约为（70±10）ml/kg体重,成人约4~5L,约占体重的6%~8%,其中血浆占55%,血细胞占45%。小儿血量与体重之比略高于成人,男性比女 …
+            
+          </div>
+      </article>
+      
+      <article class="columns">
+        <div class="column is-2">
+          <h6 class="is-inline" style="white-space: nowrap">May 29</h2>
+        </div>
+        <div class="column">
+          <h2 class="subtitle is-inline is-size-4-mobile is-size-3-desktop"><a href="https://flight025.github.io/posts/%E4%B8%BA%E4%BB%80%E4%B9%88%E9%80%89%E6%8B%A9hugo%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/">为什么选择hugo搭建我的博客</a></h1>
+          <div class="content is-hidden-mobile">
+            为什么我会选择hugo写文章，主要原因是因为部署快速，没有那么多的复杂程序 1.简单明了 2.采用markdown语法写作 3.静态博客没有冗长的插件，打开网页比较快。 以后优点再看吧。
+&lt;a rel=&#34;license&#34; href=&#34;http://creativecommons.org/licenses/by-nc-sa/4.0/&#34;&gt;&lt;img alt=&#34;知识共享许可协议&#34; style=&#34;border-width:0&#34; src=&#34;https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png&#34; /&gt;&lt;/a&gt;&lt;br /&gt;本作品采用&lt;a rel=&#34;license&#34; …
+            
+          </div>
+      </article>
+      
+      <article class="columns">
+        <div class="column is-2">
+          <h6 class="is-inline" style="white-space: nowrap">May 29</h2>
+        </div>
+        <div class="column">
+          <h2 class="subtitle is-inline is-size-4-mobile is-size-3-desktop"><a href="https://flight025.github.io/posts/first/">我的第一篇博客</a></h1>
+          <div class="content is-hidden-mobile">
+            Hello Hugo   aaa
+  bbb
+  ccc
+  &lt;a rel=&#34;license&#34; href=&#34;http://creativecommons.org/licenses/by-nc-sa/4.0/&#34;&gt;&lt;img alt=&#34;知识共享许可协议&#34; style=&#34;border-width:0&#34; src=&#34;https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png&#34; /&gt;&lt;/a&gt;&lt;br /&gt;本作品采用&lt;a rel=&#34;license&#34; href=&#34;http://creativecommons.org/licenses/by-nc-sa/4.0/&#34;&gt;知识共享署名-非商业性使用- …
+            
+          </div>
+      </article>
+      
+      
+      <h1 class="title is-3">2014</h1>
+      
+      <article class="columns">
+        <div class="column is-2">
+          <h6 class="is-inline" style="white-space: nowrap">Sep 28</h2>
+        </div>
+        <div class="column">
+          <h2 class="subtitle is-inline is-size-4-mobile is-size-3-desktop"><a href="https://flight025.github.io/posts/creating-a-new-theme/">Creating a New Theme</a></h1>
+          <div class="content is-hidden-mobile">
+            Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&rsquo;t cover using CSS to style your theme.
+We&rsquo;ll start with creating a new …
+            
+            <br>
+            <a class="button is-marginless is-paddingless" href="https://flight025.github.io/posts/creating-a-new-theme/">
+            <span class="icon-link is-small" style="line-height: 100%">
+                <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+              </span>
+              <p style="padding:0 5px"></p>more</p>
+            </a>
+            
+          </div>
+      </article>
+      
+      
+      
+  </main>
+  <section class="section">
+  <div class="container">
+    <nav class="level is-mobile">
+      <div class="level-left">
+        <div class="level-item">
+          
+          <a class="button is-rounded" disabled>
+            <span class="icon is-small is-marginless">
+              <i class="fa fa-angle-left"></i>
+            </span>
+            Newer
+          </a>
+          
+        </div>
+      </div>
+      <div class="level-right is-marginless">
+        <div class="level-item">
+          
+          <a class="button is-rounded" href="/archives/page/2/">
+            Older
+            <span class="icon is-small is-marginless">
+              <i class="fa fa-angle-right"></i>
+            </span>
+          </a>
+          
+        </div>
+      </div>
+    </nav>
+  </div>
+</section>
+
+  <section class="section">
+  <div class="container has-text-centered">
+    <p>&copy; <a href="https://flight025.github.io">阿波尔的博客</a> 2020</p>
+  </div>
+</section>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-168102390-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+</div>
