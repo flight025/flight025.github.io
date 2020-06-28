@@ -17,6 +17,20 @@
   </url>
   
   <url>
+    <loc>https://flight025.github.io/archives/</loc>
+    <lastmod>2020-06-28T20:32:44+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://flight025.github.io/</loc>
+    <lastmod>2020-06-28T20:32:44+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://flight025.github.io/tags/blog/</loc>
     <lastmod>2020-06-25T12:28:22+08:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -60,13 +74,6 @@
   
   <url>
     <loc>https://flight025.github.io/categories/%E6%83%B3%E6%B3%95/</loc>
-    <lastmod>2020-06-25T12:28:22+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://flight025.github.io/</loc>
     <lastmod>2020-06-25T12:28:22+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -227,12 +234,6 @@
   
   <url>
     <loc>https://flight025.github.io/about/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://flight025.github.io/archives/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
