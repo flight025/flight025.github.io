@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://flight025.github.io&#34;&gt;阿波尔的博客&lt;/a&gt; 2020</copyright>
-    <lastBuildDate>Thu, 25 Jun 2020 12:28:22 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 04 Jul 2020 20:14:29 +0800</lastBuildDate>
     
 	<atom:link href="https://flight025.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
@@ -31,6 +31,23 @@ We&amp;rsquo;ll start with creating a new site with a very basic template.</desc
       <description>Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
 ▾ &amp;lt;root&amp;gt;/▾ images/logo.png should become
 ▾ &amp;lt;root&amp;gt;/▾ static/▾ images/logo.png Additionally, you&amp;rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.</description>
+    </item>
+    
+    <item>
+      <title>如何在主题中添加文章归档</title>
+      <link>https://flight025.github.io/posts/%E5%A6%82%E4%BD%95%E5%9C%A8%E4%B8%BB%E9%A2%98%E4%B8%AD%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E5%BD%92%E6%A1%A3/</link>
+      <pubDate>Sat, 04 Jul 2020 20:14:29 +0800</pubDate>
+      
+      <guid>https://flight025.github.io/posts/%E5%A6%82%E4%BD%95%E5%9C%A8%E4%B8%BB%E9%A2%98%E4%B8%AD%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E5%BD%92%E6%A1%A3/</guid>
+      <description>原来的主题模板是不带文章归档的，但是经过一番折腾。终于给主题添加了归档。😜 现在就说说是如何添加归档的。
+1.config配置 config可以配置文件图标，在config中添加配置如下：
+打开临时预览网页http://localhost:1313/查看，可以看到
+![](https://css-1252531711.cos.ap-chongqing.myqcloud.com/图片/批注 2020-07-04 203254.png)
+归档图标，但是点击没有反应。。。
+2.archives文件的创建和html文件格式 起先，我想到了关联about的_index.md文件,既然about是&amp;quot;关于&amp;quot;链接的来显示页面的。那我何不创建一个关联archives的_index.md文件呢。于是我创建了index.md文件。用typora写了archives页面归档链接，看看能不能显示，输入http://localhost:1313/查看，还是不能显示。我以为.md上传github就可以显示为html。看来不是这么回事。。。
+折腾了一会儿。在layouts文件夹中找到了about的html文件，似乎是要添加html文件。emmm&amp;hellip;(⊙﹏⊙)，于是我把archives.md用typora转换成html文件，放在了layouts文件夹中，再打开http://localhost:1313临时查看，发现归档文章可以访问了。确定了归档.md的确需要转换成html文件放在layouts文件夹中才能访问。
+3.后续注意及存在问题 注意：1.转换成html文件后，在html用partial引用页面. 存在的问题：1.归档文章必须得自己添加超链接，不能自动更新，很麻烦2.主题页面背景颜色和归档文章颜色不一致。
+ </description>
     </item>
     
     <item>
