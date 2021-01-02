@@ -51,7 +51,7 @@
 git version git version 2.26.2.windows.1 hugo version Hugo Static Site Generator v0.72.0-8A7EF3CF windows/amd64 BuildDate: 2020-05-31T12:08:42Z 提示安装路径正确。
 安装好后，再在其它盘创建一个根站点，假如命名为###。
 hugo new site ### 然后在###文件中就会得到
-这么多的文件。
+这些文件。
 用cd命令打开themes文件，在hugo主题中找一个主题，比如我找的charaka-hugo-theme主题。在cmd中命令如下：
 cd themes git clone https://github.com/natarajmb/charaka-hugo-theme.git 下载好主题包后，把themes中的主题包文件复制覆盖到原###中的根文件中。
 config原配置文件如下：
