@@ -5,257 +5,188 @@
   <url>
     <loc>https://flight025.github.io/posts/creating-a-new-theme/</loc>
     <lastmod>2014-09-28T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://flight025.github.io/posts/migrate-from-jekyll/</loc>
     <lastmod>2014-03-10T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://flight025.github.io/tags/blog/</loc>
     <lastmod>2021-01-02T13:51:50+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://flight025.github.io/categories/</loc>
     <lastmod>2021-01-02T13:51:50+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://flight025.github.io/posts/cdn%E5%85%AC%E5%85%B1%E5%BA%93%E7%9A%84%E4%BF%AE%E6%94%B9/</loc>
     <lastmod>2021-01-02T13:51:50+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://flight025.github.io/tags/hugo/</loc>
     <lastmod>2021-01-02T13:51:50+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://flight025.github.io/posts/</loc>
     <lastmod>2021-01-02T13:51:50+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://flight025.github.io/tags/</loc>
     <lastmod>2021-01-02T13:51:50+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://flight025.github.io/categories/%E6%8A%80%E6%9C%AF/</loc>
     <lastmod>2021-01-02T13:51:50+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://flight025.github.io/</loc>
     <lastmod>2021-01-02T13:51:50+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://flight025.github.io/comment/</loc>
+    <lastmod>2021-01-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://flight025.github.io/posts/%E5%A6%82%E4%BD%95%E5%9C%A8%E4%B8%BB%E9%A2%98%E4%B8%AD%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E5%BD%92%E6%A1%A3/</loc>
     <lastmod>2020-07-04T20:14:29+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://flight025.github.io/categories/%E6%83%B3%E6%B3%95/</loc>
     <lastmod>2020-07-04T20:14:29+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://flight025.github.io/posts/hugo%E8%A7%A3%E5%86%B3%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90%E4%B8%8D%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/</loc>
     <lastmod>2020-06-25T12:28:22+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://flight025.github.io/posts/hugo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/</loc>
     <lastmod>2020-06-22T09:19:50+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://flight025.github.io/categories/%E5%8C%BB%E5%AD%A6%E6%A3%80%E9%AA%8C/</loc>
     <lastmod>2020-06-21T12:13:48+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://flight025.github.io/tags/%E6%8A%97%E5%87%9D%E5%89%82/</loc>
     <lastmod>2020-06-21T12:13:48+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://flight025.github.io/posts/%E6%8A%97%E5%87%9D%E5%89%82%E7%9A%84%E9%80%89%E6%8B%A9/</loc>
     <lastmod>2020-06-21T12:13:48+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://flight025.github.io/tags/%E8%A1%80%E6%B6%B2%E6%A0%B7%E6%9C%AC/</loc>
     <lastmod>2020-06-10T13:16:04+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://flight025.github.io/posts/%E8%A1%80%E6%B6%B2%E6%A0%B7%E6%9C%AC%E7%9A%84%E9%87%87%E9%9B%863/</loc>
     <lastmod>2020-06-10T13:16:04+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://flight025.github.io/posts/%E8%A1%80%E6%B6%B2%E6%A0%B7%E6%9C%AC%E7%9A%84%E9%87%87%E9%9B%862/</loc>
     <lastmod>2020-06-03T08:47:57+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://flight025.github.io/posts/%E8%A1%80%E6%B6%B2%E6%A0%B7%E6%9C%AC%E7%9A%84%E9%87%87%E9%9B%861/</loc>
     <lastmod>2020-06-02T15:06:24+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://flight025.github.io/posts/%E7%AC%AC%E4%B8%80%E7%AF%87%E4%B8%B4%E5%BA%8A%E6%A3%80%E9%AA%8C%E5%9F%BA%E7%A1%80/</loc>
     <lastmod>2020-05-30T10:28:50+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://flight025.github.io/tags/%E8%A1%80%E6%B6%B2%E7%94%9F%E7%90%86/</loc>
     <lastmod>2020-05-30T10:28:50+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://flight025.github.io/posts/%E4%B8%BA%E4%BB%80%E4%B9%88%E9%80%89%E6%8B%A9hugo%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/</loc>
     <lastmod>2020-05-29T19:33:55+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://flight025.github.io/posts/first/</loc>
     <lastmod>2020-05-29T19:24:15+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://flight025.github.io/posts/goisforlovers/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://flight025.github.io/categories/development/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://flight025.github.io/tags/development/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://flight025.github.io/posts/hugoisforlovers/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://flight025.github.io/tags/go/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://flight025.github.io/tags/golang/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://flight025.github.io/categories/golang/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://flight025.github.io/tags/templates/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://flight025.github.io/tags/themes/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://flight025.github.io/series/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://flight025.github.io/about/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://flight025.github.io/archives/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
   </url>
   
 </urlset>
