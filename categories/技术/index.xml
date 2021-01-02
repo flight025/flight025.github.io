@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>技术 on 阿波尔的博客</title>
+    <link>https://flight025.github.io/categories/%E6%8A%80%E6%9C%AF/</link>
+    <description>Recent content in 技术 on 阿波尔的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>&amp;copy; &lt;a href=&#34;https://flight025.github.io&#34;&gt;阿波尔的博客&lt;/a&gt; 2021</copyright>
+    <lastBuildDate>Sat, 02 Jan 2021 13:51:50 +0800</lastBuildDate><atom:link href="https://flight025.github.io/categories/%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CDN公共库的修改</title>
+      <link>https://flight025.github.io/posts/cdn%E5%85%AC%E5%85%B1%E5%BA%93%E7%9A%84%E4%BF%AE%E6%94%B9/</link>
+      <pubDate>Sat, 02 Jan 2021 13:51:50 +0800</pubDate>
+      
+      <guid>https://flight025.github.io/posts/cdn%E5%85%AC%E5%85%B1%E5%BA%93%E7%9A%84%E4%BF%AE%E6%94%B9/</guid>
+      <description>博客有一段时间加载很慢，打开chrome的控制台显示这样：
+网站有几处错误和警告，加载这些失效和错误资源限制了网页加载速度。
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;{{ $scratch.Get &amp;quot;baseURL&amp;quot; }}/css/styles.css&amp;quot;&amp;gt; &amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;https://use.fontawesome.com/releases/v5.2.0/css/all.css&amp;quot; integrity=&amp;quot;sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ&amp;quot; crossorigin=&amp;quot;anonymous&amp;quot;&amp;gt; &amp;lt;script src=&amp;quot;https://code.jquery.com/jquery-3.3.1.js&amp;quot; integrity=&amp;quot;sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=&amp;quot; crossorigin=&amp;quot;anonymous&amp;quot;&amp;gt;&amp;lt;/script&amp;gt; 这些是错误和失效的公共CDN，以及警告链接，一般这种情况是CDN公共库网站失效了，导致JS,CSS资源加载缓慢错误。这时就应该找一个加速CDN库了。这里我推荐奇虎360CDN公共库和jsdelivr公共库，找到相应的CSS.js格式换成这些公共CDN，但是JS,CSS资源在公共CDN安全容易受到攻击，这时需要SRI，SRI生成可以在SRI Hash Generator这网站生成相应的哈希函数。启用 SRI 策略后，浏览器会对资源进行 CORS 校验，这就要求被请求的资源必须同域，或配置 Access-Control-Allow-Origin 响应头和添加crossorigin=&amp;quot;anonymous&amp;quot; 这个属性。
+改好后上传GitHub，再打开网站控制台看看看。
+all.css静态文件由30s加载时间下降到22ms,大大的降低了网站加载速度，网页速度得到提升。
+ 这里我要感谢@怡红公子 提供公共CDN资源库。
+&amp;lt;a rel=&amp;#34;license&amp;#34; href=&amp;#34;http://creativecommons.org/licenses/by-nc-sa/4.0/&amp;#34;&amp;gt;&amp;lt;img alt=&amp;#34;知识共享许可协议&amp;#34; style=&amp;#34;border-width:0&amp;#34; src=&amp;#34;https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png&amp;#34; /&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;br /&amp;gt;本作品采用&amp;lt;a rel=&amp;#34;license&amp;#34; href=&amp;#34;http://creativecommons.org/licenses/by-nc-sa/4.0/&amp;#34;&amp;gt;知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议&amp;lt;/a&amp;gt;进行许可。 </description>
+    </item>
+    
+  </channel>
+</rss>

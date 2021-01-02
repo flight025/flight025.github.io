@@ -6,7 +6,7 @@
 
 
 
-<title>如何在主题中添加文章归档 | 阿波尔的博客</title>
+<title>CDN公共库的修改 | 阿波尔的博客</title>
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/flight025/flight025.github.io/css/styles.css" integrity="sha384-SHNaOAE1Ti26R4vBa5erPaKTnYC5yK4l3KMiVp3LBcQ0lFAOa+AXWOCGnstbfWmw" crossorigin="anonymous">
 
@@ -73,24 +73,25 @@ integrity="sha384-DtgO3znmI27ZsBJLf6ASdUIQnb+d8RKb/z/fYL/E0f2NY/8nvfDQmQ6NkXmuoe
   </div>
 
 <div class="container">
-  <h2 class="subtitle is-6">July 4, 2020</h2>
-  <h1 class="subtitle is-size-4-mobile is-size-3-desktop">如何在主题中添加文章归档</h1>
+  <h2 class="subtitle is-6">January 2, 2021</h2>
+  <h1 class="subtitle is-size-4-mobile is-size-3-desktop">CDN公共库的修改</h1>
   <div class="content">
-    <p>原来的主题模板是不带文章归档的，但是经过一番折腾。终于给主题添加了归档。😜
-现在就说说是如何添加归档的。</p>
-<h3 id="1config配置">1.config配置</h3>
-<p>config可以配置文件图标，在config中添加配置如下：</p>
-<p><img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/图片/QQ截图20200704205259.png" style="zoom:50%;" /></p>
-<p>打开临时预览网页http://localhost:1313/查看，可以看到归档图标，但是点击没有反应。。。</p>
-<h3 id="2archives文件的创建和html文件格式">2.archives文件的创建和html文件格式</h3>
-<p>起先，我想到了关联about的_index.md文件,既然about是&quot;关于&quot;链接的来显示页面的。那我何不创建一个关联archives的_index.md文件呢。于是我创建了index.md文件。用typora写了archives页面归档链接，看看能不能显示，输入http://localhost:1313/查看，还是不能显示。我以为.md上传github就可以显示为html。看来不是这么回事。。。</p>
-<p>折腾了一会儿。在layouts文件夹中找到了about的html文件，似乎是要添加html文件。emmm&hellip;(⊙﹏⊙)，于是我把archives.md用typora转换成html文件，放在了layouts文件夹中，再打开http://localhost:1313临时查看，发现归档文章可以访问了。确定了归档.md的确需要转换成html文件放在layouts文件夹中才能访问。</p>
-<p><img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/图片/批注 2020-07-04 212557.png" style="zoom:50%;" /></p>
-<h3 id="3后续注意及存在问题">3.后续注意及存在问题</h3>
-<p>注意：1.转换成html文件后，在html用partial引用页面.
-存在的问题：1.归档文章必须得自己添加超链接，不能自动更新，很麻烦2.主题页面背景颜色和归档文章颜色不一致。</p>
+    <p>博客有一段时间加载很慢，打开chrome的控制台显示这样：</p>
+<p><img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20210102140530995.png" alt="image-20210102140530995"></p>
+<p><img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20210102145113671.png" alt="image-20210102145113671"></p>
+<p>网站有几处错误和警告，加载这些失效和错误资源限制了网页加载速度。</p>
+<pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;{{ $scratch.Get &quot;baseURL&quot; }}/css/styles.css&quot;&gt;
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://use.fontawesome.com/releases/v5.2.0/css/all.css&quot; 
+integrity=&quot;sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ&quot; crossorigin=&quot;anonymous&quot;&gt;
+&lt;script src=&quot;https://code.jquery.com/jquery-3.3.1.js&quot; integrity=&quot;sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+</code></pre><p>这些是错误和失效的公共CDN，以及警告链接，一般这种情况是CDN公共库网站失效了，导致JS,CSS资源加载缓慢错误。这时就应该找一个加速CDN库了。这里我推荐<a href="https://cdn.baomitu.com/">奇虎360CDN公共库</a>和<a href="https://www.jsdelivr.com/">jsdelivr公共库</a>，找到相应的CSS.js格式换成这些公共CDN，但是JS,CSS资源在公共CDN安全容易受到攻击，这时需要SRI，SRI生成可以在<a href="https://www.srihash.org/">SRI Hash Generator</a>这网站生成相应的哈希函数。启用 SRI 策略后，浏览器会对资源进行 CORS 校验，这就要求被请求的资源必须同域，或配置 Access-Control-Allow-Origin 响应头和添加<code>crossorigin=&quot;anonymous&quot;</code> 这个属性。</p>
+<p>改好后上传GitHub，再打开网站控制台看看看。</p>
+<p><img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20210102145007651.png" alt=""></p>
+<p>all.css静态文件由30s加载时间下降到22ms,大大的降低了网站加载速度，网页速度得到提升。</p>
 <hr>
-<p><img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/%E5%9B%BE%E7%89%87/5476b69c15c34.jpg" alt="bali"></p>
+<p>这里我要感谢@怡红公子 提供公共CDN资源库。</p>
+<p><img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/unnamed%20%E7%BB%8F%E6%B5%8E.jpg" alt="瑞士阿尔卑斯山"></p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;license&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;http://creativecommons.org/licenses/by-nc-sa/4.0/&#34;</span>&gt;&lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">alt</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;知识共享许可协议&#34;</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;border-width:0&#34;</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png&#34;</span> /&gt;&lt;/<span style="color:#f92672">a</span>&gt;&lt;<span style="color:#f92672">br</span> /&gt;本作品采用&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;license&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;http://creativecommons.org/licenses/by-nc-sa/4.0/&#34;</span>&gt;知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议&lt;/<span style="color:#f92672">a</span>&gt;进行许可。
 </code></pre></div>
   </div>
@@ -109,7 +110,7 @@ integrity="sha384-DtgO3znmI27ZsBJLf6ASdUIQnb+d8RKb/z/fYL/E0f2NY/8nvfDQmQ6NkXmuoe
 </div>
 
 
-  <span id="/posts/%E5%A6%82%E4%BD%95%E5%9C%A8%E4%B8%BB%E9%A2%98%E4%B8%AD%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E5%BD%92%E6%A1%A3/" class="leancloud_visitors" data-flag-title="如何在主题中添加文章归档">
+  <span id="/posts/cdn%E5%85%AC%E5%85%B1%E5%BA%93%E7%9A%84%E4%BF%AE%E6%94%B9/" class="leancloud_visitors" data-flag-title="CDN公共库的修改">
     <span class="post-meta-item-text">文章阅读量 </span>
     <span class="leancloud-visitors-count">1000000</span>
     <p></p>
