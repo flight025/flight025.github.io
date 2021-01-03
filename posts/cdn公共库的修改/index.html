@@ -96,7 +96,7 @@ integrity=&quot;sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54
 </code></pre><p>这些是错误和失效的公共CDN，以及警告链接，一般这种情况是CDN公共库网站失效了，导致JS,CSS资源加载缓慢错误。这时就应该找一个加速CDN库了。这里我推荐<a href="https://cdn.baomitu.com/">奇虎360CDN公共库</a>和<a href="https://www.jsdelivr.com/">jsdelivr公共库</a>，找到相应的CSS.js格式换成这些公共CDN，但是JS,CSS资源在公共CDN安全容易受到攻击，这时需要SRI，SRI生成可以在<a href="https://www.srihash.org/">SRI Hash Generator</a>这网站生成相应的哈希函数。启用 SRI 策略后，浏览器会对资源进行 CORS 校验，这就要求被请求的资源必须同域，或配置 Access-Control-Allow-Origin 响应头和添加<code>crossorigin=&quot;anonymous&quot;</code> 这个属性。</p>
 <p>改好后上传GitHub，再打开网站控制台看看看。</p>
 <p><img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20210102145007651.png" alt=""></p>
-<p>all.css静态文件由30s加载时间下降到22ms,大大的降低了网站加载时间，网页速度得到提升。</p>
+<p>all.css静态文件由30s加载时间下降到13ms,大大的降低了网站加载时间，网页速度得到提升。</p>
 <hr>
 <p>这里我要感谢@怡红公子 提供公共CDN资源库。</p>
 <p><img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/santorini-2707034_1920.jpg" alt="santorini"></p>
