@@ -38,8 +38,8 @@ We&amp;rsquo;ll start with creating a new site with a very basic template.</desc
       <description>博客有一段时间加载很慢，打开chrome的控制台显示这样：
 网站有几处错误和警告，加载这些失效和错误资源限制了网页加载速度。
 &amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;{{ $scratch.Get &amp;quot;baseURL&amp;quot; }}/css/styles.css&amp;quot;&amp;gt; &amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;https://use.fontawesome.com/releases/v5.2.0/css/all.css&amp;quot; integrity=&amp;quot;sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ&amp;quot; crossorigin=&amp;quot;anonymous&amp;quot;&amp;gt; &amp;lt;script src=&amp;quot;https://code.jquery.com/jquery-3.3.1.js&amp;quot; integrity=&amp;quot;sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=&amp;quot; crossorigin=&amp;quot;anonymous&amp;quot;&amp;gt;&amp;lt;/script&amp;gt; 这些是错误和失效的公共CDN，以及警告链接，一般这种情况是CDN公共库网站失效了，导致JS,CSS资源加载缓慢错误。这时就应该找一个加速CDN库了。这里我推荐奇虎360CDN公共库和jsdelivr公共库，找到相应的CSS.js格式换成这些公共CDN，但是JS,CSS资源在公共CDN安全容易受到攻击，这时需要SRI，SRI生成可以在SRI Hash Generator这网站生成相应的哈希函数。启用 SRI 策略后，浏览器会对资源进行 CORS 校验，这就要求被请求的资源必须同域，或配置 Access-Control-Allow-Origin 响应头和添加crossorigin=&amp;quot;anonymous&amp;quot; 这个属性。
-改好后上传GitHub，再打开网站控制台看看看。
-all.css静态文件由30s加载时间下降到22ms,大大的降低了网站加载时间，网页速度得到提升。
+改好后上传GitHub，再打开网站控制台看看。
+all.css静态文件由30s加载时间下降到13ms,大大的减少了网站加载时间，网页速度得到提升。
  这里我要感谢@怡红公子 提供公共CDN资源库。
 &amp;lt;a rel=&amp;#34;license&amp;#34; href=&amp;#34;http://creativecommons.org/licenses/by-nc-sa/4.0/&amp;#34;&amp;gt;&amp;lt;img alt=&amp;#34;知识共享许可协议&amp;#34; style=&amp;#34;border-width:0&amp;#34; src=&amp;#34;https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png&amp;#34; /&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;br /&amp;gt;本作品采用&amp;lt;a rel=&amp;#34;license&amp;#34; href=&amp;#34;http://creativecommons.org/licenses/by-nc-sa/4.0/&amp;#34;&amp;gt;知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议&amp;lt;/a&amp;gt;进行许可。 </description>
     </item>
@@ -156,10 +156,9 @@ baseurl = &amp;quot;https://example.com&amp;quot;（填你的github博客域名�
       
       <guid>https://flight025.github.io/posts/%E7%AC%AC%E4%B8%80%E7%AF%87%E4%B8%B4%E5%BA%8A%E6%A3%80%E9%AA%8C%E5%9F%BA%E7%A1%80/</guid>
       <description>第一篇 临床检验基础 第一章 血液样本采集和血涂片制备 一.血液生理概要 （一）血液组成 血液由血细胞（红细胞、白细胞、血小板）和血浆组成。离体后的血液自然凝固,分离出来的淡黄色透明液体称为血清。血液加抗凝剂后分离出来的淡黄色液体称为血浆。血清与血浆差别是：血清缺少某些凝固因子,如凝血因子I（纤维蛋白原）、II（凝血酶原）、V、VIII等。
-全血适用于临床血液学检查,如血细胞计数、分类和形态学检查等。血浆适用于血浆生理性和病理性化学成分的测定,特别是内分泌激素测定;特别是内分泌激素测定,特别是内分泌激素测定;血浆除钙离子外,含有其他全部凝血因子,也适用于血栓与止血的检查。血清适用于临床化学和临床免疫学检查。
+全血适用于临床血液学检查,如血细胞计数、分类和形态学检查等。血浆适用于血浆生理性和病理性化学成分的测定,特别是内分泌激素测定;血浆除钙离子外,含有其他全部凝血因子,也适用于血栓与止血的检查。血清适用于临床化学和临床免疫学检查。
 （二）血液理化性质 1.血量 正常人血量约为（70±10）ml/kg体重,成人约4~5L,约占体重的6%~8%,其中血浆占55%,血细胞占45%。小儿血量与体重之比略高于成人,男性比女性血量稍多,但女性妊娠期间血量可增加23%~25%。
-2.颜色
-血液的红色来自红细胞内血红蛋白。动脉血氧合血红蛋白含量较高。呈鲜红色;静脉血还原血红蛋白含量高,呈暗红色。严重贫血者血液红色变浅。严重一氧化碳中毒或氰化物中毒者血液呈樱红色。
+2.颜色 血液的红色来自红细胞内血红蛋白。动脉血氧合血红蛋白含量较高。呈鲜红色;静脉血还原血红蛋白含量高,呈暗红色。严重贫血者血液红色变浅。严重一氧化碳中毒或氰化物中毒者血液呈樱红色。
 3.酸碱度 正常人血液PH 7.35~7.45,动脉血PH 7.35。
 4.比密和渗透力量 （1）血液比密 正常男性约为1.055~1.063,女性约为1.051~1.060,相对黏度为4~5;血浆比密约为1.025~1.030;血细胞比密约为1.090。血液比密与红细胞含量、红细胞内红蛋白含量有关。血浆比密和血浆内蛋白浓度有关。
 （2）血浆渗透量 正常人约为290~310mOsm/（kg.H2O)。
