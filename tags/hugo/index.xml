@@ -34,7 +34,8 @@ all.css静态文件由30s加载时间下降到13ms,大大的减少了网站加�
 打开临时预览网页http://localhost:1313/查看，可以看到归档图标，但是点击没有反应。。。
 2.archives文件的创建和html文件格式 起先，我想到了关联about的_index.md文件,既然about是&amp;quot;关于&amp;quot;链接的来显示页面的。那我何不创建一个关联archives的_index.md文件呢。于是我创建了index.md文件。用typora写了archives页面归档链接，看看能不能显示，输入http://localhost:1313/查看，还是不能显示。我以为.md上传github就可以显示为html。看来不是这么回事。。。
 折腾了一会儿。在layouts文件夹中找到了about的html文件，似乎是要添加html文件。emmm&amp;hellip;(⊙﹏⊙)，于是我把archives.md用typora转换成html文件，放在了layouts文件夹中，再打开http://localhost:1313临时查看，发现归档文章可以访问了。确定了归档.md的确需要转换成html文件放在layouts文件夹中才能访问。
-3.后续注意及存在问题 注意：1.转换成html文件后，在html用partial引用页面. 存在的问题：1.归档文章必须得自己添加超链接，不能自动更新，很麻烦2.主题页面背景颜色和归档文章颜色不一致。
+3.后续注意及存在问题 ​ 注意：1.转换成html文件后，在html用partial引用页面. 存在的问题：1.归档文章必须得自己添加超链接，不能自动更新，很麻烦2.主题页面背景颜色和归档文章颜色不一致。
+2021.1.26号更新。基本上上面的方法是很麻烦的。现在我找了更好的归档办法，不再需要自己手动更新了。以前我更新归档是通过添加文章超链接archives的.md文件再转换成为html格式，来实现归档的。但是现在发现archives.html可以引用single来添加文章日期归档时间代码来实现，只要自己每次更新.md文章，文章便会自动更新在归档年月日中。这里我参考了这篇文章：神秘极客的博文《为hugo添加归档页面》。
  &amp;lt;a rel=&amp;#34;license&amp;#34; href=&amp;#34;http://creativecommons.org/licenses/by-nc-sa/4.0/&amp;#34;&amp;gt;&amp;lt;img alt=&amp;#34;知识共享许可协议&amp;#34; style=&amp;#34;border-width:0&amp;#34; src=&amp;#34;https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png&amp;#34; /&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;br /&amp;gt;本作品采用&amp;lt;a rel=&amp;#34;license&amp;#34; href=&amp;#34;http://creativecommons.org/licenses/by-nc-sa/4.0/&amp;#34;&amp;gt;知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议&amp;lt;/a&amp;gt;进行许可。 </description>
     </item>
     
