@@ -6,16 +6,14 @@
     <description>Recent content in Comments on 阿波尔的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <copyright>&amp;copy; &lt;a href=&#34;https://flight025.github.io&#34;&gt;阿波尔的博客&lt;/a&gt; 2021</copyright>
-    <lastBuildDate>Tue, 26 Jan 2021 13:25:40 +0800</lastBuildDate><atom:link href="https://flight025.github.io/comments/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>&amp;copy; &lt;a href=&#34;https://flight025.github.io&#34;&gt;阿波尔的博客&lt;/a&gt; 2021</copyright><atom:link href="https://flight025.github.io/comments/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Comments</title>
-      <link>https://flight025.github.io/comments/comments/</link>
-      <pubDate>Tue, 26 Jan 2021 13:25:40 +0800</pubDate>
+      <title>想话</title>
+      <link>https://flight025.github.io/comments/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://flight025.github.io/comments/comments/</guid>
-      <description>想话 2021.1.2 人生就是这样，你越想得多，就越不会行动，那么就越不容易得到你想要得到的。
-2021.1.26 我想了想，明天吧，也许后天。一个人再也不能回头了，那就永不回头。</description>
+      <guid>https://flight025.github.io/comments/</guid>
+      <description>历史文章按照年月归档.</description>
     </item>
     
   </channel>
