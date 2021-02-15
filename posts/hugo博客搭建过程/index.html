@@ -19,6 +19,16 @@ window.onload = function() {
 }
 </script>
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FFW576XTMR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FFW576XTMR');
+</script>
+
 <title>Hugo博客搭建过程 | 阿波尔的博客</title>
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/flight025/flight025.github.io/css/styles.css">
@@ -178,7 +188,7 @@ googleAnalytics = &quot;&quot;(谷歌分析)
 <h2 id="3文章创建和github设置">3.文章创建和github设置</h2>
 <p>你要创建一篇新文章，就得在cmd中命令。</p>
 <pre><code>hugo new post/XXXX.md
-</code></pre><p>由于我的文章创建是在posts，故而有所不同。比如我现在创建的新文章</p>
+</code></pre><p>由于我的文章创建是在posts，故而有所不同,注意文章是yaml格式。比如我现在创建的新文章</p>
 <pre><code>title: &quot;Hugo博客搭建过程&quot;（博客文章名称）
 date: 2020-06-22T09:19:50+08:00（时间）
 draft: false （设为false可被编译为HTML，true供本地修改）
