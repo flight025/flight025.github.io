@@ -21,7 +21,7 @@
 折腾了一会儿。在layouts文件夹中找到了about的html文件，似乎是要添加html文件。emmm&amp;hellip;(⊙﹏⊙)，于是我把archives.md用typora转换成html文件，放在了layouts文件夹中，再打开http://localhost:1313临时查看，发现归档文章可以访问了。确定了归档.md的确需要转换成html文件放在layouts文件夹中才能访问。
 3.后续注意及存在问题 ​ 注意：1.转换成html文件后，在html用partial引用页面. 存在的问题：1.归档文章必须得自己添加超链接，不能自动更新，很麻烦2.主题页面背景颜色和归档文章颜色不一致。
 2021.1.26号更新。基本上上面的方法是很麻烦的。现在我找了更好的归档办法，不再需要自己手动更新了。以前我更新归档是通过添加文章超链接archives的.md文件再转换成为html格式，来实现归档的。但是现在发现archives.html可以引用single来添加文章日期归档时间代码来实现，只要自己每次更新.md文章，文章便会自动更新在归档年月日中。这里我参考了这篇文章：神秘极客的博文《为hugo添加归档页面》。
- &amp;lt;a rel=&amp;#34;license&amp;#34; href=&amp;#34;http://creativecommons.org/licenses/by-nc-sa/4.0/&amp;#34;&amp;gt;&amp;lt;img alt=&amp;#34;知识共享许可协议&amp;#34; style=&amp;#34;border-width:0&amp;#34; src=&amp;#34;https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png&amp;#34; /&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;br /&amp;gt;本作品采用&amp;lt;a rel=&amp;#34;license&amp;#34; href=&amp;#34;http://creativecommons.org/licenses/by-nc-sa/4.0/&amp;#34;&amp;gt;知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议&amp;lt;/a&amp;gt;进行许可。 </description>
+ </description>
     </item>
     
     <item>
@@ -35,8 +35,7 @@
 ​ 在hugo论坛页面我到了原因，原来在hugo 0.60.0的版本中，为了安全，html文件改用Goldmark。 在页面中，解决办法也给出了，即开启不安全模式，在config.toml站点配置文件中，添加这二行代码：
 [markup.goldmark.renderer] unsafe= true 完成打开http://localhost:1313/预览页面，此时就可以看到在原来的位置添加的网易云音乐了。
 这样就解决了网易云音乐不显示的问题😀。 还有， 今天端午节，祝大家节日快乐。💖😀
- 网页参考：1.hugo论坛解决html文件不显示解决办法
-&amp;lt;a rel=&amp;#34;license&amp;#34; href=&amp;#34;http://creativecommons.org/licenses/by-nc-sa/4.0/&amp;#34;&amp;gt;&amp;lt;img alt=&amp;#34;知识共享许可协议&amp;#34; style=&amp;#34;border-width:0&amp;#34; src=&amp;#34;https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png&amp;#34; /&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;br /&amp;gt;本作品采用&amp;lt;a rel=&amp;#34;license&amp;#34; href=&amp;#34;http://creativecommons.org/licenses/by-nc-sa/4.0/&amp;#34;&amp;gt;知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议&amp;lt;/a&amp;gt;进行许可。 </description>
+ 网页参考：1.hugo论坛解决html文件不显示解决办法</description>
     </item>
     
     <item>
@@ -65,8 +64,7 @@ baseurl = &amp;quot;https://example.com&amp;quot;（填你的github博客域名�
       <pubDate>Fri, 29 May 2020 19:33:55 +0800</pubDate>
       
       <guid>https://flight025.github.io/posts/%E4%B8%BA%E4%BB%80%E4%B9%88%E9%80%89%E6%8B%A9hugo%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/</guid>
-      <description>为什么我会选择hugo写文章，主要原因是因为部署快速，没有那么多的复杂程序 1.简单明了 2.采用markdown语法写作 3.静态博客没有冗长的插件，打开网页比较快。 以后优点再看吧。
-&amp;lt;a rel=&amp;#34;license&amp;#34; href=&amp;#34;http://creativecommons.org/licenses/by-nc-sa/4.0/&amp;#34;&amp;gt;&amp;lt;img alt=&amp;#34;知识共享许可协议&amp;#34; style=&amp;#34;border-width:0&amp;#34; src=&amp;#34;https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png&amp;#34; /&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;br /&amp;gt;本作品采用&amp;lt;a rel=&amp;#34;license&amp;#34; href=&amp;#34;http://creativecommons.org/licenses/by-nc-sa/4.0/&amp;#34;&amp;gt;知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议&amp;lt;/a&amp;gt;进行许可。 </description>
+      <description>为什么我会选择hugo写文章，主要原因是因为部署快速，没有那么多的复杂程序 1.简单明了 2.采用markdown语法写作 3.静态博客没有冗长的插件，打开网页比较快。 以后优点再看吧。</description>
     </item>
     
   </channel>

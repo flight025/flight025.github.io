@@ -37,7 +37,7 @@ We&amp;rsquo;ll start with creating a new site with a very basic template.</desc
       <guid>https://flight025.github.io/posts/hugo%E6%B7%BB%E5%8A%A0%E7%9F%AD%E4%BB%A3%E7%A0%81/</guid>
       <description>写在之前， hugo shortcodes中文意译即为雨果博客短代码，是一种先配置文件，通过在文章中插入短代码模式，来实现纯文字，歌曲，文章，个人社交文字转发，以及视频，播客等在个人博客上显示的一种方式。
 以下几个短代码的应用 上次我在“Hugo解决网易云音乐不显示问题”这篇博客中说了，开启HTML外链引用必须先添加：
-[markup.goldmark.renderer] unsafe= true 然后自己再在网易云音乐引入  iframe实现在hugo博客上显示音乐。但是现在，有一种更好的方式，hugo提倡引入外链可以用短代码。
+1.[markup.goldmark.renderer] 2.unsafe= true 然后自己再在网易云音乐引入  iframe实现在hugo博客上显示音乐。但是现在，有一种更好的方式，hugo提倡引入外链可以用短代码。
 方式为：新建/layouts/shortcodes/music.html，在其中引入：
 {{- $scratch := .Page.Scratch.Get &amp;#34;scratch&amp;#34; -}} &amp;lt;!-- require APlayer --&amp;gt; &amp;lt;link rel=&amp;#34;stylesheet&amp;#34; href=&amp;#34;https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css&amp;#34;&amp;gt; &amp;lt;style type=&amp;#34;text/css&amp;#34;&amp;gt;.dark-theme .aplayer{background:#212121}.dark-theme .aplayer.aplayer-withlist .aplayer-info{border-bottom-color:#5c5c5c}.dark-theme .aplayer.aplayer-fixed .aplayer-list{border-color:#5c5c5c}.dark-theme .aplayer .aplayer-body{background-color:#212121}.dark-theme .aplayer .aplayer-info{border-top-color:#212121}.dark-theme .aplayer .aplayer-info .aplayer-music .aplayer-title{color:#fff}.dark-theme .aplayer .aplayer-info .aplayer-music .aplayer-author{color:#fff}.dark-theme .aplayer .aplayer-info .aplayer-controller .aplayer-time{color:#eee}.dark-theme .aplayer .aplayer-info .aplayer-controller .aplayer-time .aplayer-icon path{fill:#eee}.dark-theme .aplayer .aplayer-list{background-color:#212121}.dark-theme .aplayer .aplayer-list::-webkit-scrollbar-thumb{background-color:#999}.dark-theme .aplayer .aplayer-list::-webkit-scrollbar-thumb:hover{background-color:#bbb}.dark-theme .aplayer .aplayer-list li{color:#fff;border-top-color:#666}.dark-theme .aplayer .aplayer-list li:hover{background:#4e4e4e}.dark-theme .aplayer .aplayer-list li.aplayer-list-light{background:#6c6c6c}.dark-theme .aplayer .</description>
     </item>
@@ -73,8 +73,7 @@ We&amp;rsquo;ll start with creating a new site with a very basic template.</desc
 &amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;{{ $scratch.Get &amp;quot;baseURL&amp;quot; }}/css/styles.css&amp;quot;&amp;gt; &amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;https://use.fontawesome.com/releases/v5.2.0/css/all.css&amp;quot; integrity=&amp;quot;sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ&amp;quot; crossorigin=&amp;quot;anonymous&amp;quot;&amp;gt; &amp;lt;script src=&amp;quot;https://code.jquery.com/jquery-3.3.1.js&amp;quot; integrity=&amp;quot;sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=&amp;quot; crossorigin=&amp;quot;anonymous&amp;quot;&amp;gt;&amp;lt;/script&amp;gt; 这些是错误和失效的公共CDN，以及警告链接，一般这种情况是CDN公共库网站失效了，导致JS,CSS资源加载缓慢错误。这时就应该找一个加速CDN库了。这里我推荐奇虎360CDN公共库和jsdelivr公共库，找到相应的CSS.js格式换成这些公共CDN，但是JS,CSS资源在公共CDN安全容易受到攻击，这时需要SRI，SRI生成可以在SRI Hash Generator这网站生成相应的哈希函数。启用 SRI 策略后，浏览器会对资源进行 CORS 校验，这就要求被请求的资源必须同域，或配置 Access-Control-Allow-Origin 响应头和添加crossorigin=&amp;quot;anonymous&amp;quot; 这个属性。
 改好后上传GitHub，再打开网站控制台看看。
 all.css静态文件由30s加载时间下降到13ms,大大的减少了网站加载时间，网页速度得到提升。
- 这里我要感谢@怡红公子 提供公共CDN资源库。
-&amp;lt;a rel=&amp;#34;license&amp;#34; href=&amp;#34;http://creativecommons.org/licenses/by-nc-sa/4.0/&amp;#34;&amp;gt;&amp;lt;img alt=&amp;#34;知识共享许可协议&amp;#34; style=&amp;#34;border-width:0&amp;#34; src=&amp;#34;https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png&amp;#34; /&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;br /&amp;gt;本作品采用&amp;lt;a rel=&amp;#34;license&amp;#34; href=&amp;#34;http://creativecommons.org/licenses/by-nc-sa/4.0/&amp;#34;&amp;gt;知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议&amp;lt;/a&amp;gt;进行许可。 </description>
+ 这里我要感谢@怡红公子 提供公共CDN资源库。</description>
     </item>
     
     <item>
@@ -90,7 +89,7 @@ all.css静态文件由30s加载时间下降到13ms,大大的减少了网站加�
 折腾了一会儿。在layouts文件夹中找到了about的html文件，似乎是要添加html文件。emmm&amp;hellip;(⊙﹏⊙)，于是我把archives.md用typora转换成html文件，放在了layouts文件夹中，再打开http://localhost:1313临时查看，发现归档文章可以访问了。确定了归档.md的确需要转换成html文件放在layouts文件夹中才能访问。
 3.后续注意及存在问题 ​ 注意：1.转换成html文件后，在html用partial引用页面. 存在的问题：1.归档文章必须得自己添加超链接，不能自动更新，很麻烦2.主题页面背景颜色和归档文章颜色不一致。
 2021.1.26号更新。基本上上面的方法是很麻烦的。现在我找了更好的归档办法，不再需要自己手动更新了。以前我更新归档是通过添加文章超链接archives的.md文件再转换成为html格式，来实现归档的。但是现在发现archives.html可以引用single来添加文章日期归档时间代码来实现，只要自己每次更新.md文章，文章便会自动更新在归档年月日中。这里我参考了这篇文章：神秘极客的博文《为hugo添加归档页面》。
- &amp;lt;a rel=&amp;#34;license&amp;#34; href=&amp;#34;http://creativecommons.org/licenses/by-nc-sa/4.0/&amp;#34;&amp;gt;&amp;lt;img alt=&amp;#34;知识共享许可协议&amp;#34; style=&amp;#34;border-width:0&amp;#34; src=&amp;#34;https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png&amp;#34; /&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;br /&amp;gt;本作品采用&amp;lt;a rel=&amp;#34;license&amp;#34; href=&amp;#34;http://creativecommons.org/licenses/by-nc-sa/4.0/&amp;#34;&amp;gt;知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议&amp;lt;/a&amp;gt;进行许可。 </description>
+ </description>
     </item>
     
     <item>
@@ -104,8 +103,7 @@ all.css静态文件由30s加载时间下降到13ms,大大的减少了网站加�
 ​ 在hugo论坛页面我到了原因，原来在hugo 0.60.0的版本中，为了安全，html文件改用Goldmark。 在页面中，解决办法也给出了，即开启不安全模式，在config.toml站点配置文件中，添加这二行代码：
 [markup.goldmark.renderer] unsafe= true 完成打开http://localhost:1313/预览页面，此时就可以看到在原来的位置添加的网易云音乐了。
 这样就解决了网易云音乐不显示的问题😀。 还有， 今天端午节，祝大家节日快乐。💖😀
- 网页参考：1.hugo论坛解决html文件不显示解决办法
-&amp;lt;a rel=&amp;#34;license&amp;#34; href=&amp;#34;http://creativecommons.org/licenses/by-nc-sa/4.0/&amp;#34;&amp;gt;&amp;lt;img alt=&amp;#34;知识共享许可协议&amp;#34; style=&amp;#34;border-width:0&amp;#34; src=&amp;#34;https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png&amp;#34; /&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;br /&amp;gt;本作品采用&amp;lt;a rel=&amp;#34;license&amp;#34; href=&amp;#34;http://creativecommons.org/licenses/by-nc-sa/4.0/&amp;#34;&amp;gt;知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议&amp;lt;/a&amp;gt;进行许可。 </description>
+ 网页参考：1.hugo论坛解决html文件不显示解决办法</description>
     </item>
     
     <item>
@@ -139,8 +137,7 @@ baseurl = &amp;quot;https://example.com&amp;quot;（填你的github博客域名�
 2.草酸盐 常用有草酸钠、草酸钾、草酸铵，溶解后解离的草酸根离子能与样本中钙离子形成草酸钙沉淀，使Ca²⁺失去凝血作用，阻止血液凝固。 草酸盐优点是溶解度好、价廉。草酸盐对凝血因子Ⅴ的保护作用差，影响凝血酶原时间测定，而且草酸盐与钙结合后形成的沉淀物，影响自动凝血仪检测结果，因此，草酸盐不适用于凝血检查。 双草酸盐抗凝剂：草酸钾可使红细胞体积缩小，草酸钠则可使红细胞胀大，两者按适当比例混合，恰好不影响红细胞形态和体积，可用于血细胞比容、CBC、网织红细胞计数等项目检查，若单用草酸钾或草酸钠作为抗凝剂，与肝素为抗凝剂测定的血细胞比容比较，测定结果可减低8%~13%。双草酸盐抗凝剂可使血小板凝集、影响白细胞形态，不适用于血小板计数、白细胞分类计数。
 3.肝素 加强抗凝血酶（AT）灭活丝氨酸蛋白酶作用，阻止凝血酶的形成，并阻止血小板聚集等作用，从而阻止血液凝固。 肝素广泛存在于肺、肝、脾等几乎所有组织和血管周围肥大细胞和嗜碱性粒中，带有较多负电荷。肝素具有抗凝力强、不影响血细胞体积、不易溶血等优点，绝大多数检查都可用肝素作为抗凝剂，是红细胞渗透脆性试验的理想抗凝剂。但肝素可引起白细胞聚集，瑞氏染色后产生蓝色背景，不适用于CBC、细胞形态学检查。每毫升血液肝素用量为（15±2.5）U，多为肝素钠盐或钾盐。
 4.枸橼酸钠 常用有枸橼酸钠，能与血液中钙离子结合形成螯合物，阻止血液凝固。枸橼酸盐的溶解度低，抗凝力不如上述抗凝剂。枸橼酸钠与血液的抗凝比例为1：9或1：4.适用于红细胞沉降率、凝血检查，是输血保养液的成分。
- 网页参考：1.维基百科抗凝剂2.检验医学网：遇见EDTA依赖的血小板聚集怎么办？
-&amp;lt;a rel=&amp;#34;license&amp;#34; href=&amp;#34;http://creativecommons.org/licenses/by-nc-sa/4.0/&amp;#34;&amp;gt;&amp;lt;img alt=&amp;#34;知识共享许可协议&amp;#34; style=&amp;#34;border-width:0&amp;#34; src=&amp;#34;https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png&amp;#34; /&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;br /&amp;gt;本作品采用&amp;lt;a rel=&amp;#34;license&amp;#34; href=&amp;#34;http://creativecommons.org/licenses/by-nc-sa/4.0/&amp;#34;&amp;gt;知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议&amp;lt;/a&amp;gt;进行许可。 </description>
+ 网页参考：1.维基百科抗凝剂2.检验医学网：遇见EDTA依赖的血小板聚集怎么办？</description>
     </item>
     
     <item>
@@ -165,8 +162,7 @@ baseurl = &amp;quot;https://example.com&amp;quot;（填你的github博客域名�
       <description>（二）皮肤采血法 1.概叙 曾称为毛细血管采血法，是采集微动脉、微静脉和毛细血管的混合血，同时含细胞间质和细胞内液。通常，选择耳垂或手指部位。耳垂采血痛感较轻。操作方便，但血液循环较差，受气温影响较大，检查结果不够恒定（如红细胞、白细胞、血红蛋白和血细胞比容等测定结果比手指血或静脉血高），一般情况下不宜使用。手指采血操作方便，检查结果比较恒定，WHO推荐采集左手无名指端内侧血液，婴幼儿可采集大拇指或足跟内侧缘血液，严重烧伤患者，可选择皮肤完整处采血。 目前可用激光无痛采指血仪采血，原理是仪器中激光发射器发出一串单脉冲激光束，在一次性耗材（镜头片）的配合下，细微的光束打在手指上，在很短时间内使皮肤组织溶解、挥发，出现一个小孔，而打孔后的残留物或等离子状态，吸附在镜头表面。仪器采血有效避免了皮肤浅层组织液、细胞外液等渗入血液，确保检测结果准确，同时也可消除交叉感染，达到无痛采血的效果。
 2.操作方法 (1)准备：取合适试管，加适量稀释液。取微量吸管和乳胶吸头相连，检查连接处是否漏气，或取一次性微量吸管备用。 (2)按摩：轻轻按摩左手中指或无名指指端内侧，使局部组织自然充血。 (3)消毒：用75%乙醇棉签擦去第1滴血。 (4)针刺：用左手拇指和食指固定采血部位使皮肤和皮下组织绷紧，右手持一次性消毒采血针自指端腹内侧刺入，深度2~3mm,立即出针。 (5)拭血：待血液自然流出后，用无菌干棉球擦去第一滴血。 (6)吸血：用一次性微量吸管吸血，然后用无菌干棉球压住伤口止血。如血流不畅，可用左手自采血部位远端向指端稍施压使血液流出。 (7)稀释：用无菌干棉球擦净微量吸管外部，将吸管伸入装有稀释液的试管底部，慢慢排出吸管内的血液，并用上清液冲洗管内余血2~3次，最后将试管内的液体混匀。
 3.注意事项 (1)所选择采血部位的皮肤应完整，无烧伤、冻疮、发绀、水肿或炎症等。除特殊情况外，不要耳垂采血。 (2)本试验具有创伤性，必须严格按无菌技术操作，防止采血部位感染，做到一人一针一管，避免交叉感染，最好用一次性器材。 (3)皮肤消毒后，应待乙醇挥发后采血，否则流出的血液扩散而不成滴。 (4)因第1滴血混有组织液，应擦去。如血流不畅切勿用力挤压，以免造成组织液混入，影响结果的准确性。 (5)进行多项检查时，采血的顺序依次为血小板计数、红细胞计数、血红蛋白测定、白细胞计数、血型鉴定等。
- 网页参考：1皮肤采血法操作规程和注意事项 2“扎手指”时间久了，你遇到过这样的事吗？
-&amp;lt;a rel=&amp;#34;license&amp;#34; href=&amp;#34;http://creativecommons.org/licenses/by-nc-sa/4.0/&amp;#34;&amp;gt;&amp;lt;img alt=&amp;#34;知识共享许可协议&amp;#34; style=&amp;#34;border-width:0&amp;#34; src=&amp;#34;https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png&amp;#34; /&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;br /&amp;gt;本作品采用&amp;lt;a rel=&amp;#34;license&amp;#34; href=&amp;#34;http://creativecommons.org/licenses/by-nc-sa/4.0/&amp;#34;&amp;gt;知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议&amp;lt;/a&amp;gt;进行许可。 </description>
+ 网页参考：1皮肤采血法操作规程和注意事项 2“扎手指”时间久了，你遇到过这样的事吗？</description>
     </item>
     
     <item>
@@ -179,8 +175,7 @@ baseurl = &amp;quot;https://example.com&amp;quot;（填你的github博客域名�
 （一）静脉采血法 1.概叙 静脉采血多用于体表的浅静脉,通常采用肘部静脉、手背静脉、内踝静脉或股静脉。小儿可采颈外静脉血液。根据采血量可选用不同型号注射器,配备相应的针头。某些特殊检查,为避免血小板激活,要使用塑料注射器和硅化处理后的试管或塑料试管。目前,已有商品化的真空采血系统的采血法。
 2.操作方法 (1)准备试管：取合适数量和规格的试管备用。 （2）检查注射器：打开一次性注射器包装,左手持针头下座,右手持针筒,将针头和针筒紧密连接,并使针头斜面对准针筒刻度,抽拉针栓检查有无阻塞和漏气。最后排尽注射器中的空气，备用。 (3)选择静脉：患者取坐位,前臂水平伸直置于桌面枕垫上。暴露穿刺部位,选择容易固定、明显可见的肘部静脉。 （4）消毒：先用30g/L碘酊棉签自所选静脉穿刺处从内向外、顺时针方向消毒皮肤,待碘酊挥发后，再用75%乙醇棉签以同样方法拭去碘迹，待干。 (5) 扎压脉带：在采血部位上端扎压脉带或止血带，并嘱患者反复握拳几次后握紧拳头，使静脉充盈暴露，便于穿刺。 (6）穿刺：取下针头无菌帽，以左手拇指固定静脉穿刺部位下端，右手拇指和中指持注射器针筒，食指固定针头下座，使针头斜面和针筒刻度向上，沿静脉走向使针头与皮肤成30°角斜行快速刺入皮肤，然后以5°角向前穿破静脉壁进入静脉腔。见回血后，将针头顺势探入少许，以免采血时针头滑出;但不可用力深刺，以免造成血肿，同时立即去掉压脉带。 (7)抽血：以左手固定注射器，缓缓抽动注射器内芯至所需血量，用消毒干棉球压住针孔，请患者松拳，迅速拔出注射器。嘱咐患者继续按压针孔数分钟，以防出血。 (8)放血与混匀：取下注射器针头，将血液沿试管壁缓缓注入抗凝管中，防止溶血和泡沫产生。轻轻混匀抗凝血，切忌振荡试管，盖紧试管塞备用。
 3.注意事项 (1)采血前应向患者耐心解释，以消除疑虑和恐惧心理。如个别患者进针时或采血后发生眩晕，应让其平卧休息。必要时可嗅吸芳香胺酊、针刺（或指压）人中和合谷等穴位。若因低血糖诱发眩晕，可立即静脉注射葡萄糖或让患者口服糖水。 (2)静脉采血前要仔细检查针头是否安装牢固，针筒内是否有空气和水分。所用针头应锐利、光滑、通气、针筒不漏气。 (3)如果肥胖患者静脉暴露不明显，可用左手食指经碘酊、乙醇消毒后，在采血部位触摸，发现静脉走向后凭手感与深度试探性穿刺。 (4)抽血时针栓只能外抽，不能内推，以免静脉内注入空气形成气栓，照成严重后果。
- 链接：1.静脉采血后如何按压，您真的做对了吗？ 2.Venipuncture - How to take blood - OSCE guide (old version) 3.日临静脉采血推荐方式
-&amp;lt;a rel=&amp;#34;license&amp;#34; href=&amp;#34;http://creativecommons.org/licenses/by-nc-sa/4.0/&amp;#34;&amp;gt;&amp;lt;img alt=&amp;#34;知识共享许可协议&amp;#34; style=&amp;#34;border-width:0&amp;#34; src=&amp;#34;https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png&amp;#34; /&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;br /&amp;gt;本作品采用&amp;lt;a rel=&amp;#34;license&amp;#34; href=&amp;#34;http://creativecommons.org/licenses/by-nc-sa/4.0/&amp;#34;&amp;gt;知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议&amp;lt;/a&amp;gt;进行许可。 </description>
+ 链接：1.静脉采血后如何按压，您真的做对了吗？ 2.Venipuncture - How to take blood - OSCE guide (old version) 3.日临静脉采血推荐方式</description>
     </item>
     
     <item>
@@ -199,8 +194,7 @@ baseurl = &amp;quot;https://example.com&amp;quot;（填你的github博客域名�
 （三）血液特征 1.红细胞的悬浮稳定性 正常人血液中红细胞呈均匀混悬状态。与红细胞膜表面的唾液酸根、正常血浆成分、血浆黏度及血流动力学有关。
 2.粘滞性 正常人全血黏度约为生理盐水黏度的4~5倍,血浆黏度约为生理盐水黏度的1.6倍。血液黏度与血细胞比容和血浆黏度有关,其中,血浆黏度受血浆中纤维蛋白原、球蛋白等大分子蛋白的影响,它们的浓度越高,血浆黏度越高。
 3.凝固性 正常血液离开血管后,在数分钟内便自行凝固,是凝血因子激活的结果。
-（四）血液生理功能 具有运输功能、协调功能、维护机体内环境和防御功能。
-&amp;lt;a rel=&amp;#34;license&amp;#34; href=&amp;#34;http://creativecommons.org/licenses/by-nc-sa/4.0/&amp;#34;&amp;gt;&amp;lt;img alt=&amp;#34;知识共享许可协议&amp;#34; style=&amp;#34;border-width:0&amp;#34; src=&amp;#34;https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png&amp;#34; /&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;br /&amp;gt;本作品采用&amp;lt;a rel=&amp;#34;license&amp;#34; href=&amp;#34;http://creativecommons.org/licenses/by-nc-sa/4.0/&amp;#34;&amp;gt;知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议&amp;lt;/a&amp;gt;进行许可。 </description>
+（四）血液生理功能 具有运输功能、协调功能、维护机体内环境和防御功能。</description>
     </item>
     
     <item>
@@ -209,8 +203,7 @@ baseurl = &amp;quot;https://example.com&amp;quot;（填你的github博客域名�
       <pubDate>Fri, 29 May 2020 19:33:55 +0800</pubDate>
       
       <guid>https://flight025.github.io/posts/%E4%B8%BA%E4%BB%80%E4%B9%88%E9%80%89%E6%8B%A9hugo%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/</guid>
-      <description>为什么我会选择hugo写文章，主要原因是因为部署快速，没有那么多的复杂程序 1.简单明了 2.采用markdown语法写作 3.静态博客没有冗长的插件，打开网页比较快。 以后优点再看吧。
-&amp;lt;a rel=&amp;#34;license&amp;#34; href=&amp;#34;http://creativecommons.org/licenses/by-nc-sa/4.0/&amp;#34;&amp;gt;&amp;lt;img alt=&amp;#34;知识共享许可协议&amp;#34; style=&amp;#34;border-width:0&amp;#34; src=&amp;#34;https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png&amp;#34; /&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;br /&amp;gt;本作品采用&amp;lt;a rel=&amp;#34;license&amp;#34; href=&amp;#34;http://creativecommons.org/licenses/by-nc-sa/4.0/&amp;#34;&amp;gt;知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议&amp;lt;/a&amp;gt;进行许可。 </description>
+      <description>为什么我会选择hugo写文章，主要原因是因为部署快速，没有那么多的复杂程序 1.简单明了 2.采用markdown语法写作 3.静态博客没有冗长的插件，打开网页比较快。 以后优点再看吧。</description>
     </item>
     
     <item>
@@ -222,7 +215,7 @@ baseurl = &amp;quot;https://example.com&amp;quot;（填你的github博客域名�
       <description>Hello Hugo   aaa
   bbb
   ccc
-  &amp;lt;a rel=&amp;#34;license&amp;#34; href=&amp;#34;http://creativecommons.org/licenses/by-nc-sa/4.0/&amp;#34;&amp;gt;&amp;lt;img alt=&amp;#34;知识共享许可协议&amp;#34; style=&amp;#34;border-width:0&amp;#34; src=&amp;#34;https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png&amp;#34; /&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;br /&amp;gt;本作品采用&amp;lt;a rel=&amp;#34;license&amp;#34; href=&amp;#34;http://creativecommons.org/licenses/by-nc-sa/4.0/&amp;#34;&amp;gt;知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议&amp;lt;/a&amp;gt;进行许可。 </description>
+  </description>
     </item>
     
     <item>

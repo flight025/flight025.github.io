@@ -129,9 +129,9 @@ integrity="sha384-DtgO3znmI27ZsBJLf6ASdUIQnb+d8RKb/z/fYL/E0f2NY/8nvfDQmQ6NkXmuoe
           <div class="content is-hidden-mobile">
             写在之前， hugo shortcodes中文意译即为雨果博客短代码，是一种先配置文件，通过在文章中插入短代码模式，来实现纯文字，歌曲，文章，个人社交文字转发，以及视频，播客等在个人博客上显示的一种方式。
 以下几个短代码的应用 上次我在“Hugo解决网易云音乐不显示问题”这篇博客中说了，开启HTML外链引用必须先添加：
-[markup.goldmark.renderer] unsafe= true 然后自己再在网易云音乐引入  iframe实现在hugo博客上显示音乐。但是现在，有一种更好的方式，hugo提倡引入外链可以用短代码。
+1.[markup.goldmark.renderer] 2.unsafe= true 然后自己再在网易云音乐引入  iframe实现在hugo博客上显示音乐。但是现在，有一种更好的方式，hugo提倡引入外链可以用短代码。
 方式为：新建/layouts/shortcodes/music.html，在其中引入：
-{{- $scratch := .Page.Scratch.Get &#34;scratch&#34; -}} &lt;!-- require APlayer --&gt; …
+{{- $scratch := .Page.Scratch.Get &#34;scratch&#34; -}} &lt;!-- require APlayer …
             
             <br>
             <a class="button is-marginless is-paddingless" href="https://flight025.github.io/posts/hugo%E6%B7%BB%E5%8A%A0%E7%9F%AD%E4%BB%A3%E7%A0%81/">
