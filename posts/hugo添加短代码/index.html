@@ -175,7 +175,7 @@ integrity="sha384-DtgO3znmI27ZsBJLf6ASdUIQnb+d8RKb/z/fYL/E0f2NY/8nvfDQmQ6NkXmuoe
 {{- end -}}
 {{- $scratch.Set &#34;music&#34; true -}}
 </code></pre></div><p>此博客音乐代码实现，我参考<a href="https://github.com/lmm214/immmmm/blob/master/themes/hello-friend/layouts/shortcodes/music.html">木木木木木</a>的GitHub库。</p>
-<p>模板为</p>
+<p>短代码模板为</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">1  {/{&lt; <span style="color:#f92672">music</span> <span style="color:#a6e22e">auto</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://music.163.com/#/album?id=xxxxxx&#34;</span> &gt;}\}(把第一个左右花括号内“/\”去掉即可，HTTPs后即为网站id）
 </code></pre></div><p>例如：</p>
 <p><strong>
@@ -195,19 +195,36 @@ integrity="sha384-DtgO3znmI27ZsBJLf6ASdUIQnb+d8RKb/z/fYL/E0f2NY/8nvfDQmQ6NkXmuoe
     <span style="color:#a6e22e">allowfullscreen</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;true&#34;</span>
 &gt;
 &lt;/<span style="color:#f92672">iframe</span>&gt;
-</code></pre></div><p>模板为</p>
+</code></pre></div><p>短代码模板为</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">1{/{&lt; <span style="color:#f92672">bilibili</span> <span style="color:#a6e22e">BVXXXXXXXX</span> &gt;}\}(把第一个左右花括号内“/\”去掉即可，BV即为BV号)
 </code></pre></div><p>例如：</p>
-<iframe
-    src="//player.bilibili.com/player.html?bvid=BV1uA41187Y8&page=1"
-    scrolling="no"
-    height="768px"
-    width="1024px"
-    frameborder="no"
-    framespacing="0"
-    allowfullscreen="true"
->
-</iframe>
+<style>
+.aspect-ratio {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 75%;
+    }
+      
+.aspect-ratio iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    }
+</style>
+      
+
+<div align=center class="aspect-ratio">
+    <iframe src="https://player.bilibili.com/player.html?aid=BV1uA41187Y8&&page=1&as_wide=1&high_quality=1&danmaku=0" 
+    scrolling="no" 
+    border="0" 
+    frameborder="no" 
+    framespacing="0" 
+    allowfullscreen="true"> 
+    </iframe>
+</div>
 <p>基本上，还有其它短代码也类似。基本上都是<code>/layouts/shortcodes/xxx</code>模式,再配置相应的id即可。</p>
 <hr>
 <p>网页参考：1.<a href="https://gohugo.io/content-management/shortcodes/#tweet">hugo短码</a>2.<a href="https://github.com/lmm214/immmmm/blob/master/themes/hello-friend/layouts/shortcodes/music.html">木木木木木的music.html</a></p>
