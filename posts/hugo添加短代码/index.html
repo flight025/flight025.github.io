@@ -185,16 +185,11 @@ integrity="sha384-DtgO3znmI27ZsBJLf6ASdUIQnb+d8RKb/z/fYL/E0f2NY/8nvfDQmQ6NkXmuoe
 
 <script src="https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"></script><meting-js auto="https://music.163.com/#/album?id=496726" theme="#2980b9"></meting-js></strong></p>
 <p>再比如，引用bilibili视频，新建<code>/layouts/shortcodes/bilibili.html</code>,在其中引入：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-HTML" data-lang="HTML">&lt;<span style="color:#f92672">iframe</span>
-    <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;//player.bilibili.com/player.html?bvid={{.Get 0 }}&amp;page={{ if .Get 1 }}{{.Get 1}}{{ else }}1{{end}}&#34;</span>
-    <span style="color:#a6e22e">scrolling</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;no&#34;</span>
-    <span style="color:#a6e22e">height</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;768px&#34;</span>
-    <span style="color:#a6e22e">width</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;1024px&#34;</span>
-    <span style="color:#a6e22e">frameborder</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;no&#34;</span>
-    <span style="color:#a6e22e">framespacing</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;0&#34;</span>
-    <span style="color:#a6e22e">allowfullscreen</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;true&#34;</span>
-&gt;
-&lt;/<span style="color:#f92672">iframe</span>&gt;
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-HTML" data-lang="HTML">&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;position: relative; padding: 32% 45%;&#34;</span>&gt;
+    &lt;<span style="color:#f92672">iframe</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;position: absolute; width: 100%; height: 100%; left: 0; top: 0;&#34;</span> 
+    <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;//player.bilibili.com/player.html?bvid={{.Get 0 }}&amp;page={{ if .Get 1 }}{{.Get 1}}{{ else }}1{{end}}&amp;as_wide=1&amp;high_quality=1&amp;danmaku=1&#34;</span> 
+    <span style="color:#a6e22e">scrolling</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;no&#34;</span> <span style="color:#a6e22e">frameborder</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;no&#34;</span> <span style="color:#a6e22e">framespacing</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;0&#34;</span> <span style="color:#a6e22e">allowfullscreen</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;true&#34;</span>&gt;&lt;/<span style="color:#f92672">iframe</span>&gt;
+&lt;/<span style="color:#f92672">div</span>&gt;
 </code></pre></div><p>短代码模板为</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">1{/{&lt; <span style="color:#f92672">bilibili</span> <span style="color:#a6e22e">BVXXXXXXXX</span> &gt;}\}(把第一个左右花括号内“/\”去掉即可，BV即为BV号)
 </code></pre></div><p>例如：</p>
