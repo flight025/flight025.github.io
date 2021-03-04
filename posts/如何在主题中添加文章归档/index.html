@@ -122,12 +122,12 @@ integrity="sha384-DtgO3znmI27ZsBJLf6ASdUIQnb+d8RKb/z/fYL/E0f2NY/8nvfDQmQ6NkXmuoe
 现在就说说是如何添加归档的。</p>
 <h3 id="1config配置">1.config配置</h3>
 <p>config可以配置文件图标，在config中添加配置如下：</p>
-<p><!-- raw HTML omitted --></p>
+<p><img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/图片/QQ截图20200704205259.png" style="zoom:50%;" /></p>
 <p>打开临时预览网页http://localhost:1313/查看，可以看到归档图标，但是点击没有反应。。。</p>
 <h3 id="2archives文件的创建和html文件格式">2.archives文件的创建和html文件格式</h3>
 <p>起先，我想到了关联about的_index.md文件,既然about是&quot;关于&quot;链接的来显示页面的。那我何不创建一个关联archives的_index.md文件呢。于是我创建了index.md文件。用typora写了archives页面归档链接，看看能不能显示，输入http://localhost:1313/查看，还是不能显示。我以为.md上传github就可以显示为html。看来不是这么回事。。。</p>
 <p>折腾了一会儿。在layouts文件夹中找到了about的html文件，似乎是要添加html文件。emmm&hellip;(⊙﹏⊙)，于是我把archives.md用typora转换成html文件，放在了layouts文件夹中，再打开http://localhost:1313临时查看，发现归档文章可以访问了。确定了归档.md的确需要转换成html文件放在layouts文件夹中才能访问。</p>
-<p><!-- raw HTML omitted --></p>
+<p><img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/图片/批注 2020-07-04 212557.png" style="zoom:50%;" /></p>
 <h3 id="3后续注意及存在问题">3.后续注意及存在问题</h3>
 <p>​    <del>注意：1.转换成html文件后，在html用partial引用页面.</del>
 <del>存在的问题：1.归档文章必须得自己添加超链接，不能自动更新，很麻烦2.主题页面背景颜色和归档文章颜色不一致。</del></p>
