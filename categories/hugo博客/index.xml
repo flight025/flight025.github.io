@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hugo博客 on 阿波尔的博客</title>
-    <link>https://flight025.github.io/categories/hugo%E5%8D%9A%E5%AE%A2/</link>
+    <link>https://www.zaqizaba.xyz/categories/hugo%E5%8D%9A%E5%AE%A2/</link>
     <description>Recent content in Hugo博客 on 阿波尔的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>EN</language>
-    <copyright>&amp;copy; &lt;a href=&#34;https://flight025.github.io&#34;&gt;阿波尔的博客&lt;/a&gt; 2021</copyright>
-    <lastBuildDate>Mon, 15 Feb 2021 10:17:28 +0800</lastBuildDate><atom:link href="https://flight025.github.io/categories/hugo%E5%8D%9A%E5%AE%A2/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>&amp;copy; &lt;a href=&#34;https://www.zaqizaba.xyz&#34;&gt;阿波尔的博客&lt;/a&gt; 2021</copyright>
+    <lastBuildDate>Mon, 15 Feb 2021 10:17:28 +0800</lastBuildDate><atom:link href="https://www.zaqizaba.xyz/categories/hugo%E5%8D%9A%E5%AE%A2/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hugo添加短代码</title>
-      <link>https://flight025.github.io/posts/hugo%E6%B7%BB%E5%8A%A0%E7%9F%AD%E4%BB%A3%E7%A0%81/</link>
+      <link>https://www.zaqizaba.xyz/posts/hugo%E6%B7%BB%E5%8A%A0%E7%9F%AD%E4%BB%A3%E7%A0%81/</link>
       <pubDate>Mon, 15 Feb 2021 10:17:28 +0800</pubDate>
       
-      <guid>https://flight025.github.io/posts/hugo%E6%B7%BB%E5%8A%A0%E7%9F%AD%E4%BB%A3%E7%A0%81/</guid>
+      <guid>https://www.zaqizaba.xyz/posts/hugo%E6%B7%BB%E5%8A%A0%E7%9F%AD%E4%BB%A3%E7%A0%81/</guid>
       <description>写在之前， hugo shortcodes中文意译即为雨果博客短代码，是一种先配置文件，通过在文章中插入短代码模式，来实现纯文字，歌曲，文章，个人社交文字转发，以及视频，播客等在个人博客上显示的一种方式。
 以下几个短代码的应用 上次我在“Hugo解决网易云音乐不显示问题”这篇博客中说了，开启HTML外链引用必须先添加：
 1.[markup.goldmark.renderer] 2.unsafe= true 然后自己再在网易云音乐引入  iframe实现在hugo博客上显示音乐。但是现在，有一种更好的方式，hugo提倡引入外链可以用短代码。

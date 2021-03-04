@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>blog on 阿波尔的博客</title>
-    <link>https://flight025.github.io/tags/blog/</link>
+    <link>https://www.zaqizaba.xyz/tags/blog/</link>
     <description>Recent content in blog on 阿波尔的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>EN</language>
-    <copyright>&amp;copy; &lt;a href=&#34;https://flight025.github.io&#34;&gt;阿波尔的博客&lt;/a&gt; 2021</copyright>
-    <lastBuildDate>Sat, 02 Jan 2021 13:51:50 +0800</lastBuildDate><atom:link href="https://flight025.github.io/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>&amp;copy; &lt;a href=&#34;https://www.zaqizaba.xyz&#34;&gt;阿波尔的博客&lt;/a&gt; 2021</copyright>
+    <lastBuildDate>Sat, 02 Jan 2021 13:51:50 +0800</lastBuildDate><atom:link href="https://www.zaqizaba.xyz/tags/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CDN公共库的修改</title>
-      <link>https://flight025.github.io/posts/cdn%E5%85%AC%E5%85%B1%E5%BA%93%E7%9A%84%E4%BF%AE%E6%94%B9/</link>
+      <link>https://www.zaqizaba.xyz/posts/cdn%E5%85%AC%E5%85%B1%E5%BA%93%E7%9A%84%E4%BF%AE%E6%94%B9/</link>
       <pubDate>Sat, 02 Jan 2021 13:51:50 +0800</pubDate>
       
-      <guid>https://flight025.github.io/posts/cdn%E5%85%AC%E5%85%B1%E5%BA%93%E7%9A%84%E4%BF%AE%E6%94%B9/</guid>
+      <guid>https://www.zaqizaba.xyz/posts/cdn%E5%85%AC%E5%85%B1%E5%BA%93%E7%9A%84%E4%BF%AE%E6%94%B9/</guid>
       <description>博客有一段时间加载很慢，打开chrome的控制台显示这样：
 网站有几处错误和警告，加载这些失效和错误资源限制了网页加载速度。
 &amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;{{ $scratch.Get &amp;quot;baseURL&amp;quot; }}/css/styles.css&amp;quot;&amp;gt; &amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;https://use.fontawesome.com/releases/v5.2.0/css/all.css&amp;quot; integrity=&amp;quot;sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ&amp;quot; crossorigin=&amp;quot;anonymous&amp;quot;&amp;gt; &amp;lt;script src=&amp;quot;https://code.jquery.com/jquery-3.3.1.js&amp;quot; integrity=&amp;quot;sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=&amp;quot; crossorigin=&amp;quot;anonymous&amp;quot;&amp;gt;&amp;lt;/script&amp;gt; 这些是错误和失效的公共CDN，以及警告链接，一般这种情况是CDN公共库网站失效了，导致JS,CSS资源加载缓慢错误。这时就应该找一个加速CDN库了。这里我推荐奇虎360CDN公共库和jsdelivr公共库，找到相应的CSS.js格式换成这些公共CDN，但是JS,CSS资源在公共CDN安全容易受到攻击，这时需要SRI，SRI生成可以在SRI Hash Generator这网站生成相应的哈希函数。启用 SRI 策略后，浏览器会对资源进行 CORS 校验，这就要求被请求的资源必须同域，或配置 Access-Control-Allow-Origin 响应头和添加crossorigin=&amp;quot;anonymous&amp;quot; 这个属性。
@@ -24,10 +24,10 @@ all.css静态文件由30s加载时间下降到13ms,大大的减少了网站加�
     
     <item>
       <title>如何在主题中添加文章归档</title>
-      <link>https://flight025.github.io/posts/%E5%A6%82%E4%BD%95%E5%9C%A8%E4%B8%BB%E9%A2%98%E4%B8%AD%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E5%BD%92%E6%A1%A3/</link>
+      <link>https://www.zaqizaba.xyz/posts/%E5%A6%82%E4%BD%95%E5%9C%A8%E4%B8%BB%E9%A2%98%E4%B8%AD%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E5%BD%92%E6%A1%A3/</link>
       <pubDate>Sat, 04 Jul 2020 20:14:29 +0800</pubDate>
       
-      <guid>https://flight025.github.io/posts/%E5%A6%82%E4%BD%95%E5%9C%A8%E4%B8%BB%E9%A2%98%E4%B8%AD%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E5%BD%92%E6%A1%A3/</guid>
+      <guid>https://www.zaqizaba.xyz/posts/%E5%A6%82%E4%BD%95%E5%9C%A8%E4%B8%BB%E9%A2%98%E4%B8%AD%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E5%BD%92%E6%A1%A3/</guid>
       <description>原来的主题模板是不带文章归档的，但是经过一番折腾。终于给主题添加了归档。😜 现在就说说是如何添加归档的。
 1.config配置 config可以配置文件图标，在config中添加配置如下：
 打开临时预览网页http://localhost:1313/查看，可以看到归档图标，但是点击没有反应。。。
@@ -40,10 +40,10 @@ all.css静态文件由30s加载时间下降到13ms,大大的减少了网站加�
     
     <item>
       <title>Hugo解决网易云音乐不显示问题</title>
-      <link>https://flight025.github.io/posts/hugo%E8%A7%A3%E5%86%B3%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90%E4%B8%8D%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/</link>
+      <link>https://www.zaqizaba.xyz/posts/hugo%E8%A7%A3%E5%86%B3%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90%E4%B8%8D%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/</link>
       <pubDate>Thu, 25 Jun 2020 12:28:22 +0800</pubDate>
       
-      <guid>https://flight025.github.io/posts/hugo%E8%A7%A3%E5%86%B3%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90%E4%B8%8D%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/</guid>
+      <guid>https://www.zaqizaba.xyz/posts/hugo%E8%A7%A3%E5%86%B3%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90%E4%B8%8D%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/</guid>
       <description>这个问题，是我今天在“关于”页面添加网易云音乐发现的。具体到问题就是HTML文件不能在博客上显示。 我在“关于”页面上添加网易云音乐，上传了几次。发现还是没有网易云音乐，我就觉得纳闷了。
 于是我问了关于hugo建站的群，有人说看“关于”网页源代码有没有这个“html代码“。 打开关于页面，看到了这行代码不是原网易云音乐，显示为“!&amp;ndash; raw HTML omitted &amp;ndash;“。虽然不知道为什么会显示为这样，但我顺藤摸瓜，在Google搜索关于显示这个代码的原因。
 ​ 在hugo论坛页面我到了原因，原来在hugo 0.60.0的版本中，为了安全，html文件改用Goldmark。 在页面中，解决办法也给出了，即开启不安全模式，在config.toml站点配置文件中，添加这二行代码：
@@ -54,10 +54,10 @@ all.css静态文件由30s加载时间下降到13ms,大大的减少了网站加�
     
     <item>
       <title>Hugo博客搭建过程</title>
-      <link>https://flight025.github.io/posts/hugo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/</link>
+      <link>https://www.zaqizaba.xyz/posts/hugo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/</link>
       <pubDate>Mon, 22 Jun 2020 09:19:50 +0800</pubDate>
       
-      <guid>https://flight025.github.io/posts/hugo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/</guid>
+      <guid>https://www.zaqizaba.xyz/posts/hugo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/</guid>
       <description>在搭建之前。我参考了b站视频以及其它分享以hugo框架搭建静态博客的博主们的方法，搭建好了hugo为博客框架的静态博客。 现在，就具体说说是怎么搭建hugo静态博客的。
 1.下载一些相关的必要工具 在搭建博客之前，先准备好所要的软件材料。 1.git工具 2.github（创建博客存储上传文件） 3.hugo博客系统文件 4.用它写作的typora 5.以及搭配typora的PicGo图床工具
 2.环境变量的设置以及配置站点文件 下载好git工具和hugo博客系统文件，然后设置环境变量。 以win10为例，在搜索栏中。输入path，找到编辑系统环境变量。
@@ -74,10 +74,10 @@ baseurl = &amp;quot;https://example.com&amp;quot;（填你的github博客域名�
     
     <item>
       <title>为什么选择hugo搭建我的博客</title>
-      <link>https://flight025.github.io/posts/%E4%B8%BA%E4%BB%80%E4%B9%88%E9%80%89%E6%8B%A9hugo%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/</link>
+      <link>https://www.zaqizaba.xyz/posts/%E4%B8%BA%E4%BB%80%E4%B9%88%E9%80%89%E6%8B%A9hugo%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/</link>
       <pubDate>Fri, 29 May 2020 19:33:55 +0800</pubDate>
       
-      <guid>https://flight025.github.io/posts/%E4%B8%BA%E4%BB%80%E4%B9%88%E9%80%89%E6%8B%A9hugo%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/</guid>
+      <guid>https://www.zaqizaba.xyz/posts/%E4%B8%BA%E4%BB%80%E4%B9%88%E9%80%89%E6%8B%A9hugo%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/</guid>
       <description>为什么我会选择hugo写文章，主要原因是因为部署快速，没有那么多的复杂程序 1.简单明了 2.采用markdown语法写作 3.静态博客没有冗长的插件，打开网页比较快。 以后优点再看吧。</description>
     </item>
     
