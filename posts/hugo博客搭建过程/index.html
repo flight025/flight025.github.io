@@ -100,22 +100,22 @@ integrity="sha384-DtgO3znmI27ZsBJLf6ASdUIQnb+d8RKb/z/fYL/E0f2NY/8nvfDQmQ6NkXmuoe
 <p><img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/%E5%9B%BE%E7%89%87/QQ%E6%88%AA%E5%9B%BE20200622101850.png" alt=""></p>
 <p>找到hugo下载的所在文件目录，复制到PATH中。注意路径不能有中文。
 在cmd中命令看看是否安装正确，出现：</p>
-<pre><code>git version
+<pre tabindex="0"><code>git version
 git version 2.26.2.windows.1
 hugo version
 Hugo Static Site Generator v0.72.0-8A7EF3CF windows/amd64 BuildDate: 2020-05-31T12:08:42Z
 </code></pre><p>提示安装路径正确。</p>
 <p>安装好后，再在其它盘创建一个根站点，假如命名为###。</p>
-<pre><code>hugo new site ###
+<pre tabindex="0"><code>hugo new site ###
 </code></pre><p>然后在###文件中就会得到</p>
 <p><img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/%E5%9B%BE%E7%89%87/%E6%8D%95%E8%8E%B76.PNG" alt=""></p>
 <p>这些文件。</p>
 <p>用cd命令打开themes文件，在<a href="https://themes.gohugo.io/">hugo主题</a>中找一个主题，比如我找的<a href="https://themes.gohugo.io/charaka-hugo-theme/">charaka-hugo-theme</a>主题。在cmd中命令如下：</p>
-<pre><code>cd themes
+<pre tabindex="0"><code>cd themes
 git clone https://github.com/natarajmb/charaka-hugo-theme.git
 </code></pre><p>下载好主题包后，把themes中的主题包文件复制覆盖到原###中的根文件中。</p>
 <p>config原配置文件如下：</p>
-<pre><code>baseurl = &quot;https://example.com&quot;（填你的github博客域名）
+<pre tabindex="0"><code>baseurl = &quot;https://example.com&quot;（填你的github博客域名）
 languageCode = &quot;en&quot;（改成ZH-CN）
 title = &quot;Charaka&quot;（自己可以改成自己喜欢的博客名称）
 theme = &quot;charaka-hugo-theme&quot;
@@ -153,15 +153,15 @@ googleAnalytics = &quot;&quot;(谷歌分析)
 </code></pre><p>上述改好后，第二步就完成了。至于怎么添加valine评论系统，在这里。我参考了B站up主<a href="https://www.bilibili.com/video/BV1p7411i76h?from=search&amp;seid=3990097417905613623">CeyCeyChannel</a>的视频教程，有兴趣的可以看看。</p>
 <h2 id="3文章创建和github设置">3.文章创建和github设置</h2>
 <p>你要创建一篇新文章，就得在cmd中命令。</p>
-<pre><code>hugo new post/XXXX.md
+<pre tabindex="0"><code>hugo new post/XXXX.md
 </code></pre><p>由于我的文章创建是在posts，故而有所不同,注意文章是yaml格式。比如我现在创建的新文章</p>
-<pre><code>title: &quot;Hugo博客搭建过程&quot;（博客文章名称）
+<pre tabindex="0"><code>title: &quot;Hugo博客搭建过程&quot;（博客文章名称）
 date: 2020-06-22T09:19:50+08:00（时间）
 draft: false （设为false可被编译为HTML，true供本地修改）
 categories: [想法]（归档）
 tags:[&quot;hugo&quot;,&quot;blog&quot;]（分类）
 </code></pre><p>在cmd博客站点根目录中，启动博客预览</p>
-<pre><code>hugo server
+<pre tabindex="0"><code>hugo server
 </code></pre><p><img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/%E5%9B%BE%E7%89%87/ptf.PNG" alt=""></p>
 <p>打开 http://localhost:1313/可以看到，新文章已经生成。</p>
 <p>​                                                            <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/%E5%9B%BE%E7%89%87/%E6%8D%95%E8%8E%B71.PNG" alt=""></p>
@@ -174,13 +174,13 @@ tags:[&quot;hugo&quot;,&quot;blog&quot;]（分类）
 <h2 id="4设置静态文件及上传">4.设置静态文件及上传</h2>
 <p>在config文件中，把baseurl改成自己的Repository name.
 设置好config中baseurl和themes的路径。在站点目录下命令</p>
-<pre><code>hugo
+<pre tabindex="0"><code>hugo
 </code></pre><p>生成public文件夹，用于上传。</p>
-<p>在初次配git时，记得要配置邮箱和github用户名，不然会提示“Please tell me who you are“。</p>
-<pre><code># git config --global user.email &quot;you@example.com
+<p>在初次配git时，记得要配置邮箱和github用户名，不然会提示“Please tell me who you are”。</p>
+<pre tabindex="0"><code># git config --global user.email &quot;you@example.com
 # git config --global user.name &quot;Your Name&quot;
 </code></pre><p>如果一切顺利，静态文件就会上传在public中。然后将public本地文件上传到github上。如下：</p>
-<pre><code># cd public（进入public)
+<pre tabindex="0"><code># cd public（进入public)
 # git init (初始化)
 # git remote add origin https://github.com/XXXXX/XXXXX.github.io.git（链接仓库，注意.git）
 # git add .（添加public中的文件）
@@ -206,9 +206,9 @@ tags:[&quot;hugo&quot;,&quot;blog&quot;]（分类）
 <p>​                                                      <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/%E5%9B%BE%E7%89%87/QQ%E6%88%AA%E5%9B%BE20200622140258.png" alt=""></p>
 <p>代表成功获得图片url，可以直接拖动图片在typora上传了。</p>
 <p>图片问题解决，如果你想以后再写博客文章，你可以运行一下命令：</p>
-<pre><code>hugo new post/你的文章名.md
+<pre tabindex="0"><code>hugo new post/你的文章名.md
 </code></pre><p>至于推送文章，你可以用下面的命令：</p>
-<pre><code># hugo
+<pre tabindex="0"><code># hugo
 # cd public
 # git add .
 # git commit -m &quot;XXXXXXX&quot;

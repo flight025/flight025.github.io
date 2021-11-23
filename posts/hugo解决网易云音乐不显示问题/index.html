@@ -92,7 +92,7 @@ integrity="sha384-DtgO3znmI27ZsBJLf6ASdUIQnb+d8RKb/z/fYL/E0f2NY/8nvfDQmQ6NkXmuoe
 <p><img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/%E5%9B%BE%E7%89%87/sds.PNG" alt=""></p>
 <p>​    在<a href="https://discourse.gohugo.io/t/raw-html-getting-omitted-in-0-60-0/22032">hugo论坛页面</a>我到了原因，原来在hugo 0.60.0的版本中，为了安全，html文件改用<a href="https://github.com/yuin/goldmark/">Goldmark</a>。
 在页面中，解决办法也给出了，即开启不安全模式，在config.toml站点配置文件中，添加这二行代码：</p>
-<pre><code>[markup.goldmark.renderer]
+<pre tabindex="0"><code>[markup.goldmark.renderer]
 unsafe= true
 </code></pre><p>完成打开http://localhost:1313/预览页面，此时就可以看到在原来的位置添加的网易云音乐了。</p>
 <p><img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/%E5%9B%BE%E7%89%87/msk.PNG" alt=""></p>
