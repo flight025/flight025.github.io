@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>应用 on 阿波尔的博客</title>
+    <link>https://www.zaqizaba.xyz/categories/%E5%BA%94%E7%94%A8/</link>
+    <description>Recent content in 应用 on 阿波尔的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>EN</language>
+    <copyright>&amp;copy; &lt;a href=&#34;https://www.zaqizaba.xyz&#34;&gt;阿波尔的博客&lt;/a&gt; 2021</copyright>
+    <lastBuildDate>Wed, 24 Nov 2021 10:16:20 +0800</lastBuildDate><atom:link href="https://www.zaqizaba.xyz/categories/%E5%BA%94%E7%94%A8/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Typora的一些扩展应用</title>
+      <link>https://www.zaqizaba.xyz/posts/typora%E7%9A%84%E4%B8%80%E4%BA%9B%E6%89%A9%E5%B1%95%E5%BA%94%E7%94%A8/</link>
+      <pubDate>Wed, 24 Nov 2021 10:16:20 +0800</pubDate>
+      
+      <guid>https://www.zaqizaba.xyz/posts/typora%E7%9A%84%E4%B8%80%E4%BA%9B%E6%89%A9%E5%B1%95%E5%BA%94%E7%94%A8/</guid>
+      <description>Typora有一些扩展应用,可以说对于有些专业来讲,真的很适用。👍
+1.LaTeX的应用 LaTeX主要是应用在文章公式排版上,具体是：
+ 1.行内公式(inline)：用$...$括起公式，公式会出现在行内。
+2.块间公式（display）：用 $$...$$ 括起公式（注意 $$ 后需要换行），公式会默认显示在行中间。
+ $${\begin{array}{*{20}{l}} {\text{对}\text{于}\text{如}\text{下}\text{形}\text{式}\text{的}\text{一}\text{元}\text{二}\text{次}\text{方}\text{程}\text{：}}\\ {a\mathop{{x}}\nolimits^{{2}}+bx+c=0}\\ {\text{则}\text{方}\text{程}\text{的}\text{两}\text{根}\text{为}\text{：}}\\ {\mathop{{x}}\nolimits_{{1}}=\frac{{-b+\sqrt{{\mathop{{b}}\nolimits^{{2}}-4ac}}}}{{2a}}}\\ {\mathop{{x}}\nolimits_{{2}}=\frac{{-b-\sqrt{{\mathop{{b}}\nolimits^{{2}}-4ac}}}}{{2a}}} \end{array}}$$ 显示为：$${\begin{array}{*{20}{l}} {\text{对}\text{于}\text{如}\text{下}\text{形}\text{式}\text{的}\text{一}\text{元}\text{二}\text{次}\text{方}\text{程}\text{：}}\
+{a\mathop{{x}}\nolimits^{{2}}+bx+c=0}\
+{\text{则}\text{方}\text{程}\text{的}\text{两}\text{根}\text{为}\text{：}}\
+{\mathop{{x}}\nolimits_{{1}}=\frac{{-b+\sqrt{{\mathop{{b}}\nolimits^{{2}}-4ac}}}}{{2a}}}\
+{\mathop{{x}}\nolimits_{{2}}=\frac{{-b-\sqrt{{\mathop{{b}}\nolimits^{{2}}-4ac}}}}{{2a}}} \end{array}}$$</description>
+    </item>
+    
+  </channel>
+</rss>
