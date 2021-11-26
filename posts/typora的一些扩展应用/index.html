@@ -345,24 +345,3 @@ if (!doNotTrack) {
 <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML"></script>
 
 
-
-<script
-  src="https://cdn.jsdelivr.net/npm/mermaid@8.8.2/dist/mermaid.min.js"
-  integrity="sha256-KqisLh8jVMBRjpNkOhH5W9VWs+F6x6vQksLqxs7+x9A="
-  crossorigin="anonymous"
-></script>
-<script>
-  
-  Array.from(document.getElementsByClassName("language-mermaid")).forEach(
-    (el) => {
-      el.parentElement.outerHTML = `<div class="mermaid">${el.innerText}</div>`;
-    }
-  );
-</script>
-<style>
-   
-  .mermaid svg {
-    display: block;
-    margin: auto;
-  }
-</style>
