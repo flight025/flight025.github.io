@@ -8,6 +8,8 @@
 
 <title>关于我 | 阿波尔的博客</title>
 
+<script src="//cdn.jsdelivr.net/npm/@waline/client"></script>
+
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/flight025/flight025.github.io/css/styles.css">
 <link rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
@@ -87,6 +89,7 @@ integrity="sha384-DtgO3znmI27ZsBJLf6ASdUIQnb+d8RKb/z/fYL/E0f2NY/8nvfDQmQ6NkXmuoe
 <p>我是一名普通乡村医院检验科的医生。</p>
 <p>想法是要探索医学检验和信息技术的结合方式,不仅要掌握书本上的医学知识,还要学会一点计算机技术。</p>
 <p>偶尔还会分享一下我生活上的心得体会,仅此而已。现在正在探索中&hellip;😀😀😀</p>
+<p><img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20220201141800183.png" alt="image-20220201141800183" style="zoom:50%;" /></p>
 <h3 id="我的联系方式">我的联系方式</h3>
 <p><img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/%E5%9B%BE%E7%89%87/QQ%E5%9B%BE%E7%89%8720200530165449.jpg" alt="微信">
 <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/%E5%9B%BE%E7%89%87/QQ%E5%9B%BE%E7%89%8720200530165413.jpg" alt="酷安"></p>
@@ -126,7 +129,7 @@ integrity="sha384-DtgO3znmI27ZsBJLf6ASdUIQnb+d8RKb/z/fYL/E0f2NY/8nvfDQmQ6NkXmuoe
 <td></td>
 </tr>
 <tr>
-<td style="text-align:left"><strong>评论系统</strong>                                             <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20210304184913253.png" alt="image-20210304184913253" style="zoom:25%;" /></td>
+<td style="text-align:left"><strong>评论系统</strong>                                             <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/logo.png" style="zoom:25%;" /></td>
 <td></td>
 </tr>
 </tbody>
@@ -199,27 +202,14 @@ integrity="sha384-DtgO3znmI27ZsBJLf6ASdUIQnb+d8RKb/z/fYL/E0f2NY/8nvfDQmQ6NkXmuoe
     <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />本作品采用<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">知识共享署名-相同方式共享 4.0 国际许可协议</a>进行许可。
 </div>
 
-
-  <span id="/about/" class="leancloud_visitors" data-flag-title="关于我">
-    <span class="post-meta-item-text">文章阅读量 </span>
-    <span class="leancloud-visitors-count">1000000</span>
-    <p></p>
-  </span>
-  <div id="vcomments"></div>
-  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-  <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
-  <script type="text/javascript">
-    new Valine({
-        el: '#vcomments' ,
-        appId: 'DWRLmTluDA2JetTAFqtU2sQD-gzGzoHsz',
-        appKey: 'N0eifLdIEufUGuKvCOeHDJ8Q',
-        notify:  false , 
-        verify:  false , 
-        avatar:'mm', 
-        placeholder: '说点啥呢...',
-        visitor:  true 
-    });
-  </script>
+<div id="waline"></div>
+<script>
+  Waline({
+    el: '#waline',
+    serverURL: 'https://blog-api-qiihielxk-flight025.vercel.app/',
+  });
+</script>
+</body>
 <section class="section">
   <div class="container has-text-centered">
     <p>&copy; <a href="https://www.zaqizaba.xyz">阿波尔的博客</a> 2021</p>
@@ -243,6 +233,3 @@ if (!doNotTrack) {
 <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML"></script>
 
 
-
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.0/chart.min.js" integrity="sha512-GMGzUEevhWh8Tc/njS0bDpwgxdCJLQBWG3Z2Ct+JGOpVnEmjvNx6ts4v6A2XJf1HOrtOsfhv3hBKpK9kE5z8AQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
