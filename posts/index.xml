@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>EN</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://www.zaqizaba.xyz&#34;&gt;阿波尔的博客&lt;/a&gt; 2021</copyright>
-    <lastBuildDate>Wed, 24 Nov 2021 10:16:20 +0800</lastBuildDate><atom:link href="https://www.zaqizaba.xyz/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 03 Feb 2022 12:28:20 +0800</lastBuildDate><atom:link href="https://www.zaqizaba.xyz/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Creating a New Theme</title>
       <link>https://www.zaqizaba.xyz/posts/creating-a-new-theme/</link>
@@ -27,6 +27,25 @@ We&amp;rsquo;ll start with creating a new site with a very basic template.</desc
       <description>Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
 ▾ &amp;lt;root&amp;gt;/▾ images/logo.png should become
 ▾ &amp;lt;root&amp;gt;/▾ static/▾ images/logo.png Additionally, you&amp;rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.</description>
+    </item>
+    
+    <item>
+      <title>添加本地视频到hugo博客</title>
+      <link>https://www.zaqizaba.xyz/posts/%E6%B7%BB%E5%8A%A0%E6%9C%AC%E5%9C%B0%E8%A7%86%E9%A2%91%E5%88%B0hugo%E5%8D%9A%E5%AE%A2/</link>
+      <pubDate>Thu, 03 Feb 2022 12:28:20 +0800</pubDate>
+      
+      <guid>https://www.zaqizaba.xyz/posts/%E6%B7%BB%E5%8A%A0%E6%9C%AC%E5%9C%B0%E8%A7%86%E9%A2%91%E5%88%B0hugo%E5%8D%9A%E5%AE%A2/</guid>
+      <description>以前我在博文《hugo添加短代码》这篇博文说过，可以通过相应文件的视频网站短代码模板引入，再从相应的视频网站url的id短代码来套取放到博客上，从而实现第三方网站视频在文章中出现。这也算是hugo博客的一大特色。但是有些时候，第三方网站审核视频，比如B站，如果你投稿的视频不是符合B站“正能量”主题，很大可能会上传因为版权问题，含露骨视频等其它原因而遭到删除，严重的可能连上传都看不到。当然。你也可以套国外视频网站短代码引入，比如油管，vimeo等，但是问题是这必须得借助魔法功能才能实现，博主当然更愿意本地视频套在博客上，无需借助其它第三方的视频网站就能在博客上在线播放了。
+有没有办法解决呢？办法当然是有的。你可以用diygod开发的Dplayer播放器套件来实现。当然，也可以通过搭建视频床（其实就是原来的图床来实现）。因为Dplayer的视频本地播放导入对于新手有些难以理解，所以可以简单粗暴的通过上传到视频床来实现本地视频在博客上在线播放了，这里我用到的还是腾讯云COS。
+1.cos的具体设置 依次打开对象存储》存储桶列表创建》创建存储桶：
+创建存储桶1.基本信息地域选择（当然是物理位置最近的），名称随你填，访问权限公读私写（注意防盗链，后面会用到的）。
+2.高级可配选项配置只要服务端为SSE-COS就行了。
+3.最后配置完成，创建。
+创建完成，会出现刚刚搞好的存储桶，点击进入，设置权限防盗链：打开防盗链状态，类型是“白名单”，空referer选择“拒绝”，referer填你网站的域名和对应IP：
+2.上传视频文件到COS存储桶 可以看到有一个“上传文件”选项，上传一个视频文件试试。
+上传，可能要等一会儿 上传好后，点击“详情”，可以看到一个视频对象地址url，这个就是要配置的了：
+2.获取HTML5文件url并添加视频 表格
+   参数名 默认值 描述     id 必填 唯一id   scr 必填 视频url   controls 必填 允许用户控制视频播放   controlslist 选填，nodwonload 显示控件   preload 选填，autoplay 最佳体验方式   allowfullscreen 选填 显示能否全屏   position 选填 文档流   width 选填 视频显示区域宽度   poster 选填 视频海报封面       参数名 默认值 描述     type 必填 视频属性（video/MP4.</description>
     </item>
     
     <item>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="EN">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+<title>添加本地视频到hugo博客 | 阿波尔的博客</title>
+
+<script src="//cdn.jsdelivr.net/npm/@waline/client"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/flight025/flight025.github.io/css/styles.css">
+<link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="https://lib.baomitu.com/font-awesome/5.2.0/css/all.css" 
+integrity="sha384-DtgO3znmI27ZsBJLf6ASdUIQnb+d8RKb/z/fYL/E0f2NY/8nvfDQmQ6NkXmuoepn" crossorigin="anonymous">
+<script src="https://lib.baomitu.com/jquery/3.3.1/jquery.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/zenburn.min.css" crossorigin="anonymous" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script src="https://www.zaqizaba.xyz/js/highlight.js"></script>
+
+
+
+<link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials.css" />
+<link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials-theme-minima.css" />
+<script type="text/javascript" src="https://www.zaqizaba.xyz/js/jssocials.js"></script>
+
+
+
+<div class="container">
+    <nav class="navbar level">
+      <div class="navbar-brand">
+          <a class="nav-item" href="https://www.zaqizaba.xyz"><h1 class="title is-3">阿波尔的博客</h1></a>
+      </div>           
+      <div class="navbar-menu has-text-centered is-active">
+          <div class="navbar-end is-centered">
+              
+                <a href="https://www.zaqizaba.xyz/about" rel="me">
+                  <span class="icon">
+                    <i class="fas fa-info"></i>
+                  </span>
+                </a>
+              
+                <a href="https://www.zaqizaba.xyz/archives" rel="me">
+                  <span class="icon">
+                    <i class="fas fa-archive"></i>
+                  </span>
+                </a>
+              
+                <a href="https://www.zaqizaba.xyz/comments" rel="me">
+                  <span class="icon">
+                    <i class="fas fa-comment"></i>
+                  </span>
+                </a>
+              
+                <a href="https://github.com/flight025" rel="me">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                </a>
+              
+                <a href="https://www.zhihu.com/people/a-gan-jing-shen" rel="me">
+                  <span class="icon">
+                    <i class="fab fa-zhihu"></i>
+                  </span>
+                </a>
+              
+                <a href="https://twitter.com/666GXF" rel="me">
+                  <span class="icon">
+                    <i class="fab fa-twitter"></i>
+                  </span>
+                </a>
+              
+           </div>
+      </div>
+    </nav>
+  </div>
+
+<div class="container">
+  <h2 class="subtitle is-6">February 3, 2022</h2>
+  <h1 class="subtitle is-size-4-mobile is-size-3-desktop">添加本地视频到hugo博客</h1>
+  <div class="content">
+    <p><img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/html5-mobile-app-native-hybrid-pros-cons.jpg" alt="html5-mobile-app-native-hybrid-pros-cons"></p>
+<p>以前我在博文<a href="www.zaqizaba.xyz/posts/hugo%E6%B7%BB%E5%8A%A0%E7%9F%AD%E4%BB%A3%E7%A0%81">《hugo添加短代码》</a>这篇博文说过，可以通过相应文件的视频网站短代码模板引入，再从相应的视频网站url的id短代码来套取放到博客上，从而实现第三方网站视频在文章中出现。这也算是hugo博客的一大特色。但是有些时候，第三方网站审核视频，比如B站，如果你投稿的视频不是符合B站“正能量”主题，很大可能会上传因为版权问题，含露骨视频等其它原因而遭到删除，严重的可能连上传都看不到。当然。你也可以套国外视频网站短代码引入，比如油管，vimeo等，但是问题是这必须得借助魔法功能才能实现，博主当然更愿意本地视频套在博客上，无需借助其它第三方的视频网站就能在博客上在线播放了。</p>
+<p>有没有办法解决呢？办法当然是有的。你可以用diygod开发的<a href="dplayer.js.org">Dplayer</a>播放器套件来实现。当然，也可以通过搭建视频床（其实就是原来的图床来实现）。因为Dplayer的视频本地播放导入对于新手有些难以理解，所以可以简单粗暴的通过上传到视频床来实现本地视频在博客上在线播放了，这里我用到的还是腾讯云COS。</p>
+<h2 id="1cos的具体设置">1.cos的具体设置</h2>
+<p>依次打开对象存储》存储桶列表创建》创建存储桶：</p>
+<p><img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20220203142853215.png" alt="image-20220203142853215"></p>
+<p>创建存储桶1.基本信息地域选择（当然是物理位置最近的），名称随你填，访问权限公读私写（注意防盗链，后面会用到的）。</p>
+<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20220203151634370.png" alt="image-20220203151634370" style="zoom:67%;" />
+<p>2.高级可配选项配置只要服务端为SSE-COS就行了。</p>
+<p><img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20220203153351853.png" alt="image-20220203153351853"></p>
+<p>3.最后配置完成，创建。</p>
+<p><img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20220203153627497.png" alt="image-20220203153627497"></p>
+<p>创建完成，会出现刚刚搞好的存储桶，点击进入，设置权限防盗链：打开防盗链状态，类型是“白名单”，空referer选择“拒绝”，referer填你网站的域名和对应IP：</p>
+<p><img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20220203154312947.png" alt="image-20220203154312947"></p>
+<h2 id="2上传视频文件到cos存储桶">2.上传视频文件到COS存储桶</h2>
+<p>可以看到有一个“上传文件”选项，上传一个视频文件试试。</p>
+<p><img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20220203155427167.png" alt="image-20220203155427167">
+上传，可能要等一会儿
+<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20220203155645453.png" alt="image-20220203155645453"></p>
+<p>上传好后，点击“详情”，可以看到一个视频对象地址url，这个就是要配置的了：</p>
+<p><img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20220203160338208.png" alt="image-20220203160338208"></p>
+<h2 id="2获取html5文件url并添加视频">2.获取HTML5文件url并添加视频</h2>
+<p>表格</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">参数名</th>
+<th>默认值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">id</td>
+<td>必填</td>
+<td>唯一id</td>
+</tr>
+<tr>
+<td style="text-align:left">scr</td>
+<td>必填</td>
+<td>视频url</td>
+</tr>
+<tr>
+<td style="text-align:left">controls</td>
+<td>必填</td>
+<td>允许用户控制视频播放</td>
+</tr>
+<tr>
+<td style="text-align:left">controlslist</td>
+<td>选填，nodwonload</td>
+<td>显示控件</td>
+</tr>
+<tr>
+<td style="text-align:left">preload</td>
+<td>选填，autoplay</td>
+<td>最佳体验方式</td>
+</tr>
+<tr>
+<td style="text-align:left">allowfullscreen</td>
+<td>选填</td>
+<td>显示能否全屏</td>
+</tr>
+<tr>
+<td style="text-align:left">position</td>
+<td>选填</td>
+<td>文档流</td>
+</tr>
+<tr>
+<td style="text-align:left">width</td>
+<td>选填</td>
+<td>视频显示区域宽度</td>
+</tr>
+<tr>
+<td style="text-align:left">poster</td>
+<td>选填</td>
+<td>视频海报封面</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">参数名</th>
+<th style="text-align:center">默认值</th>
+<th style="text-align:center">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">type</td>
+<td style="text-align:center">必填</td>
+<td style="text-align:center">视频属性（video/MP4.video/avi.video/mov等）</td>
+</tr>
+<tr>
+<td style="text-align:left">muted</td>
+<td style="text-align:center">选填</td>
+<td style="text-align:center">音频设置</td>
+</tr>
+<tr>
+<td style="text-align:left">loop</td>
+<td style="text-align:center">选填</td>
+<td style="text-align:center">返回开始播放</td>
+</tr>
+<tr>
+<td style="text-align:left">autoplay</td>
+<td style="text-align:center">选填</td>
+<td style="text-align:center">自动播放</td>
+</tr>
+</tbody>
+</table>
+<p>以上面的视频为例：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">video</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;video&#34;</span> <span style="color:#a6e22e">controls</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>  <span style="color:#a6e22e">controlslist</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;nodownload&#34;</span>   <span style="color:#a6e22e">preload</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;none&#34;</span> <span style="color:#a6e22e">allowfullscreen</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;true&#34;</span> <span style="color:#a6e22e">position</span><span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;absolute&#34;</span> <span style="color:#a6e22e">width</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;100%&#34;</span> <span style="color:#a6e22e">poster</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;封面URL&#34;</span>&gt;
+      &lt;<span style="color:#f92672">source</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;mp4&#34;</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;对象地址URL&#34;</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;video/mp4&#34;</span> &gt;
+      &lt;/<span style="color:#f92672">video</span>&gt;
+</code></pre></div><video id="video" controls=""  controlslist="nodownload"   preload="none" allowfullscreen="true" position= "absolute" width="100%" poster="">
+      <source id="mp4" src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/%E6%9C%AA%E5%91%BD%E5%90%8D%E9%A1%B9%E7%9B%AE_x264.mp4" type="video/mp4" >
+      </video>
+<p>本实例视频是日本tbs纪录片**《三岛由纪夫VS东大全共闘》**第二段，也是我认为三岛由纪夫和东大全共斗左翼学生辩论最精彩的一段。</p>
+<hr>
+<p>参考：1.<a href="https://dplayer.js.org/">Dplayer</a>2.<a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/video">MDN Web Docs</a></p>
+<p><img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/e93145da8880c530cdb.jpg_r_720x400x95_40bf5a2d.jpg" alt="横滨"></p>
+
+  </div>
+</div>
+<div class="container has-text-centered">
+    
+    <aside><div id="share"></div></aside>
+    <script type="text/javascript">
+        $("#share").jsSocials({
+            showLabel: false,
+            showCount: false,
+            shares: ["email", "twitter"]
+        });
+    </script>
+    
+    <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />本作品采用<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">知识共享署名-相同方式共享 4.0 国际许可协议</a>进行许可。
+</div>
+
+<div id="waline"></div>
+<script>
+  Waline({
+    el: '#waline',
+    serverURL: 'https://blog-api-qiihielxk-flight025.vercel.app/',
+  });
+</script>
+</body>
+<section class="section">
+  <div class="container has-text-centered">
+    <p>&copy; <a href="https://www.zaqizaba.xyz">阿波尔的博客</a> 2021</p>
+  </div>
+</section>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-168102390-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+<script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+
