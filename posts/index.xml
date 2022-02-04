@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>EN</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://www.zaqizaba.xyz&#34;&gt;阿波尔的博客&lt;/a&gt; 2021</copyright>
-    <lastBuildDate>Thu, 03 Feb 2022 12:28:20 +0800</lastBuildDate><atom:link href="https://www.zaqizaba.xyz/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 03 Feb 2022 19:28:36 +0800</lastBuildDate><atom:link href="https://www.zaqizaba.xyz/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Creating a New Theme</title>
       <link>https://www.zaqizaba.xyz/posts/creating-a-new-theme/</link>
@@ -30,6 +30,25 @@ We&amp;rsquo;ll start with creating a new site with a very basic template.</desc
     </item>
     
     <item>
+      <title>Ipad国区换成美区</title>
+      <link>https://www.zaqizaba.xyz/posts/ipad%E5%9B%BD%E5%8C%BA%E6%8D%A2%E6%88%90%E7%BE%8E%E5%8C%BA/</link>
+      <pubDate>Thu, 03 Feb 2022 19:28:36 +0800</pubDate>
+      
+      <guid>https://www.zaqizaba.xyz/posts/ipad%E5%9B%BD%E5%8C%BA%E6%8D%A2%E6%88%90%E7%BE%8E%E5%8C%BA/</guid>
+      <description>自从apple公司创始人steve jobs开创性的把phone和ipod功能结合，极具传奇色彩的iPhone便诞生了。可惜我以前从来没有用过apple的任何产品。不外乎有三点：1.以前apple的产品很贵，所以只能用搭载android system的产品（现在apple的产品价格倒不一定贵了）。2.apple的产品搭载的是ios或ipados,而ios或ipados是闭源系统。所以可玩性几乎为零，而且apple的app应用几乎只能从apple store官方下载，第三方下载app必须要有apple的签名。3.apple产品很容易操作，很适合不爱折腾的用户使用。基于以上三点，我从来没用过apple的产品。但是这次我决定买ipad 9，一是我真的想尝试人们所说apple系统的顺滑；二是ipad9256gwifi版在拼多多上真的很便宜。买了收到，使用一段时间以后，发现国区apple store的有些应用是阉割了的，而且应用apple tv和iTunes Store与其说出厂搭载了这二个应用，还不如说根本就是“不存在的空气应用”罢了，于是我决定搜罗网上换区教程并成功从国区换到美区，并在此基础上加了一点自己的东西。
+测试环境如下：  机型：iPad 9 2021款😚 系统: ipodos 15.2 🤐 越狱状态： 未越狱 🙄
+ 方法如下：
+ 1.无须修改语言，先全程开启大环境科学上网模式（不开也可以，只不过后面换区apple支付环境要验证美国ip，退出国区apple id登陆并依次打开设置》通用》语言和地区》地区》中国》美国，iPad就会提示更改地区将重启。自此，国区apple id告一段落。
+2.换到美区后，默认美区科学上网环境。请先准备好一个美区地址，最好是免税州地址（美国有五大免税州：分别是阿拉斯加州、特拉华州、蒙大拿州、新罕布什尔州、俄勒冈州，ps：这也是为什么海淘转运公司大多在这些州的原因。），这些地址你可以用美国地址生成器，也可以从谷歌地图找一个免税州地址就行。一个用于验证短信的美国电话号码，最好是自己申请的，比如Google voice，也可以用第三方美国电话或者在线网站电话接收（这个不建议，因为短信接收得到是一个问题，以后美区验证也是一个问题），还有一个邮箱（最好是gmail，yahoo，outlook。国内邮箱不建议，邮箱接口代理感觉是一个问题）。
+上述准备好后，用了一个临时gamil邮箱。名字随便填一个，但是注意出身日期一定要填满18岁的。设置好密码，填你的美国电话号码，用于接收验证码，用来登录美区iCloud。然后apple会验证你的邮箱，填好就行了。
+如果有必要，你可以在ipad上付款与配送》添加付款方式填一个信用卡号码，美国办理的信用卡最好，国内办理的单币，双币卡貌似不行（豆知识：单币信用卡是指卡印上只一个发卡组织标志，双币卡是指卡印上有二个发卡组织标志），但是国内发行的国际单双币卡可以绑定paypal美区来实现消费，这个我试过没成功。
+然后在添加配送地址那里填一个免税州地址，我填的是俄勒冈州。填完去美区apple store看看，有美国信用卡或者绑定了paypal当然最好。没有你也可以用国内信用卡“通过电子邮件的方式发送礼品卡”。礼品卡最好是在美亚，苹果官网买的就好。没信用卡可以上某宝某多多去买，但是一定要选择信誉好的商家，就怕遇到黑卡，到时账号很大几率会出问题。
+换成apple id为美区后，可以看到apple tv、iTunes Store等应用都可以访问了，基本上除了apple stroe应用内消费有点问题外，其它的都完美解决了。
+ 视频具体操作：
+  </description>
+    </item>
+    
+    <item>
       <title>添加本地视频到hugo博客</title>
       <link>https://www.zaqizaba.xyz/posts/%E6%B7%BB%E5%8A%A0%E6%9C%AC%E5%9C%B0%E8%A7%86%E9%A2%91%E5%88%B0hugo%E5%8D%9A%E5%AE%A2/</link>
       <pubDate>Thu, 03 Feb 2022 12:28:20 +0800</pubDate>
@@ -39,12 +58,12 @@ We&amp;rsquo;ll start with creating a new site with a very basic template.</desc
 有没有办法解决呢？办法当然是有的。你可以用diygod开发的Dplayer播放器套件来实现。当然，也可以通过搭建视频床（其实就是原来的图床来实现）。因为Dplayer的视频本地播放导入对于新手有些难以理解，所以可以简单粗暴的通过上传到视频床来实现本地视频在博客上在线播放了，这里我用到的还是腾讯云COS。
 1.cos的具体设置 依次打开对象存储》存储桶列表创建》创建存储桶：
 创建存储桶1.基本信息地域选择（当然是物理位置最近的），名称随你填，访问权限公读私写（注意防盗链，后面会用到的）。
-2.高级可配选项配置只要服务端为SSE-COS就行了。
-3.最后配置完成，创建。
+1.1.高级可配选项配置只要服务端为SSE-COS就行了。
+1.2.最后配置完成，创建。
 创建完成，会出现刚刚搞好的存储桶，点击进入，设置权限防盗链：打开防盗链状态，类型是“白名单”，空referer选择“拒绝”，referer填你网站的域名和对应IP：
 2.上传视频文件到COS存储桶 可以看到有一个“上传文件”选项，上传一个视频文件试试。
 上传，可能要等一会儿 上传好后，点击“详情”，可以看到一个视频对象地址url，这个就是要配置的了：
-2.获取HTML5文件url并添加视频 表格
+3.获取HTML5文件url并添加视频 表格
    参数名 默认值 描述     id 必填 唯一id   scr 必填 视频url   controls 必填 允许用户控制视频播放   controlslist 选填，nodwonload 显示控件   preload 选填，autoplay 最佳体验方式   allowfullscreen 选填 显示能否全屏   position 选填 文档流   width 选填 视频显示区域宽度   poster 选填 视频海报封面       参数名 默认值 描述     type 必填 视频属性（video/MP4.</description>
     </item>
     
