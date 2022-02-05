@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="EN">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+<title>将hugo托管从github迁移到vercel | 阿波尔的博客</title>
+
+<script src="//cdn.jsdelivr.net/npm/@waline/client"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/flight025/flight025.github.io/css/styles.css">
+<link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="https://lib.baomitu.com/font-awesome/5.2.0/css/all.css" 
+integrity="sha384-DtgO3znmI27ZsBJLf6ASdUIQnb+d8RKb/z/fYL/E0f2NY/8nvfDQmQ6NkXmuoepn" crossorigin="anonymous">
+<script src="https://lib.baomitu.com/jquery/3.3.1/jquery.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/zenburn.min.css" crossorigin="anonymous" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script src="https://www.zaqizaba.xyz/js/highlight.js"></script>
+
+
+
+<link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials.css" />
+<link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials-theme-minima.css" />
+<script type="text/javascript" src="https://www.zaqizaba.xyz/js/jssocials.js"></script>
+
+
+
+<div class="container">
+    <nav class="navbar level">
+      <div class="navbar-brand">
+          <a class="nav-item" href="https://www.zaqizaba.xyz"><h1 class="title is-3">阿波尔的博客</h1></a>
+      </div>           
+      <div class="navbar-menu has-text-centered is-active">
+          <div class="navbar-end is-centered">
+              
+                <a href="https://www.zaqizaba.xyz/about" rel="me">
+                  <span class="icon">
+                    <i class="fas fa-info"></i>
+                  </span>
+                </a>
+              
+                <a href="https://www.zaqizaba.xyz/archives" rel="me">
+                  <span class="icon">
+                    <i class="fas fa-archive"></i>
+                  </span>
+                </a>
+              
+                <a href="https://www.zaqizaba.xyz/comments" rel="me">
+                  <span class="icon">
+                    <i class="fas fa-comment"></i>
+                  </span>
+                </a>
+              
+                <a href="https://github.com/flight025" rel="me">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                </a>
+              
+                <a href="https://www.zhihu.com/people/a-gan-jing-shen" rel="me">
+                  <span class="icon">
+                    <i class="fab fa-zhihu"></i>
+                  </span>
+                </a>
+              
+                <a href="https://twitter.com/666GXF" rel="me">
+                  <span class="icon">
+                    <i class="fab fa-twitter"></i>
+                  </span>
+                </a>
+              
+           </div>
+      </div>
+    </nav>
+  </div>
+
+<div class="container">
+  <h2 class="subtitle is-6">February 5, 2022</h2>
+  <h1 class="subtitle is-size-4-mobile is-size-3-desktop">将hugo托管从github迁移到vercel</h1>
+  <div class="content">
+    <p><img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/1_oBm_3saYz4AI_MS6OekdFQ.png" alt="vercel logo"></p>
+<p>vercel是一个站点托管平台，类似于GitHub的托管平台。在<a href="https://vercel.com/">vercel</a> 官网上有其详细的介绍。</p>
+<h2 id="1为什么我会弃用github而选用vercel">1.为什么我会弃用github而选用vercel</h2>
+<p>这里有二点原因：1.github托管的域名访问速度有点着急，vercel比github以及其它在无备案托管平台上我认为算是最快的。2.可以从github一键导入静态博客文件到vercel且支持个人自定义域名，而且上传博客文章比github要稳，可以隐藏公开仓库。</p>
+<h2 id="2使用vercel开始进行hugo静态博客部署">2.使用vercel开始进行hugo静态博客部署</h2>
+<h3 id="21从github拉取">2.1从GitHub拉取</h3>
+<p>这里vercel支持github,gitlab,bitbucket这三个托管平台登录，拉取github登录：</p>
+<p><img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20220205101654000.png" alt="image-20220205101654000"></p>
+<p>分别点击<code>New Project</code>》选择github上的静态博客仓库点击Import(导入）》Configure Project的<code>FRAMEWORK PRESET</code>我这里从“other”改为“hugo”,其它的都不需要改，然后点击“<code>deploy</code>（部署)”。</p>
+<p><img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20220205104301336.png" alt="image-20220205104301336"></p>
+<p>接下来就是代表成功部署在vercel上了。</p>
+<p><img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20220205104850558.png" alt="image-20220205104850558"></p>
+<h3 id="22自定义域名">2.2自定义域名</h3>
+<p>点击<code>vercel》project》setting》domains</code>，在<code>domains</code>输入自己的域名，并去域名商(DNSPod)控制台添加vercel的域名解析<code>CNAME</code>、<code>A</code>记录类型。</p>
+<p><img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20220205113958634.png" alt="image-20220205113958634"></p>
+<p>在先前github pages上移除绑定的域名，并移除在DNS解析DNSPod上的<code>CNAME</code>记录类型。</p>
+<p><img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20220205120219880.png" alt="image-20220205120219880"></p>
+<p>图/解除主机域名在github的绑定</p>
+<p><img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20220205120558037.png" alt="image-20220205120558037"></p>
+<p>图/之前在github上的<code>CNAME</code>记录类型在DNSPod删除</p>
+<p><img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20220205121522227.png" alt="image-20220205121522227"></p>
+<p><img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20220205121607937.png" alt="image-20220205121607937"></p>
+<p><img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20220205122239230.png" alt="image-20220205122239230"></p>
+<p>再把vercel的<code>A</code>、<code>CNAME</code>二条解析记录类型分别填到DOSPod域名解析上就行。</p>
+<p><img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20220205123236523.png" alt="image-20220205123236523"></p>
+<p>这样一来，vercel的三个域名解析就成功了。</p>
+<h3 id="23指定hugo博客版本号">2.3指定hugo博客版本号</h3>
+<p>你还可以指定<code>HUGO_VERSION</code>环境变量来添加自己特定的版本号，在<code>Vercel》project》setting》Environment Variables</code>上添加，例如：</p>
+<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20220205130919935.png" alt="image-20220205130919935" style="zoom:80%;" />
+<p>基本上这就hugo在Vercel的部署了。</p>
+<hr>
+<p>参考：<a href="https://vercel.com/guides/deploying-hugo-with-vercel">创建一个 Hugo 网站并使用 Vercel 进行部署</a></p>
+<p><img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/%E5%9C%A3%E5%BD%BC%E5%BE%97%E5%A0%A1.jpg" alt="圣彼得堡"></p>
+
+  </div>
+</div>
+<div class="container has-text-centered">
+    
+    <aside><div id="share"></div></aside>
+    <script type="text/javascript">
+        $("#share").jsSocials({
+            showLabel: false,
+            showCount: false,
+            shares: ["email", "twitter"]
+        });
+    </script>
+    
+    <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />本作品采用<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">知识共享署名-相同方式共享 4.0 国际许可协议</a>进行许可。
+</div>
+
+<div id="waline"></div>
+<script>
+  Waline({
+    el: '#waline',
+    serverURL: 'https://blog-api-qiihielxk-flight025.vercel.app/',
+  });
+</script>
+</body>
+<section class="section">
+  <div class="container has-text-centered">
+    <p>&copy; <a href="https://www.zaqizaba.xyz">阿波尔的博客</a> 2021</p>
+  </div>
+</section>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-168102390-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+<script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML"></script>
+
+

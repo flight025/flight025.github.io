@@ -89,6 +89,21 @@ integrity="sha384-DtgO3znmI27ZsBJLf6ASdUIQnb+d8RKb/z/fYL/E0f2NY/8nvfDQmQ6NkXmuoe
       
       <article class="columns">
         <div class="column is-2">
+          <h6 class="is-inline" style="white-space: nowrap">Feb 5</h2>
+        </div>
+        <div class="column">
+          <h2 class="subtitle is-inline is-size-4-mobile is-size-3-desktop"><a href="https://www.zaqizaba.xyz/posts/%E5%B0%86%E6%89%98%E7%AE%A1%E4%BB%8Egithub%E8%BF%81%E7%A7%BB%E5%88%B0vercel/">将hugo托管从github迁移到vercel</a></h1>
+          <div class="content is-hidden-mobile">
+            vercel是一个站点托管平台，类似于GitHub的托管平台。在vercel 官网上有其详细的介绍。
+1.为什么我会弃用github而选用vercel 这里有二点原因：1.github托管的域名访问速度有点着急，vercel比github以及其它在无备案托管平台上我认为算是最快的。2.可以从github一键导入静态博客文件到vercel且支持个人自定义域名，而且上传博客文章比github要稳，可以隐藏公开仓库。
+2.使用vercel开始进行hugo静态博客部署 2.1从GitHub拉取 这里vercel支持github,gitlab,bitbucket这三个托管平台登录，拉取github登录：
+分别点击New Project》选择github上的静态博客仓库点击Import(导入）》Configure Project的FRAMEWORK PRESET我这里从“other”改为“hugo”, …
+            
+          </div>
+      </article>
+      
+      <article class="columns">
+        <div class="column is-2">
           <h6 class="is-inline" style="white-space: nowrap">Feb 3</h2>
         </div>
         <div class="column">
@@ -255,21 +270,6 @@ $$(\bar x) \bar x (\hat y=\hat ax + \hat b) \hat y=\hat a x + \hat b (\sum\limit
 打开临时预览网页http://localhost:1313/查看，可以看到归档图标，但是点击没有反应。。。
 2.archives文件的创建和html文件格式 起先，我想到了关联about的_index.md文件,既然about是&quot;关于&quot;链接的来显示页面的。那我何不创建一个关联archives的_index.md文件呢。于是我创建了index.md文件。用typora写了archives页面归档链接，看看能不能显示，输入http://localhost:1313/查看，还是不能显示。我以为.md上传github就可以显示为html。看来不是这么回事。。。
 折腾了一会儿。在layouts …
-            
-          </div>
-      </article>
-      
-      <article class="columns">
-        <div class="column is-2">
-          <h6 class="is-inline" style="white-space: nowrap">Jun 25</h2>
-        </div>
-        <div class="column">
-          <h2 class="subtitle is-inline is-size-4-mobile is-size-3-desktop"><a href="https://www.zaqizaba.xyz/posts/hugo%E8%A7%A3%E5%86%B3%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90%E4%B8%8D%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/">Hugo解决网易云音乐不显示问题</a></h1>
-          <div class="content is-hidden-mobile">
-            这个问题，是我今天在“关于”页面添加网易云音乐发现的。具体到问题就是HTML文件不能在博客上显示。 我在“关于”页面上添加网易云音乐，上传了几次。发现还是没有网易云音乐，我就觉得纳闷了。
-于是我问了关于hugo建站的群，有人说看“关于”网页源代码有没有这个“html代码“。 打开关于页面，看到了这行代码不是原网易云音乐，显示为“!&ndash; raw HTML omitted &ndash;“。虽然不知道为什么会显示为这样，但我顺藤摸瓜，在Google搜索关于显示这个代码的原因。
-​ 在hugo论坛页面我到了原因，原来在hugo 0.60.0的版本中，为了安全，html文件改用Goldmark。 在页面中，解决办法也给出了，即开启不安全模式，在config.toml站点配置文件中，添加这二行代码：
-[markup.goldmark.renderer] unsafe= true 完成打 …
             
           </div>
       </article>
