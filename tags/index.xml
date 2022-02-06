@@ -7,7 +7,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>EN</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://www.zaqizaba.xyz&#34;&gt;阿波尔的博客&lt;/a&gt; 2021</copyright>
-    <lastBuildDate>Sat, 05 Feb 2022 09:19:47 +0800</lastBuildDate><atom:link href="https://www.zaqizaba.xyz/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 06 Feb 2022 13:53:55 +0800</lastBuildDate><atom:link href="https://www.zaqizaba.xyz/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Raspberry</title>
+      <link>https://www.zaqizaba.xyz/tags/raspberry/</link>
+      <pubDate>Sun, 06 Feb 2022 13:53:55 +0800</pubDate>
+      
+      <guid>https://www.zaqizaba.xyz/tags/raspberry/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Raspbian</title>
+      <link>https://www.zaqizaba.xyz/tags/raspbian/</link>
+      <pubDate>Sun, 06 Feb 2022 13:53:55 +0800</pubDate>
+      
+      <guid>https://www.zaqizaba.xyz/tags/raspbian/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>hugo</title>
       <link>https://www.zaqizaba.xyz/tags/hugo/</link>

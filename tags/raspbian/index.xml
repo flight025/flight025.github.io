@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Raspbian on 阿波尔的博客</title>
+    <link>https://www.zaqizaba.xyz/tags/raspbian/</link>
+    <description>Recent content in Raspbian on 阿波尔的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>EN</language>
+    <copyright>&amp;copy; &lt;a href=&#34;https://www.zaqizaba.xyz&#34;&gt;阿波尔的博客&lt;/a&gt; 2021</copyright>
+    <lastBuildDate>Sun, 06 Feb 2022 13:53:55 +0800</lastBuildDate><atom:link href="https://www.zaqizaba.xyz/tags/raspbian/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>树莓派刷入Raspbian镜像包</title>
+      <link>https://www.zaqizaba.xyz/posts/%E6%A0%91%E8%8E%93%E6%B4%BE%E5%88%B7%E5%85%A5raspbian%E9%95%9C%E5%83%8F%E5%8C%85/</link>
+      <pubDate>Sun, 06 Feb 2022 13:53:55 +0800</pubDate>
+      
+      <guid>https://www.zaqizaba.xyz/posts/%E6%A0%91%E8%8E%93%E6%B4%BE%E5%88%B7%E5%85%A5raspbian%E9%95%9C%E5%83%8F%E5%8C%85/</guid>
+      <description>维基百科对树莓派的描述是：  “树莓派是英国树莓派基金会开发的微型单板计算机，目的是以低价硬件及自由软件促进学校的基本计算机教育。”
+ 可见树莓派出现的初衷是为了在学校普及计算机教育，你可以把树莓派看成是一个微型计算机，不仅可以装liunx（包括我将要刷的官方系统Raspbian就是Debian7.0的定制版本)，Android，甚至Windows也能安装，还有openwrt（这里我要吐槽一句，在搜索引擎上输入“树莓派刷&amp;hellip;..”。结果基本上都是openwrt，原因都懂的。。。）。所以，不再多说，let’s go!!!
+你需要准备的材料有：  一个树莓派4B及插入micsd卡的读卡器、一根hdmi线、5V3A的电源、备用的键鼠和显示器、rj45的网线。
+ 方法如下： 1散热片安装以及接口的连接  先把三个散热片（分别是cpu、内存芯片、usb管理芯片）贴好.
+  树莓派官方外壳贴上。
+  把hdmi线先连接接到显示器上，树莓派4B接通5V3A的电源，jr45网线连接好网口，键鼠等会烧录好系统后再连上，启动等待烧录micsd卡。
+ 2.烧录raspions-bullseye-arm64系统到micsd  先下载好树莓派烧录官方工具 raspberry pi imager。
+  但是注意raspberry pi imager写入操作系统最好去官网的镜像站用磁力链接下载，不要用raspberry pi imager自带的镜像。下载好后、先格式化插在读卡器上的micsd卡。打开raspberry pi imager.依次打开请选择需要写入的操作系统（RASPBERRY PI 0S)》储存卡》点击烧录。
+  写入
+  完成
+ ###3.系统安装和设置
+ 完成上面的步骤。我选择的是带界面的系统，连接hdmi1.4的接口（我试了hdmi2.0接口没反应，可能是hdmi线不支持？），可以看到界面：
+   依次点击设置Set country》change password,直到设置完成。
+ 4.安装文件  由于liunx系统没有直接的安装包，所以。你可以用命令行安装所需的软件，比如，我现在要用Raspbian上写博客中文留言并录制视频：
+可以先安装谷歌拼音命令$ apt-get install fcitx-googlepinyin(安装时注意要sudo -i开启管理员权限）,再安装录屏截图软件kazam$ sudo apt-get install kazam,然后再设置好谷歌拼音开启，默认是shift+ctrl键。在Raspbian输入一段中文“你好，这是一个发自于Raspberry的表情包的🤭”。
+   参考： 树莓派官网</description>
+    </item>
+    
+  </channel>
+</rss>
