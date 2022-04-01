@@ -55,7 +55,7 @@ hugo new site ### 然后在###文件中就会得到
 用cd命令打开themes文件，在hugo主题中找一个主题，比如我找的charaka-hugo-theme主题。在cmd中命令如下：
 cd themes git clone https://github.com/natarajmb/charaka-hugo-theme.git 下载好主题包后，把themes中的主题包文件复制覆盖到原###中的根文件中。
 config原配置文件如下：
-baseurl = &amp;quot;https://example.com&amp;quot;（填你的github博客域名） languageCode = &amp;quot;en&amp;quot;（改成ZH-CN） title = &amp;quot;Charaka&amp;quot;（自己可以改成自己喜欢的博客名称） theme = &amp;quot;charaka-hugo-theme&amp;quot; copyright = &amp;quot;&amp;amp;copy; &amp;lt;a href=\&amp;quot;https://github.com/natarajmb\&amp;quot;&amp;gt;Nataraj Basappa&amp;lt;/a&amp;gt; 2018&amp;quot;（这里可以更改为你的连接和申明） disqusShortname = &amp;quot;&amp;quot;（disqus评论用，不过我改成了valine评论系统） googleAnalytics = &amp;quot;&amp;quot;(谷歌分析) [params] [author] name = &amp;quot;Nataraj Basappa&amp;quot; homepage = &amp;quot;https://natarajmb.</description>
+baseurl = &amp;#34;https://example.com&amp;#34;（填你的github博客域名） languageCode = &amp;#34;en&amp;#34;（改成ZH-CN） title = &amp;#34;Charaka&amp;#34;（自己可以改成自己喜欢的博客名称） theme = &amp;#34;charaka-hugo-theme&amp;#34; copyright = &amp;#34;&amp;amp;copy; &amp;lt;a href=\&amp;#34;https://github.com/natarajmb\&amp;#34;&amp;gt;Nataraj Basappa&amp;lt;/a&amp;gt; 2018&amp;#34;（这里可以更改为你的连接和申明） disqusShortname = &amp;#34;&amp;#34;（disqus评论用，不过我改成了valine评论系统） googleAnalytics = &amp;#34;&amp;#34;(谷歌分析) [params] [author] name = &amp;#34;Nataraj Basappa&amp;#34; homepage = &amp;#34;https://natarajmb.</description>
     </item>
     
     <item>
