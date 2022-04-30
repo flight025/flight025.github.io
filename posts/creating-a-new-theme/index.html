@@ -905,9 +905,19 @@ $ vi themes/zafta/layouts/_default/single.html
 
 <div id="waline"></div>
 
-<script src='//unpkg.com/@waline/client@v2/dist/waline.js'></script>
-<link href='//unpkg.com/@waline/client@v2/dist/waline.css' rel='stylesheet' />
-<script>
+<head>
+  
+  <script src="//unpkg.com/@waline/client@v2/dist/waline.js"></script>
+  <link
+    rel="stylesheet"
+    href="//unpkg.com/@waline/client@v2/dist/waline.css"
+  />
+  
+</head>
+<body>
+  
+  <div id="waline"></div>
+  <script>
 
  Waline.init({
     el: '#waline',
