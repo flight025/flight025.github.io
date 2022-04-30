@@ -120,8 +120,12 @@ integrity=&#34;sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54b
 </div>
 
 <div id="waline"></div>
+
+<script src='//unpkg.com/@waline/client@v2/dist/waline.js'></script>
+<link href='//unpkg.com/@waline/client@v2/dist/waline.css' rel='stylesheet' />
 <script>
-  Waline({
+
+ Waline.init({
     el: '#waline',
     serverURL: 'https://blog-api-qiihielxk-flight025.vercel.app/',
 

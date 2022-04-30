@@ -120,8 +120,12 @@ EDTA盐对血细胞形态、血小板计数影响很小，适用于血液学检�
 </div>
 
 <div id="waline"></div>
+
+<script src='//unpkg.com/@waline/client@v2/dist/waline.js'></script>
+<link href='//unpkg.com/@waline/client@v2/dist/waline.css' rel='stylesheet' />
 <script>
-  Waline({
+
+ Waline.init({
     el: '#waline',
     serverURL: 'https://blog-api-qiihielxk-flight025.vercel.app/',
 
