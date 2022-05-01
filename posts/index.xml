@@ -25,8 +25,8 @@ We&amp;rsquo;ll start with creating a new site with a very basic template.</desc
       
       <guid>https://www.zaqizaba.xyz/posts/migrate-from-jekyll/</guid>
       <description>Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
-▾ &amp;lt;root&amp;gt;/▾ images/logo.png should become
-▾ &amp;lt;root&amp;gt;/▾ static/▾ images/logo.png Additionally, you&amp;rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.</description>
+▾ &amp;lt;root&amp;gt;/  ▾ images/  logo.png should become
+▾ &amp;lt;root&amp;gt;/  ▾ static/  ▾ images/  logo.png Additionally, you&amp;rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.</description>
     </item>
     
     <item>
@@ -220,7 +220,7 @@ $$(\neg p:x^2\lt 1) \neg p:x^2\lt 1 (\forall x) \forall x (\exists y) \exists y 
       <guid>https://www.zaqizaba.xyz/posts/cdn%E5%85%AC%E5%85%B1%E5%BA%93%E7%9A%84%E4%BF%AE%E6%94%B9/</guid>
       <description>博客有一段时间加载很慢，打开chrome的控制台显示这样：
 网站有几处错误和警告，加载这些失效和错误资源限制了网页加载速度。
-&amp;lt;link rel=&amp;#34;stylesheet&amp;#34; href=&amp;#34;{{ $scratch.Get &amp;#34;baseURL&amp;#34; }}/css/styles.css&amp;#34;&amp;gt; &amp;lt;link rel=&amp;#34;stylesheet&amp;#34; href=&amp;#34;https://use.fontawesome.com/releases/v5.2.0/css/all.css&amp;#34; integrity=&amp;#34;sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ&amp;#34; crossorigin=&amp;#34;anonymous&amp;#34;&amp;gt; &amp;lt;script src=&amp;#34;https://code.jquery.com/jquery-3.3.1.js&amp;#34; integrity=&amp;#34;sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=&amp;#34; crossorigin=&amp;#34;anonymous&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; 这些是错误和失效的公共CDN，以及警告链接，一般这种情况是CDN公共库网站失效了，导致JS,CSS资源加载缓慢错误。这时就应该找一个加速CDN库了。这里我推荐奇虎360CDN公共库和jsdelivr公共库，找到相应的CSS.js格式换成这些公共CDN，但是JS,CSS资源在公共CDN安全容易受到攻击，这时需要SRI，SRI生成可以在SRI Hash Generator这网站生成相应的哈希函数。启用 SRI 策略后，浏览器会对资源进行 CORS 校验，这就要求被请求的资源必须同域，或配置 Access-Control-Allow-Origin 响应头和添加crossorigin=&amp;quot;anonymous&amp;quot; 这个属性。
+&amp;lt;link rel=&amp;#34;stylesheet&amp;#34; href=&amp;#34;{{ $scratch.Get &amp;#34;baseURL&amp;#34; }}/css/styles.css&amp;#34;&amp;gt;  &amp;lt;link rel=&amp;#34;stylesheet&amp;#34; href=&amp;#34;https://use.fontawesome.com/releases/v5.2.0/css/all.css&amp;#34; integrity=&amp;#34;sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ&amp;#34; crossorigin=&amp;#34;anonymous&amp;#34;&amp;gt; &amp;lt;script src=&amp;#34;https://code.jquery.com/jquery-3.3.1.js&amp;#34; integrity=&amp;#34;sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=&amp;#34; crossorigin=&amp;#34;anonymous&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; 这些是错误和失效的公共CDN，以及警告链接，一般这种情况是CDN公共库网站失效了，导致JS,CSS资源加载缓慢错误。这时就应该找一个加速CDN库了。这里我推荐奇虎360CDN公共库和jsdelivr公共库，找到相应的CSS.js格式换成这些公共CDN，但是JS,CSS资源在公共CDN安全容易受到攻击，这时需要SRI，SRI生成可以在SRI Hash Generator这网站生成相应的哈希函数。启用 SRI 策略后，浏览器会对资源进行 CORS 校验，这就要求被请求的资源必须同域，或配置 Access-Control-Allow-Origin 响应头和添加crossorigin=&amp;quot;anonymous&amp;quot; 这个属性。
 改好后上传GitHub，再打开网站控制台看看。
 all.css静态文件由30s加载时间下降到13ms,大大的减少了网站加载时间，网页速度得到提升。
  这里我要感谢@怡红公子 提供公共CDN资源库。</description>
@@ -273,7 +273,7 @@ hugo new site ### 然后在###文件中就会得到
 用cd命令打开themes文件，在hugo主题中找一个主题，比如我找的charaka-hugo-theme主题。在cmd中命令如下：
 cd themes git clone https://github.com/natarajmb/charaka-hugo-theme.git 下载好主题包后，把themes中的主题包文件复制覆盖到原###中的根文件中。
 config原配置文件如下：
-baseurl = &amp;#34;https://example.com&amp;#34;（填你的github博客域名） languageCode = &amp;#34;en&amp;#34;（改成ZH-CN） title = &amp;#34;Charaka&amp;#34;（自己可以改成自己喜欢的博客名称） theme = &amp;#34;charaka-hugo-theme&amp;#34; copyright = &amp;#34;&amp;amp;copy; &amp;lt;a href=\&amp;#34;https://github.com/natarajmb\&amp;#34;&amp;gt;Nataraj Basappa&amp;lt;/a&amp;gt; 2018&amp;#34;（这里可以更改为你的连接和申明） disqusShortname = &amp;#34;&amp;#34;（disqus评论用，不过我改成了valine评论系统） googleAnalytics = &amp;#34;&amp;#34;(谷歌分析) [params] [author] name = &amp;#34;Nataraj Basappa&amp;#34; homepage = &amp;#34;https://natarajmb.</description>
+baseurl = &amp;#34;https://example.com&amp;#34;（填你的github博客域名） languageCode = &amp;#34;en&amp;#34;（改成ZH-CN） title = &amp;#34;Charaka&amp;#34;（自己可以改成自己喜欢的博客名称） theme = &amp;#34;charaka-hugo-theme&amp;#34; copyright = &amp;#34;&amp;amp;copy; &amp;lt;a href=\&amp;#34;https://github.com/natarajmb\&amp;#34;&amp;gt;Nataraj Basappa&amp;lt;/a&amp;gt; 2018&amp;#34;（这里可以更改为你的连接和申明） disqusShortname = &amp;#34;&amp;#34;（disqus评论用，不过我改成了valine评论系统） googleAnalytics = &amp;#34;&amp;#34;(谷歌分析)  [params]  [author]  name = &amp;#34;Nataraj Basappa&amp;#34;  homepage = &amp;#34;https://natarajmb.</description>
     </item>
     
     <item>
