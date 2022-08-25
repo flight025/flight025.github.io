@@ -24,7 +24,8 @@
 2.上传视频文件到COS存储桶 可以看到有一个“上传文件”选项，上传一个视频文件试试。
 上传，可能要等一会儿 上传好后，点击“详情”，可以看到一个视频对象地址url，这个就是要配置的了：
 3.获取HTML5文件url并添加视频 表格
-   参数名 默认值 描述     id 必填 唯一id   scr 必填 视频url   controls 必填 允许用户控制视频播放   controlslist 选填，nodwonload 显示控件   preload 选填，autoplay 最佳体验方式   allowfullscreen 选填 显示能否全屏   position 选填 文档流   width 选填 视频显示区域宽度   poster 选填 视频海报封面       参数名 默认值 描述     type 必填 视频属性（video/MP4.</description>
+参数名 默认值 描述 id 必填 唯一id scr 必填 视频url controls 必填 允许用户控制视频播放 controlslist 选填，nodwonload 显示控件 preload 选填，autoplay 最佳体验方式 allowfullscreen 选填 显示能否全屏 position 选填 文档流 width 选填 视频显示区域宽度 poster 选填 视频海报封面 参数名 默认值 描述 type 必填 视频属性（video/MP4.video/avi.video/mov等） muted 选填 音频设置 loop 选填 返回开始播放 autoplay 选填 自动播放 以上面的视频为例：
+&amp;lt;video id=&amp;#34;video&amp;#34; controls=&amp;#34;&amp;#34; controlslist=&amp;#34;nodownload&amp;#34; preload=&amp;#34;none&amp;#34; allowfullscreen=&amp;#34;true&amp;#34; position= &amp;#34;absolute&amp;#34; width=&amp;#34;100%&amp;#34; poster=&amp;#34;封面URL&amp;#34;&amp;gt; &amp;lt;source id=&amp;#34;mp4&amp;#34; src=&amp;#34;对象地址URL&amp;#34; type=&amp;#34;video/mp4&amp;#34; &amp;gt; &amp;lt;/video&amp;gt; 本实例视频是日本tbs纪录片 《三岛由纪夫VS东大全共闘》 第二段，也是我认为三岛由纪夫和东大全共斗左翼学生辩论最精彩的一段。</description>
     </item>
     
   </channel>

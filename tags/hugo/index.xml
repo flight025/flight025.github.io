@@ -27,7 +27,7 @@
 这样一来，vercel的三个域名解析就成功了。
 2.3指定hugo博客版本号 你还可以指定HUGO_VERSION环境变量来添加自己特定的版本号，在Vercel》project》setting》Environment Variables上添加，例如：
 基本上这就是hugo在Vercel的部署了。
- 参考：创建一个 Hugo 网站并使用 Vercel 进行部署</description>
+参考：创建一个 Hugo 网站并使用 Vercel 进行部署</description>
     </item>
     
     <item>
@@ -38,7 +38,7 @@
       <guid>https://www.zaqizaba.xyz/posts/hugo%E6%B7%BB%E5%8A%A0%E7%9F%AD%E4%BB%A3%E7%A0%81/</guid>
       <description>写在之前， hugo shortcodes中文意译即为雨果博客短代码，是一种先配置文件，通过在文章中插入短代码模式，来实现纯文字，歌曲，文章，个人社交文字转发，以及视频，播客等在个人博客上显示的一种方式。
 以下几个短代码的应用 上次我在“Hugo解决网易云音乐不显示问题”这篇博客中说了，开启HTML外链引用必须先添加：
-1.[markup.goldmark.renderer] 2.unsafe= true 然后自己再在网易云音乐引入  iframe实现在hugo博客上显示音乐。但是现在，有一种更好的方式，hugo提倡引入外链可以用短代码。
+1.[markup.goldmark.renderer] 2.unsafe= true 然后自己再在网易云音乐引入 iframe实现在hugo博客上显示音乐。但是现在，有一种更好的方式，hugo提倡引入外链可以用短代码。
 方式为：新建/layouts/shortcodes/music.html，在其中引入：
 {{- $scratch := .Page.Scratch.Get &amp;#34;scratch&amp;#34; -}} &amp;lt;!-- require APlayer --&amp;gt; &amp;lt;link rel=&amp;#34;stylesheet&amp;#34; href=&amp;#34;https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css&amp;#34;&amp;gt; &amp;lt;style type=&amp;#34;text/css&amp;#34;&amp;gt;.dark-theme .aplayer{background:#212121}.dark-theme .aplayer.aplayer-withlist .aplayer-info{border-bottom-color:#5c5c5c}.dark-theme .aplayer.aplayer-fixed .aplayer-list{border-color:#5c5c5c}.dark-theme .aplayer .aplayer-body{background-color:#212121}.dark-theme .aplayer .aplayer-info{border-top-color:#212121}.dark-theme .aplayer .aplayer-info .aplayer-music .aplayer-title{color:#fff}.dark-theme .aplayer .aplayer-info .aplayer-music .aplayer-author{color:#fff}.dark-theme .aplayer .aplayer-info .aplayer-controller .aplayer-time{color:#eee}.dark-theme .aplayer .aplayer-info .aplayer-controller .aplayer-time .aplayer-icon path{fill:#eee}.dark-theme .aplayer .aplayer-list{background-color:#212121}.dark-theme .aplayer .aplayer-list::-webkit-scrollbar-thumb{background-color:#999}.dark-theme .aplayer .aplayer-list::-webkit-scrollbar-thumb:hover{background-color:#bbb}.dark-theme .aplayer .aplayer-list li{color:#fff;border-top-color:#666}.dark-theme .aplayer .aplayer-list li:hover{background:#4e4e4e}.dark-theme .aplayer .aplayer-list li.aplayer-list-light{background:#6c6c6c}.dark-theme .aplayer .</description>
     </item>
@@ -51,10 +51,10 @@
       <guid>https://www.zaqizaba.xyz/posts/cdn%E5%85%AC%E5%85%B1%E5%BA%93%E7%9A%84%E4%BF%AE%E6%94%B9/</guid>
       <description>博客有一段时间加载很慢，打开chrome的控制台显示这样：
 网站有几处错误和警告，加载这些失效和错误资源限制了网页加载速度。
-&amp;lt;link rel=&amp;#34;stylesheet&amp;#34; href=&amp;#34;{{ $scratch.Get &amp;#34;baseURL&amp;#34; }}/css/styles.css&amp;#34;&amp;gt;  &amp;lt;link rel=&amp;#34;stylesheet&amp;#34; href=&amp;#34;https://use.fontawesome.com/releases/v5.2.0/css/all.css&amp;#34; integrity=&amp;#34;sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ&amp;#34; crossorigin=&amp;#34;anonymous&amp;#34;&amp;gt; &amp;lt;script src=&amp;#34;https://code.jquery.com/jquery-3.3.1.js&amp;#34; integrity=&amp;#34;sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=&amp;#34; crossorigin=&amp;#34;anonymous&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; 这些是错误和失效的公共CDN，以及警告链接，一般这种情况是CDN公共库网站失效了，导致JS,CSS资源加载缓慢错误。这时就应该找一个加速CDN库了。这里我推荐奇虎360CDN公共库和jsdelivr公共库，找到相应的CSS.js格式换成这些公共CDN，但是JS,CSS资源在公共CDN安全容易受到攻击，这时需要SRI，SRI生成可以在SRI Hash Generator这网站生成相应的哈希函数。启用 SRI 策略后，浏览器会对资源进行 CORS 校验，这就要求被请求的资源必须同域，或配置 Access-Control-Allow-Origin 响应头和添加crossorigin=&amp;quot;anonymous&amp;quot; 这个属性。
+&amp;lt;link rel=&amp;#34;stylesheet&amp;#34; href=&amp;#34;{{ $scratch.Get &amp;#34;baseURL&amp;#34; }}/css/styles.css&amp;#34;&amp;gt; &amp;lt;link rel=&amp;#34;stylesheet&amp;#34; href=&amp;#34;https://use.fontawesome.com/releases/v5.2.0/css/all.css&amp;#34; integrity=&amp;#34;sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ&amp;#34; crossorigin=&amp;#34;anonymous&amp;#34;&amp;gt; &amp;lt;script src=&amp;#34;https://code.jquery.com/jquery-3.3.1.js&amp;#34; integrity=&amp;#34;sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=&amp;#34; crossorigin=&amp;#34;anonymous&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; 这些是错误和失效的公共CDN，以及警告链接，一般这种情况是CDN公共库网站失效了，导致JS,CSS资源加载缓慢错误。这时就应该找一个加速CDN库了。这里我推荐奇虎360CDN公共库和jsdelivr公共库，找到相应的CSS.js格式换成这些公共CDN，但是JS,CSS资源在公共CDN安全容易受到攻击，这时需要SRI，SRI生成可以在SRI Hash Generator这网站生成相应的哈希函数。启用 SRI 策略后，浏览器会对资源进行 CORS 校验，这就要求被请求的资源必须同域，或配置 Access-Control-Allow-Origin 响应头和添加crossorigin=&amp;quot;anonymous&amp;quot; 这个属性。
 改好后上传GitHub，再打开网站控制台看看。
 all.css静态文件由30s加载时间下降到13ms,大大的减少了网站加载时间，网页速度得到提升。
- 这里我要感谢@怡红公子 提供公共CDN资源库。</description>
+这里我要感谢@怡红公子 提供公共CDN资源库。</description>
     </item>
     
     <item>
@@ -69,8 +69,7 @@ all.css静态文件由30s加载时间下降到13ms,大大的减少了网站加�
 2.archives文件的创建和html文件格式 起先，我想到了关联about的_index.md文件,既然about是&amp;quot;关于&amp;quot;链接的来显示页面的。那我何不创建一个关联archives的_index.md文件呢。于是我创建了index.md文件。用typora写了archives页面归档链接，看看能不能显示，输入http://localhost:1313/查看，还是不能显示。我以为.md上传github就可以显示为html。看来不是这么回事。。。
 折腾了一会儿。在layouts文件夹中找到了about的html文件，似乎是要添加html文件。emmm&amp;hellip;(⊙﹏⊙)，于是我把archives.md用typora转换成html文件，放在了layouts文件夹中，再打开http://localhost:1313临时查看，发现归档文章可以访问了。确定了归档.md的确需要转换成html文件放在layouts文件夹中才能访问。
 3.后续注意及存在问题 ​ 注意：1.转换成html文件后，在html用partial引用页面. 存在的问题：1.归档文章必须得自己添加超链接，不能自动更新，很麻烦2.主题页面背景颜色和归档文章颜色不一致。
-2021.1.26号更新。基本上上面的方法是很麻烦的。现在我找了更好的归档办法，不再需要自己手动更新了。以前我更新归档是通过添加文章超链接archives的.md文件再转换成为html格式，来实现归档的。但是现在发现archives.html可以引用single来添加文章日期归档时间代码来实现，只要自己每次更新.md文章，文章便会自动更新在归档年月日中。这里我参考了这篇文章：神秘极客的博文《为hugo添加归档页面》。
- </description>
+2021.1.26号更新。基本上上面的方法是很麻烦的。现在我找了更好的归档办法，不再需要自己手动更新了。以前我更新归档是通过添加文章超链接archives的.md文件再转换成为html格式，来实现归档的。但是现在发现archives.html可以引用single来添加文章日期归档时间代码来实现，只要自己每次更新.md文章，文章便会自动更新在归档年月日中。这里我参考了这篇文章：神秘极客的博文《为hugo添加归档页面》。</description>
     </item>
     
     <item>
@@ -84,7 +83,7 @@ all.css静态文件由30s加载时间下降到13ms,大大的减少了网站加�
 ​ 在hugo论坛页面我到了原因，原来在hugo 0.60.0的版本中，为了安全，html文件改用Goldmark。 在页面中，解决办法也给出了，即开启不安全模式，在config.toml站点配置文件中，添加这二行代码：
 [markup.goldmark.renderer] unsafe= true 完成打开http://localhost:1313/预览页面，此时就可以看到在原来的位置添加的网易云音乐了。
 这样就解决了网易云音乐不显示的问题😀。 还有， 今天端午节，祝大家节日快乐。💖😀
- 网页参考：1.hugo论坛解决html文件不显示解决办法</description>
+网页参考：1.hugo论坛解决html文件不显示解决办法</description>
     </item>
     
     <item>
@@ -104,7 +103,7 @@ hugo new site ### 然后在###文件中就会得到
 用cd命令打开themes文件，在hugo主题中找一个主题，比如我找的charaka-hugo-theme主题。在cmd中命令如下：
 cd themes git clone https://github.com/natarajmb/charaka-hugo-theme.git 下载好主题包后，把themes中的主题包文件复制覆盖到原###中的根文件中。
 config原配置文件如下：
-baseurl = &amp;#34;https://example.com&amp;#34;（填你的github博客域名） languageCode = &amp;#34;en&amp;#34;（改成ZH-CN） title = &amp;#34;Charaka&amp;#34;（自己可以改成自己喜欢的博客名称） theme = &amp;#34;charaka-hugo-theme&amp;#34; copyright = &amp;#34;&amp;amp;copy; &amp;lt;a href=\&amp;#34;https://github.com/natarajmb\&amp;#34;&amp;gt;Nataraj Basappa&amp;lt;/a&amp;gt; 2018&amp;#34;（这里可以更改为你的连接和申明） disqusShortname = &amp;#34;&amp;#34;（disqus评论用，不过我改成了valine评论系统） googleAnalytics = &amp;#34;&amp;#34;(谷歌分析)  [params]  [author]  name = &amp;#34;Nataraj Basappa&amp;#34;  homepage = &amp;#34;https://natarajmb.</description>
+baseurl = &amp;#34;https://example.com&amp;#34;（填你的github博客域名） languageCode = &amp;#34;en&amp;#34;（改成ZH-CN） title = &amp;#34;Charaka&amp;#34;（自己可以改成自己喜欢的博客名称） theme = &amp;#34;charaka-hugo-theme&amp;#34; copyright = &amp;#34;&amp;amp;copy; &amp;lt;a href=\&amp;#34;https://github.com/natarajmb\&amp;#34;&amp;gt;Nataraj Basappa&amp;lt;/a&amp;gt; 2018&amp;#34;（这里可以更改为你的连接和申明） disqusShortname = &amp;#34;&amp;#34;（disqus评论用，不过我改成了valine评论系统） googleAnalytics = &amp;#34;&amp;#34;(谷歌分析) [params] [author] name = &amp;#34;Nataraj Basappa&amp;#34; homepage = &amp;#34;https://natarajmb.</description>
     </item>
     
     <item>
@@ -127,7 +126,7 @@ Save it somewhere specific as we will be using it in the next step.
 More complete instructions are available at installing hugo
 Step 2. Build the Docs Hugo has its own example site which happens to also be the documentation site you are reading right now.
 Follow the following steps:
- Clone the hugo repository Go into the repo Run hugo in server mode and build the docs Open your browser to http://localhost:1313  Corresponding pseudo commands:</description>
+Clone the hugo repository Go into the repo Run hugo in server mode and build the docs Open your browser to http://localhost:1313 Corresponding pseudo commands:</description>
     </item>
     
   </channel>

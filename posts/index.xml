@@ -25,8 +25,8 @@ We&amp;rsquo;ll start with creating a new site with a very basic template.</desc
       
       <guid>https://www.zaqizaba.xyz/posts/migrate-from-jekyll/</guid>
       <description>Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
-▾ &amp;lt;root&amp;gt;/  ▾ images/  logo.png should become
-▾ &amp;lt;root&amp;gt;/  ▾ static/  ▾ images/  logo.png Additionally, you&amp;rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.</description>
+▾ &amp;lt;root&amp;gt;/ ▾ images/ logo.png should become
+▾ &amp;lt;root&amp;gt;/ ▾ static/ ▾ images/ logo.png Additionally, you&amp;rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.</description>
     </item>
     
     <item>
@@ -38,11 +38,10 @@ We&amp;rsquo;ll start with creating a new site with a very basic template.</desc
       <description>19年时的博客上就写过具体的电脑装机教程，那会我买了电脑配件直接装了一台台式机。
 我在19年买的amd 5700xt显卡发现现在有点卡顿，但还能用。于是我准备只换显卡，这二年众所周知的原因，显卡高价被奸商和“挖矿商”恶意抬高价格，导致显卡价格一直虚高下不去。不过是不是最近矿潮回落的原因，近期几个月显卡都有小幅度降价。
 于是我买了一款6700xt（终究觉得a卡光追和现在a卡的驱动问题有了很大的改善），但是某些方面比不上n卡，价格比n卡便宜那么几百来块。这款6700xt是盈通的六道兵甲，价格上我觉得也能接受。但是问题是买到后发现，原来的机箱显卡限长是290mm，现在我这个显卡长度大约为310mm,而且电源功率建议是750w。这也就意味着我的显卡，机箱以及电源都必须得换。
-马上开动，材料为：  EVESKY锐界机箱、120mm的散热风扇（没买风扇，风扇是原来机箱上拆解下来的）、技嘉B365m小雕（还是原来的主板，带cpu以及cpu散热风冷）、带pcie扩展固态硬盘的转接卡，鑫谷全模组额定750w电源（以前用的金河田600w非模组电源，可能缺点就是非模组电源把一些不用的线也包括在机箱内了，除了这点，其实全模和非模我感觉没什么差别。）以及电源模组线。
- 由于以前我在原博客写过具体的操作，现在操作和以前大同小异（详细操作可以看我以前的博客，这次除了机械硬盘安装有些不同外），所以我写一下简略的操作：
-方法如下：  1.先把锐界机箱散热风扇安装好，有铭牌的风扇朝内，用十字螺丝固定好风扇；2.把带cpu散热风扇的主板固定在机箱内，垫好六角黄铜，一一对应螺丝口接好；3.扯开机箱铁皮。把盈通显卡，转接卡用螺丝固定，再用垫片垫住显卡和转接卡的空隙4.安装好鑫谷全模组电源固定，哪个电子元器件部位需要供电用那根。4.打开底下的机械硬盘仓位(这个机箱支持插入2个机械硬盘位，这次我闲置的一个2T的机械硬盘，刚好能派上用场了)。插入一个机械硬盘，上面再固定一个机械硬盘。5.分别在主板上插入主板24pin、显卡8+6pin、cpu8pin、cpu风冷小4pin、散热风扇大4pin、硬盘sata位接口，再插入机箱自带音频接口、usb接口、usb3.0接口、硬盘指示灯、重启键、电源开关、电源开关指示灯接口后接通电源，打开电源开关。
- 测试：  一键点亮了，代表装机成功了（可能线材有点乱，但是的确我不怎么会理线）。
- </description>
+马上开动，材料为： EVESKY锐界机箱、120mm的散热风扇（没买风扇，风扇是原来机箱上拆解下来的）、技嘉B365m小雕（还是原来的主板，带cpu以及cpu散热风冷）、带pcie扩展固态硬盘的转接卡，鑫谷全模组额定750w电源（以前用的金河田600w非模组电源，可能缺点就是非模组电源把一些不用的线也包括在机箱内了，除了这点，其实全模和非模我感觉没什么差别。）以及电源模组线。
+由于以前我在原博客写过具体的操作，现在操作和以前大同小异（详细操作可以看我以前的博客，这次除了机械硬盘安装有些不同外），所以我写一下简略的操作：
+方法如下： 1.先把锐界机箱散热风扇安装好，有铭牌的风扇朝内，用十字螺丝固定好风扇；2.把带cpu散热风扇的主板固定在机箱内，垫好六角黄铜，一一对应螺丝口接好；3.扯开机箱铁皮。把盈通显卡，转接卡用螺丝固定，再用垫片垫住显卡和转接卡的空隙4.安装好鑫谷全模组电源固定，哪个电子元器件部位需要供电用那根。4.打开底下的机械硬盘仓位(这个机箱支持插入2个机械硬盘位，这次我闲置的一个2T的机械硬盘，刚好能派上用场了)。插入一个机械硬盘，上面再固定一个机械硬盘。5.分别在主板上插入主板24pin、显卡8+6pin、cpu8pin、cpu风冷小4pin、散热风扇大4pin、硬盘sata位接口，再插入机箱自带音频接口、usb接口、usb3.0接口、硬盘指示灯、重启键、电源开关、电源开关指示灯接口后接通电源，打开电源开关。
+测试： 一键点亮了，代表装机成功了（可能线材有点乱，但是的确我不怎么会理线）。</description>
     </item>
     
     <item>
@@ -51,21 +50,21 @@ We&amp;rsquo;ll start with creating a new site with a very basic template.</desc
       <pubDate>Sun, 06 Feb 2022 13:53:55 +0800</pubDate>
       
       <guid>https://www.zaqizaba.xyz/posts/%E6%A0%91%E8%8E%93%E6%B4%BE%E5%88%B7%E5%85%A5raspbian%E9%95%9C%E5%83%8F%E5%8C%85/</guid>
-      <description>维基百科对树莓派的描述是：  “树莓派是英国树莓派基金会开发的微型单板计算机，目的是以低价硬件及自由软件促进学校的基本计算机教育。”
- 可见树莓派出现的初衷是为了在学校普及计算机教育，你可以把树莓派看成是一个微型计算机，不仅可以装linux（包括我将要刷的官方系统Raspbian就是Debian7.0的定制版本)，Android，甚至Windows也能安装，还有openwrt（这里我要吐槽一句，在搜索引擎上输入“树莓派刷&amp;hellip;..”。结果基本上都是openwrt，原因都懂的。。。）。所以，不再多说，let’s go!!!
-你需要准备的材料有：  一个树莓派4B及插入micsd卡的读卡器、一根hdmi线、5V3A的电源、备用的键鼠和显示器、rj45的网线。
- 方法如下： 1.散热片安装以及接口的连接  先把三个散热片（分别是cpu、内存芯片、usb管理芯片）贴好.
-  树莓派官方外壳贴上。
-  把hdmi线先连接接到显示器上，树莓派4B接通5V3A的电源，jr45网线连接好网口，键鼠等会烧录好系统后再连上，启动等待烧录micsd卡。
- 2.烧录raspions-bullseye-arm64系统到micsd  先下载好树莓派烧录官方工具 raspberry pi imager。
-  但是注意raspberry pi imager写入操作系统最好去官网的镜像站用磁力链接下载，不要用raspberry pi imager自带的镜像。下载好后、先格式化插在读卡器上的micsd卡。打开raspberry pi imager.依次打开请选择需要写入的操作系统（RASPBERRY PI 0S)》储存卡》点击烧录。
-  写入
-  完成
- 3.系统安装和设置  完成上面的步骤。我选择的是带界面的系统，连接hdmi1.4的接口（我试了hdmi2.0接口没反应，可能是hdmi线不支持？），可以看到界面：
-   依次点击设置Set country》change password,直到设置完成。
- 4.安装文件  由于linux系统没有直接的安装包，所以。你可以用命令行安装所需的软件，比如，我现在要用Raspbian上写博客中文留言并录制视频：
+      <description>维基百科对树莓派的描述是： “树莓派是英国树莓派基金会开发的微型单板计算机，目的是以低价硬件及自由软件促进学校的基本计算机教育。”
+可见树莓派出现的初衷是为了在学校普及计算机教育，你可以把树莓派看成是一个微型计算机，不仅可以装linux（包括我将要刷的官方系统Raspbian就是Debian7.0的定制版本)，Android，甚至Windows也能安装，还有openwrt（这里我要吐槽一句，在搜索引擎上输入“树莓派刷&amp;hellip;..”。结果基本上都是openwrt，原因都懂的。。。）。所以，不再多说，let’s go!!!
+你需要准备的材料有： 一个树莓派4B及插入micsd卡的读卡器、一根hdmi线、5V3A的电源、备用的键鼠和显示器、rj45的网线。
+方法如下： 1.散热片安装以及接口的连接 先把三个散热片（分别是cpu、内存芯片、usb管理芯片）贴好.
+树莓派官方外壳贴上。
+把hdmi线先连接接到显示器上，树莓派4B接通5V3A的电源，jr45网线连接好网口，键鼠等会烧录好系统后再连上，启动等待烧录micsd卡。
+2.烧录raspions-bullseye-arm64系统到micsd 先下载好树莓派烧录官方工具 raspberry pi imager。
+但是注意raspberry pi imager写入操作系统最好去官网的镜像站用磁力链接下载，不要用raspberry pi imager自带的镜像。下载好后、先格式化插在读卡器上的micsd卡。打开raspberry pi imager.依次打开请选择需要写入的操作系统（RASPBERRY PI 0S)》储存卡》点击烧录。
+写入
+完成
+3.系统安装和设置 完成上面的步骤。我选择的是带界面的系统，连接hdmi1.4的接口（我试了hdmi2.0接口没反应，可能是hdmi线不支持？），可以看到界面：
+依次点击设置Set country》change password,直到设置完成。
+4.安装文件 由于linux系统没有直接的安装包，所以。你可以用命令行安装所需的软件，比如，我现在要用Raspbian上写博客中文留言并录制视频：
 可以先安装谷歌拼音命令$ apt-get install fcitx-googlepinyin(安装时注意要sudo -i开启管理员权限）,再安装录屏截图软件kazam$ sudo apt-get install kazam,然后再设置好谷歌拼音开启，默认是shift+ctrl键。在Raspbian输入一段中文“你好，这是一个发自于Raspberry的表情包的🤭”。
-   参考： 树莓派官网</description>
+参考： 树莓派官网</description>
     </item>
     
     <item>
@@ -87,7 +86,7 @@ We&amp;rsquo;ll start with creating a new site with a very basic template.</desc
 这样一来，vercel的三个域名解析就成功了。
 2.3指定hugo博客版本号 你还可以指定HUGO_VERSION环境变量来添加自己特定的版本号，在Vercel》project》setting》Environment Variables上添加，例如：
 基本上这就是hugo在Vercel的部署了。
- 参考：创建一个 Hugo 网站并使用 Vercel 进行部署</description>
+参考：创建一个 Hugo 网站并使用 Vercel 进行部署</description>
     </item>
     
     <item>
@@ -97,16 +96,15 @@ We&amp;rsquo;ll start with creating a new site with a very basic template.</desc
       
       <guid>https://www.zaqizaba.xyz/posts/ipad%E5%9B%BD%E5%8C%BA%E6%8D%A2%E6%88%90%E7%BE%8E%E5%8C%BA/</guid>
       <description>自从apple公司创始人steve jobs开创性的把phone和ipod功能结合，极具传奇色彩的iPhone便诞生了。可惜我以前从来没有用过apple的任何产品。不外乎有三点：1.以前apple的产品很贵，所以只能用搭载android system的产品（现在apple的产品价格倒不一定贵了）。2.apple的产品搭载的是ios或ipados,而ios或ipados是闭源系统。所以可玩性几乎为零，而且apple的app应用几乎只能从apple store官方下载，第三方下载app必须要有apple的签名。3.apple产品很容易操作，很适合不爱折腾的用户使用。基于以上三点，我从来没用过apple的产品。但是这次我决定买ipad 9，一是我真的想尝试人们所说apple系统的顺滑；二是ipad9256gwifi版在拼多多上真的很便宜。买了收到，使用一段时间以后，发现国区apple store的有些应用是阉割了的，而且应用apple tv和iTunes Store与其说出厂搭载了这二个应用，还不如说根本就是“不存在的空气应用”罢了，于是我决定搜罗网上换区教程并成功从国区换到美区，并在此基础上加了一点自己的东西。
-测试环境如下：  机型：iPad 9 2021款😚 系统: ipodos 15.2 🤐 越狱状态： 未越狱 🙄
- 方法如下：
- 1.无须修改语言，先全程开启大环境科学上网模式（不开也可以，只不过后面换区apple支付环境要验证美国ip），退出国区apple id登陆并依次打开设置》通用》语言和地区》地区》中国》美国，iPad就会提示更改地区将重启。自此，国区apple id告一段落。
+测试环境如下： 机型：iPad 9 2021款😚 系统: ipodos 15.2 🤐 越狱状态： 未越狱 🙄
+方法如下：
+1.无须修改语言，先全程开启大环境科学上网模式（不开也可以，只不过后面换区apple支付环境要验证美国ip），退出国区apple id登陆并依次打开设置》通用》语言和地区》地区》中国》美国，iPad就会提示更改地区将重启。自此，国区apple id告一段落。
 2.换到美区后，默认美区科学上网环境。请先准备好一个美区地址，最好是免税州地址（美国有五大免税州：分别是阿拉斯加州、特拉华州、蒙大拿州、新罕布什尔州、俄勒冈州，ps：这也是为什么海淘转运公司大多在这些州的原因。），这些地址你可以用美国地址生成器，也可以从谷歌地图找一个免税州地址就行。一个用于验证短信的美国电话号码，最好是自己申请的，比如Google voice，也可以用第三方美国电话或者在线网站电话接收（这个不建议，因为短信接收得到是一个问题，以后美区验证也是一个问题），还有一个邮箱（最好是gmail，yahoo，outlook。国内邮箱不建议，邮箱接口代理感觉是一个问题）。
 上述准备好后，用了一个临时gmail邮箱。名字随便填一个，但是注意出生日期一定要填满18岁的。设置好密码，填你的美国电话号码，用于接收验证码，用来登录美区iCloud。然后apple会验证你的邮箱，填好就行了。
 如果有必要，你可以在ipad上付款与配送》添加付款方式填一个信用卡号码，美国办理的信用卡最好，国内办理的单币，双币卡貌似不行（豆知识：单币信用卡是指卡印上只一个发卡组织标志，双币卡是指卡印上有二个发卡组织标志），但是国内发行的国际单双币卡可以绑定paypal美区来实现消费，这个我试过没成功。
 然后在添加配送地址那里填一个免税州地址，我填的是俄勒冈州。填完去美区apple store看看，有美国信用卡或者绑定了paypal当然最好。没有你也可以用国内信用卡“通过电子邮件的方式发送礼品卡”。礼品卡最好是在美亚，苹果官网买的就好。没信用卡可以上某宝某多多去买，但是一定要选择信誉好的商家，就怕遇到黑卡，到时账号很大几率会出问题。
 换成apple id为美区后，可以看到apple tv、iTunes Store等应用都可以访问了，基本上除了apple store应用内消费有点问题外，其它的都完美解决了。
- 视频具体操作：
-  </description>
+视频具体操作：</description>
     </item>
     
     <item>
@@ -125,7 +123,8 @@ We&amp;rsquo;ll start with creating a new site with a very basic template.</desc
 2.上传视频文件到COS存储桶 可以看到有一个“上传文件”选项，上传一个视频文件试试。
 上传，可能要等一会儿 上传好后，点击“详情”，可以看到一个视频对象地址url，这个就是要配置的了：
 3.获取HTML5文件url并添加视频 表格
-   参数名 默认值 描述     id 必填 唯一id   scr 必填 视频url   controls 必填 允许用户控制视频播放   controlslist 选填，nodwonload 显示控件   preload 选填，autoplay 最佳体验方式   allowfullscreen 选填 显示能否全屏   position 选填 文档流   width 选填 视频显示区域宽度   poster 选填 视频海报封面       参数名 默认值 描述     type 必填 视频属性（video/MP4.</description>
+参数名 默认值 描述 id 必填 唯一id scr 必填 视频url controls 必填 允许用户控制视频播放 controlslist 选填，nodwonload 显示控件 preload 选填，autoplay 最佳体验方式 allowfullscreen 选填 显示能否全屏 position 选填 文档流 width 选填 视频显示区域宽度 poster 选填 视频海报封面 参数名 默认值 描述 type 必填 视频属性（video/MP4.video/avi.video/mov等） muted 选填 音频设置 loop 选填 返回开始播放 autoplay 选填 自动播放 以上面的视频为例：
+&amp;lt;video id=&amp;#34;video&amp;#34; controls=&amp;#34;&amp;#34; controlslist=&amp;#34;nodownload&amp;#34; preload=&amp;#34;none&amp;#34; allowfullscreen=&amp;#34;true&amp;#34; position= &amp;#34;absolute&amp;#34; width=&amp;#34;100%&amp;#34; poster=&amp;#34;封面URL&amp;#34;&amp;gt; &amp;lt;source id=&amp;#34;mp4&amp;#34; src=&amp;#34;对象地址URL&amp;#34; type=&amp;#34;video/mp4&amp;#34; &amp;gt; &amp;lt;/video&amp;gt; 本实例视频是日本tbs纪录片 《三岛由纪夫VS东大全共闘》 第二段，也是我认为三岛由纪夫和东大全共斗左翼学生辩论最精彩的一段。</description>
     </item>
     
     <item>
@@ -136,9 +135,9 @@ We&amp;rsquo;ll start with creating a new site with a very basic template.</desc
       <guid>https://www.zaqizaba.xyz/posts/typora%E7%9A%84%E4%B8%80%E4%BA%9B%E6%89%A9%E5%B1%95%E5%BA%94%E7%94%A8/</guid>
       <description>Typora有一些扩展应用,可以说对于有些专业来讲,真的很顶。👍
 1.LaTeX的应用 LaTeX主要是应用在文章公式排版上,具体是：
- 1.行内公式(inline)：用$...$括起公式，公式会出现在行内。
+1.行内公式(inline)：用$...$括起公式，公式会出现在行内。
 2.块间公式（display）：用 $$...$$ 括起公式（注意 $$ 后需要换行），公式会默认显示在行中间。
- 比如一元二次方程：
+比如一元二次方程：
 $${a\mathop{{x}}\nolimits^{{2}}+bx+c=0}$$ $${a\mathop{{x}}\nolimits^{{2}}+bx+c=0}$$
 又比如统计：
 $$(\bar x) \bar x (\hat y=\hat ax + \hat b) \hat y=\hat a x + \hat b (\sum\limits_{i=1}^{n}{x_i}) \sum\limits_{i=1}^{n}{x_i}$$ $$(\bar x) \bar x (\hat y=\hat ax + \hat b) \hat y=\hat a x + \hat b (\sum\limits_{i=1}^{n}{x_i}) \sum\limits_{i=1}^{n}{x_i}$$
@@ -153,10 +152,10 @@ $$(\neg p:x^2\lt 1) \neg p:x^2\lt 1 (\forall x) \forall x (\exists y) \exists y 
       
       <guid>https://www.zaqizaba.xyz/posts/%E5%AE%89%E5%8D%93%E6%89%8B%E6%9C%BA%E5%BC%80%E5%90%AF%E5%8D%B3%E6%97%B6%E8%B4%B4/</guid>
       <description> 写在前面，谷歌即时贴有丰富的新闻和路线以及出勤，购物建议，机票预定，体育赛事股市及时涨跌等功能。因为某种原因，在国内不能访问。而且科学上网后也可能不会开启，那有没有办法在国内开启呢，答案是有的！
-测试环境如下：  机型：oneplus 2 😒 系统：OxygenOS 😉 安卓系统：6.0.1 😁 root状态：未root 😆
- 该方式仅适合安卓6.0.1及之前的安卓，之后的安卓系统能不能适用，未知，请酌情处理。
-方法如下：  1.修改语言为英文，sim卡取出，关闭定位并全程开启飞行模式（这么做定位系统就不能判定位置），开启科学上网软件。 2.把谷歌账号退出以及Google play service、Google service framework、Google play store、Google app的数据清理干净。 3.然后重新登录Google app，登录你的谷歌账号，不一会儿就会有提示，提示登录Google app即时贴成功，然后你换成中文就可以显示中文即时贴，出现即显示成功。🎃wow~ ⊙o⊙🧟‍♂️
- 视频具体操作   </description>
+测试环境如下： 机型：oneplus 2 😒 系统：OxygenOS 😉 安卓系统：6.0.1 😁 root状态：未root 😆
+该方式仅适合安卓6.0.1及之前的安卓，之后的安卓系统能不能适用，未知，请酌情处理。
+方法如下： 1.修改语言为英文，sim卡取出，关闭定位并全程开启飞行模式（这么做定位系统就不能判定位置），开启科学上网软件。 2.把谷歌账号退出以及Google play service、Google service framework、Google play store、Google app的数据清理干净。 3.然后重新登录Google app，登录你的谷歌账号，不一会儿就会有提示，提示登录Google app即时贴成功，然后你换成中文就可以显示中文即时贴，出现即显示成功。🎃wow~ ⊙o⊙🧟‍♂️
+视频具体操作 </description>
     </item>
     
     <item>
@@ -176,7 +175,7 @@ $$(\neg p:x^2\lt 1) \neg p:x^2\lt 1 (\forall x) \forall x (\exists y) \exists y 
 （1.）化学发光免疫测定法（2）酶联免疫吸附法
 2，临床意义 血清总IgE含量受多种因素的影响，如年龄，种族，地域，环境，遗传及检测方法等。
 （三）特异性IgE检测 1.测定方法 特异性IgE是指能与某种过敏原特异性结合的IgE。检测时是用纯化的特异变应原替代康IgE进行检测。 （1）放射变应原吸附试验（RAST）(2) 免疫印迹测定法 2.临床意义 特异性IgE的增高对Ⅰ型超敏反应疾病的诊断有重要价值。用RAST检测特异性IgE特异性强，敏感度性高，影响因素少，其结果与变应原皮试和支气管激发之间符合率高达80%左右。
- 1.Wikibooks免疫学/Ⅰ型超敏反应2.哔哩哔哩：【Osmosis|搬运|渣翻】过敏！！！I型超敏反应！！！</description>
+1.Wikibooks免疫学/Ⅰ型超敏反应2.哔哩哔哩：【Osmosis|搬运|渣翻】过敏！！！I型超敏反应！！！</description>
     </item>
     
     <item>
@@ -187,7 +186,7 @@ $$(\neg p:x^2\lt 1) \neg p:x^2\lt 1 (\forall x) \forall x (\exists y) \exists y 
       <guid>https://www.zaqizaba.xyz/posts/hugo%E6%B7%BB%E5%8A%A0%E7%9F%AD%E4%BB%A3%E7%A0%81/</guid>
       <description>写在之前， hugo shortcodes中文意译即为雨果博客短代码，是一种先配置文件，通过在文章中插入短代码模式，来实现纯文字，歌曲，文章，个人社交文字转发，以及视频，播客等在个人博客上显示的一种方式。
 以下几个短代码的应用 上次我在“Hugo解决网易云音乐不显示问题”这篇博客中说了，开启HTML外链引用必须先添加：
-1.[markup.goldmark.renderer] 2.unsafe= true 然后自己再在网易云音乐引入  iframe实现在hugo博客上显示音乐。但是现在，有一种更好的方式，hugo提倡引入外链可以用短代码。
+1.[markup.goldmark.renderer] 2.unsafe= true 然后自己再在网易云音乐引入 iframe实现在hugo博客上显示音乐。但是现在，有一种更好的方式，hugo提倡引入外链可以用短代码。
 方式为：新建/layouts/shortcodes/music.html，在其中引入：
 {{- $scratch := .Page.Scratch.Get &amp;#34;scratch&amp;#34; -}} &amp;lt;!-- require APlayer --&amp;gt; &amp;lt;link rel=&amp;#34;stylesheet&amp;#34; href=&amp;#34;https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css&amp;#34;&amp;gt; &amp;lt;style type=&amp;#34;text/css&amp;#34;&amp;gt;.dark-theme .aplayer{background:#212121}.dark-theme .aplayer.aplayer-withlist .aplayer-info{border-bottom-color:#5c5c5c}.dark-theme .aplayer.aplayer-fixed .aplayer-list{border-color:#5c5c5c}.dark-theme .aplayer .aplayer-body{background-color:#212121}.dark-theme .aplayer .aplayer-info{border-top-color:#212121}.dark-theme .aplayer .aplayer-info .aplayer-music .aplayer-title{color:#fff}.dark-theme .aplayer .aplayer-info .aplayer-music .aplayer-author{color:#fff}.dark-theme .aplayer .aplayer-info .aplayer-controller .aplayer-time{color:#eee}.dark-theme .aplayer .aplayer-info .aplayer-controller .aplayer-time .aplayer-icon path{fill:#eee}.dark-theme .aplayer .aplayer-list{background-color:#212121}.dark-theme .aplayer .aplayer-list::-webkit-scrollbar-thumb{background-color:#999}.dark-theme .aplayer .aplayer-list::-webkit-scrollbar-thumb:hover{background-color:#bbb}.dark-theme .aplayer .aplayer-list li{color:#fff;border-top-color:#666}.dark-theme .aplayer .aplayer-list li:hover{background:#4e4e4e}.dark-theme .aplayer .aplayer-list li.aplayer-list-light{background:#6c6c6c}.dark-theme .aplayer .</description>
     </item>
@@ -200,16 +199,20 @@ $$(\neg p:x^2\lt 1) \neg p:x^2\lt 1 (\forall x) \forall x (\exists y) \exists y 
       <guid>https://www.zaqizaba.xyz/posts/%E5%9C%A8%E5%8F%B0%E5%BC%8F%E6%9C%BA%E4%B8%8A%E4%BD%93%E9%AA%8C%E8%B0%B7%E6%AD%8Cstadia%E4%BA%91%E6%B8%B8%E6%88%8F%E5%B9%B3%E5%8F%B0/</guid>
       <description>云游戏平台Google stadia在谷歌浏览器上登录很久了，今天我决定尝试一下，看看体验怎么样。
 1.云游戏平台google stadia的发展及收费方式及其它问题 问：云游戏平台Google stadia 是怎么发展来的？
- 答：google stadia游戏平台于2018年最初通过project stream计划，于2018年10月通过《刺客信条：奥德赛》的beta版亮相。2019年GDC大会上发布了发布了云游戏平台google stadia以及Google stadia的游戏手柄，游戏平台可以在电视，电脑，手机上运行，但是必须得支持Google服务以及stadia应用，这次我就是在电脑上尝试的。平台可以配合YOUTUBE进行直播，前提是你网络必须得跟得上。目前Google stadia游戏平台已上架《刺客信条：奥德赛》、《赛博朋克2077》、《荒野大镖客：救赎》等3A大作，也有诸如《兽人必须死3》、《人类：一败涂地》一类的小游戏。
- ​ 图/Google stadia平台界面
+答：google stadia游戏平台于2018年最初通过project stream计划，于2018年10月通过《刺客信条：奥德赛》的beta版亮相。2019年GDC大会上发布了发布了云游戏平台google stadia以及Google stadia的游戏手柄，游戏平台可以在电视，电脑，手机上运行，但是必须得支持Google服务以及stadia应用，这次我就是在电脑上尝试的。平台可以配合YOUTUBE进行直播，前提是你网络必须得跟得上。目前Google stadia游戏平台已上架《刺客信条：奥德赛》、《赛博朋克2077》、《荒野大镖客：救赎》等3A大作，也有诸如《兽人必须死3》、《人类：一败涂地》一类的小游戏。
+​ 图/Google stadia平台界面
 问：那收费方式是怎么样的？
- 答：Google stadia采用和netflix类似采用订阅制，不同的是额外游戏还得必须自己支付，但是有些游戏是限时免费。和育碧平台类似，不过，额外游戏的费用和其它平台诸如steam、育碧、GOG比其实游戏价格差不多。stadia有free版和pro版。free版支持1080p/60fps/立体声云游戏。pro版支持4k/60fps/5.1环绕声，不过pro版需要每月支付9.99美元，pro版首次注册登录免费一个月，如果邀请链接能够邀请好友则再获赠一个月的平台订阅。
- ​ ​ 图/分享平台链接给朋友则能再使用一个月的订阅
+答：Google stadia采用和netflix类似采用订阅制，不同的是额外游戏还得必须自己支付，但是有些游戏是限时免费。和育碧平台类似，不过，额外游戏的费用和其它平台诸如steam、育碧、GOG比其实游戏价格差不多。stadia有free版和pro版。free版支持1080p/60fps/立体声云游戏。pro版支持4k/60fps/5.1环绕声，不过pro版需要每月支付9.99美元，pro版首次注册登录免费一个月，如果邀请链接能够邀请好友则再获赠一个月的平台订阅。
+​ ​ 图/分享平台链接给朋友则能再使用一个月的订阅
 再问：平台的视频带宽需求、分辨率以及云平台提示？
- 答：google stadia云游戏平台带宽需求最低是每秒10Mbps，4K则需要每秒35Mbps及以上。具体如下：
- ​
-   所需带宽 视频质量 音质     10 Mbit /秒 720P,60fps 立体声   20 Mbit /秒 1080pHDR,60fps 5.1环绕立体声   35 Mbit /秒 4KHDR,60fps 5.1环绕立体声     提示的话，如下：
-   连接状态 意味着什么     网络情况连接优秀 你的网络连接很好，游戏可以流畅运行。pro用户可以以4k画质来运行游戏   网络情况连接不稳定 你的网络不理想，可能会出现网络堵塞。游戏画质可能会有所下降   游戏会停止 网络带宽性能不足，阻塞严重。游戏会停止   使用移动数据 你已经使用移动数据来进行云游戏，而不是WiFi。游戏画质可能会有影响     2.</description>
+答：google stadia云游戏平台带宽需求最低是每秒10Mbps，4K则需要每秒35Mbps及以上。具体如下：
+​
+所需带宽 视频质量 音质 10 Mbit /秒 720P,60fps 立体声 20 Mbit /秒 1080pHDR,60fps 5.1环绕立体声 35 Mbit /秒 4KHDR,60fps 5.1环绕立体声 提示的话，如下：
+连接状态 意味着什么 网络情况连接优秀 你的网络连接很好，游戏可以流畅运行。pro用户可以以4k画质来运行游戏 网络情况连接不稳定 你的网络不理想，可能会出现网络堵塞。游戏画质可能会有所下降 游戏会停止 网络带宽性能不足，阻塞严重。游戏会停止 使用移动数据 你已经使用移动数据来进行云游戏，而不是WiFi。游戏画质可能会有影响 2.我的实际游戏体验 说实话，在国内通过科学加速在google stadia云游戏平台来玩游戏，真不是一个好的体验。
+就拿《人类：一败涂地》这个游戏来讲：才进入游戏，就提示&amp;quot;Connection is not stable&amp;quot;,显示连接状况可能不稳定，画质会下降（默认是pro4k画质），真正进入游戏后那个动作卡得要命，不仅帧数下降了，就连画质也下降了。才一次就。。。就黑屏退出了？
+​ 图/游戏提示以及实际画面
+​ 图/不久提示游戏停止,黑屏
+3.后话及想法 作为互联网创新企业，Google想通过以云游戏平台Google stadia来显示云存储，云上传，平台youtube联动直播的优越性。但是它忽视了全球一些地区的网络情况还不是那么便利，而且。就中国来讲，首先谷歌服务就不能够用，基本上判定了Google stadia就算用科学加速来玩，也不可行。带宽和ping基本上不支持，除非在中国找游戏厂家合作？就云游戏平台而言。腾讯，网易基本上都尝试过，不火，阿里巴巴基本上没涉及网游这个行业，其它小的游戏厂商就更不用说了。</description>
     </item>
     
     <item>
@@ -220,10 +223,10 @@ $$(\neg p:x^2\lt 1) \neg p:x^2\lt 1 (\forall x) \forall x (\exists y) \exists y 
       <guid>https://www.zaqizaba.xyz/posts/cdn%E5%85%AC%E5%85%B1%E5%BA%93%E7%9A%84%E4%BF%AE%E6%94%B9/</guid>
       <description>博客有一段时间加载很慢，打开chrome的控制台显示这样：
 网站有几处错误和警告，加载这些失效和错误资源限制了网页加载速度。
-&amp;lt;link rel=&amp;#34;stylesheet&amp;#34; href=&amp;#34;{{ $scratch.Get &amp;#34;baseURL&amp;#34; }}/css/styles.css&amp;#34;&amp;gt;  &amp;lt;link rel=&amp;#34;stylesheet&amp;#34; href=&amp;#34;https://use.fontawesome.com/releases/v5.2.0/css/all.css&amp;#34; integrity=&amp;#34;sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ&amp;#34; crossorigin=&amp;#34;anonymous&amp;#34;&amp;gt; &amp;lt;script src=&amp;#34;https://code.jquery.com/jquery-3.3.1.js&amp;#34; integrity=&amp;#34;sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=&amp;#34; crossorigin=&amp;#34;anonymous&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; 这些是错误和失效的公共CDN，以及警告链接，一般这种情况是CDN公共库网站失效了，导致JS,CSS资源加载缓慢错误。这时就应该找一个加速CDN库了。这里我推荐奇虎360CDN公共库和jsdelivr公共库，找到相应的CSS.js格式换成这些公共CDN，但是JS,CSS资源在公共CDN安全容易受到攻击，这时需要SRI，SRI生成可以在SRI Hash Generator这网站生成相应的哈希函数。启用 SRI 策略后，浏览器会对资源进行 CORS 校验，这就要求被请求的资源必须同域，或配置 Access-Control-Allow-Origin 响应头和添加crossorigin=&amp;quot;anonymous&amp;quot; 这个属性。
+&amp;lt;link rel=&amp;#34;stylesheet&amp;#34; href=&amp;#34;{{ $scratch.Get &amp;#34;baseURL&amp;#34; }}/css/styles.css&amp;#34;&amp;gt; &amp;lt;link rel=&amp;#34;stylesheet&amp;#34; href=&amp;#34;https://use.fontawesome.com/releases/v5.2.0/css/all.css&amp;#34; integrity=&amp;#34;sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ&amp;#34; crossorigin=&amp;#34;anonymous&amp;#34;&amp;gt; &amp;lt;script src=&amp;#34;https://code.jquery.com/jquery-3.3.1.js&amp;#34; integrity=&amp;#34;sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=&amp;#34; crossorigin=&amp;#34;anonymous&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; 这些是错误和失效的公共CDN，以及警告链接，一般这种情况是CDN公共库网站失效了，导致JS,CSS资源加载缓慢错误。这时就应该找一个加速CDN库了。这里我推荐奇虎360CDN公共库和jsdelivr公共库，找到相应的CSS.js格式换成这些公共CDN，但是JS,CSS资源在公共CDN安全容易受到攻击，这时需要SRI，SRI生成可以在SRI Hash Generator这网站生成相应的哈希函数。启用 SRI 策略后，浏览器会对资源进行 CORS 校验，这就要求被请求的资源必须同域，或配置 Access-Control-Allow-Origin 响应头和添加crossorigin=&amp;quot;anonymous&amp;quot; 这个属性。
 改好后上传GitHub，再打开网站控制台看看。
 all.css静态文件由30s加载时间下降到13ms,大大的减少了网站加载时间，网页速度得到提升。
- 这里我要感谢@怡红公子 提供公共CDN资源库。</description>
+这里我要感谢@怡红公子 提供公共CDN资源库。</description>
     </item>
     
     <item>
@@ -238,8 +241,7 @@ all.css静态文件由30s加载时间下降到13ms,大大的减少了网站加�
 2.archives文件的创建和html文件格式 起先，我想到了关联about的_index.md文件,既然about是&amp;quot;关于&amp;quot;链接的来显示页面的。那我何不创建一个关联archives的_index.md文件呢。于是我创建了index.md文件。用typora写了archives页面归档链接，看看能不能显示，输入http://localhost:1313/查看，还是不能显示。我以为.md上传github就可以显示为html。看来不是这么回事。。。
 折腾了一会儿。在layouts文件夹中找到了about的html文件，似乎是要添加html文件。emmm&amp;hellip;(⊙﹏⊙)，于是我把archives.md用typora转换成html文件，放在了layouts文件夹中，再打开http://localhost:1313临时查看，发现归档文章可以访问了。确定了归档.md的确需要转换成html文件放在layouts文件夹中才能访问。
 3.后续注意及存在问题 ​ 注意：1.转换成html文件后，在html用partial引用页面. 存在的问题：1.归档文章必须得自己添加超链接，不能自动更新，很麻烦2.主题页面背景颜色和归档文章颜色不一致。
-2021.1.26号更新。基本上上面的方法是很麻烦的。现在我找了更好的归档办法，不再需要自己手动更新了。以前我更新归档是通过添加文章超链接archives的.md文件再转换成为html格式，来实现归档的。但是现在发现archives.html可以引用single来添加文章日期归档时间代码来实现，只要自己每次更新.md文章，文章便会自动更新在归档年月日中。这里我参考了这篇文章：神秘极客的博文《为hugo添加归档页面》。
- </description>
+2021.1.26号更新。基本上上面的方法是很麻烦的。现在我找了更好的归档办法，不再需要自己手动更新了。以前我更新归档是通过添加文章超链接archives的.md文件再转换成为html格式，来实现归档的。但是现在发现archives.html可以引用single来添加文章日期归档时间代码来实现，只要自己每次更新.md文章，文章便会自动更新在归档年月日中。这里我参考了这篇文章：神秘极客的博文《为hugo添加归档页面》。</description>
     </item>
     
     <item>
@@ -253,7 +255,7 @@ all.css静态文件由30s加载时间下降到13ms,大大的减少了网站加�
 ​ 在hugo论坛页面我到了原因，原来在hugo 0.60.0的版本中，为了安全，html文件改用Goldmark。 在页面中，解决办法也给出了，即开启不安全模式，在config.toml站点配置文件中，添加这二行代码：
 [markup.goldmark.renderer] unsafe= true 完成打开http://localhost:1313/预览页面，此时就可以看到在原来的位置添加的网易云音乐了。
 这样就解决了网易云音乐不显示的问题😀。 还有， 今天端午节，祝大家节日快乐。💖😀
- 网页参考：1.hugo论坛解决html文件不显示解决办法</description>
+网页参考：1.hugo论坛解决html文件不显示解决办法</description>
     </item>
     
     <item>
@@ -273,7 +275,7 @@ hugo new site ### 然后在###文件中就会得到
 用cd命令打开themes文件，在hugo主题中找一个主题，比如我找的charaka-hugo-theme主题。在cmd中命令如下：
 cd themes git clone https://github.com/natarajmb/charaka-hugo-theme.git 下载好主题包后，把themes中的主题包文件复制覆盖到原###中的根文件中。
 config原配置文件如下：
-baseurl = &amp;#34;https://example.com&amp;#34;（填你的github博客域名） languageCode = &amp;#34;en&amp;#34;（改成ZH-CN） title = &amp;#34;Charaka&amp;#34;（自己可以改成自己喜欢的博客名称） theme = &amp;#34;charaka-hugo-theme&amp;#34; copyright = &amp;#34;&amp;amp;copy; &amp;lt;a href=\&amp;#34;https://github.com/natarajmb\&amp;#34;&amp;gt;Nataraj Basappa&amp;lt;/a&amp;gt; 2018&amp;#34;（这里可以更改为你的连接和申明） disqusShortname = &amp;#34;&amp;#34;（disqus评论用，不过我改成了valine评论系统） googleAnalytics = &amp;#34;&amp;#34;(谷歌分析)  [params]  [author]  name = &amp;#34;Nataraj Basappa&amp;#34;  homepage = &amp;#34;https://natarajmb.</description>
+baseurl = &amp;#34;https://example.com&amp;#34;（填你的github博客域名） languageCode = &amp;#34;en&amp;#34;（改成ZH-CN） title = &amp;#34;Charaka&amp;#34;（自己可以改成自己喜欢的博客名称） theme = &amp;#34;charaka-hugo-theme&amp;#34; copyright = &amp;#34;&amp;amp;copy; &amp;lt;a href=\&amp;#34;https://github.com/natarajmb\&amp;#34;&amp;gt;Nataraj Basappa&amp;lt;/a&amp;gt; 2018&amp;#34;（这里可以更改为你的连接和申明） disqusShortname = &amp;#34;&amp;#34;（disqus评论用，不过我改成了valine评论系统） googleAnalytics = &amp;#34;&amp;#34;(谷歌分析) [params] [author] name = &amp;#34;Nataraj Basappa&amp;#34; homepage = &amp;#34;https://natarajmb.</description>
     </item>
     
     <item>
@@ -287,7 +289,7 @@ baseurl = &amp;#34;https://example.com&amp;#34;（填你的github博客域名）
 2.草酸盐 常用有草酸钠、草酸钾、草酸铵，溶解后解离的草酸根离子能与样本中钙离子形成草酸钙沉淀，使Ca²⁺失去凝血作用，阻止血液凝固。 草酸盐优点是溶解度好、价廉。草酸盐对凝血因子Ⅴ的保护作用差，影响凝血酶原时间测定，而且草酸盐与钙结合后形成的沉淀物，影响自动凝血仪检测结果，因此，草酸盐不适用于凝血检查。 双草酸盐抗凝剂：草酸钾可使红细胞体积缩小，草酸钠则可使红细胞胀大，两者按适当比例混合，恰好不影响红细胞形态和体积，可用于血细胞比容、CBC、网织红细胞计数等项目检查，若单用草酸钾或草酸钠作为抗凝剂，与肝素为抗凝剂测定的血细胞比容比较，测定结果可减低8%~13%。双草酸盐抗凝剂可使血小板凝集、影响白细胞形态，不适用于血小板计数、白细胞分类计数。
 3.肝素 加强抗凝血酶（AT）灭活丝氨酸蛋白酶作用，阻止凝血酶的形成，并阻止血小板聚集等作用，从而阻止血液凝固。 肝素广泛存在于肺、肝、脾等几乎所有组织和血管周围肥大细胞和嗜碱性粒中，带有较多负电荷。肝素具有抗凝力强、不影响血细胞体积、不易溶血等优点，绝大多数检查都可用肝素作为抗凝剂，是红细胞渗透脆性试验的理想抗凝剂。但肝素可引起白细胞聚集，瑞氏染色后产生蓝色背景，不适用于CBC、细胞形态学检查。每毫升血液肝素用量为（15±2.5）U，多为肝素钠盐或钾盐。
 4.枸橼酸钠 常用有枸橼酸钠，能与血液中钙离子结合形成螯合物，阻止血液凝固。枸橼酸盐的溶解度低，抗凝力不如上述抗凝剂。枸橼酸钠与血液的抗凝比例为1：9或1：4.适用于红细胞沉降率、凝血检查，是输血保养液的成分。
- 网页参考：1.维基百科抗凝剂2.检验医学网：遇见EDTA依赖的血小板聚集怎么办？</description>
+网页参考：1.维基百科抗凝剂2.检验医学网：遇见EDTA依赖的血小板聚集怎么办？</description>
     </item>
     
     <item>
@@ -300,7 +302,7 @@ baseurl = &amp;#34;https://example.com&amp;#34;（填你的github博客域名）
 (四)方法学评价 1.皮肤采血 缺点是易溶于血、凝血、混入组织液，而且局部皮肤揉擦、针刺深度不一、个体皮肤厚度差异等都影响检查结果，所以，皮肤采血检查结果重复性差、准确性不好。
 2.静脉采血 开放式采血法的操作环节多，难于规范统一，在移液和丢弃注射器可能造成血液污染。封闭式采血法的操作规范，有利于样本收集运送和保存，防止院内血源性传染病。
 (五)质量控制 1.患者 患者活动情况、精神状态、药物、年龄、性别、种族、样本采集时间、吸烟、季节等都会影响检测结果。
-表1-1-1 常用彩色真空采血容器的用途    盖子颜色 添加抗凝剂 注意事项 用途     红色 无 凝块形成约需30min 化学、血清学、血库   黄色 EDTA 须颠倒混匀6~8次 全血细胞计数(CBC)   淡蓝色 枸橼酸钠 须颠倒混匀；血液与抗凝剂比例为9：1 凝血检查(PT、APTT、因子测定)   绿色 肝素钠、肝素锂、肝素铵 根据实验需要，选择不同的肝素 化学   灰色 氟化钠、草酸钾 不能用于其它化学检查 葡萄糖、糖耐量、乙醇浓度   黄色 多茴香脑磺酸盐钠(SPS) 须颠倒混匀8次 血培养   深蓝色 无抗凝剂或肝素钠、EDTA 化学清洁的试管 毒理学、微量金属   金黄色 分离胶/凝块激活剂 须颠倒混匀5次，使血液与激活剂充分接触。凝块完全形成后离心 化学、不适用于血库   淡绿色 分离胶/肝素锂 - 钾测定   橘黄色 凝血酶 须颠倒混匀8次 化学   黑色 枸橼酸钠 血液与抗凝剂的比例为4：1 血沉   棕色 肝素钠 铅浓度＜0.</description>
+表1-1-1 常用彩色真空采血容器的用途 盖子颜色 添加抗凝剂 注意事项 用途 红色 无 凝块形成约需30min 化学、血清学、血库 黄色 EDTA 须颠倒混匀6~8次 全血细胞计数(CBC) 淡蓝色 枸橼酸钠 须颠倒混匀；血液与抗凝剂比例为9：1 凝血检查(PT、APTT、因子测定) 绿色 肝素钠、肝素锂、肝素铵 根据实验需要，选择不同的肝素 化学 灰色 氟化钠、草酸钾 不能用于其它化学检查 葡萄糖、糖耐量、乙醇浓度 黄色 多茴香脑磺酸盐钠(SPS) 须颠倒混匀8次 血培养 深蓝色 无抗凝剂或肝素钠、EDTA 化学清洁的试管 毒理学、微量金属 金黄色 分离胶/凝块激活剂 须颠倒混匀5次，使血液与激活剂充分接触。凝块完全形成后离心 化学、不适用于血库 淡绿色 分离胶/肝素锂 - 钾测定 橘黄色 凝血酶 须颠倒混匀8次 化学 黑色 枸橼酸钠 血液与抗凝剂的比例为4：1 血沉 棕色 肝素钠 铅浓度＜0.1μg/ml 铅测定 粉红色 无 - 血库 橘红色 促凝剂 采血后须颠倒混匀8次，静置5min离心 快速生化 2.</description>
     </item>
     
     <item>
@@ -312,7 +314,7 @@ baseurl = &amp;#34;https://example.com&amp;#34;（填你的github博客域名）
       <description>（二）皮肤采血法 1.概叙 曾称为毛细血管采血法，是采集微动脉、微静脉和毛细血管的混合血，同时含细胞间质和细胞内液。通常，选择耳垂或手指部位。耳垂采血痛感较轻。操作方便，但血液循环较差，受气温影响较大，检查结果不够恒定（如红细胞、白细胞、血红蛋白和血细胞比容等测定结果比手指血或静脉血高），一般情况下不宜使用。手指采血操作方便，检查结果比较恒定，WHO推荐采集左手无名指端内侧血液，婴幼儿可采集大拇指或足跟内侧缘血液，严重烧伤患者，可选择皮肤完整处采血。 目前可用激光无痛采指血仪采血，原理是仪器中激光发射器发出一串单脉冲激光束，在一次性耗材（镜头片）的配合下，细微的光束打在手指上，在很短时间内使皮肤组织溶解、挥发，出现一个小孔，而打孔后的残留物或等离子状态，吸附在镜头表面。仪器采血有效避免了皮肤浅层组织液、细胞外液等渗入血液，确保检测结果准确，同时也可消除交叉感染，达到无痛采血的效果。
 2.操作方法 (1)准备：取合适试管，加适量稀释液。取微量吸管和乳胶吸头相连，检查连接处是否漏气，或取一次性微量吸管备用。 (2)按摩：轻轻按摩左手中指或无名指指端内侧，使局部组织自然充血。 (3)消毒：用75%乙醇棉签擦去第1滴血。 (4)针刺：用左手拇指和食指固定采血部位使皮肤和皮下组织绷紧，右手持一次性消毒采血针自指端腹内侧刺入，深度2~3mm,立即出针。 (5)拭血：待血液自然流出后，用无菌干棉球擦去第一滴血。 (6)吸血：用一次性微量吸管吸血，然后用无菌干棉球压住伤口止血。如血流不畅，可用左手自采血部位远端向指端稍施压使血液流出。 (7)稀释：用无菌干棉球擦净微量吸管外部，将吸管伸入装有稀释液的试管底部，慢慢排出吸管内的血液，并用上清液冲洗管内余血2~3次，最后将试管内的液体混匀。
 3.注意事项 (1)所选择采血部位的皮肤应完整，无烧伤、冻疮、发绀、水肿或炎症等。除特殊情况外，不要耳垂采血。 (2)本试验具有创伤性，必须严格按无菌技术操作，防止采血部位感染，做到一人一针一管，避免交叉感染，最好用一次性器材。 (3)皮肤消毒后，应待乙醇挥发后采血，否则流出的血液扩散而不成滴。 (4)因第1滴血混有组织液，应擦去。如血流不畅切勿用力挤压，以免造成组织液混入，影响结果的准确性。 (5)进行多项检查时，采血的顺序依次为血小板计数、红细胞计数、血红蛋白测定、白细胞计数、血型鉴定等。
- 网页参考：1皮肤采血法操作规程和注意事项 2“扎手指”时间久了，你遇到过这样的事吗？</description>
+网页参考：1皮肤采血法操作规程和注意事项 2“扎手指”时间久了，你遇到过这样的事吗？</description>
     </item>
     
     <item>
@@ -325,7 +327,7 @@ baseurl = &amp;#34;https://example.com&amp;#34;（填你的github博客域名）
 （一）静脉采血法 1.概叙 静脉采血多用于体表的浅静脉,通常采用肘部静脉、手背静脉、内踝静脉或股静脉。小儿可采颈外静脉血液。根据采血量可选用不同型号注射器,配备相应的针头。某些特殊检查,为避免血小板激活,要使用塑料注射器和硅化处理后的试管或塑料试管。目前,已有商品化的真空采血系统的采血法。
 2.操作方法 (1)准备试管：取合适数量和规格的试管备用。 （2）检查注射器：打开一次性注射器包装,左手持针头下座,右手持针筒,将针头和针筒紧密连接,并使针头斜面对准针筒刻度,抽拉针栓检查有无阻塞和漏气。最后排尽注射器中的空气，备用。 (3)选择静脉：患者取坐位,前臂水平伸直置于桌面枕垫上。暴露穿刺部位,选择容易固定、明显可见的肘部静脉。 （4）消毒：先用30g/L碘酊棉签自所选静脉穿刺处从内向外、顺时针方向消毒皮肤,待碘酊挥发后，再用75%乙醇棉签以同样方法拭去碘迹，待干。 (5) 扎压脉带：在采血部位上端扎压脉带或止血带，并嘱患者反复握拳几次后握紧拳头，使静脉充盈暴露，便于穿刺。 (6）穿刺：取下针头无菌帽，以左手拇指固定静脉穿刺部位下端，右手拇指和中指持注射器针筒，食指固定针头下座，使针头斜面和针筒刻度向上，沿静脉走向使针头与皮肤成30°角斜行快速刺入皮肤，然后以5°角向前穿破静脉壁进入静脉腔。见回血后，将针头顺势探入少许，以免采血时针头滑出;但不可用力深刺，以免造成血肿，同时立即去掉压脉带。 (7)抽血：以左手固定注射器，缓缓抽动注射器内芯至所需血量，用消毒干棉球压住针孔，请患者松拳，迅速拔出注射器。嘱咐患者继续按压针孔数分钟，以防出血。 (8)放血与混匀：取下注射器针头，将血液沿试管壁缓缓注入抗凝管中，防止溶血和泡沫产生。轻轻混匀抗凝血，切忌振荡试管，盖紧试管塞备用。
 3.注意事项 (1)采血前应向患者耐心解释，以消除疑虑和恐惧心理。如个别患者进针时或采血后发生眩晕，应让其平卧休息。必要时可嗅吸芳香胺酊、针刺（或指压）人中和合谷等穴位。若因低血糖诱发眩晕，可立即静脉注射葡萄糖或让患者口服糖水。 (2)静脉采血前要仔细检查针头是否安装牢固，针筒内是否有空气和水分。所用针头应锐利、光滑、通气、针筒不漏气。 (3)如果肥胖患者静脉暴露不明显，可用左手食指经碘酊、乙醇消毒后，在采血部位触摸，发现静脉走向后凭手感与深度试探性穿刺。 (4)抽血时针栓只能外抽，不能内推，以免静脉内注入空气形成气栓，照成严重后果。
- 链接：1.静脉采血后如何按压，您真的做对了吗？ 2.Venipuncture - How to take blood - OSCE guide (old version) 3.日临静脉采血推荐方式</description>
+链接：1.静脉采血后如何按压，您真的做对了吗？ 2.Venipuncture - How to take blood - OSCE guide (old version) 3.日临静脉采血推荐方式</description>
     </item>
     
     <item>
@@ -362,10 +364,9 @@ baseurl = &amp;#34;https://example.com&amp;#34;（填你的github博客域名）
       <pubDate>Fri, 29 May 2020 19:24:15 +0800</pubDate>
       
       <guid>https://www.zaqizaba.xyz/posts/first/</guid>
-      <description>Hello Hugo   aaa
-  bbb
-  ccc
-  </description>
+      <description>Hello Hugo aaa
+bbb
+ccc</description>
     </item>
     
     <item>
@@ -389,7 +390,7 @@ Save it somewhere specific as we will be using it in the next step.
 More complete instructions are available at installing hugo
 Step 2. Build the Docs Hugo has its own example site which happens to also be the documentation site you are reading right now.
 Follow the following steps:
- Clone the hugo repository Go into the repo Run hugo in server mode and build the docs Open your browser to http://localhost:1313  Corresponding pseudo commands:</description>
+Clone the hugo repository Go into the repo Run hugo in server mode and build the docs Open your browser to http://localhost:1313 Corresponding pseudo commands:</description>
     </item>
     
   </channel>
