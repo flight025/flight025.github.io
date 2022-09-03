@@ -159,14 +159,18 @@ integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbi
  Waline.init({
     el: '#waline',
     serverURL: 'https://zaqizaba.xyz',
-    AVATAR_PROXY：'false',
 
      emoji: [
     'https://gcore.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/',
   ],
-  });
+  }function mytheme_get_avatar($avatar) {
+    $avatar = str_replace(array("www.gravatar.com","cn.gravatar.com","0.gravatar.com","1.gravatar.com","2.gravatar.com"),"gravatar.loli.net",$avatar);
+    return $avatar;
+}
+add_filter( 'get_avatar', 'mytheme_get_avatar', 10, 3 ););
 </script>
 </body>
+
 <section class="section">
   <div class="container has-text-centered">
     <p>&copy; <a href="https://www.zaqizaba.xyz">阿波尔的博客</a> 2019-2022</p>
