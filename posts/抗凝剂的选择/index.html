@@ -118,32 +118,28 @@ EDTA盐对血细胞形态、血小板计数影响很小，适用于血液学检�
     <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />本作品采用<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">知识共享署名-相同方式共享 4.0 国际许可协议</a>进行许可。
 </div>
 
-<div id="waline"></div>
-
-<head>
-  
-  <script src="//unpkg.com/@waline/client@v2/dist/waline.js"></script>
-  <link
-    rel="stylesheet"
-    href="//unpkg.com/@waline/client@v2/dist/waline.css"
-  />
-  
-</head>
-<body>
-  
-  <div id="waline"></div>
-  <script>
-
- Waline.init({
-    el: '#waline',
-    serverURL: 'https://zaqizaba.xyz',
-
-     emoji: [
-    'https://gcore.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/',
-  ],
+ <script>
+  function load_comment(){
+    if(!document.getElementById("waline_container"))return;
+    stellar.loadCSS('https://unpkg.com/@waline/client@v2/dist/waline.css');
+    stellar.loadScript('https://unpkg.com/@waline/client@v2/dist/waline.js', {defer:true}).then(function () {
+      const el = document.getElementById("waline_container");
+      var path = el.getAttribute('comment_id');
+      if (!path) {
+        path = decodeURI(window.location.pathname);
+      }
+      Waline.init(Object.assign({"js":"https://unpkg.com/@waline/client@v2/dist/waline.js","css":"https://unpkg.com/@waline/client@v2/dist/waline.css","serverURL":"https://zaqizaba.xyz","commentCount":false,"pageview":true,"locale":{"placeholder":"欢迎留言\n可匿名评论（即昵称、邮箱、网址都不填）\n若填写邮箱，可在被回复时收到邮件提醒（发件人为 email@shifeiti.com ）\n若不方便在此留言，可发邮件至本站邮箱 email@shifeiti.com 私聊"},"emoji":["https://gcore.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/"]}, {
+        el: '#waline_container',
+        path: path,
+      }));
+    });
+  }
+  window.addEventListener('DOMContentLoaded', (event) => {
+    console.log('DOM fully loaded and parsed');
+    load_comment();
   });
+
 </script>
-</body>
 <section class="section">
   <div class="container has-text-centered">
     <p>&copy; <a href="https://www.zaqizaba.xyz">阿波尔的博客</a> 2019-2022</p>
