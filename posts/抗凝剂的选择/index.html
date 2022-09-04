@@ -122,10 +122,10 @@ EDTA盐对血细胞形态、血小板计数影响很小，适用于血液学检�
 
 <head>
   
-  <script src="https://unpkg.com/@waline/client@v2/dist/waline.js"></script>
+  <script src="//unpkg.com/@waline/client@v2/dist/waline.js"></script>
   <link
     rel="stylesheet"
-    href="https://unpkg.com/@waline/client@v2/dist/waline.css"
+    href="//unpkg.com/@waline/client@v2/dist/waline.css"
   />
   
 </head>
@@ -133,14 +133,19 @@ EDTA盐对血细胞形态、血小板计数影响很小，适用于血液学检�
   
   <div id="waline"></div>
   <script>
-    Waline.init({
-      el: '#waline',
-      serverURL: 'https://zaqizaba.xyz',
-    });
-  </script>
+
+ Waline.init({
+    el: '#waline',
+    serverURL: 'https://zaqizaba.xyz',
+
+     emoji: [
+    'https://gcore.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/',
+    
+     AVATAR_PROXY：'false',
+  ],
+  });
+</script>
 </body>
-
-
 <section class="section">
   <div class="container has-text-centered">
     <p>&copy; <a href="https://www.zaqizaba.xyz">阿波尔的博客</a> 2019-2022</p>
