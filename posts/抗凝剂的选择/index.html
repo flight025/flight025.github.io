@@ -139,7 +139,21 @@ EDTA盐对血细胞形态、血小板计数影响很小，适用于血液学检�
     <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />本作品采用<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">知识共享署名-相同方式共享 4.0 国际许可协议</a>进行许可。
 </div>
 
+<div class="border-t py-6 px-6 md:px-8 dark:border-darkBorder">
+    <div id="waline"></div>
 
+    <script data-swup-reload-script>
+        setTimeout(() => {
+            console.log(document.getElementById('waline'))
+            window.waline = Waline.init({
+                el: '#waline',
+                serverURL: 'https://zaqizaba.xyz',
+                emoji: ['https://gcore.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/', 'https://cdn.jsdelivr.net/gh/norevi/waline-blobcatemojis@1.0/blobs', 'https://cdn.jsdelivr.net/gh/norevi/blob-emoji-for-waline@2.0/blobs-png'],
+                requiredMeta: ['昵称', '邮箱', '网站'],
+            });
+        }, 1000);
+    </script>
+</div>
 <section class="section">
   <div class="container has-text-centered">
     <p>&copy; <a href="https://www.zaqizaba.xyz">阿波尔的博客</a> 2019-2022</p>
