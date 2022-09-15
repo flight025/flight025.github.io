@@ -85,7 +85,7 @@ We&amp;rsquo;ll start with creating a new site with a very basic template.</desc
 再把vercel的A、CNAME二条解析记录类型分别填到DNSPod域名解析上就行。
 这样一来，vercel的三个域名解析就成功了。
 2.3指定hugo博客版本号 你还可以指定HUGO_VERSION环境变量来添加自己特定的版本号，在Vercel》project》setting》Environment Variables上添加，例如：
-基本上这就是hugo在Vercel的部署了。
+基本上这就是hugo在vercel的部署了。
 参考：创建一个 Hugo 网站并使用 Vercel 进行部署</description>
     </item>
     

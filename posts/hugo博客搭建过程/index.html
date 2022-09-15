@@ -121,70 +121,70 @@
 <p><img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/%E5%9B%BE%E7%89%87/QQ%E6%88%AA%E5%9B%BE20200622101850.png" alt=""></p>
 <p>找到hugo下载的所在文件目录，复制到PATH中。注意路径不能有中文。
 在cmd中命令看看是否安装正确，出现：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>git version
-</span></span><span style="display:flex;"><span>git version 2.26.2.windows.1
-</span></span><span style="display:flex;"><span>hugo version
-</span></span><span style="display:flex;"><span>Hugo Static Site Generator v0.72.0-8A7EF3CF windows/amd64 BuildDate: 2020-05-31T12:08:42Z
-</span></span></code></pre></div><p>提示安装路径正确。</p>
+<pre tabindex="0"><code>git version
+git version 2.26.2.windows.1
+hugo version
+Hugo Static Site Generator v0.72.0-8A7EF3CF windows/amd64 BuildDate: 2020-05-31T12:08:42Z
+</code></pre><p>提示安装路径正确。</p>
 <p>安装好后，再在其它盘创建一个根站点，假如命名为###。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>hugo new site ###
 </span></span></code></pre></div><p>然后在###文件中就会得到</p>
 <p><img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/%E5%9B%BE%E7%89%87/%E6%8D%95%E8%8E%B76.PNG" alt=""></p>
 <p>这些文件。</p>
 <p>用cd命令打开themes文件，在<a href="https://themes.gohugo.io/">hugo主题</a>中找一个主题，比如我找的<a href="https://themes.gohugo.io/charaka-hugo-theme/">charaka-hugo-theme</a>主题。在cmd中命令如下：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>cd themes
-</span></span><span style="display:flex;"><span>git clone https://github.com/natarajmb/charaka-hugo-theme.git
-</span></span></code></pre></div><p>下载好主题包后，把themes中的主题包文件复制覆盖到原###中的根文件中。</p>
+<pre tabindex="0"><code>cd themes
+git clone https://github.com/natarajmb/charaka-hugo-theme.git
+</code></pre><p>下载好主题包后，把themes中的主题包文件复制覆盖到原###中的根文件中。</p>
 <p>config原配置文件如下：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>baseurl = &#34;https://example.com&#34;（填你的github博客域名）
-</span></span><span style="display:flex;"><span>languageCode = &#34;en&#34;（改成ZH-CN）
-</span></span><span style="display:flex;"><span>title = &#34;Charaka&#34;（自己可以改成自己喜欢的博客名称）
-</span></span><span style="display:flex;"><span>theme = &#34;charaka-hugo-theme&#34;
-</span></span><span style="display:flex;"><span>copyright = &#34;&amp;copy; &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span>\&#34;<span style="color:#e6db74">https://github.com/natarajmb</span>\&#34;&gt;Nataraj Basappa&lt;/<span style="color:#f92672">a</span>&gt; 2018&#34;（这里可以更改为你的连接和申明）
-</span></span><span style="display:flex;"><span>disqusShortname = &#34;&#34;（disqus评论用，不过我改成了valine评论系统）
-</span></span><span style="display:flex;"><span>googleAnalytics = &#34;&#34;(谷歌分析)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>[params]
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>[author]
-</span></span><span style="display:flex;"><span>  name = &#34;Nataraj Basappa&#34;
-</span></span><span style="display:flex;"><span>  homepage = &#34;https://natarajmb.com&#34;（博主名称和网站，自己改）
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>[params.highlight]
-</span></span><span style="display:flex;"><span>  style = &#34;zenburn&#34;
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>[params.share]
-</span></span><span style="display:flex;"><span>  enabled = &#34;true&#34;
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>[[params.social]]
-</span></span><span style="display:flex;"><span>  url = &#34;about&#34;
-</span></span><span style="display:flex;"><span>  fa_icon = &#34;fas fa-info&#34;（关于页面，可以修改）
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>[[params.social]]
-</span></span><span style="display:flex;"><span>  url = &#34;https://github.com/natarajmb/&#34;
-</span></span><span style="display:flex;"><span>  fa_icon = &#34;fab fa-github&#34;（github可以改成自己的）
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>[[params.social]]
-</span></span><span style="display:flex;"><span>  url = &#34;https://www.linkedin.com/in/natarajmb/&#34;
-</span></span><span style="display:flex;"><span>  fa_icon = &#34;fab fa-linkedin-in&#34;（这里我改成了知乎）
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>[[params.social]]
-</span></span><span style="display:flex;"><span>  url = &#34;https://twitter.com/natarajmb/&#34;
-</span></span><span style="display:flex;"><span>  fa_icon = &#34;fab fa-twitter&#34;（推特改成自己的）
-</span></span></code></pre></div><p><del>上述改好后，第二步就完成了。至于怎么添加valine评论系统，在这里。我参考了B站up主<a href="https://www.bilibili.com/video/BV1p7411i76h?from=search&amp;seid=3990097417905613623">CeyCeyChannel</a>的视频教程，有兴趣的可以看看。</del></p>
+<pre tabindex="0"><code>baseurl = &#34;https://example.com&#34;（填你的github博客域名）
+languageCode = &#34;en&#34;（改成ZH-CN）
+title = &#34;Charaka&#34;（自己可以改成自己喜欢的博客名称）
+theme = &#34;charaka-hugo-theme&#34;
+copyright = &#34;&amp;copy; &lt;a href=\&#34;https://github.com/natarajmb\&#34;&gt;Nataraj Basappa&lt;/a&gt; 2018&#34;（这里可以更改为你的连接和申明）
+disqusShortname = &#34;&#34;（disqus评论用，不过我改成了valine评论系统）
+googleAnalytics = &#34;&#34;(谷歌分析)
+
+[params]
+
+[author]
+  name = &#34;Nataraj Basappa&#34;
+  homepage = &#34;https://natarajmb.com&#34;（博主名称和网站，自己改）
+
+[params.highlight]
+  style = &#34;zenburn&#34;
+
+[params.share]
+  enabled = &#34;true&#34;
+
+[[params.social]]
+  url = &#34;about&#34;
+  fa_icon = &#34;fas fa-info&#34;（关于页面，可以修改）
+
+[[params.social]]
+  url = &#34;https://github.com/natarajmb/&#34;
+  fa_icon = &#34;fab fa-github&#34;（github可以改成自己的）
+
+[[params.social]]
+  url = &#34;https://www.linkedin.com/in/natarajmb/&#34;
+  fa_icon = &#34;fab fa-linkedin-in&#34;（这里我改成了知乎）
+
+[[params.social]]
+  url = &#34;https://twitter.com/natarajmb/&#34;
+  fa_icon = &#34;fab fa-twitter&#34;（推特改成自己的）
+</code></pre><p><del>上述改好后，第二步就完成了。至于怎么添加valine评论系统，在这里。我参考了B站up主<a href="https://www.bilibili.com/video/BV1p7411i76h?from=search&amp;seid=3990097417905613623">CeyCeyChannel</a>的视频教程，有兴趣的可以看看。</del></p>
 <p>2022.2.1号更新，由于valine评论作者不再维护。所以我转用waline。</p>
 <h2 id="3文章创建和github设置">3.文章创建和github设置</h2>
 <p>你要创建一篇新文章，就得在cmd中命令。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>hugo new post/XXXX.md
-</span></span></code></pre></div><p>由于我的文章创建是在posts，故而有所不同,注意文章是yaml格式。比如我现在创建的新文章</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>title: &#34;Hugo博客搭建过程&#34;（博客文章名称）
-</span></span><span style="display:flex;"><span>date: 2020-06-22T09:19:50+08:00（时间）
-</span></span><span style="display:flex;"><span>draft: false （设为false可被编译为HTML，true供本地修改）
-</span></span><span style="display:flex;"><span>categories: [想法]（归档）
-</span></span><span style="display:flex;"><span>tags:[&#34;hugo&#34;,&#34;blog&#34;]（分类）
-</span></span></code></pre></div><p>在cmd博客站点根目录中，启动博客预览</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>hugo server
-</span></span></code></pre></div><p><img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/%E5%9B%BE%E7%89%87/ptf.PNG" alt=""></p>
+<pre tabindex="0"><code>hugo new post/XXXX.md
+</code></pre><p>由于我的文章创建是在posts，故而有所不同,注意文章是yaml格式。比如我现在创建的新文章</p>
+<pre tabindex="0"><code>title: &#34;Hugo博客搭建过程&#34;（博客文章名称）
+date: 2020-06-22T09:19:50+08:00（时间）
+draft: false （设为false可被编译为HTML，true供本地修改）
+categories: [想法]（归档）
+tags:[&#34;hugo&#34;,&#34;blog&#34;]（分类）
+</code></pre><p>在cmd博客站点根目录中，启动博客预览</p>
+<pre tabindex="0"><code>hugo server
+</code></pre><p><img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/%E5%9B%BE%E7%89%87/ptf.PNG" alt=""></p>
 <p>打开 http://localhost:1313/可以看到，新文章已经生成。</p>
 <p>​                                                            <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/%E5%9B%BE%E7%89%87/%E6%8D%95%E8%8E%B71.PNG" alt=""></p>
 <p>设置打开<a href="https://github.com/">github</a>，创建自己的仓库。
@@ -196,20 +196,20 @@
 <h2 id="4设置静态文件及上传">4.设置静态文件及上传</h2>
 <p>在config文件中，把baseurl改成自己的Repository name.
 设置好config中baseurl和themes的路径。在站点目录下命令</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>hugo
-</span></span></code></pre></div><p>生成public文件夹，用于上传。</p>
+<pre tabindex="0"><code>hugo
+</code></pre><p>生成public文件夹，用于上传。</p>
 <p>在初次配git时，记得要配置邮箱和github用户名，不然会提示“Please tell me who you are”。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span># git config --global user.email &#34;you@example.com
-</span></span><span style="display:flex;"><span># git config --global user.name &#34;Your Name&#34;
-</span></span></code></pre></div><p>如果一切顺利，静态文件就会上传在public中。然后将public本地文件上传到github上。如下：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span># cd public（进入public)
-</span></span><span style="display:flex;"><span># git init (初始化)
-</span></span><span style="display:flex;"><span># git remote add origin https://github.com/XXXXX/XXXXX.github.io.git（链接仓库，注意.git）
-</span></span><span style="display:flex;"><span># git add .（添加public中的文件）
-</span></span><span style="display:flex;"><span># git commit -m &#34;first commit&#34;（提交文件描述，可以随便写）
-</span></span><span style="display:flex;"><span># git pull origin master （取回远程主机某个分支的更新）
-</span></span><span style="display:flex;"><span># git push -u origin master （推送本地分支到远程分支）
-</span></span></code></pre></div><h2 id="5图床问题及后续文章更新">5.图床问题及后续文章更新</h2>
+<pre tabindex="0"><code># git config --global user.email &#34;you@example.com
+# git config --global user.name &#34;Your Name&#34;
+</code></pre><p>如果一切顺利，静态文件就会上传在public中。然后将public本地文件上传到github上。如下：</p>
+<pre tabindex="0"><code># cd public（进入public)
+# git init (初始化)
+# git remote add origin https://github.com/XXXXX/XXXXX.github.io.git（链接仓库，注意.git）
+# git add .（添加public中的文件）
+# git commit -m &#34;first commit&#34;（提交文件描述，可以随便写）
+# git pull origin master （取回远程主机某个分支的更新）
+# git push -u origin master （推送本地分支到远程分支）
+</code></pre><h2 id="5图床问题及后续文章更新">5.图床问题及后续文章更新</h2>
 <p>md文章可以添加本地图片及网上图床服务，而网上图床存储又有免费和收费之分。
 这里我选择的是收费图床存储，腾讯云COS作为图床。但是COS上传后必须得打开网站一张张复制链接。很麻烦。这里可以用到 <a href="https://github.com/Molunerfinn/PicGo/releases">Picgo</a> 和<a href="https://typora.io/">typora</a> ，而且二者可以搭配使用。
 首先，依次打开对象储存》储存桶列表》创建储存桶，如下：</p>
@@ -228,15 +228,15 @@
 <p>​                                                      <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/%E5%9B%BE%E7%89%87/QQ%E6%88%AA%E5%9B%BE20200622140258.png" alt=""></p>
 <p>代表成功获得图片url，可以直接拖动图片在typora上传了。</p>
 <p>图片问题解决，如果你想以后再写博客文章，你可以运行一下命令：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>hugo new post/你的文章名.md
-</span></span></code></pre></div><p>至于推送文章，你可以用下面的命令：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span># hugo
-</span></span><span style="display:flex;"><span># cd public
-</span></span><span style="display:flex;"><span># git add .
-</span></span><span style="display:flex;"><span># git commit -m &#34;XXXXXXX&#34;
-</span></span><span style="display:flex;"><span># git pull origin master
-</span></span><span style="display:flex;"><span># git push origin master
-</span></span></code></pre></div><p>当然，你也可以把文章自动部署到github，不再赘述。</p>
+<pre tabindex="0"><code>hugo new post/你的文章名.md
+</code></pre><p>至于推送文章，你可以用下面的命令：</p>
+<pre tabindex="0"><code># hugo
+# cd public
+# git add .
+# git commit -m &#34;XXXXXXX&#34;
+# git pull origin master
+# git push origin master
+</code></pre><p>当然，你也可以把文章自动部署到github，不再赘述。</p>
 <p>基本上，这就是搭建博客的全过程了，想到什么再说吧。</p>
 <hr>
 <p>网页参考：1.<a href="https://www.bilibili.com/video/BV1q4411i7gL?from=search&amp;seid=2919999277428020540">CodeSheep手把手教你从0开始搭建自己的个人博客 |第二种姿势 | hugo</a>2.<a href="https://www.bilibili.com/video/BV14b411K7Fm?from=search&amp;seid=2919999277428020540">hojun_cn：hugo+github博客搭建教程！</a>3.<a href="https://www.bilibili.com/video/BV1p7411i76h?from=search&amp;seid=16196797963561618058">CeyCeyChannel：『手把手』在 HUGO 中添加 Valine 评论系统的过程</a>4.<a href="https://saquarius.com/2019/07/hugo-github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2windows10/">SAquarius的梦想屋：Hugo+github搭建个人博客（windows10）</a>5.<a href="https://www.natarajmb.com/">natarajmb：模板制作者</a></p>
