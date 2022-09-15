@@ -118,17 +118,17 @@
 <p>接下来就是代表成功部署在vercel上了。</p>
 <p><img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20220205104850558.png" alt="image-20220205104850558"></p>
 <h3 id="22自定义域名">2.2自定义域名</h3>
-<p>点击<code>vercel》project》setting》domains</code>，在<code>domains</code>输入自己的域名，并去域名商(DNSPod)控制台添加vercel的域名解析<code>CNAME</code>、<code>A</code>记录类型。</p>
+<p>点击<code>vercel》project》setting》domains</code>，在<code>domains</code>输入自己的域名，并去域名商(DNSPod)控制台添加vercel的域名解析<code>CNAME</code>、<code>A</code>记录。</p>
 <p><img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20220205113958634.png" alt="image-20220205113958634"></p>
-<p>在先前github pages上移除绑定的域名，并移除在DNS解析DNSPod上的<code>CNAME</code>记录类型。</p>
+<p>在先前github pages上移除绑定的域名，并移除在DNS解析DNSPod上的<code>CNAME</code>记录。</p>
 <p><img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20220205120219880.png" alt="image-20220205120219880"></p>
 <p>图/解除主机域名在github的绑定</p>
 <p><img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20220205120558037.png" alt="image-20220205120558037"></p>
-<p>图/之前在github上的<code>CNAME</code>记录类型在DNSPod删除</p>
+<p>图/之前在github上的<code>CNAME</code>记录在DNSPod删除</p>
 <p><img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20220205121522227.png" alt="image-20220205121522227"></p>
 <p><img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20220205121607937.png" alt="image-20220205121607937"></p>
 <p><img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20220205122239230.png" alt="image-20220205122239230"></p>
-<p>再把vercel的<code>A</code>、<code>CNAME</code>二条解析记录类型分别填到DNSPod域名解析上就行。</p>
+<p>再把vercel的<code>A</code>、<code>CNAME</code>二条解析记录分别填到DNSPod域名解析上就行。</p>
 <p><img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20220205123236523.png" alt="image-20220205123236523"></p>
 <p>这样一来，vercel的三个域名解析就成功了。</p>
 <h3 id="23指定hugo博客版本号">2.3指定hugo博客版本号</h3>

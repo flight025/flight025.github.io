@@ -78,11 +78,11 @@ We&amp;rsquo;ll start with creating a new site with a very basic template.</desc
 2.使用vercel开始进行hugo静态博客部署 2.1从GitHub拉取 这里vercel支持github,gitlab,bitbucket这三个托管平台登录，拉取github登录：
 分别点击New Project》选择github上的静态博客仓库点击Import(导入）》Configure Project的FRAMEWORK PRESET我这里从“other”改为“hugo”,其它的都不需要改，然后点击“deploy（部署)”。
 接下来就是代表成功部署在vercel上了。
-2.2自定义域名 点击vercel》project》setting》domains，在domains输入自己的域名，并去域名商(DNSPod)控制台添加vercel的域名解析CNAME、A记录类型。
-在先前github pages上移除绑定的域名，并移除在DNS解析DNSPod上的CNAME记录类型。
+2.2自定义域名 点击vercel》project》setting》domains，在domains输入自己的域名，并去域名商(DNSPod)控制台添加vercel的域名解析CNAME、A记录。
+在先前github pages上移除绑定的域名，并移除在DNS解析DNSPod上的CNAME记录。
 图/解除主机域名在github的绑定
-图/之前在github上的CNAME记录类型在DNSPod删除
-再把vercel的A、CNAME二条解析记录类型分别填到DNSPod域名解析上就行。
+图/之前在github上的CNAME记录在DNSPod删除
+再把vercel的A、CNAME二条解析记录分别填到DNSPod域名解析上就行。
 这样一来，vercel的三个域名解析就成功了。
 2.3指定hugo博客版本号 你还可以指定HUGO_VERSION环境变量来添加自己特定的版本号，在Vercel》project》setting》Environment Variables上添加，例如：
 基本上这就是hugo在vercel的部署了。
