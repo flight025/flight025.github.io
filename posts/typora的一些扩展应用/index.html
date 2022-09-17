@@ -161,32 +161,32 @@ fmt.Println(<font color=yellow>==&ldquo;Hello, world&rdquo;==</font>)
 }</p>
 <h4 id="4图表的应用">4.图表的应用</h4>
 <h5 id="4-1序列图">4-1.序列图</h5>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>sequenceDiagram
-</span></span><span style="display:flex;"><span>    Alice-&gt;&gt;John: Hello John, how are you?
-</span></span><span style="display:flex;"><span>    activate John
-</span></span><span style="display:flex;"><span>    John--&gt;&gt;Alice: Great!
-</span></span><span style="display:flex;"><span>    deactivate John
-</span></span></code></pre></div><pre tabindex="0"><code class="language-mermaid" data-lang="mermaid">sequenceDiagram
+<pre tabindex="0"><code>sequenceDiagram
+    Alice-&gt;&gt;John: Hello John, how are you?
+    activate John
+    John--&gt;&gt;Alice: Great!
+    deactivate John
+</code></pre><pre tabindex="0"><code class="language-mermaid" data-lang="mermaid">sequenceDiagram
     Alice-&gt;&gt;John: Hello John, how are you?
     activate John
     John--&gt;&gt;Alice: Great!
     deactivate John
 </code></pre><h5 id="4-2流程图">4-2.流程图</h5>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>flowchart TB
-</span></span><span style="display:flex;"><span>    A <span style="color:#960050;background-color:#1e0010">&amp;</span> B--&gt; C <span style="color:#960050;background-color:#1e0010">&amp;</span> D
-</span></span></code></pre></div><pre tabindex="0"><code class="language-mermaid" data-lang="mermaid">flowchart TB
+<pre tabindex="0"><code>flowchart TB
+    A &amp; B--&gt; C &amp; D
+</code></pre><pre tabindex="0"><code class="language-mermaid" data-lang="mermaid">flowchart TB
     A &amp; B--&gt; C &amp; D
 </code></pre><h5 id="4-3类图">4-3.类图</h5>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>classDiagram
-</span></span><span style="display:flex;"><span>classA <span style="color:#960050;background-color:#1e0010">&lt;</span>|-- classB
-</span></span><span style="display:flex;"><span>classC *-- classD
-</span></span><span style="display:flex;"><span>classE o-- classF
-</span></span><span style="display:flex;"><span>classG &lt;<span style="color:#f92672">--</span> <span style="color:#a6e22e">classH</span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">classI</span> <span style="color:#a6e22e">--</span> <span style="color:#a6e22e">classJ</span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">classK</span> <span style="color:#960050;background-color:#1e0010">&lt;..</span> <span style="color:#a6e22e">classL</span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">classM</span> <span style="color:#960050;background-color:#1e0010">&lt;|..</span> <span style="color:#a6e22e">classN</span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">classO</span> <span style="color:#960050;background-color:#1e0010">..</span> <span style="color:#a6e22e">classP</span>
-</span></span></code></pre></div><pre tabindex="0"><code class="language-mermaid" data-lang="mermaid">classDiagram
+<pre tabindex="0"><code>classDiagram
+classA &lt;|-- classB
+classC *-- classD
+classE o-- classF
+classG &lt;-- classH
+classI -- classJ
+classK &lt;.. classL
+classM &lt;|.. classN
+classO .. classP
+</code></pre><pre tabindex="0"><code class="language-mermaid" data-lang="mermaid">classDiagram
 classA &lt;|-- classB
 classC *-- classD
 classE o-- classF
@@ -196,16 +196,16 @@ classK &lt;.. classL
 classM &lt;|.. classN
 classO .. classP
 </code></pre><h5 id="4-4gantt图">4-4.Gantt图</h5>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>gantt
-</span></span><span style="display:flex;"><span>    title A Gantt Diagram
-</span></span><span style="display:flex;"><span>    dateFormat  YYYY-MM-DD
-</span></span><span style="display:flex;"><span>    section Section
-</span></span><span style="display:flex;"><span>    A task           :a1, 2021-11-22, 30d
-</span></span><span style="display:flex;"><span>    Another task     :after a1  , 20d
-</span></span><span style="display:flex;"><span>    section Another
-</span></span><span style="display:flex;"><span>    Task in sec      :2021-11-26  , 12d
-</span></span><span style="display:flex;"><span>    another task      : 24d
-</span></span></code></pre></div><pre tabindex="0"><code class="language-mermaid" data-lang="mermaid">gantt
+<pre tabindex="0"><code>gantt
+    title A Gantt Diagram
+    dateFormat  YYYY-MM-DD
+    section Section
+    A task           :a1, 2021-11-22, 30d
+    Another task     :after a1  , 20d
+    section Another
+    Task in sec      :2021-11-26  , 12d
+    another task      : 24d
+</code></pre><pre tabindex="0"><code class="language-mermaid" data-lang="mermaid">gantt
 title A Gantt Diagram
     dateFormat  YYYY-MM-DD
     section Section
@@ -215,11 +215,11 @@ title A Gantt Diagram
     Task in sec      :2021-11-26  , 12d
     another task      : 24d
 </code></pre><h5 id="4-5饼状图">4-5.饼状图</h5>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>pie title Pets adopted by volunteers
-</span></span><span style="display:flex;"><span>    &#34;dog&#34; : 386
-</span></span><span style="display:flex;"><span>    &#34;cat&#34; : 85
-</span></span><span style="display:flex;"><span>    &#34;rat&#34; : 15
-</span></span></code></pre></div><pre tabindex="0"><code class="language-mermaid" data-lang="mermaid">pie title Pets adopted by volunteers
+<pre tabindex="0"><code>pie title Pets adopted by volunteers
+    &#34;dog&#34; : 386
+    &#34;cat&#34; : 85
+    &#34;rat&#34; : 15
+</code></pre><pre tabindex="0"><code class="language-mermaid" data-lang="mermaid">pie title Pets adopted by volunteers
     &#34;dog&#34; : 386
     &#34;cat&#34; : 85
     &#34;rat&#34; : 15
