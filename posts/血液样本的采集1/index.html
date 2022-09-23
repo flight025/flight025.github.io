@@ -27,9 +27,6 @@
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/languages/tex.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 
-<link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.1.1/css/all.css" integrity="sha512-1hsteeq9xTM5CX6NsXiJu3Y/g+tj+IIwtZMtTisemEv3hx+S9ngaW4nryrNcPM4xGzINcKbwUJtojslX2KG+DQ==" crossorigin="anonymous">
-<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
-
 <script>
   MathJax = {
     tex: {
@@ -48,7 +45,6 @@
 <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials.css" />
 <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials-theme-minima.css" />
 <script type="text/javascript" src="https://www.zaqizaba.xyz/js/jssocials.js"></script>
-
 
 
 
@@ -146,7 +142,6 @@
 </div>
 
 <div id="waline"></div>
-
 <head>
   
   <script src="//unpkg.com/@waline/client@v2/dist/waline.js"></script>
@@ -163,10 +158,13 @@
 
  Waline.init({
     el: '#waline',
+    pageview: 'true',
     serverURL: 'https://zaqizaba.xyz',
-
-     emoji: [
+     emoji: 
+    [
     'https://gcore.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/',
+    'https://gcore.jsdelivr.net/gh/sowhereso/waline-blobcatemojis@1.2/blobs/',
+    
   ],
   });
 </script>
