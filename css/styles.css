@@ -11,7 +11,8 @@
     display: flex;
   }
 
-  code.has-jax {
+  
+ code.has-jax {
     -webkit-font-smoothing: antialiased;
     background: inherit !important;
     border: none !important;
