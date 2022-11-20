@@ -27,7 +27,7 @@
 3.系统安装和设置 完成上面的步骤。我选择的是带界面的系统，连接hdmi1.4的接口（我试了hdmi2.0接口没反应，可能是hdmi线不支持？），可以看到界面：
 依次点击设置Set country》change password,直到设置完成。
 4.安装文件 由于linux系统没有直接的安装包，所以。你可以用命令行安装所需的软件，比如，我现在要用Raspbian上写博客中文留言并录制视频：
-可以先安装谷歌拼音命令$ apt-get install fcitx-googlepinyin(安装时注意要sudo -i开启管理员权限）,再安装录屏截图软件kazam$ sudo apt-get install kazam,然后再设置好谷歌拼音开启，默认是shift+ctrl键。在Raspbian输入一段中文“你好，这是一个发自于Raspberry的表情包的🤭”。
+可以先安装谷歌拼音命令$ apt-get install fcitx-googlepinyin(安装时注意要sudo -i开启管理员权限）,再安装录屏截图软件kazam$ sudo apt-get install kazam,然后再设置好谷歌拼音开启，默认是shift+ctrl键。在Raspbian输入一段中文“你好，这是一个发自于Raspberry的表情包🤭”。
 参考： 树莓派官网</description>
     </item>
     
