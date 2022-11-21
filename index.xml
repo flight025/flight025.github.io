@@ -170,7 +170,7 @@ We&amp;rsquo;ll start with creating a new site with a very basic template.</desc
       
       <guid>https://www.zaqizaba.xyz/posts/typora%E7%9A%84%E4%B8%80%E4%BA%9B%E6%89%A9%E5%B1%95%E5%BA%94%E7%94%A8/</guid>
       <description>Typora有一些扩展应用,可以说对于有些专业来讲,真的很顶。👍
-1.${a\mathop{{x}}\nolimits^{{2}}+bx+c=0}$的应用 $LaTeX$主要是应用在文章公式排版上,具体是：
+1.$LaTeX$的应用 $LaTeX$主要是应用在文章公式排版上,具体是：
 1.行内公式(inline)：用 $...$括起公式，公式会出现在行内。
 2.块间公式（display）：用 $$...$$ 括起公式（注意 $$ 后需要换行），公式会默认显示在行中间。
 比如一元二次方程：
