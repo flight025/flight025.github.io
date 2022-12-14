@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>shortcodes on 阿波尔的博客</title>
+    <link>https://www.zaqizaba.xyz/tags/shortcodes/</link>
+    <description>Recent content in shortcodes on 阿波尔的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>EN</language>
+    <copyright>&amp;copy; &lt;a href=&#34;https://www.zaqizaba.xyz&#34;&gt;阿波尔的博客&lt;/a&gt; 2019-2022</copyright>
+    <lastBuildDate>Mon, 21 Nov 2022 11:50:32 +0800</lastBuildDate><atom:link href="https://www.zaqizaba.xyz/tags/shortcodes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>图片在博客中的显示形式</title>
+      <link>https://www.zaqizaba.xyz/posts/%E5%9B%BE%E7%89%87%E5%9C%A8%E5%8D%9A%E5%AE%A2%E4%B8%AD%E7%9A%84%E6%98%BE%E7%A4%BA%E5%BD%A2%E5%BC%8F/</link>
+      <pubDate>Mon, 21 Nov 2022 11:50:32 +0800</pubDate>
+      
+      <guid>https://www.zaqizaba.xyz/posts/%E5%9B%BE%E7%89%87%E5%9C%A8%E5%8D%9A%E5%AE%A2%E4%B8%AD%E7%9A%84%E6%98%BE%E7%A4%BA%E5%BD%A2%E5%BC%8F/</guid>
+      <description>图片在博客显示各式各样，以美国超人气动画《Rick and Morty》图片为例，现在让我一一道来。
+1.插入本地图片 引入本地图片分二种：•本地路径（放在static目录下） •相对路径（需与博客文件名一致且在同一路径）假如有一张关于动画的图片，路径放在根目录static/images下，图片命名是Rick and Morty.jpg。
+1.1本地路径 ！[Rick and Morty](/images/Rick and Morty.jpg) 1.2相对路径 ！[Rick and Morty](Rick and Morty.jpg) 2.上传到对象存储COS 2.1带图片的文字链接 [Rick and Morty]（https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick%2520and%2520Morty.jpg) Rick and Morty
+2.2带网址的图片链接 [&amp;lt;img src=&amp;#34;https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick%2520and%2520Morty.jpg&amp;#34; alt=&amp;#34;Rick and Morty&amp;#34;&amp;gt;](https://www.rickandmorty.com/) 2.3缩小图片 &amp;lt;img src=&amp;#34;https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick%20and%20Morty.jpg&amp;#34; style=&amp;#34;zoom:20%;&amp;#34; /&amp;gt; 2.4扩大图片 &amp;lt;img src=&amp;#34;https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick%20and%20Morty.jpg&amp;#34; style=&amp;#34;zoom:150%;&amp;#34; /&amp;gt; 2.5.1悬浮文字说明 ![Rick and Morty](https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick%2520and%2520Morty.jpg &amp;#34;Rick and Morty&amp;#34;) 2.6.1图片文字说明之一 | ![Rick and Morty](https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick%2520and%2520Morty.jpg) | |:--:| | **Rick and Morty** | Rick and Morty 2.6.2文字图片说明之二 {/{&amp;lt; figure src=&amp;#34;https://css-1252531711.</description>
+    </item>
+    
+  </channel>
+</rss>

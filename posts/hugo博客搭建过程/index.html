@@ -48,6 +48,14 @@ MathJax = {
 
 
 
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+
+
+
+
 <div class="container">
     <nav class="navbar level">
       <div class="navbar-brand">
@@ -119,8 +127,22 @@ MathJax = {
 <h2 id="2环境变量的设置以及配置站点文件">2.环境变量的设置以及配置站点文件</h2>
 <p>下载好<a href="https://git-scm.com/download">git工具</a>和<a href="https://github.com/gohugoio/hugo/releases">hugo博客系统文件</a>，然后设置环境变量。
 以win10为例，在搜索栏中。输入path，找到编辑系统环境变量。</p>
-<p><img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/%E5%9B%BE%E7%89%87/QQ%E6%88%AA%E5%9B%BE20200622100628.png" alt=""></p>
-<p><img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/%E5%9B%BE%E7%89%87/QQ%E6%88%AA%E5%9B%BE20200622101850.png" alt=""></p>
+<p>
+<div class="post-img-view">
+<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/%e5%9b%be%e7%89%87/QQ%e6%88%aa%e5%9b%be20200622100628.png">
+<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/%e5%9b%be%e7%89%87/QQ%e6%88%aa%e5%9b%be20200622100628.png" alt=""  />
+</a>
+</div>
+
+</p>
+<p>
+<div class="post-img-view">
+<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/%e5%9b%be%e7%89%87/QQ%e6%88%aa%e5%9b%be20200622101850.png">
+<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/%e5%9b%be%e7%89%87/QQ%e6%88%aa%e5%9b%be20200622101850.png" alt=""  />
+</a>
+</div>
+
+</p>
 <p>找到hugo下载的所在文件目录，复制到PATH中。注意路径不能有中文。
 在cmd中命令看看是否安装正确，出现：</p>
 <pre tabindex="0"><code>git version
@@ -131,7 +153,14 @@ Hugo Static Site Generator v0.72.0-8A7EF3CF windows/amd64 BuildDate: 2020-05-31T
 <p>安装好后，再在其它盘创建一个根站点，假如命名为###。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>hugo new site ###
 </span></span></code></pre></div><p>然后在###文件中就会得到</p>
-<p><img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/%E5%9B%BE%E7%89%87/%E6%8D%95%E8%8E%B76.PNG" alt=""></p>
+<p>
+<div class="post-img-view">
+<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/%e5%9b%be%e7%89%87/%e6%8d%95%e8%8e%b76.PNG">
+<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/%e5%9b%be%e7%89%87/%e6%8d%95%e8%8e%b76.PNG" alt=""  />
+</a>
+</div>
+
+</p>
 <p>这些文件。</p>
 <p>用cd命令打开themes文件，在<a href="https://themes.gohugo.io/">hugo主题</a>中找一个主题，比如我找的<a href="https://themes.gohugo.io/charaka-hugo-theme/">charaka-hugo-theme</a>主题。在cmd中命令如下：</p>
 <pre tabindex="0"><code>cd themes
@@ -186,14 +215,42 @@ categories: [想法]（归档）
 tags:[&#34;hugo&#34;,&#34;blog&#34;]（分类）
 </code></pre><p>在cmd博客站点根目录中，启动博客预览</p>
 <pre tabindex="0"><code>hugo server
-</code></pre><p><img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/%E5%9B%BE%E7%89%87/ptf.PNG" alt=""></p>
+</code></pre><p>
+<div class="post-img-view">
+<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/%e5%9b%be%e7%89%87/ptf.PNG">
+<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/%e5%9b%be%e7%89%87/ptf.PNG" alt=""  />
+</a>
+</div>
+
+</p>
 <p>打开 http://localhost:1313/可以看到，新文章已经生成。</p>
-<p>​                                                            <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/%E5%9B%BE%E7%89%87/%E6%8D%95%E8%8E%B71.PNG" alt=""></p>
+<p>​                                                            
+<div class="post-img-view">
+<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/%e5%9b%be%e7%89%87/%e6%8d%95%e8%8e%b71.PNG">
+<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/%e5%9b%be%e7%89%87/%e6%8d%95%e8%8e%b71.PNG" alt=""  />
+</a>
+</div>
+
+</p>
 <p>设置打开<a href="https://github.com/">github</a>，创建自己的仓库。
 新建一个new Repository，然后以（你的用户名.github.io）创建一个。</p>
-<p><img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/%E5%9B%BE%E7%89%87/QQ%E6%88%AA%E5%9B%BE20200622115831.png" alt=""></p>
+<p>
+<div class="post-img-view">
+<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/%e5%9b%be%e7%89%87/QQ%e6%88%aa%e5%9b%be20200622115831.png">
+<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/%e5%9b%be%e7%89%87/QQ%e6%88%aa%e5%9b%be20200622115831.png" alt=""  />
+</a>
+</div>
+
+</p>
 <p>​</p>
-<p><img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/%E5%9B%BE%E7%89%87/%E6%8D%95%E8%8E%B72.PNG" alt=""></p>
+<p>
+<div class="post-img-view">
+<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/%e5%9b%be%e7%89%87/%e6%8d%95%e8%8e%b72.PNG">
+<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/%e5%9b%be%e7%89%87/%e6%8d%95%e8%8e%b72.PNG" alt=""  />
+</a>
+</div>
+
+</p>
 <p>设置好  你的用户名.github.io 然后创建仓库。</p>
 <h2 id="4设置静态文件及上传">4.设置静态文件及上传</h2>
 <p>在config文件中，把baseurl改成自己的Repository name.
@@ -215,19 +272,68 @@ tags:[&#34;hugo&#34;,&#34;blog&#34;]（分类）
 <p>md文章可以添加本地图片及网上图床服务，而网上图床存储又有免费和收费之分。
 这里我选择的是收费图床存储，腾讯云COS作为图床。但是COS上传后必须得打开网站一张张复制链接。很麻烦。这里可以用到 <a href="https://github.com/Molunerfinn/PicGo/releases">Picgo</a> 和<a href="https://typora.io/">typora</a> ，而且二者可以搭配使用。
 首先，依次打开对象储存》储存桶列表》创建储存桶，如下：</p>
-<p>​                                                     <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/%E5%9B%BE%E7%89%87/QQ%E5%9B%BE%E7%89%8720200623092339.png" alt=""></p>
+<p>​                                                     
+<div class="post-img-view">
+<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/%e5%9b%be%e7%89%87/QQ%e5%9b%be%e7%89%8720200623092339.png">
+<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/%e5%9b%be%e7%89%87/QQ%e5%9b%be%e7%89%8720200623092339.png" alt=""  />
+</a>
+</div>
+
+</p>
 <p>​                名称自己小写字母填一个，地域这里选择物理位置最近的一个，访问权限选公有读私有写，标签随便填。服务器加密选SSE-COS.点击确定。</p>
-<p>​                                 <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/%E5%9B%BE%E7%89%87/QQ%E6%88%AA%E5%9B%BE20200622134156.png" alt=""></p>
+<p>​                                 
+<div class="post-img-view">
+<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/%e5%9b%be%e7%89%87/QQ%e6%88%aa%e5%9b%be20200622134156.png">
+<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/%e5%9b%be%e7%89%87/QQ%e6%88%aa%e5%9b%be20200622134156.png" alt=""  />
+</a>
+</div>
+
+</p>
 <p>​               打开<a href="https://console.cloud.tencent.com/cam/capi">api密钥管理</a>，新建密钥。</p>
-<p><img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/%E5%9B%BE%E7%89%87/QQ%E6%88%AA%E5%9B%BE20200622134942.png" alt=""></p>
+<p>
+<div class="post-img-view">
+<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/%e5%9b%be%e7%89%87/QQ%e6%88%aa%e5%9b%be20200622134942.png">
+<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/%e5%9b%be%e7%89%87/QQ%e6%88%aa%e5%9b%be20200622134942.png" alt=""  />
+</a>
+</div>
+
+</p>
 <p>​                在Picgo中，选COS为V5。设定上述文件，点击确定保存。</p>
-<p><img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/%E5%9B%BE%E7%89%87/QQ%E6%88%AA%E5%9B%BE20200622135443.png" alt=""></p>
+<p>
+<div class="post-img-view">
+<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/%e5%9b%be%e7%89%87/QQ%e6%88%aa%e5%9b%be20200622135443.png">
+<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/%e5%9b%be%e7%89%87/QQ%e6%88%aa%e5%9b%be20200622135443.png" alt=""  />
+</a>
+</div>
+
+</p>
 <p>​       至于picgo和typora搭配。设置如下：picgo打开：</p>
-<p>​                                              <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/%E5%9B%BE%E7%89%87/QQ%E6%88%AA%E5%9B%BE20200622140402.png" alt=""></p>
+<p>​                                              
+<div class="post-img-view">
+<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/%e5%9b%be%e7%89%87/QQ%e6%88%aa%e5%9b%be20200622140402.png">
+<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/%e5%9b%be%e7%89%87/QQ%e6%88%aa%e5%9b%be20200622140402.png" alt=""  />
+</a>
+</div>
+
+</p>
 <p>​           typora则是：</p>
-<p>​                                                  <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/%E5%9B%BE%E7%89%87/QQ%E6%88%AA%E5%9B%BE20200622140228.png" alt=""></p>
+<p>​                                                  
+<div class="post-img-view">
+<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/%e5%9b%be%e7%89%87/QQ%e6%88%aa%e5%9b%be20200622140228.png">
+<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/%e5%9b%be%e7%89%87/QQ%e6%88%aa%e5%9b%be20200622140228.png" alt=""  />
+</a>
+</div>
+
+</p>
 <p>​       然后点击“验证图片上传选项”。出现如下提示：</p>
-<p>​                                                      <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/%E5%9B%BE%E7%89%87/QQ%E6%88%AA%E5%9B%BE20200622140258.png" alt=""></p>
+<p>​                                                      
+<div class="post-img-view">
+<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/%e5%9b%be%e7%89%87/QQ%e6%88%aa%e5%9b%be20200622140258.png">
+<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/%e5%9b%be%e7%89%87/QQ%e6%88%aa%e5%9b%be20200622140258.png" alt=""  />
+</a>
+</div>
+
+</p>
 <p>代表成功获得图片url，可以直接拖动图片在typora上传了。</p>
 <p>图片问题解决，如果你想以后再写博客文章，你可以运行一下命令：</p>
 <pre tabindex="0"><code>hugo new post/你的文章名.md
@@ -243,7 +349,14 @@ tags:[&#34;hugo&#34;,&#34;blog&#34;]（分类）
 <hr>
 <p>网页参考：1.<a href="https://www.bilibili.com/video/BV1q4411i7gL?from=search&amp;seid=2919999277428020540">CodeSheep手把手教你从0开始搭建自己的个人博客 |第二种姿势 | hugo</a>2.<a href="https://www.bilibili.com/video/BV14b411K7Fm?from=search&amp;seid=2919999277428020540">hojun_cn：hugo+github博客搭建教程！</a>3.<a href="https://www.bilibili.com/video/BV1p7411i76h?from=search&amp;seid=16196797963561618058">CeyCeyChannel：『手把手』在 HUGO 中添加 Valine 评论系统的过程</a>4.<a href="https://saquarius.com/2019/07/hugo-github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2windows10/">SAquarius的梦想屋：Hugo+github搭建个人博客（windows10）</a>5.<a href="https://www.natarajmb.com/">natarajmb：模板制作者</a></p>
 <p>在此一一感谢。</p>
-<p><img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/%E5%9B%BE%E7%89%87/5067763a0a7b13f43c121cff5a005e79.jpg" alt="东京"></p>
+<p>
+<div class="post-img-view">
+<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/%e5%9b%be%e7%89%87/5067763a0a7b13f43c121cff5a005e79.jpg">
+<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/%e5%9b%be%e7%89%87/5067763a0a7b13f43c121cff5a005e79.jpg" alt="东京"  />
+</a>
+</div>
+
+</p>
 
   </div>
 </div>
@@ -280,6 +393,14 @@ tags:[&#34;hugo&#34;,&#34;blog&#34;]（分类）
     el: '#waline',
     pageview: 'true',
     serverURL: 'https://zaqizaba.xyz',
+    locale: '你认为这篇文章怎么样',
+    reactionTitle:['reaction0: 太厉害了','reaction1: 不懂但是感觉很厉害','reaction2: 震惊','reaction3: 无语','reaction4: 尴尬到爆'],
+    reaction:['https://cdn.jsdelivr.net/gh/flight025/catpoo@catpoo/%E5%A4%AA%E5%8E%89%E5%AE%B3%E4%BA%86.gif',
+      'https://cdn.jsdelivr.net/gh/flight025/catpoo@catpoo/%E4%B8%8D%E6%87%82.gif',
+      'https://cdn.jsdelivr.net/gh/flight025/catpoo@catpoo/%E9%9C%87%E6%83%8A.gif',
+      'https://cdn.jsdelivr.net/gh/flight025/catpoo@catpoo/%E6%97%A0%E8%AF%AD.gif',
+      'https://cdn.jsdelivr.net/gh/flight025/catpoo@catpoo/%E5%B0%B4%E5%B0%AC%E5%88%B0%E7%88%86.gif',
+      ],
      emoji: 
     [
     'https://gcore.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/',
@@ -309,3 +430,8 @@ if (!doNotTrack) {
 
 
 
+
+<script type="text/javascript" src="/js/carousel.js"></script>
+<link rel="stylesheet" href="/css/carousel.css">
+</body>
+</html>

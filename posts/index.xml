@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>EN</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://www.zaqizaba.xyz&#34;&gt;阿波尔的博客&lt;/a&gt; 2019-2022</copyright>
-    <lastBuildDate>Thu, 13 Oct 2022 16:18:15 +0800</lastBuildDate><atom:link href="https://www.zaqizaba.xyz/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 21 Nov 2022 11:50:32 +0800</lastBuildDate><atom:link href="https://www.zaqizaba.xyz/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Creating a New Theme</title>
       <link>https://www.zaqizaba.xyz/posts/creating-a-new-theme/</link>
@@ -27,6 +27,18 @@ We&amp;rsquo;ll start with creating a new site with a very basic template.</desc
       <description>Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
 ▾ &amp;lt;root&amp;gt;/ ▾ images/ logo.png should become
 ▾ &amp;lt;root&amp;gt;/ ▾ static/ ▾ images/ logo.png Additionally, you&amp;rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.</description>
+    </item>
+    
+    <item>
+      <title>图片在博客中的显示形式</title>
+      <link>https://www.zaqizaba.xyz/posts/%E5%9B%BE%E7%89%87%E5%9C%A8%E5%8D%9A%E5%AE%A2%E4%B8%AD%E7%9A%84%E6%98%BE%E7%A4%BA%E5%BD%A2%E5%BC%8F/</link>
+      <pubDate>Mon, 21 Nov 2022 11:50:32 +0800</pubDate>
+      
+      <guid>https://www.zaqizaba.xyz/posts/%E5%9B%BE%E7%89%87%E5%9C%A8%E5%8D%9A%E5%AE%A2%E4%B8%AD%E7%9A%84%E6%98%BE%E7%A4%BA%E5%BD%A2%E5%BC%8F/</guid>
+      <description>图片在博客显示各式各样，以美国超人气动画《Rick and Morty》图片为例，现在让我一一道来。
+1.插入本地图片 引入本地图片分二种：•本地路径（放在static目录下） •相对路径（需与博客文件名一致且在同一路径）假如有一张关于动画的图片，路径放在根目录static/images下，图片命名是Rick and Morty.jpg。
+1.1本地路径 ！[Rick and Morty](/images/Rick and Morty.jpg) 1.2相对路径 ！[Rick and Morty](Rick and Morty.jpg) 2.上传到对象存储COS 2.1带图片的文字链接 [Rick and Morty]（https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick%2520and%2520Morty.jpg) Rick and Morty
+2.2带网址的图片链接 [&amp;lt;img src=&amp;#34;https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick%2520and%2520Morty.jpg&amp;#34; alt=&amp;#34;Rick and Morty&amp;#34;&amp;gt;](https://www.rickandmorty.com/) 2.3缩小图片 &amp;lt;img src=&amp;#34;https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick%20and%20Morty.jpg&amp;#34; style=&amp;#34;zoom:20%;&amp;#34; /&amp;gt; 2.4扩大图片 &amp;lt;img src=&amp;#34;https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick%20and%20Morty.jpg&amp;#34; style=&amp;#34;zoom:150%;&amp;#34; /&amp;gt; 2.5.1悬浮文字说明 ![Rick and Morty](https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick%2520and%2520Morty.jpg &amp;#34;Rick and Morty&amp;#34;) 2.6.1图片文字说明之一 | ![Rick and Morty](https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick%2520and%2520Morty.jpg) | |:--:| | **Rick and Morty** | Rick and Morty 2.6.2文字图片说明之二 {/{&amp;lt; figure src=&amp;#34;https://css-1252531711.</description>
     </item>
     
     <item>
@@ -71,9 +83,7 @@ We&amp;rsquo;ll start with creating a new site with a very basic template.</desc
       <pubDate>Sun, 20 Feb 2022 15:27:44 +0800</pubDate>
       
       <guid>https://www.zaqizaba.xyz/posts/%E7%94%B5%E8%84%91%E5%86%8D%E5%8D%87%E7%BA%A7/</guid>
-      <description>19年时的博客上就写过具体的电脑装机教程，那会我买了电脑配件直接装了一台台式机。
-我在19年买的amd 5700xt显卡发现现在有点卡顿，但还能用。于是我准备只换显卡，这二年众所周知的原因，显卡高价被奸商和“挖矿商”恶意抬高价格，导致显卡价格一直虚高下不去。不过是不是最近矿潮回落的原因，近期几个月显卡都有小幅度降价。
-于是我买了一款6700xt（终究觉得a卡光追和现在a卡的驱动问题有了很大的改善），但是某些方面比不上n卡，价格比n卡便宜那么几百来块。这款6700xt是盈通的六道兵甲，价格上我觉得也能接受。但是问题是买到后发现，原来的机箱显卡限长是290mm，现在我这个显卡长度大约为310mm,而且电源功率建议是750w。这也就意味着我的显卡，机箱以及电源都必须得换。
+      <description>19年时的博客上就写过具体的电脑装机教程，那会我买了电脑配件直接装了一台台式机。我在19年买的amd 5700xt显卡发现现在有点卡顿，但还能用。于是我准备只换显卡，这二年众所周知的原因，显卡高价被奸商和“挖矿商”恶意抬高价格，导致显卡价格一直虚高下不去。不过是不是最近矿潮回落的原因，近期几个月显卡都有小幅度降价。于是我买了一款6700xt（终究觉得a卡光追和现在a卡的驱动问题有了很大的改善），但是某些方面比不上n卡，价格比n卡便宜那么几百来块。这款6700xt是盈通的六道兵甲，价格上我觉得也能接受。但是问题是买到后发现，原来的机箱显卡限长是290mm，现在我这个显卡长度大约为310mm,而且电源功率建议是750w。这也就意味着我的显卡，机箱以及电源都必须得换。
 马上开动，材料为： EVESKY锐界机箱、120mm的散热风扇（没买风扇，风扇是原来机箱上拆解下来的）、技嘉B365m小雕（还是原来的主板，带cpu以及cpu散热风冷）、带pcie扩展固态硬盘的转接卡，鑫谷全模组额定750w电源（以前用的金河田600w非模组电源，可能缺点就是非模组电源把一些不用的线也包括在机箱内了，除了这点，其实全模和非模我感觉没什么差别。）以及电源模组线。
 由于以前我在原博客写过具体的操作，现在操作和以前大同小异（详细操作可以看我以前的博客，这次除了机械硬盘安装有些不同外），所以我写一下简略的操作：
 方法如下： 1.先把锐界机箱散热风扇安装好，有铭牌的风扇朝内，用十字螺丝固定好风扇；2.把带cpu散热风扇的主板固定在机箱内，垫好六角黄铜，一一对应螺丝口接好；3.扯开机箱铁皮。把盈通显卡，转接卡用螺丝固定，再用垫片垫住显卡和转接卡的空隙4.安装好鑫谷全模组电源固定，哪个电子元器件部位需要供电用那根。5.打开底下的机械硬盘仓位(这个机箱支持插入2个机械硬盘位，这次我闲置的一个2T的机械硬盘，刚好能派上用场了)。插入一个机械硬盘，上面再固定一个机械硬盘。6.分别在主板上插入主板24pin、显卡8+6pin、cpu8pin、cpu风冷小4pin、散热风扇大4pin、硬盘sata位接口，再插入机箱自带音频接口、usb接口、usb3.0接口、硬盘指示灯、重启键、电源开关、电源开关指示灯接口后接通电源，打开电源开关。

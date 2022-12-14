@@ -48,6 +48,14 @@ MathJax = {
 
 
 
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+
+
+
+
 <div class="container">
     <nav class="navbar level">
       <div class="navbar-brand">
@@ -107,10 +115,15 @@ MathJax = {
   <h2 class="subtitle is-6">February 20, 2022</h2>
   <h1 class="subtitle is-size-4-mobile is-size-3-desktop">电脑再升级</h1>
   <div class="content">
-    <p><img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/2FTkRgk.jpg" alt="vs"></p>
-<p>19年时的博客上就写过具体的电脑装机教程，那会我买了电脑配件直接装了一台台式机。</p>
-<p>我在19年买的amd 5700xt显卡发现现在有点卡顿，但还能用。于是我准备只换显卡，这二年众所周知的原因，显卡高价被奸商和“挖矿商”恶意抬高价格，导致显卡价格一直虚高下不去。不过是不是最近矿潮回落的原因，近期几个月显卡都有小幅度降价。</p>
-<p>于是我买了一款6700xt（终究觉得a卡光追和现在a卡的驱动问题有了很大的改善），但是某些方面比不上n卡，价格比n卡便宜那么几百来块。这款6700xt是盈通的六道兵甲，价格上我觉得也能接受。但是问题是买到后发现，原来的机箱显卡限长是<strong>290mm</strong>，现在我这个显卡长度大约为<strong>310mm</strong>,而且电源功率建议是<strong>750w</strong>。这也就意味着我的显卡，机箱以及电源都必须得换。</p>
+    <p>
+<div class="post-img-view">
+<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/2FTkRgk.jpg">
+<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/2FTkRgk.jpg" alt="vs"  />
+</a>
+</div>
+
+</p>
+<p>19年时的博客上就写过具体的电脑装机教程，那会我买了电脑配件直接装了一台台式机。我在19年买的amd 5700xt显卡发现现在有点卡顿，但还能用。于是我准备只换显卡，这二年众所周知的原因，显卡高价被奸商和“挖矿商”恶意抬高价格，导致显卡价格一直虚高下不去。不过是不是最近矿潮回落的原因，近期几个月显卡都有小幅度降价。于是我买了一款6700xt（终究觉得a卡光追和现在a卡的驱动问题有了很大的改善），但是某些方面比不上n卡，价格比n卡便宜那么几百来块。这款6700xt是盈通的六道兵甲，价格上我觉得也能接受。但是问题是买到后发现，原来的机箱显卡限长是<strong>290mm</strong>，现在我这个显卡长度大约为<strong>310mm</strong>,而且电源功率建议是<strong>750w</strong>。这也就意味着我的显卡，机箱以及电源都必须得换。</p>
 <h2 id="马上开动材料为">马上开动，材料为：</h2>
 <blockquote>
 <p>EVESKY锐界机箱、120mm的散热风扇（没买风扇，风扇是原来机箱上拆解下来的）、技嘉B365m小雕（还是原来的主板，带cpu以及cpu散热风冷）、带pcie扩展固态硬盘的转接卡，鑫谷全模组额定750w电源（以前用的金河田600w非模组电源，可能缺点就是非模组电源把一些不用的线也包括在机箱内了，除了这点，其实全模和非模我感觉没什么差别。）以及电源模组线。</p>
@@ -126,7 +139,14 @@ MathJax = {
       </video>
 <p>一键点亮了，代表装机成功了（可能线材有点乱，但是的确我不怎么会理线）。</p>
 <hr>
-<p><img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/blob.jfif" alt="santa clara"></p>
+<p>
+<div class="post-img-view">
+<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/blob.jfif">
+<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/blob.jfif" alt="santa clara"  />
+</a>
+</div>
+
+</p>
 
   </div>
 </div>
@@ -163,6 +183,14 @@ MathJax = {
     el: '#waline',
     pageview: 'true',
     serverURL: 'https://zaqizaba.xyz',
+    locale: '你认为这篇文章怎么样',
+    reactionTitle:['reaction0: 太厉害了','reaction1: 不懂但是感觉很厉害','reaction2: 震惊','reaction3: 无语','reaction4: 尴尬到爆'],
+    reaction:['https://cdn.jsdelivr.net/gh/flight025/catpoo@catpoo/%E5%A4%AA%E5%8E%89%E5%AE%B3%E4%BA%86.gif',
+      'https://cdn.jsdelivr.net/gh/flight025/catpoo@catpoo/%E4%B8%8D%E6%87%82.gif',
+      'https://cdn.jsdelivr.net/gh/flight025/catpoo@catpoo/%E9%9C%87%E6%83%8A.gif',
+      'https://cdn.jsdelivr.net/gh/flight025/catpoo@catpoo/%E6%97%A0%E8%AF%AD.gif',
+      'https://cdn.jsdelivr.net/gh/flight025/catpoo@catpoo/%E5%B0%B4%E5%B0%AC%E5%88%B0%E7%88%86.gif',
+      ],
      emoji: 
     [
     'https://gcore.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/',
@@ -192,3 +220,8 @@ if (!doNotTrack) {
 
 
 
+
+<script type="text/javascript" src="/js/carousel.js"></script>
+<link rel="stylesheet" href="/css/carousel.css">
+</body>
+</html>

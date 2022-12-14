@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="EN">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+<title>图片在博客中的显示形式 | 阿波尔的博客</title>
+
+<link rel="stylesheet" href="https://www.zaqizaba.xyz/css/styles.css">
+
+<link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.1.1/css/all.css" integrity="sha512-1hsteeq9xTM5CX6NsXiJu3Y/g+tj+IIwtZMtTisemEv3hx+S9ngaW4nryrNcPM4xGzINcKbwUJtojslX2KG+DQ==" crossorigin="anonymous">
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/zenburn.min.css" crossorigin="anonymous" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script src="https://www.zaqizaba.xyz/js/highlight.js"></script>
+
+
+<html>
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+</html>
+
+<link href="https://cdn.bootcss.com/highlight.js/9.12.0/styles/monokai.min.css" rel="stylesheet">
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/languages/tex.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+<link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials.css" />
+<link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials-theme-minima.css" />
+<script type="text/javascript" src="https://www.zaqizaba.xyz/js/jssocials.js"></script>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+
+
+
+
+<div class="container">
+    <nav class="navbar level">
+      <div class="navbar-brand">
+          <a class="nav-item" href="https://www.zaqizaba.xyz"><h1 class="title is-3">阿波尔的博客</h1></a>
+      </div>           
+      <div class="navbar-menu has-text-centered is-active">
+          <div class="navbar-end is-centered">
+              
+                <a href="https://www.zaqizaba.xyz/about" rel="me">
+                  <span class="icon">
+                    <i class="fas fa-info"></i>
+                  </span>
+                </a>
+              
+                <a href="https://www.zaqizaba.xyz/archives" rel="me">
+                  <span class="icon">
+                    <i class="fas fa-archive"></i>
+                  </span>
+                </a>
+              
+                <a href="https://www.zaqizaba.xyz/comments" rel="me">
+                  <span class="icon">
+                    <i class="fas fa-comment"></i>
+                  </span>
+                </a>
+              
+                <a href="https://github.com/flight025" rel="me">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                </a>
+              
+                <a href="https://www.zhihu.com/people/a-gan-jing-shen" rel="me">
+                  <span class="icon">
+                    <i class="fab fa-zhihu"></i>
+                  </span>
+                </a>
+              
+                <a href="https://twitter.com/666GXF" rel="me">
+                  <span class="icon">
+                    <i class="fab fa-twitter"></i>
+                  </span>
+                </a>
+              
+                <a href="https://www.zaqizaba.xyz/index.xml" rel="me">
+                  <span class="icon">
+                    <i class="fa fa-rss"></i>
+                  </span>
+                </a>
+              
+           </div>
+      </div>
+    </nav>
+  </div>
+
+<div class="container">
+  <h2 class="subtitle is-6">November 21, 2022</h2>
+  <h1 class="subtitle is-size-4-mobile is-size-3-desktop">图片在博客中的显示形式</h1>
+  <div class="content">
+    <p>
+<div class="post-img-view">
+<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/bejson.jpg">
+<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/bejson.jpg" alt="image"  />
+</a>
+</div>
+
+</p>
+<p>图片在博客显示各式各样，以美国超人气动画<a href="https://www.rickandmorty.com/">《Rick and Morty》</a>图片为例，现在让我一一道来。</p>
+<h1 id="1插入本地图片">1.插入本地图片</h1>
+<p>引入本地图片分二种：•本地路径（放在<code>static</code>目录下）  •相对路径（需与博客文件名一致且在同一路径）假如有一张关于动画的图片，路径放在根目录<code>static/images</code>下，图片命名是<code>Rick and Morty.jpg</code>。</p>
+<h2 id="11本地路径">1.1本地路径</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>！[Rick and Morty](/images/Rick and Morty.jpg)
+</span></span></code></pre></div><p>
+<div class="post-img-view">
+<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick%20and%20Morty.jpg">
+<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick%20and%20Morty.jpg" alt="Rick and Morty"  />
+</a>
+</div>
+
+</p>
+<h2 id="12相对路径">1.2相对路径</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>！[Rick and Morty](Rick and Morty.jpg)
+</span></span></code></pre></div><p>
+<div class="post-img-view">
+<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick%2520and%2520Morty.jpg">
+<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick%2520and%2520Morty.jpg" alt="Rick and Morty"  />
+</a>
+</div>
+
+</p>
+<h1 id="2上传到对象存储cos">2.上传到对象存储COS</h1>
+<h2 id="21带图片的文字链接">2.1带图片的文字链接</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>[Rick and Morty]（https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick%2520and%2520Morty.jpg)
+</span></span></code></pre></div><p><a href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick%2520and%2520Morty.jpg">Rick and Morty</a></p>
+<h2 id="22带网址的图片链接">2.2带网址的图片链接</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>[&lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick%2520and%2520Morty.jpg&#34;</span> <span style="color:#a6e22e">alt</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Rick and Morty&#34;</span>&gt;](https://www.rickandmorty.com/)
+</span></span></code></pre></div><p><a href="https://www.rickandmorty.com/"><img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick%2520and%2520Morty.jpg" alt="Rick and Morty"></a></p>
+<h2 id="23缩小图片">2.3缩小图片</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick%20and%20Morty.jpg&#34;</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;zoom:20%;&#34;</span> /&gt;
+</span></span></code></pre></div><img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick%20and%20Morty.jpg" style="zoom:20%;" />
+<h2 id="24扩大图片">2.4扩大图片</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick%20and%20Morty.jpg&#34;</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;zoom:150%;&#34;</span> /&gt;
+</span></span></code></pre></div><img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick%20and%20Morty.jpg" style="zoom:150%;" />
+<h2 id="251悬浮文字说明">2.5.1悬浮文字说明</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>![Rick and Morty](https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick%2520and%2520Morty.jpg &#34;Rick and Morty&#34;)
+</span></span></code></pre></div><p>
+<div class="post-img-view">
+<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick%2520and%2520Morty.jpg">
+<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick%2520and%2520Morty.jpg" alt="Rick and Morty"  title="Rick and Morty" />
+</a>
+</div>
+
+</p>
+<h2 id="261图片文字说明之一">2.6.1图片文字说明之一</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>| ![Rick and Morty](https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick%2520and%2520Morty.jpg) | 
+</span></span><span style="display:flex;"><span>|:--:| 
+</span></span><span style="display:flex;"><span>| **Rick and Morty** |
+</span></span></code></pre></div><table>
+<thead>
+<tr>
+<th style="text-align:center">
+<div class="post-img-view">
+<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick%2520and%2520Morty.jpg">
+<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick%2520and%2520Morty.jpg" alt="Rick and Morty"  />
+</a>
+</div>
+
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><strong>Rick and Morty</strong></td>
+</tr>
+</tbody>
+</table>
+<h2 id="262文字图片说明之二">2.6.2文字图片说明之二</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>{/{&lt; <span style="color:#f92672">figure</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick%2520and%2520Morty.jpg&#34;</span> <span style="color:#a6e22e">title</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Rick and Morty&#34;</span> &gt;}/}(去掉斜杠即可)
+</span></span></code></pre></div>
+<link rel="stylesheet" href=/css/hugo-easy-gallery.css />
+<div class="box" >
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img">
+      <img itemprop="thumbnail" src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick%2520and%2520Morty.jpg" />
+    </div>
+    <a href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick%2520and%2520Morty.jpg" itemprop="contentUrl"></a>
+      <figcaption><h4>Rick and Morty</h4>
+      </figcaption>
+  </figure>
+</div>
+
+<h2 id="27文字提示折叠图片">2.7文字提示折叠图片</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">details</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">summary</span>&gt;Rick and morty&lt;/<span style="color:#f92672">summary</span>&gt;
+</span></span><span style="display:flex;"><span> &lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick%20and%20Morty.jpg&#34;</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;zoom:10%;&#34;</span> /&gt;RICK:&#34;Your future stems from your present,which,if you&#39;re living right.keeps changing.you&#39;re gonna be a lot happier if your focus on the moment.rather than on how you&#39;re gonna die.
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">details</span>&gt;
+</span></span></code></pre></div><details>
+  <summary>Rick and Morty</summary><img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick%20and%20Morty.jpg" style="zoom:10%;" />RICK:"Your future  stems from your present,which,if you're living right.keeps changing.you're gonna be a lot    happier if your focus on the moment.rather than on how you're gonna die.
+</details>
+<h2 id="28添加动图">2.8添加动图</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>![rick and morty](https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/rick%20and%20morty.gif)
+</span></span></code></pre></div><p>
+<div class="post-img-view">
+<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/rick%20and%20morty.gif">
+<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/rick%20and%20morty.gif" alt="rick and morty"  />
+</a>
+</div>
+
+</p>
+<h1 id="3多图片处理方式">3.多图片处理方式</h1>
+<h2 id="31html并列">3.1HTML并列</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">figure</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;third&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick%2520and%2520Morty.jpg&#34;</span><span style="color:#a6e22e">title</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;150&#34;</span> <span style="color:#a6e22e">width</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;150&#34;</span> <span style="color:#a6e22e">height</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;150&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick%2520and%2520Morty.jpg&#34;</span><span style="color:#a6e22e">title</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;150&#34;</span> <span style="color:#a6e22e">width</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;150&#34;</span> <span style="color:#a6e22e">height</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;150&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick%2520and%2520Morty.jpg&#34;</span><span style="color:#a6e22e">title</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;150&#34;</span> <span style="color:#a6e22e">width</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;150&#34;</span> <span style="color:#a6e22e">height</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;150&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">figure</span>&gt;
+</span></span></code></pre></div> <figure class="third">
+    <div style="float:left;border:solid 1px 000;margin:2px;"><img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick%2520and%2520Morty.jpg"title="150" width="150" height="150">
+    <div style="float:left;border:solid 1px 000;margin:2px;"><img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick%2520and%2520Morty.jpg"title="150" width="150" height="150">
+    <div style="float:left;border:solid 1px 000;margin:2px;"><img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick%2520and%2520Morty.jpg"title="150" width="150" height="150">
+ </figure>
+<h2 id="32简码图库并列">3.2简码图库并列</h2>
+<p>这个我在网上参考了<strong>Li-Wen Yip</strong>的简码日志<a href="https://www.liwen.id.au/heg/#gallery-usage">Hugo Easy Gallery</a>，我所举列的是最简单的短码例子，详细情况可以参考其<a href="https://github.com/liwenyip/hugo-easy-gallery/">GitHub主题页面</a>，参数配置可以根据自己的喜好来，配置好就行。😉</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>{/{&lt; <span style="color:#f92672">gallery</span> &gt;}}
+</span></span><span style="display:flex;"><span>{/{&lt; <span style="color:#f92672">figure</span> <span style="color:#a6e22e">link</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick%20and%20Morty.jpg&#34;</span> <span style="color:#a6e22e">caption</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Rick and Morty&#34;</span> &gt;}}
+</span></span><span style="display:flex;"><span>{/{&lt; <span style="color:#f92672">figure</span> <span style="color:#a6e22e">link</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Morty.jpg&#34;</span> <span style="color:#a6e22e">caption</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Rick1&#34;</span> &gt;}}
+</span></span><span style="display:flex;"><span>{/{&lt; <span style="color:#f92672">figure</span> <span style="color:#a6e22e">link</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Morty2.jpg&#34;</span> <span style="color:#a6e22e">caption</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Rick2&#34;</span> &gt;}}
+</span></span><span style="display:flex;"><span>{/{&lt; <span style="color:#f92672">figure</span> <span style="color:#a6e22e">link</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick.jpg&#34;</span> <span style="color:#a6e22e">caption</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Morty&#34;</span> &gt;}}
+</span></span><span style="display:flex;"><span>{/{&lt; <span style="color:#f92672">figure</span> <span style="color:#a6e22e">link</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick2.png&#34;</span> <span style="color:#a6e22e">caption</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Morty2&#34;</span> &gt;}}
+</span></span><span style="display:flex;"><span>{/{&lt; /<span style="color:#f92672">gallery</span> &gt;}}(&#34;/&#34;去掉就行)
+</span></span></code></pre></div>
+
+
+<div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
+	  
+
+
+<div class="box" >
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img" style="background-image: url('https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick%20and%20Morty.jpg');">
+      <img itemprop="thumbnail" src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick%20and%20Morty.jpg" alt="Rick and Morty"/>
+    </div>
+    <a href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick%20and%20Morty.jpg" itemprop="contentUrl"></a>
+      <figcaption>
+          <p>Rick and Morty</p>
+      </figcaption>
+  </figure>
+</div>
+
+
+
+<div class="box" >
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img" style="background-image: url('https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Morty.jpg');">
+      <img itemprop="thumbnail" src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Morty.jpg" alt="Rick1"/>
+    </div>
+    <a href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Morty.jpg" itemprop="contentUrl"></a>
+      <figcaption>
+          <p>Rick1</p>
+      </figcaption>
+  </figure>
+</div>
+
+
+
+<div class="box" >
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img" style="background-image: url('https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Morty2.jpg');">
+      <img itemprop="thumbnail" src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Morty2.jpg" alt="Rick2"/>
+    </div>
+    <a href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Morty2.jpg" itemprop="contentUrl"></a>
+      <figcaption>
+          <p>Rick2</p>
+      </figcaption>
+  </figure>
+</div>
+
+
+
+<div class="box" >
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img" style="background-image: url('https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick.jpg');">
+      <img itemprop="thumbnail" src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick.jpg" alt="Morty"/>
+    </div>
+    <a href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick.jpg" itemprop="contentUrl"></a>
+      <figcaption>
+          <p>Morty</p>
+      </figcaption>
+  </figure>
+</div>
+
+
+
+<div class="box" >
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img" style="background-image: url('https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick2.png');">
+      <img itemprop="thumbnail" src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick2.png" alt="Morty2"/>
+    </div>
+    <a href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick2.png" itemprop="contentUrl"></a>
+      <figcaption>
+          <p>Morty2</p>
+      </figcaption>
+  </figure>
+</div>
+
+
+</div>
+
+<h2 id="4图片轮播">4.图片轮播</h2>
+<p>最后，就是插入图片轮播的方式了。这里，最终我还是参考了小球飞鱼的文章<a href="https://mantyke.icu/posts/2021/cf2cf0fb/">《在文章中插入轮播图片》</a>，之前。引入<a href="https://getbootstrap.com/">Bootstrap</a>尝试了一下图片轮播，是可以实现轮播效果，但是问题是引入了Bootstrap的CSS会导致文章页面背景色出现问题。所以还是决定用小球飞鱼写的文章方法，不过我看这个轮播，这种方式是基于<a href="https://3.swiper.com.cn/">swiper</a>的滑动插件引入而成，所以。这个和Bootstrap轮播效果比起来各有千秋，没有谁更好更差的争论。过程我就不描述了，引入后的shortcode是这种表现形式：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>{/{&lt; <span style="color:#f92672">imgloop</span> <span style="color:#960050;background-color:#1e0010">&#34;</span><span style="color:#a6e22e">URL1</span><span style="color:#960050;background-color:#1e0010">,</span><span style="color:#a6e22e">URL2</span><span style="color:#960050;background-color:#1e0010">,</span><span style="color:#a6e22e">URL3</span><span style="color:#960050;background-color:#1e0010">,</span><span style="color:#a6e22e">URL4</span><span style="color:#960050;background-color:#1e0010">,</span><span style="color:#a6e22e">URL5</span><span style="color:#960050;background-color:#1e0010">&#34;</span> &gt;}/}(左右斜杠去掉就行)
+</span></span></code></pre></div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
+    
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            
+            
+            <div class="swiper-slide">
+                <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick%20and%20Morty.jpg" alt="">
+            </div>
+            
+            <div class="swiper-slide">
+                <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Morty.jpg" alt="">
+            </div>
+            
+            <div class="swiper-slide">
+                <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Morty2.jpg" alt="">
+            </div>
+            
+            <div class="swiper-slide">
+                <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick.jpg" alt="">
+            </div>
+            
+            <div class="swiper-slide">
+                <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick2.png" alt="">
+            </div>
+            
+        </div>
+        
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
+     
+     <script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+        
+        autoHeight: true,
+        
+        keyboardControl : true,
+        
+        mousewheelControl : true,
+        
+        
+        
+        lazyLoading : true,
+		lazyLoadingInPrevNext : true,
+		
+		loop : true,
+        });
+        </script>
+
+
+<p>效果可见。😂</p>
+<hr>
+<p>参考网页：1.<a href="https://www.liwen.id.au/heg/#gallery-usage">Hugo Easy Gallery</a>2.<a href="https://mantyke.icu/posts/2021/cf2cf0fb/">在文章中插入轮播图片</a></p>
+
+  </div>
+</div>
+<div class="container has-text-centered">
+    
+    <aside><div id="share"></div></aside>
+    <script type="text/javascript">
+        $("#share").jsSocials({
+            showLabel: false,
+            showCount: false,
+            shares: ["email", "twitter"]
+        });
+    </script>
+    本作品采用<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">知识共享署名-相同方式共享 4.0 国际许可协议</a>进行许可。</script>
+    
+</div>
+
+<div id="waline"></div>
+<head>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/waline/2.14.1/waline.js"></script>
+  <link
+    rel="stylesheet"
+    href="//cdnjs.cloudflare.com/ajax/libs/waline/2.14.1/waline.css"
+  />
+  
+</head>
+<body>
+  
+  <div id="waline"></div>
+  <script>
+
+ Waline.init({
+    el: '#waline',
+    pageview: 'true',
+    serverURL: 'https://zaqizaba.xyz',
+    locale: '你认为这篇文章怎么样',
+    reactionTitle:['reaction0: 太厉害了','reaction1: 不懂但是感觉很厉害','reaction2: 震惊','reaction3: 无语','reaction4: 尴尬到爆'],
+    reaction:['https://cdn.jsdelivr.net/gh/flight025/catpoo@catpoo/%E5%A4%AA%E5%8E%89%E5%AE%B3%E4%BA%86.gif',
+      'https://cdn.jsdelivr.net/gh/flight025/catpoo@catpoo/%E4%B8%8D%E6%87%82.gif',
+      'https://cdn.jsdelivr.net/gh/flight025/catpoo@catpoo/%E9%9C%87%E6%83%8A.gif',
+      'https://cdn.jsdelivr.net/gh/flight025/catpoo@catpoo/%E6%97%A0%E8%AF%AD.gif',
+      'https://cdn.jsdelivr.net/gh/flight025/catpoo@catpoo/%E5%B0%B4%E5%B0%AC%E5%88%B0%E7%88%86.gif',
+      ],
+     emoji: 
+    [
+    'https://gcore.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/',
+    'https://gcore.jsdelivr.net/gh/sowhereso/waline-blobcatemojis@1.2/blobs/', 
+  ],
+  });
+</script>
+</body>
+<section class="section">
+  <div class="container has-text-centered">
+    <p>&copy; <a href="https://www.zaqizaba.xyz">阿波尔的博客</a> 2019-2022</p>
+  </div>
+</section>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-168102390-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+
+
+<script type="text/javascript" src="/js/carousel.js"></script>
+<link rel="stylesheet" href="/css/carousel.css">
+</body>
+</html>
