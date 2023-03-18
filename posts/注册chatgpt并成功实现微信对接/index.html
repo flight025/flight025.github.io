@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="EN">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+<title>注册chatgpt并成功实现微信对接 | 阿波尔的博客</title>
+
+<link rel="stylesheet" href="https://www.zaqizaba.xyz/css/styles.css">
+
+<link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.1.1/css/all.css" integrity="sha512-1hsteeq9xTM5CX6NsXiJu3Y/g+tj+IIwtZMtTisemEv3hx+S9ngaW4nryrNcPM4xGzINcKbwUJtojslX2KG+DQ==" crossorigin="anonymous">
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/zenburn.min.css" crossorigin="anonymous" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script src="https://www.zaqizaba.xyz/js/highlight.js"></script>
+
+
+<html>
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+</html>
+
+<link href="https://cdn.bootcss.com/highlight.js/9.12.0/styles/monokai.min.css" rel="stylesheet">
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/languages/tex.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+<link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials.css" />
+<link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials-theme-minima.css" />
+<script type="text/javascript" src="https://www.zaqizaba.xyz/js/jssocials.js"></script>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="https://cdn.bootcdn.net/ajax/libs/abcjs/6.1.7/abcjs-basic-min.js"></script>
+
+
+<div class="container">
+    <nav class="navbar level">
+      <div class="navbar-brand">
+          <a class="nav-item" href="https://www.zaqizaba.xyz"><h1 class="title is-3">阿波尔的博客</h1></a>
+      </div>           
+      <div class="navbar-menu has-text-centered is-active">
+          <div class="navbar-end is-centered">
+              
+                <a href="https://www.zaqizaba.xyz/about" rel="me">
+                  <span class="icon">
+                    <i class="fas fa-info"></i>
+                  </span>
+                </a>
+              
+                <a href="https://www.zaqizaba.xyz/archives" rel="me">
+                  <span class="icon">
+                    <i class="fas fa-archive"></i>
+                  </span>
+                </a>
+              
+                <a href="https://www.zaqizaba.xyz/comments" rel="me">
+                  <span class="icon">
+                    <i class="fas fa-comment"></i>
+                  </span>
+                </a>
+              
+                <a href="https://github.com/flight025" rel="me">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                </a>
+              
+                <a href="https://www.zhihu.com/people/a-gan-jing-shen" rel="me">
+                  <span class="icon">
+                    <i class="fab fa-zhihu"></i>
+                  </span>
+                </a>
+              
+                <a href="https://twitter.com/666GXF" rel="me">
+                  <span class="icon">
+                    <i class="fab fa-twitter"></i>
+                  </span>
+                </a>
+              
+                <a href="https://www.zaqizaba.xyz/index.xml" rel="me">
+                  <span class="icon">
+                    <i class="fa fa-rss"></i>
+                  </span>
+                </a>
+              
+           </div>
+      </div>
+    </nav>
+  </div>
+
+<div class="container">
+  <h2 class="subtitle is-6">March 17, 2023</h2>
+  <h1 class="subtitle is-size-4-mobile is-size-3-desktop">注册chatgpt并成功实现微信对接</h1>
+  <div class="content">
+    <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Portada-1080x675.jpg" style="zoom: 75%;" />
+<p><a href="https://openai.com/blog/chatgpt">ChatGPT</a>自从去年就悄然火起来了，一开始传闻说是有什么问题，基本上都能智能回答你的问题。包括小到做菜的步骤以及炒股预测，大到帮你写作和给出网站代码等。甚至传闻可能会替代大部分的职业。我想不会又是啥炒作吧，后来我尝试用了chatgpt一段时间，的确回答都很准确,但是我认为不至于到替代职业的地步。前不久又发表了训练模型GPT-4，听说更厉害，更智能化，功能更多（包括从照片中提供食物和成分，了解图片的笑点等）。不过GPT-4是收费的。费用还是挺贵的，每月$20,可以说是有点小贵了，而且必须是美国信用卡才能支付使用。所以，还是尝试下免费的GPT-3.5,这里写个教程吧（文章默认全程科学上网的情况下）。</p>
+<h1 id="1注册chatgpt并尝试使用它">1.注册chatgpt并尝试使用它</h1>
+<h2 id="11注册chatgpt">1.1注册chatgpt</h2>
+<p>注册chatgpt,这里的<a href="https://openai.com/blog/chatgpt">chatgpt</a>先打开它。</p>
+<h2 id="12输入电子邮箱和密码">1.2输入电子邮箱和密码</h2>
+<p>
+<div class="post-img-view">
+<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/openai-create-new-account-page-with-the-email-and-password-field-highlighted.webp">
+<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/openai-create-new-account-page-with-the-email-and-password-field-highlighted.webp" alt=""  />
+</a>
+</div>
+
+</p>
+<h2 id="13确定电子邮箱并接收数字代码">1.3确定电子邮箱并接收数字代码</h2>
+<p>之后，会给邮箱发送一个注册信息。</p>
+<p>
+<div class="post-img-view">
+<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/ezgif-4-17ad63eb01.jpg">
+<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/ezgif-4-17ad63eb01.jpg" alt=""  />
+</a>
+</div>
+
+</p>
+<p>这个时候，需要打开邮箱链接来验证你的号码。由于国内号码不能接收短信代码。所以，你需要照一个能够接收代码的国外手机号，这里。可以看看<a href="https://5sim.net/zh">5sim</a>这个短信接收平台，服务选openai,国家号码选择印度，运营商随意。接收到号码验证成功，就能用了。</p>
+<h2 id="14问gpt-35一些问题例">1.4问gpt-3.5一些问题（例）</h2>
+<blockquote>
+<details>
+    <summary>问：人类由多少条骨头构成?</summary>chatgpt答：人类骨骼系统由大约206个骨头构成。这些骨头包括颅骨、面骨、颈椎、胸椎、腰椎、骶骨、尾骨、肋骨、肩胛骨、锁骨、上臂骨、尺骨、桡骨、掌骨、指骨、髋骨、股骨、胫骨、腓骨、跗骨、跖骨、趾骨等。这些骨头组成了人体的支架，支撑和保护内部器官，同时也为肌肉、韧带和其他软组织提供了支撑和固定点。</details>
+</blockquote>
+<blockquote>
+<details>
+<summary>问：免疫器官，免疫细胞和免疫因子分别是指什么？</summary> chatgpt答：免疫器官是指能够产生、贮存和激活免疫细胞的组织或器官，如脾脏、淋巴结、骨髓等。免疫细胞是指身体内能够识别和攻击病原体的特殊细胞，包括T细胞、B细胞、自然杀伤细胞、巨噬细胞等。免疫因子是一类分子，能够调节和影响免疫细胞的活动，包括细胞因子、趋化因子、抗体等。它们在免疫反应中发挥着重要的作用，可以增强免疫细胞的杀伤能力、诱导炎症反应、协调免疫细胞之间的相互作用等。
+</blockquote>
+</details>
+<blockquote>
+<details>
+<summary> 问：免疫球蛋白结构是怎么样的？试用代码表示</summary>
+chatgpt答：免疫球蛋白（Immunoglobulin，简称Ig）是一种由免疫系统分泌的蛋白质，具有重要的抗体作用。Ig的基本结构是由两个重链（heavy chain）和两个轻链（light chain）组成的四聚体。每个重链和轻链都包含了一个可变区域（variable region）和一个恒定区域（constant region），可变区域负责与抗原结合，而恒定区域则与其他细胞或分子进行相互作用。以下是一段简单的Python代码，用于表示Ig的基本结构：
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Immunoglobulin</span>:
+</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">def</span> __init__(self, heavy_chain, light_chain):
+</span></span><span style="display:flex;"><span>  self<span style="color:#f92672">.</span>heavy_chain <span style="color:#f92672">=</span> heavy_chain
+</span></span><span style="display:flex;"><span>  self<span style="color:#f92672">.</span>light_chain <span style="color:#f92672">=</span> light_chain
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">HeavyChain</span>:
+</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">def</span> __init__(self, variable_region, constant_region):
+</span></span><span style="display:flex;"><span>  self<span style="color:#f92672">.</span>variable_region <span style="color:#f92672">=</span> variable_region
+</span></span><span style="display:flex;"><span>  self<span style="color:#f92672">.</span>constant_region <span style="color:#f92672">=</span> constant_region
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">LightChain</span>:
+</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">def</span> __init__(self, variable_region, constant_region):
+</span></span><span style="display:flex;"><span>  self<span style="color:#f92672">.</span>variable_region <span style="color:#f92672">=</span> variable_region
+</span></span><span style="display:flex;"><span>  self<span style="color:#f92672">.</span>constant_region <span style="color:#f92672">=</span> constant_region
+</span></span></code></pre></div><p>以上代码定义了三个类，分别是Immunoglobulin、HeavyChain和LightChain。其中Immunoglobulin类包含了两个属性，分别是重链和轻链，而重链和轻链各自包含了可变区域和恒定区域。这些类可以用来构建Ig分子的基本结构。当然，这只是一个简单的示例，真实的Ig结构更加复杂，需要更多的属性和方法来描述。</p>
+</blockquote>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
+    
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            
+            
+            <div class="swiper-slide">
+                <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/GPT1.PNG" alt="">
+            </div>
+            
+            <div class="swiper-slide">
+                <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/GPT2.PNG" alt="">
+            </div>
+            
+            <div class="swiper-slide">
+                <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/GPT3.PNG" alt="">
+            </div>
+            
+        </div>
+        
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
+     
+     <script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+        
+        autoHeight: true,
+        
+        keyboardControl : true,
+        
+        mousewheelControl : true,
+        
+        
+        
+        lazyLoading : true,
+		lazyLoadingInPrevNext : true,
+		
+		loop : true,
+        });
+        </script>
+
+
+<h1 id="2对接微信">2.对接微信</h1>
+<p>如果你想把tgp-3.5代入微信，你需要：</p>
+<blockquote>
+<p>一台云主机，一个操作终端（如putty，xshell等），懂得简单的Linux操作命令等。具体参考<a href="https://github.com/zhayujie/chatgpt-on-wechat">chatgpt-on-wechat</a>这个项目，网上有详细的操作方式。</p>
+</blockquote>
+<p>选择一个你喜欢的方式，按照网页的具体操作在终端上用Linux命令操作就行了，最终你会得到一个gpt机器人二维码，这时你扫码手机就会得到一个gpt机器人，最好是微信小号，因为微信可能会提示有风险。</p>
+<hr>
+<p>
+<div class="post-img-view">
+<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/joonyeop-baek-1kf69eE7VR4-unsplash.jpg">
+<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/joonyeop-baek-1kf69eE7VR4-unsplash.jpg" alt=""  />
+</a>
+</div>
+
+</p>
+
+  </div>
+</div>
+<div class="container has-text-centered">
+    
+    <aside><div id="share"></div></aside>
+    <script type="text/javascript">
+        $("#share").jsSocials({
+            showLabel: false,
+            showCount: false,
+            shares: ["email", "twitter"]
+        });
+    </script>
+    本作品采用<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">知识共享署名-相同方式共享 4.0 国际许可协议</a>进行许可。</script>
+    
+</div>
+
+<div id="waline"></div>
+<head>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/waline/2.14.1/waline.js"></script>
+  <link
+    rel="stylesheet"
+    href="//cdnjs.cloudflare.com/ajax/libs/waline/2.14.1/waline.css"
+  />
+  
+</head>
+<body>
+  
+  <div id="waline"></div>
+  <script>
+
+ Waline.init({
+    el: '#waline',
+    pageview: 'true',
+    serverURL: 'https://zaqizaba.xyz',
+     emoji: 
+    [
+    'https://gcore.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/',
+    'https://gcore.jsdelivr.net/gh/sowhereso/waline-blobcatemojis@1.2/blobs/', 
+  ],
+  });
+</script>
+</body>
+<section class="section">
+  <div class="container has-text-centered">
+    <p>&copy; <a href="https://www.zaqizaba.xyz">阿波尔的博客</a>2019-2023</p>
+  </div>
+</section>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-168102390-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
