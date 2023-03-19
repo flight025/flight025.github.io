@@ -10,6 +10,10 @@
 
 <link rel="stylesheet" href="https://www.zaqizaba.xyz/css/styles.css">
 
+    <script async src="https://cdn.staticfile.org/mermaid/8.8.2/mermaid.min.js"></script>
+</head>
+<body>
+
 <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.1.1/css/all.css" integrity="sha512-1hsteeq9xTM5CX6NsXiJu3Y/g+tj+IIwtZMtTisemEv3hx+S9ngaW4nryrNcPM4xGzINcKbwUJtojslX2KG+DQ==" crossorigin="anonymous">
 <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
 
@@ -56,6 +60,23 @@ MathJax = {
 
 
 
+
+
+
+<script>
+    
+    Array.from(document.getElementsByClassName('language-mermaid')).forEach(el => {
+        el.parentElement.outerHTML = `<div class="mermaid">${el.innerText}</div>`
+    })
+</script>
+<style>
+ 
+.mermaid svg {
+    display: block;
+    margin: auto;
+}
+</style>
+</body>
 
 
 <div class="container">

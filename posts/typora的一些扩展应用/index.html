@@ -10,6 +10,10 @@
 
 <link rel="stylesheet" href="https://www.zaqizaba.xyz/css/styles.css">
 
+    <script async src="https://cdn.staticfile.org/mermaid/8.8.2/mermaid.min.js"></script>
+</head>
+<body>
+
 <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.1.1/css/all.css" integrity="sha512-1hsteeq9xTM5CX6NsXiJu3Y/g+tj+IIwtZMtTisemEv3hx+S9ngaW4nryrNcPM4xGzINcKbwUJtojslX2KG+DQ==" crossorigin="anonymous">
 <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
 
@@ -59,6 +63,23 @@ MathJax = {
 
 <script src="https://cdn.bootcdn.net/ajax/libs/echarts/5.4.1/echarts.common.js"></script>
 
+
+
+
+<script>
+    
+    Array.from(document.getElementsByClassName('language-mermaid')).forEach(el => {
+        el.parentElement.outerHTML = `<div class="mermaid">${el.innerText}</div>`
+    })
+</script>
+<style>
+ 
+.mermaid svg {
+    display: block;
+    margin: auto;
+}
+</style>
+</body>
 
 
 <div class="container">
@@ -188,19 +209,20 @@ fmt.Println(<font color=yellow>==&ldquo;Hello, world&rdquo;==</font>)
     activate John
     John--&gt;&gt;Alice: Great!
     deactivate John
-</code></pre><pre tabindex="0"><code class="language-mermaid" data-lang="mermaid">
-sequenceDiagram
-    Alice-&gt;&gt;John: Hello John, how are you?
+</code></pre><div class="mermaid">sequenceDiagram
+    Alice->>John: Hello John, how are you?
     activate John
-    John--&gt;&gt;Alice: Great!
+    John-->>Alice: Great!
     deactivate John
-</code></pre><h5 id="4-2流程图">4-2.流程图</h5>
+</div>
+<h5 id="4-2流程图">4-2.流程图</h5>
 <pre tabindex="0"><code>flowchart TB
     A &amp; B--&gt; C &amp; D
-</code></pre><pre tabindex="0"><code class="language-mermaid" data-lang="mermaid">
+</code></pre><div class="mermaid">
 flowchart TB
-    A &amp; B--&gt; C &amp; D
-</code></pre><h5 id="4-3类图">4-3.类图</h5>
+    A & B--> C & D
+</div>
+<h5 id="4-3类图">4-3.类图</h5>
 <pre tabindex="0"><code>classDiagram
 classA &lt;|-- classB
 classC *-- classD
@@ -210,16 +232,17 @@ classI -- classJ
 classK &lt;.. classL
 classM &lt;|.. classN
 classO .. classP
-</code></pre><pre tabindex="0"><code class="language-mermaid" data-lang="mermaid">classDiagram
-classA &lt;|-- classB
+</code></pre><div class="mermaid">classDiagram
+classA <|-- classB
 classC *-- classD
 classE o-- classF
-classG &lt;-- classH
+classG <-- classH
 classI -- classJ
-classK &lt;.. classL
-classM &lt;|.. classN
+classK <.. classL
+classM <|.. classN
 classO .. classP
-</code></pre><h5 id="4-4gantt图">4-4.Gantt图</h5>
+</div>
+<h5 id="4-4gantt图">4-4.Gantt图</h5>
 <pre tabindex="0"><code>gantt
     title A Gantt Diagram
     dateFormat  YYYY-MM-DD
@@ -229,7 +252,7 @@ classO .. classP
     section Another
     Task in sec      :2021-11-26  , 12d
     another task      : 24d
-</code></pre><pre tabindex="0"><code class="language-mermaid" data-lang="mermaid">gantt
+</code></pre><div class="mermaid">gantt
 title A Gantt Diagram
     dateFormat  YYYY-MM-DD
     section Section
@@ -238,16 +261,18 @@ title A Gantt Diagram
     section Another
     Task in sec      :2021-11-26  , 12d
     another task      : 24d 
-</code></pre><h5 id="4-5饼状图">4-5.饼状图</h5>
+</div>
+<h5 id="4-5饼状图">4-5.饼状图</h5>
 <pre tabindex="0"><code>pie title Pets adopted by volunteers
     &#34;dog&#34; : 386
     &#34;cat&#34; : 85
     &#34;rat&#34; : 15
-</code></pre><pre tabindex="0"><code class="language-mermaid" data-lang="mermaid">pie title Pets adopted by volunteers
-    &#34;dog&#34; : 386
-    &#34;cat&#34; : 85
-    &#34;rat&#34; : 15
-</code></pre><h4 id="5表格">5.表格</h4>
+</code></pre><div class="mermaid">pie title Pets adopted by volunteers
+    "dog" : 386
+    "cat" : 85
+    "rat" : 15
+</div>
+<h4 id="5表格">5.表格</h4>
 <p>例如血型遗传表：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ABAP" data-lang="ABAP"><span style="display:flex;"><span>            <span style="color:#960050;background-color:#1e0010">血型遗传表</span>
 </span></span><span style="display:flex;"><span>
