@@ -55,7 +55,11 @@ MathJax = {
 
 
 
-<script src="https://cdn.bootcdn.net/ajax/libs/abcjs/6.1.7/abcjs-basic-min.js"></script>
+
+
+<script src="https://cdn.bootcdn.net/ajax/libs/echarts/5.4.1/echarts.common.js"></script>
+
+
 
 
 <div class="container">
@@ -244,7 +248,7 @@ title A Gantt Diagram
     &#34;rat&#34; : 15
 </code></pre><h4 id="5表格">5.表格</h4>
 <p>例如血型遗传表：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ABAP" data-lang="ABAP"><span style="display:flex;"><span>            <span style="color:#f92672">**</span><span style="color:#960050;background-color:#1e0010">血型遗传表</span><span style="color:#f92672">**</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ABAP" data-lang="ABAP"><span style="display:flex;"><span>            <span style="color:#960050;background-color:#1e0010">血型遗传表</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>  |<span style="color:#e6db74"> 父母血型 </span>| <span style="color:#960050;background-color:#1e0010">子女血型</span> |<span style="color:#e6db74"> 不可能出现的血型 </span>|
 </span></span><span style="display:flex;"><span>|<span style="color:#e6db74"> :------: </span>| :<span style="color:#f92672">------</span>: |<span style="color:#e6db74"> :--------------: </span>|
@@ -258,71 +262,155 @@ title A Gantt Diagram
 </span></span><span style="display:flex;"><span>|<span style="color:#e6db74">   B +B   </span>|   B,O    |<span style="color:#e6db74">       A,AB       </span>|
 </span></span><span style="display:flex;"><span>|<span style="color:#e6db74">   B+AB   </span>|  A,B,AB  |<span style="color:#e6db74">        O         </span>|
 </span></span><span style="display:flex;"><span>|<span style="color:#e6db74">  AB+AB   </span>|  A,B,AB  |<span style="color:#e6db74">        O         </span>|
-</span></span></code></pre></div><p>​                                                         <center><strong>血型遗传表</strong><center/></p>
+</span></span></code></pre></div><p>​                                                                         <center>  <strong>血型遗传表</strong></center></p>
 <table>
 <thead>
 <tr>
-<th style="text-align:center">父母血型</th>
+<th style="text-align:left">父母血型</th>
 <th style="text-align:center">子女血型</th>
 <th style="text-align:center">不可能出现的血型</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center">O+O</td>
+<td style="text-align:left">O+O</td>
 <td style="text-align:center">O</td>
 <td style="text-align:center">A,B,AB</td>
 </tr>
 <tr>
-<td style="text-align:center">O+A</td>
+<td style="text-align:left">O+A</td>
 <td style="text-align:center">A,O</td>
 <td style="text-align:center">B,AB</td>
 </tr>
 <tr>
-<td style="text-align:center">O+B</td>
+<td style="text-align:left">O+B</td>
 <td style="text-align:center">B,O</td>
 <td style="text-align:center">A,AB</td>
 </tr>
 <tr>
-<td style="text-align:center">O+AB</td>
+<td style="text-align:left">O+AB</td>
 <td style="text-align:center">A,B</td>
 <td style="text-align:center">O,AB</td>
 </tr>
 <tr>
-<td style="text-align:center">A+A</td>
+<td style="text-align:left">A+A</td>
 <td style="text-align:center">A,O</td>
 <td style="text-align:center">AB,B</td>
 </tr>
 <tr>
-<td style="text-align:center">A+B</td>
+<td style="text-align:left">A+B</td>
 <td style="text-align:center">A,B,AB,O</td>
 <td style="text-align:center">/</td>
 </tr>
 <tr>
-<td style="text-align:center">A+AB</td>
+<td style="text-align:left">A+AB</td>
 <td style="text-align:center">A,B,AB</td>
 <td style="text-align:center">O</td>
 </tr>
 <tr>
-<td style="text-align:center">B +B</td>
+<td style="text-align:left">B +B</td>
 <td style="text-align:center">B,O</td>
 <td style="text-align:center">A,AB</td>
 </tr>
 <tr>
-<td style="text-align:center">B+AB</td>
+<td style="text-align:left">B+AB</td>
 <td style="text-align:center">A,B,AB</td>
 <td style="text-align:center">O</td>
 </tr>
 <tr>
-<td style="text-align:center">AB+AB</td>
+<td style="text-align:left">AB+AB</td>
 <td style="text-align:center">A,B,AB</td>
 <td style="text-align:center">O</td>
 </tr>
 </tbody>
 </table>
+<h4 id="6引入echarts图表库">6.引入echarts图表库</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">html</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">charset</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;utf-8&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">title</span>&gt;ECharts&lt;/<span style="color:#f92672">title</span>&gt;
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">&lt;!-- 引入刚刚下载的 ECharts 文件 --&gt;</span>
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;echarts.js&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;/<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">&lt;!-- 为 ECharts 准备一个定义了宽高的 DOM --&gt;</span>
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;main&#34;</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;width: 600px;height:400px;&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text/javascript&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e">// 基于准备好的dom，初始化echarts实例
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">myChart</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">echarts</span>.<span style="color:#a6e22e">init</span>(document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#39;main&#39;</span>));
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e">// 指定图表的配置项和数据
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span> <span style="color:#a6e22e">option</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">legend</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Try &#39;horizontal&#39;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#a6e22e">orient</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;vertical&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">right</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">10</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">top</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;center&#39;</span>
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">dataset</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">source</span><span style="color:#f92672">:</span> [
+</span></span><span style="display:flex;"><span>      [<span style="color:#e6db74">&#39;product&#39;</span>, <span style="color:#e6db74">&#39;2015&#39;</span>, <span style="color:#e6db74">&#39;2016&#39;</span>, <span style="color:#e6db74">&#39;2017&#39;</span>],
+</span></span><span style="display:flex;"><span>      [<span style="color:#e6db74">&#39;Matcha Latte&#39;</span>, <span style="color:#ae81ff">43.3</span>, <span style="color:#ae81ff">85.8</span>, <span style="color:#ae81ff">93.7</span>],
+</span></span><span style="display:flex;"><span>      [<span style="color:#e6db74">&#39;Milk Tea&#39;</span>, <span style="color:#ae81ff">83.1</span>, <span style="color:#ae81ff">73.4</span>, <span style="color:#ae81ff">55.1</span>],
+</span></span><span style="display:flex;"><span>      [<span style="color:#e6db74">&#39;Cheese Cocoa&#39;</span>, <span style="color:#ae81ff">86.4</span>, <span style="color:#ae81ff">65.2</span>, <span style="color:#ae81ff">82.5</span>],
+</span></span><span style="display:flex;"><span>      [<span style="color:#e6db74">&#39;Walnut Brownie&#39;</span>, <span style="color:#ae81ff">72.4</span>, <span style="color:#ae81ff">53.9</span>, <span style="color:#ae81ff">39.1</span>]
+</span></span><span style="display:flex;"><span>    ]
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">xAxis</span><span style="color:#f92672">:</span> { <span style="color:#a6e22e">type</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;category&#39;</span> },
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">yAxis</span><span style="color:#f92672">:</span> {},
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">series</span><span style="color:#f92672">:</span> [{ <span style="color:#a6e22e">type</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;bar&#39;</span> }, { <span style="color:#a6e22e">type</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;bar&#39;</span> }, { <span style="color:#a6e22e">type</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;bar&#39;</span> }]
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e">// 使用刚指定的配置项和数据显示图表。
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      <span style="color:#a6e22e">myChart</span>.<span style="color:#a6e22e">setOption</span>(<span style="color:#a6e22e">option</span>);
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">script</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;/<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">html</span>&gt;
+</span></span><span style="display:flex;"><span>      
+</span></span></code></pre></div><!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>ECharts</title>
+    <!-- 引入刚刚下载的 ECharts 文件 -->
+    <script src="echarts.js"></script>
+  </head>
+  <body>
+    <!-- 为 ECharts 准备一个定义了宽高的 DOM -->
+    <div id="main" style="width: 600px;height:400px;"></div>
+    <script type="text/javascript">
+      // 基于准备好的dom，初始化echarts实例
+      var myChart = echarts.init(document.getElementById('main'));
+          // 指定图表的配置项和数据
+      option = {
+  legend: {
+    // Try 'horizontal'
+    orient: 'vertical',
+    right: 10,
+    top: 'center'
+  },
+  dataset: {
+    source: [
+      ['product', '2015', '2016', '2017'],
+      ['Matcha Latte', 43.3, 85.8, 93.7],
+      ['Milk Tea', 83.1, 73.4, 55.1],
+      ['Cheese Cocoa', 86.4, 65.2, 82.5],
+      ['Walnut Brownie', 72.4, 53.9, 39.1]
+    ]
+  },
+  xAxis: { type: 'category' },
+  yAxis: {},
+  series: [{ type: 'bar' }, { type: 'bar' }, { type: 'bar' }]
+};
+          // 使用刚指定的配置项和数据显示图表。
+  myChart.setOption(option);
+     </script>
+   </body>
+</html>
 <p>作为初学者，今天已经码字码了这么多，其实Typora上的MD公式表格排版功能很有限，更多要去相关的网站找到代码在主题中配置才能实现（原博客主题不带这些功能，而我也懒得折腾其它带有这些功能的主题）。如果对数理公式.图表排版一类感兴趣的话。下面二个网站基本上能很好的帮你。只要按照网页上的做，基本上你也能和我一样做出漂亮的公式和图表，网站我会放在参考下面。</p>
 <hr>
-<p>参考：1.<a href="https://www.mathjax.org/">mathjax</a>2.<a href="https://mermaid-js.github.io/mermaid/#/">mermaid</a></p>
+<p>参考：1.<a href="https://www.mathjax.org/">mathjax</a>2.<a href="https://mermaid-js.github.io/mermaid/#/">mermaid</a>3.<a href="https://echarts.apache.org/zh/index.html">echarts</a></p>
 <p>
 <div class="post-img-view">
 <a data-fancybox="gallery" href="https://www.langan.com/wp-content/uploads/2020/07/dallas-996x554-1.png">
