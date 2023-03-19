@@ -60,10 +60,6 @@ MathJax = {
 <script src="https://cdn.bootcdn.net/ajax/libs/echarts/5.4.1/echarts.common.js"></script>
 
 
-<script type="module">
-import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10.0.2/+esm'
-</script>
-
 
 <div class="container">
     <nav class="navbar level">
@@ -192,7 +188,8 @@ fmt.Println(<font color=yellow>==&ldquo;Hello, world&rdquo;==</font>)
     activate John
     John--&gt;&gt;Alice: Great!
     deactivate John
-</code></pre><pre tabindex="0"><code class="language-mermaid" data-lang="mermaid">sequenceDiagram
+</code></pre><pre tabindex="0"><code class="language-mermaid" data-lang="mermaid">
+sequenceDiagram
     Alice-&gt;&gt;John: Hello John, how are you?
     activate John
     John--&gt;&gt;Alice: Great!
@@ -200,7 +197,8 @@ fmt.Println(<font color=yellow>==&ldquo;Hello, world&rdquo;==</font>)
 </code></pre><h5 id="4-2流程图">4-2.流程图</h5>
 <pre tabindex="0"><code>flowchart TB
     A &amp; B--&gt; C &amp; D
-</code></pre><pre tabindex="0"><code class="language-mermaid" data-lang="mermaid">flowchart TB
+</code></pre><pre tabindex="0"><code class="language-mermaid" data-lang="mermaid">
+flowchart TB
     A &amp; B--&gt; C &amp; D
 </code></pre><h5 id="4-3类图">4-3.类图</h5>
 <pre tabindex="0"><code>classDiagram
@@ -239,7 +237,7 @@ title A Gantt Diagram
     Another task     :after a1  , 20d
     section Another
     Task in sec      :2021-11-26  , 12d
-    another task      : 24d
+    another task      : 24d 
 </code></pre><h5 id="4-5饼状图">4-5.饼状图</h5>
 <pre tabindex="0"><code>pie title Pets adopted by volunteers
     &#34;dog&#34; : 386
@@ -484,3 +482,26 @@ if (!doNotTrack) {
 </script>
 <script async src='https://www.google-analytics.com/analytics.js'></script>
 
+
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/mermaid@8.8.2/dist/mermaid.min.js"
+  integrity="sha256-KqisLh8jVMBRjpNkOhH5W9VWs+F6x6vQksLqxs7+x9A="
+  crossorigin="anonymous"
+></script>
+<script>
+  
+  Array.from(document.getElementsByClassName("language-mermaid")).forEach(
+    (el) => {
+      el.parentElement.outerHTML = `<div class="mermaid">${el.innerText}</div>`;
+    }
+  );
+</script>
+<style>
+   
+  .mermaid svg {
+    display: block;
+    margin: auto;
+  }
+</style>
