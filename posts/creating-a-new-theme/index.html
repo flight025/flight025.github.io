@@ -949,7 +949,8 @@ $ vi themes/zafta/layouts/_default/single.html
     
     <aside><div id="share"></div></aside>
     <script type="text/javascript">
-        jQuery("#share").jsSocials({
+        jQuery.jsSocials("#share")
+        ({
             showLabel: false,
             showCount: false,
             shares: ["email", "twitter"]
