@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>EN</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://www.zaqizaba.xyz&#34;&gt;阿波尔的博客&lt;/a&gt;2019-2023</copyright>
-    <lastBuildDate>Fri, 17 Mar 2023 22:25:46 +0800</lastBuildDate><atom:link href="https://www.zaqizaba.xyz/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 18 Apr 2023 11:49:20 +0800</lastBuildDate><atom:link href="https://www.zaqizaba.xyz/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Creating a New Theme</title>
       <link>https://www.zaqizaba.xyz/posts/creating-a-new-theme/</link>
@@ -27,6 +27,18 @@ We&amp;rsquo;ll start with creating a new site with a very basic template.</desc
       <description>Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
 ▾ &amp;lt;root&amp;gt;/ ▾ images/ logo.png should become
 ▾ &amp;lt;root&amp;gt;/ ▾ static/ ▾ images/ logo.png Additionally, you&amp;rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.</description>
+    </item>
+    
+    <item>
+      <title>clan old photos</title>
+      <link>https://www.zaqizaba.xyz/posts/clan-old-photos/</link>
+      <pubDate>Tue, 18 Apr 2023 11:49:20 +0800</pubDate>
+      
+      <guid>https://www.zaqizaba.xyz/posts/clan-old-photos/</guid>
+      <description>Before I do that, let me introduce: the photos are from the 1940s, but also from the 70s and 80s. . . Photos of my dad, siblings and his elders.
+**==Did you know? A photo means the past of the elders, and a microcosm of that era.==**🤔
+No one can stay young forever, but photos can stay. 😢
+**Hope not to forget,hope always remember .**😆</description>
     </item>
     
     <item>
