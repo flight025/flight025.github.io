@@ -8,6 +8,7 @@ code {
   font-family: Consolas, Courier, "Courier New", 'STKaiti', 'KaiTi', 'SimKai', monospace;
 }
 pre, code {
+  font-family: KaiTi;
   font-size: .95em;
-  font-color: grey;
+  font-style: grey;
 }
