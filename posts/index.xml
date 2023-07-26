@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://www.zaqizaba.xyz&#34;&gt;阿波尔的博客&lt;/a&gt;2019-2023</copyright>
-    <lastBuildDate>Tue, 18 Apr 2023 11:49:20 +0800</lastBuildDate><atom:link href="https://www.zaqizaba.xyz/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 26 Jul 2023 08:21:27 +0800</lastBuildDate><atom:link href="https://www.zaqizaba.xyz/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Creating a New Theme</title>
       <link>https://www.zaqizaba.xyz/posts/creating-a-new-theme/</link>
@@ -27,6 +27,18 @@ We&amp;rsquo;ll start with creating a new site with a very basic template.</desc
       <description>Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
 ▾ &amp;lt;root&amp;gt;/ ▾ images/ logo.png should become
 ▾ &amp;lt;root&amp;gt;/ ▾ static/ ▾ images/ logo.png Additionally, you&amp;rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.</description>
+    </item>
+    
+    <item>
+      <title>新字体</title>
+      <link>https://www.zaqizaba.xyz/posts/%E6%96%B0%E5%AD%97%E4%BD%93/</link>
+      <pubDate>Wed, 26 Jul 2023 08:21:27 +0800</pubDate>
+      
+      <guid>https://www.zaqizaba.xyz/posts/%E6%96%B0%E5%AD%97%E4%BD%93/</guid>
+      <description>最近翻阅网页，偶然翻到了谢益辉大佬的博客，发现他的引用部分字体是楷体。而且著名古籍网站书格的引用部分也是楷体。我认为这比我单纯的引用原网页预设的字体要美观些，后来自己研究了下，改了预设字体并成功了。
+1.找到设置字体文字部分(ﾉ*･ω･)ﾉ 1-1. fonts.css的介绍 我发现这些预设字体通过font.css后端文字渲染，具体是：
+.post blockquote, .newsletter blockquote, .home blockquote { font-family: &amp;#39;Palatino Linotype&amp;#39;, &amp;#39;Book Antiqua&amp;#39;, Palatino, &amp;#39;STKaiti&amp;#39;, &amp;#39;KaiTi&amp;#39;, &amp;#39;楷体&amp;#39;, &amp;#39;SimKai&amp;#39;, &amp;#39;DFKai-SB&amp;#39;, &amp;#39;NSimSun&amp;#39;, serif; } blockquote { font-family: &amp;#39;Palatino Linotype&amp;#39;, &amp;#39;Book Antiqua&amp;#39;, Palatino, &amp;#39;STKaiti&amp;#39;, &amp;#39;KaiTi&amp;#39;, &amp;#39;楷体&amp;#39;, &amp;#39;SimKai&amp;#39;, &amp;#39;DFKai-SB&amp;#39;, &amp;#39;NSimSun&amp;#39;, serif; } code { font-family: Consolas, Courier, &amp;#34;Courier New&amp;#34;, &amp;#39;STKaiti&amp;#39;, &amp;#39;KaiTi&amp;#39;, &amp;#39;SimKai&amp;#39;, monospace; } pre, code { font-size: .95em; } 其中.post blockquote, .newsletter blockquote, .home blockquote分别指页面，通讯页，以及主页网站引用内容。而blockquote指代文字引用内容，code指代代码块引用内容，font-family是字族。blockquote首选外文字体是Palatino Linotype字体，中文则是KaiTi。而code外文首选是Consolas字体，中文字体是KaiTi。size为字体大小。
+1-2.引入代码内容 我是这样做的，先把fonts.css 放到static/css/fonts.</description>
     </item>
     
     <item>
