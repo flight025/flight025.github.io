@@ -152,7 +152,7 @@ MathJax = {
 <p>最近翻阅网页，偶然翻到了<a href="https://yihui.org/"><strong>谢益辉大佬的博客</strong></a>，发现他的引用部分字体是楷体。而且著名古籍网站<a href="https://www.shuge.org/"><strong>书格</strong></a>的引用部分也是楷体。我认为这比我单纯的引用原网页预设的字体要美观些，后来自己研究了下，改了预设字体并成功了。</p>
 <h1 id="1找到设置字体文字部分ﾉωﾉ">1.找到设置字体文字部分(ﾉ*･ω･)ﾉ</h1>
 <h2 id="1-1-fontscss的介绍">1-1. fonts.css的介绍</h2>
-<p>我发现这些预设字体通过<code>font.css</code>后端文字渲染，具体是：</p>
+<p>我发现这些预设字体通过<code>font.css</code>前端代码渲染，具体是：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>.<span style="color:#a6e22e">post</span> <span style="color:#f92672">blockquote</span><span style="color:#f92672">,</span> .<span style="color:#a6e22e">newsletter</span> <span style="color:#f92672">blockquote</span><span style="color:#f92672">,</span> .<span style="color:#a6e22e">home</span> <span style="color:#f92672">blockquote</span> {
 </span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">font-family</span>: <span style="color:#e6db74">&#39;Palatino Linotype&#39;</span>, <span style="color:#e6db74">&#39;Book Antiqua&#39;</span>, Palatino, <span style="color:#e6db74">&#39;STKaiti&#39;</span>, <span style="color:#e6db74">&#39;KaiTi&#39;</span>, <span style="color:#e6db74">&#39;楷体&#39;</span>, <span style="color:#e6db74">&#39;SimKai&#39;</span>, <span style="color:#e6db74">&#39;DFKai-SB&#39;</span>, <span style="color:#e6db74">&#39;NSimSun&#39;</span>, <span style="color:#66d9ef">serif</span>;
 </span></span><span style="display:flex;"><span>}
