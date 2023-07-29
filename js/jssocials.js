@@ -438,4 +438,4 @@
         },
 
 
-}(window, jQuery, window.jsSocials)
+}(window, jQuery, window.jsSocials));
