@@ -144,6 +144,21 @@ MathJax = {
       
       <article class="columns">
         <div class="column is-2">
+          <h6 class="is-inline" style="white-space: nowrap">Oct 4</h2>
+        </div>
+        <div class="column">
+          <h2 class="subtitle is-inline is-size-4-mobile is-size-3-desktop"><a href="https://www.zaqizaba.xyz/posts/%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99%E5%8A%AB%E6%8C%81%E6%81%A2%E5%A4%8D%E6%96%B9%E6%B3%95/">博客网站劫持恢复方法</a></h1>
+          <div class="content is-hidden-mobile">
+            国庆开始，我打开博客网站，突然发现博客网站显示为这样：
+发现博客网站不能访问了。我第一时间想到是不是vercel出问题了，于是ping了下网站，发现无论如何，vercel的公共dns无疑都指向了反诈网站，也就是常说的网站dns劫持污染，很明显。vercel的dns上ip段找到能够用的网站ip很重要，发现ip段（76.76.xx.xx)其中的76.76.xx.xx还能用，于是想到了在域名解析中添加泛解析A记录指向ip76.76.xx.xx。
+之前的vercel提供的自定义域名A 记录和CNAME记录可以删了，再把域名泛解析A记录值添加在解析上就可以了：
+再次访问你的博客，你会发现博客可以访问了。ps：此ip还未被劫持，能够使用多久未知，还是建议网站备案。
+            
+          </div>
+      </article>
+      
+      <article class="columns">
+        <div class="column is-2">
           <h6 class="is-inline" style="white-space: nowrap">Jul 26</h2>
         </div>
         <div class="column">
@@ -300,18 +315,6 @@ No one can stay young forever, but photos can stay.
 1.为什么我会弃用github而选用vercel 这里有二点原因：1.github托管的域名访问速度有点着急，vercel比github以及其它在无备案托管平台上我认为算是最快的。2.可以从github一键导入静态博客文件到vercel且支持个人自定义域名，而且上传博客文章比github要稳，可以隐藏公开仓库。
 2.使用vercel开始进行hugo静态博客部署 2.1从GitHub拉取 这里vercel支持github,gitlab,bitbucket这三个托管平台登录，拉取github登录：
 分别点击New Project》选择github上的静态博客仓库点击Import(导入）》Configure Project的FRAMEWORK PRESET我这里从“other”改为“hugo”, …
-            
-          </div>
-      </article>
-      
-      <article class="columns">
-        <div class="column is-2">
-          <h6 class="is-inline" style="white-space: nowrap">Feb 3</h2>
-        </div>
-        <div class="column">
-          <h2 class="subtitle is-inline is-size-4-mobile is-size-3-desktop"><a href="https://www.zaqizaba.xyz/posts/ipad%E5%9B%BD%E5%8C%BA%E6%8D%A2%E6%88%90%E7%BE%8E%E5%8C%BA/">Ipad国区换成美区</a></h1>
-          <div class="content is-hidden-mobile">
-            自从apple公司创始人steve jobs开创性的把phone和ipod功能结合，极具传奇色彩的iPhone便诞生了。可惜我以前从来没有用过apple的任何产品。不外乎有三点：1.以前apple的产品很贵，所以只能用搭载android system的产品（现在apple的产品价格倒不一定贵了）。2.apple的产品搭载的是ios或ipados,而ios或ipados是闭源系统。所以可玩性几乎为零，而且apple的app应用几乎只能从apple store官方下载，第三方下载app必须要有apple的签名。3.apple产品很容易操作，很适合不爱折腾的用户使用。基于以上三点，我从来没用过apple的产品。但是这次我决定买ipad 9，一是我真的想尝试人们所说apple系统的顺滑；二是ipad9256gwifi版在拼多多上真的很便宜。买了收到，使用一段时间以后，发现国区apple store …
             
           </div>
       </article>
