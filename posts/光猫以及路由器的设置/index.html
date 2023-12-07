@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+<title>光猫以及路由器的设置 | 阿波尔的博客</title>
+
+<link rel="stylesheet" href="https://www.zaqizaba.xyz/css/styles.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" 
+integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="https://www.zaqizaba.xyz/css/fonts.css" integrity="sha384-0GTjeGdUAVOf6Xjc1wREZAgqUsOSQxvJNAp13+N93Z9uxjNAw/h4Mzazu/2hELsj" crossorigin="anonymous"></script>
+
+<script async src="https://cdn.staticfile.org/mermaid/8.8.2/mermaid.min.js"></script>
+</head>
+<body>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/zenburn.min.css" crossorigin="anonymous" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script src="https://www.zaqizaba.xyz/js/highlight.js"></script>
+
+
+<html>
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.bootcdn.net/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js"></script>
+</html>
+
+<link href="https://cdn.bootcss.com/highlight.js/9.12.0/styles/monokai.min.css" rel="stylesheet">
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/languages/tex.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+<link type="text/css" rel="stylesheet" href="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/jsSocials/1.5.0/jssocials.css" />
+<link type="text/css" rel="stylesheet" href="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/jsSocials/1.5.0/jssocials-theme-minima.css" />
+<script type="text/javascript" src="https://www.zaqizaba.xyz/js/jssocials.js"></script>
+
+
+
+<script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/jquery/3.6.0/jquery.min.js"></script>
+<link rel="stylesheet" href="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/fancybox/3.5.7/jquery.fancybox.min.css" />
+<script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+
+
+
+
+
+
+
+<script>
+    
+    Array.from(document.getElementsByClassName('language-mermaid')).forEach(el => {
+        el.parentElement.outerHTML = `<div class="mermaid">${el.innerText}</div>`
+    })
+</script>
+<style>
+ 
+.mermaid svg {
+    display: block;
+    margin: auto;
+}
+</style>
+</body>
+
+
+<div class="container">
+    <nav class="navbar level">
+      <div class="navbar-brand">
+          <a class="nav-item" href="https://www.zaqizaba.xyz"><h1 class="title is-3">阿波尔的博客</h1></a>
+      </div>           
+      <div class="navbar-menu has-text-centered is-active">
+          <div class="navbar-end is-centered">
+              
+                <a href="https://www.zaqizaba.xyz/about" rel="me">
+                  <span class="icon">
+                    <i class="fas fa-info"></i>
+                  </span>
+                </a>
+              
+                <a href="https://www.zaqizaba.xyz/archives" rel="me">
+                  <span class="icon">
+                    <i class="fas fa-archive"></i>
+                  </span>
+                </a>
+              
+                <a href="https://www.zaqizaba.xyz/comments" rel="me">
+                  <span class="icon">
+                    <i class="fas fa-comment"></i>
+                  </span>
+                </a>
+              
+                <a href="https://github.com/flight025" rel="me">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                </a>
+              
+                <a href="https://www.zhihu.com/people/a-gan-jing-shen" rel="me">
+                  <span class="icon">
+                    <i class="fab fa-zhihu"></i>
+                  </span>
+                </a>
+              
+                <a href="https://twitter.com/666GXF" rel="me">
+                  <span class="icon">
+                    <i class="fab fa-twitter"></i>
+                  </span>
+                </a>
+              
+                <a href="https://www.zaqizaba.xyz/index.xml" rel="me">
+                  <span class="icon">
+                    <i class="fa fa-rss"></i>
+                  </span>
+                </a>
+              
+           </div>
+      </div>
+    </nav>
+  </div>
+
+<div class="container">
+  <h2 class="subtitle is-6">December 2, 2023</h2>
+  <h1 class="subtitle is-size-4-mobile is-size-3-desktop">光猫以及路由器的设置</h1>
+  <div class="content">
+    <p>
+<div class="post-img-view">
+<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/uses-of-the-internet.webp">
+<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/uses-of-the-internet.webp" alt=""  />
+</a>
+</div>
+
+</p>
+<p>家庭宽带终于千兆了。说到家庭宽带，能够想到什么？光猫？路由器？以及终端控制智能家电设备。应该怎么设置好这些网络设备呢？</p>
+<p>由此，我决定开启了我的折腾之路。</p>
+<h2 id="1光猫的设置">1.光猫的设置</h2>
+<p>光猫就是我们的光纤入户的第一个设备，一般来讲，光猫设置默认装宽带时是光猫拨号，但是有些时候，光猫性能不是那么好，你想家庭设备公网访问等。就可以考虑路由器拨号了，而路由器拨号需要桥接。具体方式是三大运营商都会有光猫超级密码，想改桥接可以自己谷歌百度看看（如果网上搜不到可以咨询运营商），如我的光猫超级密码如下：<strong>CUAdmin#HGU</strong> ，输入后台网关：**192.168.1.1/cu.html **，就可以看到，联通光猫后台一般是这样：</p>
+<p>
+<div class="post-img-view">
+<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/%25E6%25A1%25A5%25E6%258E%25A5%25E6%25A8%25A1%25E5%25BC%258F.PNG">
+<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/%25E6%25A1%25A5%25E6%258E%25A5%25E6%25A8%25A1%25E5%25BC%258F.PNG" alt=""  />
+</a>
+</div>
+
+</p>
+<p>如果改为桥接，连接模式是<strong>路由模式</strong>改为<strong>桥接模式</strong>，IP协议版本是<strong>ipv4/v6</strong>,由于是路由拨号了，所以可以考虑关闭DHCP了，这个主要是分配内网ip地址的，再绑定相应的LAN口就行（如果想改回光猫拨号，在控制面板》所有控制面板项》网络连接，设置成同网段的ip连接光猫LAN口就行，如“192.168.1.2”）。</p>
+<h2 id="2路由器设置">2.路由器设置</h2>
+<p>光猫设置好了，然后就是路由器了。我的路由器是网件的<strong>R8500</strong>，几年前通过某鱼买的。不过当初是看到的博通处理器，这种型号买的时候卖家刷了koolshare梅改的固件，而且版本是最后一次更新，版本是<a href="https://fw.koolcenter.com/well-known-authors/KoolCenter_Merlin_Legacy_380/Netgear/R8500/X7.9.1/">7.9.1</a>。最后看到恩山的P大<a href="https://blog.paldier.com/">swrt</a>版梅改，我又尝试了下刷成swrt版，这个与华硕固件比，二者只不过是多了一个软件中心。（当然，就是因为软件中心才考虑购买的。），不过根据我的体验，建议刷B版的swrt，因为R版时不时就断网，为什么会断网可以看恩山和他网站的评论（我也考虑刷回koolshare版，但是使用没有问题，所以暂时看看。ps:其实有办法刷成原厂固件。）。进入路由器后台，然后光猫的LAN2和LAN4分别连接路由器的WAN口和LAN1，如下：</p>
+<p>
+<div class="post-img-view">
+<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/R8500.PNG">
+<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/R8500.PNG" alt=""  />
+</a>
+</div>
+
+</p>
+<p>能不能达到双拨效果呢，测试了一下，网速相比光猫拨号，千兆带宽只能跑百兆左右。。。</p>
+<p>
+<div class="post-img-view">
+<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/100M.PNG">
+<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/100M.PNG" alt=""  />
+</a>
+</div>
+
+</p>
+<p>我觉得可能是几种原因：</p>
+<blockquote>
+<p>1.运营商后台做了桥接路由网速限制，导致网速是衰减的。</p>
+<p>2.光猫路由器原因，需要带2.5G口的万兆光猫或路由或接猫棒可以解决。</p>
+<p>3.可能是电脑网卡和网线限制。</p>
+</blockquote>
+<p>所以，我最终还是改成了光猫拨号，发现下行网速不仅达标了，还超过了。</p>
+<p>
+<div class="post-img-view">
+<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/1000M.PNG">
+<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/1000M.PNG" alt=""  />
+</a>
+</div>
+
+</p>
+<p>所以，这一切是为了折腾啥了这是，反正也没公网需求NAS,远程访问，监控一类的，所以还是用光猫拨号吧。</p>
+<hr>
+<p>
+<div class="post-img-view">
+<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/taibei.jpg">
+<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/taibei.jpg" alt=""  />
+</a>
+</div>
+
+</p>
+
+  </div>
+</div>
+<div class="container has-text-centered">
+    
+    <aside><div id="share"></div></aside>
+    
+    本作品采用<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>进行许可。
+</div>
+
+<div id="waline"></div>
+<head>
+  
+  <script src="//cdn.bootcdn.net/ajax/libs/waline/2.9.1/waline.min.js"></script>
+  <link
+    rel="stylesheet"
+    href="//cdn.bootcdn.net/ajax/libs/waline/2.9.1/waline.min.css"
+  />
+  
+</head>
+<body>
+  
+  <div id="waline"></div>
+  <script>
+
+ Waline.init({
+    el: '#waline',
+    pageview: 'true',
+    serverURL: 'https://zaqizaba.xyz',
+     emoji: 
+    [
+    'https://gcore.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/',
+    'https://gcore.jsdelivr.net/gh/sowhereso/waline-blobcatemojis@1.2/blobs/', 
+  ],
+  });
+</script>
+</body>
+<section class="section">
+  <div class="container has-text-centered">
+    <p>&copy; <a href="https://www.zaqizaba.xyz">阿波尔的博客</a>2019-2023</p>
+  </div>
+</section>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-168102390-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+

@@ -1,0 +1,387 @@
+
+<div class="container">
+  <!DOCTYPE html>
+<html lang="en-us">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+<title>路由器 | 阿波尔的博客</title>
+
+<link rel="stylesheet" href="https://www.zaqizaba.xyz/css/styles.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" 
+integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="https://www.zaqizaba.xyz/css/fonts.css" integrity="sha384-0GTjeGdUAVOf6Xjc1wREZAgqUsOSQxvJNAp13+N93Z9uxjNAw/h4Mzazu/2hELsj" crossorigin="anonymous"></script>
+
+<script async src="https://cdn.staticfile.org/mermaid/8.8.2/mermaid.min.js"></script>
+</head>
+<body>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/zenburn.min.css" crossorigin="anonymous" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script src="https://www.zaqizaba.xyz/js/highlight.js"></script>
+
+
+<html>
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.bootcdn.net/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js"></script>
+</html>
+
+<link href="https://cdn.bootcss.com/highlight.js/9.12.0/styles/monokai.min.css" rel="stylesheet">
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/languages/tex.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+<link type="text/css" rel="stylesheet" href="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/jsSocials/1.5.0/jssocials.css" />
+<link type="text/css" rel="stylesheet" href="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/jsSocials/1.5.0/jssocials-theme-minima.css" />
+<script type="text/javascript" src="https://www.zaqizaba.xyz/js/jssocials.js"></script>
+
+
+
+<script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/jquery/3.6.0/jquery.min.js"></script>
+<link rel="stylesheet" href="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/fancybox/3.5.7/jquery.fancybox.min.css" />
+<script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+
+
+
+
+
+
+
+<script>
+    
+    Array.from(document.getElementsByClassName('language-mermaid')).forEach(el => {
+        el.parentElement.outerHTML = `<div class="mermaid">${el.innerText}</div>`
+    })
+</script>
+<style>
+ 
+.mermaid svg {
+    display: block;
+    margin: auto;
+}
+</style>
+</body>
+
+
+  <div class="container">
+    <nav class="navbar level">
+      <div class="navbar-brand">
+          <a class="nav-item" href="https://www.zaqizaba.xyz"><h1 class="title is-3">阿波尔的博客</h1></a>
+      </div>           
+      <div class="navbar-menu has-text-centered is-active">
+          <div class="navbar-end is-centered">
+              
+                <a href="https://www.zaqizaba.xyz/about" rel="me">
+                  <span class="icon">
+                    <i class="fas fa-info"></i>
+                  </span>
+                </a>
+              
+                <a href="https://www.zaqizaba.xyz/archives" rel="me">
+                  <span class="icon">
+                    <i class="fas fa-archive"></i>
+                  </span>
+                </a>
+              
+                <a href="https://www.zaqizaba.xyz/comments" rel="me">
+                  <span class="icon">
+                    <i class="fas fa-comment"></i>
+                  </span>
+                </a>
+              
+                <a href="https://github.com/flight025" rel="me">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                </a>
+              
+                <a href="https://www.zhihu.com/people/a-gan-jing-shen" rel="me">
+                  <span class="icon">
+                    <i class="fab fa-zhihu"></i>
+                  </span>
+                </a>
+              
+                <a href="https://twitter.com/666GXF" rel="me">
+                  <span class="icon">
+                    <i class="fab fa-twitter"></i>
+                  </span>
+                </a>
+              
+                <a href="https://www.zaqizaba.xyz/index.xml" rel="me">
+                  <span class="icon">
+                    <i class="fa fa-rss"></i>
+                  </span>
+                </a>
+              
+           </div>
+      </div>
+    </nav>
+  </div>
+
+  <main class="container">
+      
+      
+      <h1 class="title is-3">2022</h1>
+      
+      <article class="columns">
+        <div class="column is-2">
+          <h6 class="is-inline" style="white-space: nowrap">Feb 5</h2>
+        </div>
+        <div class="column">
+          <h2 class="subtitle is-inline is-size-4-mobile is-size-3-desktop"><a href="https://www.zaqizaba.xyz/posts/%E5%B0%86%E6%89%98%E7%AE%A1%E4%BB%8Egithub%E8%BF%81%E7%A7%BB%E5%88%B0vercel/">将hugo托管从github迁移到vercel</a></h1>
+          <div class="content is-hidden-mobile">
+            vercel是一个站点托管平台，类似于GitHub的托管平台。在vercel 官网上有其详细的介绍。
+1.为什么我会弃用github而选用vercel 这里有二点原因：1.github托管的域名访问速度有点着急，vercel比github以及其它在无备案托管平台上我认为算是最快的。2.可以从github一键导入静态博客文件到vercel且支持个人自定义域名，而且上传博客文章比github要稳，可以隐藏公开仓库。
+2.使用vercel开始进行hugo静态博客部署 2.1从GitHub拉取 这里vercel支持github,gitlab,bitbucket这三个托管平台登录，拉取github登录：
+分别点击New Project》选择github上的静态博客仓库点击Import(导入）》Configure Project的FRAMEWORK PRESET我这里从“other”改为“hugo”, …
+            
+          </div>
+      </article>
+      
+      <article class="columns">
+        <div class="column is-2">
+          <h6 class="is-inline" style="white-space: nowrap">Feb 3</h2>
+        </div>
+        <div class="column">
+          <h2 class="subtitle is-inline is-size-4-mobile is-size-3-desktop"><a href="https://www.zaqizaba.xyz/posts/ipad%E5%9B%BD%E5%8C%BA%E6%8D%A2%E6%88%90%E7%BE%8E%E5%8C%BA/">Ipad国区换成美区</a></h1>
+          <div class="content is-hidden-mobile">
+            自从apple公司创始人steve jobs开创性的把phone和ipod功能结合，极具传奇色彩的iPhone便诞生了。可惜我以前从来没有用过apple的任何产品。不外乎有三点：1.以前apple的产品很贵，所以只能用搭载android system的产品（现在apple的产品价格倒不一定贵了）。2.apple的产品搭载的是ios或ipados,而ios或ipados是闭源系统。所以可玩性几乎为零，而且apple的app应用几乎只能从apple store官方下载，第三方下载app必须要有apple的签名。3.apple产品很容易操作，很适合不爱折腾的用户使用。基于以上三点，我从来没用过apple的产品。但是这次我决定买ipad 9，一是我真的想尝试人们所说apple系统的顺滑；二是ipad9256gwifi版在拼多多上真的很便宜。买了收到，使用一段时间以后，发现国区apple store …
+            
+          </div>
+      </article>
+      
+      <article class="columns">
+        <div class="column is-2">
+          <h6 class="is-inline" style="white-space: nowrap">Feb 3</h2>
+        </div>
+        <div class="column">
+          <h2 class="subtitle is-inline is-size-4-mobile is-size-3-desktop"><a href="https://www.zaqizaba.xyz/posts/%E6%B7%BB%E5%8A%A0%E6%9C%AC%E5%9C%B0%E8%A7%86%E9%A2%91%E5%88%B0hugo%E5%8D%9A%E5%AE%A2/">添加本地视频到hugo博客</a></h1>
+          <div class="content is-hidden-mobile">
+            以前我在博文《hugo添加短代码》这篇博文说过，可以通过相应文件的视频网站短代码模板引入，再从相应的视频网站url的id短代码来套取放到博客上，从而实现第三方网站视频在文章中出现。这也算是hugo博客的一大特色。但是有些时候，第三方网站审核视频，比如B站，如果你投稿的视频不是符合B站“正能量”主题，很大可能会上传因为版权问题，含露骨视频等其它原因而遭到删除，严重的可能连上传都看不到。当然。你也可以套国外视频网站短代码引入，比如油管，vimeo等，但是问题是这必须得借助魔法功能才能实现，博主当然更愿意本地视频套在博客上，无需借助其它第三方的视频网站就能在博客上在线播放了。
+有没有办法解决呢？办法当然是有的。你可以用diygod开发的Dplayer播放器套件来实现。当然，也可以通过搭建视频床（其实就是原来的图床来实现）。因为Dplayer的视频本地播放导入对于新手有些难以理解，所以可以简单粗暴 …
+            
+            <br>
+            <a class="button is-marginless is-paddingless" href="https://www.zaqizaba.xyz/posts/%E6%B7%BB%E5%8A%A0%E6%9C%AC%E5%9C%B0%E8%A7%86%E9%A2%91%E5%88%B0hugo%E5%8D%9A%E5%AE%A2/">
+            <span class="icon-link is-small" style="line-height: 100%">
+                <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+              </span>
+              <p style="padding:0 5px"></p>more</p>
+            </a>
+            
+          </div>
+      </article>
+      
+      
+      <h1 class="title is-3">2021</h1>
+      
+      <article class="columns">
+        <div class="column is-2">
+          <h6 class="is-inline" style="white-space: nowrap">Nov 24</h2>
+        </div>
+        <div class="column">
+          <h2 class="subtitle is-inline is-size-4-mobile is-size-3-desktop"><a href="https://www.zaqizaba.xyz/posts/typora%E7%9A%84%E4%B8%80%E4%BA%9B%E6%89%A9%E5%B1%95%E5%BA%94%E7%94%A8/">Typora的一些扩展应用</a></h1>
+          <div class="content is-hidden-mobile">
+            Typora有一些扩展应用,可以说对于有些专业来讲,真的很顶。👍
+1.$LaTeX$的应用 $LaTeX$主要是应用在文章公式排版上,具体是：
+1.行内公式(inline)：用 $...$括起公式，公式会出现在行内。
+2.块间公式（display）：用 $$...$$ 括起公式（注意 $$ 后需要换行），公式会默认显示在行中间。
+比如一元二次方程：
+$${a\mathop{{x}}\nolimits^{{2}}+bx+c=0}$$ $${a\mathop{{x}}\nolimits^{{2}}+bx+c=0}$$
+又比如统计：
+$$(\bar x) \bar x (\hat y=\hat ax + \hat b) \hat y=\hat a x + \hat b (\sum\limits_{i=1}^{n}{x_i}) \sum\limits_{i=1}^{n}{x_i}$$ …
+            
+            <br>
+            <a class="button is-marginless is-paddingless" href="https://www.zaqizaba.xyz/posts/typora%E7%9A%84%E4%B8%80%E4%BA%9B%E6%89%A9%E5%B1%95%E5%BA%94%E7%94%A8/">
+            <span class="icon-link is-small" style="line-height: 100%">
+                <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+              </span>
+              <p style="padding:0 5px"></p>more</p>
+            </a>
+            
+          </div>
+      </article>
+      
+      <article class="columns">
+        <div class="column is-2">
+          <h6 class="is-inline" style="white-space: nowrap">Jul 24</h2>
+        </div>
+        <div class="column">
+          <h2 class="subtitle is-inline is-size-4-mobile is-size-3-desktop"><a href="https://www.zaqizaba.xyz/posts/%E5%AE%89%E5%8D%93%E6%89%8B%E6%9C%BA%E5%BC%80%E5%90%AF%E5%8D%B3%E6%97%B6%E8%B4%B4/">安卓手机开启即时贴</a></h1>
+          <div class="content is-hidden-mobile">
+             写在前面，谷歌即时贴有丰富的新闻和路线以及出勤，购物建议，机票预定，体育赛事股市及时涨跌等功能。因为某种原因，在国内不能访问。而且科学上网后也可能不会开启，那有没有办法在国内开启呢，答案是有的！
+测试环境如下： 机型：oneplus 2 😒 系统：OxygenOS 😉 安卓系统：6.0.1 😁 root状态：未root 😆
+该方式仅适合安卓6.0.1及之前的安卓，之后的安卓系统能不能适用，未知，请酌情处理。
+方法如下： 1.修改语言为英文，sim卡取出，关闭定位并全程开启飞行模式（这么做定位系统就不能判定位置），开启科学上网软件。 2.把谷歌账号退出以及Google play service、Google service framework、Google play store、Google app的数据清理干净。 3.然后重新登录Google app，登录你的谷歌账号，不一会儿就会有提 …
+            
+          </div>
+      </article>
+      
+      <article class="columns">
+        <div class="column is-2">
+          <h6 class="is-inline" style="white-space: nowrap">Apr 10</h2>
+        </div>
+        <div class="column">
+          <h2 class="subtitle is-inline is-size-4-mobile is-size-3-desktop"><a href="https://www.zaqizaba.xyz/posts/%E8%B0%88%E8%B0%88%E8%B6%85%E6%95%8F%E5%8F%8D%E5%BA%94%E4%B9%8B%E5%9E%8B/">谈谈超敏反应之Ⅰ型</a></h1>
+          <div class="content is-hidden-mobile">
+            超敏反应是指机体再次接触同种抗原刺激时,所出现的一种以生理功能紊乱或组织细胞损害为主的异常免疫应答。 超敏反应有四种：Ⅰ型超敏反应，即速发型超敏反应,Ⅱ型超敏反应，即细胞毒性或细胞溶型超敏反应，Ⅲ型超敏反应，即免疫复合型超敏反应，Ⅳ型超敏反应，即迟发型超敏反应。
+1.Ⅰ型超敏反应 其主要特征是：1.超敏反应发生快,消退快;2.常引起生理功能紊乱，较少发生严重的组织细胞损伤; 3.由特异性igE型抗体介导，无补体参与： 4.具有明显的个体差异和遗传背景，对相应抗原易产生igE型抗体的患者称为特应性个体或过敏体质个体。
+一.Ⅰ型超敏反应机制 （一）参与Ⅰ型超敏反应的主要成分 1.变应原2.抗体3.细胞 （二）Ⅰ型超敏反应发生过程 Ⅰ型超敏反应的发生过程可以分为三个阶段：致敏阶段,激发阶段，效应阶段。
+1.致敏阶段2.激发阶段3.效应阶段。 二.常见Ⅰ型超敏反应性疾病 （一）全身超敏反应 1.药 …
+            
+          </div>
+      </article>
+      
+      <article class="columns">
+        <div class="column is-2">
+          <h6 class="is-inline" style="white-space: nowrap">Feb 15</h2>
+        </div>
+        <div class="column">
+          <h2 class="subtitle is-inline is-size-4-mobile is-size-3-desktop"><a href="https://www.zaqizaba.xyz/posts/hugo%E6%B7%BB%E5%8A%A0%E7%9F%AD%E4%BB%A3%E7%A0%81/">Hugo添加短代码</a></h1>
+          <div class="content is-hidden-mobile">
+            写在之前， hugo shortcodes中文意译即为雨果博客短代码，是一种先配置文件，通过在文章中插入短代码模式，来实现纯文字，歌曲，文章，个人社交文字转发，以及视频，播客等在个人博客上显示的一种方式。
+以下几个短代码的应用 上次我在“Hugo解决网易云音乐不显示问题”这篇博客中说了，开启HTML外链引用必须先添加：
+1.[markup.goldmark.renderer] 2.unsafe= true 然后自己再在网易云音乐引入 iframe实现在hugo博客上显示音乐。但是现在，有一种更好的方式，hugo提倡引入外链可以用短代码。
+方式为：新建/layouts/shortcodes/music.html，在其中引入：
+{{- $scratch := .Page.Scratch.Get &#34;scratch&#34; -}} &lt;!-- require APlayer …
+            
+            <br>
+            <a class="button is-marginless is-paddingless" href="https://www.zaqizaba.xyz/posts/hugo%E6%B7%BB%E5%8A%A0%E7%9F%AD%E4%BB%A3%E7%A0%81/">
+            <span class="icon-link is-small" style="line-height: 100%">
+                <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+              </span>
+              <p style="padding:0 5px"></p>more</p>
+            </a>
+            
+          </div>
+      </article>
+      
+      <article class="columns">
+        <div class="column is-2">
+          <h6 class="is-inline" style="white-space: nowrap">Jan 28</h2>
+        </div>
+        <div class="column">
+          <h2 class="subtitle is-inline is-size-4-mobile is-size-3-desktop"><a href="https://www.zaqizaba.xyz/posts/%E5%9C%A8%E5%8F%B0%E5%BC%8F%E6%9C%BA%E4%B8%8A%E4%BD%93%E9%AA%8C%E8%B0%B7%E6%AD%8Cstadia%E4%BA%91%E6%B8%B8%E6%88%8F%E5%B9%B3%E5%8F%B0/">在台式机上体验谷歌stadia云游戏平台</a></h1>
+          <div class="content is-hidden-mobile">
+            云游戏平台Google stadia在谷歌浏览器上登录很久了，今天我决定尝试一下，看看体验怎么样。
+1.云游戏平台google stadia的发展及收费方式及其它问题 问：云游戏平台Google stadia 是怎么发展来的？
+答：google stadia游戏平台于2018年最初通过project stream计划，于2018年10月通过《刺客信条：奥德赛》的beta版亮相。2019年GDC大会上发布了发布了云游戏平台google stadia以及Google stadia的游戏手柄，游戏平台可以在电视，电脑，手机上运行，但是必须得支持Google服务以及stadia应用，这次我就是在电脑上尝试的。平台可以配合YOUTUBE进行直播，前提是你网络必须得跟得上。目前Google stadia游戏平台已上架《刺客信条：奥德赛》、《赛博朋克2077》、《荒野大镖客：救赎》等3A大作，也有诸如《 …
+            
+            <br>
+            <a class="button is-marginless is-paddingless" href="https://www.zaqizaba.xyz/posts/%E5%9C%A8%E5%8F%B0%E5%BC%8F%E6%9C%BA%E4%B8%8A%E4%BD%93%E9%AA%8C%E8%B0%B7%E6%AD%8Cstadia%E4%BA%91%E6%B8%B8%E6%88%8F%E5%B9%B3%E5%8F%B0/">
+            <span class="icon-link is-small" style="line-height: 100%">
+                <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+              </span>
+              <p style="padding:0 5px"></p>more</p>
+            </a>
+            
+          </div>
+      </article>
+      
+      <article class="columns">
+        <div class="column is-2">
+          <h6 class="is-inline" style="white-space: nowrap">Jan 2</h2>
+        </div>
+        <div class="column">
+          <h2 class="subtitle is-inline is-size-4-mobile is-size-3-desktop"><a href="https://www.zaqizaba.xyz/posts/cdn%E5%85%AC%E5%85%B1%E5%BA%93%E7%9A%84%E4%BF%AE%E6%94%B9/">CDN公共库的修改</a></h1>
+          <div class="content is-hidden-mobile">
+            博客有一段时间加载很慢，打开chrome的控制台显示这样：
+网站有几处错误和警告，加载这些失效和错误资源限制了网页加载速度。
+&lt;link rel=&#34;stylesheet&#34; href=&#34;{{ $scratch.Get &#34;baseURL&#34; }}/css/styles.css&#34;&gt; &lt;link rel=&#34;stylesheet&#34; href=&#34;https://use.fontawesome.com/releases/v5.2.0/css/all.css&#34; integrity=&#34;sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ&#34; crossorigin=&#34;anonymous&#34;&gt; …
+            
+          </div>
+      </article>
+      
+      
+      <h1 class="title is-3">2020</h1>
+      
+      <article class="columns">
+        <div class="column is-2">
+          <h6 class="is-inline" style="white-space: nowrap">Jul 4</h2>
+        </div>
+        <div class="column">
+          <h2 class="subtitle is-inline is-size-4-mobile is-size-3-desktop"><a href="https://www.zaqizaba.xyz/posts/%E5%A6%82%E4%BD%95%E5%9C%A8%E4%B8%BB%E9%A2%98%E4%B8%AD%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E5%BD%92%E6%A1%A3/">如何在主题中添加文章归档</a></h1>
+          <div class="content is-hidden-mobile">
+            原来的主题模板是不带文章归档的，但是经过一番折腾。终于给主题添加了归档。😜 现在就说说是如何添加归档的。
+1.config配置 config可以配置文件图标，在config中添加配置如下：
+打开临时预览网页http://localhost:1313/查看，可以看到归档图标，但是点击没有反应。。。
+2.archives文件的创建和html文件格式 起先，我想到了关联about的_index.md文件,既然about是&quot;关于&quot;链接的来显示页面的。那我何不创建一个关联archives的_index.md文件呢。于是我创建了index.md文件。用typora写了archives页面归档链接，看看能不能显示，输入http://localhost:1313/查看，还是不能显示。我以为.md上传github就可以显示为html。看来不是这么回事。。。
+折腾了一会儿。在layouts …
+            
+          </div>
+      </article>
+      
+      
+      
+  </main>
+  <section class="section">
+  <div class="container">
+    <nav class="level is-mobile">
+      <div class="level-left">
+        <div class="level-item">
+          
+          <a class="button is-rounded" href="/tags/%E8%B7%AF%E7%94%B1%E5%99%A8/">
+            <span class="icon is-small is-marginless">
+              <i class="fa fa-angle-left"></i>
+            </span>
+            Newer
+          </a>
+          
+        </div>
+      </div>
+      <div class="level-right is-marginless">
+        <div class="level-item">
+          
+          <a class="button is-rounded" href="/tags/%E8%B7%AF%E7%94%B1%E5%99%A8/page/3/">
+            Older
+            <span class="icon is-small is-marginless">
+              <i class="fa fa-angle-right"></i>
+            </span>
+          </a>
+          
+        </div>
+      </div>
+    </nav>
+  </div>
+</section>
+  <section class="section">
+  <div class="container has-text-centered">
+    <p>&copy; <a href="https://www.zaqizaba.xyz">阿波尔的博客</a>2019-2023</p>
+  </div>
+</section>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-168102390-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+
+</div>
