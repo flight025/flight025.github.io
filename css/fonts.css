@@ -1,27 +1,12 @@
-@font-face {
-  font-family: 'Source Han Serif CN';
-  src: local('Source Han Serif CN'), local('Source Han Serif SC'),
-       local('Source Han Serif TC'), local('Source Han Serif TW'),
-       local('Source Han Serif'), local('Noto Serif CJK SC'), local('Songti SC'), local('SimSong'),
-       url('https://cdn.jsdelivr.net/gh/flight025/css@main/SourceHanSerifCN-Regular.woff2') format('woff2');
-}
-@font-face {
-  font-family: 'AR-PL-KaitiM-GB';
-  src: local('Kaiti'), local('Kaiti SC'), local('STKaiti'), local('楷体'), local('SimKai'), local('DFKai-SB'), local('AR-PL-KaitiM-GB'),
-       url('https://cdn.jsdelivr.net/gh/flight025/css@main/AR-PL-KaitiM-GB.woff2') format('woff2');
-}
 .post blockquote, .newsletter blockquote, .home blockquote {
-  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, 'AR-PL-KaitiM-GB','STKaiti', 'Roboto Mono','霞鹜文楷等宽', 'KaiTi', '楷体', 'SimKai', 'DFKai-SB', 'NSimSun', serif;
+  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, 'STKaiti', 'Roboto Mono','霞鹜文楷等宽', 'KaiTi', '楷体', 'SimKai', 'DFKai-SB', 'NSimSun', serif;
 }
 blockquote {
-  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino,'AR-PL-KaitiM-GB', 'STKaiti', 'Roboto Mono','霞鹜文楷等宽','KaiTi', '楷体', 'SimKai', 'DFKai-SB', 'NSimSun', serif;
+  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, 'STKaiti', 'Roboto Mono','霞鹜文楷等宽','KaiTi', '楷体', 'SimKai', 'DFKai-SB', 'NSimSun', serif;
 }
 code {
-  font-family: Consolas, Courier, "Courier New", 'AR-PL-KaitiM-GB','STKaiti','Roboto Mono', 'KaiTi', 'SimKai', monospace;
+  font-family: Consolas, Courier, "Courier New", 'STKaiti','Roboto Mono', 'KaiTi', 'SimKai', monospace;
 }
 pre, code {
   font-size: .95em;
-}
-.cn em, .cn .title {
-  font-style: normal;
 }
