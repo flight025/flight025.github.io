@@ -443,40 +443,9 @@
             logo: "fab fa-twitter",
             shareUrl: "https://twitter.com/share?url={url}&text={text}&via={via}&hashtags={hashtags}",
             countUrl: ""
-        },
-
-        facebook: {
-            label: "Like",
-            logo: "fab fa-facebook",
-            shareUrl: "https://facebook.com/sharer/sharer.php?u={url}",
-            countUrl: "https://graph.facebook.com/?id={url}",
-            getCount: function(data) {
-                return data.share && data.share.share_count || 0;
-            }
-        },
-
-        qq: {
-            label: "Like",
-            logo: "fab fa-qq",
-            shareUrl: "https://qq.com/share.php?url={url}&title={title}&description={text}",
-            countUrl: "https://qq.com/share.php?act=count&index=1&url={url}",
-            getCount: function(data) {
-                return parseInt(data.slice(15, -2).split(', ')[1]);
-            }
-        },
-
-        
-
-        weibo: {
-            label: "Share",
-            logo: "fab fa-weibo",
-            shareUrl: "https://www.weibo.com/shareArticle?mini=true&url={url}",
-            countUrl: "https://www.weibo.com/countserv/count/share?format=jsonp&url={url}&callback=?",
-            getCount: function(data) {
-                return data.count;
-            }
         }
 
     });
 
 }(window, jQuery, window.jsSocials));
+
