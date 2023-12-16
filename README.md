@@ -1,6 +1,6 @@
 
- ###我的hugo博客选择过程
- +++
+ 我的hugo博客选择过程
+ 
  本来想搭建一个自己的博客，中间选择了peclian和hugo。
  最后我选择了Hugo（peclian没成功😭），搭建成功感谢b站up主hojun_cn和Codesheep的视频参考。同时我也参考了[SAquarius](https://saquarius.com/)和[ZhaoQiang](https://www.nashome.cn/)
  的搭建方法，博客采用hugo静态框架，模板作者不记得了😓。我在原模板上修改了图标，自己添加了一个知乎链接图标，其余只是修改了原链接而已，原模板系统评论是Disqus.
