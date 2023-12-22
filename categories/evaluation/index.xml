@@ -7,30 +7,14 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>EN</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://www.zaqizaba.xyz&#34;&gt;阿波尔的博客&lt;/a&gt; 2019-2023</copyright>
-    <lastBuildDate>Thu, 28 Jan 2021 10:17:59 +0800</lastBuildDate><atom:link href="https://www.zaqizaba.xyz/categories/evaluation/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 28 Jan 2021 10:17:59 +0800</lastBuildDate>
+    <atom:link href="https://www.zaqizaba.xyz/categories/evaluation/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>在台式机上体验谷歌stadia云游戏平台</title>
       <link>https://www.zaqizaba.xyz/posts/%E5%9C%A8%E5%8F%B0%E5%BC%8F%E6%9C%BA%E4%B8%8A%E4%BD%93%E9%AA%8C%E8%B0%B7%E6%AD%8Cstadia%E4%BA%91%E6%B8%B8%E6%88%8F%E5%B9%B3%E5%8F%B0/</link>
       <pubDate>Thu, 28 Jan 2021 10:17:59 +0800</pubDate>
-      
       <guid>https://www.zaqizaba.xyz/posts/%E5%9C%A8%E5%8F%B0%E5%BC%8F%E6%9C%BA%E4%B8%8A%E4%BD%93%E9%AA%8C%E8%B0%B7%E6%AD%8Cstadia%E4%BA%91%E6%B8%B8%E6%88%8F%E5%B9%B3%E5%8F%B0/</guid>
-      <description>云游戏平台Google stadia在谷歌浏览器上登录很久了，今天我决定尝试一下，看看体验怎么样。
-1.云游戏平台google stadia的发展及收费方式及其它问题 问：云游戏平台Google stadia 是怎么发展来的？
-答：google stadia游戏平台于2018年最初通过project stream计划，于2018年10月通过《刺客信条：奥德赛》的beta版亮相。2019年GDC大会上发布了发布了云游戏平台google stadia以及Google stadia的游戏手柄，游戏平台可以在电视，电脑，手机上运行，但是必须得支持Google服务以及stadia应用，这次我就是在电脑上尝试的。平台可以配合YOUTUBE进行直播，前提是你网络必须得跟得上。目前Google stadia游戏平台已上架《刺客信条：奥德赛》、《赛博朋克2077》、《荒野大镖客：救赎》等3A大作，也有诸如《兽人必须死3》、《人类：一败涂地》一类的小游戏。
-​ 图/Google stadia平台界面
-问：那收费方式是怎么样的？
-答：Google stadia采用和netflix类似采用订阅制，不同的是额外游戏还得必须自己支付，但是有些游戏是限时免费。和育碧平台类似，不过，额外游戏的费用和其它平台诸如steam、育碧、GOG比其实游戏价格差不多。stadia有free版和pro版。free版支持1080p/60fps/立体声云游戏。pro版支持4k/60fps/5.1环绕声，不过pro版需要每月支付9.99美元，pro版首次注册登录免费一个月，如果邀请链接能够邀请好友则再获赠一个月的平台订阅。
-​ ​ 图/分享平台链接给朋友则能再使用一个月的订阅
-再问：平台的视频带宽需求、分辨率以及云平台提示？
-答：google stadia云游戏平台带宽需求最低是每秒10Mbps，4K则需要每秒35Mbps及以上。具体如下：
-​
-所需带宽 视频质量 音质 10 Mbit /秒 720P,60fps 立体声 20 Mbit /秒 1080pHDR,60fps 5.1环绕立体声 35 Mbit /秒 4KHDR,60fps 5.1环绕立体声 提示的话，如下：
-连接状态 意味着什么 网络情况连接优秀 你的网络连接很好，游戏可以流畅运行。pro用户可以以4k画质来运行游戏 网络情况连接不稳定 你的网络不理想，可能会出现网络堵塞。游戏画质可能会有所下降 游戏会停止 网络带宽性能不足，阻塞严重。游戏会停止 使用移动数据 你已经使用移动数据来进行云游戏，而不是WiFi。游戏画质可能会有影响 2.我的实际游戏体验 说实话，在国内通过科学加速在google stadia云游戏平台来玩游戏，真不是一个好的体验。
-就拿《人类：一败涂地》这个游戏来讲：才进入游戏，就提示&amp;quot;Connection is not stable&amp;quot;,显示连接状况可能不稳定，画质会下降（默认是pro4k画质），真正进入游戏后那个动作卡得要命，不仅帧数下降了，就连画质也下降了。才一次就。。。就黑屏退出了？
-​ 图/游戏提示以及实际画面
-​ 图/不久提示游戏停止,黑屏
-3.后话及想法 作为互联网创新企业，Google想通过以云游戏平台Google stadia来显示云存储，云上传，平台youtube联动直播的优越性。但是它忽视了全球一些地区的网络情况还不是那么便利，而且。就中国来讲，首先谷歌服务就不能够用，基本上判定了Google stadia就算用科学加速来玩，也不可行。带宽和ping基本上不支持，除非在中国找游戏厂家合作？就云游戏平台而言。腾讯，网易基本上都尝试过，不火，阿里巴巴基本上没涉及网游这个行业，其它小的游戏厂商就更不用说了。</description>
+      <description>云游戏平台Google stadia在谷歌浏览器上登录很久了，今天我决定尝试一下，看看体验怎么样。&#xA;1.云游戏平台google stadia的发展及收费方式及其它问题 问：云游戏平台Google stadia 是怎么发展来的？&#xA;答：google stadia游戏平台于2018年最初通过project stream计划，于2018年10月通过《刺客信条：奥德赛》的beta版亮相。2019年GDC大会上发布了发布了云游戏平台google stadia以及Google stadia的游戏手柄，游戏平台可以在电视，电脑，手机上运行，但是必须得支持Google服务以及stadia应用，这次我就是在电脑上尝试的。平台可以配合YOUTUBE进行直播，前提是你网络必须得跟得上。目前Google stadia游戏平台已上架《刺客信条：奥德赛》、《赛博朋克2077》、《荒野大镖客：救赎》等3A大作，也有诸如《兽人必须死3》、《人类：一败涂地》一类的小游戏。&#xA;​ 图/Google stadia平台界面&#xA;问：那收费方式是怎么样的？&#xA;答：Google stadia采用和netflix类似采用订阅制，不同的是额外游戏还得必须自己支付，但是有些游戏是限时免费。和育碧平台类似，不过，额外游戏的费用和其它平台诸如steam、育碧、GOG比其实游戏价格差不多。stadia有free版和pro版。free版支持1080p/60fps/立体声云游戏。pro版支持4k/60fps/5.1环绕声，不过pro版需要每月支付9.99美元，pro版首次注册登录免费一个月，如果邀请链接能够邀请好友则再获赠一个月的平台订阅。&#xA;​ ​ 图/分享平台链接给朋友则能再使用一个月的订阅&#xA;再问：平台的视频带宽需求、分辨率以及云平台提示？&#xA;答：google stadia云游戏平台带宽需求最低是每秒10Mbps，4K则需要每秒35Mbps及以上。具体如下：&#xA;​&#xA;所需带宽 视频质量 音质 10 Mbit /秒 720P,60fps 立体声 20 Mbit /秒 1080pHDR,60fps 5.1环绕立体声 35 Mbit /秒 4KHDR,60fps 5.1环绕立体声 提示的话，如下：&#xA;连接状态 意味着什么 网络情况连接优秀 你的网络连接很好，游戏可以流畅运行。pro用户可以以4k画质来运行游戏 网络情况连接不稳定 你的网络不理想，可能会出现网络堵塞。游戏画质可能会有所下降 游戏会停止 网络带宽性能不足，阻塞严重。游戏会停止 使用移动数据 你已经使用移动数据来进行云游戏，而不是WiFi。游戏画质可能会有影响 2.我的实际游戏体验 说实话，在国内通过科学加速在google stadia云游戏平台来玩游戏，真不是一个好的体验。&#xA;就拿《人类：一败涂地》这个游戏来讲：才进入游戏，就提示&amp;quot;Connection is not stable&amp;quot;,显示连接状况可能不稳定，画质会下降（默认是pro4k画质），真正进入游戏后那个动作卡得要命，不仅帧数下降了，就连画质也下降了。才一次就。。。就黑屏退出了？&#xA;​ 图/游戏提示以及实际画面&#xA;​ 图/不久提示游戏停止,黑屏&#xA;3.后话及想法 作为互联网创新企业，Google想通过以云游戏平台Google stadia来显示云存储，云上传，平台youtube联动直播的优越性。但是它忽视了全球一些地区的网络情况还不是那么便利，而且。就中国来讲，首先谷歌服务就不能够用，基本上判定了Google stadia就算用科学加速来玩，也不可行。带宽和ping基本上不支持，除非在中国找游戏厂家合作？就云游戏平台而言。腾讯，网易基本上都尝试过，不火，阿里巴巴基本上没涉及网游这个行业，其它小的游戏厂商就更不用说了。</description>
     </item>
-    
   </channel>
 </rss>

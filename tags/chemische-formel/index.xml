@@ -7,24 +7,14 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>EN</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://www.zaqizaba.xyz&#34;&gt;阿波尔的博客&lt;/a&gt; 2019-2023</copyright>
-    <lastBuildDate>Wed, 24 Nov 2021 10:16:20 +0800</lastBuildDate><atom:link href="https://www.zaqizaba.xyz/tags/chemische-formel/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 24 Nov 2021 10:16:20 +0800</lastBuildDate>
+    <atom:link href="https://www.zaqizaba.xyz/tags/chemische-formel/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Typora的一些扩展应用</title>
       <link>https://www.zaqizaba.xyz/posts/typora%E7%9A%84%E4%B8%80%E4%BA%9B%E6%89%A9%E5%B1%95%E5%BA%94%E7%94%A8/</link>
       <pubDate>Wed, 24 Nov 2021 10:16:20 +0800</pubDate>
-      
       <guid>https://www.zaqizaba.xyz/posts/typora%E7%9A%84%E4%B8%80%E4%BA%9B%E6%89%A9%E5%B1%95%E5%BA%94%E7%94%A8/</guid>
-      <description>Typora有一些扩展应用,可以说对于有些专业来讲,真的很顶。👍
-1.$LaTeX$的应用 $LaTeX$主要是应用在文章公式排版上,具体是：
-1.行内公式(inline)：用 $...$括起公式，公式会出现在行内。
-2.块间公式（display）：用 $$...$$ 括起公式（注意 $$ 后需要换行），公式会默认显示在行中间。
-比如一元二次方程：
-$${a\mathop{{x}}\nolimits^{{2}}+bx+c=0}$$ $${a\mathop{{x}}\nolimits^{{2}}+bx+c=0}$$
-又比如统计：
-$$(\bar x) \bar x (\hat y=\hat ax + \hat b) \hat y=\hat a x + \hat b (\sum\limits_{i=1}^{n}{x_i}) \sum\limits_{i=1}^{n}{x_i}$$ $$(\bar x) \bar x (\hat y=\hat ax + \hat b) \hat y=\hat a x + \hat b (\sum\limits_{i=1}^{n}{x_i}) \sum\limits_{i=1}^{n}{x_i}$$
-还有逻辑表示：
-$$(\neg p:x^2\lt 1) \neg p:x^2\lt 1 (\forall x) \forall x (\exists y) \exists y (p\lor q \Rightarrow p \land q) p\lor q \Rightarrow p \land q ((p \to q)\land (p \gets q)) (p \to q)\land (p \gets q) (\Leftrightarrow) \Leftrightarrow (\Leftarrow) \Leftarrow$$ $$(\neg p:x^2\lt 1) \neg p:x^2\lt 1 (\forall x) \forall x (\exists y) \exists y (p\lor q \Rightarrow p \land q) p\lor q \Rightarrow p \land q ((p \to q)\land (p \gets q)) (p \to q)\land (p \gets q) (\Leftrightarrow) \Leftrightarrow (\Leftarrow) \Leftarrow$$</description>
+      <description>Typora有一些扩展应用,可以说对于有些专业来讲,真的很顶。👍&#xA;1.$LaTeX$的应用 $LaTeX$主要是应用在文章公式排版上,具体是：&#xA;1.行内公式(inline)：用 $...$括起公式，公式会出现在行内。&#xA;2.块间公式（display）：用 $$...$$ 括起公式（注意 $$ 后需要换行），公式会默认显示在行中间。&#xA;比如一元二次方程：&#xA;$${a\mathop{{x}}\nolimits^{{2}}+bx+c=0}$$ $${a\mathop{{x}}\nolimits^{{2}}+bx+c=0}$$&#xA;又比如统计：&#xA;$$(\bar x) \bar x (\hat y=\hat ax + \hat b) \hat y=\hat a x + \hat b (\sum\limits_{i=1}^{n}{x_i}) \sum\limits_{i=1}^{n}{x_i}$$ $$(\bar x) \bar x (\hat y=\hat ax + \hat b) \hat y=\hat a x + \hat b (\sum\limits_{i=1}^{n}{x_i}) \sum\limits_{i=1}^{n}{x_i}$$&#xA;还有逻辑表示：&#xA;$$(\neg p:x^2\lt 1) \neg p:x^2\lt 1 (\forall x) \forall x (\exists y) \exists y (p\lor q \Rightarrow p \land q) p\lor q \Rightarrow p \land q ((p \to q)\land (p \gets q)) (p \to q)\land (p \gets q) (\Leftrightarrow) \Leftrightarrow (\Leftarrow) \Leftarrow$$ $$(\neg p:x^2\lt 1) \neg p:x^2\lt 1 (\forall x) \forall x (\exists y) \exists y (p\lor q \Rightarrow p \land q) p\lor q \Rightarrow p \land q ((p \to q)\land (p \gets q)) (p \to q)\land (p \gets q) (\Leftrightarrow) \Leftrightarrow (\Leftarrow) \Leftarrow$$</description>
     </item>
-    
   </channel>
 </rss>

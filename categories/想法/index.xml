@@ -7,64 +7,35 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>EN</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://www.zaqizaba.xyz&#34;&gt;阿波尔的博客&lt;/a&gt; 2019-2023</copyright>
-    <lastBuildDate>Sat, 04 Jul 2020 20:14:29 +0800</lastBuildDate><atom:link href="https://www.zaqizaba.xyz/categories/%E6%83%B3%E6%B3%95/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 04 Jul 2020 20:14:29 +0800</lastBuildDate>
+    <atom:link href="https://www.zaqizaba.xyz/categories/%E6%83%B3%E6%B3%95/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>如何在主题中添加文章归档</title>
       <link>https://www.zaqizaba.xyz/posts/%E5%A6%82%E4%BD%95%E5%9C%A8%E4%B8%BB%E9%A2%98%E4%B8%AD%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E5%BD%92%E6%A1%A3/</link>
       <pubDate>Sat, 04 Jul 2020 20:14:29 +0800</pubDate>
-      
       <guid>https://www.zaqizaba.xyz/posts/%E5%A6%82%E4%BD%95%E5%9C%A8%E4%B8%BB%E9%A2%98%E4%B8%AD%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E5%BD%92%E6%A1%A3/</guid>
-      <description>原来的主题模板是不带文章归档的，但是经过一番折腾。终于给主题添加了归档。😜 现在就说说是如何添加归档的。
-1.config配置 config可以配置文件图标，在config中添加配置如下：
-打开临时预览网页http://localhost:1313/查看，可以看到归档图标，但是点击没有反应。。。
-2.archives文件的创建和html文件格式 起先，我想到了关联about的_index.md文件,既然about是&amp;quot;关于&amp;quot;链接的来显示页面的。那我何不创建一个关联archives的_index.md文件呢。于是我创建了index.md文件。用typora写了archives页面归档链接，看看能不能显示，输入http://localhost:1313/查看，还是不能显示。我以为.md上传github就可以显示为html。看来不是这么回事。。。
-折腾了一会儿。在layouts文件夹中找到了about的html文件，似乎是要添加html文件。emmm&amp;hellip;(⊙﹏⊙)，于是我把archives.md用typora转换成html文件，放在了layouts文件夹中，再打开http://localhost:1313临时查看，发现归档文章可以访问了。确定了归档.md的确需要转换成html文件放在layouts文件夹中才能访问。
-3.后续注意及存在问题 ​ 注意：1.转换成html文件后，在html用partial引用页面. 存在的问题：1.归档文章必须得自己添加超链接，不能自动更新，很麻烦2.主题页面背景颜色和归档文章颜色不一致。
-2021.1.26号更新。基本上上面的方法是很麻烦的。现在我找了更好的归档办法，不再需要自己手动更新了。以前我更新归档是通过添加文章超链接archives.md文件再转换成为html格式，来实现归档的。但是现在发现archives.html可以引用single来添加文章日期归档时间代码来实现，只要自己每次更新.md文章，文章便会自动更新在归档年月日中。这里我参考了这篇文章：神秘极客的博文《为hugo添加归档页面》。</description>
+      <description>原来的主题模板是不带文章归档的，但是经过一番折腾。终于给主题添加了归档。😜 现在就说说是如何添加归档的。&#xA;1.config配置 config可以配置文件图标，在config中添加配置如下：&#xA;打开临时预览网页http://localhost:1313/查看，可以看到归档图标，但是点击没有反应。。。&#xA;2.archives文件的创建和html文件格式 起先，我想到了关联about的_index.md文件,既然about是&amp;quot;关于&amp;quot;链接的来显示页面的。那我何不创建一个关联archives的_index.md文件呢。于是我创建了index.md文件。用typora写了archives页面归档链接，看看能不能显示，输入http://localhost:1313/查看，还是不能显示。我以为.md上传github就可以显示为html。看来不是这么回事。。。&#xA;折腾了一会儿。在layouts文件夹中找到了about的html文件，似乎是要添加html文件。emmm&amp;hellip;(⊙﹏⊙)，于是我把archives.md用typora转换成html文件，放在了layouts文件夹中，再打开http://localhost:1313临时查看，发现归档文章可以访问了。确定了归档.md的确需要转换成html文件放在layouts文件夹中才能访问。&#xA;3.后续注意及存在问题 ​ 注意：1.转换成html文件后，在html用partial引用页面. 存在的问题：1.归档文章必须得自己添加超链接，不能自动更新，很麻烦2.主题页面背景颜色和归档文章颜色不一致。&#xA;2021.1.26号更新。基本上上面的方法是很麻烦的。现在我找了更好的归档办法，不再需要自己手动更新了。以前我更新归档是通过添加文章超链接archives.md文件再转换成为html格式，来实现归档的。但是现在发现archives.html可以引用single来添加文章日期归档时间代码来实现，只要自己每次更新.md文章，文章便会自动更新在归档年月日中。这里我参考了这篇文章：神秘极客的博文《为hugo添加归档页面》。</description>
     </item>
-    
     <item>
       <title>Hugo解决网易云音乐不显示问题</title>
       <link>https://www.zaqizaba.xyz/posts/hugo%E8%A7%A3%E5%86%B3%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90%E4%B8%8D%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/</link>
       <pubDate>Thu, 25 Jun 2020 12:28:22 +0800</pubDate>
-      
       <guid>https://www.zaqizaba.xyz/posts/hugo%E8%A7%A3%E5%86%B3%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90%E4%B8%8D%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/</guid>
-      <description>这个问题，是我今天在“关于”页面添加网易云音乐发现的。具体到问题就是HTML文件不能在博客上显示。 我在“关于”页面上添加网易云音乐，上传了几次。发现还是没有网易云音乐，我就觉得纳闷了。
-于是我问了关于hugo建站的群，有人说看“关于”网页源代码有没有这个“html代码“。 打开关于页面，看到了这行代码不是原网易云音乐，显示为“!&amp;ndash; raw HTML omitted &amp;ndash;“。虽然不知道为什么会显示为这样，但我顺藤摸瓜，在Google搜索关于显示这个代码的原因。
-​ 在hugo论坛页面我到了原因，原来在hugo 0.60.0的版本中，为了安全，html文件改用Goldmark。 在页面中，解决办法也给出了，即开启不安全模式，在config.toml站点配置文件中，添加这二行代码：
-[markup.goldmark.renderer] unsafe= true 完成打开http://localhost:1313/预览页面，此时就可以看到在原来的位置添加的网易云音乐了。
-这样就解决了网易云音乐不显示的问题😀。 还有， 今天端午节，祝大家节日快乐。💖😀
-网页参考：1.hugo论坛解决html文件不显示解决办法</description>
+      <description>这个问题，是我今天在“关于”页面添加网易云音乐发现的。具体到问题就是HTML文件不能在博客上显示。 我在“关于”页面上添加网易云音乐，上传了几次。发现还是没有网易云音乐，我就觉得纳闷了。&#xA;于是我问了关于hugo建站的群，有人说看“关于”网页源代码有没有这个“html代码“。 打开关于页面，看到了这行代码不是原网易云音乐，显示为“!&amp;ndash; raw HTML omitted &amp;ndash;“。虽然不知道为什么会显示为这样，但我顺藤摸瓜，在Google搜索关于显示这个代码的原因。&#xA;​ 在hugo论坛页面我到了原因，原来在hugo 0.60.0的版本中，为了安全，html文件改用Goldmark。 在页面中，解决办法也给出了，即开启不安全模式，在config.toml站点配置文件中，添加这二行代码：&#xA;[markup.goldmark.renderer] unsafe= true 完成打开http://localhost:1313/预览页面，此时就可以看到在原来的位置添加的网易云音乐了。&#xA;这样就解决了网易云音乐不显示的问题😀。 还有， 今天端午节，祝大家节日快乐。💖😀&#xA;网页参考：1.hugo论坛解决html文件不显示解决办法</description>
     </item>
-    
     <item>
       <title>Hugo博客搭建过程</title>
       <link>https://www.zaqizaba.xyz/posts/hugo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/</link>
       <pubDate>Mon, 22 Jun 2020 09:19:50 +0800</pubDate>
-      
       <guid>https://www.zaqizaba.xyz/posts/hugo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/</guid>
-      <description>在搭建之前。我参考了b站视频以及其它分享以hugo框架搭建静态博客的博主们的方法，搭建好了hugo为博客框架的静态博客。 现在，就具体说说是怎么搭建hugo静态博客的。
-1.下载一些相关的工具 在搭建博客之前，先准备好所要的软件材料。 1.git工具 2.github（创建博客存储上传文件） 3.hugo博客系统文件 4.用它写作的typora 5.以及搭配typora的PicGo图床工具
-2.环境变量的设置以及配置站点文件 下载好git工具和hugo博客系统文件，然后设置环境变量。 以win10为例，在搜索栏中。输入path，找到编辑系统环境变量。
-找到hugo下载的所在文件目录，复制到PATH中。注意路径不能有中文。 在cmd中命令看看是否安装正确，出现：
-git version git version 2.26.2.windows.1 hugo version Hugo Static Site Generator v0.72.0-8A7EF3CF windows/amd64 BuildDate: 2020-05-31T12:08:42Z 提示安装路径正确。
-安装好后，再在其它盘创建一个根站点，假如命名为###。
-hugo new site ### 然后在###文件中就会得到
-这些文件。
-用cd命令打开themes文件，在hugo主题中找一个主题，比如我找的charaka-hugo-theme主题。在cmd中命令如下：
-cd themes git clone https://github.com/natarajmb/charaka-hugo-theme.git 下载好主题包后，把themes中的主题包文件复制覆盖到原###中的根文件中。
-config原配置文件如下：
-baseurl = &amp;#34;https://example.com&amp;#34;（填你的github博客域名） languageCode = &amp;#34;en&amp;#34;（改成ZH-CN） title = &amp;#34;Charaka&amp;#34;（自己可以改成自己喜欢的博客名称） theme = &amp;#34;charaka-hugo-theme&amp;#34; copyright = &amp;#34;&amp;amp;copy; &amp;lt;a href=\&amp;#34;https://github.com/natarajmb\&amp;#34;&amp;gt;Nataraj Basappa&amp;lt;/a&amp;gt; 2018&amp;#34;（这里可以更改为你的连接和申明） disqusShortname = &amp;#34;&amp;#34;（disqus评论用，不过我改成了valine评论系统） googleAnalytics = &amp;#34;&amp;#34;(谷歌分析) [params] [author] name = &amp;#34;Nataraj Basappa&amp;#34; homepage = &amp;#34;https://natarajmb.</description>
+      <description>在搭建之前。我参考了b站视频以及其它分享以hugo框架搭建静态博客的博主们的方法，搭建好了hugo为博客框架的静态博客。 现在，就具体说说是怎么搭建hugo静态博客的。&#xA;1.下载一些相关的工具 在搭建博客之前，先准备好所要的软件材料。 1.git工具 2.github（创建博客存储上传文件） 3.hugo博客系统文件 4.用它写作的typora 5.以及搭配typora的PicGo图床工具&#xA;2.环境变量的设置以及配置站点文件 下载好git工具和hugo博客系统文件，然后设置环境变量。 以win10为例，在搜索栏中。输入path，找到编辑系统环境变量。&#xA;找到hugo下载的所在文件目录，复制到PATH中。注意路径不能有中文。 在cmd中命令看看是否安装正确，出现：&#xA;git version git version 2.26.2.windows.1 hugo version Hugo Static Site Generator v0.72.0-8A7EF3CF windows/amd64 BuildDate: 2020-05-31T12:08:42Z 提示安装路径正确。&#xA;安装好后，再在其它盘创建一个根站点，假如命名为###。&#xA;hugo new site ### 然后在###文件中就会得到&#xA;这些文件。&#xA;用cd命令打开themes文件，在hugo主题中找一个主题，比如我找的charaka-hugo-theme主题。在cmd中命令如下：&#xA;cd themes git clone https://github.com/natarajmb/charaka-hugo-theme.git 下载好主题包后，把themes中的主题包文件复制覆盖到原###中的根文件中。&#xA;config原配置文件如下：&#xA;baseurl = &amp;#34;https://example.com&amp;#34;（填你的github博客域名） languageCode = &amp;#34;en&amp;#34;（改成ZH-CN） title = &amp;#34;Charaka&amp;#34;（自己可以改成自己喜欢的博客名称） theme = &amp;#34;charaka-hugo-theme&amp;#34; copyright = &amp;#34;&amp;amp;copy; &amp;lt;a href=\&amp;#34;https://github.com/natarajmb\&amp;#34;&amp;gt;Nataraj Basappa&amp;lt;/a&amp;gt; 2018&amp;#34;（这里可以更改为你的连接和申明） disqusShortname = &amp;#34;&amp;#34;（disqus评论用，不过我改成了valine评论系统） googleAnalytics = &amp;#34;&amp;#34;(谷歌分析) [params] [author] name = &amp;#34;Nataraj Basappa&amp;#34; homepage = &amp;#34;https://natarajmb.</description>
     </item>
-    
     <item>
       <title>为什么选择hugo搭建我的博客</title>
       <link>https://www.zaqizaba.xyz/posts/%E4%B8%BA%E4%BB%80%E4%B9%88%E9%80%89%E6%8B%A9hugo%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/</link>
       <pubDate>Fri, 29 May 2020 19:33:55 +0800</pubDate>
-      
       <guid>https://www.zaqizaba.xyz/posts/%E4%B8%BA%E4%BB%80%E4%B9%88%E9%80%89%E6%8B%A9hugo%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/</guid>
       <description>为什么我会选择hugo写文章，主要原因是因为部署快速，没有那么多的复杂程序 1.简单明了 2.采用markdown语法写作 3.静态博客没有冗长的插件，打开网页比较快。 以后优点再看吧。</description>
     </item>
-    
   </channel>
 </rss>

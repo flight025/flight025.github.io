@@ -7,139 +7,70 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>EN</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://www.zaqizaba.xyz&#34;&gt;阿波尔的博客&lt;/a&gt; 2019-2023</copyright>
-    <lastBuildDate>Wed, 04 Oct 2023 00:08:48 +0800</lastBuildDate><atom:link href="https://www.zaqizaba.xyz/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 04 Oct 2023 00:08:48 +0800</lastBuildDate>
+    <atom:link href="https://www.zaqizaba.xyz/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>博客网站劫持恢复方法</title>
       <link>https://www.zaqizaba.xyz/posts/%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99%E5%8A%AB%E6%8C%81%E6%81%A2%E5%A4%8D%E6%96%B9%E6%B3%95/</link>
       <pubDate>Wed, 04 Oct 2023 00:08:48 +0800</pubDate>
-      
       <guid>https://www.zaqizaba.xyz/posts/%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99%E5%8A%AB%E6%8C%81%E6%81%A2%E5%A4%8D%E6%96%B9%E6%B3%95/</guid>
-      <description>从国庆开始，我打开博客网站，突然发现博客网站显示为这样：
-发现博客网站不能访问了。我第一时间想到是不是vercel出问题了，于是ping了下网站，发现是通的，但是无论如何，vercel的公共dns无疑都指向了反诈网站，也就是常说的网站dns劫持污染，很明显。vercel的dns上ip段找到能够用的网站ip很重要，发现ip段（76.76.xx.xx)其中的76.76.xx.xx还能用，于是想到了在域名解析中添加泛解析A记录指向ip76.76.xx.xx。
-之前的vercel提供的自定义域名A 记录和CNAME记录可以删了，再把域名泛解析A记录值添加在解析上就可以了：
-再次访问你的博客，你会发现博客可以访问了。ps：此ip还未被劫持，能够使用多久未知，还是建议网站备案。</description>
+      <description>从国庆开始，我打开博客网站，突然发现博客网站显示为这样：&#xA;发现博客网站不能访问了。我第一时间想到是不是vercel出问题了，于是ping了下网站，发现是通的，但是无论如何，vercel的公共dns无疑都指向了反诈网站，也就是常说的网站dns劫持污染，很明显。vercel的dns上ip段找到能够用的网站ip很重要，发现ip段（76.76.xx.xx)其中的76.76.xx.xx还能用，于是想到了在域名解析中添加泛解析A记录指向ip76.76.xx.xx。&#xA;之前的vercel提供的自定义域名A 记录和CNAME记录可以删了，再把域名泛解析A记录值添加在解析上就可以了：&#xA;再次访问你的博客，你会发现博客可以访问了。ps：此ip还未被劫持，能够使用多久未知，还是建议网站备案。</description>
     </item>
-    
     <item>
       <title>将hugo托管从github迁移到vercel</title>
       <link>https://www.zaqizaba.xyz/posts/%E5%B0%86%E6%89%98%E7%AE%A1%E4%BB%8Egithub%E8%BF%81%E7%A7%BB%E5%88%B0vercel/</link>
       <pubDate>Sat, 05 Feb 2022 09:19:47 +0800</pubDate>
-      
       <guid>https://www.zaqizaba.xyz/posts/%E5%B0%86%E6%89%98%E7%AE%A1%E4%BB%8Egithub%E8%BF%81%E7%A7%BB%E5%88%B0vercel/</guid>
-      <description>vercel是一个站点托管平台，类似于GitHub的托管平台。在vercel 官网上有其详细的介绍。
-1.为什么我会弃用github而选用vercel 这里有二点原因：1.github托管的域名访问速度有点着急，vercel比github以及其它在无备案托管平台上我认为算是最快的。2.可以从github一键导入静态博客文件到vercel且支持个人自定义域名，而且上传博客文章比github要稳，可以隐藏公开仓库。
-2.使用vercel开始进行hugo静态博客部署 2.1从GitHub拉取 这里vercel支持github,gitlab,bitbucket这三个托管平台登录，拉取github登录：
-分别点击New Project》选择github上的静态博客仓库点击Import(导入）》Configure Project的FRAMEWORK PRESET我这里从“other”改为“hugo”,其它的都不需要改，然后点击“deploy（部署)”。
-接下来就是代表成功部署在vercel上了。
-2.2自定义域名 点击vercel》project》setting》domains，在domains输入自己的域名，并去域名商(DNSPod)控制台添加vercel的域名解析CNAME、A记录。
-在先前github pages上移除绑定的域名，并移除在DNS解析DNSPod上的CNAME记录。
-图/解除主机域名在github的绑定
-图/之前在github上的CNAME记录在DNSPod删除
-再把vercel的A、CNAME二条解析记录分别填到DNSPod域名解析上就行。
-这样一来，vercel的三个域名解析就成功了。
-2.3指定hugo博客版本号 你还可以指定HUGO_VERSION环境变量来添加自己特定的版本号，在vercel》project》setting》Environment Variables上添加，例如：
-基本上这就是hugo在vercel的部署了。
-参考：创建一个 Hugo 网站并使用 Vercel 进行部署</description>
+      <description>vercel是一个站点托管平台，类似于GitHub的托管平台。在vercel 官网上有其详细的介绍。&#xA;1.为什么我会弃用github而选用vercel 这里有二点原因：1.github托管的域名访问速度有点着急，vercel比github以及其它在无备案托管平台上我认为算是最快的。2.可以从github一键导入静态博客文件到vercel且支持个人自定义域名，而且上传博客文章比github要稳，可以隐藏公开仓库。&#xA;2.使用vercel开始进行hugo静态博客部署 2.1从GitHub拉取 这里vercel支持github,gitlab,bitbucket这三个托管平台登录，拉取github登录：&#xA;分别点击New Project》选择github上的静态博客仓库点击Import(导入）》Configure Project的FRAMEWORK PRESET我这里从“other”改为“hugo”,其它的都不需要改，然后点击“deploy（部署)”。&#xA;接下来就是代表成功部署在vercel上了。&#xA;2.2自定义域名 点击vercel》project》setting》domains，在domains输入自己的域名，并去域名商(DNSPod)控制台添加vercel的域名解析CNAME、A记录。&#xA;在先前github pages上移除绑定的域名，并移除在DNS解析DNSPod上的CNAME记录。&#xA;图/解除主机域名在github的绑定&#xA;图/之前在github上的CNAME记录在DNSPod删除&#xA;再把vercel的A、CNAME二条解析记录分别填到DNSPod域名解析上就行。&#xA;这样一来，vercel的三个域名解析就成功了。&#xA;2.3指定hugo博客版本号 你还可以指定HUGO_VERSION环境变量来添加自己特定的版本号，在vercel》project》setting》Environment Variables上添加，例如：&#xA;基本上这就是hugo在vercel的部署了。&#xA;参考：创建一个 Hugo 网站并使用 Vercel 进行部署</description>
     </item>
-    
     <item>
       <title>Hugo添加短代码</title>
       <link>https://www.zaqizaba.xyz/posts/hugo%E6%B7%BB%E5%8A%A0%E7%9F%AD%E4%BB%A3%E7%A0%81/</link>
       <pubDate>Mon, 15 Feb 2021 10:17:28 +0800</pubDate>
-      
       <guid>https://www.zaqizaba.xyz/posts/hugo%E6%B7%BB%E5%8A%A0%E7%9F%AD%E4%BB%A3%E7%A0%81/</guid>
-      <description>写在之前， hugo shortcodes中文意译即为雨果博客短代码，是一种先配置文件，通过在文章中插入短代码模式，来实现纯文字，歌曲，文章，个人社交文字转发，以及视频，播客等在个人博客上显示的一种方式。
-以下几个短代码的应用 上次我在“Hugo解决网易云音乐不显示问题”这篇博客中说了，开启HTML外链引用必须先添加：
-1.[markup.goldmark.renderer] 2.unsafe= true 然后自己再在网易云音乐引入 iframe实现在hugo博客上显示音乐。但是现在，有一种更好的方式，hugo提倡引入外链可以用短代码。
-方式为：新建/layouts/shortcodes/music.html，在其中引入：
-{{- $scratch := .Page.Scratch.Get &amp;#34;scratch&amp;#34; -}} &amp;lt;!-- require APlayer --&amp;gt; &amp;lt;link rel=&amp;#34;stylesheet&amp;#34; href=&amp;#34;https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css&amp;#34;&amp;gt; &amp;lt;style type=&amp;#34;text/css&amp;#34;&amp;gt;.dark-theme .aplayer{background:#212121}.dark-theme .aplayer.aplayer-withlist .aplayer-info{border-bottom-color:#5c5c5c}.dark-theme .aplayer.aplayer-fixed .aplayer-list{border-color:#5c5c5c}.dark-theme .aplayer .aplayer-body{background-color:#212121}.dark-theme .aplayer .aplayer-info{border-top-color:#212121}.dark-theme .aplayer .aplayer-info .aplayer-music .aplayer-title{color:#fff}.dark-theme .aplayer .aplayer-info .aplayer-music .aplayer-author{color:#fff}.dark-theme .aplayer .aplayer-info .aplayer-controller .aplayer-time{color:#eee}.dark-theme .aplayer .aplayer-info .aplayer-controller .aplayer-time .aplayer-icon path{fill:#eee}.dark-theme .aplayer .aplayer-list{background-color:#212121}.dark-theme .aplayer .aplayer-list::-webkit-scrollbar-thumb{background-color:#999}.dark-theme .aplayer .aplayer-list::-webkit-scrollbar-thumb:hover{background-color:#bbb}.dark-theme .aplayer .aplayer-list li{color:#fff;border-top-color:#666}.dark-theme .aplayer .aplayer-list li:hover{background:#4e4e4e}.dark-theme .aplayer .aplayer-list li.aplayer-list-light{background:#6c6c6c}.dark-theme .aplayer .</description>
+      <description>写在之前， hugo shortcodes中文意译即为雨果博客短代码，是一种先配置文件，通过在文章中插入短代码模式，来实现纯文字，歌曲，文章，个人社交文字转发，以及视频，播客等在个人博客上显示的一种方式。&#xA;以下几个短代码的应用 上次我在“Hugo解决网易云音乐不显示问题”这篇博客中说了，开启HTML外链引用必须先添加：&#xA;1.[markup.goldmark.renderer] 2.unsafe= true 然后自己再在网易云音乐引入 iframe实现在hugo博客上显示音乐。但是现在，有一种更好的方式，hugo提倡引入外链可以用短代码。&#xA;方式为：新建/layouts/shortcodes/music.html，在其中引入：&#xA;{{- $scratch := .Page.Scratch.Get &amp;#34;scratch&amp;#34; -}} &amp;lt;!-- require APlayer --&amp;gt; &amp;lt;link rel=&amp;#34;stylesheet&amp;#34; href=&amp;#34;https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css&amp;#34;&amp;gt; &amp;lt;style type=&amp;#34;text/css&amp;#34;&amp;gt;.dark-theme .aplayer{background:#212121}.dark-theme .aplayer.aplayer-withlist .aplayer-info{border-bottom-color:#5c5c5c}.dark-theme .aplayer.aplayer-fixed .aplayer-list{border-color:#5c5c5c}.dark-theme .aplayer .aplayer-body{background-color:#212121}.dark-theme .aplayer .aplayer-info{border-top-color:#212121}.dark-theme .aplayer .aplayer-info .aplayer-music .aplayer-title{color:#fff}.dark-theme .aplayer .aplayer-info .aplayer-music .aplayer-author{color:#fff}.dark-theme .aplayer .aplayer-info .aplayer-controller .aplayer-time{color:#eee}.dark-theme .aplayer .aplayer-info .aplayer-controller .aplayer-time .aplayer-icon path{fill:#eee}.dark-theme .aplayer .aplayer-list{background-color:#212121}.dark-theme .aplayer .aplayer-list::-webkit-scrollbar-thumb{background-color:#999}.dark-theme .aplayer .aplayer-list::-webkit-scrollbar-thumb:hover{background-color:#bbb}.dark-theme .aplayer .aplayer-list li{color:#fff;border-top-color:#666}.dark-theme .aplayer .aplayer-list li:hover{background:#4e4e4e}.dark-theme .aplayer .aplayer-list li.aplayer-list-light{background:#6c6c6c}.dark-theme .aplayer .</description>
     </item>
-    
     <item>
       <title>CDN公共库的修改</title>
       <link>https://www.zaqizaba.xyz/posts/cdn%E5%85%AC%E5%85%B1%E5%BA%93%E7%9A%84%E4%BF%AE%E6%94%B9/</link>
       <pubDate>Sat, 02 Jan 2021 13:51:50 +0800</pubDate>
-      
       <guid>https://www.zaqizaba.xyz/posts/cdn%E5%85%AC%E5%85%B1%E5%BA%93%E7%9A%84%E4%BF%AE%E6%94%B9/</guid>
-      <description>博客有一段时间加载很慢，打开chrome的控制台显示这样：
-网站有几处错误和警告，加载这些失效和错误资源限制了网页加载速度。
-&amp;lt;link rel=&amp;#34;stylesheet&amp;#34; href=&amp;#34;{{ $scratch.Get &amp;#34;baseURL&amp;#34; }}/css/styles.css&amp;#34;&amp;gt; &amp;lt;link rel=&amp;#34;stylesheet&amp;#34; href=&amp;#34;https://use.fontawesome.com/releases/v5.2.0/css/all.css&amp;#34; integrity=&amp;#34;sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ&amp;#34; crossorigin=&amp;#34;anonymous&amp;#34;&amp;gt; &amp;lt;script src=&amp;#34;https://code.jquery.com/jquery-3.3.1.js&amp;#34; integrity=&amp;#34;sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=&amp;#34; crossorigin=&amp;#34;anonymous&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; 这些是错误和失效的公共CDN，以及警告链接，一般这种情况是CDN公共库网站失效了，导致JS,CSS资源加载缓慢错误。这时就应该找一个加速CDN库了。这里我推荐奇虎360CDN公共库和jsdelivr公共库，找到相应的CSS.js格式换成这些公共CDN，但是JS,CSS资源在公共CDN安全容易受到攻击，这时需要SRI，SRI生成可以在SRI Hash Generator这网站生成相应的哈希函数。启用 SRI 策略后，浏览器会对资源进行 CORS 校验，这就要求被请求的资源必须同域，或配置 Access-Control-Allow-Origin 响应头和添加crossorigin=&amp;quot;anonymous&amp;quot; 这个属性。
-改好后上传GitHub，再打开网站控制台看看。
-all.css静态文件由30s加载时间下降到13ms,大大的减少了网站加载时间，网页速度得到提升。
-这里我要感谢@怡红公子 提供公共CDN资源库。</description>
+      <description>博客有一段时间加载很慢，打开chrome的控制台显示这样：&#xA;网站有几处错误和警告，加载这些失效和错误资源限制了网页加载速度。&#xA;&amp;lt;link rel=&amp;#34;stylesheet&amp;#34; href=&amp;#34;{{ $scratch.Get &amp;#34;baseURL&amp;#34; }}/css/styles.css&amp;#34;&amp;gt; &amp;lt;link rel=&amp;#34;stylesheet&amp;#34; href=&amp;#34;https://use.fontawesome.com/releases/v5.2.0/css/all.css&amp;#34; integrity=&amp;#34;sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ&amp;#34; crossorigin=&amp;#34;anonymous&amp;#34;&amp;gt; &amp;lt;script src=&amp;#34;https://code.jquery.com/jquery-3.3.1.js&amp;#34; integrity=&amp;#34;sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=&amp;#34; crossorigin=&amp;#34;anonymous&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; 这些是错误和失效的公共CDN，以及警告链接，一般这种情况是CDN公共库网站失效了，导致JS,CSS资源加载缓慢错误。这时就应该找一个加速CDN库了。这里我推荐奇虎360CDN公共库和jsdelivr公共库，找到相应的CSS.js格式换成这些公共CDN，但是JS,CSS资源在公共CDN安全容易受到攻击，这时需要SRI，SRI生成可以在SRI Hash Generator这网站生成相应的哈希函数。启用 SRI 策略后，浏览器会对资源进行 CORS 校验，这就要求被请求的资源必须同域，或配置 Access-Control-Allow-Origin 响应头和添加crossorigin=&amp;quot;anonymous&amp;quot; 这个属性。&#xA;改好后上传GitHub，再打开网站控制台看看。&#xA;all.css静态文件由30s加载时间下降到13ms,大大的减少了网站加载时间，网页速度得到提升。&#xA;这里我要感谢@怡红公子 提供公共CDN资源库。</description>
     </item>
-    
     <item>
       <title>如何在主题中添加文章归档</title>
       <link>https://www.zaqizaba.xyz/posts/%E5%A6%82%E4%BD%95%E5%9C%A8%E4%B8%BB%E9%A2%98%E4%B8%AD%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E5%BD%92%E6%A1%A3/</link>
       <pubDate>Sat, 04 Jul 2020 20:14:29 +0800</pubDate>
-      
       <guid>https://www.zaqizaba.xyz/posts/%E5%A6%82%E4%BD%95%E5%9C%A8%E4%B8%BB%E9%A2%98%E4%B8%AD%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E5%BD%92%E6%A1%A3/</guid>
-      <description>原来的主题模板是不带文章归档的，但是经过一番折腾。终于给主题添加了归档。😜 现在就说说是如何添加归档的。
-1.config配置 config可以配置文件图标，在config中添加配置如下：
-打开临时预览网页http://localhost:1313/查看，可以看到归档图标，但是点击没有反应。。。
-2.archives文件的创建和html文件格式 起先，我想到了关联about的_index.md文件,既然about是&amp;quot;关于&amp;quot;链接的来显示页面的。那我何不创建一个关联archives的_index.md文件呢。于是我创建了index.md文件。用typora写了archives页面归档链接，看看能不能显示，输入http://localhost:1313/查看，还是不能显示。我以为.md上传github就可以显示为html。看来不是这么回事。。。
-折腾了一会儿。在layouts文件夹中找到了about的html文件，似乎是要添加html文件。emmm&amp;hellip;(⊙﹏⊙)，于是我把archives.md用typora转换成html文件，放在了layouts文件夹中，再打开http://localhost:1313临时查看，发现归档文章可以访问了。确定了归档.md的确需要转换成html文件放在layouts文件夹中才能访问。
-3.后续注意及存在问题 ​ 注意：1.转换成html文件后，在html用partial引用页面. 存在的问题：1.归档文章必须得自己添加超链接，不能自动更新，很麻烦2.主题页面背景颜色和归档文章颜色不一致。
-2021.1.26号更新。基本上上面的方法是很麻烦的。现在我找了更好的归档办法，不再需要自己手动更新了。以前我更新归档是通过添加文章超链接archives.md文件再转换成为html格式，来实现归档的。但是现在发现archives.html可以引用single来添加文章日期归档时间代码来实现，只要自己每次更新.md文章，文章便会自动更新在归档年月日中。这里我参考了这篇文章：神秘极客的博文《为hugo添加归档页面》。</description>
+      <description>原来的主题模板是不带文章归档的，但是经过一番折腾。终于给主题添加了归档。😜 现在就说说是如何添加归档的。&#xA;1.config配置 config可以配置文件图标，在config中添加配置如下：&#xA;打开临时预览网页http://localhost:1313/查看，可以看到归档图标，但是点击没有反应。。。&#xA;2.archives文件的创建和html文件格式 起先，我想到了关联about的_index.md文件,既然about是&amp;quot;关于&amp;quot;链接的来显示页面的。那我何不创建一个关联archives的_index.md文件呢。于是我创建了index.md文件。用typora写了archives页面归档链接，看看能不能显示，输入http://localhost:1313/查看，还是不能显示。我以为.md上传github就可以显示为html。看来不是这么回事。。。&#xA;折腾了一会儿。在layouts文件夹中找到了about的html文件，似乎是要添加html文件。emmm&amp;hellip;(⊙﹏⊙)，于是我把archives.md用typora转换成html文件，放在了layouts文件夹中，再打开http://localhost:1313临时查看，发现归档文章可以访问了。确定了归档.md的确需要转换成html文件放在layouts文件夹中才能访问。&#xA;3.后续注意及存在问题 ​ 注意：1.转换成html文件后，在html用partial引用页面. 存在的问题：1.归档文章必须得自己添加超链接，不能自动更新，很麻烦2.主题页面背景颜色和归档文章颜色不一致。&#xA;2021.1.26号更新。基本上上面的方法是很麻烦的。现在我找了更好的归档办法，不再需要自己手动更新了。以前我更新归档是通过添加文章超链接archives.md文件再转换成为html格式，来实现归档的。但是现在发现archives.html可以引用single来添加文章日期归档时间代码来实现，只要自己每次更新.md文章，文章便会自动更新在归档年月日中。这里我参考了这篇文章：神秘极客的博文《为hugo添加归档页面》。</description>
     </item>
-    
     <item>
       <title>Hugo解决网易云音乐不显示问题</title>
       <link>https://www.zaqizaba.xyz/posts/hugo%E8%A7%A3%E5%86%B3%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90%E4%B8%8D%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/</link>
       <pubDate>Thu, 25 Jun 2020 12:28:22 +0800</pubDate>
-      
       <guid>https://www.zaqizaba.xyz/posts/hugo%E8%A7%A3%E5%86%B3%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90%E4%B8%8D%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/</guid>
-      <description>这个问题，是我今天在“关于”页面添加网易云音乐发现的。具体到问题就是HTML文件不能在博客上显示。 我在“关于”页面上添加网易云音乐，上传了几次。发现还是没有网易云音乐，我就觉得纳闷了。
-于是我问了关于hugo建站的群，有人说看“关于”网页源代码有没有这个“html代码“。 打开关于页面，看到了这行代码不是原网易云音乐，显示为“!&amp;ndash; raw HTML omitted &amp;ndash;“。虽然不知道为什么会显示为这样，但我顺藤摸瓜，在Google搜索关于显示这个代码的原因。
-​ 在hugo论坛页面我到了原因，原来在hugo 0.60.0的版本中，为了安全，html文件改用Goldmark。 在页面中，解决办法也给出了，即开启不安全模式，在config.toml站点配置文件中，添加这二行代码：
-[markup.goldmark.renderer] unsafe= true 完成打开http://localhost:1313/预览页面，此时就可以看到在原来的位置添加的网易云音乐了。
-这样就解决了网易云音乐不显示的问题😀。 还有， 今天端午节，祝大家节日快乐。💖😀
-网页参考：1.hugo论坛解决html文件不显示解决办法</description>
+      <description>这个问题，是我今天在“关于”页面添加网易云音乐发现的。具体到问题就是HTML文件不能在博客上显示。 我在“关于”页面上添加网易云音乐，上传了几次。发现还是没有网易云音乐，我就觉得纳闷了。&#xA;于是我问了关于hugo建站的群，有人说看“关于”网页源代码有没有这个“html代码“。 打开关于页面，看到了这行代码不是原网易云音乐，显示为“!&amp;ndash; raw HTML omitted &amp;ndash;“。虽然不知道为什么会显示为这样，但我顺藤摸瓜，在Google搜索关于显示这个代码的原因。&#xA;​ 在hugo论坛页面我到了原因，原来在hugo 0.60.0的版本中，为了安全，html文件改用Goldmark。 在页面中，解决办法也给出了，即开启不安全模式，在config.toml站点配置文件中，添加这二行代码：&#xA;[markup.goldmark.renderer] unsafe= true 完成打开http://localhost:1313/预览页面，此时就可以看到在原来的位置添加的网易云音乐了。&#xA;这样就解决了网易云音乐不显示的问题😀。 还有， 今天端午节，祝大家节日快乐。💖😀&#xA;网页参考：1.hugo论坛解决html文件不显示解决办法</description>
     </item>
-    
     <item>
       <title>Hugo博客搭建过程</title>
       <link>https://www.zaqizaba.xyz/posts/hugo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/</link>
       <pubDate>Mon, 22 Jun 2020 09:19:50 +0800</pubDate>
-      
       <guid>https://www.zaqizaba.xyz/posts/hugo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/</guid>
-      <description>在搭建之前。我参考了b站视频以及其它分享以hugo框架搭建静态博客的博主们的方法，搭建好了hugo为博客框架的静态博客。 现在，就具体说说是怎么搭建hugo静态博客的。
-1.下载一些相关的工具 在搭建博客之前，先准备好所要的软件材料。 1.git工具 2.github（创建博客存储上传文件） 3.hugo博客系统文件 4.用它写作的typora 5.以及搭配typora的PicGo图床工具
-2.环境变量的设置以及配置站点文件 下载好git工具和hugo博客系统文件，然后设置环境变量。 以win10为例，在搜索栏中。输入path，找到编辑系统环境变量。
-找到hugo下载的所在文件目录，复制到PATH中。注意路径不能有中文。 在cmd中命令看看是否安装正确，出现：
-git version git version 2.26.2.windows.1 hugo version Hugo Static Site Generator v0.72.0-8A7EF3CF windows/amd64 BuildDate: 2020-05-31T12:08:42Z 提示安装路径正确。
-安装好后，再在其它盘创建一个根站点，假如命名为###。
-hugo new site ### 然后在###文件中就会得到
-这些文件。
-用cd命令打开themes文件，在hugo主题中找一个主题，比如我找的charaka-hugo-theme主题。在cmd中命令如下：
-cd themes git clone https://github.com/natarajmb/charaka-hugo-theme.git 下载好主题包后，把themes中的主题包文件复制覆盖到原###中的根文件中。
-config原配置文件如下：
-baseurl = &amp;#34;https://example.com&amp;#34;（填你的github博客域名） languageCode = &amp;#34;en&amp;#34;（改成ZH-CN） title = &amp;#34;Charaka&amp;#34;（自己可以改成自己喜欢的博客名称） theme = &amp;#34;charaka-hugo-theme&amp;#34; copyright = &amp;#34;&amp;amp;copy; &amp;lt;a href=\&amp;#34;https://github.com/natarajmb\&amp;#34;&amp;gt;Nataraj Basappa&amp;lt;/a&amp;gt; 2018&amp;#34;（这里可以更改为你的连接和申明） disqusShortname = &amp;#34;&amp;#34;（disqus评论用，不过我改成了valine评论系统） googleAnalytics = &amp;#34;&amp;#34;(谷歌分析) [params] [author] name = &amp;#34;Nataraj Basappa&amp;#34; homepage = &amp;#34;https://natarajmb.</description>
+      <description>在搭建之前。我参考了b站视频以及其它分享以hugo框架搭建静态博客的博主们的方法，搭建好了hugo为博客框架的静态博客。 现在，就具体说说是怎么搭建hugo静态博客的。&#xA;1.下载一些相关的工具 在搭建博客之前，先准备好所要的软件材料。 1.git工具 2.github（创建博客存储上传文件） 3.hugo博客系统文件 4.用它写作的typora 5.以及搭配typora的PicGo图床工具&#xA;2.环境变量的设置以及配置站点文件 下载好git工具和hugo博客系统文件，然后设置环境变量。 以win10为例，在搜索栏中。输入path，找到编辑系统环境变量。&#xA;找到hugo下载的所在文件目录，复制到PATH中。注意路径不能有中文。 在cmd中命令看看是否安装正确，出现：&#xA;git version git version 2.26.2.windows.1 hugo version Hugo Static Site Generator v0.72.0-8A7EF3CF windows/amd64 BuildDate: 2020-05-31T12:08:42Z 提示安装路径正确。&#xA;安装好后，再在其它盘创建一个根站点，假如命名为###。&#xA;hugo new site ### 然后在###文件中就会得到&#xA;这些文件。&#xA;用cd命令打开themes文件，在hugo主题中找一个主题，比如我找的charaka-hugo-theme主题。在cmd中命令如下：&#xA;cd themes git clone https://github.com/natarajmb/charaka-hugo-theme.git 下载好主题包后，把themes中的主题包文件复制覆盖到原###中的根文件中。&#xA;config原配置文件如下：&#xA;baseurl = &amp;#34;https://example.com&amp;#34;（填你的github博客域名） languageCode = &amp;#34;en&amp;#34;（改成ZH-CN） title = &amp;#34;Charaka&amp;#34;（自己可以改成自己喜欢的博客名称） theme = &amp;#34;charaka-hugo-theme&amp;#34; copyright = &amp;#34;&amp;amp;copy; &amp;lt;a href=\&amp;#34;https://github.com/natarajmb\&amp;#34;&amp;gt;Nataraj Basappa&amp;lt;/a&amp;gt; 2018&amp;#34;（这里可以更改为你的连接和申明） disqusShortname = &amp;#34;&amp;#34;（disqus评论用，不过我改成了valine评论系统） googleAnalytics = &amp;#34;&amp;#34;(谷歌分析) [params] [author] name = &amp;#34;Nataraj Basappa&amp;#34; homepage = &amp;#34;https://natarajmb.</description>
     </item>
-    
     <item>
       <title>为什么选择hugo搭建我的博客</title>
       <link>https://www.zaqizaba.xyz/posts/%E4%B8%BA%E4%BB%80%E4%B9%88%E9%80%89%E6%8B%A9hugo%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/</link>
       <pubDate>Fri, 29 May 2020 19:33:55 +0800</pubDate>
-      
       <guid>https://www.zaqizaba.xyz/posts/%E4%B8%BA%E4%BB%80%E4%B9%88%E9%80%89%E6%8B%A9hugo%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/</guid>
       <description>为什么我会选择hugo写文章，主要原因是因为部署快速，没有那么多的复杂程序 1.简单明了 2.采用markdown语法写作 3.静态博客没有冗长的插件，打开网页比较快。 以后优点再看吧。</description>
     </item>
-    
     <item>
       <title>Getting Started with Hugo</title>
       <link>https://www.zaqizaba.xyz/posts/hugoisforlovers/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
       <guid>https://www.zaqizaba.xyz/posts/hugoisforlovers/</guid>
-      <description>Step 1. Install Hugo Goto hugo releases and download the appropriate version for your os and architecture.
-Save it somewhere specific as we will be using it in the next step.
-More complete instructions are available at installing hugo
-Step 2. Build the Docs Hugo has its own example site which happens to also be the documentation site you are reading right now.
-Follow the following steps:
-Clone the hugo repository Go into the repo Run hugo in server mode and build the docs Open your browser to http://localhost:1313 Corresponding pseudo commands:</description>
+      <description>Step 1. Install Hugo Goto hugo releases and download the appropriate version for your os and architecture.&#xA;Save it somewhere specific as we will be using it in the next step.&#xA;More complete instructions are available at installing hugo&#xA;Step 2. Build the Docs Hugo has its own example site which happens to also be the documentation site you are reading right now.&#xA;Follow the following steps:&#xA;Clone the hugo repository Go into the repo Run hugo in server mode and build the docs Open your browser to http://localhost:1313 Corresponding pseudo commands:</description>
     </item>
-    
   </channel>
 </rss>
