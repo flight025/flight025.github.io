@@ -53,10 +53,6 @@ MathJax = {
 
 
 
-<script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/jquery/3.6.0/jquery.min.js"></script>
-<link rel="stylesheet" href="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/fancybox/3.5.7/jquery.fancybox.min.css" />
-<script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/fancybox/3.5.7/jquery.fancybox.min.js"></script>
-
 
 
 
@@ -142,32 +138,14 @@ MathJax = {
     <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/f7b00124-1290-4b9e-a3e9-a75a41922aa3.png" style="zoom:150%;" />
 <p>从国庆开始，我打开博客网站，突然发现博客网站显示为这样：</p>
 <p>
-<div class="post-img-view">
-<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/%25E6%258D%2595%25E8%258E%25B71.PNG">
-<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/%25E6%258D%2595%25E8%258E%25B71.PNG" alt=""  />
-</a>
-</div>
-
 </p>
 <p>发现博客网站不能访问了。我第一时间想到是不是vercel出问题了，于是ping了下网站，发现是通的，但是无论如何，vercel的公共dns无疑都指向了反诈网站，也就是常说的网站dns劫持污染，很明显。vercel的dns上ip段找到能够用的网站ip很重要，发现ip段（76.76.xx.xx)其中的76.76.xx.xx还能用，于是想到了在域名解析中添加泛解析A记录指向ip76.76.xx.xx。</p>
 <p>之前的vercel提供的自定义域名A 记录和CNAME记录可以删了，再把域名泛解析A记录值添加在解析上就可以了：</p>
 <p>
-<div class="post-img-view">
-<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/76.76.21.21.PNG">
-<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/76.76.21.21.PNG" alt=""  />
-</a>
-</div>
-
 </p>
 <p>再次访问你的博客，你会发现博客可以访问了。ps：此ip还未被劫持，能够使用多久未知，还是建议网站备案。</p>
 <hr>
 <p>
-<div class="post-img-view">
-<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/latest">
-<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/latest" alt="Bird | Wookieepedia | Fandom"  />
-</a>
-</div>
-
 </p>
 
   </div>
