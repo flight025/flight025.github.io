@@ -53,6 +53,10 @@ MathJax = {
 
 
 
+<script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/jquery/3.6.0/jquery.min.js"></script>
+<link rel="stylesheet" href="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/fancybox/3.5.7/jquery.fancybox.min.css" />
+<script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
 
 
 
@@ -116,7 +120,7 @@ MathJax = {
               
                 <a href="https://twitter.com/666GXF" rel="me">
                   <span class="icon">
-                    <i class="fa-brands fa-x-twitter"></i>
+                    <i class="fab fa-twitter"></i>
                   </span>
                 </a>
               
@@ -136,6 +140,12 @@ MathJax = {
   <h1 class="subtitle is-size-4-mobile is-size-3-desktop">图片在博客中的显示形式</h1>
   <div class="content">
     <p>
+<div class="post-img-view">
+<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/bejson.jpg">
+<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/bejson.jpg" alt="image"  />
+</a>
+</div>
+
 </p>
 <p>图片在博客显示各式各样，以美国超人气动画<a href="https://www.rickandmorty.com/">《Rick and Morty》</a>图片为例，现在让我一一道来。</p>
 <h1 id="1插入本地图片">1.插入本地图片</h1>
@@ -143,10 +153,22 @@ MathJax = {
 <h2 id="11本地路径">1.1本地路径</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>！[Rick and Morty](/images/Rick and Morty.jpg)
 </span></span></code></pre></div><p>
+<div class="post-img-view">
+<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick%20and%20Morty.jpg">
+<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick%20and%20Morty.jpg" alt="Rick and Morty"  />
+</a>
+</div>
+
 </p>
 <h2 id="12相对路径">1.2相对路径</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>！[Rick and Morty](Rick and Morty.jpg)
 </span></span></code></pre></div><p>
+<div class="post-img-view">
+<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick%2520and%2520Morty.jpg">
+<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick%2520and%2520Morty.jpg" alt="Rick and Morty"  />
+</a>
+</div>
+
 </p>
 <h1 id="2上传到对象存储cos">2.上传到对象存储COS</h1>
 <h2 id="21带图片的文字链接">2.1带图片的文字链接</h2>
@@ -164,6 +186,12 @@ MathJax = {
 <h2 id="251悬浮文字说明">2.5.1悬浮文字说明</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>![Rick and Morty](https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick%2520and%2520Morty.jpg &#34;Rick and Morty&#34;)
 </span></span></code></pre></div><p>
+<div class="post-img-view">
+<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick%2520and%2520Morty.jpg">
+<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick%2520and%2520Morty.jpg" alt="Rick and Morty"  title="Rick and Morty" />
+</a>
+</div>
+
 </p>
 <h2 id="261图片文字说明之一">2.6.1图片文字说明之一</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>| ![Rick and Morty](https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick%2520and%2520Morty.jpg) | 
@@ -173,6 +201,12 @@ MathJax = {
 <thead>
 <tr>
 <th style="text-align:center">
+<div class="post-img-view">
+<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick%2520and%2520Morty.jpg">
+<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick%2520and%2520Morty.jpg" alt="Rick and Morty"  />
+</a>
+</div>
+
 </th>
 </tr>
 </thead>
@@ -208,6 +242,12 @@ MathJax = {
 <h2 id="28添加动图">2.8添加动图</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>![rick and morty](https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/rick%20and%20morty.gif)
 </span></span></code></pre></div><p>
+<div class="post-img-view">
+<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/rick%20and%20morty.gif">
+<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/rick%20and%20morty.gif" alt="rick and morty"  />
+</a>
+</div>
+
 </p>
 <h1 id="3多图片处理方式">3.多图片处理方式</h1>
 <h2 id="31html并列">3.1HTML并列</h2>
@@ -312,6 +352,59 @@ MathJax = {
 <p>最后，就是插入图片轮播的方式了。这里，最终我还是参考了小球飞鱼的文章<a href="https://mantyke.icu/posts/2021/cf2cf0fb/">《在文章中插入轮播图片》</a>，之前。引入<a href="https://getbootstrap.com/">Bootstrap</a>尝试了一下图片轮播，是可以实现轮播效果，但是问题是引入了Bootstrap的CSS会导致文章页面背景色出现问题。所以还是决定用小球飞鱼写的文章方法，不过我看这个轮播，这种方式是基于<a href="https://3.swiper.com.cn/">swiper</a>的滑动插件引入而成，所以。这个和Bootstrap轮播效果比起来各有千秋，没有谁更好更差的争论。过程我就不描述了，引入后的shortcode是这种表现形式：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>{/{&lt; <span style="color:#f92672">imgloop</span> <span style="color:#960050;background-color:#1e0010">&#34;</span><span style="color:#a6e22e">URL1</span><span style="color:#960050;background-color:#1e0010">,</span><span style="color:#a6e22e">URL2</span><span style="color:#960050;background-color:#1e0010">,</span><span style="color:#a6e22e">URL3</span><span style="color:#960050;background-color:#1e0010">,</span><span style="color:#a6e22e">URL4</span><span style="color:#960050;background-color:#1e0010">,</span><span style="color:#a6e22e">URL5</span><span style="color:#960050;background-color:#1e0010">&#34;</span> &gt;}/}(左右斜杠去掉就行)
 </span></span></code></pre></div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
+    
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            
+            
+            <div class="swiper-slide">
+                <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick%20and%20Morty.jpg" alt="">
+            </div>
+            
+            <div class="swiper-slide">
+                <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Morty.jpg" alt="">
+            </div>
+            
+            <div class="swiper-slide">
+                <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Morty2.jpg" alt="">
+            </div>
+            
+            <div class="swiper-slide">
+                <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick.jpg" alt="">
+            </div>
+            
+            <div class="swiper-slide">
+                <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick2.png" alt="">
+            </div>
+            
+        </div>
+        
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
+     
+     <script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+        
+        autoHeight: true,
+        
+        keyboardControl : true,
+        
+        mousewheelControl : true,
+        
+        
+        
+        lazyLoading : true,
+		lazyLoadingInPrevNext : true,
+		
+		loop : true,
+        });
+        </script>
+
 
 <p>效果可见。😂</p>
 <hr>
