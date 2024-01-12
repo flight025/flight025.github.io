@@ -1,49 +1,13 @@
- /* Comments */
- /* waline 全局变量*/
- :root{
-   /* 主题色 */
-   --waline-font-size: 14px !important;
-   --waline-theme-color: #f0485388 !important;
-   --waline-active-color: #f04853c4 !important;
-   --waline-bgcolor-light: #FAF9F7 !important;
-   --waline-border-color: rgba(5, 140, 150, 0.278) !important;
-   --waline-disable-bgcolor: #FAF9F7;
-   --waline-avatar-size:5rem !important;
-   --waline-m-avatar-size:calc(var(--waline-avatar-size)*9/13) !important; 
-   --waline-badge-color:rgba(5, 150, 148, 0.425) !important;
-   --waline-badge-font-size: 0.45em !important;
-   --waline-info-bgcolor:#f8f8f8 !important;
-   --waline-info-color:#999999ca !important;
-   --waline-info-font-size:0.625rem !important;
-   --waline-border: 1px solid var(--waline-border-color) !important;
-   --waline-avatar-radius: 50% !important;
- }
- .comment-waline{
-   /*
-   margin-top: 10px;
-   position:relative;
-   float: none;
-   display: inline;
-   padding: 10px;
-  */
-   background-color: #fff;
-   margin-top: 18px;
-   padding-top: 25px;
-   padding-bottom: 40px;
-   padding-left: 40px;
-   padding-right: 40px;
-   font-weight: 300;
-   line-height: 1.8;
-
-  /*
-   border-left: 1px solid rgba(0,0,0,0.1);
-   border-right: 1px solid rgba(0,0,0,0.1);
-  */
+.wl-editor {
+    background-image: url(https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/unnamed.jpg);
+    background-size: 10%;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-color: rgba(255, 255, 255, 0);
+    resize: vertical
 }
-.comment-underline {
-   display: inline-block;
-   margin-top: 10px;
-   margin-bottom: 0px;
-   width: 50px;
-   border-bottom: 3px solid #f0485388;
+.wl-editor:focus{
+    background-position-x: 800px;
+    background-position-y: 1000px;
+    transition: all 0.2s ease-in-out 0s;
 }
