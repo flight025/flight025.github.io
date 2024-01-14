@@ -1044,6 +1044,7 @@ title A Gantt Diagram
 <div class="container">
 <head>
   
+  <script src='//cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js'></script>
  <link rel="stylesheet" href="https://www.zaqizaba.xyz/css/waline.css" integrity="sha384-XQuHm2vSYrXzW5rmOTNd8O5I6+CE7EDq9QWroCSQcvO2e5O4wpTN5FaDujxh15CR" crossorigin="anonymous">
   
 </head>
@@ -1051,9 +1052,8 @@ title A Gantt Diagram
   
   <div id="waline"></div>
   <script type="module">
-    <script src='//cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js'></script>
 
-    init({
+   init({
       el: '#waline',
       serverURL: 'https://zaqizaba.xyz',
       emoji: 
@@ -1064,7 +1064,6 @@ title A Gantt Diagram
     });
   </script>
 </body>
-
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-FFW576XTMR"></script>
 <script>
