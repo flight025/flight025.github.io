@@ -31,6 +31,8 @@
     text-align: start
 }
 
+
+
 [dir=rtl] [data-waline] {
     direction: rtl
 }
@@ -331,6 +333,11 @@
 }
 
 .wl-editor {
+    background-image: url(https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/unnamed.jpg);
+    background-size: 10%;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-color: rgba(255, 255, 255, 0);
     position: relative;
     width: calc(100% - 1em);
     min-height: 8.75em;
@@ -341,12 +348,10 @@
     resize: vertical
 }
 
-.wl-editor {
-    background-size: 10%;
-    background-repeat: no-repeat;
-    background-position: right bottom;
-    background-color: rgba(255, 255, 255, 0);
-    resize: vertical
+.wl-editor:focus{
+    background-position-x: 800px;
+    background-position-y: 1000px;
+    transition: all 0.2s ease-in-out 0s;
 }
 
 .wl-editor,.wl-input {
