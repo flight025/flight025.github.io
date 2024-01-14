@@ -3,8 +3,8 @@
     --waline-white: #fff;
     --waline-light-grey: #999;
     --waline-dark-grey: #666;
-    --waline-theme-color: #72361c;
-    --waline-active-color: #a95516;
+    --waline-theme-color: #212529;
+    --waline-active-color: #ea868f;
     --waline-color: #444;
     --waline-bgcolor: #fff;
     --waline-bgcolor-light: #f8f8f8;
@@ -30,8 +30,6 @@
     font-size: var(--waline-font-size);
     text-align: start
 }
-
-
 
 [dir=rtl] [data-waline] {
     direction: rtl
@@ -333,7 +331,7 @@
 }
 
 .wl-editor {
-    background-image: url(https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/unnamed.jpg);
+    image: url(https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/unnamed.jpg);
     position: relative;
     width: calc(100% - 1em);
     min-height: 8.75em;
