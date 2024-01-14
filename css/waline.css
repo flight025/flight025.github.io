@@ -35,19 +35,6 @@
     direction: rtl
 }
 
-[data-waline] div {
-    height:150px;
-    width:900px;
-    box-align:center;
-}
-
-[data-waline] .center {
-    margin: auto;
-    width: 50%;
-    border: 3px solid greenyellow;
-    padding: 10px;
-}
-
 [data-waline] * {
     box-sizing: content-box;
     line-height: 1.75
@@ -370,7 +357,7 @@
 }
 
 .wl-editor,.wl-input {
-    max-width: 100%;
+    max-width: 70%;
     border: none;
     color: var(--waline-color);
     outline: 0;
