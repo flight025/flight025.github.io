@@ -35,6 +35,11 @@
     direction: rtl
 }
 
+[data-waline]div {
+    height: 200px;
+    width： auto;
+}
+
 [data-waline] * {
     box-sizing: content-box;
     line-height: 1.75
