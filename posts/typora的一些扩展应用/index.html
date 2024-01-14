@@ -1043,31 +1043,30 @@ title A Gantt Diagram
 </div>
 <div class="container">
 <head>
-  
-  <link
-    rel="stylesheet"
-    href="https://www.zaqizaba.xyz/css/waline.css"
-  />
-  
+
+
+<link rel="stylesheet" href="https://www.zaqizaba.xyz/css/waline.css" integrity="sha384-XQuHm2vSYrXzW5rmOTNd8O5I6+CE7EDq9QWroCSQcvO2e5O4wpTN5FaDujxh15CR" crossorigin="anonymous">
+
 </head>
 <body>
-  
-  <div id="waline"></div>
-  <script type="module">
-    import { init } from 'https://cdn.bootcdn.net/ajax/libs/waline/2.15.8/waline.js';
 
-    init({
-      el: '#waline',
+<div id="waline"></div>
+<script type="module">
+import { init } from 'https://cdn.bootcdn.net/ajax/libs/waline/2.15.8/waline.js'; 
+
+init({
+     el: '#waline',
       serverURL: 'https://zaqizaba.xyz',
+      locale,
       emoji: 
     [
     'https://gcore.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/',
     'https://gcore.jsdelivr.net/gh/sowhereso/waline-blobcatemojis@1.2/blobs/', 
   ],
+      texRenderer: false,
     });
   </script>
 </body>
-
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-FFW576XTMR"></script>
 <script>
