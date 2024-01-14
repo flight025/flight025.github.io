@@ -31,12 +31,6 @@
     text-align: start
 }
 
-[data-waline] div {
-    height:150px;
-    width:350px;
-    box-align: center;
-}
-
 [dir=rtl] [data-waline] {
     direction: rtl
 }
