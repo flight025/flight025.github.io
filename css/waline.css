@@ -29,6 +29,7 @@
 [data-waline] {
     font-size: var(--waline-font-size);
     text-align: start
+    width:65%;
 }
 
 [dir=rtl] [data-waline] {
@@ -357,7 +358,7 @@
 }
 
 .wl-editor,.wl-input {
-    max-width: 70%;
+    max-width: 100%;
     border: none;
     color: var(--waline-color);
     outline: 0;
