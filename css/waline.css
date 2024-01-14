@@ -36,8 +36,8 @@
 }
 
 [data-waline] div {
-    height: 50px;
-    width： 25%
+    height: 300px;
+    width： 100px
 }
 
 [data-waline] * {
