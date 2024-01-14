@@ -36,9 +36,16 @@
 }
 
 [data-waline] div {
-    height:350px;
-    width:1000px;
-    box-align: center;
+    height:150px;
+    width:900px;
+    box-align:center;
+}
+
+[data-waline] .center {
+    margin: auto;
+    width: 50%;
+    border: 3px solid greenyellow;
+    padding: 10px;
 }
 
 [data-waline] * {
