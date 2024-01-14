@@ -29,7 +29,12 @@
 [data-waline] {
     font-size: var(--waline-font-size);
     text-align: start
-    width:65%;
+}
+
+[data-waline] div {
+    height:750px;
+    width:900px;
+    box-align: center;
 }
 
 [dir=rtl] [data-waline] {
