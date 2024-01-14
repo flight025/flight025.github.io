@@ -35,9 +35,9 @@
     direction: rtl
 }
 
-[data-waline]div {
+[data-waline] div {
     height: 200px;
-    width： auto;
+    width： 50%
 }
 
 [data-waline] * {
