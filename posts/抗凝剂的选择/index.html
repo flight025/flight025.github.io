@@ -175,28 +175,24 @@ EDTA盐对血细胞形态、血小板计数影响很小，适用于血液学检�
 </div>
 <div class="container">
 <head>
-
-
+  
 <link rel="stylesheet" href="https://www.zaqizaba.xyz/css/waline.css" integrity="sha384-XQuHm2vSYrXzW5rmOTNd8O5I6+CE7EDq9QWroCSQcvO2e5O4wpTN5FaDujxh15CR" crossorigin="anonymous">
-
-
+  
 </head>
 <body>
+  
+  <div id="waline"></div>
+  <script type="module">
+    import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
 
-<div id="waline"></div>
-<script type="module">
-import { init } from 'https://cdn.bootcdn.net/ajax/libs/waline/2.15.8/waline.js';
-
-init({
-     el: '#waline',
+    init({
+      el: '#waline',
       serverURL: 'https://zaqizaba.xyz',
-      locale,
       emoji: 
     [
     'https://gcore.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/',
     'https://gcore.jsdelivr.net/gh/sowhereso/waline-blobcatemojis@1.2/blobs/', 
   ],
-      texRenderer: false,
     });
   </script>
 </body>
