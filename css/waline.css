@@ -301,6 +301,7 @@
   background: var(--waline-bgcolor-light);
 }
 .wl-editor {
+  background-image: url(https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/unnamed.jpg);
   position: relative;
   width: calc(100% - 1em);
   min-height: 8.75em;
@@ -309,14 +310,6 @@
   background: rgba(0, 0, 0, 0);
   font-size: 0.875em;
   resize: vertical;
-}
-.wl-editor {
-    background-image: url(https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/unnamed.jpg);
-    background-size: 10%;
-    background-repeat: no-repeat;
-    background-position: right bottom;
-    background-color: rgba(255, 255, 255, 0);
-    resize: vertical
 }
 .wl-editor:focus{
     background-position-x: 800px;
