@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="EN">
+<html lang="cn">
 <head><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -48,10 +48,6 @@ MathJax = {
 <script type="text/javascript" src="https://www.zaqizaba.xyz/js/jssocials.js"></script>
 
 
-
-<script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/jquery/3.6.0/jquery.min.js"></script>
-<link rel="stylesheet" href="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/fancybox/3.5.7/jquery.fancybox.min.css" />
-<script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/fancybox/3.5.7/jquery.fancybox.min.js"></script>
 
 
 
@@ -136,20 +132,8 @@ MathJax = {
   <div class="content">
     <p>博客有一段时间加载很慢，打开chrome的控制台显示这样：</p>
 <p>
-<div class="post-img-view">
-<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20210102140530995.png">
-<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20210102140530995.png" alt="image-20210102140530995"  />
-</a>
-</div>
-
 </p>
 <p>
-<div class="post-img-view">
-<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20210102145113671.png">
-<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20210102145113671.png" alt="image-20210102145113671"  />
-</a>
-</div>
-
 </p>
 <p>网站有几处错误和警告，加载这些失效和错误资源限制了网页加载速度。</p>
 <pre tabindex="0"><code>&lt;link rel=&#34;stylesheet&#34; href=&#34;{{ $scratch.Get &#34;baseURL&#34; }}/css/styles.css&#34;&gt;
@@ -160,23 +144,11 @@ integrity=&#34;sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54b
 </code></pre><p>这些是错误和失效的公共CDN，以及警告链接，一般这种情况是CDN公共库网站失效了，导致JS,CSS资源加载缓慢错误。这时就应该找一个加速CDN库了。这里我推荐<a href="https://cdn.baomitu.com/">奇虎360CDN公共库</a>和<a href="https://www.jsdelivr.com/">jsdelivr公共库</a>，找到相应的CSS.js格式换成这些公共CDN，但是JS,CSS资源在公共CDN安全容易受到攻击，这时需要SRI，SRI生成可以在<a href="https://www.srihash.org/">SRI Hash Generator</a>这网站生成相应的哈希函数。启用 SRI 策略后，浏览器会对资源进行 CORS 校验，这就要求被请求的资源必须同域，或配置 Access-Control-Allow-Origin 响应头和添加<code>crossorigin=&quot;anonymous&quot;</code> 这个属性。</p>
 <p>改好后上传GitHub，再打开网站控制台看看。</p>
 <p>
-<div class="post-img-view">
-<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20210102145007651.png">
-<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20210102145007651.png" alt=""  />
-</a>
-</div>
-
 </p>
 <p>all.css静态文件由30s加载时间下降到13ms,大大的减少了网站加载时间，网页速度得到提升。</p>
 <hr>
 <p>这里我要感谢@怡红公子 提供公共CDN资源库。</p>
 <p>
-<div class="post-img-view">
-<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/santorini-2707034_1920.jpg">
-<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/santorini-2707034_1920.jpg" alt="santorini"  />
-</a>
-</div>
-
 </p>
 
   </div>
