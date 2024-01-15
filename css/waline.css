@@ -301,7 +301,6 @@
   background: var(--waline-bgcolor-light);
 }
 .wl-editor {
-  background-image: url(https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/unnamed.jpg);
   position: relative;
   width: calc(100% - 1em);
   min-height: 8.75em;
