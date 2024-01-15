@@ -311,11 +311,6 @@
   font-size: 0.875em;
   resize: vertical;
 }
-.wl-editor:focus{
-    background-position-x: 800px;
-    background-position-y: 1000px;
-    transition: all 0.2s ease-in-out 0s;
-}
 .wl-preview {
   padding: 0 0.5em 0.5em;
 }
