@@ -29,10 +29,6 @@
   font-size: var(--waline-font-size);
   text-align: left;
 }
-[data-waline] * {
-  box-sizing: content-box;
-  line-height: 1.75;
-}
 [data-waline] p {
   color: var(--waline-color);
 }
@@ -102,10 +98,6 @@
   margin: 0;
 }
 [data-waline] ol,
-[data-waline] ul {
-  margin-left: 1.25em;
-  padding: 0;
-}
 [data-waline] input[type="checkbox"],
 [data-waline] input[type="radio"] {
   display: inline-block;
