@@ -14,7 +14,7 @@
       <link>https://www.zaqizaba.xyz/posts/%E8%A3%85%E4%BF%AEwaline/</link>
       <pubDate>Thu, 18 Jan 2024 10:09:08 +0800</pubDate>
       <guid>https://www.zaqizaba.xyz/posts/%E8%A3%85%E4%BF%AEwaline/</guid>
-      <description>博客评论系统用的waline，是基于valine改进而来的。由于valine早期有些安全问题等原因，所以我最后选择了waline。不过，我发现waline默认的界面和博客主题有些出入，所以决定装修下waline。&#xA;1.自定义css 这里的自定义css是相对于默认未修改的waline.css说的，在waline.css中,主题色修改前后：&#xA;主题色之前默认的色值： --waline-theme-color : #27ae60; --waline-active-color: #2ecc71; 主题色之后修改的色值： --waline-theme-color: #b7604b; --waline-active-color: #efa00d; 这样，waline评论的色值和博客色值接近，比原本默认的主题色相比，显得更符合博客主题色。&#xA;2.将博客评论大宽边和博客文章等宽 原博客的博客宽度框和博客文章宽度不一致，电脑端看上去是这样的：&#xA;和博客宽度形成了一个“⊥”的布局，自己在waline.css的修改了方框参数，始终不能达到和博客文章等宽效果，后来发现解决办法也很简单，也不需要在waline.css上修改方框参数。只需要在.../layouts/partials/disqus的html上加入标签：&#xA;div class=&amp;#34;container&amp;#34; 这样，waline评论便能和文章等宽了，再次查看waline评论：&#xA;还有一些waline.css可以自己高度定制，比如在评论中加入背景图片，修改方框文字内容等。不过，我主要的目的完成了，感兴趣的话再装修下。</description>
+      <description>博客评论系统用的waline，是基于valine改进而来的。由于valine早期有些安全问题等原因，所以我最后选择了waline。不过，我发现waline默认的界面和博客主题有些出入，所以决定装修下waline。&#xA;1.自定义css 这里的自定义css是相对于默认未修改的waline.css说的，在waline.css中,主题色修改前后：&#xA;主题色之前默认的色值： --waline-theme-color : #27ae60; --waline-active-color: #2ecc71; 主题色之后修改的色值： --waline-theme-color: #760411; --waline-active-color: #4a4a4a; 这样，waline评论的色值和博客色值接近，比原本默认的主题色相比，显得更符合博客主题色。&#xA;2.将博客评论大宽边和博客文章等宽 原博客的博客宽度框和博客文章宽度不一致，电脑端看上去是这样的：&#xA;和博客宽度形成了一个“⊥”的布局，自己在waline.css的修改了方框参数，始终不能达到和博客文章等宽效果，后来发现解决办法也很简单，也不需要在waline.css上修改方框参数。只需要在.../layouts/partials/disqus的html上加入标签：&#xA;div class=&amp;#34;container&amp;#34; 这样，waline评论便能和文章等宽了，再次查看waline评论：&#xA;还有一些waline.css可以自己高度定制，比如在评论中加入背景图片，修改方框文字内容等。不过，我主要的目的完成了，感兴趣的话再装修下。</description>
     </item>
   </channel>
 </rss>
