@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="EN">
+<head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+<title>vps实现流量访问并开启ipv6 | 阿波尔的博客</title>
+
+<link rel="stylesheet" href="https://www.zaqizaba.xyz/css/styles.css">
+<link rel="stylesheet" href="https://www.zaqizaba.xyz/css/fonts.css" integrity="nHA4sQes5N4kC/1rRzsd9KcxNPPEG1e4F7kjT3rg7mhweyYUuxGU985+SOHzZCsN" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" 
+integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+<script async src="https://cdn.staticfile.org/mermaid/8.8.2/mermaid.min.js"></script>
+<body></head>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/zenburn.min.css" crossorigin="anonymous" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script src="https://www.zaqizaba.xyz/js/highlight.js"></script>
+
+
+<html>
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.bootcdn.net/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js"></script>
+</html>
+
+
+<link type="text/css" rel="stylesheet" href="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/jsSocials/1.5.0/jssocials.css" />
+<link type="text/css" rel="stylesheet" href="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/jsSocials/1.5.0/jssocials-theme-minima.css" />
+<script type="text/javascript" src="https://www.zaqizaba.xyz/js/jssocials.js"></script>
+
+
+
+<script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/jquery/3.6.0/jquery.min.js"></script>
+<link rel="stylesheet" href="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/fancybox/3.5.7/jquery.fancybox.min.css" />
+<script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+
+
+
+
+
+
+
+<script>
+    
+    Array.from(document.getElementsByClassName('language-mermaid')).forEach(el => {
+        el.parentElement.outerHTML = `<div class="mermaid">${el.innerText}</div>`
+    })
+</script>
+<style>
+ 
+.mermaid svg {
+    display: block;
+    margin: auto;
+}
+</style>
+</body>
+
+
+<div class="container">
+    <nav class="navbar level">
+      <div class="navbar-brand">
+          <a class="nav-item" href="https://www.zaqizaba.xyz"><h1 class="title is-3">阿波尔的博客</h1></a>
+      </div>           
+      <div class="navbar-menu has-text-centered is-active">
+          <div class="navbar-end is-centered">
+              
+                <a href="https://www.zaqizaba.xyz/about" rel="me">
+                  <span class="icon">
+                    <i class="fas fa-info"></i>
+                  </span>
+                </a>
+              
+                <a href="https://www.zaqizaba.xyz/archives" rel="me">
+                  <span class="icon">
+                    <i class="fas fa-archive"></i>
+                  </span>
+                </a>
+              
+                <a href="https://www.zaqizaba.xyz/comments" rel="me">
+                  <span class="icon">
+                    <i class="fas fa-comment"></i>
+                  </span>
+                </a>
+              
+                <a href="https://github.com/flight025" rel="me">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                </a>
+              
+                <a href="https://www.zhihu.com/people/a-gan-jing-shen" rel="me">
+                  <span class="icon">
+                    <i class="fab fa-zhihu"></i>
+                  </span>
+                </a>
+              
+                <a href="https://twitter.com/666GXF" rel="me">
+                  <span class="icon">
+                    <i class="fab fa-twitter"></i>
+                  </span>
+                </a>
+              
+                <a href="https://www.zaqizaba.xyz/index.xml" rel="me">
+                  <span class="icon">
+                    <i class="fa fa-rss"></i>
+                  </span>
+                </a>
+              
+           </div>
+      </div>
+    </nav>
+  </div>
+
+<div class="container">
+  <h2 class="subtitle is-6">May 1, 2024</h2>
+  <h1 class="subtitle is-size-4-mobile is-size-3-desktop">vps实现流量访问并开启ipv6</h1>
+  <div class="content">
+    <p><img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/vps-servers.png" style="zoom:100%;" />vps即虚拟机，我用它实现了外网访问，并解锁了<strong>Netflix</strong>和<strong>disney+<strong>以及</strong>chatgpt</strong>的限制，以及搭建动态网站（全球主流博客wordpress等）。当然得益于脚本让我玩转vps，没这些可能我买vps的意愿要大打折扣。</p>
+<h1 id="1先准备必备的软件及vps">1.先准备必备的软件及vps</h1>
+<p>具体如下：</p>
+<blockquote>
+<p>一台能够访问vps、一个能访问vps的终端就行了。</p>
+</blockquote>
+<p>这里我用的是<a href="https://my.racknerd.com/aff.php?aff=11337">racknerd</a>的vps，只要是因为还算便宜，终端就是老物件<a href="https://www.xshell.com/zh/xshell/">xshell</a>，提倡还是买xshell正版吧，虽然我以前白嫖过，不过后来入正了。</p>
+<h1 id="2准备开始折腾">2.准备开始折腾</h1>
+<p>我这里买了两年的vps是2024新年季的活动。可以用信用卡支付，也可以用支付宝支付，甚至用bitcion支付也行。听国外论坛reddit讨论racknerd的老板代理其它vps有过跑路的经历，但是现在是转正规了，跑路风险依然有可能存在。还是建议购买vps如果有重要数据记得备份，以防万一。</p>
+
+<link rel="stylesheet" href=/css/hugo-easy-gallery.css />
+<div class="box" >
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img">
+      <img itemprop="thumbnail" src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/%E6%8D%95%E8%8E%B716.PNG" />
+    </div>
+    <a href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/%E6%8D%95%E8%8E%B716.PNG" itemprop="contentUrl"></a>
+      <figcaption><h4>vps客户区，最下面从左至右中文为“重启”“关机”“开机”“页面终端” 以及“控制面板”</h4>
+      </figcaption>
+  </figure>
+</div>
+
+<p>买了vps后，商家会发送vps的用户名和密码以及“控制面板”的用户名和密码到你的邮箱，vps的是用来登录ssh终端的，密码一般是22，这个可以在xshell中修改（具体可见<a href="https://moosdn.blogspot.com/2020/03/ssh.html">这个教程</a>）。而另外“控制面板”的用户名是唯一的，但是密码是可以修改的，“控制面板”我主要是vps安装脚本万一断联用来重装系统的。</p>
+<p>如果一切顺利，登录vps后会是这个界面：</p>
+
+
+<div class="box" >
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img">
+      <img itemprop="thumbnail" src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/%E6%8D%95%E8%8E%B717.PNG" />
+    </div>
+    <a href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/%E6%8D%95%E8%8E%B717.PNG" itemprop="contentUrl"></a>
+      <figcaption><h4>由于是演示图片，图中已修改端口号和添加了bbrplus</h4>
+      </figcaption>
+  </figure>
+</div>
+
+<h2 id="21安装bbr脚本">2.1安装bbr脚本</h2>
+<p>BBR是Google提出的拥塞控制算法，这里用来提示vps网速性能。我的vps系统是ubuntu20.04,这里我安装的是“爱生活bbr脚本”。首先你先要安装系统相应的安装命令：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scss" data-lang="scss"><span style="display:flex;"><span><span style="color:#f92672">sudo</span> <span style="color:#f92672">apt-get</span> <span style="color:#f92672">install</span> <span style="color:#f92672">wget</span> <span style="color:#960050;background-color:#1e0010">（</span><span style="color:#f92672">Debian</span><span style="color:#f92672">/</span><span style="color:#f92672">Ubuntu</span><span style="color:#960050;background-color:#1e0010">）</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">yum</span> <span style="color:#f92672">-</span><span style="color:#f92672">y</span> <span style="color:#f92672">install</span> <span style="color:#f92672">wget</span> <span style="color:#960050;background-color:#1e0010">（</span><span style="color:#f92672">CentOS</span><span style="color:#960050;background-color:#1e0010">）</span>
+</span></span></code></pre></div><p>注意看清系统再输入安装命令，接下来安装“爱生活bbr脚本”</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scss" data-lang="scss"><span style="display:flex;"><span><span style="color:#f92672">cd</span> <span style="color:#f92672">/</span><span style="color:#f92672">usr</span><span style="color:#f92672">/</span><span style="color:#f92672">src</span> <span style="color:#66d9ef">&amp;&amp;</span> <span style="color:#f92672">wget</span> <span style="color:#f92672">-</span><span style="color:#f92672">N</span> <span style="color:#f92672">--</span><span style="color:#f92672">no-check-certificate</span> <span style="color:#e6db74">&#34;https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh&#34;</span> <span style="color:#66d9ef">&amp;&amp;</span> <span style="color:#f92672">chmod</span> <span style="color:#f92672">+</span><span style="color:#f92672">x</span> <span style="color:#f92672">tcp</span><span style="color:#a6e22e">.sh</span> <span style="color:#66d9ef">&amp;&amp;</span> <span style="color:#a6e22e">.</span><span style="color:#f92672">/</span><span style="color:#f92672">tcp</span><span style="color:#a6e22e">.sh</span>
+</span></span></code></pre></div><p>先安装内核，再启用相应的加速，中间安装后会重启选择“yes”等几秒钟会连上。我这里安装的是bbrplus，成功后就可以看到提示：</p>
+<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/%25E6%258D%2595%25E8%258E%25B718.PNG" style="zoom:50%;" />
+<h2 id="22通过xray面板安装reality协议">2.2通过xray面板安装reality协议</h2>
+<p>这款xray是改版，算是比较适合小白的，而reality是xray团队推出的协议，具有消除服务端TLS指纹特征、保留TLS的前向保密性、支持指向支持<code>tls1.3</code>和<code>H2</code>的特征网站的特点。是Vless + Reality协议 + Vision流控模式。</p>
+<p>首先脚本安装xray面板改版：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scss" data-lang="scss"><span style="display:flex;"><span><span style="color:#f92672">bash</span> <span style="color:#f92672">&lt;(</span><span style="color:#f92672">curl</span> <span style="color:#f92672">-</span><span style="color:#f92672">Ls</span> <span style="color:#f92672">https</span><span style="color:#a6e22e">:</span><span style="color:#f92672">//</span><span style="color:#f92672">raw</span><span style="color:#a6e22e">.githubusercontent.com</span><span style="color:#f92672">/</span><span style="color:#f92672">FranzKafkaYu</span><span style="color:#f92672">/</span><span style="color:#f92672">x-ui</span><span style="color:#f92672">/</span><span style="color:#f92672">master</span><span style="color:#f92672">/</span><span style="color:#f92672">install</span><span style="color:#a6e22e">.sh</span><span style="color:#f92672">)</span>
+</span></span></code></pre></div><p>你可以默认选择一路跳过，xray面板会随机给你用户名、密码以及端口。或者你自己设置好，初次访问方式是<code>http://ip:端口</code>通过浏览器访问，选择<strong>reality协议+vision流控</strong>，由于我以前设置好了根路径因此输入<code>x-ui</code>查看再选择管理面板访问方式是<code>http://ip:端口/面板url根路径</code>访问：</p>
+<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/%25E6%258D%2595%25E8%258E%25B719.PNG" style="zoom:50%;" />
+<p>面板7选项提供临时登录界面设置如下（不知道磁盘比占为何这么高&hellip;）：</p>
+<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/%25E6%258D%2595%25E8%258E%25B721.PNG" style="zoom: 33%;" />
+<p>其它选项都是傻瓜式操作，唯独入站列表<strong>reality</strong>协议那里记得找支持<code>tls1.3</code>和<code>H2</code>特征的网站。然后就会得到一个vless协议的二维码，下载一个支持<strong>reality</strong>协议的软件输入就行了。</p>
+<h2 id="23安装warp-ipv6">2.3安装warp ipv6</h2>
+<p>我的vps只支持ipv4访问且ip不能访问国外流媒体网站和chatgpt等怎么办？这里我推荐fscarmen大的warp ipv6脚本，原理是通过优选warp ipv6池自动寻找一个和ipv4 ip所在地类似的warp ipv6，完成匹配。因为warp的开发商是大名鼎鼎的<strong>cloudflare</strong>，所以大型企业和流媒体视频网站防护基本上都是cloudflare，在这方面cloudflare可谓是独角兽企业。因此套warp ipv6很大机遇可以是视作原生ip，从而解锁流媒体和chatgpt等对ip要求严格的网站。注意这个脚本不支持Windows的vps以及部分低于debian和centos的特定系统，比如debian10,你升级或者换成centos或者ubuntu最新镜像系统就行了，除了这三个，其它系统不作推荐。</p>
+<p>操作如下，在ssh输入命令：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scss" data-lang="scss"><span style="display:flex;"><span><span style="color:#f92672">wget</span> <span style="color:#f92672">-</span><span style="color:#f92672">N</span> <span style="color:#f92672">https</span><span style="color:#a6e22e">:</span><span style="color:#f92672">//</span><span style="color:#f92672">gitlab</span><span style="color:#a6e22e">.com</span><span style="color:#f92672">/</span><span style="color:#f92672">fscarmen</span><span style="color:#f92672">/</span><span style="color:#f92672">warp</span><span style="color:#f92672">/-/</span><span style="color:#f92672">raw</span><span style="color:#f92672">/</span><span style="color:#f92672">main</span><span style="color:#f92672">/</span><span style="color:#f92672">menu</span><span style="color:#a6e22e">.sh</span> <span style="color:#66d9ef">&amp;&amp;</span> <span style="color:#f92672">bash</span> <span style="color:#f92672">menu</span><span style="color:#a6e22e">.sh</span> <span style="color:#f92672">[</span><span style="color:#f92672">option</span><span style="color:#f92672">]</span> <span style="color:#f92672">[</span><span style="color:#f92672">lisence</span><span style="color:#f92672">/</span><span style="color:#f92672">url</span><span style="color:#f92672">/</span><span style="color:#f92672">token</span><span style="color:#f92672">]</span>
+</span></span></code></pre></div><p>会出现如下提示：</p>
+<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/%25E6%258D%2595%25E8%258E%25B722.PNG" style="zoom:50%;" />
+<p>这里我选择2：<strong>为ipv4 only添加 WARP IPv6 网络接口</strong>，然后回车，其它都选择默认，唯独有一个选项选择优先级ip是<strong>ipv6</strong>，然后出现如下提示，代表刷warp ipv6成功了，你可以解锁Netflix、disney+和chatgpt的限制了。</p>
+<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/%25E6%258D%2595%25E8%258E%25B723.PNG" style="zoom:50%;" />
+<p>再次查看，你发现Netflix能访问了，vps商也从<strong>racknerd</strong>变成了<strong>cloudflare</strong>，当然这个得设置分流。网上也有教程。不然像我一样发现网速会变慢。如果想卸载脚本，请再次运行<code>warp [option] [lisence]</code>选择选项7就行了，这样就会恢复到原本racknerd的ipv4状态。</p>
+<p>其实vps不止这些，就像我前面说的可以搭建宝塔wordpress以及自建个人邮箱，还有通过vps学习linux命令等，要等你自己去探索。</p>
+<hr>
+<p>
+<div class="post-img-view">
+<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/View_of_Dallas_from_Reunion_Tower_August_2015_13.jpg">
+<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/View_of_Dallas_from_Reunion_Tower_August_2015_13.jpg" alt="达拉斯"  />
+</a>
+</div>
+
+</p>
+
+  </div>
+</div>
+<div class="container has-text-centered">
+    
+    <aside><div id="share"></div></aside>
+    <script type="text/javascript">
+        $("#share").jsSocials({
+            showLabel: false,
+            showCount: false,
+            shares: ["email", "twitter"]
+        });
+    </script>
+    
+    本作品采用<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>进行许可。
+</div>
+<div class="container">
+<head>
+  
+ <script src="https://cdn.bootcdn.net/ajax/libs/waline/2.15.8/waline.js"></script> 
+ <link rel="stylesheet" href="https://www.zaqizaba.xyz/css/waline.css" integrity="sha512-44KpFb59EmUgVzvSHOQyXcwdF10zf4h1slfJyRus0vcODfaWkKY55gQWBuYHdFj+gVHNrB+KQBotpteeF+1OAw==" crossorigin="anonymous">
+</head>
+<body>
+  
+  <div id="waline"></div><div id="waline" class="waline-container"></div>
+  <script>
+  Waline.init({
+      el: '#waline',
+      serverURL: 'https://zaqizaba.xyz',
+      emoji: 
+    [
+    'https://gcore.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/',
+    'https://cdn.jsdelivr.net/gh/norevi/waline-blobcatemojis@1.0/blobs/', 
+  ],
+    });
+  </script>
+</body>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FFW576XTMR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-FFW576XTMR');
+</script>
+
+
+
+<div class="container has-text-centered">
+<section class="section">
+    <p>&copy;<a href="https://www.zaqizaba.xyz">阿波尔的博客</a>2019-2024</p>
+  </div>
+</section>
