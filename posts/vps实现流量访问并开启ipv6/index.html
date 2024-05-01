@@ -137,7 +137,7 @@ MathJax = {
 <blockquote>
 <p>一台能够访问vps、一个能访问vps的终端就行了。</p>
 </blockquote>
-<p>这里我用的是<a href="https://my.racknerd.com/aff.php?aff=11337">racknerd</a>的vps，只要是因为还算便宜，终端就是老物件<a href="https://www.xshell.com/zh/xshell/">xshell</a>，提倡还是买xshell正版吧，虽然我以前白嫖过，不过后来入正了。</p>
+<p>这里我用的是<a href="https://my.racknerd.com/aff.php?aff=11337">racknerd</a>的vps，只因是还算便宜，终端就是老物件<a href="https://www.xshell.com/zh/xshell/">xshell</a>，提倡还是买xshell正版吧，虽然我以前白嫖过，不过后来入正了。</p>
 <h1 id="2准备开始折腾">2.准备开始折腾</h1>
 <p>我这里买了两年的vps是2024新年季的活动。可以用信用卡支付，也可以用支付宝支付，甚至用bitcion支付也行。听国外论坛reddit讨论racknerd的老板代理其它vps有过跑路的经历，但是现在是转正规了，跑路风险依然有可能存在。还是建议购买vps如果有重要数据记得备份，以防万一。</p>
 
@@ -187,7 +187,7 @@ MathJax = {
 <p>其它选项都是傻瓜式操作，唯独入站列表<strong>reality</strong>协议那里记得找支持<code>tls1.3</code>和<code>H2</code>特征的网站。然后就会得到一个vless协议的二维码，下载一个支持<strong>reality</strong>协议的软件输入就行了。</p>
 <h2 id="23安装warp-ipv6">2.3安装warp ipv6</h2>
 <p>我的vps只支持ipv4访问且ip不能访问国外流媒体网站和chatgpt等怎么办？这里我推荐fscarmen大的warp ipv6脚本，原理是通过优选warp ipv6池自动寻找一个和ipv4 ip所在地类似的warp ipv6，完成匹配。因为warp的开发商是大名鼎鼎的<strong>cloudflare</strong>，所以大型企业和流媒体视频网站防护基本上都是cloudflare，在这方面cloudflare可谓是独角兽企业。因此套warp ipv6很大机遇可以是视作原生ip，从而解锁流媒体和chatgpt等对ip要求严格的网站。注意这个脚本不支持Windows的vps以及部分低于debian和centos的特定系统，比如debian10,你升级或者换成centos或者ubuntu最新镜像系统就行了，除了这三个，其它系统不作推荐。</p>
-<p>操作如下，在ssh输入命令：</p>
+<p>操作如下，在终端输入脚本命令：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scss" data-lang="scss"><span style="display:flex;"><span><span style="color:#f92672">wget</span> <span style="color:#f92672">-</span><span style="color:#f92672">N</span> <span style="color:#f92672">https</span><span style="color:#a6e22e">:</span><span style="color:#f92672">//</span><span style="color:#f92672">gitlab</span><span style="color:#a6e22e">.com</span><span style="color:#f92672">/</span><span style="color:#f92672">fscarmen</span><span style="color:#f92672">/</span><span style="color:#f92672">warp</span><span style="color:#f92672">/-/</span><span style="color:#f92672">raw</span><span style="color:#f92672">/</span><span style="color:#f92672">main</span><span style="color:#f92672">/</span><span style="color:#f92672">menu</span><span style="color:#a6e22e">.sh</span> <span style="color:#66d9ef">&amp;&amp;</span> <span style="color:#f92672">bash</span> <span style="color:#f92672">menu</span><span style="color:#a6e22e">.sh</span> <span style="color:#f92672">[</span><span style="color:#f92672">option</span><span style="color:#f92672">]</span> <span style="color:#f92672">[</span><span style="color:#f92672">lisence</span><span style="color:#f92672">/</span><span style="color:#f92672">url</span><span style="color:#f92672">/</span><span style="color:#f92672">token</span><span style="color:#f92672">]</span>
 </span></span></code></pre></div><p>会出现如下提示：</p>
 <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/%25E6%258D%2595%25E8%258E%25B722.PNG" style="zoom:50%;" />
