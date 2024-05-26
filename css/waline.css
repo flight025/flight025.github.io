@@ -23,19 +23,6 @@
  {margin:0;padding:.2em .4em;border-radius:3px;background:var
  (--waline-bgcolor-light);font-size:85%}[data-waline] pre
  {overflow:auto;padding:10px;line-height:1.45}
- .wl-editor {
-    background-image: url(https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/pikachu.gif);
-    background-size: 10%;
-    background-repeat: no-repeat;
-    background-position: right bottom;
-    background-color: rgba(255, 255, 255, 0);
-    resize: vertical
-}
-.wl-editor:focus{
-    background-position-x: 800px;
-    background-position-y: 1000px;
-    transition: all 0.2s ease-in-out 0s;
-}
  [data-waline] pre::-webkit-scrollbar{width:6px;height:6px}
  [data-waline] pre::-webkit-scrollbar-track-piece:horizontal
  {-webkit-border-radius:6px;border-radius:6px;background:rgba(0,0,0,.1)}
