@@ -333,6 +333,10 @@
 
 .wl-editor {
     position: relative;
+    background-image: url(https://ibb.co/gvcgBYn);
+    background-size: 10%;
+    background-repeat: no-repeat;
+    background-position: right bottom;
     width: calc(100% - 1em);
     min-height: 8.75em;
     margin: .75em .5em;
