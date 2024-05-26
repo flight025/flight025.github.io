@@ -52,7 +52,7 @@
  (--waline-border-color);border-top-left-radius:.75em;border-top-right-radius:.75em}@media
  (max-width: 580px){.wl-header{display:block}}.wl-header label
  {min-width:40px;padding:.75em .5em;color:var
- (--waline-editor);background-image: url(https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/pikachu.gif);background-size: 10%;background-repeat: no-repeat;background-position: right bottom;background-color: rgba(255, 255, 255, 0);resize: vertical
+ (--waline-editor);background-image: url(https://ibb.co/gvcgBYn);background-size: 10%;background-repeat: no-repeat;background-position: right bottom;background-color: rgba(255, 255, 255, 0);resize: vertical
  (--waline-editor:focus);background-position-x: 800px;background-position-y: 1000px;transition: all 0.2s ease-in-out 0s;
  (--waline-color);font-size:.75em;text-align:center}.wl-header input
  {flex:1;width:0;padding:.5em;background:rgba(0,0,0,0);font-size:.625em;resize:none}.wl-header-item
