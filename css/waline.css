@@ -11,19 +11,6 @@
  0.625em;--waline-border: 1px solid var
  (--waline-border-color);--waline-avatar-radius: 50%;--waline-box-shadow:
  none}
- .wl-editor {
-    background-image: url(https://ibb.co/gvcgBYn);
-    background-size: 10%;
-    background-repeat: no-repeat;
-    background-position: right bottom;
-    background-color: rgba(255, 255, 255, 0);
-    resize: vertical
-}
-.wl-editor:focus{
-    background-position-x: 800px;
-    background-position-y: 1000px;
-    transition: all 0.2s ease-in-out 0s;
-}
  [data-waline]{font-size:var(--waline-font-size);text-align:start}
  [dir=rtl] [data-waline]{direction:rtl}[data-waline] *
  {box-sizing:content-box;line-height:1.75}[data-waline] p{color:var
