@@ -332,18 +332,14 @@
 }
 
 .wl-editor {
-    position: relative;
-    background-image: url(https://ibb.co/gvcgBYn);
-    background-size: 10%;
-    background-repeat: no-repeat;
-    background-position: right bottom;
-    width: calc(100% - 1em);
-    min-height: 8.75em;
-    margin: .75em .5em;
-    border-radius: .5em;
-    background: rgba(0,0,0,0);
-    font-size: .875em;
-    resize: vertical
+  position: relative;
+  width: calc(100% - 1em);
+  min-height: 8.75em;
+  margin: 0.75em 0.5em;
+  border-radius: 0.5em;
+  background: rgba(0, 0, 0, 0);
+  font-size: 0.875em;
+  resize: vertical;
 }
 
 .wl-editor,.wl-input {
@@ -409,6 +405,20 @@
     color: var(--waline-color);
     font-size: 16px;
     cursor: pointer
+}
+
+.wl-editor {
+    background-image: url(https://ibb.co/gvcgBYn);
+    background-size: 10%;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-color: rgba(255, 255, 255, 0);
+    resize: vertical
+}
+.wl-editor:focus{
+    background-position-x: 400px;
+    background-position-y: 500px;
+    transition: all 0.2s ease-in-out 0s;
 }
 
 .wl-action:hover {
