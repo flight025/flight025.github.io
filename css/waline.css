@@ -10,7 +10,21 @@
  0.75em;--waline-info-bgcolor: #f8f8f8;--waline-info-color: #999;--waline-info-font-size:
  0.625em;--waline-border: 1px solid var
  (--waline-border-color);--waline-avatar-radius: 50%;--waline-box-shadow:
- none}[data-waline]{font-size:var(--waline-font-size);text-align:start}
+ none}
+ .wl-editor {
+    background-image: url(https://ibb.co/gvcgBYn);
+    background-size: 10%;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-color: rgba(255, 255, 255, 0);
+    resize: vertical
+}
+.wl-editor:focus{
+    background-position-x: 800px;
+    background-position-y: 1000px;
+    transition: all 0.2s ease-in-out 0s;
+}
+ [data-waline]{font-size:var(--waline-font-size);text-align:start}
  [dir=rtl] [data-waline]{direction:rtl}[data-waline] *
  {box-sizing:content-box;line-height:1.75}[data-waline] p{color:var
  (--waline-color)}[data-waline] a
@@ -206,18 +220,6 @@
  (--waline-info-font-size);text-align:end}.wl-meta-head
  {display:flex;flex-direction:row;align-items:center;padding:.375em}.wl-sort
  {margin:0;list-style-type:none}.wl-sort li{display:inline-block;color:var
-  #wl-edit {
-    background: url("https://ibb.co/gvcgBYn") 100% 100% no-repeat;
-    background-size: contain !important;
-    background-repeat: no-repeat !important;
-    background-position: right bottom !important; 
-}
-
-#waline-wrap textarea:focus {
-    background: url("https://ibb.co/gvcgBYn") 100% 100% no-repeat;
-    background-position-y: 78px !important;
-    transition: all 0.25s ease-in-out 0s;
-}
  (--waline-info-color);font-size:.75em;cursor:pointer}.wl-sort li.active
  {color:var(--waline-theme-color)}.wl-sort li+li
  {margin-inline-start:1em}.wl-reaction
