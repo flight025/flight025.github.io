@@ -214,13 +214,14 @@ MathJax = {
 <div class="container">
 <head>
   
-  
+ <script src="https://cdn.bootcdn.net/ajax/libs/waline/2.15.8/waline.js"></script> 
  <link rel= "stylesheet" href= "https://www.zaqizaba.xyz/css/waline.css" integrity= "ppjat2Nqt9/vogVpCBD/nqCHV1spgY56HenQwKAi/Ru+Qp4ILlhUr7MumlCujChTrjI6Ab+Tc1vjanZ2GIhmUw==" crossorigin= "anonymous" >
 </head>
 <body>
   
   <div id="waline"></div><div id="waline" class="waline-container"></div>
   <script>
+  
   
 const locale = {
   nick: '昵称',
@@ -274,7 +275,7 @@ const locale = {
   reactionTitle: '你认为这篇文章怎么样？',
 };
   
-  
+
   Waline.init({
       el: '#waline',
       serverURL: 'https://zaqizaba.xyz',
