@@ -260,7 +260,7 @@ MathJax = {
 </span></span><span style="display:flex;"><span>{/{&lt; <span style="color:#f92672">figure</span> <span style="color:#a6e22e">link</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Morty2.jpg&#34;</span> <span style="color:#a6e22e">caption</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Rick2&#34;</span> &gt;}}
 </span></span><span style="display:flex;"><span>{/{&lt; <span style="color:#f92672">figure</span> <span style="color:#a6e22e">link</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick.jpg&#34;</span> <span style="color:#a6e22e">caption</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Morty&#34;</span> &gt;}}
 </span></span><span style="display:flex;"><span>{/{&lt; <span style="color:#f92672">figure</span> <span style="color:#a6e22e">link</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick2.png&#34;</span> <span style="color:#a6e22e">caption</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Morty2&#34;</span> &gt;}}
-</span></span><span style="display:flex;"><span>{/{&lt; /<span style="color:#f92672">gallery</span> &gt;}}(&#34;/&#34;去掉就行)
+</span></span><span style="display:flex;"><span>{/{&lt; /<span style="color:#f92672">gallery</span> &gt;}}(大括号&#34;/&#34;去掉就行)
 </span></span></code></pre></div>
 
 
@@ -339,8 +339,8 @@ MathJax = {
 
 </div>
 
-<h2 id="4图片轮播">4.图片轮播</h2>
-<p>最后，就是插入图片轮播的方式了。这里，最终我还是参考了小球飞鱼的文章<a href="https://mantyke.icu/posts/2021/cf2cf0fb/">《在文章中插入轮播图片》</a>，之前。引入<a href="https://getbootstrap.com/">Bootstrap</a>尝试了一下图片轮播，是可以实现轮播效果，但是问题是引入了Bootstrap的CSS会导致文章页面背景色出现问题。所以还是决定用小球飞鱼写的文章方法，不过我看这个轮播，这种方式是基于<a href="https://3.swiper.com.cn/">swiper</a>的滑动插件引入而成，所以。这个和Bootstrap轮播效果比起来各有千秋，没有谁更好更差的争论。过程我就不描述了，引入后的shortcode是这种表现形式：</p>
+<h2 id="33图片轮播">3.3图片轮播</h2>
+<p>这个就是插入图片轮播的方式了。这里，最终我还是参考了小球飞鱼的文章<a href="https://mantyke.icu/posts/2021/cf2cf0fb/">《在文章中插入轮播图片》</a>，之前。引入<a href="https://getbootstrap.com/">Bootstrap</a>尝试了一下图片轮播，是可以实现轮播效果，但是问题是引入了Bootstrap的CSS会导致文章页面背景色出现问题。所以还是决定用小球飞鱼写的文章方法，不过我看这个轮播，这种方式是基于<a href="https://3.swiper.com.cn/">swiper</a>的滑动插件引入而成，所以。这个和Bootstrap轮播效果比起来各有千秋，没有谁更好更差的争论。过程我就不描述了，引入后的shortcode是这种表现形式：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>{/{&lt; <span style="color:#f92672">imgloop</span> <span style="color:#960050;background-color:#1e0010">&#34;</span><span style="color:#a6e22e">URL1</span><span style="color:#960050;background-color:#1e0010">,</span><span style="color:#a6e22e">URL2</span><span style="color:#960050;background-color:#1e0010">,</span><span style="color:#a6e22e">URL3</span><span style="color:#960050;background-color:#1e0010">,</span><span style="color:#a6e22e">URL4</span><span style="color:#960050;background-color:#1e0010">,</span><span style="color:#a6e22e">URL5</span><span style="color:#960050;background-color:#1e0010">&#34;</span> &gt;}/}(左右斜杠去掉就行)
 </span></span></code></pre></div>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
