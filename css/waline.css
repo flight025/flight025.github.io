@@ -332,7 +332,6 @@
 }
 
 .wl-editor {
-  placeholder: 此刻你看完这篇博客脑海中的想法是什么呢，说出来吧ヾ(•ω•`)o';
   position: relative;
   width: calc(100% - 1em);
   min-height: 8.75em;
@@ -1287,7 +1286,6 @@
 /*# sourceMappingURL=waline.css.map */
 
 .wl-editor {
-    placeholder: 此刻你看完这篇博客脑海中的想法是什么呢，说出来吧ヾ(•ω•`)o';
     background-image: url(https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Edelgard%20von%20Hresvelg.gif);
     background-size: 18%;
     background-repeat: no-repeat;
