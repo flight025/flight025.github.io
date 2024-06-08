@@ -1,0 +1,20 @@
+/* css */
+.wrap {
+  float: right;
+  max-width: calc(min(100%, 400px)) !important;
+  padding-left:  $padding-8;
+  padding-top: $padding-8;
+  text-align: center;
+}
+
+.wrap-left {
+  float: left;
+  padding-right:  $padding-16; 
+  padding-left: 0px;
+}
+.image-desc {
+  font-size:small;
+  margin-top: 2px; 
+  color: gray; 
+  text-align: center;
+}
