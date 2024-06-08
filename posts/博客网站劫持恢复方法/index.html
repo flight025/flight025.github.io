@@ -138,7 +138,6 @@ MathJax = {
 <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/%25E6%258D%2595%25E8%258E%25B71.PNG" alt=""  />
 </a>
 </div>
-
 </p>
 <p>发现博客网站不能访问了。我第一时间想到是不是vercel出问题了，于是ping了下网站，发现是通的，但是无论如何，vercel的公共dns无疑都指向了反诈网站，也就是常说的网站dns劫持污染，很明显。vercel的dns上ip段找到能够用的网站ip很重要，发现ip段（76.76.xx.xx)其中的76.76.xx.xx还能用，于是想到了在域名解析中添加泛解析A记录指向ip76.76.xx.xx。</p>
 <p>之前的vercel提供的自定义域名A 记录和CNAME记录可以删了，再把域名泛解析A记录值添加在解析上就可以了：</p>
@@ -148,7 +147,6 @@ MathJax = {
 <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/76.76.21.21.PNG" alt=""  />
 </a>
 </div>
-
 </p>
 <p>再次访问你的博客，你会发现博客可以访问了。ps：此ip还未被劫持，能够使用多久未知，还是建议网站备案。</p>
 <hr>
@@ -158,7 +156,6 @@ MathJax = {
 <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/latest" alt="Bird | Wookieepedia | Fandom"  />
 </a>
 </div>
-
 </p>
 
   </div>
