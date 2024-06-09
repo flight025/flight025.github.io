@@ -1,0 +1,16 @@
+.item { 
+    clear: both; 
+}
+.item img { 
+    float:left; 
+    width: 20%; 
+    box-shadow: 0 0 14px rgba(0,0,0,.2);
+}
+.item div { 
+    float:left; 
+    width: 80%; 
+    padding-left: 20px 
+}
+.item h1 {
+    margin: 0;
+}
