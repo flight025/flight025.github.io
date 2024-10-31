@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>EN</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://www.zaqizaba.xyz&#34;&gt;阿波尔的博客&lt;/a&gt; 2019-2024</copyright>
-    <lastBuildDate>Wed, 31 Jul 2024 18:46:36 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 31 Oct 2024 13:40:59 +0800</lastBuildDate>
     <atom:link href="https://www.zaqizaba.xyz/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Creating a New Theme</title>
@@ -22,6 +22,13 @@
       <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
       <guid>https://www.zaqizaba.xyz/posts/migrate-from-jekyll/</guid>
       <description>Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like&#xA;▾ &amp;lt;root&amp;gt;/ ▾ images/ logo.png should become&#xA;▾ &amp;lt;root&amp;gt;/ ▾ static/ ▾ images/ logo.png Additionally, you&amp;rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.</description>
+    </item>
+    <item>
+      <title>驾照终归是拿到了</title>
+      <link>https://www.zaqizaba.xyz/posts/%E9%A9%BE%E7%85%A7%E7%BB%88%E5%BD%92%E6%98%AF%E6%8B%BF%E5%88%B0%E4%BA%86/</link>
+      <pubDate>Thu, 31 Oct 2024 13:40:59 +0800</pubDate>
+      <guid>https://www.zaqizaba.xyz/posts/%E9%A9%BE%E7%85%A7%E7%BB%88%E5%BD%92%E6%98%AF%E6%8B%BF%E5%88%B0%E4%BA%86/</guid>
+      <description>今天，总算是把驾驶证拿到手了。这算是值得庆祝的一件事。不过满打满算。我从真正开始学习自动挡科一到科四拿证大约用了六个月时间，算是比较长的了。&#xA;学车历程如下：&#xA;2023年底开始再次报名学习自动挡车（c2）。2024年5月开始真正学习科一，直到6月才考过科一。期间一直在驾考宝典和驾校一点通上练习。科二是7月8号开始练习的。然后7月26号和驾校大多数高中毕业生学员一起去考，没过。8月29号开始补考科二考试，考试通过。8月31号开始正式练习科三驾驶技能考试。9月30号科三第一次考试未过，10月21号补考科三考试通过。然后今天10月31号科四正式考试一把过，拿证成功。&#xA;科一、科二和科三我都考了二次。期间科二第一次第一把出库扫线，第二把压线超时。导致我挂科。因为这个我第二次练科二倒车入库时疯狂练习，第二次总算项目都过了。然后科三考的是1号线。第一次第一把是十字路口向左侧打左转向灯打慢了，快到路口才打（其实那时语言播报完成时就该打左转向灯），然后又猛打方向盘，结果悲剧了。左转向灯早早的就掉了导致挂科。第二把我是到了1、2号线共同路段有一个“前方合适地点掉头”的那里，没有及时调整“开启左转向灯”到最左侧黄虚线那里掉头，掉头失败导致第二把挂科。其实想来就是路线还是不怎么熟悉导致的。第二次考科三我终于过了，不过有点小小遗憾就是靠边停车那里“离边缘实线距离大于30公分小于小于50公分”范围扣了十分，除此之外，我该刹车的刹了，该减速的减了。而今天的科目四机考，大约练了四五天，报名考试，96分过了。终于驾照到手。&#xA;我对语这次学车的经验是（适用于我，对于大众学车应该也行）：&#xA;第一:听从教练的，这是最基本的。还有不要偷懒，学车不懂的地方多和教练交流弄懂。第二：考科一和科四机考建议驾考宝典和驾校一点通轮流做。就做长题和模拟考试题，不需要在app上缴费练真题。第三：如果考试当天起来驾考感到疲惫，可以适当的吃“清醒药”一类的（我从没吃过，不过早晨我喝红牛提神效果明显）。&#xA;最搞的是我发现：我科二、科三第一次我教练和驾校杨教练一起去送考。都没过。但是每次第二次我教练，杨教练和那个戴眼镜的教练去送考，我就都过了。感觉有点玄学，不过或许也有天意在此吧。</description>
     </item>
     <item>
       <title>学车难道很难吗</title>
