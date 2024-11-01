@@ -179,6 +179,19 @@ MathJax = {
   <div id="waline"></div><div id="waline" class="waline-container"></div>
   <script>
 
+ Waline.init({
+      el: '#waline',
+      lang: 'zh-CN',
+      dark: 'auto',
+      serverURL: 'https://zaqizaba.xyz',
+      locale,
+      emoji: 
+    [
+    'https://gcore.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/',
+    'https://cdn.cbd.int/sarakale-assets@1.2.1/emoji/acfun_color/'
+  ],
+});   
+
 var locale = {
   nick: '😐的爱称',
   nickError: '昵称不能少于3个字符',
@@ -208,18 +221,6 @@ var locale = {
   wordHint: '评论字数应在 $0 到 $1 字之间！\n当前字数：$2',
 };
 
-Waline.init({
-      el: '#waline',
-      lang: 'zh-CN',
-      dark: 'auto',
-      serverURL: 'https://zaqizaba.xyz',
-      locale,
-      emoji: 
-    [
-    'https://gcore.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/',
-    'https://cdn.cbd.int/sarakale-assets@1.2.1/emoji/acfun_color/'
-  ],
-});
   </script>
 </body>
 
