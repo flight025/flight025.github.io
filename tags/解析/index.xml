@@ -4,7 +4,7 @@
     <title>解析 on 阿波尔的博客</title>
     <link>https://www.zaqizaba.xyz/tags/%E8%A7%A3%E6%9E%90/</link>
     <description>Recent content in 解析 on 阿波尔的博客</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>EN</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://www.zaqizaba.xyz&#34;&gt;阿波尔的博客&lt;/a&gt; 2019-2024</copyright>
     <lastBuildDate>Wed, 04 Oct 2023 00:08:48 +0800</lastBuildDate>
@@ -14,7 +14,7 @@
       <link>https://www.zaqizaba.xyz/posts/%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99%E5%8A%AB%E6%8C%81%E6%81%A2%E5%A4%8D%E6%96%B9%E6%B3%95/</link>
       <pubDate>Wed, 04 Oct 2023 00:08:48 +0800</pubDate>
       <guid>https://www.zaqizaba.xyz/posts/%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99%E5%8A%AB%E6%8C%81%E6%81%A2%E5%A4%8D%E6%96%B9%E6%B3%95/</guid>
-      <description>从国庆开始，我打开博客网站，突然发现博客网站显示为这样：&#xA;发现博客网站不能访问了。我第一时间想到是不是vercel出问题了，于是ping了下网站，发现是通的，但是无论如何，vercel的公共dns无疑都指向了反诈网站，也就是常说的网站dns劫持污染，很明显。vercel的dns上ip段找到能够用的网站ip很重要，发现ip段（76.76.xx.xx)其中的76.76.xx.xx还能用，于是想到了在域名解析中添加泛解析A记录指向ip76.76.xx.xx。&#xA;之前的vercel提供的自定义域名A 记录和CNAME记录可以删了，再把域名泛解析A记录值添加在解析上就可以了：&#xA;再次访问你的博客，你会发现博客可以访问了。ps：此ip还未被劫持，能够使用多久未知，还是建议网站备案。</description>
+      <description>&lt;img src=&#34;https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/f7b00124-1290-4b9e-a3e9-a75a41922aa3.png&#34; style=&#34;zoom:150%;&#34; /&gt;&#xA;&lt;p&gt;从国庆开始，我打开博客网站，突然发现博客网站显示为这样：&lt;/p&gt;&#xA;&lt;p&gt;&#xD;&#xA;&lt;div class=&#34;post-img-view&#34;&gt;&#xD;&#xA;&lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/%25E6%258D%2595%25E8%258E%25B71.PNG&#34;&gt;&#xD;&#xA;&lt;img src=&#34;https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/%25E6%258D%2595%25E8%258E%25B71.PNG&#34; alt=&#34;&#34;  /&gt;&#xD;&#xA;&lt;/a&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;发现博客网站不能访问了。我第一时间想到是不是vercel出问题了，于是ping了下网站，发现是通的，但是无论如何，vercel的公共dns无疑都指向了反诈网站，也就是常说的网站dns劫持污染，很明显。vercel的dns上ip段找到能够用的网站ip很重要，发现ip段（76.76.xx.xx)其中的76.76.xx.xx还能用，于是想到了在域名解析中添加泛解析A记录指向ip76.76.xx.xx。&lt;/p&gt;&#xA;&lt;p&gt;之前的vercel提供的自定义域名A 记录和CNAME记录可以删了，再把域名泛解析A记录值添加在解析上就可以了：&lt;/p&gt;&#xA;&lt;p&gt;&#xD;&#xA;&lt;div class=&#34;post-img-view&#34;&gt;&#xD;&#xA;&lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/76.76.21.21.PNG&#34;&gt;&#xD;&#xA;&lt;img src=&#34;https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/76.76.21.21.PNG&#34; alt=&#34;&#34;  /&gt;&#xD;&#xA;&lt;/a&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;再次访问你的博客，你会发现博客可以访问了。ps：此ip还未被劫持，能够使用多久未知，还是建议网站备案。&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&#xD;&#xA;&lt;div class=&#34;post-img-view&#34;&gt;&#xD;&#xA;&lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/latest&#34;&gt;&#xD;&#xA;&lt;img src=&#34;https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/latest&#34; alt=&#34;Bird | Wookieepedia | Fandom&#34;  /&gt;&#xD;&#xA;&lt;/a&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
