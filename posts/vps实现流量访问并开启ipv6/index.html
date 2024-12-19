@@ -140,33 +140,17 @@ MathJax = {
 <p>这里我用的是<a href="https://my.racknerd.com/aff.php?aff=11337">racknerd</a>的vps，只因是还算便宜，终端就是老物件<a href="https://www.xshell.com/zh/xshell/">xshell</a>，提倡还是买xshell正版吧，虽然我以前白嫖过，不过后来入正了。</p>
 <h1 id="2准备开始折腾">2.准备开始折腾</h1>
 <p>我这里买了两年的vps是2024新年季的活动。可以用信用卡支付，也可以用支付宝支付，甚至用bitcion支付也行。听国外论坛reddit讨论racknerd的老板代理其它vps有过跑路的经历，但是现在是转正规了，跑路风险依然有可能存在。还是建议购买vps如果有重要数据记得备份，以防万一。</p>
-
-<link rel="stylesheet" href=/css/hugo-easy-gallery.css />
-<div class="box" >
-  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-    <div class="img">
-      <img itemprop="thumbnail" src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/%E6%8D%95%E8%8E%B716.PNG" />
-    </div>
-    <a href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/%E6%8D%95%E8%8E%B716.PNG" itemprop="contentUrl"></a>
-      <figcaption><h4>vps客户区，最下面从左至右中文为“重启”“关机”“开机”“页面终端” 以及“控制面板”</h4>
-      </figcaption>
-  </figure>
-</div>
+<figure><img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/%E6%8D%95%E8%8E%B716.PNG"><figcaption>
+      <h4>vps客户区，最下面从左至右中文为“重启”“关机”“开机”“页面终端” 以及“控制面板”</h4>
+    </figcaption>
+</figure>
 
 <p>买了vps后，商家会发送vps的用户名和密码以及“控制面板”的用户名和密码到你的邮箱，vps的是用来登录ssh终端的，端口号一般是22，这个可以在xshell中修改（具体可见<a href="https://moosdn.blogspot.com/2020/03/ssh.html">这个教程</a>）。而另外“控制面板”的用户名是唯一的，但是密码是可以修改的，“控制面板”我主要是vps安装脚本万一断联用来重装系统的。买之后记得测试ip有没有变红，可以通过网站<a href="https://zhale.me/">zhale</a>测试下你的所在地是红还是绿，或者自己在电脑自带的powershell上ping下有没有超时，红了或者超时记得找vps商家换ip，据我所知，racknerd三天内换ip免费。</p>
 <p>如果一切顺利，登录vps后会是这个界面：</p>
-
-
-<div class="box" >
-  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-    <div class="img">
-      <img itemprop="thumbnail" src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/%E6%8D%95%E8%8E%B717.PNG" />
-    </div>
-    <a href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/%E6%8D%95%E8%8E%B717.PNG" itemprop="contentUrl"></a>
-      <figcaption><h4>由于是演示图片，图中已修改端口号和添加了bbrplus</h4>
-      </figcaption>
-  </figure>
-</div>
+<figure><img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/%E6%8D%95%E8%8E%B717.PNG"><figcaption>
+      <h4>由于是演示图片，图中已修改端口号和添加了bbrplus</h4>
+    </figcaption>
+</figure>
 
 <h2 id="21安装bbr脚本">2.1安装bbr脚本</h2>
 <p>BBR是Google提出的拥塞控制算法，这里用来提升vps网速性能。我的理解流量就像水流，但bbr就像可控制水流管道长宽大小的物件。水流大时，变宽好流过；变小时，变窄适应流量集中优化。我的vps系统是ubuntu20.04,这里我安装的是“爱生活bbr脚本”。首先你先要安装系统脚本相应的安装命令：</p>
