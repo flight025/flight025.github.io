@@ -5,7 +5,7 @@
 
 
 
-<title>Comments | 阿波尔的博客</title>
+<title>comments | 阿波尔的博客</title>
 
 <link rel="stylesheet" href="https://www.zaqizaba.xyz//css/styles.css">
 <link rel="stylesheet" href="https://www.zaqizaba.xyz/css/fonts.css" integrity="nHA4sQes5N4kC/1rRzsd9KcxNPPEG1e4F7kjT3rg7mhweyYUuxGU985+SOHzZCsN" crossorigin="anonymous"></script>
@@ -126,7 +126,7 @@ MathJax = {
   </div>
 
 <div class="container">
-  <h1 class="subtitle is-size-4-mobile is-size-3-desktop">Comments</h1>
+  <h1 class="subtitle is-size-4-mobile is-size-3-desktop">comments</h1>
   <div class="content">
 <form id="search" action='//www.google.com/search' method="get" accept-charset="utf-8" target="_blank" _lpchecked="1">
       
@@ -135,122 +135,7 @@ MathJax = {
       <button>搜索</button>
     </form>
 <p align="left"><strong>IP链接测试🎇</strong></p>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>黑洞特效</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: #000;
-            height: 100vh;
-        }
-
-        .black-hole {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 200px;
-            height: 200px;
-            background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 50%, rgba(0,0,0,0.5) 75%);
-            border-radius: 50%;
-            transform: translate(-50%, -50%);
-            box-shadow: 0 0 40px rgba(0, 0, 0, 0.9);
-            animation: spin 10s infinite linear, warp 2s infinite linear;
-        }
-
-        .light-rays {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 100%;
-            height: 100%;
-            transform: translate(-50%, -50%);
-            pointer-events: none;
-        }
-
-        .light-ray {
-            position: absolute;
-            width: 4px;
-            height: 200px;
-            background-color: rgba(255, 255, 255, 0.5);
-            animation: rayAnimation 4s infinite linear;
-        }
-
-        @keyframes spin {
-            0% {
-                transform: translate(-50%, -50%) rotate(0deg);
-            }
-            100% {
-                transform: translate(-50%, -50%) rotate(360deg);
-            }
-        }
-
-        @keyframes warp {
-            0% {
-                transform: translate(-50%, -50%) scale(1);
-            }
-            50% {
-                transform: translate(-50%, -50%) scale(0.8);
-            }
-            100% {
-                transform: translate(-50%, -50%) scale(1);
-            }
-        }
-
-        @keyframes rayAnimation {
-            0% {
-                transform: rotate(0deg);
-                opacity: 0.5;
-            }
-            100% {
-                transform: rotate(360deg);
-                opacity: 0;
-            }
-        }
-
-    </style>
-</head>
-<body>
-
-    <div class="black-hole"></div>
-    <div class="light-rays"></div>
-
-    <script>
-        
-        const lightRaysContainer = document.querySelector('.light-rays');
-
-        function createLightRay() {
-            const ray = document.createElement('div');
-            ray.classList.add('light-ray');
-            const angle = Math.random() * 360; 
-            const distance = Math.random() * 100 + 100; 
-            ray.style.transform = `rotate(${angle}deg) translateY(-${distance}px)`; 
-
-            lightRaysContainer.appendChild(ray);
-
-            
-            const delay = Math.random() * 2; 
-            const duration = Math.random() * 4 + 3; 
-            ray.style.animationDuration = `${duration}s`;
-            ray.style.animationDelay = `${delay}s`;
-
-            
-            ray.addEventListener('animationend', () => {
-                ray.remove();
-            });
-        }
-
-        
-        setInterval(createLightRay, 100);
-    </script>
-
-</body>
-</html>
+<iframe src="https://ip.skk.moe/simple" style="width: 100%; border: 0"></iframe>
   </div>
 </div>
 <div class="container has-text-centered">
