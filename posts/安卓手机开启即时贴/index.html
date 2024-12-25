@@ -234,7 +234,30 @@ Waline.init({
 
 
 <div class="container has-text-centered">
-<section class="section">
-    <p>&copy;<a href="https://www.zaqizaba.xyz">阿波尔的博客</a>2019-2024</p>
-  </div>
-</section>
+  <section class="section">
+    <p style="font-size: 4vw;">&copy; <a href="https://www.zaqizaba.xyz">阿波尔的博客</a> 2019-2024</p>
+  </section>
+</div>
+
+<style>
+   
+  @media (max-width: 768px) {
+    .section p {
+      font-size: 5vw;  
+    }
+  }
+
+   
+  .section p {
+    font-size: 2em;  
+  }
+
+   
+  .section a {
+    color: #333;
+    text-decoration: none;
+  }
+  .section a:hover {
+    text-decoration: underline;
+  }
+</style>
