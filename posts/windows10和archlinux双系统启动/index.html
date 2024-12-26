@@ -148,19 +148,19 @@ MathJax = {
 </blockquote>
 <h2 id="2archlinux基础安装">2.Archlinux基础安装</h2>
 <p>等待进入Archlinux安装界面，先禁用reflector：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>systemctl stop reflector.service
-</span></span></code></pre></div><p>确保为UEFI模式：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>ls /sys/firmware/efi/efivars
-</span></span></code></pre></div><p>输出为多串数字。</p>
+<pre tabindex="0"><code>systemctl stop reflector.service
+</code></pre><p>确保为UEFI模式：</p>
+<pre tabindex="0"><code>ls /sys/firmware/efi/efivars
+</code></pre><p>输出为多串数字。</p>
 <p>由于我的台式机为有线联网，所以无需<code>iwctl</code> 命令联网即可（国内可以ping下百度试试）。</p>
 <p>更新系统时钟：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>timedatectl set-ntp true    
-</span></span><span style="display:flex;"><span>timedatectl status          
-</span></span></code></pre></div><p>查看磁盘分区：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>fdisk -l
-</span></span></code></pre></div><p>使用<strong>cfdisk</strong>命令（假如为sdc磁盘安装）分区</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>cfdisk /dev/sdc
-</span></span></code></pre></div><p>在<strong>Freespace</strong> 分出四个分区退出保存，假如是：</p>
+<pre tabindex="0"><code>timedatectl set-ntp true    
+timedatectl status          
+</code></pre><p>查看磁盘分区：</p>
+<pre tabindex="0"><code>fdisk -l
+</code></pre><p>使用<strong>cfdisk</strong>命令（假如为sdc磁盘安装）分区</p>
+<pre tabindex="0"><code>cfdisk /dev/sdc
+</code></pre><p>在<strong>Freespace</strong> 分出四个分区退出保存，假如是：</p>
 <blockquote>
 <ul>
 <li>EFI 分区： <code>/efi</code> 800M（sdc1）</li>
@@ -171,96 +171,96 @@ MathJax = {
 </blockquote>
 <p>然后执行如下命令：</p>
 <p>格式化根目录和用户主目录以及efi分区和swap分区</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>mkfs.ext4  /dev/sdc2
-</span></span><span style="display:flex;"><span>mkfs.ext4  /dev/sdc3
-</span></span><span style="display:flex;"><span>mkfs.vfat  /dev/sdc1
-</span></span><span style="display:flex;"><span>mkswap /dev/sdc4
-</span></span></code></pre></div><p>挂载分区：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>mount /dev/sdc2  /mnt
-</span></span></code></pre></div><p>挂载home根分区：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-HTML" data-lang="HTML"><span style="display:flex;"><span>mount --mkdir /dev/sdc3 /mnt/home
-</span></span></code></pre></div><p>挂载efi分区：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>mount --mkdir /dev/sdc1 /mnt/efi
-</span></span></code></pre></div><p>挂载swap分区：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>swap /dev/sdc4
-</span></span></code></pre></div><p>挂载自此完成。</p>
+<pre tabindex="0"><code>mkfs.ext4  /dev/sdc2
+mkfs.ext4  /dev/sdc3
+mkfs.vfat  /dev/sdc1
+mkswap /dev/sdc4
+</code></pre><p>挂载分区：</p>
+<pre tabindex="0"><code>mount /dev/sdc2  /mnt
+</code></pre><p>挂载home根分区：</p>
+<pre tabindex="0"><code>mount --mkdir /dev/sdc3 /mnt/home
+</code></pre><p>挂载efi分区：</p>
+<pre tabindex="0"><code>mount --mkdir /dev/sdc1 /mnt/efi
+</code></pre><p>挂载swap分区：</p>
+<pre tabindex="0"><code>swap /dev/sdc4
+</code></pre><p>挂载自此完成。</p>
 <p>再配置国内镜像源<code>nano /etc/pacman.d/mirrorlist</code>,添加如下镜像（<code>nano</code>按Ctrl+o保存，按Ctrl+x退出）：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>Server = https://mirrors.ustc.edu.cn/archlinux/$repo/os/$arch
-</span></span><span style="display:flex;"><span>Server = https://mirrors.tuna.tsinghua.edu.cn/archlinux/$repo/os/$arch
-</span></span></code></pre></div><p>刷新并重新安装密钥：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>pacman -Syu
-</span></span><span style="display:flex;"><span>pacman -Syy
-</span></span><span style="display:flex;"><span>pacman -S archlinux-keyring
-</span></span></code></pre></div><p>安装基础包：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>pacstrap /mnt base base-devel linux linux-headers linux-firmware networkmanager grub os-prober efibootmgr ntfs-3g amd-ucode bluez
-</span></span></code></pre></div><p>必须的功能性软件:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>pacstrap /mnt dhcpcd iwd vim bash-completion
-</span></span></code></pre></div><p>等安装完成。</p>
+<pre tabindex="0"><code>Server = https://mirrors.ustc.edu.cn/archlinux/$repo/os/$arch
+Server = https://mirrors.tuna.tsinghua.edu.cn/archlinux/$repo/os/$arch
+</code></pre><p>刷新并重新安装密钥：</p>
+<pre tabindex="0"><code>pacman -Syu
+pacman -Syy
+pacman -S archlinux-keyring
+</code></pre><p>安装基础包：</p>
+<pre tabindex="0"><code>pacstrap /mnt base base-devel linux linux-headers linux-firmware networkmanager grub os-prober efibootmgr ntfs-3g amd-ucode bluez
+</code></pre><p>必须的功能性软件:</p>
+<pre tabindex="0"><code>pacstrap /mnt dhcpcd iwd vim bash-completion
+</code></pre><p>等安装完成。</p>
 <p>生成 fstab 文件，fstab 用来定义磁盘分区</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>genfstab -U /mnt &gt;&gt; /mnt/etc/fstab
-</span></span></code></pre></div><p>然后，chroot进入系统：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-HTML" data-lang="HTML"><span style="display:flex;"><span>arch-chroot /mnt
-</span></span></code></pre></div><p>设置时区：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
-</span></span><span style="display:flex;"><span>hwclock --systohc
-</span></span></code></pre></div><p>设置 Locale 进行本地化：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-HTML" data-lang="HTML"><span style="display:flex;"><span>nano /etc/locale.gen（去掉en_US.UTF-8和 zh_CN.UTF-8所在的#号）
-</span></span></code></pre></div><p>生成locale：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>locale-gen
-</span></span></code></pre></div><p>编辑/etc/locale.conf导入：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>nano /etc/locale.conf
-</span></span><span style="display:flex;"><span>LANG=en_US.UTF-8
-</span></span></code></pre></div><p>设置主机名：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>nano /etc/hostname （比如就叫Archlinux)
-</span></span></code></pre></div><p>接下来在<code>/etc/hosts</code>设置与其匹配的条目加入内容:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>nano /etc/hosts
-</span></span><span style="display:flex;"><span>127.0.0.1   localhost
-</span></span><span style="display:flex;"><span>::1         localhost
-</span></span><span style="display:flex;"><span>127.0.1.1   Archlinux
-</span></span></code></pre></div><p>设置root密码：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>passwd
-</span></span></code></pre></div><p>创建普通用户名并创建密码：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>useradd -m -G wheel aboer(假如用户名就是aboer)
-</span></span><span style="display:flex;"><span>passwd aboer
-</span></span></code></pre></div><p>编辑sudoers赋予用户root权限：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>nano /etc/sudoers
-</span></span></code></pre></div><p>删除<code>%wheel ALL=(ALL:ALL)</code>前面的<code>#</code></p>
+<pre tabindex="0"><code>genfstab -U /mnt &gt;&gt; /mnt/etc/fstab
+</code></pre><p>然后，chroot进入系统：</p>
+<pre tabindex="0"><code>arch-chroot /mnt
+</code></pre><p>设置时区：</p>
+<pre tabindex="0"><code>ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+hwclock --systohc
+</code></pre><p>设置 Locale 进行本地化：</p>
+<pre tabindex="0"><code>nano /etc/locale.gen（去掉en_US.UTF-8和 zh_CN.UTF-8所在的#号）
+</code></pre><p>生成locale：</p>
+<pre tabindex="0"><code>locale-gen
+</code></pre><p>编辑/etc/locale.conf导入：</p>
+<pre tabindex="0"><code>nano /etc/locale.conf
+LANG=en_US.UTF-8
+</code></pre><p>设置主机名：</p>
+<pre tabindex="0"><code>nano /etc/hostname （比如就叫Archlinux)
+</code></pre><p>接下来在<code>/etc/hosts</code>设置与其匹配的条目加入内容:</p>
+<pre tabindex="0"><code>nano /etc/hosts
+127.0.0.1   localhost
+::1         localhost
+127.0.1.1   Archlinux
+</code></pre><p>设置root密码：</p>
+<pre tabindex="0"><code>passwd
+</code></pre><p>创建普通用户名并创建密码：</p>
+<pre tabindex="0"><code>useradd -m -G wheel aboer(假如用户名就是aboer)
+passwd aboer
+</code></pre><p>编辑sudoers赋予用户root权限：</p>
+<pre tabindex="0"><code>nano /etc/sudoers
+</code></pre><p>删除<code>%wheel ALL=(ALL:ALL)</code>前面的<code>#</code></p>
 <p>启用网络连接和蓝牙：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>systemctl enable NetworkManager
-</span></span><span style="display:flex;"><span>systemctl enable bluetooth
-</span></span></code></pre></div><p>编辑grub：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-HTML" data-lang="HTML"><span style="display:flex;"><span>GRUB_DISABLE_OS_PROBER=flase（去掉前面的#）
-</span></span></code></pre></div><p>安装grub引导：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-HTML" data-lang="HTML"><span style="display:flex;"><span>grub-install --target=x86_64-efi --efi-directory=/efi --bootloader-id=GRUB
-</span></span></code></pre></div><p>更新grub引导源：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-HTML" data-lang="HTML"><span style="display:flex;"><span>grub-mkconfig -o /boot/grub/grub.cfg
-</span></span></code></pre></div><p>完成安装重启：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>exit                # 退回安装环境#
-</span></span><span style="display:flex;"><span>umount -R  /mnt     # 卸载新分区
-</span></span><span style="display:flex;"><span>reboot              # 重启
-</span></span></code></pre></div><p>注意重启前U盘拔掉。</p>
+<pre tabindex="0"><code>systemctl enable NetworkManager
+systemctl enable bluetooth
+</code></pre><p>编辑grub：</p>
+<pre tabindex="0"><code>GRUB_DISABLE_OS_PROBER=flase（去掉前面的#）
+</code></pre><p>安装grub引导：</p>
+<pre tabindex="0"><code>grub-install --target=x86_64-efi --efi-directory=/efi --bootloader-id=GRUB
+</code></pre><p>更新grub引导源：</p>
+<pre tabindex="0"><code>grub-mkconfig -o /boot/grub/grub.cfg
+</code></pre><p>完成安装重启：</p>
+<pre tabindex="0"><code>exit                # 退回安装环境#
+umount -R  /mnt     # 卸载新分区
+reboot              # 重启
+</code></pre><p>注意重启前U盘拔掉。</p>
 <p>重启后，开启 dhcp 服务，即可连接网络：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>systemctl start dhcpcd（启动dhcp）
-</span></span><span style="display:flex;"><span>ping www.baidu.com
-</span></span></code></pre></div><h2 id="3安装archlinux桌面">3.安装Archlinux桌面</h2>
+<pre tabindex="0"><code>systemctl start dhcpcd（启动dhcp）
+ping www.baidu.com
+</code></pre><h2 id="3安装archlinux桌面">3.安装Archlinux桌面</h2>
 <p>安装KDE Plasma桌面：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-HTML" data-lang="HTML"><span style="display:flex;"><span>pacman -S plasma-meta konsole dolphin
-</span></span></code></pre></div><p>所有选项皆为默认，直到安装Plasma桌面安装完成。</p>
+<pre tabindex="0"><code>pacman -S plasma-meta konsole dolphin
+</code></pre><p>所有选项皆为默认，直到安装Plasma桌面安装完成。</p>
 <p>开启自启显示管理：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>systemctl enanble sddm
-</span></span></code></pre></div><p>安装其它应用</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>pacman -S konsole dolphin ark kate
-</span></span></code></pre></div><p>再退出，重启：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>exit
-</span></span><span style="display:flex;"><span>reboot
-</span></span></code></pre></div><h2 id="4引导archlinux和windows10双系统">4.引导Archlinux和windows10双系统</h2>
+<pre tabindex="0"><code>systemctl enanble sddm
+</code></pre><p>安装其它应用</p>
+<pre tabindex="0"><code>pacman -S konsole dolphin ark kate
+</code></pre><p>再退出，重启：</p>
+<pre tabindex="0"><code>exit
+reboot
+</code></pre><h2 id="4引导archlinux和windows10双系统">4.引导Archlinux和windows10双系统</h2>
 <p>进入KDE Plasma桌面并命令：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>sudo grub-mkcofig -o /boot/grub/grub.cfg
-</span></span></code></pre></div><p>安装中文字体：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>sudo pacman -S abobe-source-han-sans-cn-fonts
-</span></span></code></pre></div><p>再次重启，引导可以看到windows了</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>reboot
-</span></span></code></pre></div><p>至于其它安装配置不在讨论范围内，后续自己折腾可以看看 <a href="https://archlinuxstudio.github.io/ArchLinuxTutorial/#/">archlinux</a>教程。至此，安装教程完成。</p>
+<pre tabindex="0"><code>sudo grub-mkcofig -o /boot/grub/grub.cfg
+</code></pre><p>安装中文字体：</p>
+<pre tabindex="0"><code>sudo pacman -S abobe-source-han-sans-cn-fonts
+</code></pre><p>再次重启，引导可以看到windows了</p>
+<pre tabindex="0"><code>reboot
+</code></pre><p>至于其它安装配置不在讨论范围内，后续自己折腾可以看看 <a href="https://archlinuxstudio.github.io/ArchLinuxTutorial/#/">archlinux</a>教程。至此，安装教程完成。</p>
 <hr>
 <p>参考：<a href="https://archlinuxstudio.github.io/ArchLinuxTutorial/#/">archlinux教程</a></p>
 <p>
