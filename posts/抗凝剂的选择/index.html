@@ -44,6 +44,8 @@ MathJax = {
 
 
 
+
+
 <script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/jquery/3.6.0/jquery.min.js"></script>
 <link rel="stylesheet" href="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/fancybox/3.5.7/jquery.fancybox.min.css" />
 <script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/fancybox/3.5.7/jquery.fancybox.min.js"></script>
@@ -159,17 +161,21 @@ EDTA盐对血细胞形态、血小板计数影响很小，适用于血液学检�
         <aside><div id="share"></div></aside>
         <script type="text/javascript">
             $(document).ready(function() {
-                $("#share").jsSocials({
-                    showLabel: false,
-                    showCount: false,
-                    shares: ["email", "twitter"]
-                });
+                
+                if (typeof $.fn.jsSocials !== "undefined") {
+                    $("#share").jsSocials({
+                        showLabel: false,
+                        showCount: false,
+                        shares: ["email", "twitter"]
+                    });
+                } else {
+                    console.error("jsSocials 插件未加载！");
+                }
             });
         </script>
-    
-    本作品采用<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>进行许可。
-</div>
-
+        
+        本作品采用<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>进行许可。
+    </div>
 <div class="container">
 <head>
   
