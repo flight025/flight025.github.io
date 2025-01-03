@@ -162,24 +162,26 @@ MathJax = {
 <p id="bing-copyright" style="text-align: center; font-size: 0.9rem; color: #666;"></p>
 
 <script>
-  
-  const apiURL = "https://www.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1";
+  document.addEventListener('DOMContentLoaded', () => {
+    const apiURL = "https://www.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1";
 
-  
-  fetch(apiURL)
-    .then(response => response.json())
-    .then(data => {
-      const imageUrl = `https://www.bing.com${data.images[0].url}`;
-      const copyright = data.images[0].copyright;
+    fetch(apiURL)
+      .then(response => response.json())
+      .then(data => {
+        const imageUrl = `https://www.bing.com${data.images[0].url}`;
+        const copyright = data.images[0].copyright;
 
-      
-      document.getElementById('bing-image').src = imageUrl;
-      document.getElementById('bing-copyright').innerText = copyright;
-    })
-    .catch(error => {
-      console.error("Failed to load Bing wallpaper:", error);
-      document.getElementById('bing-copyright').innerText = "Failed to load Bing wallpaper.";
-    });
+        
+        document.getElementById('bing-image').src = imageUrl;
+        document.getElementById('bing-copyright').innerText = copyright;
+      })
+      .catch(error => {
+        console.error("Failed to load Bing wallpaper:", error);
+        
+        document.getElementById('bing-image').src = "/path/to/placeholder.jpg";
+        document.getElementById('bing-copyright').innerText = "Failed to load Bing wallpaper.";
+      });
+  });
 </script>
 <h3 id="现在你能看到这个博客实际上靠这些网络工具">现在你能看到这个博客，实际上靠这些网络工具:</h3>
 <table>
