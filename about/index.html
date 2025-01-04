@@ -145,46 +145,23 @@ MathJax = {
 <h3 id="我的联系方式">我的联系方式</h3>
 <p><img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/图片/QQ图片20200530165449.jpg" alt="微信" style="zoom: 85%;" /><img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/图片/QQ图片20200530165413.jpg" alt="酷安" style="zoom: 85%;" /></p>
 <p>如果另外联系的话：我的邮箱：chcdgzlhr422[AT]gmail.com</p>
+fetch('https://cors-anywhere.herokuapp.com/https://www.bing.com/HPImageArchive.aspx?format=js&idx=0&n=8&mkt=en-US')
+  .then(response => response.json())
+  .then(data => {
+    // 随机选择一张壁纸
+    const randomIndex = Math.floor(Math.random() * data.images.length);
+    const image = data.images[randomIndex];
+    const imageUrl = 'https://www.bing.com' + image.url + "?t=" + new Date().getTime(); // 加上时间戳，避免缓存
+    const imageTitle = image.copyright;
 
+    // 更新页面上的图片和标题
+    document.getElementById('bing-wallpaper-img').src = imageUrl;
+    document.getElementById('bing-wallpaper-title').innerText = imageTitle;
+  })
+  .catch(err => {
+    console.error('无法获取 Bing 壁纸:', err);
+  });
 
-
-
-
-
-
-
-  <div class="bing-wallpaper" style="text-align: center; margin-top: 20px;">
-    <div style="display: inline-block; border: 5px solid white; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); background-color: white; padding: 10px; text-align: center;">
-      <img id="bing-wallpaper-img" src="https://www.bing.com/th?id=OHR.VietnamFalls_ZH-CN9659529108_1920x1080.jpg&amp;rf=LaDigue_1920x1080.jpg&amp;pid=hp" alt="Bing Wallpaper" loading="lazy" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
-      <p id="bing-wallpaper-title" style="margin-top: 10px; font-size: 14px; color: #555;">归春河上的板约-德天瀑布，中国与越南边境 (© Shane P. White/Minden Pictures)</p>
-    </div>
-  </div>
-
-
-<script>
-  
-  function updateBingWallpaper() {
-    fetch('https://www.bing.com/HPImageArchive.aspx?format=js&idx=0&n=8&mkt=en-US')
-      .then(response => response.json())
-      .then(data => {
-        
-        const randomIndex = Math.floor(Math.random() * data.images.length);
-        const image = data.images[randomIndex];
-        const imageUrl = 'https://www.bing.com' + image.url;
-        const imageTitle = image.copyright;
-
-        
-        document.getElementById('bing-wallpaper-img').src = imageUrl;
-        document.getElementById('bing-wallpaper-title').innerText = imageTitle;
-      })
-      .catch(err => {
-        console.error('无法获取 Bing 壁纸:', err);
-      });
-  }
-
-  
-  updateBingWallpaper();
-</script>
 <h3 id="现在你能看到这个博客实际上靠这些网络工具">现在你能看到这个博客，实际上靠这些网络工具:</h3>
 <table>
   <thead>
