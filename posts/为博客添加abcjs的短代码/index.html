@@ -184,13 +184,13 @@ K: Emin
     &#34;Em&#34;DEFD E2:|
 {/{&lt; /abcjs &gt;}\}(因为会转义，把左右花括号内“/\”去掉即可)
 </code></pre><blockquote>
-<div id="Cooley&#39;s" class="abcjs-container"></div>
+<div id="Cooley\&#39;s" class="abcjs-container"></div>
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     if (typeof ABCJS !== 'undefined') {
-      var abcString = `\n\u003e X: 1\n\u003e T: Cooley\u0027s\n\u003e M: 4\/4\n\u003e L: 1\/8\n\u003e K: Emin\n\u003e |:D2|\u0022Em\u0022EBBA B2 EB|\\\n\u003e     ~B2 AB dBAG|\\\n\u003e     \u0022D\u0022FDAD BDAD|\\\n\u003e     FDAD dAFD|\n\u003e \u0022Em\u0022EBBA B2 EB|\\\n\u003e     B2 AB defg|\\\n\u003e     \u0022D\u0022afe^c dBAF|\\\n\u003e     \u0022Em\u0022DEFD E2:|\n\u003e |:gf|\u0022Em\u0022eB B2 efge|\\\n\u003e     eB B2 gedB|\\\n\u003e     \u0022D\u0022A2 FA DAFA|\\\n\u003e     A2 FA defg|\n\u003e \u0022Em\u0022eB B2 eBgB|\\\n\u003e     eB B2 defg|\\\n\u003e     \u0022D\u0022afe^c dBAF|\\\n\u003e     \u0022Em\u0022DEFD E2:|\n\u003e `;
-      ABCJS.renderAbc("Cooley\u0027s", abcString);
+      var abcString = `\n\u003e X: 1\n\u003e T: Cooley\u0027s\n\u003e M: 4\/4\n\u003e L: 1\/8\n\u003e K: Emin\n\u003e |:D2|\u0022Em\u0022EBBA B2 EB|\\\n\u003e        ~B2 AB dBAG|\\\n\u003e        \u0022D\u0022FDAD BDAD|\\\n\u003e        FDAD dAFD|\n\u003e \u0022Em\u0022EBBA B2 EB|\\\n\u003e        B2 AB defg|\\\n\u003e        \u0022D\u0022afe^c dBAF|\\\n\u003e        \u0022Em\u0022DEFD E2:|\n\u003e |:gf|\u0022Em\u0022eB B2 efge|\\\n\u003e        eB B2 gedB|\\\n\u003e        \u0022D\u0022A2 FA DAFA|\\\n\u003e        A2 FA defg|\n\u003e \u0022Em\u0022eB B2 eBgB|\\\n\u003e        eB B2 defg|\\\n\u003e        \u0022D\u0022afe^c dBAF|\\\n\u003e        \u0022Em\u0022DEFD E2:|\n\u003e `;
+      ABCJS.renderAbc("Cooley\\\u0027s", abcString);
     } else {
       console.error("ABCJS is not loaded or defined.");
     }
