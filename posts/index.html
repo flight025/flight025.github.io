@@ -9,6 +9,7 @@
 
 <title>Posts | 阿波尔的博客</title>
 
+<link rel="stylesheet" href="https://www.zaqizaba.xyz/css/abcjs.css">
 <link rel="stylesheet" href="https://www.zaqizaba.xyz//css/styles.css">
 <link rel="stylesheet" href="https://www.zaqizaba.xyz/css/fonts.css" integrity="nHA4sQes5N4kC/1rRzsd9KcxNPPEG1e4F7kjT3rg7mhweyYUuxGU985+SOHzZCsN" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" 
@@ -36,6 +37,7 @@ MathJax = {
 };
 </script>
 <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+<script src="https://cdn.jsdelivr.net/npm/abcjs@6.4.4/dist/abcjs-basic-min.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.min.js"></script>
 </html>
 
@@ -130,6 +132,29 @@ MathJax = {
       
       
       <h1 class="title is-3">2025</h1>
+      
+      <article class="columns">
+        <div class="column is-2">
+          <h6 class="is-inline" style="white-space: nowrap">Jan 17</h2>
+        </div>
+        <div class="column">
+          <h2 class="subtitle is-inline is-size-4-mobile is-size-3-desktop"><a href="https://www.zaqizaba.xyz/posts/%E4%B8%BA%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0abcjs%E7%9A%84%E7%9F%AD%E4%BB%A3%E7%A0%81/">为博客添加abcjs的短代码</a></h1>
+          <div class="content is-hidden-mobile">
+             abcjs库是用于呈现音乐乐谱的JavaScript库，是开源的js库。你可以把它的js代码用于网页。因为hugo blog的短代码是一大优点，所以我们可以通过jsdelivr的公共CDN链接以及命名为abcjs的短代码来实现abc乐谱在博客上显示。
+1.开始准备 1.1添加abcjs的cdn 去jsdelivr找到abcjs，找到abcjs的链接，在layouts/partials/header.html中引入如下：
+&lt;script src=&#34;https://cdn.jsdelivr.net/npm/abcjs@6.4.4/dist/abcjs-basic-min.min.js&#34;&gt;&lt;/script&gt; 1.2创建命名为abcjs的shortcode 创建layouts/shortcodes/abcjs.html，并引入短代码：
+&lt;div …
+            
+            <br>
+            <a class="button is-marginless is-paddingless" href="https://www.zaqizaba.xyz/posts/%E4%B8%BA%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0abcjs%E7%9A%84%E7%9F%AD%E4%BB%A3%E7%A0%81/">
+            <span class="icon-link is-small" style="line-height: 100%">
+                <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+              </span>
+              <p style="padding:0 5px"></p>more</p>
+            </a>
+            
+          </div>
+      </article>
       
       <article class="columns">
         <div class="column is-2">
@@ -298,27 +323,6 @@ microsoft store中国区商店搜索未见chatgpt 首先，去Microsoft登录页
 已经舍生取义的2T西数&hellip; 1.抢救开始 准备好所需物件：
 一根带12V3A的电源适配器、一个带有usb供硬盘接电源口和数据口的易驱线就行了。
 本来我是打算买硬盘盒转移数据的。但是不是硬盘盒用不起，而是易驱线更有性价比。相同的主控，只不过硬盘盒更容易保护硬盘不易磕碰导致坏道，而且价格还要贵易驱线二三十元。所以，易驱线足矣。 …
-            
-          </div>
-      </article>
-      
-      <article class="columns">
-        <div class="column is-2">
-          <h6 class="is-inline" style="white-space: nowrap">May 3</h2>
-        </div>
-        <div class="column">
-          <h2 class="subtitle is-inline is-size-4-mobile is-size-3-desktop"><a href="https://www.zaqizaba.xyz/posts/%E6%B2%A7%E6%B5%B7%E4%B8%80%E5%A3%B0%E7%AC%91/">沧海一声笑</a></h1>
-          <div class="content is-hidden-mobile">
-            「沧海一声笑，滔滔两岸潮」。这句歌词来自于1990年香港电影《笑傲江湖》歌曲的开头的一句。是香港已故著名作曲、填词家黄霑先生所作。据黄霑记述。1989年应香港电影导演徐克所求来为电影填词作曲。先后写了六次草案，但是徐克均不怎么满意。究竟词曲表现得如高手才懂得 “阳春白雪” ；还是高手容易得像儿歌，演绎出韵味的 “下里巴人” 时，黄霑偶然翻到黄友棣的《中国音乐思想批判》，决定 “大乐必易” ，选择后一种作曲方式。而词义一半是借鉴了关于毛泽东主席在1936年所作的 「沁园春·雪」，如词中 “俱往矣，数风流人物，还看今朝” ，还借鉴了苏轼的词 「念奴娇·赤壁怀古」 的词句 “大江东去，浪淘尽，千古风流人物” 。并配以五声音阶 “宫、商、角、徵、羽” 后，加入一点自己的风格，才让导演徐克满意。
-在电影《笑傲江湖》中表现是，令狐冲、欲金盆洗手的顺风堂主刘正风和日月神教长老曲洋被东厂鹰犬左冷禅追杀， …
-            
-            <br>
-            <a class="button is-marginless is-paddingless" href="https://www.zaqizaba.xyz/posts/%E6%B2%A7%E6%B5%B7%E4%B8%80%E5%A3%B0%E7%AC%91/">
-            <span class="icon-link is-small" style="line-height: 100%">
-                <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-              </span>
-              <p style="padding:0 5px"></p>more</p>
-            </a>
             
           </div>
       </article>

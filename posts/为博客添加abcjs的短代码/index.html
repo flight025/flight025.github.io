@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="EN">
+<head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+<title>为博客添加abcjs的短代码 | 阿波尔的博客</title>
+
+<link rel="stylesheet" href="https://www.zaqizaba.xyz/css/abcjs.css">
+<link rel="stylesheet" href="https://www.zaqizaba.xyz//css/styles.css">
+<link rel="stylesheet" href="https://www.zaqizaba.xyz/css/fonts.css" integrity="nHA4sQes5N4kC/1rRzsd9KcxNPPEG1e4F7kjT3rg7mhweyYUuxGU985+SOHzZCsN" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" 
+integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11.4.1/dist/mermaid.min.js" integrity="sha256-pDvBr9RG+cTMZqxd1F0C6NZeJvxTROwO94f4jW3bb54=" crossorigin="anonymous"></script>
+<body></head>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/zenburn.min.css" crossorigin="anonymous" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script src="https://www.zaqizaba.xyz//js/highlight.js"></script>
+
+
+<html>
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+<script src="https://cdn.jsdelivr.net/npm/abcjs@6.4.4/dist/abcjs-basic-min.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.min.js"></script>
+</html>
+
+
+<link type="text/css" rel="stylesheet" href="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/jsSocials/1.5.0/jssocials.css" />
+<link type="text/css" rel="stylesheet" href="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/jsSocials/1.5.0/jssocials-theme-minima.css" />
+<script type="text/javascript" src="https://www.zaqizaba.xyz//js/jssocials.js"></script>
+
+
+
+<script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/jquery/3.6.0/jquery.min.js"></script>
+<link rel="stylesheet" href="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/fancybox/3.5.7/jquery.fancybox.min.css" />
+<script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+
+
+
+
+
+
+<script>
+    
+    Array.from(document.getElementsByClassName('language-mermaid')).forEach(el => {
+        el.parentElement.outerHTML = `<div class="mermaid">${el.innerText}</div>`
+    })
+</script>
+<style>
+ 
+.mermaid svg {
+    display: block;
+    margin: auto;
+}
+</style>
+</body>
+
+
+<div class="container">
+    <nav class="navbar level">
+      <div class="navbar-brand">
+          <a class="nav-item" href="https://www.zaqizaba.xyz/"><h1 class="title is-3">阿波尔的博客</h1></a>
+      </div>           
+      <div class="navbar-menu has-text-centered is-active">
+          <div class="navbar-end is-centered">
+              
+                <a href="https://www.zaqizaba.xyz/about" rel="me">
+                  <span class="icon">
+                    <i class="fas fa-info"></i>
+                  </span>
+                </a>
+              
+                <a href="https://www.zaqizaba.xyz/archives" rel="me">
+                  <span class="icon">
+                    <i class="fas fa-archive"></i>
+                  </span>
+                </a>
+              
+                <a href="https://www.zaqizaba.xyz/comments" rel="me">
+                  <span class="icon">
+                    <i class="fas fa-comment"></i>
+                  </span>
+                </a>
+              
+                <a href="https://github.com/flight025" rel="me">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                </a>
+              
+                <a href="https://www.zhihu.com/people/a-gan-jing-shen" rel="me">
+                  <span class="icon">
+                    <i class="fab fa-zhihu"></i>
+                  </span>
+                </a>
+              
+                <a href="https://twitter.com/666GXF" rel="me">
+                  <span class="icon">
+                    <i class="fab fa-twitter"></i>
+                  </span>
+                </a>
+              
+                <a href="https://www.zaqizaba.xyz/index.xml" rel="me">
+                  <span class="icon">
+                    <i class="fa fa-rss"></i>
+                  </span>
+                </a>
+              
+           </div>
+      </div>
+    </nav>
+  </div>
+<div class="container">
+  <h2 class="subtitle is-6">January 17, 2025</h2>
+  <h1 class="subtitle is-size-4-mobile is-size-3-desktop">为博客添加abcjs的短代码</h1>
+  <div class="content">
+    <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/images.jfif" style="zoom:150%;" />
+<p><a href="https://www.abcjs.net/">abcjs</a>库是用于呈现音乐乐谱的JavaScript库，是开源的js库。你可以把它的js代码用于网页。因为hugo blog的短代码是一大优点，所以我们可以通过jsdelivr的公共CDN链接以及命名为<code>abcjs</code>的短代码来实现abc乐谱在博客上显示。</p>
+<h1 id="1开始准备">1.开始准备</h1>
+<h2 id="11添加abcjs的cdn">1.1添加abcjs的cdn</h2>
+<p>去jsdelivr找到<a href="https://www.jsdelivr.com/package/npm/abcjs">abcjs</a>，找到abcjs的链接，在<code>layouts/partials/header.html</code>中引入如下：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://cdn.jsdelivr.net/npm/abcjs@6.4.4/dist/abcjs-basic-min.min.js&#34;</span><span style="color:#f92672">&gt;&lt;</span><span style="color:#960050;background-color:#1e0010">/script&gt;</span>
+</span></span></code></pre></div><h2 id="12创建命名为abcjs的shortcode">1.2创建命名为abcjs的shortcode</h2>
+<p>创建<code>layouts/shortcodes/abcjs.html</code>，并引入短代码：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ .Get &#34;</span><span style="color:#a6e22e">id</span><span style="color:#960050;background-color:#1e0010">&#34;</span> <span style="color:#960050;background-color:#1e0010">}}&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;abcjs-container&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">script</span>&gt;
+</span></span><span style="display:flex;"><span>  document.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;DOMContentLoaded&#34;</span>, <span style="color:#66d9ef">function</span> () {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#66d9ef">typeof</span> <span style="color:#a6e22e">ABCJS</span> <span style="color:#f92672">!==</span> <span style="color:#e6db74">&#39;undefined&#39;</span>) {
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">abcString</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">`{{ .Inner | safeHTML }}`</span>;
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">ABCJS</span>.<span style="color:#a6e22e">renderAbc</span>(<span style="color:#e6db74">&#34;{{ .Get &#34;</span><span style="color:#a6e22e">id</span><span style="color:#e6db74">&#34; }}&#34;</span>, <span style="color:#a6e22e">abcString</span>);
+</span></span><span style="display:flex;"><span>    } <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">error</span>(<span style="color:#e6db74">&#34;ABCJS is not loaded or defined.&#34;</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  });
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">script</span>&gt;
+</span></span></code></pre></div><h2 id="13美化自定义css">1.3美化自定义CSS</h2>
+<p>在<code>static/css/abcjs</code>中引入样式：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>.<span style="color:#a6e22e">abcjs-container</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">margin</span>: <span style="color:#ae81ff">20</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">auto</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">text-align</span>: <span style="color:#66d9ef">center</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">max-width</span>: <span style="color:#ae81ff">800</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>在<code>header.html</code>引入CSS:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;stylesheet&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ &#34;</span><span style="color:#960050;background-color:#1e0010">/</span><span style="color:#a6e22e">css</span><span style="color:#960050;background-color:#1e0010">/</span><span style="color:#a6e22e">abcjs</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">css</span><span style="color:#960050;background-color:#1e0010">&#34;</span> <span style="color:#960050;background-color:#1e0010">|</span> <span style="color:#a6e22e">absURL</span> <span style="color:#960050;background-color:#1e0010">}}&#34;</span>&gt;
+</span></span></code></pre></div><h1 id="2尝试一下">2.尝试一下</h1>
+<pre tabindex="0"><code>{/{&lt; abcjs id=&#34;Cooley&#39;s&#34; &gt;}\}
+X: 1
+T: Cooley&#39;s
+M: 4/4
+L: 1/8
+K: Emin
+|:D2|&#34;Em&#34;EBBA B2 EB|\
+    ~B2 AB dBAG|\
+    &#34;D&#34;FDAD BDAD|\
+    FDAD dAFD|
+&#34;Em&#34;EBBA B2 EB|\
+    B2 AB defg|\
+    &#34;D&#34;afe^c dBAF|\
+    &#34;Em&#34;DEFD E2:|
+|:gf|&#34;Em&#34;eB B2 efge|\
+    eB B2 gedB|\
+    &#34;D&#34;A2 FA DAFA|\
+    A2 FA defg|
+&#34;Em&#34;eB B2 eBgB|\
+    eB B2 defg|\
+    &#34;D&#34;afe^c dBAF|\
+    &#34;Em&#34;DEFD E2:|
+{/{&lt; /abcjs &gt;}\}(因为会转义，把左右花括号内“/\”去掉即可)
+</code></pre><div id="example-1" class="abcjs-container"></div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    if (typeof ABCJS !== 'undefined') {
+      var abcString = `\nX: 1\nT: Cooley\u0027s\nM: 4\/4\nL: 1\/8\nK: Emin\n|:D2|\u0022Em\u0022EBBA B2 EB|\\\n    ~B2 AB dBAG|\\\n    \u0022D\u0022FDAD BDAD|\\\n    FDAD dAFD|\n\u0022Em\u0022EBBA B2 EB|\\\n    B2 AB defg|\\\n    \u0022D\u0022afe^c dBAF|\\\n    \u0022Em\u0022DEFD E2:|\n|:gf|\u0022Em\u0022eB B2 efge|\\\n    eB B2 gedB|\\\n    \u0022D\u0022A2 FA DAFA|\\\n    A2 FA defg|\n\u0022Em\u0022eB B2 eBgB|\\\n    eB B2 defg|\\\n    \u0022D\u0022afe^c dBAF|\\\n    \u0022Em\u0022DEFD E2:|\n`;
+      ABCJS.renderAbc("example-1", abcString);
+    } else {
+      console.error("ABCJS is not loaded or defined.");
+    }
+  });
+</script>
+
+<p>完成！！！</p>
+<hr>
+<p>参考1.<a href="https://www.jsdelivr.com/package/npm/abcjs">jsdlivr上abcjs</a>2.<a href="https://www.abcjs.net/">abcjs官网</a></p>
+<p>
+<div class="post-img-view">
+<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/DALL%C2%B7E%202025-01-17%2017.09.16%20-%20A%20visually%20engaging%20website%20design%20inspired%20by%20https___www.abcjs.net_%2C%20focusing%20on%20a%20modern%20interface%20for%20music%20notation%20rendering.%20The%20image%20features.webp">
+<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/DALL%C2%B7E%202025-01-17%2017.09.16%20-%20A%20visually%20engaging%20website%20design%20inspired%20by%20https___www.abcjs.net_%2C%20focusing%20on%20a%20modern%20interface%20for%20music%20notation%20rendering.%20The%20image%20features.webp" alt=""  />
+</a>
+</div>
+</p>
+
+  </div>
+</div>
+<head>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jssocials@1.5/dist/jssocials.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jssocials/dist/jssocials.min.js" defer></script>
+
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nanogallery2@3.0.5/dist/css/nanogallery2.min.css" defer>
+    <script src="https://cdn.jsdelivr.net/npm/nanogallery2@3.0.5/dist/jquery.nanogallery2.min.js" defer></script>
+</head>
+
+<body>
+    <div class="container has-text-centered">
+        
+        <aside><div id="share"></div></aside>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                
+                if (typeof $.fn.jsSocials !== "undefined") {
+                    $("#share").jsSocials({
+                        showLabel: false,
+                        showCount: false,
+                        shares: ["email", "twitter"]
+                    });
+                } else {
+                    console.error("jsSocials 插件未加载！");
+                }
+            });
+        </script>
+        
+        本作品采用<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>进行许可。
+    </div>
+</body>
+<div class="container">
+<head>
+  
+ <script src="https://unpkg.com/@waline/client@2.15.8/dist/waline.js"></script> 
+ <link rel= "stylesheet" href= "https://www.zaqizaba.xyz/css/waline.css" integrity= "ppjat2Nqt9/vogVpCBD/nqCHV1spgY56HenQwKAi/Ru+Qp4ILlhUr7MumlCujChTrjI6Ab+Tc1vjanZ2GIhmUw==" crossorigin= "anonymous" >
+</head>
+<body>
+  
+  <div id="waline"></div><div id="waline" class="waline-container"></div>
+  <script>
+
+var locale = {
+  nick: '😐的爱称',
+  nickError: '昵称不能少于3个字符',
+  mail: '你的📫',
+  mailError: '请填写正确的邮件地址',
+  link: '🌐的链接',
+  placeholder: '此刻你看完这篇博文脑海中的想法是什么呢，大胆说出来吧ヾ(•ω•`)o',
+  sofa: '🍿🍿🍿',
+  submit: '提交',
+  reply: '回复',
+  cancelReply: '取消回复',
+  comment: '评论',
+  more: '加载更多...',
+  preview: '预览',
+  emoji: '表情',
+  expand: '查看更多...',
+  seconds: '秒前',
+  minutes: '分钟前',
+  hours: '小时前',
+  days: '天前',
+  now: '刚刚',
+  uploading: '正在上传',
+  login: '登录',
+  logout: '退出',
+  admin: '博主',
+  word: '字',
+  wordHint: '评论字数应在 $0 到 $1 字之间！\n当前字数：$2',
+};
+
+Waline.init({
+      el: '#waline',
+      lang: 'zh-CN',
+      dark: 'auto',
+      serverURL: 'https://zaqizaba.xyz',
+      locale,
+      emoji: 
+    [
+    'https://gcore.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/',
+    'https://cdn.cbd.int/sarakale-assets@1.2.1/emoji/acfun_color/'
+  ],
+});
+  </script>
+</body>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FFW576XTMR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-FFW576XTMR');
+</script>
+
+
+
+
+<div class="container has-text-centered">
+  <section class="section">
+    <p>&copy; <a href="https://www.zaqizaba.xyz">阿波尔的博客</a>2019-2025</p>
+  </section>
+</div>
