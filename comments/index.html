@@ -158,8 +158,45 @@ MathJax = {
   }
 </style>
  </div>
-<p align="left"><strong>IP链接测试🎇</strong></p>
-<iframe src="https://ip.skk.moe/simple" style="width: 100%; border: 0"></iframe>
+<p align="left"><strong>宝可梦数据🎇</strong></p>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>宝可梦信息</title>
+  <script src="https://pokeapi.co/api/v2/pokemon/1/"></script>
+</head>
+<body>
+  <h1>宝可梦信息</h1>
+  <div id="pokemon-info"></div>
+
+  <script>
+    
+    fetch('https://pokeapi.co/api/v2/pokemon/1/')
+      .then(response => response.json())
+      .then(data => {
+        
+        const name = data.name;
+        const imageUrl = data.sprites.front_default;
+
+        
+        const pokemonElement = document.createElement('div');
+        pokemonElement.innerHTML = `
+          <h2>${name}</h2>
+          <img src="${imageUrl}" alt="${name}">
+        `;
+
+        
+        document.getElementById('pokemon-info').appendChild(pokemonElement);
+      })
+      .catch(error => {
+        console.error('获取宝可梦数据时出错:', error);
+      });
+  </script>
+</body>
+</html>
+
 <p align="left"><strong>Orb Farm🎆</strong></p>
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000;">
   <iframe src="https://orb.farm/"
