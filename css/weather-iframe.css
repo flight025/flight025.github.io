@@ -1,0 +1,17 @@
+.iframe-container {
+  position: relative;
+  width: 100%; /* 容器占满父元素宽度 */
+  padding-top: 30%; /* 高度比例，260px / 860px = 30% */
+  overflow: hidden; /* 确保内容不会溢出 */
+  max-width: 860px; /* 最大宽度限制 */
+  margin: 0 auto; /* 居中容器 */
+}
+
+.iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* 让 iframe 的宽度随容器调整 */
+  height: 100%; /* 保持高度适配 */
+  border: 0; /* 去掉边框 */
+}

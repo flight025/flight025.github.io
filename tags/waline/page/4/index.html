@@ -9,13 +9,14 @@
 
 <title>Waline | 阿波尔的博客</title>
 
+<link rel="stylesheet" href="https://www.zaqizaba.xyz/css/abcjs.css">
 <link rel="stylesheet" href="https://www.zaqizaba.xyz//css/styles.css">
 <link rel="stylesheet" href="https://www.zaqizaba.xyz/css/fonts.css" integrity="nHA4sQes5N4kC/1rRzsd9KcxNPPEG1e4F7kjT3rg7mhweyYUuxGU985+SOHzZCsN" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" 
 integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
-<script async src="https://cdn.staticfile.org/mermaid/8.8.2/mermaid.min.js"></script>
-<body></head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.min.js" integrity="sha512-qglQ1LSNAz8XKHfeL5cl9/Z7FnG4v9PodzbvytCLA6qJcB5axH9oovvSNlFwMj46jdHHsOQGkEiUGSf3Lrr8Gg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head><body>
 
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/zenburn.min.css" crossorigin="anonymous" />
@@ -36,6 +37,7 @@ MathJax = {
 };
 </script>
 <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+<script src="https://cdn.jsdelivr.net/npm/abcjs@6.4.4/dist/abcjs-basic-min.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.min.js"></script>
 </html>
 
@@ -69,7 +71,6 @@ MathJax = {
     margin: auto;
 }
 </style>
-</body>
 
 
   <div class="container">
@@ -127,6 +128,69 @@ MathJax = {
     </nav>
   </div>
   <main class="container">
+      
+      
+      <h1 class="title is-3">2021</h1>
+      
+      <article class="columns">
+        <div class="column is-2">
+          <h6 class="is-inline" style="white-space: nowrap">Feb 15</h2>
+        </div>
+        <div class="column">
+          <h2 class="subtitle is-inline is-size-4-mobile is-size-3-desktop"><a href="https://www.zaqizaba.xyz/posts/hugo%E6%B7%BB%E5%8A%A0%E7%9F%AD%E4%BB%A3%E7%A0%81/">Hugo添加短代码</a></h1>
+          <div class="content is-hidden-mobile">
+             写在之前， hugo shortcodes中文意译即为雨果博客短代码，是一种先配置文件，通过在文章中插入短代码模式，来实现纯文字，歌曲，文章，个人社交文字转发，以及视频，播客等在个人博客上显示的一种方式。
+以下几个短代码的应用 上次我在“Hugo解决网易云音乐不显示问题”这篇博客中说了，开启HTML外链引用必须先添加：
+1.[markup.goldmark.renderer] 2.unsafe= true 然后自己再在网易云音乐引入 iframe实现在hugo博客上显示音乐。但是现在，有一种更好的方式，hugo提倡引入外链可以用短代码。
+方式为：新建/layouts/shortcodes/music.html，在其中引入：
+{{- $scratch := .Page.Scratch.Get &#34;scratch&#34; -}} &lt;!-- require APlayer …
+            
+            <br>
+            <a class="button is-marginless is-paddingless" href="https://www.zaqizaba.xyz/posts/hugo%E6%B7%BB%E5%8A%A0%E7%9F%AD%E4%BB%A3%E7%A0%81/">
+            <span class="icon-link is-small" style="line-height: 100%">
+                <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+              </span>
+              <p style="padding:0 5px"></p>more</p>
+            </a>
+            
+          </div>
+      </article>
+      
+      <article class="columns">
+        <div class="column is-2">
+          <h6 class="is-inline" style="white-space: nowrap">Jan 28</h2>
+        </div>
+        <div class="column">
+          <h2 class="subtitle is-inline is-size-4-mobile is-size-3-desktop"><a href="https://www.zaqizaba.xyz/posts/%E5%9C%A8%E5%8F%B0%E5%BC%8F%E6%9C%BA%E4%B8%8A%E4%BD%93%E9%AA%8C%E8%B0%B7%E6%AD%8Cstadia%E4%BA%91%E6%B8%B8%E6%88%8F%E5%B9%B3%E5%8F%B0/">在台式机上体验谷歌stadia云游戏平台</a></h1>
+          <div class="content is-hidden-mobile">
+            云游戏平台Google stadia在谷歌浏览器上登录很久了，今天我决定尝试一下，看看体验怎么样。
+1.云游戏平台google stadia的发展及收费方式及其它问题 问：云游戏平台Google stadia 是怎么发展来的？
+答：google stadia游戏平台于2018年最初通过project stream计划，于2018年10月通过《刺客信条：奥德赛》的beta版亮相。2019年GDC大会上发布了发布了云游戏平台google stadia以及Google stadia的游戏手柄，游戏平台可以在电视，电脑，手机上运行，但是必须得支持Google服务以及stadia应用，这次我就是在电脑上尝试的。平台可以配合YOUTUBE进行直播，前提是你网络必须得跟得上。目前Google stadia游戏平台已上架《刺客信条：奥德赛》、《赛博朋克2077》、《荒野大镖客：救赎》等3A大作，也有诸 …
+            
+            <br>
+            <a class="button is-marginless is-paddingless" href="https://www.zaqizaba.xyz/posts/%E5%9C%A8%E5%8F%B0%E5%BC%8F%E6%9C%BA%E4%B8%8A%E4%BD%93%E9%AA%8C%E8%B0%B7%E6%AD%8Cstadia%E4%BA%91%E6%B8%B8%E6%88%8F%E5%B9%B3%E5%8F%B0/">
+            <span class="icon-link is-small" style="line-height: 100%">
+                <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+              </span>
+              <p style="padding:0 5px"></p>more</p>
+            </a>
+            
+          </div>
+      </article>
+      
+      <article class="columns">
+        <div class="column is-2">
+          <h6 class="is-inline" style="white-space: nowrap">Jan 2</h2>
+        </div>
+        <div class="column">
+          <h2 class="subtitle is-inline is-size-4-mobile is-size-3-desktop"><a href="https://www.zaqizaba.xyz/posts/cdn%E5%85%AC%E5%85%B1%E5%BA%93%E7%9A%84%E4%BF%AE%E6%94%B9/">CDN公共库的修改</a></h1>
+          <div class="content is-hidden-mobile">
+            博客有一段时间加载很慢，打开chrome的控制台显示这样：
+网站有几处错误和警告，加载这些失效和错误资源限制了网页加载速度。
+&lt;link rel=&#34;stylesheet&#34; href=&#34;{{ $scratch.Get &#34;baseURL&#34; }}/css/styles.css&#34;&gt; &lt;link rel=&#34;stylesheet&#34; href=&#34;https://use.fontawesome.com/releases/v5.2.0/css/all.css&#34; integrity=&#34;sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ&#34; crossorigin=&#34;anonymous&#34;&gt; …
+            
+          </div>
+      </article>
       
       
       <h1 class="title is-3">2020</h1>
@@ -247,48 +311,6 @@ git version git version 2.26.2.windows.1 hugo version Hugo Static …
             采血方法 正确采集血样本是获得准确、可靠实验结果的关键。在样本采集前,应根据实验要求,决定采血方法、所叙血量及适用抗凝剂。
 （一）静脉采血法 1.概叙 静脉采血多用于体表的浅静脉,通常采用肘部静脉、手背静脉、内踝静脉或股静脉。小儿可采颈外静脉血液。根据采血量可选用不同型号注射器,配备相应的针头。某些特殊检查,为避免血小板激活,要使用塑料注射器和硅化处理后的试管或塑料试管。目前,已有商品化的真空采血系统的采血法。
 2.操作方法 (1)准备试管：取合适数量和规格的试管备用。 （2）检查注射器：打开一次性注射器包装,左手持针头下座,右手持针筒,将针头和针筒紧密连接,并使针头斜面对准针筒刻度,抽拉针栓检查有无阻塞和漏气。最后排尽注射器中的空气，备用。 (3)选择静脉：患者取坐位,前臂水平伸直置于桌面枕垫上。暴露穿刺部位,选择容易固定、明显可见的肘部静脉。 （4）消毒：先用30g/L碘酊棉签自所选静 …
-            
-          </div>
-      </article>
-      
-      <article class="columns">
-        <div class="column is-2">
-          <h6 class="is-inline" style="white-space: nowrap">May 30</h2>
-        </div>
-        <div class="column">
-          <h2 class="subtitle is-inline is-size-4-mobile is-size-3-desktop"><a href="https://www.zaqizaba.xyz/posts/%E7%AC%AC%E4%B8%80%E7%AF%87%E4%B8%B4%E5%BA%8A%E6%A3%80%E9%AA%8C%E5%9F%BA%E7%A1%80/">第一篇临床检验基础</a></h1>
-          <div class="content is-hidden-mobile">
-            第一篇 临床检验基础 第一章 血液样本采集和血涂片制备 一.血液生理概要 （一）血液组成 血液由血细胞（红细胞、白细胞、血小板）和血浆组成。离体后的血液自然凝固,分离出来的淡黄色透明液体称为血清。血液加抗凝剂后分离出来的淡黄色液体称为血浆。血清与血浆差别是：血清缺少某些凝固因子,如凝血因子I（纤维蛋白原）、II（凝血酶原）、V、VIII等。
-全血适用于临床血液学检查,如血细胞计数、分类和形态学检查等。血浆适用于血浆生理性和病理性化学成分的测定,特别是内分泌激素测定;血浆除钙离子外,含有其他全部凝血因子,也适用于血栓与止血的检查。血清适用于临床化学和临床免疫学检查。
-（二）血液理化性质 1.血量 正常人血量约为（70±10）ml/kg体重,成人约4~5L,约占体重的6%~8%,其中血浆占55%,血细胞占45%。小儿血量与体重之比略高于成人,男性比女性血量稍多,但女性妊娠期间血量可增 …
-            
-          </div>
-      </article>
-      
-      <article class="columns">
-        <div class="column is-2">
-          <h6 class="is-inline" style="white-space: nowrap">May 29</h2>
-        </div>
-        <div class="column">
-          <h2 class="subtitle is-inline is-size-4-mobile is-size-3-desktop"><a href="https://www.zaqizaba.xyz/posts/%E4%B8%BA%E4%BB%80%E4%B9%88%E9%80%89%E6%8B%A9hugo%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/">为什么选择hugo搭建我的博客</a></h1>
-          <div class="content is-hidden-mobile">
-            为什么我会选择hugo写文章，主要原因是因为部署快速，没有那么多的复杂程序 1.简单明了 2.采用markdown语法写作 3.静态博客没有冗长的插件，打开网页比较快。 以后优点再看吧。
-
-            
-          </div>
-      </article>
-      
-      <article class="columns">
-        <div class="column is-2">
-          <h6 class="is-inline" style="white-space: nowrap">May 29</h2>
-        </div>
-        <div class="column">
-          <h2 class="subtitle is-inline is-size-4-mobile is-size-3-desktop"><a href="https://www.zaqizaba.xyz/posts/first/">我的第一篇博客</a></h1>
-          <div class="content is-hidden-mobile">
-            Hello Hugo aaa
-bbb
-ccc
-
             
           </div>
       </article>
