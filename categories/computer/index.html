@@ -9,13 +9,14 @@
 
 <title>Computer | 阿波尔的博客</title>
 
+<link rel="stylesheet" href="https://www.zaqizaba.xyz/css/abcjs.css">
 <link rel="stylesheet" href="https://www.zaqizaba.xyz//css/styles.css">
 <link rel="stylesheet" href="https://www.zaqizaba.xyz/css/fonts.css" integrity="nHA4sQes5N4kC/1rRzsd9KcxNPPEG1e4F7kjT3rg7mhweyYUuxGU985+SOHzZCsN" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" 
 integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
-<script async src="https://cdn.staticfile.org/mermaid/8.8.2/mermaid.min.js"></script>
-<body></head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.min.js" integrity="sha512-qglQ1LSNAz8XKHfeL5cl9/Z7FnG4v9PodzbvytCLA6qJcB5axH9oovvSNlFwMj46jdHHsOQGkEiUGSf3Lrr8Gg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head><body>
 
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/zenburn.min.css" crossorigin="anonymous" />
@@ -36,6 +37,7 @@ MathJax = {
 };
 </script>
 <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+<script src="https://cdn.jsdelivr.net/npm/abcjs@6.4.4/dist/abcjs-basic-min.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.min.js"></script>
 </html>
 
@@ -69,7 +71,6 @@ MathJax = {
     margin: auto;
 }
 </style>
-</body>
 
 
   <div class="container">
@@ -127,6 +128,68 @@ MathJax = {
     </nav>
   </div>
   <main class="container">
+      
+      
+      <h1 class="title is-3">2025</h1>
+      
+      <article class="columns">
+        <div class="column is-2">
+          <h6 class="is-inline" style="white-space: nowrap">Jan 17</h2>
+        </div>
+        <div class="column">
+          <h2 class="subtitle is-inline is-size-4-mobile is-size-3-desktop"><a href="https://www.zaqizaba.xyz/posts/%E4%B8%BA%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0abcjs%E7%9A%84%E7%9F%AD%E4%BB%A3%E7%A0%81/">为博客添加abcjs的短代码</a></h1>
+          <div class="content is-hidden-mobile">
+             abcjs库是用于呈现音乐乐谱的JavaScript库，是开源的js库。你可以把它的js代码用于网页。因为hugo blog的短代码是一大优点，所以我们可以通过jsdelivr的公共CDN链接以及命名为abcjs的短代码来实现abc乐谱在博客上显示。
+1.开始准备 1.1添加abcjs的cdn 去jsdelivr找到abcjs，找到abcjs的链接，在layouts/partials/header.html中引入如下：
+&lt;script src=&#34;https://cdn.jsdelivr.net/npm/abcjs@6.4.4/dist/abcjs-basic-min.min.js&#34;&gt;&lt;/script&gt; 1.2创建命名为abcjs的shortcode 创建layouts/shortcodes/abcjs.html，并引入短代码：
+&lt;div …
+            
+            <br>
+            <a class="button is-marginless is-paddingless" href="https://www.zaqizaba.xyz/posts/%E4%B8%BA%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0abcjs%E7%9A%84%E7%9F%AD%E4%BB%A3%E7%A0%81/">
+            <span class="icon-link is-small" style="line-height: 100%">
+                <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+              </span>
+              <p style="padding:0 5px"></p>more</p>
+            </a>
+            
+          </div>
+      </article>
+      
+      <article class="columns">
+        <div class="column is-2">
+          <h6 class="is-inline" style="white-space: nowrap">Jan 15</h2>
+        </div>
+        <div class="column">
+          <h2 class="subtitle is-inline is-size-4-mobile is-size-3-desktop"><a href="https://www.zaqizaba.xyz/posts/%E7%BE%8E%E5%9B%BDtiktok%E7%94%A8%E6%88%B7%E6%B6%8C%E5%85%A5%E5%B0%8F%E7%BA%A2%E4%B9%A6%E4%B9%8B%E5%90%8E/">美国tiktok用户涌入小红书之后</a></h1>
+          <div class="content is-hidden-mobile">
+            昨天一个事件上了微博热搜榜。就是因为tiktok（相当于国外版的抖音，一直是由字节国外公司即bytedance运营）临近特朗普上台面临关闭，大量的美国tiktok用户(可能不止tiktok平台但主要是以tiktok美国用户为主)纷纷为了表达不满涌向国内的小红书平台。原本小红书是 “‘3亿人的生活经验’这下变成了‘3亿人+自称大多数tiktok难民的美国用户的生活经验’” 。当然，这只是调侃，大多数人对此中美人民打破互联网之壁互相交流表示欢迎，一部分人还是希望美国人不要讨论黄赌毒和政治话题，还有部分从事外贸电商的人认为出海赚钱机会来了。但更多的是和美国人调侃互动，比如我平时喜欢看玄凤鹦鹉各种逗鸟的小红书帖子，然后算法推荐就会推出相应的美国用户玄凤鹦鹉日常。
+美国人分享玄凤鹦鹉日常 当然除了这个。还有美国人会问 “What animation do you like?”、“What …
+            
+          </div>
+      </article>
+      
+      <article class="columns">
+        <div class="column is-2">
+          <h6 class="is-inline" style="white-space: nowrap">Jan 12</h2>
+        </div>
+        <div class="column">
+          <h2 class="subtitle is-inline is-size-4-mobile is-size-3-desktop"><a href="https://www.zaqizaba.xyz/posts/clawcloud7%E5%88%80%E4%BC%98%E6%83%A0vps%E7%A9%B6%E7%AB%9F%E6%80%8E%E4%B9%88%E6%A0%B7/">Clawcloud7刀优惠vps究竟怎么样</a></h1>
+          <div class="content is-hidden-mobile">
+             前几天，看到Linux do论坛在讨论一款vps。这户vps商家叫clawcloud,有“小阿里云之称”。之所以这么叫，是因为该vps是阿里云线路。之前听说“黑五”推出过优惠款vps,这不久又推出了优惠vps,具体配置为：
+处理器1核，内存1GB，存储量20GB,流量500GB,峰值200Mbps,IP为ipv4/v6,是双ip。
+最重要的是，这款优惠vps一年输入优惠码 7CLAW一年才7刀（折合人民币一年大约是52元），不过只能用一年，第二年续费的话还是原价36刀。论坛有人认为这款vps很值得，虽然是普通线路。但是对北方电信移动等友好。也有人认为是“垃圾”：虽然便宜，但是对于南方移动联通波动很大。特别是南方联通，线路优化很差。恰好我就是南方联通&hellip;&hellip;..不过对我而言，还要什么自行车，这款vps支持支付宝，于是买了论坛公认线路优化好的jp线路。
+1.安装各种脚 …
+            
+            <br>
+            <a class="button is-marginless is-paddingless" href="https://www.zaqizaba.xyz/posts/clawcloud7%E5%88%80%E4%BC%98%E6%83%A0vps%E7%A9%B6%E7%AB%9F%E6%80%8E%E4%B9%88%E6%A0%B7/">
+            <span class="icon-link is-small" style="line-height: 100%">
+                <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+              </span>
+              <p style="padding:0 5px"></p>more</p>
+            </a>
+            
+          </div>
+      </article>
       
       
       <h1 class="title is-3">2024</h1>
@@ -263,75 +326,6 @@ microsoft store中国区商店搜索未见chatgpt 首先，去Microsoft登录页
           </div>
       </article>
       
-      <article class="columns">
-        <div class="column is-2">
-          <h6 class="is-inline" style="white-space: nowrap">May 3</h2>
-        </div>
-        <div class="column">
-          <h2 class="subtitle is-inline is-size-4-mobile is-size-3-desktop"><a href="https://www.zaqizaba.xyz/posts/%E6%B2%A7%E6%B5%B7%E4%B8%80%E5%A3%B0%E7%AC%91/">沧海一声笑</a></h1>
-          <div class="content is-hidden-mobile">
-            「沧海一声笑，滔滔两岸潮」。这句歌词来自于1990年香港电影《笑傲江湖》歌曲的开头的一句。是香港已故著名作曲、填词家黄霑先生所作。据黄霑记述。1989年应香港电影导演徐克所求来为电影填词作曲。先后写了六次草案，但是徐克均不怎么满意。究竟词曲表现得如高手才懂得 “阳春白雪” ；还是高手容易得像儿歌，演绎出韵味的 “下里巴人” 时，黄霑偶然翻到黄友棣的《中国音乐思想批判》，决定 “大乐必易” ，选择后一种作曲方式。而词义一半是借鉴了关于毛泽东主席在1936年所作的 「沁园春·雪」，如词中 “俱往矣，数风流人物，还看今朝” ，还借鉴了苏轼的词 「念奴娇·赤壁怀古」 的词句 “大江东去，浪淘尽，千古风流人物” 。并配以五声音阶 “宫、商、角、徵、羽” 后，加入一点自己的风格，才让导演徐克满意。
-在电影《笑傲江湖》中表现是，令狐冲、欲金盆洗手的顺风堂主刘正风和日月神教长老曲洋被东厂鹰犬左冷禅追杀， …
-            
-            <br>
-            <a class="button is-marginless is-paddingless" href="https://www.zaqizaba.xyz/posts/%E6%B2%A7%E6%B5%B7%E4%B8%80%E5%A3%B0%E7%AC%91/">
-            <span class="icon-link is-small" style="line-height: 100%">
-                <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-              </span>
-              <p style="padding:0 5px"></p>more</p>
-            </a>
-            
-          </div>
-      </article>
-      
-      <article class="columns">
-        <div class="column is-2">
-          <h6 class="is-inline" style="white-space: nowrap">May 1</h2>
-        </div>
-        <div class="column">
-          <h2 class="subtitle is-inline is-size-4-mobile is-size-3-desktop"><a href="https://www.zaqizaba.xyz/posts/vps%E5%AE%9E%E7%8E%B0%E6%B5%81%E9%87%8F%E8%AE%BF%E9%97%AE%E5%B9%B6%E5%BC%80%E5%90%AFipv6/">vps实现流量访问并开启ipv6</a></h1>
-          <div class="content is-hidden-mobile">
-             vps即虚拟机，我用它实现了外的访问，并解锁了Netflix和disney+以及chatgpt的限制，以及搭建动态网站（全球主流博客wordpress等）。当然得益于脚本让我玩转vps，没这些可能我买vps的意愿要大打折扣。
-1.先准备必备的软件及vps 具体如下：
-一台能够访问的vps、一个能连通vps的终端就行了。
-这里我用的是racknerd的vps，只因是还算便宜，终端就是老物件xshell，提倡还是买xshell正版吧，虽然我以前白嫖过，不过后来入正了。
-2.准备开始折腾 我这里买了两年的vps是2024新年季的活动。可以用信用卡支付，也可以用支付宝支付，甚至用bitcion支付也行。听国外论坛reddit讨论racknerd的老板代理其它vps有过跑路的经历，但是现在是转正规了，跑路风险依然有可能存在。还是建议购买vps如果有重要数据记得备份，以防万一。
-vps客户区，最下面 …
-            
-            <br>
-            <a class="button is-marginless is-paddingless" href="https://www.zaqizaba.xyz/posts/vps%E5%AE%9E%E7%8E%B0%E6%B5%81%E9%87%8F%E8%AE%BF%E9%97%AE%E5%B9%B6%E5%BC%80%E5%90%AFipv6/">
-            <span class="icon-link is-small" style="line-height: 100%">
-                <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-              </span>
-              <p style="padding:0 5px"></p>more</p>
-            </a>
-            
-          </div>
-      </article>
-      
-      <article class="columns">
-        <div class="column is-2">
-          <h6 class="is-inline" style="white-space: nowrap">Mar 3</h2>
-        </div>
-        <div class="column">
-          <h2 class="subtitle is-inline is-size-4-mobile is-size-3-desktop"><a href="https://www.zaqizaba.xyz/posts/%E7%94%B1%E4%BF%AE%E7%90%86walkman%E8%80%8C%E5%BC%95%E5%8F%91%E7%9A%84%E6%80%9D%E8%80%83/">由修理walkman而引发的思考</a></h1>
-          <div class="content is-hidden-mobile">
-             家里曾经有两台二手音乐播放器。一台是松下的cd机，一台是索尼的Walkman随身听。这二个都是二手机。也就是别人用过的，我不知道前主人当时是怎么想要抛弃这些机子的。不过，松下cd机虽然有瑕疵，但是能听。而这台索尼Walkman根本就不响应。
-一.第一次修理Walkman 当时这台索尼Walkman已经锈迹斑斑，我决定查询这台wm-ex621的电子说明书，来修理一下。先是买了氧化去锈剂加醋浸泡电池盒除锈，然后买了金属补漆笔对这台年久不用的Walkman补漆，再对主导轴除锈。
-然后放入口香糖电池。发现并没什么用，倒是线控显示了，说明有电，但是放入磁带，并没反应，我想可能是皮带问题吧。
-二.第二次修理Walkman 第二次修理这台Walkman，就是前几天的事情。这次我拆开了这台Walkman的面板，更换了皮带，并且把断开的正极用电烙铁焊上了，心想这下Walkman总能工作了吧。最后随身听还是 …
-            
-            <br>
-            <a class="button is-marginless is-paddingless" href="https://www.zaqizaba.xyz/posts/%E7%94%B1%E4%BF%AE%E7%90%86walkman%E8%80%8C%E5%BC%95%E5%8F%91%E7%9A%84%E6%80%9D%E8%80%83/">
-            <span class="icon-link is-small" style="line-height: 100%">
-                <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-              </span>
-              <p style="padding:0 5px"></p>more</p>
-            </a>
-            
-          </div>
-      </article>
-      
       
       
   </main>
@@ -379,7 +373,7 @@ vps客户区，最下面 …
 
 <div class="container has-text-centered">
   <section class="section">
-    <p>&copy; <a href="https://www.zaqizaba.xyz">阿波尔的博客</a> 2019-2024</p>
+    <p>&copy; <a href="https://www.zaqizaba.xyz">阿波尔的博客</a>2019-2025</p>
   </section>
 </div>
 </div>
