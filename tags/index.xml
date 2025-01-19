@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>EN</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://www.zaqizaba.xyz&#34;&gt;阿波尔的博客&lt;/a&gt; 2019-2025</copyright>
-    <lastBuildDate>Fri, 17 Jan 2025 16:01:03 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 18 Jan 2025 23:52:18 +0800</lastBuildDate>
     <atom:link href="https://www.zaqizaba.xyz/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tags</title>
+      <link>https://www.zaqizaba.xyz/tags/tags/</link>
+      <pubDate>Sat, 18 Jan 2025 23:52:18 +0800</pubDate>
+      <guid>https://www.zaqizaba.xyz/tags/tags/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Abcjs</title>
       <link>https://www.zaqizaba.xyz/tags/abcjs/</link>
