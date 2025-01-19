@@ -158,57 +158,35 @@ MathJax = {
 </span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/tags/{{ .Name | urlize }}&#34;</span>&gt; {{ .Name }} ({{ .Count }}) &amp;nbsp;&lt;/<span style="color:#f92672">a</span>&gt;
 </span></span><span style="display:flex;"><span>  {{end}}
 </span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">div</span>&gt;
-</span></span></code></pre></div><p>当然，为了<code>tag.html</code>美观化，可以通过添加类似<code>{{ partial &quot;template&quot; . }}</code>的模板，来美化单调的<code>tag.html</code>，我具体是引入<code>{{ partial &quot;header&quot; . }}</code>和<code>{{ partial &quot;nav&quot; . }}</code>来让页面适配博客主题页。</p>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nanogallery2@3.0.5/dist/css/nanogallery2.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/nanogallery2@3.0.5/dist/jquery.nanogallery2.min.js"></script>
-</head>
-<body>
-
-<div data-nanogallery2='{
-    "thumbnailDisplayTransition":          "none",
-     "thumbnailDisplayTransitionDuration":  500,
-     "thumbnailDisplayInterval":            30,
-     "galleryDisplayTransition":            "none",
-     "galleryDisplayTransitionDuration":    500,
-     "galleryDisplayMode": "rows",
-     "thumbnailDisplayOutsideScreen": "false",
-     "eventsDebounceDelay": 10,
-     "thumbnailL1BorderHorizontal": 0,
-     "thumbnailL1BorderVertical": 0,
-     "thumbnailLabel": {
-        "titleFontSize": "0.6em"
-     },
-     "thumbnailHoverEffect2": "image_scale_1.00_1.10|label_backgroundColor_rgba(0,0,0,0)_rgba(255,255,255,0)",
-     "galleryTheme": {
-        "thumbnail": {
-            "borderRadius": "5px"
-        }
-     },
-     "thumbnailToolbarImage": {
-        "topLeft": "",
-        "topRight": "",
-        "bottomLeft": "",
-        "bottomRight": ""
-     },
-     "viewerToolbar":   {
-        "display": true,
-        "standard": "label"
-     },
-     "viewerTools":     {
-        "topLeft":    "pageCounter, playPauseButton",
-        "topRight":   "downloadButton, rotateLeft, zoomButton, fullscreenButton, closeButton"
-     },
-     "viewerGalleryTWidth": 40,
-     "viewerGalleryTHeight": 40
-}'>
-    <a href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/QQ%E5%9B%BE%E7%89%8720240304000338.jpg" data-ngThumb="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/QQ%E5%9B%BE%E7%89%8720240304000338.jpg">更换皮带</a><a href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/QQ%E5%9B%BE%E7%89%8720240304000356.jpg" data-ngThumb="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/QQ%E5%9B%BE%E7%89%8720240304000356.jpg">电烙铁焊接正极</a>
+</span></span></code></pre></div><p>当然，为了<code>tag.html</code>美观化，可以通过添加类似<code>{{ partial &quot;template&quot; . }}</code>的模板，来美化单调的<code>tag.html</code>页面，我具体是引入<code>{{ partial &quot;header&quot; . }}</code>和<code>{{ partial &quot;nav&quot; . }}</code>来让页面适配博客主题页,然后<code>tag.html</code>就成了这样：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>{{ partial &#34;header&#34; . }}
+</span></span><span style="display:flex;"><span>{{ partial &#34;nav&#34; . }}
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;container&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">h1</span>&gt;{{ .Title }}&lt;/<span style="color:#f92672">h1</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">ul</span>&gt;
+</span></span><span style="display:flex;"><span>    {{ range .Pages }}
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#f92672">li</span>&gt;&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ .Permalink }}&#34;</span>&gt;{{ .Title }}&lt;/<span style="color:#f92672">a</span>&gt;&lt;/<span style="color:#f92672">li</span>&gt;
+</span></span><span style="display:flex;"><span>    {{ end }}
+</span></span><span style="display:flex;"><span>  &lt;/<span style="color:#f92672">ul</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">div</span>&gt;
+</span></span></code></pre></div><p>当点击<code>Frequent Tags</code>的标签词时，例如<code>hugo tags</code>时，页面就会是这样了：</p>
+<p>
+<div class="post-img-view">
+<a data-fancybox="gallery" href="C:%5cUsers%5c26073%5cAppData%5cRoaming%5cTypora%5ctypora-user-images%5cimage-20250119110121155.png">
+<img src="C:%5cUsers%5c26073%5cAppData%5cRoaming%5cTypora%5ctypora-user-images%5cimage-20250119110121155.png" alt="image-20250119110121155"  />
+</a>
 </div>
-</body>
-</html>
+</p>
+<p>这样，就会显示和<a href="https://www.zaqizaba.xyz/tags/hugo">hugo</a>相应的博客文章。</p>
+<h1 id="2后续总结">2.后续总结</h1>
+<p>之所以写这篇博文，是因为我折腾<code>Frequent Tags</code>这个博客标签很久了，这要么不显示，要么<code>Frequent Tags</code>就显示错误，总是链接到博客首页，一直失败。不过好在添加了<code>[taxonomies]</code>和<code>tag.html</code>文章总算是能够正确显示了，总算是解决了博客一大bug。</p>
+<p>
+<div class="post-img-view">
+<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/DALL%C2%B7E%202025-01-19%2011.27.31%20-%20A%20wide%20and%20visually%20dynamic%20image%20representing%20a%20blog%20tags%20page.%20The%20page%20is%20filled%20with%20various%20colorful%20and%20interactive%20tags%20arranged%20in%20a%20fluid%2C%20ov.webp">
+<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/DALL%C2%B7E%202025-01-19%2011.27.31%20-%20A%20wide%20and%20visually%20dynamic%20image%20representing%20a%20blog%20tags%20page.%20The%20page%20is%20filled%20with%20various%20colorful%20and%20interactive%20tags%20arranged%20in%20a%20fluid%2C%20ov.webp" alt=""  />
+</a>
+</div>
+</p>
 
   </div>
 </div>
