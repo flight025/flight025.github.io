@@ -304,13 +304,22 @@ var locale = {
   admin: '博主',
   word: '字',
   wordHint: '评论字数应在 $0 到 $1 字之间！\n当前字数：$2',
-  search: 'false',
+};
+
+module.exports = {
+  ...
+  allowAnonymous: true, 
+  ...
 };
 
 Waline.init({
       el: '#waline',
       lang: 'zh-CN',
       dark: 'auto',
+      login: 'optional'，
+      search: false,
+      visitor: true,
+      login: 'enable',
       serverURL: 'https://zaqizaba.xyz',
       locale,
       emoji: 
