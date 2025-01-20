@@ -6,19 +6,19 @@
     --waline-theme-color: #760411;
     --waline-active-color: #202020;
     --waline-color: #444;
-    --waline-bgcolor: #fff;
-    --waline-bgcolor-light: #f8f8f8;
-    --waline-bgcolor-hover: #f0f0f0;
+    --waline-bg-color: #fff;
+    --waline-bg-color-light: #f8f8f8;
+    --waline-bg-color-hover: #f0f0f0;
     --waline-border-color: #ddd;
-    --waline-disable-bgcolor: #f8f8f8;
+    --waline-disable-bg-color: #f8f8f8;
     --waline-disable-color: #000;
-    --waline-code-bgcolor: #282c34;
+    --waline-code-bg-color: #282c34;
     --waline-bq-color: #f0f0f0;
     --waline-avatar-size: 3.25rem;
     --waline-m-avatar-size: calc(var(--waline-avatar-size) * 9 / 13);
     --waline-badge-color: #3498db;
     --waline-badge-font-size: 0.75em;
-    --waline-info-bgcolor: #f8f8f8;
+    --waline-info-bg-color: #f8f8f8;
     --waline-info-color: #999;
     --waline-info-font-size: 0.625em;
     --waline-border: 1px solid var(--waline-border-color);
@@ -66,14 +66,14 @@
 [data-waline] hr {
     margin: .825em 0;
     border-style: dashed;
-    border-color: var(--waline-bgcolor-light)
+    border-color: var(--waline-bg-color-light)
 }
 
 [data-waline] code,[data-waline] pre {
     margin: 0;
     padding: .2em .4em;
     border-radius: 3px;
-    background: var(--waline-bgcolor-light);
+    background: var(--waline-bg-color-light);
     font-size: 85%
 }
 
@@ -157,7 +157,7 @@
 
 .wl-btn:disabled {
     border-color: var(--waline-border-color);
-    background: var(--waline-disable-bgcolor);
+    background: var(--waline-disable-bg-color);
     color: var(--waline-disable-color);
     cursor: not-allowed
 }
@@ -176,7 +176,7 @@
 
 .wl-btn.primary:disabled {
     border-color: var(--waline-border-color);
-    background: var(--waline-disable-bgcolor);
+    background: var(--waline-disable-bg-color);
     color: var(--waline-disable-color);
     cursor: not-allowed
 }
@@ -259,7 +259,7 @@
     margin: .5em;
     border: var(--waline-border);
     border-radius: .75em;
-    background: var(--waline-bgcolor);
+    background: var(--waline-bg-color);
     box-shadow: var(--waline-box-shadow)
 }
 
@@ -332,14 +332,14 @@
 }
 
 .wl-editor {
-  position: relative;
-  width: calc(100% - 1em);
-  min-height: 8.75em;
-  margin: 0.75em 0.5em;
-  border-radius: 0.5em;
-  background: rgba(0, 0, 0, 0);
-  font-size: 0.875em;
-  resize: vertical;
+    position: relative;
+    width: calc(100% - 1em);
+    min-height: 8.75em;
+    margin: .75em .5em;
+    border-radius: .5em;
+    background: rgba(0,0,0,0);
+    font-size: .875em;
+    resize: vertical
 }
 
 .wl-editor,.wl-input {
@@ -351,7 +351,7 @@
 }
 
 .wl-editor:focus,.wl-input:focus {
-    background: var(--waline-bgcolor-light)
+    background: var(--waline-bg-color-light)
 }
 
 .wl-preview {
@@ -457,22 +457,17 @@
     top: 100%;
     inset-inline-start: 1.25em;
     z-index: 10;
+    display: none;
+    width: 100%;
     max-width: 526px;
     border: var(--waline-border);
     border-radius: 6px;
-    background: var(--waline-bgcolor);
-    box-shadow: var(--waline-box-shadow);
-    opacity: 0;
-    visibility: hidden;
-    transition: transform .2s ease-out,opacity .2s ease-out;
-    transform: scale(0.9, 0.9);
-    transform-origin: 0 0
+    background: var(--waline-bg-color);
+    box-shadow: var(--waline-box-shadow)
 }
 
 .wl-emoji-popup.display {
-    opacity: 1;
-    visibility: visible;
-    transform: none
+    display: block
 }
 
 .wl-emoji-popup button {
@@ -490,7 +485,7 @@
 }
 
 .wl-emoji-popup button:hover {
-    background: var(--waline-bgcolor-hover)
+    background: var(--waline-bg-color-hover)
 }
 
 .wl-emoji-popup .wl-emoji {
@@ -572,7 +567,7 @@
     border-top-width: 0;
     border-bottom-right-radius: 6px;
     border-bottom-left-radius: 6px;
-    background: var(--waline-bgcolor)
+    background: var(--waline-bg-color)
 }
 
 .wl-gif-popup {
@@ -584,7 +579,7 @@
     padding: .75em .75em .25em;
     border: var(--waline-border);
     border-radius: 6px;
-    background: var(--waline-bgcolor);
+    background: var(--waline-bg-color);
     box-shadow: var(--waline-box-shadow);
     opacity: 0;
     visibility: hidden;
@@ -648,7 +643,7 @@
     }
 }
 
-.wl-cards .wl-user img {
+.wl-cards .wl-user .wl-user-avatar {
     width: var(--avatar-size);
     height: var(--avatar-size);
     border-radius: var(--waline-avatar-radius);
@@ -660,7 +655,7 @@
     top: calc(var(--avatar-size)*3/4);
     inset-inline-start: calc(var(--avatar-size)*3/4);
     border-radius: 50%;
-    background: var(--waline-bgcolor);
+    background: var(--waline-bg-color);
     box-shadow: var(--waline-box-shadow)
 }
 
@@ -734,7 +729,7 @@
     display: inline-block;
     margin-inline-end:.25em;padding: 2px 4px;
     border-radius: .2em;
-    background: var(--waline-info-bgcolor);
+    background: var(--waline-info-bg-color);
     color: var(--waline-info-color);
     font-size: var(--waline-info-font-size);
     line-height: 1.5
@@ -863,7 +858,7 @@
 }
 
 .wl-content .wl-tex {
-    background: var(--waline-info-bgcolor);
+    background: var(--waline-info-bg-color);
     color: var(--waline-info-color)
 }
 
@@ -1026,7 +1021,7 @@
     padding: 2px;
     border: 1px solid var(--waline-theme-color);
     border-radius: 1em;
-    background: var(--waline-bgcolor);
+    background: var(--waline-bg-color);
     color: var(--waline-theme-color);
     font-weight: 700;
     font-size: .75em;
@@ -1035,7 +1030,7 @@
 
 .wl-reaction-item.active .wl-reaction-votes {
     background: var(--waline-theme-color);
-    color: var(--waline-bgcolor)
+    color: var(--waline-bg-color)
 }
 
 .wl-reaction-text {
@@ -1051,7 +1046,7 @@
     margin: .75rem 0;
     padding: 1rem 1.25rem;
     border-radius: 6px;
-    background: var(--waline-code-bgcolor);
+    background: var(--waline-code-bg-color);
     line-height: 1.4
 }
 
@@ -1178,7 +1173,7 @@
     height: 1.5em;
     padding: 0 .4em;
     border-radius: 4px;
-    background: var(--waline-info-bgcolor);
+    background: var(--waline-info-bg-color);
     color: var(--waline-info-color);
     font-weight: bold;
     font-size: 10px;
@@ -1191,19 +1186,19 @@
 }
 
 .wl-user-list .wl-user-item:nth-child(1) .wl-user-badge {
-    background: var(--waline-rank-gold-bgcolor, #fa3939);
+    background: var(--waline-rank-gold-bg-color, #fa3939);
     color: var(--waline-white);
     font-weight: bold
 }
 
 .wl-user-list .wl-user-item:nth-child(2) .wl-user-badge {
-    background: var(--waline-rank-silver-bgcolor, #fb811c);
+    background: var(--waline-rank-silver-bg-color, #fb811c);
     color: var(--waline-white);
     font-weight: bold
 }
 
 .wl-user-list .wl-user-item:nth-child(3) .wl-user-badge {
-    background: var(--waline-rank-copper-bgcolor, #feb207);
+    background: var(--waline-rank-copper-bg-color, #feb207);
     color: var(--waline-white)
 }
 
