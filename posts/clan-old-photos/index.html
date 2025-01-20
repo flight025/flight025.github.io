@@ -354,64 +354,65 @@ MathJax = {
         本作品采用<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>进行许可。
     </div>
 </body>
-<div class="container">
+<!DOCTYPE html>
+<html lang="zh-CN">
 <head>
-  
-<script src="https://unpkg.com/@waline/client@2.15.8/dist/waline.js"></script> 
-<link rel= "stylesheet" href= "https://www.zaqizaba.xyz/css/waline.css" integrity= "MIWed8SQ6eGu4KgWgXR+ebvVSEPJ5dY5TddaHHyztyy2MixKV4sgE02SNvTgq/EI" crossorigin= "anonymous" >
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://unpkg.com/@waline/client@2.15.8/dist/waline.js"></script>
+  <link rel="stylesheet" href="https://www.zaqizaba.xyz/css/waline.css" crossorigin="anonymous">
 </head>
 <body>
-  
-  <div id="waline"></div><div id="waline" class="waline-container"></div>
+  <div id="waline"></div>
+
   <script>
+    var locale = {
+      nick: '😐的爱称',
+      nickError: '昵称不能少于3个字符',
+      mail: '你的📫',
+      mailError: '请填写正确的邮件地址',
+      link: '🌐的链接',
+      placeholder: '此刻你看完这篇博文脑海中的想法是什么呢，大胆说出来吧ヾ(•ω•`)o（访客模式评论不了请见谅，必须用户登录后才能评论）',
+      sofa: '🍿🍿🍿',
+      submit: '提交',
+      reply: '回复',
+      cancelReply: '取消回复',
+      comment: '评论',
+      more: '加载更多...',
+      preview: '预览',
+      emoji: '表情',
+      expand: '查看更多...',
+      seconds: '秒前',
+      minutes: '分钟前',
+      hours: '小时前',
+      days: '天前',
+      now: '刚刚',
+      uploading: '正在上传',
+      login: '登录',
+      logout: '退出',
+      admin: '博主',
+      word: '字',
+      wordHint: '评论字数应在 $0 到 $1 字之间！\n当前字数：$2',
+    };
 
-var locale = {
-  nick: '😐的爱称',
-  nickError: '昵称不能少于3个字符',
-  mail: '你的📫',
-  mailError: '请填写正确的邮件地址',
-  link: '🌐的链接',
-  placeholder: '此刻你看完这篇博文脑海中的想法是什么呢，大胆说出来吧ヾ(•ω•`)o（访客模式评论不了请见谅，必须用户登录后才能评论）',
-  sofa: '🍿🍿🍿',
-  submit: '提交',
-  reply: '回复',
-  cancelReply: '取消回复',
-  comment: '评论',
-  more: '加载更多...',
-  preview: '预览',
-  emoji: '表情',
-  expand: '查看更多...',
-  seconds: '秒前',
-  minutes: '分钟前',
-  hours: '小时前',
-  days: '天前',
-  now: '刚刚',
-  uploading: '正在上传',
-  login: '登录',
-  logout: '退出',
-  admin: '博主',
-  word: '字',
-  wordHint: '评论字数应在 $0 到 $1 字之间！\n当前字数：$2',
-};
-
-Waline.init({
+    Waline.init({
       el: '#waline',
       lang: 'zh-CN',
       login: 'enable',
       dark: 'auto',
       allowAnonymous: true,
-      search: false,
       visitor: true,
       serverURL: 'https://zaqizaba.xyz',
       locale,
-      emoji: 
-    [
-    'https://gcore.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/',
-    'https://cdn.cbd.int/sarakale-assets@1.2.1/emoji/acfun_color/'
-  ],
-});
+      emoji: [
+        'https://gcore.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/',
+        'https://cdn.cbd.int/sarakale-assets@1.2.1/emoji/acfun_color/',
+      ],
+    });
   </script>
 </body>
+</html>
+
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-FFW576XTMR"></script>
 <script>
