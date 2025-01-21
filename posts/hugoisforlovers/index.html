@@ -241,7 +241,10 @@ Having nearly instant feedback enables you to have your creativity flow without 
     background-position-y: 1000px;
     transition: all 0.2s ease-in-out 0s;
 }
-</style>var locale = {
+</style>
+
+
+var locale = {
         nick: '😐的爱称',
         nickError: '昵称不能少于3个字符',
         mail: '你的📫',
@@ -269,9 +272,14 @@ Having nearly instant feedback enables you to have your creativity flow without 
         word: '字',
         wordHint: '评论字数应在 $0 到 $1 字之间！\n当前字数：$2',
       };
-      
+
+<script type="module">
+    import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+</script>        
+
+<script>
 document.addEventListener('DOMContentLoaded', function () {
-        // 检查 Waline 是否加载
+        
         if (typeof Waline !== 'undefined') {
           Waline.init({
             el: '#waline',
