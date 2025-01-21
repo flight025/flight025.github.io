@@ -365,9 +365,8 @@ MathJax = {
     <div id="waline" class="waline-container"></div>
   </div>
 
-  <script type="module">
-    import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
-  </script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/@waline/client@v3/dist/waline.js"></script>
 
   <script>
     document.addEventListener('DOMContentLoaded', function () {
@@ -412,12 +411,14 @@ MathJax = {
             'https://cdn.cbd.int/sarakale-assets@1.2.1/emoji/acfun_color/'
           ],
         });
-      } 
+      } else {
+        console.error('Waline is not loaded correctly');
+      }
     });
   </script>
 </body>
 </html>
-  
+
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-FFW576XTMR"></script>
 <script>
