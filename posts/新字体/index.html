@@ -161,7 +161,7 @@ MathJax = {
 <h1 id="2试一试φ皿φ">2.试一试(<em>Φ皿Φ</em>)</h1>
 <p><strong>2-1.</strong> 北宋年间，苏轼因 <strong>“乌台诗案”</strong> 被贬久居黄州期间，思想由郁恨到洒脱。于是写出了著名的词作 <strong>《定风波·莫听穿林打叶声》</strong> ：</p>
 <blockquote>
-<h2 id="hahahugoshortcode33s0hbhb"><p style="text-align:center">定风波·莫听穿林打叶声</p></h2>
+<h2 id="hahahugoshortcode35s0hbhb"><p style="text-align:center">定风波·莫听穿林打叶声</p></h2>
 <p style="text-align:center">(宋)苏轼</p>
 <p style="text-align:center"><strong>三月七日，沙湖道中遇雨，雨具先去，同行皆狼狈，余独不觉。已而遂晴，故作此。</strong></p>
 <p style="text-align:center">莫听穿林打叶声，何妨吟啸且徐行。竹杖芒鞋轻胜马，谁怕？一蓑烟雨任平生。</p>
@@ -229,71 +229,60 @@ MathJax = {
     </div>
 </body>
 <div class="container">
-  <head>
-    
-    <script src="https://unpkg.com/waline@3.4.3/dist/waline.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/waline/3.4.3/waline.css" integrity="sha512-KgoCgEgPcvLBGCecmtYVURkWsZ6l3ZpVufX/IyvVlrMoK7nyWH658sHeizYY7RuiKudZet2rnoi9GXC8uJRCcA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  </head>
+<head>
+  
+ <script src="https://unpkg.com/@waline/client@3.4.3/dist/waline.js"></script> 
+ <link rel= "stylesheet" href= "https://www.zaqizaba.xyz/css/waline.css" integrity= "MIWed8SQ6eGu4KgWgXR+ebvVSEPJ5dY5TddaHHyztyy2MixKV4sgE02SNvTgq/EI" crossorigin= "anonymous" >
+</head>
+<body>
+  
+  <div id="waline"></div><div id="waline" class="waline-container"></div>
+  <script>
 
-  <body>
-    
-    <div id="waline"></div>
+var locale = {
+  nick: '😐的爱称',
+  nickError: '昵称不能少于3个字符',
+  mail: '你的📫',
+  mailError: '请填写正确的邮件地址',
+  link: '🌐的链接',
+  placeholder: '此刻你看完这篇博文脑海中的想法是什么呢，大胆说出来吧ヾ(•ω•`)o（访客模式评论不了请见谅，必须用户登录后才能评论）',
+  sofa: '🍿🍿🍿',
+  submit: '提交',
+  reply: '回复',
+  cancelReply: '取消回复',
+  comment: '评论',
+  more: '加载更多...',
+  preview: '预览',
+  emoji: '表情',
+  expand: '查看更多...',
+  seconds: '秒前',
+  minutes: '分钟前',
+  hours: '小时前',
+  days: '天前',
+  now: '刚刚',
+  uploading: '正在上传',
+  login: '登录',
+  logout: '退出',
+  admin: '博主',
+  word: '字',
+  wordHint: '评论字数应在 $0 到 $1 字之间！\n当前字数：$2',
+};
 
-    <script>
-      
-      document.addEventListener('DOMContentLoaded', function () {
-        
-        if (typeof Waline !== 'undefined') {
-          const locale = {
-            nick: '😐的爱称',
-            nickError: '昵称不能少于3个字符',
-            mail: '你的📫',
-            mailError: '请填写正确的邮件地址',
-            link: '🌐的链接',
-            placeholder: '此刻你看完这篇博文脑海中的想法是什么呢，大胆说出来吧ヾ(•ω•`)o（访客模式评论不了请见谅，必须用户登录后才能评论）',
-            sofa: '🍿🍿🍿',
-            submit: '提交',
-            reply: '回复',
-            cancelReply: '取消回复',
-            comment: '评论',
-            more: '加载更多...',
-            preview: '预览',
-            emoji: '表情',
-            expand: '查看更多...',
-            seconds: '秒前',
-            minutes: '分钟前',
-            hours: '小时前',
-            days: '天前',
-            now: '刚刚',
-            uploading: '正在上传',
-            login: '登录',
-            logout: '退出',
-            admin: '博主',
-            word: '字',
-            wordHint: '评论字数应在 $0 到 $1 字之间！\n当前字数：$2',
-          };
-
-          
-          Waline.init({
-            el: '#waline',
-            lang: 'zh-CN',
-            dark: 'auto',
-            search: false,
-            serverURL: 'https://zaqizaba.xyz',
-            locale,
-            emoji: [
-              'https://gcore.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/',
-              'https://cdn.cbd.int/sarakale-assets@1.2.1/emoji/acfun_color/'
-            ],
-          });
-        } else {
-          console.error('Waline is not loaded correctly.');
-        }
-      });
-    </script>
-  </body>
-</div>
-
+Waline.init({
+      el: '#waline',
+      lang: 'zh-CN',
+      dark: 'auto',
+      search: false,
+      serverURL: 'https://zaqizaba.xyz',
+      locale,
+      emoji: 
+    [
+    'https://gcore.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/',
+    'https://cdn.cbd.int/sarakale-assets@1.2.1/emoji/acfun_color/'
+  ],
+});
+  </script>
+</body>
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-FFW576XTMR"></script>
 <script>
