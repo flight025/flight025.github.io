@@ -140,7 +140,7 @@ MathJax = {
 <p>在电影《笑傲江湖》中表现是，令狐冲、欲金盆洗手的顺风堂主刘正风和日月神教长老曲洋被东厂鹰犬左冷禅追杀，泛船而逃，途中曲刘兴之所至演奏二人青年时所作的《笑傲江湖》。刘吹横笛，曲弹古筝，令狐冲假弹三弦，并轮番唱和，以表示远离血海江湖。</p>
 <p>而此歌又有主要有二个版本。分别是香港演员、歌手许冠杰、黄霑、张伟文所唱的粤语版，和黄霑、罗大佑、徐克所唱国语版，二个版本的歌词虽然有点区别，但唱出来所表达的意境是一样的，这里是国语版的：</p>
 <blockquote>
-<h2 id="hahahugoshortcode36s0hbhb"><p style="text-align:center">沧海一声笑</p></h2>
+<h2 id="hahahugoshortcode35s0hbhb"><p style="text-align:center">沧海一声笑</p></h2>
 <p><p style="text-align:center"><strong>歌手：罗大佑 / 黄霑 / 徐克</strong></p>
 <p style="text-align:center"><strong>作词 : 黄霑</strong></p>
 <p style="text-align:center"><strong>作曲: 黄霑</strong></p>
@@ -210,60 +210,65 @@ MathJax = {
     </div>
 </body>
 <div class="container">
-<head>
-  
- <script src="https://cdnjs.cloudflare.com/ajax/libs/waline/3.4.3/waline.js" integrity="sha512-ZZNnNwxQJsMq6To+ZEs+y2IN3n7j9z1OqwJcK+6tjZK0Sodxqvb9prmvwBqQhZQjGVWdREIXmTgpwKhNo7qKHw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/waline/3.4.3/waline.css" integrity="sha512-KgoCgEgPcvLBGCecmtYVURkWsZ6l3ZpVufX/IyvVlrMoK7nyWH658sHeizYY7RuiKudZet2rnoi9GXC8uJRCcA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
-  
-  <div id="waline"></div><div id="waline" class="waline-container"></div>
-  <script>
+  <head>
+    
+    <script type="module" src="https://cdnjs.cloudflare.com/ajax/libs/waline/3.4.3/waline.js" integrity="sha512-ZZNnNwxQJsMq6To+ZEs+y2IN3n7j9z1OqwJcK+6tjZK0Sodxqvb9prmvwBqQhZQjGVWdREIXmTgpwKhNo7qKHw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/waline/3.4.3/waline.css" integrity="sha512-KgoCgEgPcvLBGCecmtYVURkWsZ6l3ZpVufX/IyvVlrMoK7nyWH658sHeizYY7RuiKudZet2rnoi9GXC8uJRCcA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
 
-var locale = {
-  nick: '😐的爱称',
-  nickError: '昵称不能少于3个字符',
-  mail: '你的📫',
-  mailError: '请填写正确的邮件地址',
-  link: '🌐的链接',
-  placeholder: '此刻你看完这篇博文脑海中的想法是什么呢，大胆说出来吧ヾ(•ω•`)o（访客模式评论不了请见谅，必须用户登录后才能评论）',
-  sofa: '🍿🍿🍿',
-  submit: '提交',
-  reply: '回复',
-  cancelReply: '取消回复',
-  comment: '评论',
-  more: '加载更多...',
-  preview: '预览',
-  emoji: '表情',
-  expand: '查看更多...',
-  seconds: '秒前',
-  minutes: '分钟前',
-  hours: '小时前',
-  days: '天前',
-  now: '刚刚',
-  uploading: '正在上传',
-  login: '登录',
-  logout: '退出',
-  admin: '博主',
-  word: '字',
-  wordHint: '评论字数应在 $0 到 $1 字之间！\n当前字数：$2',
-};
+  <body>
+    
+    <div id="waline"></div>
+    <div class="waline-container"></div>
 
-Waline.init({
-      el: '#waline',
-      lang: 'zh-CN',
-      dark: 'auto',
-      search: false,
-      serverURL: 'https://zaqizaba.xyz',
-      locale,
-      emoji: 
-    [
-    'https://gcore.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/',
-    'https://cdn.cbd.int/sarakale-assets@1.2.1/emoji/acfun_color/'
-  ],
-});
-  </script>
-</body>
+    <script>
+      
+      document.addEventListener('DOMContentLoaded', function () {
+        const locale = {
+          nick: '😐的爱称',
+          nickError: '昵称不能少于3个字符',
+          mail: '你的📫',
+          mailError: '请填写正确的邮件地址',
+          link: '🌐的链接',
+          placeholder: '此刻你看完这篇博文脑海中的想法是什么呢，大胆说出来吧ヾ(•ω•`)o（访客模式评论不了请见谅，必须用户登录后才能评论）',
+          sofa: '🍿🍿🍿',
+          submit: '提交',
+          reply: '回复',
+          cancelReply: '取消回复',
+          comment: '评论',
+          more: '加载更多...',
+          preview: '预览',
+          emoji: '表情',
+          expand: '查看更多...',
+          seconds: '秒前',
+          minutes: '分钟前',
+          hours: '小时前',
+          days: '天前',
+          now: '刚刚',
+          uploading: '正在上传',
+          login: '登录',
+          logout: '退出',
+          admin: '博主',
+          word: '字',
+          wordHint: '评论字数应在 $0 到 $1 字之间！\n当前字数：$2',
+        };
+
+        Waline.init({
+          el: '#waline',
+          lang: 'zh-CN',
+          dark: 'auto',
+          search: false,
+          serverURL: 'https://zaqizaba.xyz',
+          locale,
+          emoji: [
+            'https://gcore.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/',
+            'https://cdn.cbd.int/sarakale-assets@1.2.1/emoji/acfun_color/'
+          ],
+        });
+      });
+    </script>
+  </body>
+</div>
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-FFW576XTMR"></script>
 <script>
