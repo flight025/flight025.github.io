@@ -1003,9 +1003,12 @@ $ vi themes/zafta/layouts/_default/single.html
 
   
   <script type="module">
-    import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+    import { init } from 'https://cdn.jsdelivr.net/npm/@waline/client@v3/dist/waline.js';
     
     document.addEventListener('DOMContentLoaded', function () {
+      
+      console.log(Waline);  
+
       if (typeof Waline !== 'undefined') {
         Waline.init({
           el: '#waline',

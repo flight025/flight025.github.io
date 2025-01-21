@@ -238,9 +238,12 @@ integrity=&#34;sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54b
 
   
   <script type="module">
-    import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+    import { init } from 'https://cdn.jsdelivr.net/npm/@waline/client@v3/dist/waline.js';
     
     document.addEventListener('DOMContentLoaded', function () {
+      
+      console.log(Waline);  
+
       if (typeof Waline !== 'undefined') {
         Waline.init({
           el: '#waline',
