@@ -271,7 +271,7 @@ MathJax = {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Waline Example</title>
+  <title>Waline 示例</title>
   <link rel="stylesheet" href="https://www.zaqizaba.xyz/css/waline.css"/>
   <style>
     .wl-editor {
@@ -296,11 +296,10 @@ MathJax = {
   </div>
 
   
-  <script src="https://cdn.jsdelivr.net/npm/@waline/client@v3/dist/waline.js"></script>
-
-  <script>
+  <script type="module">
+    import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+    
     document.addEventListener('DOMContentLoaded', function () {
-      
       if (typeof Waline !== 'undefined') {
         Waline.init({
           el: '#waline',
@@ -342,7 +341,7 @@ MathJax = {
           ],
         });
       } else {
-        console.error('Waline is not loaded correctly');
+        console.error('Waline 没有加载成功');
       }
     });
   </script>

@@ -212,7 +212,7 @@ integrity=&#34;sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54b
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Waline Example</title>
+  <title>Waline 示例</title>
   <link rel="stylesheet" href="https://www.zaqizaba.xyz/css/waline.css"/>
   <style>
     .wl-editor {
@@ -237,11 +237,10 @@ integrity=&#34;sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54b
   </div>
 
   
-  <script src="https://cdn.jsdelivr.net/npm/@waline/client@v3/dist/waline.js"></script>
-
-  <script>
+  <script type="module">
+    import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+    
     document.addEventListener('DOMContentLoaded', function () {
-      
       if (typeof Waline !== 'undefined') {
         Waline.init({
           el: '#waline',
@@ -283,7 +282,7 @@ integrity=&#34;sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54b
           ],
         });
       } else {
-        console.error('Waline is not loaded correctly');
+        console.error('Waline 没有加载成功');
       }
     });
   </script>
