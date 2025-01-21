@@ -140,7 +140,7 @@ MathJax = {
 <p>在电影《笑傲江湖》中表现是，令狐冲、欲金盆洗手的顺风堂主刘正风和日月神教长老曲洋被东厂鹰犬左冷禅追杀，泛船而逃，途中曲刘兴之所至演奏二人青年时所作的《笑傲江湖》。刘吹横笛，曲弹古筝，令狐冲假弹三弦，并轮番唱和，以表示远离血海江湖。</p>
 <p>而此歌又有主要有二个版本。分别是香港演员、歌手许冠杰、黄霑、张伟文所唱的粤语版，和黄霑、罗大佑、徐克所唱国语版，二个版本的歌词虽然有点区别，但唱出来所表达的意境是一样的，这里是国语版的：</p>
 <blockquote>
-<h2 id="hahahugoshortcode34s0hbhb"><p style="text-align:center">沧海一声笑</p></h2>
+<h2 id="hahahugoshortcode37s0hbhb"><p style="text-align:center">沧海一声笑</p></h2>
 <p><p style="text-align:center"><strong>歌手：罗大佑 / 黄霑 / 徐克</strong></p>
 <p style="text-align:center"><strong>作词 : 黄霑</strong></p>
 <p style="text-align:center"><strong>作曲: 黄霑</strong></p>
@@ -209,81 +209,90 @@ MathJax = {
         本作品采用<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>进行许可。
     </div>
 </body>
-<div class="container">
+<!DOCTYPE html>
+<html lang="zh-CN">
 <head>
-  
-<link rel="stylesheet" href="https://www.zaqizaba.xyz/css/waline.css"/>
-<div id="waline" class="waline-container"></div>
-<style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Waline Example</title>
+  <link rel="stylesheet" href="https://www.zaqizaba.xyz/css/waline.css"/>
+  <style>
     .wl-editor {
-    background-image: url(https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Edelgard%20von%20Hresvelg.gif);
-    background-size: 18%;
-    background-repeat: no-repeat;
-    background-position: right bottom;
-    background-color: rgba(255, 255, 255, 0);
-    resize: vertical
-}
+      background-image: url(https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Edelgard%20von%20Hresvelg.gif);
+      background-size: 18%;
+      background-repeat: no-repeat;
+      background-position: right bottom;
+      background-color: rgba(255, 255, 255, 0);
+      resize: vertical;
+    }
 
-.wl-editor:focus {
-    background-position-x: 800px;
-    background-position-y: 1000px;
-    transition: all 0.2s ease-in-out 0s;
-}
-</style>
+    .wl-editor:focus {
+      background-position-x: 800px;
+      background-position-y: 1000px;
+      transition: all 0.2s ease-in-out 0s;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div id="waline" class="waline-container"></div>
+  </div>
 
-<script type="module">
+  <script type="module">
     import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
-</script>        
+  </script>
 
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-        
-        if (typeof Waline !== 'undefined') {
-          Waline.init({
-            el: '#waline',
-            lang: 'zh-CN',
-            dark: 'auto',
-            search: false,
-            serverURL: 'https://zaqizaba.xyz',
-            locale,
-            var locale：[nick: '😐的爱称',
-        nickError: '昵称不能少于3个字符',
-        mail: '你的📫',
-        mailError: '请填写正确的邮件地址',
-        link: '🌐的链接',
-        placeholder: '此刻你看完这篇博文脑海中的想法是什么呢，大胆说出来吧ヾ(•ω•`)o（访客模式评论不了请见谅，必须用户登录后才能评论）',
-        sofa: '🍿🍿🍿',
-        submit: '提交',
-        reply: '回复',
-        cancelReply: '取消回复',
-        comment: '评论',
-        more: '加载更多...',
-        preview: '预览',
-        emoji: '表情',
-        expand: '查看更多...',
-        seconds: '秒前',
-        minutes: '分钟前',
-        hours: '小时前',
-        days: '天前',
-        now: '刚刚',
-        uploading: '正在上传',
-        login: '登录',
-        logout: '退出',
-        admin: '博主',
-        word: '字',
-        wordHint: '评论字数应在 $0 到 $1 字之间！\n当前字数：$2',]
-            emoji: [
-              'https://gcore.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/',
-              'https://cdn.cbd.int/sarakale-assets@1.2.1/emoji/acfun_color/'
-            ],
-          });
-        } else {
-          console.error('Waline is not loaded correctly');
-        }
-      });
-    </script>
-  </body>
-</div>      
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      
+      if (typeof Waline !== 'undefined') {
+        Waline.init({
+          el: '#waline',
+          lang: 'zh-CN',
+          dark: 'auto',
+          search: false,
+          serverURL: 'https://zaqizaba.xyz',
+          locale: {
+            nick: '😐的爱称',
+            nickError: '昵称不能少于3个字符',
+            mail: '你的📫',
+            mailError: '请填写正确的邮件地址',
+            link: '🌐的链接',
+            placeholder: '此刻你看完这篇博文脑海中的想法是什么呢，大胆说出来吧ヾ(•ω•`)o（访客模式评论不了请见谅，必须用户登录后才能评论）',
+            sofa: '🍿🍿🍿',
+            submit: '提交',
+            reply: '回复',
+            cancelReply: '取消回复',
+            comment: '评论',
+            more: '加载更多...',
+            preview: '预览',
+            emoji: '表情',
+            expand: '查看更多...',
+            seconds: '秒前',
+            minutes: '分钟前',
+            hours: '小时前',
+            days: '天前',
+            now: '刚刚',
+            uploading: '正在上传',
+            login: '登录',
+            logout: '退出',
+            admin: '博主',
+            word: '字',
+            wordHint: '评论字数应在 $0 到 $1 字之间！\n当前字数：$2',
+          },
+          emoji: [
+            'https://gcore.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/',
+            'https://cdn.cbd.int/sarakale-assets@1.2.1/emoji/acfun_color/'
+          ],
+        });
+      } else {
+        console.error('Waline is not loaded correctly');
+      }
+    });
+  </script>
+</body>
+</html>
+  
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-FFW576XTMR"></script>
 <script>
