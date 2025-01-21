@@ -376,9 +376,22 @@ MathJax = {
 }
 </style>
 
+<script type="module">
+    import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+</script>        
 
-var locale = {
-        nick: '😐的爱称',
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+        
+        if (typeof Waline !== 'undefined') {
+          Waline.init({
+            el: '#waline',
+            lang: 'zh-CN',
+            dark: 'auto',
+            search: false,
+            serverURL: 'https://zaqizaba.xyz',
+            locale,
+            var locale：[nick: '😐的爱称',
         nickError: '昵称不能少于3个字符',
         mail: '你的📫',
         mailError: '请填写正确的邮件地址',
@@ -403,24 +416,7 @@ var locale = {
         logout: '退出',
         admin: '博主',
         word: '字',
-        wordHint: '评论字数应在 $0 到 $1 字之间！\n当前字数：$2',
-      };
-
-<script type="module">
-    import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
-</script>        
-
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-        
-        if (typeof Waline !== 'undefined') {
-          Waline.init({
-            el: '#waline',
-            lang: 'zh-CN',
-            dark: 'auto',
-            search: false,
-            serverURL: 'https://zaqizaba.xyz',
-            locale,
+        wordHint: '评论字数应在 $0 到 $1 字之间！\n当前字数：$2',]
             emoji: [
               'https://gcore.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/',
               'https://cdn.cbd.int/sarakale-assets@1.2.1/emoji/acfun_color/'
