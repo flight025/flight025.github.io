@@ -5,20 +5,19 @@
   gap: 10px;
   margin-top: 10px;
 }
-
-.tag-box {
+.tags-container .tag-box {
   display: inline-block;
   padding: 5px 10px;
-  border: 1px solid #8b8b8b; /* 较深的边框颜色 */
-  border-radius: 5px; /* 圆角效果 */
-  background-color: #f7f7f7; /* 浅背景色 */
-  color: #333; /* 标签文字颜色 */
+  border: 1px solid #8b8b8b !important; /* 添加 !important 提高优先级 */
+  border-radius: 5px;
+  background-color: #f7f7f7 !important; /* 添加 !important */
+  color: #333 !important;
   text-decoration: none;
   transition: all 0.3s ease;
 }
 
-.tag-box:hover {
-  background-color: #8b8b8b; /* 鼠标悬停时的背景色 */
-  color: #fff; /* 鼠标悬停时文字颜色 */
-  border-color: #5c5c5c; /* 鼠标悬停时的边框颜色 */
+.tags-container .tag-box:hover {
+  background-color: #8b8b8b !important; /* 鼠标悬停效果 */
+  color: #fff !important;
+  border-color: #5c5c5c !important;
 }
