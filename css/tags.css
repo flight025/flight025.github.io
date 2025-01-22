@@ -9,16 +9,16 @@
 .tag-box {
   display: inline-block;
   padding: 5px 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #f9f9f9;
-  color: #333;
+  border: 1px solid #8b8b8b; /* 较深的边框颜色 */
+  border-radius: 5px; /* 圆角效果 */
+  background-color: #f7f7f7; /* 浅背景色 */
+  color: #333; /* 标签文字颜色 */
   text-decoration: none;
   transition: all 0.3s ease;
 }
 
 .tag-box:hover {
-  background-color: #333;
-  color: #fff;
-  border-color: #333;
+  background-color: #8b8b8b; /* 鼠标悬停时的背景色 */
+  color: #fff; /* 鼠标悬停时文字颜色 */
+  border-color: #5c5c5c; /* 鼠标悬停时的边框颜色 */
 }
