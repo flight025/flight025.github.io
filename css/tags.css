@@ -1,28 +1,24 @@
-.tags {
+/* tags.css */
+.tags-container {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
-.tag-item {
-  background: #f5f5f5;
+.tag-box {
+  display: inline-block;
   padding: 5px 10px;
+  border: 1px solid #ddd;
   border-radius: 5px;
-  font-size: 14px;
-}
-
-.tag-link {
+  background-color: #f9f9f9;
+  color: #333;
   text-decoration: none;
-  color: #007BFF;
+  transition: all 0.3s ease;
 }
 
-.tag-link:hover {
-  text-decoration: underline;
-  color: #0056b3;
-}
-
-.tag-count {
-  color: #6c757d;
-  font-size: 12px;
+.tag-box:hover {
+  background-color: #333;
+  color: #fff;
+  border-color: #333;
 }
