@@ -159,9 +159,12 @@ MathJax = {
 </style>
  </div>
 <p align="left"><strong>MiniMax🎇</strong></p>
-<iframe id="myIframe" src="https://www.minimax01.com/embed" width="100%" height="600px" frameborder="0" style="background-color: #760411;"></iframe>
+<div id="iframeContainer" style="background-color: #760411; position: relative; width: 100%; height: 600px;">
+  <iframe id="myIframe" src="https://www.minimax01.com/embed" width="100%" height="600px" frameborder="0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+</div>
+
 <script>
-  document.getElementById("myIframe").addEventListener("click", function() {
+  document.getElementById("iframeContainer").addEventListener("click", function() {
     this.style.backgroundColor = "#202020";
   });
 </script>
