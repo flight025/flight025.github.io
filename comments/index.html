@@ -159,13 +159,13 @@ MathJax = {
 </style>
  </div>
 <p align="left"><strong>MiniMax🎇</strong></p>
-<div id="iframeContainer" style="background-color: #760411; position: relative; width: 100%; height: 600px;">
-  <iframe id="myIframe" src="https://www.minimax01.com/embed" width="100%" height="600px" frameborder="0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+<div id="iframeWrapper" style="position: relative; width: 100%; height: 600px; background-color: #760411;">
+  <iframe id="myIframe" src="https://www.minimax01.com/embed" width="100%" height="600px" frameborder="0"></iframe>
+  <div id="overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(118, 4, 17, 0); pointer-events: none;"></div>
 </div>
-
 <script>
-  document.getElementById("iframeContainer").addEventListener("click", function() {
-    this.style.backgroundColor = "#202020";
+  document.getElementById("iframeWrapper").addEventListener("click", function() {
+    document.getElementById("overlay").style.backgroundColor = "#202020";
   });
 </script>
 <p align="left"><strong>Orb Farm🎆</strong></p>
