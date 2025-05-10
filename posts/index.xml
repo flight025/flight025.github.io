@@ -7,7 +7,7 @@
     <generator>Hugo</generator>
     <language>EN</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://www.zaqizaba.xyz&#34;&gt;阿波尔的博客&lt;/a&gt; 2019-2025</copyright>
-    <lastBuildDate>Mon, 27 Jan 2025 18:24:32 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 10 May 2025 16:48:43 +0800</lastBuildDate>
     <atom:link href="https://www.zaqizaba.xyz/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Creating a New Theme</title>
@@ -22,6 +22,13 @@
       <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
       <guid>https://www.zaqizaba.xyz/posts/migrate-from-jekyll/</guid>
       <description>&lt;h2 id=&#34;move-static-content-to-static&#34;&gt;Move static content to &lt;code&gt;static&lt;/code&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Jekyll has a rule that any directory not starting with &lt;code&gt;_&lt;/code&gt; will be copied as-is to the &lt;code&gt;_site&lt;/code&gt; output. Hugo keeps all static content under &lt;code&gt;static&lt;/code&gt;. You should therefore move it all there.&#xA;With Jekyll, something that looked like&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;▾ &amp;lt;root&amp;gt;/&#xA;    ▾ images/&#xA;        logo.png&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;should become&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;▾ &amp;lt;root&amp;gt;/&#xA;    ▾ static/&#xA;        ▾ images/&#xA;            logo.png&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;Additionally, you&amp;rsquo;ll want any files that should reside at the root (such as &lt;code&gt;CNAME&lt;/code&gt;) to be moved to &lt;code&gt;static&lt;/code&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>发现2015年已是十年前</title>
+      <link>https://www.zaqizaba.xyz/posts/%E5%8F%91%E7%8E%B02015%E5%B9%B4%E5%B7%B2%E6%98%AF%E5%8D%81%E5%B9%B4%E5%89%8D/</link>
+      <pubDate>Sat, 10 May 2025 16:48:43 +0800</pubDate>
+      <guid>https://www.zaqizaba.xyz/posts/%E5%8F%91%E7%8E%B02015%E5%B9%B4%E5%B7%B2%E6%98%AF%E5%8D%81%E5%B9%B4%E5%89%8D/</guid>
+      <description>&lt;p&gt;&#xD;&#xA;&lt;div class=&#34;post-img-view&#34;&gt;&#xD;&#xA;&lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/2015.jpg&#34;&gt;&#xD;&#xA;&lt;img src=&#34;https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/2015.jpg&#34; alt=&#34;&#34;  /&gt;&#xD;&#xA;&lt;/a&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;现在距离2015年已经是十年前，十年前，当时自己觉得还很年轻。不过转眼就到了三十岁了，古人云：“三十而立。”也就是说三十岁能够承担起一切社会事务了。可惜现在看来，我似乎还不可能承担三十养家的任务，至今孑然一生。不过你要我说十年前，有啥后悔的事。其实我总感觉这些其实是 &lt;strong&gt;命运而为&lt;/strong&gt; 罢了，改变不了的事和改变不了的人都随着时间缓缓流逝。改变的是年龄，改变不了的其实是认知。&lt;/p&gt;&#xA;&lt;p&gt;十年前，我还在上大学。那时我也追求过一个龚姓女同学，发现或许是我喜欢的类型，由于不熟。先是手机表白，然后找机会和她攀谈，相处几个月开始还行，后来不知道为什么后来她一直躲着我，我就知道肯定是没戏了。但是还是抱有幻想，最后她还是拒绝了我，这也是没办法的事。不久之后我也被其她人喜欢过，但是问题发现或许是属于“桃花运”来了，索性选择最有感觉的，但是鼓起勇气和她说接受。无奈。她觉得我对爱情浮躁，于是又开始拒绝接受。就这样，“我选择的”与“选择我的”都没有成功。这种感觉和时机有关，错过就是错过。或许也和我性格有关系，平时我其实是比较内向的，勇气一旦用完，便开始怀疑自身能力。&lt;/p&gt;&#xA;&lt;p&gt;十年前，我爷爷奶奶还尚在，也是希望我学好这个医学检验专业，以后能找一份好工作。现在看来这个专业已经饱和了，检验现在各医院（比如县一级的医院）就要正儿八经的本科和研究生学历，我这种只能去一个乡镇卫生院来或者去大城市的化验公司驻理。我只去过乡镇卫生院，我觉得卫生院工资还是比较可观的，干了一年多。发现是网上描述的那样，其实不忙的时候还是挺清闲的，但是恰好那时是疫情时期，所以。那时还挺忙，晚上也要测试核酸。这段时间，爷爷奶奶先后去世，其实感觉挺惭愧的。不过就是疫情导致那时大量招收化验人员。这点来看，的确为这个专业的后续就业带来了饱和问题，导致现在许多人学了这个专业也找不到工作。&lt;/p&gt;&#xA;&lt;p&gt;十年前，我还是觉得我的前景或许还是有转机的。或许只要努努力，后来生活或许大差不差。现在看来，这就是笑话。这个社会底层在内卷。但前一个月“协和董袭莹事件”爆发，发现这个社会你再废柴，只要你处于社会的顶端，你就能轻易的获得常人需要加倍努力的资源时，大多人信仰或许早就塌了，只是时间长短而已。加上“湘雅二院刘翔峰主刀事件”，这下“南湘雅，北协和”的招牌都出大问题了。社会医疗评价体系究竟何为？&lt;/p&gt;&#xA;&lt;p&gt;然而，接下来还有多少个十年后，我的人生还剩多少个十年？？？&lt;/p&gt;&#xA;&lt;p&gt;&#xD;&#xA;&lt;div class=&#34;post-img-view&#34;&gt;&#xD;&#xA;&lt;a data-fancybox=&#34;gallery&#34; href=&#34;https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/878dc8ef-8fff-4606-8a20-133aef6686be.png&#34;&gt;&#xD;&#xA;&lt;img src=&#34;https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/878dc8ef-8fff-4606-8a20-133aef6686be.png&#34; alt=&#34;&#34;  /&gt;&#xD;&#xA;&lt;/a&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;/p&gt;</description>
     </item>
     <item>
       <title>火起来的国产AI模型deepseek</title>
