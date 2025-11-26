@@ -1,6 +1,4 @@
-
-<div class="container">
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="EN">
 <head><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -75,7 +73,7 @@ MathJax = {
 </body>
 
 
-  <div class="container">
+<div class="container">
     <nav class="navbar level">
       <div class="navbar-brand">
           <a class="nav-item" href="https://www.zaqizaba.xyz/"><h1 class="title is-3">阿波尔的博客</h1></a>
@@ -129,249 +127,330 @@ MathJax = {
       </div>
     </nav>
   </div>
-  <main class="container">
-      
-      
-      <h1 class="title is-3">2025</h1>
-      
-      <article class="columns">
-        <div class="column is-2">
-          <h6 class="is-inline" style="white-space: nowrap">Sep 30</h2>
-        </div>
-        <div class="column">
-          <h2 class="subtitle is-inline is-size-4-mobile is-size-3-desktop"><a href="https://www.zaqizaba.xyz/posts/decision-making-hard/">做决策很难，但是...</a></h1>
-          <div class="content is-hidden-mobile">
-             有时候，我们是不是总是对于一些不确定的事。胡思乱想，甚至为此抓耳挠腮。大到房产婚姻工作等人生大事，小到今天应该吃什么呢？这无时无刻都不体现出做决定是一件很难的事。
-我想起了我小时候的一件事，就是买雪糕吃：
-我小时候特别爱吃一款雪糕，名称叫做“随变”雪糕。不记得是伊利还是蒙牛的了。有一天我找老板买雪糕。我说我买“随变”雪糕。老板可能自己不知道“随变”雪糕是什么？我说：就叫“随变”。后来老板明白了“随变”雪糕是一个子品牌。但是很遗憾的告诉我，“随变”雪糕要几天后才能进，要不要和路雪的香芋雪糕。此时我吃惯了“随变”，但是这款和路雪的香芋雪糕我觉得没试过，于是决定尝试一下。发现味道和“随变”雪糕不相上下，甚至比“随变”味道还要浓厚。此后，便觉得可能是吃“随变”雪糕惯了。让人觉得我是随便买雪糕，实际上。我只是觉得哪款雪糕符合我的口味，我就选择这款罢了，并非只爱吃”随变“雪糕。
-当然现在事后想起来。 …
-            
-          </div>
-      </article>
-      
-      <article class="columns">
-        <div class="column is-2">
-          <h6 class="is-inline" style="white-space: nowrap">Jan 27</h2>
-        </div>
-        <div class="column">
-          <h2 class="subtitle is-inline is-size-4-mobile is-size-3-desktop"><a href="https://www.zaqizaba.xyz/posts/%E7%81%AB%E8%B5%B7%E6%9D%A5%E7%9A%84%E5%9B%BD%E4%BA%A7ai%E6%A8%A1%E5%9E%8Bdeepseek/">火起来的国产AI模型deepseek</a></h1>
-          <div class="content is-hidden-mobile">
-            国产AI大模型deepseek这二天火起来了，准确的说应该是大模型deepseek R1。deepseek所属公司是幻方量化，创始人是梁文锋，浙大毕业。因为热爱人工智能，所以和同学融资合伙搞了deepseek，目标直指chatgpt。早期模型主打便宜（DeepSeek-V2的API定价为每百万tokens输入1元、输出2元，价格仅为GPT-4 Turbo的百分之一）。去年12月份开始，推出了deepseek V3,前几天又推出了deepseek R1。该模型在2048块英伟达H800型GPU（即缩水版）上训练（后续也传出其实也有H100)，成绩超越Qwen2.5-72B和Llama 3.1-405B，甚至有超越GPT-4o 和 Claude 3.5 Sonnet等顶级模型的趋势。
-不得不说，的确挺厉害的。第一是不像GPT-4o有模型时间限制；第二是主打“量大管饱”，免费且开源；第三是大模 …
-            
-            <br>
-            <a class="button is-marginless is-paddingless" href="https://www.zaqizaba.xyz/posts/%E7%81%AB%E8%B5%B7%E6%9D%A5%E7%9A%84%E5%9B%BD%E4%BA%A7ai%E6%A8%A1%E5%9E%8Bdeepseek/">
-            <span class="icon-link is-small" style="line-height: 100%">
-                <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-              </span>
-              <p style="padding:0 5px"></p>more</p>
-            </a>
-            
-          </div>
-      </article>
-      
-      <article class="columns">
-        <div class="column is-2">
-          <h6 class="is-inline" style="white-space: nowrap">Jan 18</h2>
-        </div>
-        <div class="column">
-          <h2 class="subtitle is-inline is-size-4-mobile is-size-3-desktop"><a href="https://www.zaqizaba.xyz/posts/%E6%A0%87%E7%AD%BE%E5%BD%92%E7%B1%BB%E6%96%87%E7%AB%A0%E7%BB%88%E4%BA%8E%E8%B5%B7%E4%BD%9C%E7%94%A8%E4%BA%86/">标签归类文章终于起作用了</a></h1>
-          <div class="content is-hidden-mobile">
-             自从About的Frequent Tags一直不怎么起作用，一直准确显示不了tags的博客文章，为此折腾了很长时间。以前标签链接总是定位到博客首页，现在总算是能够根据标签词搜索到相应文章。
-1.开始准备 1.1在config 配置TAGS的URL逻辑映射 config.toml 配置的问题，在 config.toml 中，[taxonomies] 是用来定义逻辑名称到 URL 路径的映射：
-[taxonomies] tag = &#34;tags&#34; 给定 tag = &quot;tags&quot; 后，Hugo 会在生成的网站中以 /tags/标签名/ 的形式来访问这些标签的文章。
-1.2创建一个 layouts/taxonomy/tag.html 文件模板 在layouts/taxonomy/tag.html中添加一个自定义tag.html模板，具体是：
-&lt;div …
-            
-            <br>
-            <a class="button is-marginless is-paddingless" href="https://www.zaqizaba.xyz/posts/%E6%A0%87%E7%AD%BE%E5%BD%92%E7%B1%BB%E6%96%87%E7%AB%A0%E7%BB%88%E4%BA%8E%E8%B5%B7%E4%BD%9C%E7%94%A8%E4%BA%86/">
-            <span class="icon-link is-small" style="line-height: 100%">
-                <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-              </span>
-              <p style="padding:0 5px"></p>more</p>
-            </a>
-            
-          </div>
-      </article>
-      
-      <article class="columns">
-        <div class="column is-2">
-          <h6 class="is-inline" style="white-space: nowrap">Jan 17</h2>
-        </div>
-        <div class="column">
-          <h2 class="subtitle is-inline is-size-4-mobile is-size-3-desktop"><a href="https://www.zaqizaba.xyz/posts/%E4%B8%BA%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0abcjs%E7%9A%84%E7%9F%AD%E4%BB%A3%E7%A0%81/">为博客添加abcjs的短代码</a></h1>
-          <div class="content is-hidden-mobile">
-             abcjs库是用于呈现音乐乐谱的JavaScript库，是开源的js库。你可以把它的js代码用于网页。因为hugo blog的短代码是一大优点，所以我们可以通过jsdelivr的公共CDN链接以及命名为abcjs的短代码来实现abc乐谱在博客上显示。
-1.开始准备 1.1添加abcjs的cdn 去jsdelivr找到abcjs，找到abcjs的链接，在layouts/partials/header.html中引入如下：
-&lt;script src=&#34;https://cdn.jsdelivr.net/npm/abcjs@6.4.4/dist/abcjs-basic-min.min.js&#34;&gt;&lt;/script&gt; 1.2创建命名为abcjs的shortcode 创建layouts/shortcodes/abcjs.html，并引入短代码：
-&lt;div …
-            
-            <br>
-            <a class="button is-marginless is-paddingless" href="https://www.zaqizaba.xyz/posts/%E4%B8%BA%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0abcjs%E7%9A%84%E7%9F%AD%E4%BB%A3%E7%A0%81/">
-            <span class="icon-link is-small" style="line-height: 100%">
-                <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-              </span>
-              <p style="padding:0 5px"></p>more</p>
-            </a>
-            
-          </div>
-      </article>
-      
-      <article class="columns">
-        <div class="column is-2">
-          <h6 class="is-inline" style="white-space: nowrap">Jan 15</h2>
-        </div>
-        <div class="column">
-          <h2 class="subtitle is-inline is-size-4-mobile is-size-3-desktop"><a href="https://www.zaqizaba.xyz/posts/%E7%BE%8E%E5%9B%BDtiktok%E7%94%A8%E6%88%B7%E6%B6%8C%E5%85%A5%E5%B0%8F%E7%BA%A2%E4%B9%A6%E4%B9%8B%E5%90%8E/">美国tiktok用户涌入小红书之后</a></h1>
-          <div class="content is-hidden-mobile">
-            昨天一个事件上了微博热搜榜。就是因为tiktok（相当于国外版的抖音，一直是由字节国外公司即bytedance运营）临近特朗普上台面临关闭，大量的美国tiktok用户(可能不止tiktok平台但主要是以tiktok美国用户为主)纷纷为了表达不满涌向国内的小红书平台。原本小红书是 “‘3亿人的生活经验’这下变成了‘3亿人+自称大多数tiktok难民的美国用户的生活经验’” 。当然，这只是调侃，大多数人对此中美人民打破互联网之壁互相交流表示欢迎，一部分人还是希望美国人不要讨论黄赌毒和政治话题，还有部分从事外贸电商的人认为出海赚钱机会来了。但更多的是和美国人调侃互动，比如我平时喜欢看玄凤鹦鹉各种逗鸟的小红书帖子，然后算法推荐就会推出相应的美国用户玄凤鹦鹉日常。
-美国人分享玄凤鹦鹉日常 当然除了这个。还有美国人会问 “What animation do you like?”、“What …
-            
-          </div>
-      </article>
-      
-      <article class="columns">
-        <div class="column is-2">
-          <h6 class="is-inline" style="white-space: nowrap">Jan 12</h2>
-        </div>
-        <div class="column">
-          <h2 class="subtitle is-inline is-size-4-mobile is-size-3-desktop"><a href="https://www.zaqizaba.xyz/posts/clawcloud7%E5%88%80%E4%BC%98%E6%83%A0vps%E7%A9%B6%E7%AB%9F%E6%80%8E%E4%B9%88%E6%A0%B7/">Clawcloud7刀优惠vps究竟怎么样</a></h1>
-          <div class="content is-hidden-mobile">
-             前几天，看到Linux do论坛在讨论一款vps。这户vps商家叫clawcloud,有“小阿里云之称”。之所以这么叫，是因为该vps是阿里云线路。之前听说“黑五”推出过优惠款vps,这不久又推出了优惠vps,具体配置为：
-处理器1核，内存1GB，存储量20GB,流量500GB,峰值200Mbps,IP为ipv4/v6,是双ip。
-最重要的是，这款优惠vps一年输入优惠码 7CLAW一年才7刀（折合人民币一年大约是52元），不过只能用一年，第二年续费的话还是原价36刀。论坛有人认为这款vps很值得，虽然是普通线路。但是对北方电信移动等友好。也有人认为是“垃圾”：虽然便宜，但是对于南方移动联通波动很大。特别是南方联通，线路优化很差。恰好我就是南方联通&hellip;&hellip;..不过对我而言，还要什么自行车，这款vps支持支付宝，于是买了论坛公认线路优化好的jp线路。
-1.安装各种脚 …
-            
-            <br>
-            <a class="button is-marginless is-paddingless" href="https://www.zaqizaba.xyz/posts/clawcloud7%E5%88%80%E4%BC%98%E6%83%A0vps%E7%A9%B6%E7%AB%9F%E6%80%8E%E4%B9%88%E6%A0%B7/">
-            <span class="icon-link is-small" style="line-height: 100%">
-                <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-              </span>
-              <p style="padding:0 5px"></p>more</p>
-            </a>
-            
-          </div>
-      </article>
-      
-      
-      <h1 class="title is-3">2024</h1>
-      
-      <article class="columns">
-        <div class="column is-2">
-          <h6 class="is-inline" style="white-space: nowrap">Dec 6</h2>
-        </div>
-        <div class="column">
-          <h2 class="subtitle is-inline is-size-4-mobile is-size-3-desktop"><a href="https://www.zaqizaba.xyz/posts/%E8%AE%A9pc%E7%AB%AF%E7%94%A8%E4%B8%8Achatgpt/">让PC端用上ChatGPT</a></h1>
-          <div class="content is-hidden-mobile">
-            chatgpt很久就有PC端了。只不过microsoft store中国区一直没有上（能上才有鬼。），下面介绍如何让你的电脑能够用上chatgpt应用。
-microsoft store中国区商店搜索未见chatgpt 首先，去Microsoft登录页面注册(注册邮箱是Google或者outlook、yahoo。国内qq、sina邮箱也行)。注册好后登录microsoft store。再分别打开windows设置》时间和语言》区域》国家或地区选择“中国→美国”后，关机重启更换Microsoft商店为美区。
-换成美区后，搜索应该可以看到chatgpt了，下载：
-这样，就可以享受PC端的chatgpt了。然后开启科学上网模式，登录后界面如下：
-然后自己可以按照喜好去探索了，比如生成一张chatgpt艺术画：
-更多探索的话，可以去 “自定义ChatGPT” 去找到合适的应用场景生成相应的解答就行 …
-            
-          </div>
-      </article>
-      
-      <article class="columns">
-        <div class="column is-2">
-          <h6 class="is-inline" style="white-space: nowrap">Nov 19</h2>
-        </div>
-        <div class="column">
-          <h2 class="subtitle is-inline is-size-4-mobile is-size-3-desktop"><a href="https://www.zaqizaba.xyz/posts/%E6%83%85%E5%86%B5%E6%88%96%E8%AE%B8%E9%9C%80%E8%A6%81%E6%94%B9%E5%8F%98/">情况或许需要改变</a></h1>
-          <div class="content is-hidden-mobile">
-            本来我是不怎么关心社会时事的，但是这一个月来连续发生两起重大无差报复社会事件，实在很难让人不关注。一是广东珠海体育中心驾车撞人事件 ，二是前几天的无锡工艺持刀连续杀人事件。虽然这种群体突发事件年年都有，但是像一个月连续发生两起恶性事件真的很残酷，也暴露了这个社会弊端是关于底层人和边缘人的生存和尊严问题，尤其是新冠疫情后时代后，明显普通人的戾气加重了。而这种“独狼式”的报复危机可谓是层出不穷。
-疫情时期的“大白”和防疫群众先来说说广东珠海体育中心驾车撞人事件，这件事起因是加害人樊某系因与其妻离婚分割财产不满。遂于本月11日购买越野车后冲撞正在体育中心锻炼的人群。导致35人死亡，43人受伤，而且后续樊某自己逃跑无望准备自杀，抢救工作正在进行中。已达到社会重大事故。网传樊某是准备去撞法院的，因为他是对法院判决不满，而这个珠海体育中心离法院很近，推测估计他认为在珠海体育中心锻炼的人肯定大多是法 …
-            
-            <br>
-            <a class="button is-marginless is-paddingless" href="https://www.zaqizaba.xyz/posts/%E6%83%85%E5%86%B5%E6%88%96%E8%AE%B8%E9%9C%80%E8%A6%81%E6%94%B9%E5%8F%98/">
-            <span class="icon-link is-small" style="line-height: 100%">
-                <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-              </span>
-              <p style="padding:0 5px"></p>more</p>
-            </a>
-            
-          </div>
-      </article>
-      
-      <article class="columns">
-        <div class="column is-2">
-          <h6 class="is-inline" style="white-space: nowrap">Nov 17</h2>
-        </div>
-        <div class="column">
-          <h2 class="subtitle is-inline is-size-4-mobile is-size-3-desktop"><a href="https://www.zaqizaba.xyz/posts/windows10%E5%92%8Carchlinux%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%90%AF%E5%8A%A8/">Windows10和archlinux双系统启动</a></h1>
-          <div class="content is-hidden-mobile">
-            Archlinux是一个独立开发的linux发行版，听说有“邪教”之称。你可以通过命令一步步安装引导Windows10和archlinux，从而实现win10/archlinux双系统。我也算是新手，建议如果想刷系统可以看看 archlinux新手安装教程，从而进一步加深对archlinux的理解。
-你需要准备的材料为： 一台能联网的电脑（我是台式机）、一个制作了archlinux至少2G的启动U盘、一个容量不少于60G以上的压缩系统盘、一个可以制作系统启动U盘的软件（我这里推荐rufus制作启动U盘）。
-方法如下： 1.制作系统盘并并压缩系统盘以及设置bios引导 1.先去archlinux下载iso，打开rufus。先引导选择下好的iso系统到rufus，再在分区类型选择“GPT”，目标系统类型是“UEFI”，然后点击“开始”制作archlinux启动盘。2.打开 此电脑》管理》磁盘 …
-            
-            <br>
-            <a class="button is-marginless is-paddingless" href="https://www.zaqizaba.xyz/posts/windows10%E5%92%8Carchlinux%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%90%AF%E5%8A%A8/">
-            <span class="icon-link is-small" style="line-height: 100%">
-                <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-              </span>
-              <p style="padding:0 5px"></p>more</p>
-            </a>
-            
-          </div>
-      </article>
-      
-      <article class="columns">
-        <div class="column is-2">
-          <h6 class="is-inline" style="white-space: nowrap">Oct 31</h2>
-        </div>
-        <div class="column">
-          <h2 class="subtitle is-inline is-size-4-mobile is-size-3-desktop"><a href="https://www.zaqizaba.xyz/posts/%E9%A9%BE%E7%85%A7%E7%BB%88%E5%BD%92%E6%98%AF%E6%8B%BF%E5%88%B0%E4%BA%86/">驾照终归是拿到了</a></h1>
-          <div class="content is-hidden-mobile">
-            今天，总算是把驾驶证拿到手了。这算是值得庆祝的一件事。不过满打满算。我从真正开始学习自动挡科一到科四拿证大约用了六个月时间，算是比较长的了。
-学车历程如下：
+<div class="container">
+  <h2 class="subtitle is-size-4-mobile is-size-3-desktop">About</h1>
+  <div class="content">
+    <p><strong><font face="heiti">hi,你好,陌生人，我曾是一名普通乡村医院检验科的医生。现在算是自由职业者吧。</font></strong></p>
+<p>家里原来有一台<strong>Panasonic</strong> <font color=blue>CD Player</font><font size=3>™</font>（<a href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/SL-CT540.jpg"><em>SL-CT540</em></a>）和一台<strong>SONY</strong> <font color=orange>Walkman</font><font size=3>™</font>（<a href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/WM-EX621.jpg"><em>WM-EX621</em></a>),这两个老古董陪伴了我的中学时光，不过都是<del>捡来的</del>（<span class="spoiler" >🎉That’s a joke.🤡</span>
+<style>
 
-            
-            <br>
-            <a class="button is-marginless is-paddingless" href="https://www.zaqizaba.xyz/posts/%E9%A9%BE%E7%85%A7%E7%BB%88%E5%BD%92%E6%98%AF%E6%8B%BF%E5%88%B0%E4%BA%86/">
-            <span class="icon-link is-small" style="line-height: 100%">
-                <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-              </span>
-              <p style="padding:0 5px"></p>more</p>
-            </a>
-            
-          </div>
-      </article>
-      
-      
-      
-  </main>
-  <section class="section">
-  <div class="container">
-    <nav class="level is-mobile">
-      <div class="level-left">
-        <div class="level-item">
-          
-          <a class="button is-rounded" disabled>
-            <span class="icon is-small is-marginless">
-              <i class="fa fa-angle-left"></i>
-            </span>
-            上一页
-          </a>
-          
-        </div>
-      </div>
-      <div class="level-right is-marginless">
-        <div class="level-item">
-          
-          <a class="button is-rounded" href="/about/page/2/">
-            下一页
-            <span class="icon is-small is-marginless">
-              <i class="fa fa-angle-right"></i>
-            </span>
-          </a>
-          
-        </div>
-      </div>
-    </nav>
-  </div>
-</section>
+.spoiler { 
+  color: black; 
+  background-color:black;
+}
+.spoiler:hover{
+  color: green;
+}
+</style> )，也不算，淘旧货时得到的。不过。由于我以前不会维护这两个“古董”，<font color=grey size=4 face="kaiti">现在都成为真正的“古董”了😥。</font>最近我喜欢上了折腾vps（以前也爱折腾但是不得要领），在此我推荐<a href="https://my.racknerd.com/aff.php?aff=11337"><img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/RackNerd.png" alt="RackNerd" style="zoom:25%;"></a>的vps,你如果想买优惠vps可以考虑这家，现在我用它来搭建网站并运行一些有趣的项目👌🏻。</p>
+<details><summary><u>现在正在探索中...😀😀😀</u></summary>  <p><font face="kaiti"><font size=12><font color=gold>其实<font color=red>我</font>现在也不知道究竟<font color=Purple>™探索</font>了个啥🤣🤣🤣</font></font></font></p></details>
+<p>附博主另外一个早期博客，已经停更很久了，网站名称是<font style="background: #00FFFF"><a href="https://moosdn.blogspot.com/">modest的随心博客</a></font>，blogger搭建。不过要爬梯。</p>
+<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20220201141800183.png" alt="me" style="zoom:80%;" />
+<h3 id="我的联系方式">我的联系方式</h3>
+<p><img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/图片/QQ图片20200530165449.jpg" alt="微信" style="zoom: 85%;" /><img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/图片/QQ图片20200530165413.jpg" alt="酷安" style="zoom: 85%;" /></p>
+<p>如果另外联系的话：我的邮箱：chcdgzlhr422[AT]gmail.com</p>
+
+
+
+
+
+
+
+
   
+  
+  
+
+  <div class="bing-wallpaper" style="text-align: center; margin-top: 20px;">
+    <div style="display: inline-block; border: 5px solid white; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); background-color: white; padding: 10px; text-align: center;">
+      <img src="https://www.bing.com/th?id=OHR.VietnamFalls_ZH-CN9659529108_1920x1080.jpg&amp;rf=LaDigue_1920x1080.jpg&amp;pid=hp" alt="归春河上的板约-德天瀑布，中国与越南边境 (© Shane P. White/Minden Pictures)" loading="lazy" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+      <p style="margin-top: 10px; font-size: 14px; color: #555;">归春河上的板约-德天瀑布，中国与越南边境 (© Shane P. White/Minden Pictures)</p>
+    </div>
+  </div>
+
+<h3 id="现在你能看到这个博客实际上靠这些网络工具">现在你能看到这个博客，实际上靠这些网络工具:</h3>
+<table>
+  <thead>
+      <tr>
+          <th>•<strong>博客平台系统</strong>                            <img src="https://img.shields.io/badge/-Hugo-FF4088?style=flat&logo=hugo&logoColor=ffffff" alt="hugo" style="zoom:150%;" /></th>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>•<strong>上传github安装依赖工具</strong>          <img src="https://img.shields.io/badge/-Git-F05032?style=flat&logo=git&logoColor=ffffff" alt="github" style="zoom:150%;" /></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>•<strong>博客部署托管平台</strong>                       <img src="https://img.shields.io/badge/-GitHub-181717?style=flat&logo=github&logoColor=ffffff" alt="github" style="zoom:150%;" /> <img src="https://img.shields.io/badge/-vercel-161254?style=flat&logo=vercel&logoColor=ffffff" alt="vercel" style="zoom:150%;" /></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>•<strong>域名提供以及图床上传工具</strong>      <img src="https://img.shields.io/badge/-tencentcloud-191981?style=flat&logo=qq&logoColor=ffffff" alt="tencetcloud" style="zoom:150%;" />  <img src="https://img.shields.io/badge/-Picgo-ba0148?style=flat&logo=Picgo&logoColor=ffffff" alt="Picgo" style="zoom:150%;" /></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>•<strong>写作工具</strong>                                       <img src="https://img.shields.io/badge/-VSCode-007ACC?style=flat&logo=visualstudiocode&logoColor=ffffff" alt="VScode" style="zoom:150%;" />  <img src="https://img.shields.io/badge/-typora-185865?style=typora&logo=typora&logoColor=ffffff" alt="typora" style="zoom:150%;" /></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>•<strong>博客代码修改</strong>                               <img src="https://img.shields.io/badge/-VSCode-007ACC?style=flat&logo=visualstudiocode&logoColor=ffffff" alt="VScode" style="zoom:150%;" />  <img src="https://img.shields.io/badge/-SublimeText-ffa500?style=flat&logo=SublimeText&logoColor=ffffff" alt="SublimeText" style="zoom:150%;" /></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>•<strong>公共CDN静态加速</strong>                      <img src="https://img.shields.io/badge/-jsdliver-ba0000?style=flat&logo=JSDelivr&logoColor=ffffff" alt="jsdliver" style="zoom:150%;" />    <img src="https://img.shields.io/badge/-cloudflare-ffa500?style=flat&logo=cloudflare&logoColor=ffffff" alt="cloudflare" style="zoom: 150%;" />    <img src="https://img.shields.io/badge/-ByteDance-0000ff?style=flat&logo=ByteDance&logoColor=ffffff" alt="bootcdn" style="zoom:150%;" /></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>•<strong>评论系统</strong>                                       <img src="https://img.shields.io/badge/-Waline-800080?style=flat&logo=disqus&logoColor=ffffff" alt="Waline" style="zoom:150%;" /></td>
+          <td></td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>
+<link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+<style type="text/css">.dark-theme .aplayer{background:#212121}.dark-theme .aplayer.aplayer-withlist .aplayer-info{border-bottom-color:#5c5c5c}.dark-theme .aplayer.aplayer-fixed .aplayer-list{border-color:#5c5c5c}.dark-theme .aplayer .aplayer-body{background-color:#212121}.dark-theme .aplayer .aplayer-info{border-top-color:#212121}.dark-theme .aplayer .aplayer-info .aplayer-music .aplayer-title{color:#fff}.dark-theme .aplayer .aplayer-info .aplayer-music .aplayer-author{color:#fff}.dark-theme .aplayer .aplayer-info .aplayer-controller .aplayer-time{color:#eee}.dark-theme .aplayer .aplayer-info .aplayer-controller .aplayer-time .aplayer-icon path{fill:#eee}.dark-theme .aplayer .aplayer-list{background-color:#212121}.dark-theme .aplayer .aplayer-list::-webkit-scrollbar-thumb{background-color:#999}.dark-theme .aplayer .aplayer-list::-webkit-scrollbar-thumb:hover{background-color:#bbb}.dark-theme .aplayer .aplayer-list li{color:#fff;border-top-color:#666}.dark-theme .aplayer .aplayer-list li:hover{background:#4e4e4e}.dark-theme .aplayer .aplayer-list li.aplayer-list-light{background:#6c6c6c}.dark-theme .aplayer .aplayer-list li .aplayer-list-index{color:#ddd}.dark-theme .aplayer .aplayer-list li .aplayer-list-author{color:#ddd}.dark-theme .aplayer .aplayer-lrc{text-shadow:-1px -1px 0 #666}.dark-theme .aplayer .aplayer-lrc:before{background:-moz-linear-gradient(top, #212121 0%, rgba(33,33,33,0) 100%);background:-webkit-linear-gradient(top, #212121 0%, rgba(33,33,33,0) 100%);background:linear-gradient(to bottom, #212121 0%, rgba(33,33,33,0) 100%);filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#212121', endColorstr='#00212121',GradientType=0 )}.dark-theme .aplayer .aplayer-lrc:after{background:-moz-linear-gradient(top, rgba(33,33,33,0) 0%, rgba(33,33,33,0.8) 100%);background:-webkit-linear-gradient(top, rgba(33,33,33,0) 0%, rgba(33,33,33,0.8) 100%);background:linear-gradient(to bottom, rgba(33,33,33,0) 0%, rgba(33,33,33,0.8) 100%);filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#00212121', endColorstr='#cc212121',GradientType=0 )}.dark-theme .aplayer .aplayer-lrc p{color:#fff}.dark-theme .aplayer .aplayer-miniswitcher{background:#484848}.dark-theme .aplayer .aplayer-miniswitcher .aplayer-icon path{fill:#eee}</style>
+<script src="https://fastly.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+
+<script src="https://fastly.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"></script><meting-js auto="https://music.163.com/#/playlist?id=7640699765" theme="#760411"></meting-js></strong></p>
+<h3 id="友链排名不分先后">友链（排名不分先后）</h3>
+<p>•<a href="https://zhizhiyang.cn/">Raphael’s Tabloid</a>   • <a href="https://blog.azad.asia">Azad&rsquo;s Space</a>   •<a href="https://hsingko.pages.dev/">hsingko</a>   •<a href="https://blog.srebro.cn/">运维小弟</a>  •<a href="https://lawtee.com/">法律小茶馆</a>   •<a href="https://blog.uuanqin.top/">半方池水半方田</a></p>
+<h3 id="如果想买优惠虚拟主机可以看看这些">如果想买优惠虚拟主机，可以看看这些：</h3>
+<p><a href="https://curl.qcloud.com/ZJCqRJ8w"><img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%B7%B1%E8%89%B2_1340%20640%20.jpg" alt="广告" style="zoom: 30%;" /></a><a href="https://my.racknerd.com/aff.php?aff=11337"><img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/www.racknerd.com_%20(2).png" alt="广告" style="zoom: 10%;" /></a></p>
+
+  </div>
+  <h2 class="subtitle is-size-5-mobile is-size-4-desktop">Frequent Tags</h2>
+  
+    <a href="/tags/hugo"> hugo (9) &nbsp;</a>
+  
+    <a href="/tags/blog"> blog (5) &nbsp;</a>
+  
+    <a href="/tags/ai"> ai (3) &nbsp;</a>
+  
+    <a href="/tags/shortcode"> shortcode (3) &nbsp;</a>
+  
+    <a href="/tags/%E8%A1%80%E6%B6%B2%E6%A0%B7%E6%9C%AC"> 血液样本 (3) &nbsp;</a>
+  
+    <a href="/tags/chatgpt"> chatgpt (2) &nbsp;</a>
+  
+    <a href="/tags/development"> development (2) &nbsp;</a>
+  
+    <a href="/tags/go"> go (2) &nbsp;</a>
+  
+    <a href="/tags/golang"> golang (2) &nbsp;</a>
+  
+    <a href="/tags/ipv6"> ipv6 (2) &nbsp;</a>
+  
+    <a href="/tags/vps"> vps (2) &nbsp;</a>
+  
+    <a href="/tags/%E5%AD%A6%E8%BD%A6"> 学车 (2) &nbsp;</a>
+  
+    <a href="/tags/%E6%80%9D%E8%80%83"> 思考 (2) &nbsp;</a>
+  
+    <a href="/tags/%E9%A9%BE%E8%80%83"> 驾考 (2) &nbsp;</a>
+  
+    <a href="/tags/911s5"> 911s5 (1) &nbsp;</a>
+  
+    <a href="/tags/abcjs"> abcjs (1) &nbsp;</a>
+  
+    <a href="/tags/android"> android (1) &nbsp;</a>
+  
+    <a href="/tags/archlinux"> archlinux (1) &nbsp;</a>
+  
+    <a href="/tags/chemische-formel"> chemische formel (1) &nbsp;</a>
+  
+    <a href="/tags/comupter"> comupter (1) &nbsp;</a>
+  
+    <a href="/tags/css"> css (1) &nbsp;</a>
+  
+    <a href="/tags/deepseek"> deepseek (1) &nbsp;</a>
+  
+    <a href="/tags/domain"> domain (1) &nbsp;</a>
+  
+    <a href="/tags/gaming-platform"> gaming platform (1) &nbsp;</a>
+  
+    <a href="/tags/gpu"> gpu (1) &nbsp;</a>
+  
+    <a href="/tags/hdd"> hdd (1) &nbsp;</a>
+  
+    <a href="/tags/image"> image (1) &nbsp;</a>
+  
+    <a href="/tags/immunology"> immunology (1) &nbsp;</a>
+  
+    <a href="/tags/ipad"> ipad (1) &nbsp;</a>
+  
+    <a href="/tags/kaiti"> kaiti (1) &nbsp;</a>
+  
+    <a href="/tags/latex"> latex (1) &nbsp;</a>
+  
+    <a href="/tags/nas"> nas (1) &nbsp;</a>
+  
+    <a href="/tags/nostalgia"> nostalgia (1) &nbsp;</a>
+  
+    <a href="/tags/raspberry"> raspberry (1) &nbsp;</a>
+  
+    <a href="/tags/raspbian"> raspbian (1) &nbsp;</a>
+  
+    <a href="/tags/reality"> reality (1) &nbsp;</a>
+  
+    <a href="/tags/social-videos"> social videos (1) &nbsp;</a>
+  
+    <a href="/tags/ssd"> ssd (1) &nbsp;</a>
+  
+    <a href="/tags/streaming"> streaming (1) &nbsp;</a>
+  
+    <a href="/tags/syntax-highlighting"> syntax highlighting (1) &nbsp;</a>
+  
+    <a href="/tags/table"> table (1) &nbsp;</a>
+  
+    <a href="/tags/tags"> tags (1) &nbsp;</a>
+  
+    <a href="/tags/technology"> technology (1) &nbsp;</a>
+  
+    <a href="/tags/templates"> templates (1) &nbsp;</a>
+  
+    <a href="/tags/themes"> themes (1) &nbsp;</a>
+  
+    <a href="/tags/tiktok"> tiktok (1) &nbsp;</a>
+  
+    <a href="/tags/vercel"> vercel (1) &nbsp;</a>
+  
+    <a href="/tags/waline"> waline (1) &nbsp;</a>
+  
+    <a href="/tags/walkman"> walkman (1) &nbsp;</a>
+  
+    <a href="/tags/%E5%83%B5%E5%B0%B8%E7%BD%91%E7%BB%9C"> 僵尸网络 (1) &nbsp;</a>
+  
+    <a href="/tags/%E5%85%89%E7%8C%AB"> 光猫 (1) &nbsp;</a>
+  
+    <a href="/tags/%E5%85%AC%E7%BD%91"> 公网 (1) &nbsp;</a>
+  
+    <a href="/tags/%E5%AC%B4%E6%94%BF"> 嬴政 (1) &nbsp;</a>
+  
+    <a href="/tags/%E5%B0%8F%E7%BA%A2%E4%B9%A6"> 小红书 (1) &nbsp;</a>
+  
+    <a href="/tags/%E5%BA%94%E7%94%A8"> 应用 (1) &nbsp;</a>
+  
+    <a href="/tags/%E6%8A%97%E5%87%9D%E5%89%82"> 抗凝剂 (1) &nbsp;</a>
+  
+    <a href="/tags/%E6%96%B0%E5%AD%97%E4%BD%93"> 新字体 (1) &nbsp;</a>
+  
+    <a href="/tags/%E6%97%A5%E6%9C%AC%E5%8A%A8%E7%94%BB"> 日本动画 (1) &nbsp;</a>
+  
+    <a href="/tags/%E6%98%93%E9%A9%B1%E7%BA%BF"> 易驱线 (1) &nbsp;</a>
+  
+    <a href="/tags/%E6%A1%A5%E6%8E%A5"> 桥接 (1) &nbsp;</a>
+  
+    <a href="/tags/%E6%AD%A6%E4%BE%A0"> 武侠 (1) &nbsp;</a>
+  
+    <a href="/tags/%E7%A4%BE%E4%BC%9A"> 社会 (1) &nbsp;</a>
+  
+    <a href="/tags/%E8%A1%80%E6%B6%B2%E7%94%9F%E7%90%86"> 血液生理 (1) &nbsp;</a>
+  
+    <a href="/tags/%E8%A7%A3%E6%9E%90"> 解析 (1) &nbsp;</a>
+  
+    <a href="/tags/%E8%B7%AF%E7%94%B1%E5%99%A8"> 路由器 (1) &nbsp;</a>
+  
+    <a href="/tags/%E8%BD%BB%E5%B0%8F%E8%AF%B4"> 轻小说 (1) &nbsp;</a>
+  
+</div>
+<head>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jsSocials/1.5.0/jssocials.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsSocials/1.5.0/jssocials.min.js" defer></script>
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/nanogallery2/3.0.5/css/nanogallery2.min.css" defer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/nanogallery2/3.0.5/jquery.nanogallery2.min.js" defer></script>
+</head>
+
+<body>
+    <div class="container has-text-centered">
+        
+        <aside><div id="share"></div></aside>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                
+                if (typeof $.fn.jsSocials !== "undefined") {
+                    $("#share").jsSocials({
+                        showLabel: false,
+                        showCount: false,
+                        shares: ["email", "twitter"]
+                    });
+                } else {
+                    console.error("jsSocials 插件未加载！");
+                }
+            });
+        </script>
+        
+        本作品采用<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>进行许可。
+    </div>
+</body>
+<div class="container">
+<head>
+  
+ <script src="https://unpkg.com/@waline/client@2.15.8/dist/waline.js"></script> 
+ <link rel= "stylesheet" href= "https://www.zaqizaba.xyz/css/waline.css" integrity= "MIWed8SQ6eGu4KgWgXR+ebvVSEPJ5dY5TddaHHyztyy2MixKV4sgE02SNvTgq/EI" crossorigin= "anonymous" >
+</head>
+<body>
+  
+  <div id="waline"></div><div id="waline" class="waline-container"></div>
+  <script>
+    
+var locale = {
+        nick: '😐的爱称',
+        nickError: '昵称不能少于3个字符',
+        mail: '你的📫',
+        mailError: '请填写正确的邮件地址',
+        link: '🌐的链接',
+        placeholder: '此刻你看完这篇博文脑海中的想法是什么呢，大胆说出来吧ヾ(•ω•`)o',
+        sofa: '🍿🍿🍿',
+        submit: '提交',
+        reply: '回复',
+        cancelReply: '取消回复',
+        comment: '评论',
+        more: '加载更多...',
+        preview: '预览',
+        emoji: '表情',
+        expand: '查看更多...',
+        seconds: '秒前',
+        minutes: '分钟前',
+        hours: '小时前',
+        days: '天前',
+        now: '刚刚',
+        uploading: '正在上传',
+        login: '登录',
+        logout: '退出',
+        admin: '博主',
+        word: '字',
+        wordHint: '评论字数应在 $0 到 $1 字之间！\n当前字数：$2',
+      };
+      
+document.addEventListener('DOMContentLoaded', function () {
+        
+        if (typeof Waline !== 'undefined') {
+          Waline.init({
+            el: '#waline',
+            lang: 'zh-CN',
+            dark: 'auto',
+            search: false,
+            serverURL: 'https://zaqizaba.xyz',
+            locale,
+            emoji: [
+              'https://gcore.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/',
+              'https://cdn.cbd.int/sarakale-assets@1.2.1/emoji/acfun_color/'
+            ],
+          });
+        } else {
+          console.error('Waline is not loaded correctly');
+        }
+      });
+    </script>
+  </body>
+</div>      
+
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-FFW576XTMR"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -387,5 +466,4 @@ microsoft store中国区商店搜索未见chatgpt 首先，去Microsoft登录页
   <section class="section">
     <p>&copy; <a href="https://www.zaqizaba.xyz">阿波尔的博客</a>2019-2025</p>
   </section>
-</div>
 </div>
