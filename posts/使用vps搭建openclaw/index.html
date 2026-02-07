@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="EN">
+<head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+<title>使用VPS搭建openclaw | 阿波尔的博客</title>
+
+<link rel="stylesheet" href="https://www.zaqizaba.xyz/css/abcjs.css">
+<link rel="stylesheet" href="https://www.zaqizaba.xyz//css/styles.css">
+<link rel="stylesheet" href="https://www.zaqizaba.xyz/css/fonts.css" integrity="nHA4sQes5N4kC/1rRzsd9KcxNPPEG1e4F7kjT3rg7mhweyYUuxGU985+SOHzZCsN" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" 
+integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.min.js" integrity="sha512-qglQ1LSNAz8XKHfeL5cl9/Z7FnG4v9PodzbvytCLA6qJcB5axH9oovvSNlFwMj46jdHHsOQGkEiUGSf3Lrr8Gg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head><body>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/zenburn.min.css" crossorigin="anonymous" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script src="https://www.zaqizaba.xyz//js/highlight.js"></script>
+
+
+<html>
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+
+<script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/abcjs/6.5.2/abcjs-basic-min.min.js"></script>
+<script defer src="https://fastly.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+</html>
+
+
+<link type="text/css" rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/jsSocials/1.5.0/jssocials.css" />
+<link type="text/css" rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/jsSocials/1.5.0/jssocials-theme-minima.css" />
+<script type="text/javascript" src="https://www.zaqizaba.xyz//js/jssocials.js"></script>
+
+
+
+<script src="https://fastly.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/fancybox@3.0.1/dist/css/jquery.fancybox.min.css">
+<script src="https://fastly.jsdelivr.net/npm/fancybox@3.0.1/dist/js/jquery.fancybox.min.js"></script>
+
+
+
+
+
+
+
+<script>
+    
+    Array.from(document.getElementsByClassName('language-mermaid')).forEach(el => {
+        el.parentElement.outerHTML = `<div class="mermaid">${el.innerText}</div>`
+    })
+</script>
+<style>
+ 
+.mermaid svg {
+    display: block;
+    margin: auto;
+}
+</style>
+</body>
+
+
+<div class="container">
+    <nav class="navbar level">
+      <div class="navbar-brand">
+          <a class="nav-item" href="https://www.zaqizaba.xyz/"><h1 class="title is-3">阿波尔的博客</h1></a>
+      </div>           
+      <div class="navbar-menu has-text-centered is-active">
+          <div class="navbar-end is-centered">
+              
+                <a href="https://www.zaqizaba.xyz/about" rel="me">
+                  <span class="icon">
+                    <i class="fas fa-info"></i>
+                  </span>
+                </a>
+              
+                <a href="https://www.zaqizaba.xyz/archives" rel="me">
+                  <span class="icon">
+                    <i class="fas fa-archive"></i>
+                  </span>
+                </a>
+              
+                <a href="https://www.zaqizaba.xyz/comments" rel="me">
+                  <span class="icon">
+                    <i class="fas fa-comment"></i>
+                  </span>
+                </a>
+              
+                <a href="https://github.com/flight025" rel="me">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                </a>
+              
+                <a href="https://www.zhihu.com/people/a-gan-jing-shen" rel="me">
+                  <span class="icon">
+                    <i class="fab fa-zhihu"></i>
+                  </span>
+                </a>
+              
+                <a href="https://twitter.com/666GXF" rel="me">
+                  <span class="icon">
+                    <i class="fab fa-twitter"></i>
+                  </span>
+                </a>
+              
+                <a href="https://www.zaqizaba.xyz/index.xml" rel="me">
+                  <span class="icon">
+                    <i class="fa fa-rss"></i>
+                  </span>
+                </a>
+              
+           </div>
+      </div>
+    </nav>
+  </div>
+<div class="container">
+  <h2 class="subtitle is-6">February 7, 2026</h2>
+  <h1 class="subtitle is-size-4-mobile is-size-3-desktop">使用VPS搭建openclaw</h1>
+  <div class="content">
+    <p>
+<div class="post-img-view">
+<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260206164257946.png">
+<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260206164257946.png" alt="img"  />
+</a>
+</div>
+</p>
+<p>openclaw这几天突然火起来了，甚至带火了Mac mini的销路。这导致许多人都开始跟风。实际上，openclaw不仅可以部署在Mac mini上，甚至可以部署在树莓派、你的闲置笔记本、甚至6刀的vps上。因为权限原因，最好是不要无脑部署在本地电脑，以免被扫或者权限问题被黑客侵入。所以我决定部署在vps上试一试，这次我选择的是<a href="https://billing.dedirock.com/">dedirock</a>,具体配置是：</p>
+<blockquote>
+<p>处理器是<strong>1核</strong>，内存为<strong>2GB</strong>，存储量是<strong>30GB</strong>,流量为<strong>1000GB</strong>，系统我安装的是<strong>Ubuntu 24.04.3 LTS</strong>,是单<strong>ip</strong>，为<strong>ipv4</strong>。</p>
+</blockquote>
+<h1 id="1开始脚本部署前的准备">1.开始脚本部署前的准备</h1>
+<p>要运行openclaw，你必须在vps上先安装<a href="https://nodejs.org/zh-cn">nodejs</a>和<a href="https://git-scm.com/">git</a>，并测试版本号：</p>
+<p>安装nodejs:</p>
+<pre tabindex="0"><code>curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
+sudo apt update
+sudo apt install -y nodejs
+</code></pre><p>安装git：</p>
+<pre tabindex="0"><code>sudo apt update
+sudo apt install -y git
+</code></pre><p>并测试版本号：</p>
+<pre tabindex="0"><code>node -v
+npm -v
+git --version
+</code></pre><p>输出版本号，就说明在vps上安装成功了。</p>
+<h1 id="2开始安装openclaw">2.开始安装openclaw</h1>
+<h2 id="21创建新用户名并赋予新用户名权限并切换到新用户">2.1创建新用户名并赋予新用户名权限并切换到新用户</h2>
+<p>这是为了vps安全考虑，假如openclaw运行的新用户名叫<strong>clawd</strong>,可以在vps输入一圈命令如下：</p>
+<pre tabindex="0"><code>adduser clawd &amp;&amp; usermod -aG sudo clawd &amp;&amp; su - clawd
+</code></pre><p>然后以clawd命名root。</p>
+<h2 id="22一键安装openclaw">2.2一键安装openclaw</h2>
+<p>安装命令如下：</p>
+<pre tabindex="0"><code>curl -fsSL https://openclaw.ai/install.sh | bash
+</code></pre><p>
+<div class="post-img-view">
+<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/123.png">
+<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/123.png" alt="123"  />
+</a>
+</div>
+</p>
+<p>出来openclaw选择：</p>
+<p>
+<div class="post-img-view">
+<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-02-04%20165929.png">
+<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-02-04%20165929.png" alt="屏幕截图 2026-02-04 165929"  />
+</a>
+</div>
+</p>
+<p>这里选择YES。</p>
+<p>
+<div class="post-img-view">
+<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-02-07%20174445.png">
+<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-02-07%20174445.png" alt="屏幕截图 2026-02-07 174445"  />
+</a>
+</div>
+</p>
+<p>这里大模型选择国产模型千问，主要是有免费token，我试一试，不想付费用，打开token网站认证就行了。</p>
+<p>
+<div class="post-img-view">
+<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260207174940164.png">
+<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260207174940164.png" alt="image-20260207174940164"  />
+</a>
+</div>
+</p>
+<p>我这里现在选择的大模型是：</p>
+<blockquote>
+<p>qwen-portal/coder-model</p>
+</blockquote>
+<p>接下来，第三方连接app选择telegram已被连接，这个具体操作最后讲。</p>
+<p>
+<div class="post-img-view">
+<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260207175555193.png">
+<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260207175555193.png" alt="image-20260207175555193"  />
+</a>
+</div>
+</p>
+<p>接下来，会提示要不要装依赖技能，先不管。直接 <code>Skip for now  </code>。</p>
+<p>
+<div class="post-img-view">
+<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260207180338606.png">
+<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260207180338606.png" alt="image-20260207180338606"  />
+</a>
+</div>
+</p>
+<h1 id="3启动openclaw网关">3.启动openclaw网关</h1>
+<p>这里一键命令启动openclaw网关：</p>
+<pre tabindex="0"><code>openclaw gateway --bind loopback --port 18789 --verbose
+</code></pre><p>然后：</p>
+<ul>
+<li>agent 本地连 gateway</li>
+<li>或 SSH 端口转发</li>
+</ul>
+<pre tabindex="0"><code>ssh -L 18789:127.0.0.1:18789 user@your_vps_ip
+</code></pre><p>我用的第三方xshell，如果想第三方端口转发的话，在xshell上具体操作是：</p>
+<blockquote>
+<p>新开一个xshell界面&gt;右键点击&quot;属性&quot;&gt;点击SSH“隧道”&gt;在侦听端口填上“18789”以及目标主机“127.0.0.1”以及目标端口“18789”&gt;点击确定&gt;连接</p>
+<p>
+<div class="post-img-view">
+<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-02-06%20185648.png">
+<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-02-06%20185648.png" alt="img"  />
+</a>
+</div>
+</p>
+</blockquote>
+<p>agent 应该已经正确连上这个 gateway。</p>
+<p>打开本地webUI本地端口地址：</p>
+<pre tabindex="0"><code>http://127.0.0.1:18789/
+</code></pre><p>可以看到opeclaw网站本地聊天可以用了：</p>
+<p>
+<div class="post-img-view">
+<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/psc">
+<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/psc" alt="img"  />
+</a>
+</div>
+</p>
+<h1 id="4如何在第三方聊天工具使用">4.如何在第三方聊天工具使用</h1>
+<p>我这里使用的是telegram(简称“tg”),具体是在tg找到一个<code>Botfather</code>的机器人，点击<code>/newbot</code>,再命名一个可用的，比如<code>aboerclaw_bot</code>,这时机器人会给你一个api:填入刚刚选择在第三方tg聊天时的api，最后在openclaw本地网关webUI激活我的tg机器人，如图：</p>
+<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/photo_2026-02-07_18-51-16.jpg" alt="photo_2026-02-07_18-51-16" style="zoom:80%;" />
+<p>当然，这个千问模型免费额度是有限制的，如果你需要大量的token，就必须自己买付费key，价格几十元到几千元不等，看需求吧，反正我这里也是演示下我搭建的过程,仅此而已。</p>
+
+  </div>
+</div>
+<head>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jsSocials/1.5.0/jssocials.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsSocials/1.5.0/jssocials.min.js" defer></script>
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/nanogallery2/3.0.5/css/nanogallery2.min.css" defer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/nanogallery2/3.0.5/jquery.nanogallery2.min.js" defer></script>
+</head>
+
+<body>
+    <div class="container has-text-centered">
+        
+        <aside><div id="share"></div></aside>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                
+                if (typeof $.fn.jsSocials !== "undefined") {
+                    $("#share").jsSocials({
+                        showLabel: false,
+                        showCount: false,
+                        shares: ["email", "twitter"]
+                    });
+                } else {
+                    console.error("jsSocials 插件未加载！");
+                }
+            });
+        </script>
+        
+        本作品采用<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>进行许可。
+    </div>
+</body>
+<div class="container">
+<head>
+  
+ <script src="https://unpkg.com/@waline/client@2.15.8/dist/waline.js"></script> 
+ <link rel= "stylesheet" href= "https://www.zaqizaba.xyz/css/waline.css" integrity= "MIWed8SQ6eGu4KgWgXR+ebvVSEPJ5dY5TddaHHyztyy2MixKV4sgE02SNvTgq/EI" crossorigin= "anonymous" >
+</head>
+<body>
+  
+  <div id="waline"></div><div id="waline" class="waline-container"></div>
+  <script>
+    
+var locale = {
+        nick: '😐的爱称',
+        nickError: '昵称不能少于3个字符',
+        mail: '你的📫',
+        mailError: '请填写正确的邮件地址',
+        link: '🌐的链接',
+        placeholder: '此刻你看完这篇博文脑海中的想法是什么呢，大胆说出来吧ヾ(•ω•`)o',
+        sofa: '🍿🍿🍿',
+        submit: '提交',
+        reply: '回复',
+        cancelReply: '取消回复',
+        comment: '评论',
+        more: '加载更多...',
+        preview: '预览',
+        emoji: '表情',
+        expand: '查看更多...',
+        seconds: '秒前',
+        minutes: '分钟前',
+        hours: '小时前',
+        days: '天前',
+        now: '刚刚',
+        uploading: '正在上传',
+        login: '登录',
+        logout: '退出',
+        admin: '博主',
+        word: '字',
+        wordHint: '评论字数应在 $0 到 $1 字之间！\n当前字数：$2',
+      };
+      
+document.addEventListener('DOMContentLoaded', function () {
+        
+        if (typeof Waline !== 'undefined') {
+          Waline.init({
+            el: '#waline',
+            lang: 'zh-CN',
+            dark: 'auto',
+            search: false,
+            serverURL: 'https://zaqizaba.xyz',
+            locale,
+            emoji: [
+              'https://gcore.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/',
+              'https://cdn.cbd.int/sarakale-assets@1.2.1/emoji/acfun_color/'
+            ],
+          });
+        } else {
+          console.error('Waline is not loaded correctly');
+        }
+      });
+    </script>
+  </body>
+</div>      
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FFW576XTMR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-FFW576XTMR');
+</script>
+
+
+
+
+<div class="container has-text-centered">
+  <section class="section">
+    <p>&copy; <a href="https://www.zaqizaba.xyz">阿波尔的博客</a>2019-2025</p>
+  </section>
+</div>
