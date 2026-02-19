@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>数独</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+#board {
+  display: grid;
+  grid-template-columns: repeat(9, 40px);
+  grid-gap: 2px;
+  justify-content: center;
+  margin: 20px auto;
+}
+.cell {
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  text-align: center;
+}
+.bold-border {
+  border: 2px solid black;
+}
+.controls {
+  margin-top: 10px;
+}
+</style>
+</head>
+
+<body>
+
+<h2>数独小游戏</h2>
+
+<div>
+  难度:
+  <select id="difficulty">
+    <option value="30">简单</option>
+    <option value="40">中等</option>
+    <option value="50">困难</option>
+  </select>
+
+  <button onclick="newGame()">开始新游戏</button>
+</div>
+
+<h3>计时: <span id="timer">0</span> 秒</h3>
+
+<div id="board"></div>
+
+<div class="controls">
+  <button onclick="checkSolution()">检查答案</button>
+</div>
+
+<script>
+let solution = [];
+let timerInterval;
+let seconds = 0;
+
+function startTimer() {
+  clearInterval(timerInterval);
+  seconds = 0;
+  document.getElementById("timer").innerText = seconds;
+  timerInterval = setInterval(() => {
+    seconds++;
+    document.getElementById("timer").innerText = seconds;
+  }, 1000);
+}
+
+function generateSudoku() {
+  let board = Array.from({length: 9}, () => Array(9).fill(0));
+
+  function isValid(board, row, col, num) {
+    for (let i = 0; i < 9; i++) {
+      if (board[row][i] === num || board[i][col] === num)
+        return false;
+    }
+    let startRow = Math.floor(row/3)*3;
+    let startCol = Math.floor(col/3)*3;
+    for (let r = startRow; r < startRow+3; r++)
+      for (let c = startCol; c < startCol+3; c++)
+        if (board[r][c] === num)
+          return false;
+    return true;
+  }
+
+  function fillBoard(board) {
+    for (let row = 0; row < 9; row++) {
+      for (let col = 0; col < 9; col++) {
+        if (board[row][col] === 0) {
+          let nums = [1,2,3,4,5,6,7,8,9].sort(()=>Math.random()-0.5);
+          for (let num of nums) {
+            if (isValid(board, row, col, num)) {
+              board[row][col] = num;
+              if (fillBoard(board)) return true;
+              board[row][col] = 0;
+            }
+          }
+          return false;
+        }
+      }
+    }
+    return true;
+  }
+
+  fillBoard(board);
+  solution = board.map(row => [...row]);
+  return board;
+}
+
+function removeCells(board, count) {
+  while (count > 0) {
+    let row = Math.floor(Math.random()*9);
+    let col = Math.floor(Math.random()*9);
+    if (board[row][col] !== 0) {
+      board[row][col] = 0;
+      count--;
+    }
+  }
+}
+
+function drawBoard(board) {
+  const boardDiv = document.getElementById("board");
+  boardDiv.innerHTML = "";
+
+  for (let r = 0; r < 9; r++) {
+    for (let c = 0; c < 9; c++) {
+      let input = document.createElement("input");
+      input.type = "number";
+      input.min = 1;
+      input.max = 9;
+      input.classList.add("cell");
+
+      if (board[r][c] !== 0) {
+        input.value = board[r][c];
+        input.disabled = true;
+      }
+
+      if ((r+1)%3 === 0 && r !== 8)
+        input.style.borderBottom = "2px solid black";
+      if ((c+1)%3 === 0 && c !== 8)
+        input.style.borderRight = "2px solid black";
+
+      boardDiv.appendChild(input);
+    }
+  }
+}
+
+function newGame() {
+  let difficulty = parseInt(document.getElementById("difficulty").value);
+  let board = generateSudoku();
+  removeCells(board, difficulty);
+  drawBoard(board);
+  startTimer();
+}
+
+function checkSolution() {
+  const inputs = document.querySelectorAll(".cell");
+  let index = 0;
+  let correct = true;
+
+  for (let r = 0; r < 9; r++) {
+    for (let c = 0; c < 9; c++) {
+      let val = parseInt(inputs[index].value);
+      if (val !== solution[r][c]) {
+        correct = false;
+      }
+      index++;
+    }
+  }
+
+  if (correct) {
+    clearInterval(timerInterval);
+    alert("恭喜完成！用时 " + seconds + " 秒");
+  } else {
+    alert("还有错误，请检查！");
+  }
+}
+
+newGame();
+</script>
+
+</body>
+</html>
