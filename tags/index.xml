@@ -7,8 +7,29 @@
     <generator>Hugo</generator>
     <language>EN</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://www.zaqizaba.xyz&#34;&gt;阿波尔的博客&lt;/a&gt; 2019-2025</copyright>
-    <lastBuildDate>Sat, 07 Feb 2026 16:28:41 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 27 Feb 2026 19:25:59 +0800</lastBuildDate>
     <atom:link href="https://www.zaqizaba.xyz/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeanCloud</title>
+      <link>https://www.zaqizaba.xyz/tags/leancloud/</link>
+      <pubDate>Fri, 27 Feb 2026 19:25:59 +0800</pubDate>
+      <guid>https://www.zaqizaba.xyz/tags/leancloud/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>TiDB</title>
+      <link>https://www.zaqizaba.xyz/tags/tidb/</link>
+      <pubDate>Fri, 27 Feb 2026 19:25:59 +0800</pubDate>
+      <guid>https://www.zaqizaba.xyz/tags/tidb/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Waline</title>
+      <link>https://www.zaqizaba.xyz/tags/waline/</link>
+      <pubDate>Fri, 27 Feb 2026 19:25:59 +0800</pubDate>
+      <guid>https://www.zaqizaba.xyz/tags/waline/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Openclaw</title>
       <link>https://www.zaqizaba.xyz/tags/openclaw/</link>
@@ -196,13 +217,6 @@
       <link>https://www.zaqizaba.xyz/tags/css/</link>
       <pubDate>Thu, 18 Jan 2024 10:09:08 +0800</pubDate>
       <guid>https://www.zaqizaba.xyz/tags/css/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Waline</title>
-      <link>https://www.zaqizaba.xyz/tags/waline/</link>
-      <pubDate>Thu, 18 Jan 2024 10:09:08 +0800</pubDate>
-      <guid>https://www.zaqizaba.xyz/tags/waline/</guid>
       <description></description>
     </item>
     <item>

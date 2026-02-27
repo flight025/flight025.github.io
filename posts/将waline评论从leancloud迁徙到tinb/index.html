@@ -5,7 +5,7 @@
 
 
 
-<title>沧海一声笑 | 阿波尔的博客</title>
+<title>将waline评论从LeanCloud迁徙到TiDB | 阿波尔的博客</title>
 
 <link rel="stylesheet" href="https://www.zaqizaba.xyz/css/abcjs.css">
 <link rel="stylesheet" href="https://www.zaqizaba.xyz//css/styles.css">
@@ -128,48 +128,102 @@ MathJax = {
     </nav>
   </div>
 <div class="container">
-  <h2 class="subtitle is-6">May 3, 2024</h2>
-  <h1 class="subtitle is-size-4-mobile is-size-3-desktop">沧海一声笑</h1>
+  <h2 class="subtitle is-6">February 27, 2026</h2>
+  <h1 class="subtitle is-size-4-mobile is-size-3-desktop">将waline评论从LeanCloud迁徙到TiDB</h1>
   <div class="content">
     <p>
 <div class="post-img-view">
-<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/JMlwHBr6404lM40akMJFBLzdPc4v1CY5ZpC9QGaQvUA.jpg">
-<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/JMlwHBr6404lM40akMJFBLzdPc4v1CY5ZpC9QGaQvUA.jpg" alt=""  />
+<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/%E6%9C%AA%E5%91%BD%E5%90%8D%E7%BB%98%E5%9B%BE.drawio.png">
+<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/%E6%9C%AA%E5%91%BD%E5%90%8D%E7%BB%98%E5%9B%BE.drawio.png" alt="未命名绘图.drawio"  />
 </a>
 </div>
 </p>
-<p><strong>「沧海一声笑，滔滔两岸潮」</strong>。这句歌词来自于1990年香港电影《笑傲江湖》歌曲的开头的一句。是香港已故著名作曲、填词家黄霑先生所作。据黄霑记述。1989年应香港电影导演徐克所求来为电影填词作曲。先后写了六次草案，但是徐克均不怎么满意。究竟词曲表现得如高手才懂得 <strong>“阳春白雪”</strong> ；还是高手容易得像儿歌，演绎出韵味的 <strong>“下里巴人”</strong>  时，黄霑偶然翻到黄友棣的《中国音乐思想批判》，决定 <strong>“大乐必易”</strong> ，选择后一种作曲方式。而词义一半是借鉴了关于毛泽东主席在1936年所作的 <strong>「沁园春·雪」</strong>，如词中 <strong>“俱往矣，数风流人物，还看今朝”</strong> ，还借鉴了苏轼的词 <strong>「念奴娇·赤壁怀古」</strong> 的词句 <strong>“大江东去，浪淘尽，千古风流人物”</strong> 。并配以五声音阶 <strong>“宫、商、角、徵、羽”</strong> 后，加入一点自己的风格，才让导演徐克满意。</p>
-<p>在电影《笑傲江湖》中表现是，令狐冲、欲金盆洗手的顺风堂主刘正风和日月神教长老曲洋被东厂鹰犬左冷禅追杀，泛船而逃，途中曲刘兴之所至演奏二人青年时所作的《笑傲江湖》。刘吹横笛，曲弹古筝，令狐冲假弹三弦，并轮番唱和，以表示远离血海江湖。</p>
-<p>而此歌又有主要有二个版本。分别是香港演员、歌手许冠杰、黄霑、张伟文所唱的粤语版，和黄霑、罗大佑、徐克所唱国语版，二个版本的歌词虽然有点区别，但唱出来所表达的意境是一样的，这里是国语版的：</p>
-<blockquote>
-<h2 id="hahahugoshortcode41s0hbhb"><p style="text-align:center">沧海一声笑</p></h2>
-<p><p style="text-align:center"><strong>歌手：罗大佑 / 黄霑 / 徐克</strong></p>
-<p style="text-align:center"><strong>作词 : 黄霑</strong></p>
-<p style="text-align:center"><strong>作曲: 黄霑</strong></p>
-<p style="text-align:center">沧海一声笑</p>
-<p style="text-align:center">滔滔两岸潮</p>
-<p style="text-align:center">浮沉随浪记今朝</p>
-<p style="text-align:center">苍天笑纷纷世上潮</p>
-<p style="text-align:center">谁负谁胜出天知晓</p>
-<p style="text-align:center">江山笑烟雨遥</p>
-<p style="text-align:center">涛浪淘尽红尘俗事知多少</p>
-<p style="text-align:center">清风笑竟惹寂寥</p>
-<p style="text-align:center">豪情还剩了一襟晚照</p>
-<p style="text-align:center">苍生笑不再寂寥</p>
-<p style="text-align:center">豪情仍在痴痴笑笑</p>
-<p style="text-align:center">啦&hellip;.啦&hellip;.啦&hellip;&hellip;..</p>
-<strong>
-<link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
-<style type="text/css">.dark-theme .aplayer{background:#212121}.dark-theme .aplayer.aplayer-withlist .aplayer-info{border-bottom-color:#5c5c5c}.dark-theme .aplayer.aplayer-fixed .aplayer-list{border-color:#5c5c5c}.dark-theme .aplayer .aplayer-body{background-color:#212121}.dark-theme .aplayer .aplayer-info{border-top-color:#212121}.dark-theme .aplayer .aplayer-info .aplayer-music .aplayer-title{color:#fff}.dark-theme .aplayer .aplayer-info .aplayer-music .aplayer-author{color:#fff}.dark-theme .aplayer .aplayer-info .aplayer-controller .aplayer-time{color:#eee}.dark-theme .aplayer .aplayer-info .aplayer-controller .aplayer-time .aplayer-icon path{fill:#eee}.dark-theme .aplayer .aplayer-list{background-color:#212121}.dark-theme .aplayer .aplayer-list::-webkit-scrollbar-thumb{background-color:#999}.dark-theme .aplayer .aplayer-list::-webkit-scrollbar-thumb:hover{background-color:#bbb}.dark-theme .aplayer .aplayer-list li{color:#fff;border-top-color:#666}.dark-theme .aplayer .aplayer-list li:hover{background:#4e4e4e}.dark-theme .aplayer .aplayer-list li.aplayer-list-light{background:#6c6c6c}.dark-theme .aplayer .aplayer-list li .aplayer-list-index{color:#ddd}.dark-theme .aplayer .aplayer-list li .aplayer-list-author{color:#ddd}.dark-theme .aplayer .aplayer-lrc{text-shadow:-1px -1px 0 #666}.dark-theme .aplayer .aplayer-lrc:before{background:-moz-linear-gradient(top, #212121 0%, rgba(33,33,33,0) 100%);background:-webkit-linear-gradient(top, #212121 0%, rgba(33,33,33,0) 100%);background:linear-gradient(to bottom, #212121 0%, rgba(33,33,33,0) 100%);filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#212121', endColorstr='#00212121',GradientType=0 )}.dark-theme .aplayer .aplayer-lrc:after{background:-moz-linear-gradient(top, rgba(33,33,33,0) 0%, rgba(33,33,33,0.8) 100%);background:-webkit-linear-gradient(top, rgba(33,33,33,0) 0%, rgba(33,33,33,0.8) 100%);background:linear-gradient(to bottom, rgba(33,33,33,0) 0%, rgba(33,33,33,0.8) 100%);filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#00212121', endColorstr='#cc212121',GradientType=0 )}.dark-theme .aplayer .aplayer-lrc p{color:#fff}.dark-theme .aplayer .aplayer-miniswitcher{background:#484848}.dark-theme .aplayer .aplayer-miniswitcher .aplayer-icon path{fill:#eee}</style>
-<script src="https://fastly.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
-
-<script src="https://fastly.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"></script><meting-js auto="https://music.163.com/#/song?id=393688" theme="#760411"></meting-js></strong></p>
-</blockquote>
-<p>然而这歌词细品下。<strong>“两岸潮”</strong> 具体是指什么，<strong>“谁负谁胜出天知晓”</strong> 具体又指什么，我为何要 <strong>“苍生笑”</strong> ？联想到近代历史背景以及那时老港人仍心系祖国来看，这歌词虽然要表明隐退要远离江湖，不过又像任我行向令狐冲说的 ：<strong>“有人的地方就有恩怨，有恩怨就有江湖，人就是江湖，你怎么退出？”</strong></p>
+<p>这二天，登录博客waline后台，提示作为waline数据存储的LeanCloud即将永久停止对waline数据的支持，<a href="https://docs.leancloud.app/sdk/announcements/sunset-announcement/">具体文告</a>看这里。不过好在还支持一年的数据存储支持。现在我就准备从LeanCloud迁移数据到TiDB 。</p>
+<h1 id="1从leancloud导出数据">1.从LeanCloud导出数据</h1>
+<p>登录<a href="https://console.leancloud.app/">LeanCloud</a>国际版。选择 <strong>数据存储</strong>》<strong>导入导出</strong>》<strong>数据导出</strong>》<strong>导出</strong>，会提示数据发送到邮箱，注意查收下载。</p>
 <p>
 <div class="post-img-view">
-<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/pexels-apasaric-2481190.jpg">
-<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/pexels-apasaric-2481190.jpg" alt="香港"  />
+<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/%E6%95%B0%E6%8D%AE.png">
+<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/%E6%95%B0%E6%8D%AE.png" alt="数据"  />
+</a>
+</div>
+</p>
+<p>我导出的格式是<code>JSONL</code>，其实也是符合的。</p>
+<p>
+<div class="post-img-view">
+<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/json.png">
+<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/json.png" alt="json"  />
+</a>
+</div>
+</p>
+<h1 id="2创建tidb数据库并连接">2.创建TiDB数据库并连接</h1>
+<h2 id="21登录tidb-cloud跳转自动创建实例">2.1登录<a href="https://tidbcloud.com/">TiDB Cloud</a>跳转自动创建实例</h2>
+<p>
+<div class="post-img-view">
+<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260227233644034.png">
+<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260227233644034.png" alt="image-20260227233644034"  />
+</a>
+</div>
+</p>
+<p>点击<code>Cluster0</code>进入实例。</p>
+<h2 id="22左边列表选择sql-editor放置walinetidb内容按照为语句分配贴近界面执行每贴一个点击右上角的运行蓝色按钮直到完成">2.2左边列表选择SQL Editor放置<a href="https://github.com/walinejs/waline/blob/main/assets/waline.tidb">waline.tidb</a>内容按照<code>;</code>为语句分配贴近界面执行。每贴一个点击右上角的运行蓝色按钮直到完成。</h2>
+<p>
+<div class="post-img-view">
+<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260227235521224.png">
+<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260227235521224.png" alt="image-20260227235521224"  />
+</a>
+</div>
+</p>
+<h2 id="23点击overview并点击connect">2.3点击Overview并点击Connect.</h2>
+<p>
+<div class="post-img-view">
+<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/%E5%8F%82%E6%95%B0.png">
+<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/%E5%8F%82%E6%95%B0.png" alt="参数"  />
+</a>
+</div>
+</p>
+<h2 id="24vercel部署parameters参数">2.4VERCEL部署Parameters参数</h2>
+<p>在vercel的Environment Variables填写<code>TIDB_HOST</code>、<code>TIDB_PORT</code>、<code>TIDB_DB</code>、<code>TIDB_USER</code>和<code>TIDB_PASSWORD</code>的参数信息，原三项<code>LEAN_ID</code>、<code>LEAN_KEY</code>、<code>LEAN_MASTER_KEY</code>可删除。</p>
+<p>
+<div class="post-img-view">
+<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260228002712223.png">
+<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260228002712223.png" alt="image-20260228002712223"  />
+</a>
+</div>
+</p>
+<p>并选择重新部署。</p>
+<h1 id="3将leancloud评论迁徙数据到tidb">3.将LeanCloud评论迁徙数据到TiDB</h1>
+<p>简单点的话，直接导入waline的<code>JSON</code>文档，像这样。</p>
+<p>
+<div class="post-img-view">
+<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260228004041658.png">
+<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260228004041658.png" alt="image-20260228004041658"  />
+</a>
+</div>
+</p>
+<p>有点难度的话，就按照凡梦星尘的文章<a href="https://lisenhui.cn/tech/migrate-waline-into-tidb-neon.html">《迁移LeanCloud的Waline评论数据到TiDB/Neon》</a>去做。</p>
+<p>首先，点击TiDB 集群页面右上角的 <code>Connect</code> 按钮，获取数据库连接信息</p>
+<p>
+<div class="post-img-view">
+<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/%25E5%258F%2582%25E6%2595%25B0.png">
+<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/%25E5%258F%2582%25E6%2595%25B0.png" alt="参数"  />
+</a>
+</div>
+</p>
+<p>然后再打开<a href="https://github.com/elkan1788/waline-data-import-tool/releases/tag/v2.0.0">工具链接</a>，下载你的电脑操作环境，下载导入数据：</p>
+<pre tabindex="0"><code>./waline-data-import-tool-xxx -c waline-tidb.ini -f /root/elkan/waline.json
+</code></pre><p>这里的-xxx是下载的工具链接。我是Windows，所以是</p>
+<pre tabindex="0"><code>waline-data-import-tool.exe.zip
+</code></pre><p>及下载<a href="https://github.com/elkan1788/waline-data-import-tool/releases/download/v2.0.0/waline-data-import-tool-darwin-amd64">waline-data-import-tool-darwin-amd64</a>，假如文件都在F盘，则是：</p>
+<pre tabindex="0"><code>cd F:\waline
+waline-data-import-tool-waline-data-import-tool.exe -c waline-tidb.ini -f waline.json
+</code></pre><p>一键迁移数据就行了。</p>
+<p>+++</p>
+<p>参考： <a href="https://lisenhui.cn/">凡梦星尘的博客</a></p>
+<p>
+<div class="post-img-view">
+<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/NationalGeographic_2572187_16x9.jpg">
+<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/NationalGeographic_2572187_16x9.jpg" alt="Domestic cat | National Geographic"  />
 </a>
 </div>
 </p>

@@ -136,6 +136,28 @@ MathJax = {
       
       <article class="columns">
         <div class="column is-2">
+          <h6 class="is-inline" style="white-space: nowrap">Nov 17</h2>
+        </div>
+        <div class="column">
+          <h2 class="subtitle is-inline is-size-4-mobile is-size-3-desktop"><a href="https://www.zaqizaba.xyz/posts/windows10%E5%92%8Carchlinux%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%90%AF%E5%8A%A8/">Windows10和archlinux双系统启动</a></h1>
+          <div class="content is-hidden-mobile">
+            Archlinux是一个独立开发的linux发行版，听说有“邪教”之称。你可以通过命令一步步安装引导Windows10和archlinux，从而实现win10/archlinux双系统。我也算是新手，建议如果想刷系统可以看看 archlinux新手安装教程，从而进一步加深对archlinux的理解。
+你需要准备的材料为： 一台能联网的电脑（我是台式机）、一个制作了archlinux至少2G的启动U盘、一个容量不少于60G以上的压缩系统盘、一个可以制作系统启动U盘的软件（我这里推荐rufus制作启动U盘）。
+方法如下： 1.制作系统盘并并压缩系统盘以及设置bios引导 1.先去archlinux下载iso，打开rufus。先引导选择下好的iso系统到rufus，再在分区类型选择“GPT”，目标系统类型是“UEFI”，然后点击“开始”制作archlinux启动盘。2.打开 此电脑》管理》磁盘 …
+            
+            <br>
+            <a class="button is-marginless is-paddingless" href="https://www.zaqizaba.xyz/posts/windows10%E5%92%8Carchlinux%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%90%AF%E5%8A%A8/">
+            <span class="icon-link is-small" style="line-height: 100%">
+                <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+              </span>
+              <p style="padding:0 5px"></p>more</p>
+            </a>
+            
+          </div>
+      </article>
+      
+      <article class="columns">
+        <div class="column is-2">
           <h6 class="is-inline" style="white-space: nowrap">Oct 31</h2>
         </div>
         <div class="column">
@@ -304,22 +326,6 @@ vps客户区，最下面 …
 由此，我决定开启了我的折腾之路。
 1.光猫的设置 光猫就是我们的光纤入户的第一个设备，一般来讲，光猫设置默认装宽带时是光猫拨号，但是有些时候，光猫性能不是那么好，你想家庭设备公网访问等。就可以考虑路由器拨号了，而路由器拨号需要桥接。具体方式是三大运营商都会有光猫超级密码，想改桥接可以自己谷歌百度看看（如果网上搜不到可以咨询运营商），如我的光猫超级密码如下：CUAdmin#HGU ，输入后台网关：192.168.1.1/cu.html ，就可以看到，联通光猫后台一般是这样：
 如果改为桥接，连接模式是路由模式改为桥接模式，IP协议版本是ipv4/v6,由于是路由拨号了，所以可以考虑关闭DHCP了，这个主要是分配内网ip地址的，再绑定相应的LAN口就行（如果想改回光猫拨号，在 …
-            
-          </div>
-      </article>
-      
-      <article class="columns">
-        <div class="column is-2">
-          <h6 class="is-inline" style="white-space: nowrap">Oct 4</h2>
-        </div>
-        <div class="column">
-          <h2 class="subtitle is-inline is-size-4-mobile is-size-3-desktop"><a href="https://www.zaqizaba.xyz/posts/%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99%E5%8A%AB%E6%8C%81%E6%81%A2%E5%A4%8D%E6%96%B9%E6%B3%95/">博客网站劫持恢复方法</a></h1>
-          <div class="content is-hidden-mobile">
-             从国庆开始，我打开博客网站，突然发现博客网站显示为这样：
-发现博客网站不能访问了。我第一时间想到是不是vercel出问题了，于是ping了下网站，发现是通的，但是无论如何，vercel的公共dns无疑都指向了反诈网站，也就是常说的网站dns劫持污染，很明显。vercel的dns上ip段找到能够用的网站ip很重要，发现ip段（76.76.xx.xx)其中的76.76.xx.xx还能用，于是想到了在域名解析中添加泛解析A记录指向ip76.76.xx.xx。
-之前的vercel提供的自定义域名A 记录和CNAME记录可以删了，再把域名泛解析A记录值添加在解析上就可以了：
-再次访问你的博客，你会发现博客可以访问了。ps：此ip还未被劫持，能够使用多久未知，还是建议网站备案。
-
             
           </div>
       </article>

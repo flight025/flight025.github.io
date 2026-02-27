@@ -136,6 +136,22 @@ MathJax = {
       
       <article class="columns">
         <div class="column is-2">
+          <h6 class="is-inline" style="white-space: nowrap">Feb 27</h2>
+        </div>
+        <div class="column">
+          <h2 class="subtitle is-inline is-size-4-mobile is-size-3-desktop"><a href="https://www.zaqizaba.xyz/posts/%E5%B0%86waline%E8%AF%84%E8%AE%BA%E4%BB%8Eleancloud%E8%BF%81%E5%BE%99%E5%88%B0tinb/">将waline评论从LeanCloud迁徙到TiDB</a></h1>
+          <div class="content is-hidden-mobile">
+            这二天，登录博客waline后台，提示作为waline数据存储的LeanCloud即将永久停止对waline数据的支持，具体文告看这里。不过好在还支持一年的数据存储支持。现在我就准备从LeanCloud迁移数据到TiDB 。
+1.从LeanCloud导出数据 登录LeanCloud国际版。选择 数据存储》导入导出》数据导出》导出，会提示数据发送到邮箱，注意查收下载。
+我导出的格式是JSONL，其实也是符合的。
+2.创建TiDB数据库并连接 2.1登录TiDB Cloud跳转自动创建实例 点击Cluster0进入实例。
+2.2左边列表选择SQL Editor放置waline.tidb内容按照;为语句分配贴近界面执行。每贴一个点击右上角的运行蓝色按钮直到完成。 2.3点击Overview并点击Connect. 2.4VERCEL部署Parameters参数 在vercel的 …
+            
+          </div>
+      </article>
+      
+      <article class="columns">
+        <div class="column is-2">
           <h6 class="is-inline" style="white-space: nowrap">Feb 7</h2>
         </div>
         <div class="column">
@@ -312,28 +328,6 @@ microsoft store中国区商店搜索未见chatgpt 首先，去Microsoft登录页
             
             <br>
             <a class="button is-marginless is-paddingless" href="https://www.zaqizaba.xyz/posts/%E6%83%85%E5%86%B5%E6%88%96%E8%AE%B8%E9%9C%80%E8%A6%81%E6%94%B9%E5%8F%98/">
-            <span class="icon-link is-small" style="line-height: 100%">
-                <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-              </span>
-              <p style="padding:0 5px"></p>more</p>
-            </a>
-            
-          </div>
-      </article>
-      
-      <article class="columns">
-        <div class="column is-2">
-          <h6 class="is-inline" style="white-space: nowrap">Nov 17</h2>
-        </div>
-        <div class="column">
-          <h2 class="subtitle is-inline is-size-4-mobile is-size-3-desktop"><a href="https://www.zaqizaba.xyz/posts/windows10%E5%92%8Carchlinux%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%90%AF%E5%8A%A8/">Windows10和archlinux双系统启动</a></h1>
-          <div class="content is-hidden-mobile">
-            Archlinux是一个独立开发的linux发行版，听说有“邪教”之称。你可以通过命令一步步安装引导Windows10和archlinux，从而实现win10/archlinux双系统。我也算是新手，建议如果想刷系统可以看看 archlinux新手安装教程，从而进一步加深对archlinux的理解。
-你需要准备的材料为： 一台能联网的电脑（我是台式机）、一个制作了archlinux至少2G的启动U盘、一个容量不少于60G以上的压缩系统盘、一个可以制作系统启动U盘的软件（我这里推荐rufus制作启动U盘）。
-方法如下： 1.制作系统盘并并压缩系统盘以及设置bios引导 1.先去archlinux下载iso，打开rufus。先引导选择下好的iso系统到rufus，再在分区类型选择“GPT”，目标系统类型是“UEFI”，然后点击“开始”制作archlinux启动盘。2.打开 此电脑》管理》磁盘 …
-            
-            <br>
-            <a class="button is-marginless is-paddingless" href="https://www.zaqizaba.xyz/posts/windows10%E5%92%8Carchlinux%E5%8F%8C%E7%B3%BB%E7%BB%9F%E5%90%AF%E5%8A%A8/">
             <span class="icon-link is-small" style="line-height: 100%">
                 <i class="fa fa-angle-double-right" aria-hidden="true"></i>
               </span>
