@@ -218,7 +218,26 @@ MathJax = {
 <pre tabindex="0"><code>cd F:\waline
 waline-data-import-tool-waline-data-import-tool.exe -c waline-tidb.ini -f waline.json
 </code></pre><p>一键迁移数据就行了。</p>
-<hr>
+<h1 id="4后续问题">4.后续问题</h1>
+<p>我部署好waline后用了下，发现了几个问题：<strong>1</strong>.管理员一评论，waline就下线需要重新登录 **2.<strong>管理员不能直接删除陌生人留言，必须到waline系统管理中方可删除评论</strong>3.**评论中不再直接显示评论人地址，只能在管理系统后台查看IP。</p>
+<p>对于前二个问题，问了AI，给了我一个结果→<strong>JWT校验失败</strong>（参看图片错误）。</p>
+<p>
+<div class="post-img-view">
+<a data-fancybox="gallery" href="J:%5c0ded62c7-f584-42f2-83c7-f7424bdf8f83.png">
+<img src="J:%5c0ded62c7-f584-42f2-83c7-f7424bdf8f83.png" alt="0ded62c7-f584-42f2-83c7-f7424bdf8f83"  />
+</a>
+</div>
+解决办法也很简单，就是在vercel管理waline评论打开》设置》环境变量中设置 <strong>JWT-SECRET</strong>,Value只要一串足够长的字符串就行，比如：</p>
+<pre tabindex="0"><code>waline_2026_super_secret_key_xxxxxxxxx
+</code></pre><p>像这样：</p>
+<p>
+<div class="post-img-view">
+<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260228133432244.png">
+<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260228133432244.png" alt="image-20260228133432244"  />
+</a>
+</div>
+</p>
+<p>这样，前二个问题就能解决了。至于第三个问题，不再显示评论仍IP，这个可能和TiDB存储库IP功能缺少有关，看后续能不能解决。</p>
 <p>参考： <a href="https://lisenhui.cn/">凡梦星尘的博客</a></p>
 <p>
 <div class="post-img-view">
