@@ -127,12 +127,12 @@
 <h1 id="1开始准备">1.开始准备</h1>
 <h2 id="11在config-配置tags的url逻辑映射">1.1在<code>config</code> 配置TAGS的URL逻辑映射</h2>
 <p><code>config.toml</code> 配置的问题，在 <code>config.toml</code> 中，<code>[taxonomies]</code> 是用来定义逻辑名称到 URL 路径的映射：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[<span style="color:#a6e22e">taxonomies</span>]
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[<span style="color:#a6e22e">taxonomies</span>]
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">tag</span> = <span style="color:#e6db74">&#34;tags&#34;</span>
 </span></span></code></pre></div><p>给定 <code>tag = &quot;tags&quot;</code> 后，Hugo 会在生成的网站中以 <code>/tags/标签名/</code> 的形式来访问这些标签的文章。</p>
 <h2 id="12创建一个-layoutstaxonomytaghtml-文件模板">1.2创建一个 <code>layouts/taxonomy/tag.html</code> 文件模板</h2>
 <p>在<code>layouts/taxonomy/tag.html</code>中添加一个自定义<code>tag.html</code>模板，具体是：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;container&#34;</span>&gt;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;container&#34;</span>&gt;
 </span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">h1</span>&gt;{{ .Title }}&lt;/<span style="color:#f92672">h1</span>&gt;
 </span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">ul</span>&gt;
 </span></span><span style="display:flex;"><span>    {{ range .Pages }}
@@ -141,7 +141,7 @@
 </span></span><span style="display:flex;"><span>  &lt;/<span style="color:#f92672">ul</span>&gt;
 </span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">div</span>&gt;
 </span></span></code></pre></div><p>在<code>layouts/section/about.html</code>中，<code>Frequent Tags</code>总是跳到首页的问题解决，具体代码是：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;container&#34;</span>&gt;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;container&#34;</span>&gt;
 </span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">h2</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;subtitle is-size-4-mobile is-size-3-desktop&#34;</span>&gt;{{ .Title }}&lt;/<span style="color:#f92672">h1</span>&gt;
 </span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;content&#34;</span>&gt;
 </span></span><span style="display:flex;"><span>    {{ .Content }}
@@ -152,7 +152,7 @@
 </span></span><span style="display:flex;"><span>  {{end}}
 </span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">div</span>&gt;
 </span></span></code></pre></div><p>当然，为了<code>tag.html</code>美观化，可以通过添加类似<code>{{ partial &quot;template&quot; . }}</code>的模板，来美化单调的<code>tag.html</code>页面，我具体是引入<code>{{ partial &quot;header&quot; . }}</code>和<code>{{ partial &quot;nav&quot; . }}</code>来让页面适配博客主题页,然后<code>tag.html</code>就成了这样：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>{{ partial &#34;header&#34; . }}
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>{{ partial &#34;header&#34; . }}
 </span></span><span style="display:flex;"><span>{{ partial &#34;nav&#34; . }}
 </span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;container&#34;</span>&gt;
 </span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">h1</span>&gt;{{ .Title }}&lt;/<span style="color:#f92672">h1</span>&gt;
