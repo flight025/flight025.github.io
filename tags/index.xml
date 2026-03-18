@@ -7,13 +7,34 @@
     <generator>Hugo</generator>
     <language>EN</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://www.zaqizaba.xyz&#34;&gt;阿波尔的博客&lt;/a&gt; 2019-2025</copyright>
-    <lastBuildDate>Tue, 10 Mar 2026 16:04:09 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 18 Mar 2026 21:44:35 +0800</lastBuildDate>
     <atom:link href="https://www.zaqizaba.xyz/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>CasaOS</title>
+      <title>Casaos</title>
       <link>https://www.zaqizaba.xyz/tags/casaos/</link>
-      <pubDate>Tue, 10 Mar 2026 16:04:09 +0800</pubDate>
+      <pubDate>Wed, 18 Mar 2026 21:44:35 +0800</pubDate>
       <guid>https://www.zaqizaba.xyz/tags/casaos/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cloudflare</title>
+      <link>https://www.zaqizaba.xyz/tags/cloudflare/</link>
+      <pubDate>Wed, 18 Mar 2026 21:44:35 +0800</pubDate>
+      <guid>https://www.zaqizaba.xyz/tags/cloudflare/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cloudflare Tunnel</title>
+      <link>https://www.zaqizaba.xyz/tags/cloudflare-tunnel/</link>
+      <pubDate>Wed, 18 Mar 2026 21:44:35 +0800</pubDate>
+      <guid>https://www.zaqizaba.xyz/tags/cloudflare-tunnel/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Spaceship</title>
+      <link>https://www.zaqizaba.xyz/tags/spaceship/</link>
+      <pubDate>Wed, 18 Mar 2026 21:44:35 +0800</pubDate>
+      <guid>https://www.zaqizaba.xyz/tags/spaceship/</guid>
       <description></description>
     </item>
     <item>
@@ -73,7 +94,7 @@
       <description></description>
     </item>
     <item>
-      <title>Ai</title>
+      <title>AI</title>
       <link>https://www.zaqizaba.xyz/tags/ai/</link>
       <pubDate>Mon, 27 Jan 2025 18:24:32 +0800</pubDate>
       <guid>https://www.zaqizaba.xyz/tags/ai/</guid>

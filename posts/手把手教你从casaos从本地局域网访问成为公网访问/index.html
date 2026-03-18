@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="EN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5242216254086529" crossorigin="anonymous"></script>
+
+    
+    
+    <title>手把手教你从Casaos从本地局域网访问成为公网访问 | 阿波尔的博客</title>
+
+    <link rel="stylesheet" href="https://www.zaqizaba.xyz/css/abcjs.css">
+    <link rel="stylesheet" href="https://www.zaqizaba.xyz//css/styles.css">
+    <link rel="stylesheet" href="https://www.zaqizaba.xyz/css/fonts.css" integrity="nHA4sQes5N4kC/1rRzsd9KcxNPPEG1e4F7kjT3rg7mhweyYUuxGU985+SOHzZCsN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/zenburn.min.css" crossorigin="anonymous" />
+    
+</head>
+
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.min.js"></script>
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="https://www.zaqizaba.xyz//js/highlight.js"></script>
+    
+
+    <script>
+        MathJax = { tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] }, svg: { fontCache: 'global' } };
+    </script>
+    <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/abcjs/6.5.2/abcjs-basic-min.min.js"></script>
+    <script defer src="https://fastly.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+
+    
+    <script type="text/javascript" src="https://www.zaqizaba.xyz//js/jssocials.js"></script>
+    
+
+    
+    <script src="https://fastly.jsdelivr.net/npm/fancybox@3.0.1/dist/js/jquery.fancybox.min.js"></script>
+    
+
+    
+
+    
+
+    
+
+    <script>
+        Array.from(document.getElementsByClassName('language-mermaid')).forEach(el => {
+            el.parentElement.outerHTML = `<div class="mermaid">${el.innerText}</div>`
+        })
+    </script>
+    
+    <style>
+        .mermaid svg { display: block; margin: auto; }
+    </style>
+
+    
+</body>
+</html>
+<div class="container">
+    <nav class="navbar level">
+      <div class="navbar-brand">
+          <a class="nav-item" href="https://www.zaqizaba.xyz/"><h1 class="title is-3">阿波尔的博客</h1></a>
+      </div>           
+      <div class="navbar-menu has-text-centered is-active">
+          <div class="navbar-end is-centered">
+              
+                <a href="https://www.zaqizaba.xyz/about" rel="me">
+                  <span class="icon">
+                    <i class="fas fa-info"></i>
+                  </span>
+                </a>
+              
+                <a href="https://www.zaqizaba.xyz/archives" rel="me">
+                  <span class="icon">
+                    <i class="fas fa-archive"></i>
+                  </span>
+                </a>
+              
+                <a href="https://www.zaqizaba.xyz/comments" rel="me">
+                  <span class="icon">
+                    <i class="fas fa-comment"></i>
+                  </span>
+                </a>
+              
+                <a href="https://github.com/flight025" rel="me">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                </a>
+              
+                <a href="https://www.zhihu.com/people/a-gan-jing-shen" rel="me">
+                  <span class="icon">
+                    <i class="fab fa-zhihu"></i>
+                  </span>
+                </a>
+              
+                <a href="https://twitter.com/666GXF" rel="me">
+                  <span class="icon">
+                    <i class="fab fa-twitter"></i>
+                  </span>
+                </a>
+              
+                <a href="https://www.zaqizaba.xyz/index.xml" rel="me">
+                  <span class="icon">
+                    <i class="fa fa-rss"></i>
+                  </span>
+                </a>
+              
+           </div>
+      </div>
+    </nav>
+  </div>
+<div class="container">
+  <h2 class="subtitle is-6">March 18, 2026</h2>
+  <h1 class="subtitle is-size-4-mobile is-size-3-desktop">手把手教你从Casaos从本地局域网访问成为公网访问</h1>
+  <div class="content">
+    <p>
+<div class="post-img-view">
+<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/%EF%BC%9F%EF%BC%9F%EF%BC%9F.png">
+<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/%EF%BC%9F%EF%BC%9F%EF%BC%9F.png" alt="？？？"  />
+</a>
+</div>
+</p>
+<p>Casaos的NAS系统实现了本地局域网访问NAS，那如果我在异地，也想访问家庭NAS，那该怎么办呢？这里有一个傻瓜式操作，按照下面的流程来。你也可以通过绑定cloudflare tunnel来实现公网访问Casaos的NAS，你需要的有：</p>
+<blockquote>
+<p>已经在闲置笔记本上刷了**<a href="https://casaos.zimaspace.com/">Casaos</a><strong>的NAS系统、一个能托管到cloudflare的域名（我在</strong><a href="https://www.spaceship.com/zh/">spaceship</a><strong>上买的，数字域名后缀.xyz每年4.61元人民币）、以及接下来在</strong><a href="https://www.cloudflare.com/zh-cn/">cloudflare</a><strong>的</strong><a href="https://dash.cloudflare.com">控制台</a>**。</p>
+</blockquote>
+<h1 id="1打开casaos-app下载cloudflared">1.打开Casaos app下载cloudflared</h1>
+<p>这个是最重要的一步，如果因为公共DNS和docker镜像源不行。可能导致app应用无法下载，这里我们需要下载clouflared这个应用，所以需要修改公共DNS和docker镜像源：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo nano /etc/docker/daemon.json
+</span></span></code></pre></div><p>写入：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;registry-mirrors&#34;</span>: [
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;https://docker.m.daocloud.io&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;https://docker.1ms.run&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;https://docker.1panel.live&#34;</span>
+</span></span><span style="display:flex;"><span>  ]
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>保存退出。</p>
+<p>再修改默认公共DNS:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo nano /etc/resolv.conf
+</span></span></code></pre></div><p>写入：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">nameserver</span> <span style="color:#ae81ff">114.114</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#ae81ff">114.114</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">nameserver</span> <span style="color:#ae81ff">119.29</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#ae81ff">29.29</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">nameserver</span> <span style="color:#ae81ff">1.1</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#ae81ff">1.1</span>
+</span></span></code></pre></div><p>退出保存。</p>
+<p>然后打开<code>192.168.50.191</code>下载cloudflared。等以后用。（这些dockers镜像源和公共DNS不怎么稳定，不过能用）。</p>
+<h1 id="2在spaceship上购买数字域名以及托管在cloudflare上">2.在spaceship上购买数字域名以及托管在cloudflare上</h1>
+<p>打开<a href="https://www.spaceship.com/zh/">spaceship</a>选择一个数字域名,比如：</p>
+<p>
+<div class="post-img-view">
+<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260318232944596.png">
+<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260318232944596.png" alt="image-20260318232944596"  />
+</a>
+</div>
+</p>
+<p>然后购买一年是4.61元。</p>
+<p>
+<div class="post-img-view">
+<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260318233209409.png">
+<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260318233209409.png" alt="image-20260318233209409"  />
+</a>
+</div>
+</p>
+<p>在spaceship的<strong>域名管理器</strong>中，你就可以看到刚刚购买的域名。</p>
+<p>接下来。打开cloudflare<a href="dash.cloudflare.com">管理页面</a>，打开左边<strong>域》加入域》输入现有域（就是你刚刚买的域名）》选择free》继续前往激活》找到cloudflare名称服务器</strong>：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>mia.ns.cloudflare.com
+</span></span><span style="display:flex;"><span>seth.ns.cloudflare.com
+</span></span></code></pre></div><p>再打开spaceship的 <strong>高级DNS选项》自定义名称服务器</strong>。将名称服务器改为cloudflare的保存，等一会儿传播DNS完成如下：</p>
+<p>
+<div class="post-img-view">
+<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260318235023249.png">
+<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260318235023249.png" alt="image-20260318235023249"  />
+</a>
+</div>
+</p>
+<p>代表此域名已加入cloudflare域管理。</p>
+<h1 id="3利用cloudflare-tunnel访问公网">3.利用cloudflare tunnel访问公网</h1>
+<p>流程原理如下：</p>
+<blockquote>
+<p>浏览器→cloudflare边缘服务器→加密隧道（Tunnel）→我的NAS（192.168.50.191）</p>
+</blockquote>
+<p>搞懂了就好办了。</p>
+<p>先打开<a href="https://dash.cloudflare.com/">访问地址</a>，选择<strong>网络》连接器》创建隧道</strong>（图中我已经搭建了一个）：</p>
+<p>
+<div class="post-img-view">
+<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260319000421015.png">
+<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260319000421015.png" alt="image-20260319000421015"  />
+</a>
+</div>
+</p>
+<p>这里我示范下，假如创建隧道，命名为“1983”，保存。再选择系统为“docker”。这时会得到一个连接令牌，黏贴保存如下：</p>
+<p>
+<div class="post-img-view">
+<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260319000955112.png">
+<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260319000955112.png" alt="image-20260319000955112"  />
+</a>
+</div>
+</p>
+<p>记得保存。</p>
+<p>再打开<code>192.168.50.191</code>这个Casaos的地址，找到刚刚下载好的cloudflared，</p>
+<p>
+<div class="post-img-view">
+<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260319001515917.png">
+<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260319001515917.png" alt="image-20260319001515917"  />
+</a>
+</div>
+</p>
+<p>填入刚刚设置好的令牌token:</p>
+<p>
+<div class="post-img-view">
+<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260319001629011.png">
+<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260319001629011.png" alt="image-20260319001629011"  />
+</a>
+</div>
+</p>
+<h1 id="4最后设置路由隧道">4.最后设置路由隧道</h1>
+<p>最后搞完后，可以看到隧道连接正常了。不过还要设置<strong>路由隧道</strong>。设置如下：</p>
+<blockquote>
+<p><strong>主机名</strong>填一个你熟悉的，比如casaos,域名选择你刚在spaceship买的域名path不管。服务这里类型是HTTP,URL这里填 <strong>casaos.xxxx.xyz:80</strong> 保存。</p>
+<p>
+<div class="post-img-view">
+<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260319002547918.png">
+<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260319002547918.png" alt="image-20260319002547918"  />
+</a>
+</div>
+</p>
+</blockquote>
+<p>​       点击“完成设置”，退出。</p>
+<p>再打开刚刚设置好的casaos.xxxx.xyz，打开。可以发现Casaos的NAS路由可以公网域名访问了，以后只要我刷Casaos的G560不断电，基本上我远程访问这台NAS就没问题了。</p>
+<p>
+<div class="post-img-view">
+<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/rebbrt.jpg">
+<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/rebbrt.jpg" alt="rebbrt"  />
+</a>
+</div>
+</p>
+
+  </div>
+</div>
+<head>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jsSocials/1.5.0/jssocials.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsSocials/1.5.0/jssocials.min.js" defer></script>
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/nanogallery2/3.0.5/css/nanogallery2.min.css" defer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/nanogallery2/3.0.5/jquery.nanogallery2.min.js" defer></script>
+</head>
+
+<body>
+    <div class="container has-text-centered">
+        
+        <aside><div id="share"></div></aside>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                
+                if (typeof $.fn.jsSocials !== "undefined") {
+                    $("#share").jsSocials({
+                        showLabel: false,
+                        showCount: false,
+                        shares: ["email", "twitter"]
+                    });
+                } else {
+                    console.error("jsSocials 插件未加载！");
+                }
+            });
+        </script>
+        
+        本作品采用<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>进行许可。
+    </div>
+</body>
+<div class="container">
+<head>
+  
+ <script src="https://unpkg.com/@waline/client@2.15.8/dist/waline.js"></script> 
+ <link rel= "stylesheet" href= "https://www.zaqizaba.xyz/css/waline.css" integrity= "MIWed8SQ6eGu4KgWgXR+ebvVSEPJ5dY5TddaHHyztyy2MixKV4sgE02SNvTgq/EI" crossorigin= "anonymous" >
+</head>
+<body>
+  
+  <div id="waline"></div><div id="waline" class="waline-container"></div>
+  <script>
+    
+var locale = {
+        nick: '😐的爱称',
+        nickError: '昵称不能少于3个字符',
+        mail: '你的📫',
+        mailError: '请填写正确的邮件地址',
+        link: '🌐的链接',
+        placeholder: '此刻你看完这篇博文脑海中的想法是什么呢，大胆说出来吧ヾ(•ω•`)o',
+        sofa: '🍿🍿🍿',
+        submit: '提交',
+        reply: '回复',
+        cancelReply: '取消回复',
+        comment: '评论',
+        more: '加载更多...',
+        preview: '预览',
+        emoji: '表情',
+        expand: '查看更多...',
+        seconds: '秒前',
+        minutes: '分钟前',
+        hours: '小时前',
+        days: '天前',
+        now: '刚刚',
+        uploading: '正在上传',
+        login: '登录',
+        logout: '退出',
+        admin: '博主',
+        word: '字',
+        wordHint: '评论字数应在 $0 到 $1 字之间！\n当前字数：$2',
+      };
+      
+document.addEventListener('DOMContentLoaded', function () {
+        
+        if (typeof Waline !== 'undefined') {
+          Waline.init({
+            el: '#waline',
+            lang: 'zh-CN',
+            dark: 'auto',
+            search: false,
+            serverURL: 'https://www.19964662.xyz',
+            locale,
+            emoji: [
+              'https://gcore.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/',
+              'https://cdn.cbd.int/sarakale-assets@1.2.1/emoji/acfun_color/'
+            ],
+          });
+        } else {
+          console.error('Waline is not loaded correctly');
+        }
+      });
+    </script>
+  </body>
+</div>      
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FFW576XTMR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-FFW576XTMR');
+</script>
+
+
+
+
+<div class="container has-text-centered">
+  <section class="section">
+    <p>&copy; <a href="https://www.zaqizaba.xyz">阿波尔的博客</a>2019-2026</p>
+  </section>
+</div>
