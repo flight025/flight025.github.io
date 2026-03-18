@@ -1,0 +1,21 @@
+/* 基础反色滤镜 */
+html.inverted {
+    filter: invert(100%) hue-rotate(180deg);
+}
+
+/* 修正：不希望被反色的元素（如图片、视频、表情符号） */
+html.inverted img, 
+html.inverted video, 
+html.inverted iframe,
+html.inverted .no-invert {
+    filter: invert(100%) hue-rotate(180deg);
+}
+
+/* 按钮样式（根据你的网站风格调整） */
+#invert-btn {
+    background: none;
+    border: 1px solid currentColor;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
