@@ -172,24 +172,23 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
      
      <script>
-        var swiper = new Swiper('.swiper-container', {
-            pagination: '.swiper-pagination',
-            paginationClickable: true,
+    var swiper = new Swiper('.swiper-container', {
         
-        autoHeight: true,
+        effect: 'fade',
+        fade: {
+            crossFade: true 
+        },
         
-        keyboardControl : true,
-        
-        mousewheelControl : true,
-        
-        
-        
-        lazyLoading : true,
-		lazyLoadingInPrevNext : true,
-		
-		loop : true,
-        });
-        </script>
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        autoHeight: true,      
+        keyboardControl: true, 
+        mousewheelControl: true, 
+        lazyLoading: true,      
+        lazyLoadingInPrevNext: true,
+        loop: true,             
+    });
+</script>
 
 
 <p>然后放入口香糖电池。发现并没什么用，倒是线控显示了，说明有电，但是放入磁带，并没反应，我想可能是皮带问题吧。</p>

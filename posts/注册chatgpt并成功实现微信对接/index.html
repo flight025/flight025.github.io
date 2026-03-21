@@ -202,24 +202,23 @@ chatgpt答：免疫球蛋白（Immunoglobulin，简称Ig）是一种由免疫系
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
      
      <script>
-        var swiper = new Swiper('.swiper-container', {
-            pagination: '.swiper-pagination',
-            paginationClickable: true,
+    var swiper = new Swiper('.swiper-container', {
         
-        autoHeight: true,
+        effect: 'fade',
+        fade: {
+            crossFade: true 
+        },
         
-        keyboardControl : true,
-        
-        mousewheelControl : true,
-        
-        
-        
-        lazyLoading : true,
-		lazyLoadingInPrevNext : true,
-		
-		loop : true,
-        });
-        </script>
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        autoHeight: true,      
+        keyboardControl: true, 
+        mousewheelControl: true, 
+        lazyLoading: true,      
+        lazyLoadingInPrevNext: true,
+        loop: true,             
+    });
+</script>
 
 
 <h1 id="2对接微信">2.对接微信</h1>
