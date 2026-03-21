@@ -134,25 +134,6 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
     
-    <style>
-         
-        .swiper-container {
-            width: 100%;
-            height: auto;
-        }
-        .swiper-slide {
-            display: flex;            
-            justify-content: center;  
-            align-items: center;      
-            text-align: center;
-        }
-        .swiper-slide img {
-            max-width: 100%;          
-            height: auto;             
-            display: block;
-        }
-    </style>
-
     <div class="swiper-container">
         <div class="swiper-wrapper">
             
@@ -298,22 +279,32 @@
             </div>
             
         </div>
+        
         <div class="swiper-pagination"></div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
-    <script>
+     
+     <script>
         var swiper = new Swiper('.swiper-container', {
             pagination: '.swiper-pagination',
             paginationClickable: true,
-            autoHeight: true,
-            keyboardControl : true,
-            mousewheelControl : true,
-            lazyLoading : true,
-            lazyLoadingInPrevNext : true,
-            loop : true,
+        
+        autoHeight: true,
+        
+        keyboardControl : true,
+        
+        mousewheelControl : true,
+        
+        
+        
+        lazyLoading : true,
+		lazyLoadingInPrevNext : true,
+		
+		loop : true,
         });
-    </script>
+        </script>
+
 
 <p><u><strong>Did you know? A photo means the past of the elders, and a microcosm of that era.</strong></u>🤔</p>
 <p><strong>No one can stay young forever, but photos can stay.</strong> 😢</p>
