@@ -136,6 +136,25 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
     
+    <style>
+         
+        .swiper-container {
+            width: 100%;
+            height: auto;
+        }
+        .swiper-slide {
+            display: flex;            
+            justify-content: center;  
+            align-items: center;      
+            text-align: center;
+        }
+        .swiper-slide img {
+            max-width: 100%;          
+            height: auto;             
+            display: block;
+        }
+    </style>
+
     <div class="swiper-container">
         <div class="swiper-wrapper">
             
@@ -165,32 +184,22 @@
             </div>
             
         </div>
-        
         <div class="swiper-pagination"></div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
-     
-     <script>
+    <script>
         var swiper = new Swiper('.swiper-container', {
             pagination: '.swiper-pagination',
             paginationClickable: true,
-        
-        autoHeight: true,
-        
-        keyboardControl : true,
-        
-        mousewheelControl : true,
-        
-        
-        
-        lazyLoading : true,
-		lazyLoadingInPrevNext : true,
-		
-		loop : true,
+            autoHeight: true,
+            keyboardControl : true,
+            mousewheelControl : true,
+            lazyLoading : true,
+            lazyLoadingInPrevNext : true,
+            loop : true,
         });
-        </script>
-
+    </script>
 
 <p>然后放入口香糖电池。发现并没什么用，倒是线控显示了，说明有电，但是放入磁带，并没反应，我想可能是皮带问题吧。</p>
 <h2 id="二第二次修理walkman">二.第二次修理Walkman</h2>

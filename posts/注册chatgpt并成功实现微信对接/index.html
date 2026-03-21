@@ -178,6 +178,25 @@ chatgpt答：免疫球蛋白（Immunoglobulin，简称Ig）是一种由免疫系
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
     
+    <style>
+         
+        .swiper-container {
+            width: 100%;
+            height: auto;
+        }
+        .swiper-slide {
+            display: flex;            
+            justify-content: center;  
+            align-items: center;      
+            text-align: center;
+        }
+        .swiper-slide img {
+            max-width: 100%;          
+            height: auto;             
+            display: block;
+        }
+    </style>
+
     <div class="swiper-container">
         <div class="swiper-wrapper">
             
@@ -195,32 +214,22 @@ chatgpt答：免疫球蛋白（Immunoglobulin，简称Ig）是一种由免疫系
             </div>
             
         </div>
-        
         <div class="swiper-pagination"></div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
-     
-     <script>
+    <script>
         var swiper = new Swiper('.swiper-container', {
             pagination: '.swiper-pagination',
             paginationClickable: true,
-        
-        autoHeight: true,
-        
-        keyboardControl : true,
-        
-        mousewheelControl : true,
-        
-        
-        
-        lazyLoading : true,
-		lazyLoadingInPrevNext : true,
-		
-		loop : true,
+            autoHeight: true,
+            keyboardControl : true,
+            mousewheelControl : true,
+            lazyLoading : true,
+            lazyLoadingInPrevNext : true,
+            loop : true,
         });
-        </script>
-
+    </script>
 
 <h1 id="2对接微信">2.对接微信</h1>
 <p>如果你想把tgp-3.5代入微信，你需要：</p>
