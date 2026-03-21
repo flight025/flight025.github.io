@@ -176,48 +176,60 @@ chatgpt答：免疫球蛋白（Immunoglobulin，简称Ig）是一种由免疫系
 </span></span></code></pre></div><p>以上代码定义了三个类，分别是Immunoglobulin、HeavyChain和LightChain。其中Immunoglobulin类包含了两个属性，分别是重链和轻链，而重链和轻链各自包含了可变区域和恒定区域。这些类可以用来构建Ig分子的基本结构。当然，这只是一个简单的示例，真实的Ig结构更加复杂，需要更多的属性和方法来描述。</p>
 </blockquote>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
-    
-    <div class="swiper-container">
-        <div class="swiper-wrapper">
-            
-            
-            <div class="swiper-slide">
-                <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/GPT1.PNG" alt="">
-            </div>
-            
-            <div class="swiper-slide">
-                <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/GPT2.PNG" alt="">
-            </div>
-            
-            <div class="swiper-slide">
-                <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/GPT3.PNG" alt="">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
+
+<div class="swiper-container blog-swiper">
+    <div class="swiper-wrapper">
+        
+        
+        <div class="swiper-slide">
+            <div class="img-box">
+                <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/GPT1.PNG" alt="image-0">
             </div>
             
         </div>
         
-        <div class="swiper-pagination"></div>
+        <div class="swiper-slide">
+            <div class="img-box">
+                <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/GPT2.PNG" alt="image-1">
+            </div>
+            
+        </div>
+        
+        <div class="swiper-slide">
+            <div class="img-box">
+                <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/GPT3.PNG" alt="image-2">
+            </div>
+            
+        </div>
+        
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
-     
-     <script>
-    var swiper = new Swiper('.swiper-container', {
-        
-        effect: 'fade',
-        fade: {
-            crossFade: true 
-        },
-        
-        pagination: '.swiper-pagination',
-        paginationClickable: true,
-        autoHeight: true,      
-        keyboardControl: true, 
-        mousewheelControl: true, 
-        lazyLoading: true,      
-        lazyLoadingInPrevNext: true,
-        loop: true,             
-    });
+    
+    <div class="swiper-pagination"></div>
+
+    
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
+
+<script>
+var swiper = new Swiper('.blog-swiper', {
+    effect: 'slide',
+    loop: true,
+    autoHeight: false,
+
+    pagination: '.swiper-pagination',
+    paginationClickable: true,
+
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+
+    keyboardControl: true,
+});
 </script>
 
 

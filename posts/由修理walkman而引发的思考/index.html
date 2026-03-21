@@ -134,60 +134,81 @@
 <h2 id="一第一次修理walkman">一.第一次修理Walkman</h2>
 <p>当时这台索尼Walkman已经锈迹斑斑，我决定查询这台wm-ex621的电子说明书，来修理一下。先是买了氧化去锈剂加醋浸泡电池盒除锈，然后买了金属补漆笔对这台年久不用的Walkman补漆，再对主导轴除锈。</p>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
-    
-    <div class="swiper-container">
-        <div class="swiper-wrapper">
-            
-            
-            <div class="swiper-slide">
-                <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/QQ%E5%9B%BE%E7%89%8720240303234157.jpg" alt="">
-            </div>
-            
-            <div class="swiper-slide">
-                <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/QQ%E5%9B%BE%E7%89%8720240303234218.jpg" alt="">
-            </div>
-            
-            <div class="swiper-slide">
-                <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/QQ%E5%9B%BE%E7%89%8720240303234237.jpg" alt="">
-            </div>
-            
-            <div class="swiper-slide">
-                <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/QQ%E5%9B%BE%E7%89%8720240303234254.jpg" alt="">
-            </div>
-            
-            <div class="swiper-slide">
-                <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/QQ%E5%9B%BE%E7%89%8720240303234307.jpg" alt="">
-            </div>
-            
-            <div class="swiper-slide">
-                <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/QQ%E5%9B%BE%E7%89%8720240303234330.jpg" alt="">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
+
+<div class="swiper-container blog-swiper">
+    <div class="swiper-wrapper">
+        
+        
+        <div class="swiper-slide">
+            <div class="img-box">
+                <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/QQ%E5%9B%BE%E7%89%8720240303234157.jpg" alt="image-0">
             </div>
             
         </div>
         
-        <div class="swiper-pagination"></div>
+        <div class="swiper-slide">
+            <div class="img-box">
+                <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/QQ%E5%9B%BE%E7%89%8720240303234218.jpg" alt="image-1">
+            </div>
+            
+        </div>
+        
+        <div class="swiper-slide">
+            <div class="img-box">
+                <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/QQ%E5%9B%BE%E7%89%8720240303234237.jpg" alt="image-2">
+            </div>
+            
+        </div>
+        
+        <div class="swiper-slide">
+            <div class="img-box">
+                <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/QQ%E5%9B%BE%E7%89%8720240303234254.jpg" alt="image-3">
+            </div>
+            
+        </div>
+        
+        <div class="swiper-slide">
+            <div class="img-box">
+                <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/QQ%E5%9B%BE%E7%89%8720240303234307.jpg" alt="image-4">
+            </div>
+            
+        </div>
+        
+        <div class="swiper-slide">
+            <div class="img-box">
+                <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/QQ%E5%9B%BE%E7%89%8720240303234330.jpg" alt="image-5">
+            </div>
+            
+        </div>
+        
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
-     
-     <script>
-    var swiper = new Swiper('.swiper-container', {
-        
-        effect: 'fade',
-        fade: {
-            crossFade: true 
-        },
-        
-        pagination: '.swiper-pagination',
-        paginationClickable: true,
-        autoHeight: true,      
-        keyboardControl: true, 
-        mousewheelControl: true, 
-        lazyLoading: true,      
-        lazyLoadingInPrevNext: true,
-        loop: true,             
-    });
+    
+    <div class="swiper-pagination"></div>
+
+    
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
+
+<script>
+var swiper = new Swiper('.blog-swiper', {
+    effect: 'slide',
+    loop: true,
+    autoHeight: false,
+
+    pagination: '.swiper-pagination',
+    paginationClickable: true,
+
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+
+    keyboardControl: true,
+});
 </script>
 
 
