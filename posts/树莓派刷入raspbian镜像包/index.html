@@ -179,9 +179,15 @@
 <blockquote>
 <p>完成上面的步骤。我选择的是带界面的系统，连接hdmi1.4的接口（我试了hdmi2.0接口没反应，可能是hdmi线不支持？），可以看到界面：</p>
 </blockquote>
-<video id="video" controls=""  controlslist="nodownload"   preload="none" allowfullscreen="true" position= "absolute" width="100%" poster="">
-      <source id="mp4" src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/%E8%A7%86%E9%A2%91/20220206_084643_6859.mp4" type="video/mp4" >
-      </video>
+<div class="video-box">
+  <video 
+    controls
+    controlslist="nodownload"
+    allowfullscreen="true"     
+    preload="metadata"
+    poster=""><source src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/%E8%A7%86%E9%A2%91/20220206_084643_6859.mp4" type="video/mp4">
+  </video>
+</div>
 <blockquote>
 <p>依次点击设置Set country》change password,直到设置完成。</p>
 </blockquote>
@@ -190,9 +196,15 @@
 <p>由于linux系统没有直接的安装包，所以。你可以用命令行安装所需的软件，比如，我现在要用Raspbian上写博客中文留言并录制视频：</p>
 <p>可以先安装谷歌拼音命令<code>$ apt-get install fcitx-googlepinyin</code>(安装时注意要<code>sudo -i</code>开启管理员权限）,再安装录屏截图软件kazam<code>$ sudo apt-get install kazam</code>,然后再设置好谷歌拼音开启，默认是shift+ctrl键。在Raspbian输入一段中文“你好，这是一个发自于Raspberry的表情包🤭”。</p>
 </blockquote>
-<video id="video" controls=""  controlslist="nodownload"   preload="none" allowfullscreen="true" position= "absolute" width="100%" poster="">
-      <source id="mp4" src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/%E8%A7%86%E9%A2%91/cd38_x264.mp4" type="video/mp4" >
-      </video>
+<div class="video-box">
+  <video 
+    controls
+    controlslist="nodownload"
+    allowfullscreen="true"     
+    preload="metadata"
+    poster=""><source src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/%E8%A7%86%E9%A2%91/cd38_x264.mp4" type="video/mp4">
+  </video>
+</div>
 <hr>
 <p>参考： <a href="https://www.raspberrypi.org/">树莓派官网</a></p>
 <p>
