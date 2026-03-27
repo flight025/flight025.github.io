@@ -7,7 +7,7 @@
     <generator>Hugo</generator>
     <language>EN</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://www.zaqizaba.xyz&#34;&gt;阿波尔的博客&lt;/a&gt; 2019-2025</copyright>
-    <lastBuildDate>Fri, 27 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 25 Mar 2026 16:17:30 +0800</lastBuildDate>
     <atom:link href="https://www.zaqizaba.xyz/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Creating a New Theme</title>
@@ -22,13 +22,6 @@
       <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
       <guid>https://www.zaqizaba.xyz/posts/migrate-from-jekyll/</guid>
       <description>&lt;h2 id=&#34;move-static-content-to-static&#34;&gt;Move static content to &lt;code&gt;static&lt;/code&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Jekyll has a rule that any directory not starting with &lt;code&gt;_&lt;/code&gt; will be copied as-is to the &lt;code&gt;_site&lt;/code&gt; output. Hugo keeps all static content under &lt;code&gt;static&lt;/code&gt;. You should therefore move it all there.&#xA;With Jekyll, something that looked like&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;▾ &amp;lt;root&amp;gt;/&#xA;    ▾ images/&#xA;        logo.png&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;should become&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;▾ &amp;lt;root&amp;gt;/&#xA;    ▾ static/&#xA;        ▾ images/&#xA;            logo.png&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;Additionally, you&amp;rsquo;ll want any files that should reside at the root (such as &lt;code&gt;CNAME&lt;/code&gt;) to be moved to &lt;code&gt;static&lt;/code&gt;.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>隐私政策 (Privacy Policy)</title>
-      <link>https://www.zaqizaba.xyz/privacy/</link>
-      <pubDate>Fri, 27 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://www.zaqizaba.xyz/privacy/</guid>
-      <description>&lt;p&gt;本隐私政策详细说明了 &lt;strong&gt;&lt;a href=&#34;https://www.zaqizaba.xyz&#34;&gt;www.zaqizaba.xyz&lt;/a&gt;&lt;/strong&gt;（以下简称“本站”）如何处理用户信息以及第三方服务的使用情况。&lt;/p&gt;&#xA;&lt;h3 id=&#34;1-信息的收集与使用&#34;&gt;1. 信息的收集与使用&lt;/h3&gt;&#xA;&lt;p&gt;本站作为一个技术分享博客，本身不主动收集访客的个人身份信息。但在您访问本站时，服务器日志可能会自动记录您的 IP 地址、浏览器类型、访问时间等非敏感信息。&lt;/p&gt;&#xA;&lt;h3 id=&#34;2-cookie-的使用&#34;&gt;2. Cookie 的使用&lt;/h3&gt;&#xA;&lt;p&gt;本站及第三方服务商（如 Google AdSense）可能会使用 Cookie 来提升用户体验：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Cookie&lt;/strong&gt; 是存储在您设备上的小文件，用于记录偏好设置。&lt;/li&gt;&#xA;&lt;li&gt;您可以随时通过浏览器设置禁用或清除 Cookie。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;3-google-adsense-与第三方广告&#34;&gt;3. Google AdSense 与第三方广告&lt;/h3&gt;&#xA;&lt;p&gt;Google 作为第三方广告供应商，在本站投放广告时会使用 Cookie：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Google 使用 &lt;strong&gt;DART Cookie&lt;/strong&gt; 根据用户对本站及互联网上其他网站的访问情况，向用户投放广告。&lt;/li&gt;&#xA;&lt;li&gt;用户可以通过访问 &lt;a href=&#34;https://policies.google.com/technologies/ads&#34;&gt;Google 广告和内容联盟网络隐私政策&lt;/a&gt; 来了解如何退出 DART Cookie 的使用。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;4-第三方链接&#34;&gt;4. 第三方链接&lt;/h3&gt;&#xA;&lt;p&gt;本站可能包含指向外部网站的链接。我们对这些第三方网站的隐私做法不承担任何责任。&lt;/p&gt;&#xA;&lt;h3 id=&#34;5-政策更新&#34;&gt;5. 政策更新&lt;/h3&gt;&#xA;&lt;p&gt;我们可能会不时更新本隐私政策，建议您定期查看。&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&lt;em&gt;最后更新日期：2026年3月&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>缘何张雪峰突然去世</title>
@@ -414,6 +407,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://www.zaqizaba.xyz/comments/</guid>
       <description>站内文章谷歌搜索</description>
+    </item>
+    <item>
+      <title>隐私政策 (Privacy Policy)</title>
+      <link>https://www.zaqizaba.xyz/privacy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.zaqizaba.xyz/privacy/</guid>
+      <description>&lt;p&gt;本隐私政策详细说明了 &lt;strong&gt;&lt;a href=&#34;https://www.zaqizaba.xyz&#34;&gt;www.zaqizaba.xyz&lt;/a&gt;&lt;/strong&gt;（以下简称“本站”）如何处理用户信息以及第三方服务的使用情况。&lt;/p&gt;&#xA;&lt;h3 id=&#34;1-信息的收集与使用&#34;&gt;1. 信息的收集与使用&lt;/h3&gt;&#xA;&lt;p&gt;本站作为一个技术分享博客，本身不主动收集访客的个人身份信息。但在您访问本站时，服务器日志可能会自动记录您的 IP 地址、浏览器类型、访问时间等非敏感信息。&lt;/p&gt;&#xA;&lt;p&gt;如有任何隐私问题或请求，请通过邮箱联系：ch86cdgzlhr@gmail.com&lt;/p&gt;&#xA;&lt;h3 id=&#34;2-cookie-的使用&#34;&gt;2. Cookie 的使用&lt;/h3&gt;&#xA;&lt;p&gt;本站及第三方服务商（如 Google AdSense）可能会使用 Cookie 来提升用户体验：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Cookie&lt;/strong&gt; 是存储在您设备上的小文件，用于记录偏好设置。&lt;/li&gt;&#xA;&lt;li&gt;您可以随时通过浏览器设置禁用或清除 Cookie。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;3-google-adsense-与第三方广告&#34;&gt;3. Google AdSense 与第三方广告&lt;/h3&gt;&#xA;&lt;p&gt;Google 作为第三方广告供应商，在本站投放广告时会使用 Cookie：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Google 使用 &lt;strong&gt;DART Cookie&lt;/strong&gt; 根据用户对本站及互联网上其他网站的访问情况，向用户投放广告。&lt;/li&gt;&#xA;&lt;li&gt;用户可以通过访问 &lt;a href=&#34;https://policies.google.com/technologies/ads&#34;&gt;Google 广告和内容联盟网络隐私政策&lt;/a&gt; 来了解如何退出 DART Cookie 的使用。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;4-第三方链接&#34;&gt;4. 第三方链接&lt;/h3&gt;&#xA;&lt;p&gt;本站可能包含指向外部网站的链接。我们对这些第三方网站的隐私做法不承担任何责任。&lt;/p&gt;&#xA;&lt;h3 id=&#34;5-政策更新&#34;&gt;5. 政策更新&lt;/h3&gt;&#xA;&lt;p&gt;我们可能会不时更新本隐私政策，建议您定期查看。&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&lt;em&gt;最后更新日期：2026年3月&lt;/em&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
