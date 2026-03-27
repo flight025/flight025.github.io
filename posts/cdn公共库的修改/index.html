@@ -274,8 +274,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-<div class="container has-text-centered">
-  <section class="section">
-    <p>&copy; <a href="https://www.zaqizaba.xyz">阿波尔的博客</a>2019-2026</p>
-  </section>
-</div>
+<style>
+  .f-link { color: #760411; text-decoration: none; transition: .2s; }
+  .f-link:hover { color: #444 !important; text-decoration: none !important; }
+  .c-sym { font-size: 1.1rem; vertical-align: middle; }  
+</style>
+
+<footer style="text-align: center; padding: 20px; font-size: 0.9rem; color: #666;">
+  <span class="c-sym">&copy;</span> 2019-2026 <a href="/" class="f-link">阿波尔的博客</a> 
+  | <a href="/privacy.html" class="f-link">隐私政策 (Privacy Policy)</a> 
+  | Powered by <a href="https://gohugo.io/" class="f-link">Hugo</a>
+</footer>
