@@ -129,17 +129,15 @@
              
             --bg-color: #f8f1e3;         
             --text-color: #584029;       
-            --link-color: #760411;       
-            --cyan-border: #b8ab99;      
+            --title-color: #760411;      
             --selection-bg: #760411;
         }
 
-         
         html, body {
             background-color: var(--bg-color);
             color: var(--text-color);
             font-family: "Domine", Georgia, serif, "Microsoft YaHei";
-            line-height: 1.6;
+            line-height: 1.8;
             margin: 0;
             padding: 0;
             -webkit-font-smoothing: antialiased;
@@ -153,24 +151,25 @@
 
          
         h1, h2, h3, h4 {
-            color: var(--link-color);
+            color: var(--title-color);
             font-weight: bold;
             margin-top: 1.5em;
             margin-bottom: 0.5em;
+            border-bottom: none !important;  
+            padding-bottom: 0 !important;
         }
 
-        h1 { font-size: 1.8em; border-bottom: 1px solid var(--cyan-border); padding-bottom: 0.3em; }
+        h1 { font-size: 1.8em; margin-top: 0.5em; }
         h3 { font-size: 1.3em; }
 
          
         a {
-            color: var(--link-color);
+            color: var(--title-color);
             text-decoration: none;
-            word-break: break-all;
+            font-weight: bold;
         }
 
         a:hover {
-            color: #202020;
             text-decoration: underline;
         }
 
@@ -180,35 +179,23 @@
             margin-bottom: 1.5em;
         }
 
-        li { margin-bottom: 0.5em; }
-
-         
-        blockquote {
-            background-color: #f1ebe2;
-            border-left: 5px solid var(--cyan-border);
-            margin: 1.5em 0;
-            padding: 10px 20px;
-            font-style: italic;
-            border-radius: 0 5px 5px 0;
-        }
+        li { margin-bottom: 0.8em; }
 
          
         hr {
-            border: 0;
-            border-top: 1px solid var(--cyan-border);
-            margin: 2em 0;
-        }
-
-         
-        @media screen and (max-width: 600px) {
-            #write { padding: 20px 15px; }
-            h1 { font-size: 1.5em; }
+            display: none !important;  
         }
 
          
         ::selection {
             background: var(--selection-bg);
             color: #ffffff;
+        }
+
+         
+        @media screen and (max-width: 600px) {
+            #write { padding: 20px 15px; }
+            h1 { font-size: 1.5em; }
         }
     </style>
 </head>
@@ -219,7 +206,7 @@
         
         <h3 id='1-信息的收集与使用'>1. 信息的收集与使用</h3>
         <p>本站作为一个技术分享博客，本身不主动收集访客的个人身份信息。但在您访问本站时，服务器日志可能会自动记录您的 IP 地址、浏览器类型、访问时间等非敏感信息。</p>
-        <p>如有任何隐私问题或请求，请通过邮箱联系：<a href='mailto:ch86cdgzlhr@gmail.com' target='_blank'>ch86cdgzlhr@gmail.com</a></p>
+        <p>如有任何隐私问题或请求，请通过邮箱联系：<a href='mailto:ch86cdgzlhr@gmail.com'>ch86cdgzlhr@gmail.com</a></p>
         
         <h3 id='2-cookie-的使用'>2. Cookie 的使用</h3>
         <p>本站及第三方服务商（如 Google AdSense）可能会使用 Cookie 来提升用户体验：</p>
@@ -241,8 +228,7 @@
         <h3 id='5-政策更新'>5. 政策更新</h3>
         <p>我们可能会不时更新本隐私政策，建议您定期查看。</p>
         
-        <hr />
-        <p><em>最后更新日期：2026年3月</em></p>
+        <p style="margin-top: 3em; font-size: 0.9em; opacity: 0.8;"><em>最后更新日期：2026年3月</em></p>
     </div>
 </body>
 </html>
