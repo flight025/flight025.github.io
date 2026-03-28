@@ -1,5 +1,6 @@
 @font-face {
   font-family: 'Source Han Serif CN';
+  font-display: swap;  
   src: local('Source Han Serif CN'), local('Source Han Serif SC'),
        local('Source Han Serif TC'), local('Source Han Serif TW'),
        local('Source Han Serif'), local('Noto Serif CJK SC'), local('Songti SC'), local('SimSong'),
@@ -7,6 +8,7 @@
 }
 @font-face {
   font-family: 'AR PL KaitiM GB';
+  font-display: swap;  
   src: local('Kaiti'), local('Kaiti SC'), local('STKaiti'), local('楷体'), local('SimKai'), local('DFKai-SB'), local('AR PL KaitiM GB'),
        url('https://fastly.jsdelivr.net/gh/flight025/css@main/AR-PL-KaitiM-GB.woff2') format('woff2');
 }
