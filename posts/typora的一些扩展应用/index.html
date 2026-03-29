@@ -1193,22 +1193,44 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-<script async src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.0.2/add-html-label-3fd8c466.min.js" integrity="sha512-7EiTjiXeiTplBEUKk7WzdY8ok/4D2PrwERajr4AwBjLPgLrCdeOwlU8KWLSTWqkbglqwcjJ8eApFol9fRYxGMA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.0.2/mermaid.min.js"
+        integrity="sha512-+NQf9yC+W7skh6T+qU+6HgzpMCf9Z6rK/CHmjo3Y7S+G0Nfyzj/6JkI+vF5s1NQw5Oglw+0Qk+/g/8nn2I6q+g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 
 <script>
-  document.addEventListener("DOMContentLoaded", function() {
-    Array.from(document.getElementsByClassName("language-mermaid")).forEach(el => {
-      el.parentElement.outerHTML = `<div class="mermaid">${el.innerText}</div>`;
-    });
-  });
-</script>
-<style>
-   
-  .mermaid svg {
-    display: block;
-    margin: auto;
+document.addEventListener("DOMContentLoaded", function() {
+  
+  if (typeof mermaid !== "undefined") {
+    mermaid.initialize({ startOnLoad: false });
   }
+
+  
+  Array.from(document.getElementsByClassName("language-mermaid")).forEach(el => {
+    const chartCode = el.textContent || el.innerText;
+    const wrapper = document.createElement("div");
+    wrapper.className = "mermaid";
+    wrapper.textContent = chartCode;
+    el.parentNode.replaceChild(wrapper, el);
+
+    
+    if (typeof mermaid !== "undefined") {
+      try {
+        mermaid.init(undefined, wrapper);
+      } catch (err) {
+        console.error("Mermaid 渲染失败:", err);
+      }
+    }
+  });
+});
+</script>
+
+
+<style>
+.mermaid svg {
+  display: block;
+  margin: auto;
+}
 </style>
 
 
