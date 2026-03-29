@@ -329,27 +329,15 @@ reboot
 </div>
 <head>
     
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-            integrity="sha256-/xUj+3OJ7D6hU8B9QQ5iCbh6Y4uHg9oH+u2L4qef9eI="
-            crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
 
     
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/jsSocials/1.5.0/jssocials.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jsSocials/1.5.0/jssocials.min.css">
-    </noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jsSocials/1.5.0/jssocials.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsSocials/1.5.0/jssocials.min.js" defer></script>
 
     
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsSocials/1.5.0/jssocials.min.js"></script>
-
-    
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/nanogallery2/3.0.5/css/nanogallery2.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/nanogallery2/3.0.5/css/nanogallery2.min.css">
-    </noscript>
-
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/nanogallery2/3.0.5/jquery.nanogallery2.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/nanogallery2/3.0.5/css/nanogallery2.min.css" defer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/nanogallery2/3.0.5/jquery.nanogallery2.min.js" defer></script>
 </head>
 
 <body>
@@ -357,19 +345,23 @@ reboot
     
     <aside><div id="share"></div></aside>
 
+    
     <script>
-    $(function() {
-        
-        if (typeof $.fn.jsSocials !== "undefined") {
-            $("#share").jsSocials({
-                showLabel: false,
-                showCount: false,
-                shares: ["email", "twitter"]
-            });
-        } else {
-            console.error("jsSocials 未加载！");
+    (function() {
+        function initShare() {
+            if (typeof $ !== "undefined" && typeof $.fn.jsSocials !== "undefined") {
+                $("#share").jsSocials({
+                    showLabel: false,
+                    showCount: false,
+                    shares: ["email", "twitter"]
+                });
+            } else {
+                
+                setTimeout(initShare, 500);
+            }
         }
-    });
+        document.addEventListener('DOMContentLoaded', initShare);
+    })();
     </script>
     
 
