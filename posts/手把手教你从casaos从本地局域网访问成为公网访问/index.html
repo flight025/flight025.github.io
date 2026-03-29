@@ -321,26 +321,33 @@
 </head>
 
 <body>
-    <div class="container has-text-centered">
-        
-        <aside><div id="share"></div></aside>
-        <script type="text/javascript">
-            $(document).ready(function() {
+<div class="container has-text-centered">
+    
+    <aside><div id="share"></div></aside>
+
+    
+    <script>
+    (function() {
+        function initShare() {
+            if (typeof $ !== "undefined" && typeof $.fn.jsSocials !== "undefined") {
+                $("#share").jsSocials({
+                    showLabel: false,
+                    showCount: false,
+                    shares: ["email", "twitter"]
+                });
+            } else {
                 
-                if (typeof $.fn.jsSocials !== "undefined") {
-                    $("#share").jsSocials({
-                        showLabel: false,
-                        showCount: false,
-                        shares: ["email", "twitter"]
-                    });
-                } else {
-                    console.error("jsSocials 插件未加载！");
-                }
-            });
-        </script>
-        
-        本作品采用<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>进行许可。
-    </div>
+                setTimeout(initShare, 500);
+            }
+        }
+        document.addEventListener('DOMContentLoaded', initShare);
+    })();
+    </script>
+    
+
+    本作品采用<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+    知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>进行许可。
+</div>
 </body>
 <div class="container">
 <head>
