@@ -242,47 +242,49 @@ Having nearly instant feedback enables you to have your creativity flow without 
 </div>
 <head>
     
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJ7D6hU8B9QQ5iCbh6Y4uHg9oH+u2L4qef9eI="
+            crossorigin="anonymous"></script>
 
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jsSocials/1.5.0/jssocials.min.css">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/jsSocials/1.5.0/jssocials.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jsSocials/1.5.0/jssocials.min.css">
+    </noscript>
 
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/nanogallery2/3.0.5/css/nanogallery2.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsSocials/1.5.0/jssocials.min.js"></script>
+
+    
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/nanogallery2/3.0.5/css/nanogallery2.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/nanogallery2/3.0.5/css/nanogallery2.min.css">
+    </noscript>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/nanogallery2/3.0.5/jquery.nanogallery2.min.js"></script>
 </head>
 
 <body>
 <div class="container has-text-centered">
     
     <aside><div id="share"></div></aside>
-    
 
-    <div id="gallery"></div>
-
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsSocials/1.5.0/jssocials.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/nanogallery2/3.0.5/jquery.nanogallery2.min.js"></script>
-
-    
     <script>
-    $(document).ready(function() {
+    $(function() {
         
-        $("#share").jsSocials({
-            showLabel: false,
-            showCount: false,
-            shares: ["email", "twitter"]
-        });
-        
-
-        
-        $("#gallery").nanogallery2({
-            items: [
-                { src: 'https://yourcdn.com/image1.jpg', srct: 'https://yourcdn.com/thumb1.jpg', title: '图片1' },
-                { src: 'https://yourcdn.com/image2.jpg', srct: 'https://yourcdn.com/thumb2.jpg', title: '图片2' }
-            ]
-        });
+        if (typeof $.fn.jsSocials !== "undefined") {
+            $("#share").jsSocials({
+                showLabel: false,
+                showCount: false,
+                shares: ["email", "twitter"]
+            });
+        } else {
+            console.error("jsSocials 未加载！");
+        }
     });
     </script>
+    
 
     本作品采用<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
     知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>进行许可。
