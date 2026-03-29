@@ -992,50 +992,39 @@ $ vi themes/zafta/layouts/_default/single.html
   </div>
 </div>
 <head>
-  
-  
-  <link rel="preload" href="/css/jssocials.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" href="/css/jssocials-theme-minima.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript>
-    <link rel="stylesheet" href="/css/jssocials.css">
-    <link rel="stylesheet" href="/css/jssocials-theme-minima.css">
-  </noscript>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
 
-  
-  <script src="/js/jquery.min.js"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jsSocials/1.5.0/jssocials.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsSocials/1.5.0/jssocials.min.js" defer></script>
 
-  
-  <script src="/js/jssocials.min.js"></script>
-
-  
-  <link rel="stylesheet" href="/css/nanogallery2.min.css">
-  <script src="/js/jquery.nanogallery2.min.js"></script>
-  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/nanogallery2/3.0.5/css/nanogallery2.min.css" defer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/nanogallery2/3.0.5/jquery.nanogallery2.min.js" defer></script>
 </head>
 
 <body>
-  <div class="container has-text-centered">
-    
-    <aside><div id="share"></div></aside>
-    <script>
-      $(function() {  
-        if (typeof $.fn.jsSocials !== "undefined") {
-          $("#share").jsSocials({
-            showLabel: false,
-            showCount: false,
-            shares: ["email", "twitter"]
-          });
-        } else {
-          console.error("jsSocials 插件未加载！");
-        }
-      });
-    </script>
-    
-    本作品采用
-    <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
-      知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议
-    </a>进行许可。
-  </div>
+    <div class="container has-text-centered">
+        
+        <aside><div id="share"></div></aside>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                
+                if (typeof $.fn.jsSocials !== "undefined") {
+                    $("#share").jsSocials({
+                        showLabel: false,
+                        showCount: false,
+                        shares: ["email", "twitter"]
+                    });
+                } else {
+                    console.error("jsSocials 插件未加载！");
+                }
+            });
+        </script>
+        
+        本作品采用<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>进行许可。
+    </div>
 </body>
 <div class="container">
 <head>
