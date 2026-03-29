@@ -78,13 +78,6 @@
   </script>
 
   
-  
-
-<style>
-  .mermaid svg { display: block; margin: auto; }
-</style>
-
-  
 
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"
@@ -1192,45 +1185,24 @@ document.addEventListener('DOMContentLoaded', function () {
 </script>
 
 
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.6.1/mermaid.min.js"
-        integrity="sha256-mm3Re3y7xlvh+yCD+l/Zs1d+PU0AEad93MkWvljfm/s="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  mermaid.initialize({ startOnLoad: false, theme: 'default' });
 
+  document.addEventListener('DOMContentLoaded', async () => {
+    document.querySelectorAll('code.language-mermaid').forEach(el => {
+      const div = document.createElement('div');
+      div.className = 'mermaid';
+      div.textContent = el.textContent;
+      el.closest('pre').replaceWith(div);
+    });
 
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-  
-  if (typeof mermaid !== "undefined") {
-    mermaid.initialize({ startOnLoad: false });
-  }
-
-  
-  Array.from(document.getElementsByClassName("language-mermaid")).forEach(el => {
-    const chartCode = el.textContent || el.innerText;
-    const wrapper = document.createElement("div");
-    wrapper.className = "mermaid";
-    wrapper.textContent = chartCode;
-    el.parentNode.replaceChild(wrapper, el);
-
-    
-    if (typeof mermaid !== "undefined") {
-      try {
-        mermaid.init(undefined, wrapper);
-      } catch (err) {
-        console.error("Mermaid 渲染失败:", err);
-      }
-    }
+    await mermaid.run({ querySelector: '.mermaid' });
   });
-});
 </script>
-
-
 <style>
-.mermaid svg {
-  display: block;
-  margin: auto;
-}
+  .mermaid svg { display: block; margin: auto; }
 </style>
 
 
