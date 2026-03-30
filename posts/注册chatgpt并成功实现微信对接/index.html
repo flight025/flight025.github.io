@@ -70,7 +70,14 @@
 
 
   
- 
+
+ <link rel="preload" href="/js/jssocials.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+ <link rel="preload" href="/js/jssocials-theme-minima.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+ <noscript>
+  <link rel="stylesheet" href="/js/jssocials.css">
+  <link rel="stylesheet" href="/js/jssocials-theme-minima.css">
+ </noscript>
+
 
   
   <script>
@@ -351,67 +358,63 @@ var swiper = new Swiper('.blog-swiper', {
 </div>
 </body>
 <div class="container">
-<head>
-  
- <script src="https://unpkg.com/@waline/client@2.15.8/dist/waline.js"></script> 
- <link rel= "stylesheet" href= "https://www.zaqizaba.xyz/css/waline.css" integrity= "MIWed8SQ6eGu4KgWgXR+ebvVSEPJ5dY5TddaHHyztyy2MixKV4sgE02SNvTgq/EI" crossorigin= "anonymous" >
-</head>
-<body>
-  
-  <div id="waline"></div><div class="waline-container"></div>
+  <link rel="stylesheet" href="https://www.zaqizaba.xyz/css/waline.css" 
+        integrity="MIWed8SQ6eGu4KgWgXR+ebvVSEPJ5dY5TddaHHyztyy2MixKV4sgE02SNvTgq/EI" 
+        crossorigin="anonymous">
+  <script src="https://unpkg.com/@waline/client@2.15.8/dist/waline.js"></script>
+
+  <div id="waline"></div>
+
   <script>
-    
-var locale = {
-        nick: '😐的爱称',
-        nickError: '昵称不能少于3个字符',
-        mail: '你的📫',
-        mailError: '请填写正确的邮件地址',
-        link: '🌐的链接',
-        placeholder: '此刻你看完这篇博文脑海中的想法是什么呢，大胆说出来吧ヾ(•ω•`)o',
-        sofa: '🍿🍿🍿',
-        submit: '提交',
-        reply: '回复',
-        cancelReply: '取消回复',
-        comment: '评论',
-        more: '加载更多...',
-        preview: '预览',
-        emoji: '表情',
-        expand: '查看更多...',
-        seconds: '秒前',
-        minutes: '分钟前',
-        hours: '小时前',
-        days: '天前',
-        now: '刚刚',
-        uploading: '正在上传',
-        login: '登录',
-        logout: '退出',
-        admin: '博主',
-        word: '字',
-        wordHint: '评论字数应在 $0 到 $1 字之间！\n当前字数：$2',
-      };
-      
-document.addEventListener('DOMContentLoaded', function () {
-        
-        if (typeof Waline !== 'undefined') {
-          Waline.init({
-            el: '#waline',
-            lang: 'zh-CN',
-            dark: 'auto',
-            search: false,
-            serverURL: 'https://www.19964662.xyz',
-            locale,
-            emoji: [
-              'https://gcore.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/',
-              'https://cdn.cbd.int/sarakale-assets@1.2.1/emoji/acfun_color/'
-            ],
-          });
-        } else {
-          console.error('Waline is not loaded correctly');
-        }
-      });
-    </script>
-  </body>
-</div>      
+    var locale = {
+      nick: '😐的爱称',
+      nickError: '昵称不能少于3个字符',
+      mail: '你的📫',
+      mailError: '请填写正确的邮件地址',
+      link: '🌐的链接',
+      placeholder: '此刻你看完这篇博文脑海中的想法是什么呢，大胆说出来吧ヾ(•ω•`)o',
+      sofa: '🍿🍿🍿',
+      submit: '提交',
+      reply: '回复',
+      cancelReply: '取消回复',
+      comment: '评论',
+      more: '加载更多...',
+      preview: '预览',
+      emoji: '表情',
+      expand: '查看更多...',
+      seconds: '秒前',
+      minutes: '分钟前',
+      hours: '小时前',
+      days: '天前',
+      now: '刚刚',
+      uploading: '正在上传',
+      login: '登录',
+      logout: '退出',
+      admin: '博主',
+      word: '字',
+      wordHint: '评论字数应在 $0 到 $1 字之间！\n当前字数：$2',
+    };
+
+    document.addEventListener('DOMContentLoaded', function () {
+      if (typeof Waline !== 'undefined') {
+        Waline.init({
+          el: '#waline',
+          lang: 'zh-CN',
+          dark: 'auto',
+          search: false,
+          serverURL: 'https://www.19964662.xyz',
+          locale,
+          emoji: [
+            'https://gcore.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/',
+            'https://cdn.cbd.int/sarakale-assets@1.2.1/emoji/acfun_color/'
+          ],
+        });
+      } else {
+        console.error('Waline is not loaded correctly');
+      }
+    });
+  </script>
+</div>   
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-FFW576XTMR"></script>
 <script>
