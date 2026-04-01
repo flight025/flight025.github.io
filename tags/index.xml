@@ -7,8 +7,29 @@
     <generator>Hugo</generator>
     <language>zh-CN</language>
     <copyright>© &lt;a href=&#34;https://www.zaqizaba.xyz&#34;&gt;阿波尔的博客&lt;/a&gt; 2019-2026</copyright>
-    <lastBuildDate>Wed, 25 Mar 2026 16:17:30 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 01 Apr 2026 14:45:56 +0800</lastBuildDate>
     <atom:link href="https://www.zaqizaba.xyz/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo</title>
+      <link>https://www.zaqizaba.xyz/tags/hugo/</link>
+      <pubDate>Wed, 01 Apr 2026 14:45:56 +0800</pubDate>
+      <guid>https://www.zaqizaba.xyz/tags/hugo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Lazy Loading</title>
+      <link>https://www.zaqizaba.xyz/tags/lazy-loading/</link>
+      <pubDate>Wed, 01 Apr 2026 14:45:56 +0800</pubDate>
+      <guid>https://www.zaqizaba.xyz/tags/lazy-loading/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Webp</title>
+      <link>https://www.zaqizaba.xyz/tags/webp/</link>
+      <pubDate>Wed, 01 Apr 2026 14:45:56 +0800</pubDate>
+      <guid>https://www.zaqizaba.xyz/tags/webp/</guid>
+      <description></description>
+    </item>
     <item>
       <title>嬴政</title>
       <link>https://www.zaqizaba.xyz/tags/%E5%AC%B4%E6%94%BF/</link>
@@ -24,7 +45,7 @@
       <description></description>
     </item>
     <item>
-      <title>CasaOS</title>
+      <title>Casaos</title>
       <link>https://www.zaqizaba.xyz/tags/casaos/</link>
       <pubDate>Wed, 18 Mar 2026 21:44:35 +0800</pubDate>
       <guid>https://www.zaqizaba.xyz/tags/casaos/</guid>
@@ -59,7 +80,7 @@
       <description></description>
     </item>
     <item>
-      <title>NAS</title>
+      <title>Nas</title>
       <link>https://www.zaqizaba.xyz/tags/nas/</link>
       <pubDate>Tue, 10 Mar 2026 16:04:09 +0800</pubDate>
       <guid>https://www.zaqizaba.xyz/tags/nas/</guid>
@@ -70,27 +91,6 @@
       <link>https://www.zaqizaba.xyz/tags/leancloud/</link>
       <pubDate>Fri, 27 Feb 2026 19:25:59 +0800</pubDate>
       <guid>https://www.zaqizaba.xyz/tags/leancloud/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>TiDB</title>
-      <link>https://www.zaqizaba.xyz/tags/tidb/</link>
-      <pubDate>Fri, 27 Feb 2026 19:25:59 +0800</pubDate>
-      <guid>https://www.zaqizaba.xyz/tags/tidb/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Waline</title>
-      <link>https://www.zaqizaba.xyz/tags/waline/</link>
-      <pubDate>Fri, 27 Feb 2026 19:25:59 +0800</pubDate>
-      <guid>https://www.zaqizaba.xyz/tags/waline/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Openclaw</title>
-      <link>https://www.zaqizaba.xyz/tags/openclaw/</link>
-      <pubDate>Sat, 07 Feb 2026 16:28:41 +0800</pubDate>
-      <guid>https://www.zaqizaba.xyz/tags/openclaw/</guid>
       <description></description>
     </item>
   </channel>
