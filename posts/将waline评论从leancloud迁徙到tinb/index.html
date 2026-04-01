@@ -59,15 +59,6 @@
     src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/webfonts/fa-regular-400.woff2') format('woff2');
   }
 </style>
-  
-
-
-<link rel="preload" href="https://cdn.jsdelivr.net/npm/fancybox@3.0.1/dist/css/jquery.fancybox.min.css"
-      as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fancybox@3.0.1/dist/css/jquery.fancybox.min.css">
-</noscript>
-
 
   
  
@@ -99,11 +90,6 @@
   </script>
 
   
-  
-
-  
-  
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" defer></script>
   
 
   
@@ -178,85 +164,85 @@
   <h2 class="subtitle is-6">February 27, 2026</h2>
   <h1 class="subtitle is-size-4-mobile is-size-3-desktop">将waline评论从LeanCloud迁徙到TiDB</h1>
   <div class="content">
-    <p>
-<div class="post-img-view">
-<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/%E6%9C%AA%E5%91%BD%E5%90%8D%E7%BB%98%E5%9B%BE.drawio.png?imageMogr2/format/webp">
-<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/%E6%9C%AA%E5%91%BD%E5%90%8D%E7%BB%98%E5%9B%BE.drawio.png?imageMogr2/format/webp" alt="未命名绘图.drawio"  loading="lazy" decoding="async" />
-</a>
-</div>
-</p>
+    <p><img 
+  src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/%E6%9C%AA%E5%91%BD%E5%90%8D%E7%BB%98%E5%9B%BE.drawio.png?imageMogr2/format/webp" 
+  alt="未命名绘图.drawio" 
+   
+  loading="lazy" 
+  decoding="async" 
+/></p>
 <p>这二天，登录博客waline后台，提示作为waline数据存储的LeanCloud即将永久停止对waline数据的支持，<a href="https://docs.leancloud.app/sdk/announcements/sunset-announcement/">具体文告</a>看这里。不过好在还支持一年的数据存储支持。现在我就准备从LeanCloud迁移数据到TiDB 。</p>
 <h1 id="1从leancloud导出数据">1.从LeanCloud导出数据</h1>
 <p>登录<a href="https://console.leancloud.app/">LeanCloud</a>国际版。选择 <strong>数据存储</strong>》<strong>导入导出</strong>》<strong>数据导出</strong>》<strong>导出</strong>，会提示数据发送到邮箱，注意查收下载。</p>
-<p>
-<div class="post-img-view">
-<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/%E6%95%B0%E6%8D%AE.png?imageMogr2/format/webp">
-<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/%E6%95%B0%E6%8D%AE.png?imageMogr2/format/webp" alt="数据"  loading="lazy" decoding="async" />
-</a>
-</div>
-</p>
+<p><img 
+  src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/%E6%95%B0%E6%8D%AE.png?imageMogr2/format/webp" 
+  alt="数据" 
+   
+  loading="lazy" 
+  decoding="async" 
+/></p>
 <p>我导出的格式是<code>JSONL</code>，其实也是符合的。</p>
-<p>
-<div class="post-img-view">
-<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/json.png?imageMogr2/format/webp">
-<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/json.png?imageMogr2/format/webp" alt="json"  loading="lazy" decoding="async" />
-</a>
-</div>
-</p>
+<p><img 
+  src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/json.png?imageMogr2/format/webp" 
+  alt="json" 
+   
+  loading="lazy" 
+  decoding="async" 
+/></p>
 <h1 id="2创建tidb数据库并连接">2.创建TiDB数据库并连接</h1>
 <h2 id="21登录tidb-cloud跳转自动创建实例">2.1登录<a href="https://tidbcloud.com/">TiDB Cloud</a>跳转自动创建实例</h2>
-<p>
-<div class="post-img-view">
-<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260227233644034.png?imageMogr2/format/webp">
-<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260227233644034.png?imageMogr2/format/webp" alt="image-20260227233644034"  loading="lazy" decoding="async" />
-</a>
-</div>
-</p>
+<p><img 
+  src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260227233644034.png?imageMogr2/format/webp" 
+  alt="image-20260227233644034" 
+   
+  loading="lazy" 
+  decoding="async" 
+/></p>
 <p>点击<code>Cluster0</code>进入实例。</p>
 <h2 id="22左边列表选择sql-editor放置walinetidb内容按照为语句分配贴近界面执行每贴一个点击右上角的运行蓝色按钮直到完成">2.2左边列表选择SQL Editor放置<a href="https://github.com/walinejs/waline/blob/main/assets/waline.tidb">waline.tidb</a>内容按照<code>;</code>为语句分配贴近界面执行。每贴一个点击右上角的运行蓝色按钮直到完成。</h2>
-<p>
-<div class="post-img-view">
-<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260227235521224.png?imageMogr2/format/webp">
-<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260227235521224.png?imageMogr2/format/webp" alt="image-20260227235521224"  loading="lazy" decoding="async" />
-</a>
-</div>
-</p>
+<p><img 
+  src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260227235521224.png?imageMogr2/format/webp" 
+  alt="image-20260227235521224" 
+   
+  loading="lazy" 
+  decoding="async" 
+/></p>
 <h2 id="23点击overview并点击connect">2.3点击Overview并点击Connect.</h2>
-<p>
-<div class="post-img-view">
-<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/%E5%AF%86%E7%A0%81.png?imageMogr2/format/webp">
-<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/%E5%AF%86%E7%A0%81.png?imageMogr2/format/webp" alt=""  loading="lazy" decoding="async" />
-</a>
-</div>
-</p>
+<p><img 
+  src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/%E5%AF%86%E7%A0%81.png?imageMogr2/format/webp" 
+  alt="" 
+   
+  loading="lazy" 
+  decoding="async" 
+/></p>
 <h2 id="24vercel部署parameters参数">2.4VERCEL部署Parameters参数</h2>
 <p>在vercel的Environment Variables填写<code>TIDB_HOST</code>、<code>TIDB_PORT</code>、<code>TIDB_DB</code>、<code>TIDB_USER</code>和<code>TIDB_PASSWORD</code>的参数信息，原三项<code>LEAN_ID</code>、<code>LEAN_KEY</code>、<code>LEAN_MASTER_KEY</code>可删除。</p>
-<p>
-<div class="post-img-view">
-<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260228002712223.png?imageMogr2/format/webp">
-<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260228002712223.png?imageMogr2/format/webp" alt="image-20260228002712223"  loading="lazy" decoding="async" />
-</a>
-</div>
-</p>
+<p><img 
+  src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260228002712223.png?imageMogr2/format/webp" 
+  alt="image-20260228002712223" 
+   
+  loading="lazy" 
+  decoding="async" 
+/></p>
 <p>并选择重新部署。</p>
 <h1 id="3将leancloud评论迁徙数据到tidb">3.将LeanCloud评论迁徙数据到TiDB</h1>
 <p>简单点的话，直接导入waline的<code>JSON</code>文档，像这样。</p>
-<p>
-<div class="post-img-view">
-<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260228004041658.png?imageMogr2/format/webp">
-<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260228004041658.png?imageMogr2/format/webp" alt="image-20260228004041658"  loading="lazy" decoding="async" />
-</a>
-</div>
-</p>
+<p><img 
+  src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260228004041658.png?imageMogr2/format/webp" 
+  alt="image-20260228004041658" 
+   
+  loading="lazy" 
+  decoding="async" 
+/></p>
 <p>有点难度的话，就按照凡梦星尘的文章<a href="https://lisenhui.cn/tech/migrate-waline-into-tidb-neon.html">《迁移LeanCloud的Waline评论数据到TiDB/Neon》</a>去做。</p>
 <p>首先，点击TiDB 集群页面右上角的 <code>Connect</code> 按钮，获取数据库连接信息</p>
-<p>
-<div class="post-img-view">
-<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/%E5%AF%86%E7%A0%81.png?imageMogr2/format/webp">
-<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/%E5%AF%86%E7%A0%81.png?imageMogr2/format/webp" alt=""  loading="lazy" decoding="async" />
-</a>
-</div>
-</p>
+<p><img 
+  src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/%E5%AF%86%E7%A0%81.png?imageMogr2/format/webp" 
+  alt="" 
+   
+  loading="lazy" 
+  decoding="async" 
+/></p>
 <p>然后再打开<a href="https://github.com/elkan1788/waline-data-import-tool/releases/tag/v2.0.0">工具链接</a>，下载你的电脑操作环境，下载导入数据：</p>
 <pre tabindex="0"><code>./waline-data-import-tool-xxx -c waline-tidb.ini -f /root/elkan/waline.json
 </code></pre><p>这里的-xxx是下载的工具链接。我是Windows，所以是</p>
@@ -268,32 +254,32 @@ waline-data-import-tool-waline-data-import-tool.exe -c waline-tidb.ini -f waline
 <h1 id="4后续问题">4.后续问题</h1>
 <p>我部署好waline后用了下，发现了几个问题：<strong>1</strong>.管理员一评论，waline就下线需要重新登录  <strong>2.</strong> 管理员不能直接删除陌生人留言，必须到waline系统管理中方可删除评论 <strong>3.</strong> 评论中不再直接显示评论人地址，只能在管理系统后台查看IP。</p>
 <p>对于前二个问题，问了AI，给了我一个结果→是<strong>JWT校验失败</strong>（参看图片错误）。</p>
-<p>
-<div class="post-img-view">
-<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/%E6%95%B0%E6%8D%AE%E7%85%A7%E7%89%87.png?imageMogr2/format/webp">
-<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/%E6%95%B0%E6%8D%AE%E7%85%A7%E7%89%87.png?imageMogr2/format/webp" alt="数据照片"  loading="lazy" decoding="async" />
-</a>
-</div>
-</p>
+<p><img 
+  src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/%E6%95%B0%E6%8D%AE%E7%85%A7%E7%89%87.png?imageMogr2/format/webp" 
+  alt="数据照片" 
+   
+  loading="lazy" 
+  decoding="async" 
+/></p>
 <p>解决办法也很简单，就是在vercel管理waline评论打开》设置》环境变量中设置 <strong>JWT-SECRET</strong>,Value只要一串足够长的字符串就行，比如：</p>
 <pre tabindex="0"><code>waline_2026_super_secret_key_xxxxxxxxx
 </code></pre><p>像这样：</p>
-<p>
-<div class="post-img-view">
-<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260228133432244.png?imageMogr2/format/webp">
-<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260228133432244.png?imageMogr2/format/webp" alt="image-20260228133432244"  loading="lazy" decoding="async" />
-</a>
-</div>
-</p>
+<p><img 
+  src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260228133432244.png?imageMogr2/format/webp" 
+  alt="image-20260228133432244" 
+   
+  loading="lazy" 
+  decoding="async" 
+/></p>
 <p>这样，前二个问题就能解决了。至于第三个问题，不再显示评论仍IP，<del>这个可能和TiDB存储库IP功能缺少有关</del>，看后续能不能解决（waline群已经明确了，是部署在vercel上导致的IP问题）。</p>
 <p>参考： <a href="https://lisenhui.cn/">凡梦星尘的博客</a></p>
-<p>
-<div class="post-img-view">
-<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/NationalGeographic_2572187_16x9.jpg?imageMogr2/format/webp">
-<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/NationalGeographic_2572187_16x9.jpg?imageMogr2/format/webp" alt="Domestic cat | National Geographic"  loading="lazy" decoding="async" />
-</a>
-</div>
-</p>
+<p><img 
+  src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/NationalGeographic_2572187_16x9.jpg?imageMogr2/format/webp" 
+  alt="Domestic cat | National Geographic" 
+   
+  loading="lazy" 
+  decoding="async" 
+/></p>
 
   </div>
 </div>

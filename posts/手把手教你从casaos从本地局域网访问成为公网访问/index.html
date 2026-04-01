@@ -59,15 +59,6 @@
     src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/webfonts/fa-regular-400.woff2') format('woff2');
   }
 </style>
-  
-
-
-<link rel="preload" href="https://cdn.jsdelivr.net/npm/fancybox@3.0.1/dist/css/jquery.fancybox.min.css"
-      as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fancybox@3.0.1/dist/css/jquery.fancybox.min.css">
-</noscript>
-
 
   
  
@@ -99,11 +90,6 @@
   </script>
 
   
-  
-
-  
-  
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" defer></script>
   
 
   
@@ -178,13 +164,13 @@
   <h2 class="subtitle is-6">March 18, 2026</h2>
   <h1 class="subtitle is-size-4-mobile is-size-3-desktop">手把手教你从Casaos从本地局域网访问成为公网访问</h1>
   <div class="content">
-    <p>
-<div class="post-img-view">
-<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/%EF%BC%9F%EF%BC%9F%EF%BC%9F.png?imageMogr2/format/webp">
-<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/%EF%BC%9F%EF%BC%9F%EF%BC%9F.png?imageMogr2/format/webp" alt="？？？"  loading="lazy" decoding="async" />
-</a>
-</div>
-</p>
+    <p><img 
+  src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/%EF%BC%9F%EF%BC%9F%EF%BC%9F.png?imageMogr2/format/webp" 
+  alt="？？？" 
+   
+  loading="lazy" 
+  decoding="async" 
+/></p>
 <p>Casaos的NAS系统实现了本地局域网访问NAS，那如果我在异地，也想访问家庭NAS，那该怎么办呢？这里有一个傻瓜式操作，按照下面的流程来。你也可以通过绑定cloudflare tunnel来实现公网访问Casaos的NAS，你需要的有：</p>
 <blockquote>
 <p>已经在闲置笔记本上刷了 <strong><a href="https://casaos.zimaspace.com/">Casaos</a></strong> 的NAS系统、一个能托管到cloudflare的域名（我在 <strong><a href="https://www.spaceship.com/zh/">spaceship</a></strong> 上买的，数字域名后缀.xyz每年4.61元人民币）、以及接下来在 <strong><a href="https://www.cloudflare.com/zh-cn/">cloudflare</a></strong> 的 <strong><a href="https://dash.cloudflare.com">控制台</a></strong> 。</p>
@@ -211,33 +197,33 @@
 <p>然后打开<code>192.168.50.191</code>下载cloudflared。等以后用。（这些dockers镜像源和公共DNS不怎么稳定，不过能用）。</p>
 <h1 id="2在spaceship上购买数字域名以及托管在cloudflare上">2.在spaceship上购买数字域名以及托管在cloudflare上</h1>
 <p>打开<a href="https://www.spaceship.com/zh/">spaceship</a>选择一个数字域名,比如：</p>
-<p>
-<div class="post-img-view">
-<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260318232944596.png?imageMogr2/format/webp">
-<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260318232944596.png?imageMogr2/format/webp" alt="image-20260318232944596"  loading="lazy" decoding="async" />
-</a>
-</div>
-</p>
+<p><img 
+  src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260318232944596.png?imageMogr2/format/webp" 
+  alt="image-20260318232944596" 
+   
+  loading="lazy" 
+  decoding="async" 
+/></p>
 <p>然后购买一年是4.61元，可以续费十年，挺优惠的。</p>
-<p>
-<div class="post-img-view">
-<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260318233209409.png?imageMogr2/format/webp">
-<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260318233209409.png?imageMogr2/format/webp" alt="image-20260318233209409"  loading="lazy" decoding="async" />
-</a>
-</div>
-</p>
+<p><img 
+  src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260318233209409.png?imageMogr2/format/webp" 
+  alt="image-20260318233209409" 
+   
+  loading="lazy" 
+  decoding="async" 
+/></p>
 <p>在spaceship的<strong>域名管理器</strong>中，你就可以看到刚刚购买的域名。</p>
 <p>接下来。打开cloudflare<a href="dash.cloudflare.com">管理页面</a>，打开左边<strong>域》加入域》输入现有域（就是你刚刚买的域名）》选择free》继续前往激活》找到cloudflare名称服务器</strong>：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>mia.ns.cloudflare.com
 </span></span><span style="display:flex;"><span>seth.ns.cloudflare.com
 </span></span></code></pre></div><p>再打开spaceship的 <strong>高级DNS选项》自定义名称服务器</strong>。将名称服务器改为cloudflare的保存，等一会儿传播DNS完成如下：</p>
-<p>
-<div class="post-img-view">
-<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260318235023249.png?imageMogr2/format/webp">
-<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260318235023249.png?imageMogr2/format/webp" alt="image-20260318235023249"  loading="lazy" decoding="async" />
-</a>
-</div>
-</p>
+<p><img 
+  src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260318235023249.png?imageMogr2/format/webp" 
+  alt="image-20260318235023249" 
+   
+  loading="lazy" 
+  decoding="async" 
+/></p>
 <p>代表此域名已加入cloudflare域管理。</p>
 <h1 id="3利用cloudflare-tunnel访问公网">3.利用cloudflare tunnel访问公网</h1>
 <p>流程原理如下：</p>
@@ -246,59 +232,59 @@
 </blockquote>
 <p>搞懂了就好办了。</p>
 <p>先打开<a href="https://dash.cloudflare.com/">访问地址</a>，选择<strong>网络》连接器》创建隧道</strong>（图中我已经搭建了一个）：</p>
-<p>
-<div class="post-img-view">
-<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260319000421015.png?imageMogr2/format/webp">
-<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260319000421015.png?imageMogr2/format/webp" alt="image-20260319000421015"  loading="lazy" decoding="async" />
-</a>
-</div>
-</p>
+<p><img 
+  src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260319000421015.png?imageMogr2/format/webp" 
+  alt="image-20260319000421015" 
+   
+  loading="lazy" 
+  decoding="async" 
+/></p>
 <p>这里我示范下，假如创建隧道，命名为“1983”，保存。再选择系统为“docker”。这时会得到一个连接令牌，黏贴保存如下：</p>
-<p>
-<div class="post-img-view">
-<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260319000955112.png?imageMogr2/format/webp">
-<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260319000955112.png?imageMogr2/format/webp" alt="image-20260319000955112"  loading="lazy" decoding="async" />
-</a>
-</div>
-</p>
+<p><img 
+  src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260319000955112.png?imageMogr2/format/webp" 
+  alt="image-20260319000955112" 
+   
+  loading="lazy" 
+  decoding="async" 
+/></p>
 <p>记得保存。</p>
 <p>再打开<code>192.168.50.191</code>这个Casaos的地址，找到刚刚下载好的cloudflared，</p>
-<p>
-<div class="post-img-view">
-<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260319001515917.png?imageMogr2/format/webp">
-<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260319001515917.png?imageMogr2/format/webp" alt="image-20260319001515917"  loading="lazy" decoding="async" />
-</a>
-</div>
-</p>
+<p><img 
+  src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260319001515917.png?imageMogr2/format/webp" 
+  alt="image-20260319001515917" 
+   
+  loading="lazy" 
+  decoding="async" 
+/></p>
 <p>填入刚刚设置好的令牌token:</p>
-<p>
-<div class="post-img-view">
-<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260319001629011.png?imageMogr2/format/webp">
-<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260319001629011.png?imageMogr2/format/webp" alt="image-20260319001629011"  loading="lazy" decoding="async" />
-</a>
-</div>
-</p>
+<p><img 
+  src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260319001629011.png?imageMogr2/format/webp" 
+  alt="image-20260319001629011" 
+   
+  loading="lazy" 
+  decoding="async" 
+/></p>
 <h1 id="4最后设置路由隧道">4.最后设置路由隧道</h1>
 <p>最后搞完后，可以看到隧道连接正常了。不过还要设置<strong>路由隧道</strong>。设置如下：</p>
 <blockquote>
 <p><strong>主机名</strong>填一个你熟悉的，比如casaos,域名选择你刚在spaceship买的域名path不管。服务这里类型是HTTP,URL这里填 <strong>casaos.xxxx.xyz:80</strong> 保存。</p>
-<p>
-<div class="post-img-view">
-<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260319002547918.png?imageMogr2/format/webp">
-<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260319002547918.png?imageMogr2/format/webp" alt="image-20260319002547918"  loading="lazy" decoding="async" />
-</a>
-</div>
-</p>
+<p><img 
+  src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260319002547918.png?imageMogr2/format/webp" 
+  alt="image-20260319002547918" 
+   
+  loading="lazy" 
+  decoding="async" 
+/></p>
 </blockquote>
 <p>​       点击“完成设置”，退出。</p>
 <p>再打开刚刚设置好的casaos.xxxx.xyz，打开。可以发现Casaos的NAS路由可以公网域名访问了，以后只要我刷Casaos的G560不断电，基本上我远程访问这台NAS就没问题了。</p>
-<p>
-<div class="post-img-view">
-<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/rebbrt.jpg?imageMogr2/format/webp">
-<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/rebbrt.jpg?imageMogr2/format/webp" alt="rebbrt"  loading="lazy" decoding="async" />
-</a>
-</div>
-</p>
+<p><img 
+  src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/rebbrt.jpg?imageMogr2/format/webp" 
+  alt="rebbrt" 
+   
+  loading="lazy" 
+  decoding="async" 
+/></p>
 
   </div>
 </div>

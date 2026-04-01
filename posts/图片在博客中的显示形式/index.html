@@ -59,15 +59,6 @@
     src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/webfonts/fa-regular-400.woff2') format('woff2');
   }
 </style>
-  
-
-
-<link rel="preload" href="https://cdn.jsdelivr.net/npm/fancybox@3.0.1/dist/css/jquery.fancybox.min.css"
-      as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fancybox@3.0.1/dist/css/jquery.fancybox.min.css">
-</noscript>
-
 
   
  
@@ -99,11 +90,6 @@
   </script>
 
   
-  
-
-  
-  
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" defer></script>
   
 
   
@@ -178,34 +164,34 @@
   <h2 class="subtitle is-6">November 21, 2022</h2>
   <h1 class="subtitle is-size-4-mobile is-size-3-desktop">图片在博客中的显示形式</h1>
   <div class="content">
-    <p>
-<div class="post-img-view">
-<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/bejson.jpg?imageMogr2/format/webp">
-<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/bejson.jpg?imageMogr2/format/webp" alt="image"  loading="lazy" decoding="async" />
-</a>
-</div>
-</p>
+    <p><img 
+  src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/bejson.jpg?imageMogr2/format/webp" 
+  alt="image" 
+   
+  loading="lazy" 
+  decoding="async" 
+/></p>
 <p>图片在博客显示各式各样，以美国超人气动画<a href="https://www.rickandmorty.com/">《Rick and Morty》</a>图片为例，现在让我一一道来。</p>
 <h1 id="1插入本地图片">1.插入本地图片</h1>
 <p>引入本地图片分二种：•本地路径（放在<code>static</code>目录下）  •相对路径（需与博客文件名一致且在同一路径）假如有一张关于动画的图片，路径放在根目录<code>static/images</code>下，图片命名是<code>Rick and Morty.jpg</code>。</p>
 <h2 id="11本地路径">1.1本地路径</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>！[Rick and Morty](/images/Rick and Morty.jpg)
-</span></span></code></pre></div><p>
-<div class="post-img-view">
-<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick%20and%20Morty.jpg?imageMogr2/format/webp">
-<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick%20and%20Morty.jpg?imageMogr2/format/webp" alt="Rick and Morty"  loading="lazy" decoding="async" />
-</a>
-</div>
-</p>
+</span></span></code></pre></div><p><img 
+  src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick%20and%20Morty.jpg?imageMogr2/format/webp" 
+  alt="Rick and Morty" 
+   
+  loading="lazy" 
+  decoding="async" 
+/></p>
 <h2 id="12相对路径">1.2相对路径</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>！[Rick and Morty](Rick and Morty.jpg)
-</span></span></code></pre></div><p>
-<div class="post-img-view">
-<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick%2520and%2520Morty.jpg?imageMogr2/format/webp">
-<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick%2520and%2520Morty.jpg?imageMogr2/format/webp" alt="Rick and Morty"  loading="lazy" decoding="async" />
-</a>
-</div>
-</p>
+</span></span></code></pre></div><p><img 
+  src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick%2520and%2520Morty.jpg?imageMogr2/format/webp" 
+  alt="Rick and Morty" 
+   
+  loading="lazy" 
+  decoding="async" 
+/></p>
 <h1 id="2上传到对象存储cos">2.上传到对象存储COS</h1>
 <h2 id="21带图片的文字链接">2.1带图片的文字链接</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>[Rick and Morty]（https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick%2520and%2520Morty.jpg)
@@ -221,13 +207,13 @@
 </span></span></code></pre></div><img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick%20and%20Morty.jpg" style="zoom:150%;" />
 <h2 id="251悬浮文字说明">2.5.1悬浮文字说明</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>![Rick and Morty](https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick%2520and%2520Morty.jpg &#34;Rick and Morty&#34;)
-</span></span></code></pre></div><p>
-<div class="post-img-view">
-<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick%2520and%2520Morty.jpg?imageMogr2/format/webp">
-<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick%2520and%2520Morty.jpg?imageMogr2/format/webp" alt="Rick and Morty"  title="Rick and Morty" loading="lazy" decoding="async" />
-</a>
-</div>
-</p>
+</span></span></code></pre></div><p><img 
+  src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick%2520and%2520Morty.jpg?imageMogr2/format/webp" 
+  alt="Rick and Morty" 
+   title="Rick and Morty" 
+  loading="lazy" 
+  decoding="async" 
+/></p>
 <h2 id="261图片文字说明之一">2.6.1图片文字说明之一</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>| ![Rick and Morty](https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick%2520and%2520Morty.jpg) | 
 </span></span><span style="display:flex;"><span>|:--:| 
@@ -235,13 +221,13 @@
 </span></span></code></pre></div><table>
   <thead>
       <tr>
-          <th style="text-align: center">
-<div class="post-img-view">
-<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick%2520and%2520Morty.jpg?imageMogr2/format/webp">
-<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick%2520and%2520Morty.jpg?imageMogr2/format/webp" alt="Rick and Morty"  loading="lazy" decoding="async" />
-</a>
-</div>
-</th>
+          <th style="text-align: center"><img 
+  src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick%2520and%2520Morty.jpg?imageMogr2/format/webp" 
+  alt="Rick and Morty" 
+   
+  loading="lazy" 
+  decoding="async" 
+/></th>
       </tr>
   </thead>
   <tbody>
@@ -273,13 +259,13 @@
 </details>
 <h2 id="28添加动图">2.8添加动图</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>![rick and morty](https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/rick%20and%20morty.gif)
-</span></span></code></pre></div><p>
-<div class="post-img-view">
-<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/rick%20and%20morty.gif?imageMogr2/format/webp">
-<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/rick%20and%20morty.gif?imageMogr2/format/webp" alt="rick and morty"  loading="lazy" decoding="async" />
-</a>
-</div>
-</p>
+</span></span></code></pre></div><p><img 
+  src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/rick%20and%20morty.gif?imageMogr2/format/webp" 
+  alt="rick and morty" 
+   
+  loading="lazy" 
+  decoding="async" 
+/></p>
 <h1 id="3多图片处理方式">3.多图片处理方式</h1>
 <h2 id="31html并列">3.1HTML并列</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">figure</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;third&#34;</span>&gt;

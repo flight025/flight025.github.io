@@ -59,15 +59,6 @@
     src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/webfonts/fa-regular-400.woff2') format('woff2');
   }
 </style>
-  
-
-
-<link rel="preload" href="https://cdn.jsdelivr.net/npm/fancybox@3.0.1/dist/css/jquery.fancybox.min.css"
-      as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fancybox@3.0.1/dist/css/jquery.fancybox.min.css">
-</noscript>
-
 
   
  
@@ -99,11 +90,6 @@
   </script>
 
   
-  
-
-  
-  
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" defer></script>
   
 
   
@@ -195,25 +181,25 @@
 </span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">a</span>&gt;
 </span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">div</span>&gt;
 </span></span><span style="display:flex;"><span>{{ end }}
-</span></span></code></pre></div><p>直接添加懒加载和webp格式，修改为：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>{{if .Page.Site.Params.fancybox }}
-</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;post-img-view&#34;</span>&gt;
-</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">data-fancybox</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;gallery&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ .Destination | safeURL }}?imageMogr2/format/webp&#34;</span>&gt;
-</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ .Destination | safeURL }}?imageMogr2/format/webp&#34;</span> <span style="color:#a6e22e">alt</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ .Text }}&#34;</span> <span style="color:#960050;background-color:#1e0010">{{</span> <span style="color:#a6e22e">with</span> <span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">Title</span><span style="color:#960050;background-color:#1e0010">}}</span> <span style="color:#a6e22e">title</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ . }}&#34;</span><span style="color:#960050;background-color:#1e0010">{{</span> <span style="color:#a6e22e">end</span> <span style="color:#960050;background-color:#1e0010">}}</span> <span style="color:#a6e22e">loading</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;lazy&#34;</span> <span style="color:#a6e22e">decoding</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;async&#34;</span> /&gt;
-</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">a</span>&gt;
-</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">div</span>&gt;
-</span></span><span style="display:flex;"><span>{{ end }}
+</span></span></code></pre></div><p>直接添加懒加载和webp格式，取消<code>fancybox</code>的参数，修改为：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">img</span> 
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ .Destination | safeURL }}?imageMogr2/format/webp&#34;</span> 
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">alt</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ .Text }}&#34;</span> 
+</span></span><span style="display:flex;"><span>  <span style="color:#960050;background-color:#1e0010">{{</span> <span style="color:#a6e22e">with</span> <span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">Title</span><span style="color:#960050;background-color:#1e0010">}}</span> <span style="color:#a6e22e">title</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ . }}&#34;</span><span style="color:#960050;background-color:#1e0010">{{</span> <span style="color:#a6e22e">end</span> <span style="color:#960050;background-color:#1e0010">}}</span> 
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">loading</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;lazy&#34;</span> 
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">decoding</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;async&#34;</span> 
+</span></span><span style="display:flex;"><span>/&gt;
 </span></span></code></pre></div><p>当然，这个只能渲染markdown格式的图片，如果是<img>和裸链接：</p>
 <pre tabindex="0"><code>&lt;img src=&#34;https://xxx.com/photo.jpg&#34;/&gt;
 https://xxx.com/photo.jpg
 </code></pre><p>就必须考虑在其后辍手动加上<code>?imageMogr2/format/webp</code>和<code>loading=&quot;lazy&quot;</code>（裸连不需要添加<code>loading=&quot;lazy&quot;</code>），记得在<code>储存桶列表&gt;数据处理&gt;图片处理</code>，打开图片极智压缩。如果用于博客，一年也才几块钱而已。而且免费一个月：</p>
-<p>
-<div class="post-img-view">
-<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260401191624053.png?imageMogr2/format/webp">
-<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260401191624053.png?imageMogr2/format/webp" alt="image-20260401191624053"  loading="lazy" decoding="async" />
-</a>
-</div>
-</p>
+<p><img 
+  src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260401191624053.png?imageMogr2/format/webp" 
+  alt="image-20260401191624053" 
+   
+  loading="lazy" 
+  decoding="async" 
+/></p>
 <p>当然，担心费用。也可以考虑只用懒加载。懒加载不依赖任何云服务，直接改 <code>render-image.html</code> 只加 <code>loading=&quot;lazy&quot;</code> 就行，简单安全。像这样：</p>
 <pre tabindex="0"><code>&lt;img src=&#34;https://xxx.myqcloud.com/photo.jpg loading=&#34;lazy&#34; /&gt;
 </code></pre><p>如果添加了转换为webp压缩图片格式,<code>&lt;img&gt;</code>就可以写成：</p>

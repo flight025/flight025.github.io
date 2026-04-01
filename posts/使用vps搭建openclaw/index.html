@@ -59,15 +59,6 @@
     src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/webfonts/fa-regular-400.woff2') format('woff2');
   }
 </style>
-  
-
-
-<link rel="preload" href="https://cdn.jsdelivr.net/npm/fancybox@3.0.1/dist/css/jquery.fancybox.min.css"
-      as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fancybox@3.0.1/dist/css/jquery.fancybox.min.css">
-</noscript>
-
 
   
  
@@ -99,11 +90,6 @@
   </script>
 
   
-  
-
-  
-  
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" defer></script>
   
 
   
@@ -178,13 +164,13 @@
   <h2 class="subtitle is-6">February 7, 2026</h2>
   <h1 class="subtitle is-size-4-mobile is-size-3-desktop">使用VPS搭建openclaw</h1>
   <div class="content">
-    <p>
-<div class="post-img-view">
-<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260206164257946.png?imageMogr2/format/webp">
-<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260206164257946.png?imageMogr2/format/webp" alt="img"  loading="lazy" decoding="async" />
-</a>
-</div>
-</p>
+    <p><img 
+  src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260206164257946.png?imageMogr2/format/webp" 
+  alt="img" 
+   
+  loading="lazy" 
+  decoding="async" 
+/></p>
 <p>openclaw这几天突然火起来了，甚至带火了Mac mini的销路。这导致许多人都开始跟风。实际上，openclaw不仅可以部署在Mac mini上，甚至可以部署在树莓派、你的闲置笔记本、甚至6刀的vps上。因为权限原因，最好是不要无脑部署在本地电脑，以免被扫或者权限问题被黑客侵入。所以我决定部署在vps上试一试，这次我选择的是<a href="https://billing.dedirock.com/">dedirock</a>,具体配置是：</p>
 <blockquote>
 <p>处理器是<strong>1核</strong>，内存为<strong>2GB</strong>，存储量是<strong>30GB</strong>,流量为<strong>1000GB</strong>，系统我安装的是<strong>Ubuntu 24.04.3 LTS</strong>,是单<strong>ip</strong>，为<strong>ipv4</strong>。</p>
@@ -211,57 +197,57 @@ git --version
 <h2 id="22一键安装openclaw">2.2一键安装openclaw</h2>
 <p>安装命令如下：</p>
 <pre tabindex="0"><code>curl -fsSL https://openclaw.ai/install.sh | bash
-</code></pre><p>
-<div class="post-img-view">
-<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/123.png?imageMogr2/format/webp">
-<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/123.png?imageMogr2/format/webp" alt="123"  loading="lazy" decoding="async" />
-</a>
-</div>
-</p>
+</code></pre><p><img 
+  src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/123.png?imageMogr2/format/webp" 
+  alt="123" 
+   
+  loading="lazy" 
+  decoding="async" 
+/></p>
 <p>出来openclaw选择：</p>
-<p>
-<div class="post-img-view">
-<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-02-04%20165929.png?imageMogr2/format/webp">
-<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-02-04%20165929.png?imageMogr2/format/webp" alt="屏幕截图 2026-02-04 165929"  loading="lazy" decoding="async" />
-</a>
-</div>
-</p>
+<p><img 
+  src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-02-04%20165929.png?imageMogr2/format/webp" 
+  alt="屏幕截图 2026-02-04 165929" 
+   
+  loading="lazy" 
+  decoding="async" 
+/></p>
 <p>这里选择YES。</p>
-<p>
-<div class="post-img-view">
-<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-02-07%20174445.png?imageMogr2/format/webp">
-<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-02-07%20174445.png?imageMogr2/format/webp" alt="屏幕截图 2026-02-07 174445"  loading="lazy" decoding="async" />
-</a>
-</div>
-</p>
+<p><img 
+  src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-02-07%20174445.png?imageMogr2/format/webp" 
+  alt="屏幕截图 2026-02-07 174445" 
+   
+  loading="lazy" 
+  decoding="async" 
+/></p>
 <p>这里大模型选择国产模型千问，主要是有免费token，我试一试，不想付费用，打开token网站认证就行了。</p>
-<p>
-<div class="post-img-view">
-<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260207174940164.png?imageMogr2/format/webp">
-<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260207174940164.png?imageMogr2/format/webp" alt="image-20260207174940164"  loading="lazy" decoding="async" />
-</a>
-</div>
-</p>
+<p><img 
+  src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260207174940164.png?imageMogr2/format/webp" 
+  alt="image-20260207174940164" 
+   
+  loading="lazy" 
+  decoding="async" 
+/></p>
 <p>我这里现在选择的大模型是：</p>
 <blockquote>
 <p>qwen-portal/coder-model</p>
 </blockquote>
 <p>接下来，第三方连接app选择telegram已被连接，这个具体操作最后讲。</p>
-<p>
-<div class="post-img-view">
-<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260207175555193.png?imageMogr2/format/webp">
-<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260207175555193.png?imageMogr2/format/webp" alt="image-20260207175555193"  loading="lazy" decoding="async" />
-</a>
-</div>
-</p>
+<p><img 
+  src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260207175555193.png?imageMogr2/format/webp" 
+  alt="image-20260207175555193" 
+   
+  loading="lazy" 
+  decoding="async" 
+/></p>
 <p>接下来，会提示要不要装依赖技能，先不管。直接 <code>Skip for now  </code>。</p>
-<p>
-<div class="post-img-view">
-<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260207180338606.png?imageMogr2/format/webp">
-<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260207180338606.png?imageMogr2/format/webp" alt="image-20260207180338606"  loading="lazy" decoding="async" />
-</a>
-</div>
-</p>
+<p><img 
+  src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260207180338606.png?imageMogr2/format/webp" 
+  alt="image-20260207180338606" 
+   
+  loading="lazy" 
+  decoding="async" 
+/></p>
 <h1 id="3启动openclaw网关">3.启动openclaw网关</h1>
 <p>这里一键命令启动openclaw网关：</p>
 <pre tabindex="0"><code>openclaw gateway --bind loopback --port 18789 --verbose
@@ -274,25 +260,25 @@ git --version
 </code></pre><p>我用的第三方xshell，如果想第三方端口转发的话，在xshell上具体操作是：</p>
 <blockquote>
 <p>新开一个xshell界面&gt;右键点击&quot;属性&quot;&gt;点击SSH“隧道”&gt;在侦听端口填上“18789”以及目标主机“127.0.0.1”以及目标端口“18789”&gt;点击确定&gt;连接</p>
-<p>
-<div class="post-img-view">
-<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-02-06%20185648.png?imageMogr2/format/webp">
-<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-02-06%20185648.png?imageMogr2/format/webp" alt="img"  loading="lazy" decoding="async" />
-</a>
-</div>
-</p>
+<p><img 
+  src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-02-06%20185648.png?imageMogr2/format/webp" 
+  alt="img" 
+   
+  loading="lazy" 
+  decoding="async" 
+/></p>
 </blockquote>
 <p>agent 应该已经正确连上这个 gateway。</p>
 <p>打开本地webUI本地端口地址：</p>
 <pre tabindex="0"><code>http://127.0.0.1:18789/
 </code></pre><p>可以看到opeclaw网站本地聊天可以用了：</p>
-<p>
-<div class="post-img-view">
-<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/chat.jfif?imageMogr2/format/webp">
-<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/chat.jfif?imageMogr2/format/webp" alt="chat"  loading="lazy" decoding="async" />
-</a>
-</div>
-</p>
+<p><img 
+  src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/chat.jfif?imageMogr2/format/webp" 
+  alt="chat" 
+   
+  loading="lazy" 
+  decoding="async" 
+/></p>
 <h1 id="4如何在第三方聊天工具使用">4.如何在第三方聊天工具使用</h1>
 <p>我这里使用的是telegram(简称“tg”),具体是在tg找到一个<code>Botfather</code>的机器人，点击<code>/newbot</code>,再命名一个可用的，比如<code>aboerclaw_bot</code>,这时机器人会给你一个api:填入刚刚选择在第三方tg聊天时的api，最后在openclaw本地网关webUI激活我的tg机器人，如图：</p>
 <div style="text-align:center">

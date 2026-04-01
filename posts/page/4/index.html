@@ -61,15 +61,6 @@
     src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/webfonts/fa-regular-400.woff2') format('woff2');
   }
 </style>
-  
-
-
-<link rel="preload" href="https://cdn.jsdelivr.net/npm/fancybox@3.0.1/dist/css/jquery.fancybox.min.css"
-      as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fancybox@3.0.1/dist/css/jquery.fancybox.min.css">
-</noscript>
-
 
   
  
@@ -101,11 +92,6 @@
   </script>
 
   
-  
-
-  
-  
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" defer></script>
   
 
   
@@ -208,7 +194,8 @@
         <div class="column">
           <h2 class="subtitle is-inline is-size-4-mobile is-size-3-desktop"><a href="https://www.zaqizaba.xyz/posts/%E7%94%B5%E8%84%91%E5%86%8D%E5%8D%87%E7%BA%A7/">电脑再升级</a></h1>
           <div class="content is-hidden-mobile">
-            19年时的博客上就写过具体的电脑装机教程，那会我买了电脑配件直接装了一台台式机。我在19年买的amd 5700xt显卡发现现在有点卡顿，但还能用。于是我准备只换显卡，这二年众所周知的原因，显卡高价被奸商和“挖矿商”恶意抬高价格，导致显卡价格一直虚高下不去。不过是不是最近矿潮回落的原因，近期几个月显卡都有小幅度降价。于是我买了一款6700xt（终究觉得a卡光追和现在a卡的驱动问题有了很大的改善），但是某些方面比不上n卡，价格比n卡便宜那么几百来块。这款6700xt是盈通的六道兵甲，价格上我觉得也能接受。但是问题是买到后发现，原来的机箱显卡限长是290mm，现在我这个显卡长度大约为310mm,而且电源功率建议是750w。这也就意味着我的显卡，机箱以及电源都必须得换。
+            
+19年时的博客上就写过具体的电脑装机教程，那会我买了电脑配件直接装了一台台式机。我在19年买的amd 5700xt显卡发现现在有点卡顿，但还能用。于是我准备只换显卡，这二年众所周知的原因，显卡高价被奸商和“挖矿商”恶意抬高价格，导致显卡价格一直虚高下不去。不过是不是最近矿潮回落的原因，近期几个月显卡都有小幅度降价。于是我买了一款6700xt（终究觉得a卡光追和现在a卡的驱动问题有了很大的改善），但是某些方面比不上n卡，价格比n卡便宜那么几百来块。这款6700xt是盈通的六道兵甲，价格上我觉得也能接受。但是问题是买到后发现，原来的机箱显卡限长是290mm，现在我这个显卡长度大约为310mm,而且电源功率建议是750w。这也就意味着我的显卡，机箱以及电源都必须得换。
 马上开动，材料为： EVESKY锐界机箱、120mm的散热风扇（没买风扇，风扇是原来机箱上拆解下来的）、技嘉B365m小雕（还 …
             
           </div>
@@ -237,7 +224,8 @@
         <div class="column">
           <h2 class="subtitle is-inline is-size-4-mobile is-size-3-desktop"><a href="https://www.zaqizaba.xyz/posts/%E5%B0%86%E6%89%98%E7%AE%A1%E4%BB%8Egithub%E8%BF%81%E7%A7%BB%E5%88%B0vercel/">将hugo托管从github迁移到vercel</a></h1>
           <div class="content is-hidden-mobile">
-            vercel是一个站点托管平台，类似于GitHub的托管平台。在vercel 官网上有其详细的介绍。
+            
+vercel是一个站点托管平台，类似于GitHub的托管平台。在vercel 官网上有其详细的介绍。
 1.为什么我会弃用github而选用vercel 这里有二点原因：1.github托管的域名访问速度有点着急，vercel比github以及其它在无备案托管平台上我认为算是最快的。2.可以从github一键导入静态博客文件到vercel且支持个人自定义域名，而且上传博客文章比github要稳，可以隐藏公开仓库。
 2.使用vercel开始进行hugo静态博客部署 2.1从GitHub拉取 这里vercel支持github,gitlab,bitbucket这三个托管平台登录，拉取github登录：
 分别点击New Project》选择github上的静态博客仓库点击Import(导入）》Configure Project的FRAMEWORK PRESET我这里从“other”改为 …
@@ -264,7 +252,8 @@
         <div class="column">
           <h2 class="subtitle is-inline is-size-4-mobile is-size-3-desktop"><a href="https://www.zaqizaba.xyz/posts/%E6%B7%BB%E5%8A%A0%E6%9C%AC%E5%9C%B0%E8%A7%86%E9%A2%91%E5%88%B0hugo%E5%8D%9A%E5%AE%A2/">添加本地视频到hugo博客</a></h1>
           <div class="content is-hidden-mobile">
-            以前我在博文《hugo添加短代码》这篇博文说过，可以通过相应文件的视频网站短代码模板引入，再从相应的视频网站url的id短代码来套取放到博客上，从而实现第三方网站视频在文章中出现。这也算是hugo博客的一大特色。但是有些时候，第三方网站审核视频，比如B站，如果你投稿的视频不是符合B站“正能量”主题，很大可能会上传因为版权问题，含露骨视频等其它原因而遭到删除，严重的可能连上传都看不到。当然。你也可以套国外视频网站短代码引入，比如油管，vimeo等，但是问题是这必须得借助魔法功能才能实现，博主当然更愿意本地视频套在博客上，无需借助其它第三方的视频网站就能在博客上在线播放了。
+            
+以前我在博文《hugo添加短代码》这篇博文说过，可以通过相应文件的视频网站短代码模板引入，再从相应的视频网站url的id短代码来套取放到博客上，从而实现第三方网站视频在文章中出现。这也算是hugo博客的一大特色。但是有些时候，第三方网站审核视频，比如B站，如果你投稿的视频不是符合B站“正能量”主题，很大可能会上传因为版权问题，含露骨视频等其它原因而遭到删除，严重的可能连上传都看不到。当然。你也可以套国外视频网站短代码引入，比如油管，vimeo等，但是问题是这必须得借助魔法功能才能实现，博主当然更愿意本地视频套在博客上，无需借助其它第三方的视频网站就能在博客上在线播放了。
 有没有办法解决呢？办法当然是有的。你可以用diygod开发的Dplayer播放器套件来实现。当然，也可以通过搭建视频床（其实就是原来的图床来实现）。因为Dplayer的视频本地播放导入对于新手有些难以理解，所以可以简单粗 …
             
             <br>

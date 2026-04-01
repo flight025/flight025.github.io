@@ -59,15 +59,6 @@
     src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/webfonts/fa-regular-400.woff2') format('woff2');
   }
 </style>
-  
-
-
-<link rel="preload" href="https://cdn.jsdelivr.net/npm/fancybox@3.0.1/dist/css/jquery.fancybox.min.css"
-      as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fancybox@3.0.1/dist/css/jquery.fancybox.min.css">
-</noscript>
-
 
   
  
@@ -99,11 +90,6 @@
   </script>
 
   
-  
-
-  
-  
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" defer></script>
   
 
   
@@ -178,25 +164,25 @@
   <h2 class="subtitle is-6">March 10, 2026</h2>
   <h1 class="subtitle is-size-4-mobile is-size-3-desktop">联想G560刷Casaos系统作家庭NAS</h1>
   <div class="content">
-    <p>
-<div class="post-img-view">
-<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/abdd2e89-5639-4d68-b363-4a3d3b7b369d?imageMogr2/format/webp">
-<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/abdd2e89-5639-4d68-b363-4a3d3b7b369d?imageMogr2/format/webp" alt="GitHub - IceWhaleTech/CasaOS: CasaOS - A simple, easy-to-use, elegant  open-source Personal Cloud system. · GitHub"  loading="lazy" decoding="async" />
-</a>
-</div>
-</p>
+    <p><img 
+  src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/abdd2e89-5639-4d68-b363-4a3d3b7b369d?imageMogr2/format/webp" 
+  alt="GitHub - IceWhaleTech/CasaOS: CasaOS - A simple, easy-to-use, elegant  open-source Personal Cloud system. · GitHub" 
+   
+  loading="lazy" 
+  decoding="async" 
+/></p>
 <p>我有一台旧联想G560笔记本，因为闲置很久了，所以一直没有动。前几天我把闲置的这台联想G560笔记本电脑利用起来，用来做NAS，而我选择的NAS系统是Casaos。而我为什么选择Casaos系统做NAS，而不是其它，是因为Casaos有其优点：</p>
 <blockquote>
 <p>1.安装简单，部署门槛低 2.为图形化桌面系统  3.内置docker生态 4.对于旧硬件，比如我这台G560做nas十分友好 5.文件管理和共享方便 6.可扩展性强</p>
 </blockquote>
 <p>由于Casaos不是独立系统，所以我们需要在G560上刷一个Linux系统安装，这里我选择 <a href="https://www.debian.org/download.zh-cn.html">Debian13</a>：</p>
-<p>
-<div class="post-img-view">
-<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260313163533587.png?imageMogr2/format/webp">
-<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260313163533587.png?imageMogr2/format/webp" alt="image-20260313163533587"  loading="lazy" decoding="async" />
-</a>
-</div>
-</p>
+<p><img 
+  src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260313163533587.png?imageMogr2/format/webp" 
+  alt="image-20260313163533587" 
+   
+  loading="lazy" 
+  decoding="async" 
+/></p>
 <p>下载好<a href="https://rufus.ie/zh/">Rufus</a>，插入U盘，准备将刚刚下载好的Debian13镜像刷入U盘，做系统盘：</p>
 <table>
   <thead>
@@ -220,43 +206,43 @@
 <blockquote>
 <p>登录Debian，查看ip:</p>
 <pre tabindex="0"><code>ip a
-</code></pre><p>
-<div class="post-img-view">
-<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/20260310_234518.JPG?imageMogr2/format/webp">
-<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/20260310_234518.JPG?imageMogr2/format/webp" alt="20260310_234518"  loading="lazy" decoding="async" />
-</a>
-</div>
-</p>
+</code></pre><p><img 
+  src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/20260310_234518.JPG?imageMogr2/format/webp" 
+  alt="20260310_234518" 
+   
+  loading="lazy" 
+  decoding="async" 
+/></p>
 <p>再安装Casaos,命令如下：</p>
 <pre tabindex="0"><code>curl -fsSL https://get.casaos.io | sudo bash
 </code></pre><p>安装完成，可以看到访问ip。</p>
-<p>
-<div class="post-img-view">
-<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260313173217559.png?imageMogr2/format/webp">
-<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260313173217559.png?imageMogr2/format/webp" alt="image-20260313173217559"  loading="lazy" decoding="async" />
-</a>
-</div>
-</p>
+<p><img 
+  src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260313173217559.png?imageMogr2/format/webp" 
+  alt="image-20260313173217559" 
+   
+  loading="lazy" 
+  decoding="async" 
+/></p>
 </blockquote>
 <p>打开<code>192.168.50.191</code>访问地址，设置好Casaos用户名以及密码,登录：</p>
-<p>
-<div class="post-img-view">
-<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/psc?imageMogr2/format/webp">
-<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/psc?imageMogr2/format/webp" alt="img"  loading="lazy" decoding="async" />
-</a>
-</div>
-</p>
+<p><img 
+  src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/psc?imageMogr2/format/webp" 
+  alt="img" 
+   
+  loading="lazy" 
+  decoding="async" 
+/></p>
 <p>这样就可以看到Casaos界面了，如果觉得G560笔记本自带容量不够多，你还可以买一个移动硬盘，加载到G560 。</p>
 <p><strong>但是随之而来的问题是，如果断电，或者此G560休眠了，随机访问地址变了怎么办，</strong> 这里可以绑定路由器，我前面说过了，此G560是有线，连接的是路由器，我这台路由器是netgear R8500,由于某些原因，刷了官改梅林华硕固件，流程是：</p>
 <pre tabindex="0"><code>登录R8500后台》打开内部网络（lan口）》打开dhcp服务器》手动指定IP的dhcp列表并填好
 </code></pre><p>改完后，此后不管是G560断电好还是休眠好，只要以后登录Debian后台。访问Casaos地址就会固定不变，这样以后不管手机还是电脑，都能访问这个Casaos的NAS系统，至于NAS能做些什么，这些就不用我说了吧。</p>
-<p>
-<div class="post-img-view">
-<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260313175920809.png?imageMogr2/format/webp">
-<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260313175920809.png?imageMogr2/format/webp" alt="image-20260313175920809"  loading="lazy" decoding="async" />
-</a>
-</div>
-</p>
+<p><img 
+  src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260313175920809.png?imageMogr2/format/webp" 
+  alt="image-20260313175920809" 
+   
+  loading="lazy" 
+  decoding="async" 
+/></p>
 
   </div>
 </div>

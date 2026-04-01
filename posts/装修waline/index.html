@@ -59,15 +59,6 @@
     src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/webfonts/fa-regular-400.woff2') format('woff2');
   }
 </style>
-  
-
-
-<link rel="preload" href="https://cdn.jsdelivr.net/npm/fancybox@3.0.1/dist/css/jquery.fancybox.min.css"
-      as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fancybox@3.0.1/dist/css/jquery.fancybox.min.css">
-</noscript>
-
 
   
  
@@ -99,11 +90,6 @@
   </script>
 
   
-  
-
-  
-  
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" defer></script>
   
 
   
@@ -179,13 +165,13 @@
   <h1 class="subtitle is-size-4-mobile is-size-3-desktop">装修waline</h1>
   <div class="content">
     <hr>
-<p>
-<div class="post-img-view">
-<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/waline.PNG?imageMogr2/format/webp">
-<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/waline.PNG?imageMogr2/format/webp" alt=""  loading="lazy" decoding="async" />
-</a>
-</div>
-</p>
+<p><img 
+  src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/waline.PNG?imageMogr2/format/webp" 
+  alt="" 
+   
+  loading="lazy" 
+  decoding="async" 
+/></p>
 <p>博客评论系统用的<a href="https://waline.js.org/">waline</a>，是基于<a href="https://valine.js.org/">valine</a>改进而来的。由于valine早期有些安全问题等原因，所以我最后选择了waline。不过，我发现waline默认的界面和博客主题有些出入，所以决定装修下waline。</p>
 <h1 id="1自定义css">1.自定义css</h1>
 <p>这里的自定义css是相对于默认未修改的waline.css说的，在waline.css中,主题色修改前后：</p>
@@ -198,32 +184,32 @@
 </span></span></code></pre></div><p>这样，waline评论的色值和博客色值接近，比原本默认的主题色相比，显得更符合博客主题色。</p>
 <h1 id="2将博客评论大宽边和博客文章等宽">2.将博客评论大宽边和博客文章等宽</h1>
 <p>原博客的博客宽度框和博客文章宽度不一致，电脑端看上去是这样的：</p>
-<p>
-<div class="post-img-view">
-<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/%E5%A4%A7%E5%AE%BD%E8%BE%B9.PNG?imageMogr2/format/webp">
-<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/%E5%A4%A7%E5%AE%BD%E8%BE%B9.PNG?imageMogr2/format/webp" alt=""  loading="lazy" decoding="async" />
-</a>
-</div>
-</p>
+<p><img 
+  src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/%E5%A4%A7%E5%AE%BD%E8%BE%B9.PNG?imageMogr2/format/webp" 
+  alt="" 
+   
+  loading="lazy" 
+  decoding="async" 
+/></p>
 <p>和博客宽度形成了一个“<strong>⊥</strong>”的布局，自己在waline.css的修改了方框参数，始终不能达到和博客文章等宽效果，后来发现解决办法也很简单，也不需要在waline.css上修改方框参数。只需要在<code>.../layouts/partials/disqus</code>的html上加入标签：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#f92672">div</span> <span style="color:#f92672">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;container&#34;</span>
 </span></span></code></pre></div><p>这样，waline评论便能和文章等宽了，再次查看waline评论：</p>
-<p>
-<div class="post-img-view">
-<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/%E5%AE%9E%E7%8E%B0%E7%AD%89%E5%AE%BD.PNG?imageMogr2/format/webp">
-<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/%E5%AE%9E%E7%8E%B0%E7%AD%89%E5%AE%BD.PNG?imageMogr2/format/webp" alt=""  loading="lazy" decoding="async" />
-</a>
-</div>
-</p>
+<p><img 
+  src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/%E5%AE%9E%E7%8E%B0%E7%AD%89%E5%AE%BD.PNG?imageMogr2/format/webp" 
+  alt="" 
+   
+  loading="lazy" 
+  decoding="async" 
+/></p>
 <p>还有一些waline.css可以自己高度定制，比如在评论中加入背景图片，修改方框文字内容等。不过，我主要的目的完成了，感兴趣的话再装修下。</p>
 <hr>
-<p>
-<div class="post-img-view">
-<a data-fancybox="gallery" href="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/%25E6%2582%2589%25E5%25B0%25BC.jpeg?imageMogr2/format/webp">
-<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/%25E6%2582%2589%25E5%25B0%25BC.jpeg?imageMogr2/format/webp" alt=""  loading="lazy" decoding="async" />
-</a>
-</div>
-</p>
+<p><img 
+  src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/%25E6%2582%2589%25E5%25B0%25BC.jpeg?imageMogr2/format/webp" 
+  alt="" 
+   
+  loading="lazy" 
+  decoding="async" 
+/></p>
 
   </div>
 </div>
