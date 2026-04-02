@@ -188,56 +188,23 @@
 }
 
  
-.blog-swiper.swiper-container .swiper-wrapper {
-    position: relative !important;
-    width: 100%;
-}
-
- 
 .blog-swiper.swiper-container .swiper-slide {
-    position: absolute !important;
-    top: 0;
-    left: 0;
-    width: 100% !important;
-    height: auto !important;
-    box-sizing: border-box;
-    opacity: 0;
-    pointer-events: none;
-    -webkit-transition: opacity 0.6s ease;
-    transition: opacity 0.6s ease;
-     
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-}
-
- 
-.blog-swiper.swiper-container .swiper-slide.swiper-slide-active {
-    position: relative !important;
-    opacity: 1 !important;
-    pointer-events: auto;
-}
-
- 
-.blog-swiper.swiper-container .img-box {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     width: 100%;
-    line-height: 0;
+    height: auto;
+    box-sizing: border-box;
 }
 
  
-.blog-swiper.swiper-container .img-box img {
+.blog-swiper.swiper-container .swiper-slide img {
     max-width: 100% !important;
     width: auto !important;
     height: auto !important;
@@ -248,25 +215,13 @@
 }
 
  
-.blog-swiper.swiper-container .img-caption {
-    text-align: center;
-    margin-top: 8px;
-    padding: 0 12px;
-    font-size: 0.875em;
-    color: #888;
-    line-height: 1.5;
-    width: 100%;
-    box-sizing: border-box;
-}
-
- 
 .blog-swiper.swiper-container .swiper-pagination {
     position: absolute !important;
     bottom: 6px !important;
     left: 0 !important;
     width: 100% !important;
     text-align: center;
-    z-index: 20 !important;
+    z-index: 10 !important;
 }
 
  
@@ -274,7 +229,7 @@
 .blog-swiper.swiper-container .swiper-button-next {
     top: calc(50% - 18px) !important;
     margin-top: 0 !important;
-    z-index: 20 !important;
+    z-index: 10 !important;
 }
 </style>
 
@@ -283,253 +238,151 @@
         
         
         <div class="swiper-slide">
-            <div class="img-box">
-                <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/1.jpg" alt="image-0">
-            </div>
-            
+            <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/1.jpg" alt="">
         </div>
         
         <div class="swiper-slide">
-            <div class="img-box">
-                <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/2.jpg" alt="image-1">
-            </div>
-            
+            <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/2.jpg" alt="">
         </div>
         
         <div class="swiper-slide">
-            <div class="img-box">
-                <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/3.jpg" alt="image-2">
-            </div>
-            
+            <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/3.jpg" alt="">
         </div>
         
         <div class="swiper-slide">
-            <div class="img-box">
-                <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/4.jpg" alt="image-3">
-            </div>
-            
+            <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/4.jpg" alt="">
         </div>
         
         <div class="swiper-slide">
-            <div class="img-box">
-                <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/5.jpg" alt="image-4">
-            </div>
-            
+            <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/5.jpg" alt="">
         </div>
         
         <div class="swiper-slide">
-            <div class="img-box">
-                <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/6.jpg" alt="image-5">
-            </div>
-            
+            <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/6.jpg" alt="">
         </div>
         
         <div class="swiper-slide">
-            <div class="img-box">
-                <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/7.jpg" alt="image-6">
-            </div>
-            
+            <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/7.jpg" alt="">
         </div>
         
         <div class="swiper-slide">
-            <div class="img-box">
-                <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/8.jpg" alt="image-7">
-            </div>
-            
+            <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/8.jpg" alt="">
         </div>
         
         <div class="swiper-slide">
-            <div class="img-box">
-                <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/9.jpg" alt="image-8">
-            </div>
-            
+            <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/9.jpg" alt="">
         </div>
         
         <div class="swiper-slide">
-            <div class="img-box">
-                <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/10.jpg" alt="image-9">
-            </div>
-            
+            <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/10.jpg" alt="">
         </div>
         
         <div class="swiper-slide">
-            <div class="img-box">
-                <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/11.jpg" alt="image-10">
-            </div>
-            
+            <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/11.jpg" alt="">
         </div>
         
         <div class="swiper-slide">
-            <div class="img-box">
-                <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/12.jpg" alt="image-11">
-            </div>
-            
+            <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/12.jpg" alt="">
         </div>
         
         <div class="swiper-slide">
-            <div class="img-box">
-                <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/13.jpg" alt="image-12">
-            </div>
-            
+            <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/13.jpg" alt="">
         </div>
         
         <div class="swiper-slide">
-            <div class="img-box">
-                <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/14.jpg" alt="image-13">
-            </div>
-            
+            <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/14.jpg" alt="">
         </div>
         
         <div class="swiper-slide">
-            <div class="img-box">
-                <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/15.jpg" alt="image-14">
-            </div>
-            
+            <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/15.jpg" alt="">
         </div>
         
         <div class="swiper-slide">
-            <div class="img-box">
-                <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/16.jpg" alt="image-15">
-            </div>
-            
+            <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/16.jpg" alt="">
         </div>
         
         <div class="swiper-slide">
-            <div class="img-box">
-                <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/17.jpg" alt="image-16">
-            </div>
-            
+            <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/17.jpg" alt="">
         </div>
         
         <div class="swiper-slide">
-            <div class="img-box">
-                <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/18.jpg" alt="image-17">
-            </div>
-            
+            <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/18.jpg" alt="">
         </div>
         
         <div class="swiper-slide">
-            <div class="img-box">
-                <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/19.jpg" alt="image-18">
-            </div>
-            
+            <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/19.jpg" alt="">
         </div>
         
         <div class="swiper-slide">
-            <div class="img-box">
-                <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/20.jpg" alt="image-19">
-            </div>
-            
+            <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/20.jpg" alt="">
         </div>
         
         <div class="swiper-slide">
-            <div class="img-box">
-                <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/21.jpg" alt="image-20">
-            </div>
-            
+            <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/21.jpg" alt="">
         </div>
         
         <div class="swiper-slide">
-            <div class="img-box">
-                <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/22.jpg" alt="image-21">
-            </div>
-            
+            <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/22.jpg" alt="">
         </div>
         
         <div class="swiper-slide">
-            <div class="img-box">
-                <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/23.jpg" alt="image-22">
-            </div>
-            
+            <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/23.jpg" alt="">
         </div>
         
         <div class="swiper-slide">
-            <div class="img-box">
-                <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/24.jpg" alt="image-23">
-            </div>
-            
+            <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/24.jpg" alt="">
         </div>
         
         <div class="swiper-slide">
-            <div class="img-box">
-                <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/25.jpg" alt="image-24">
-            </div>
-            
+            <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/25.jpg" alt="">
         </div>
         
         <div class="swiper-slide">
-            <div class="img-box">
-                <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/26.jpg" alt="image-25">
-            </div>
-            
+            <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/26.jpg" alt="">
         </div>
         
         <div class="swiper-slide">
-            <div class="img-box">
-                <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/27.jpg" alt="image-26">
-            </div>
-            
+            <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/27.jpg" alt="">
         </div>
         
         <div class="swiper-slide">
-            <div class="img-box">
-                <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/28.jpg" alt="image-27">
-            </div>
-            
+            <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/28.jpg" alt="">
         </div>
         
         <div class="swiper-slide">
-            <div class="img-box">
-                <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/29.jpg" alt="image-28">
-            </div>
-            
+            <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/29.jpg" alt="">
         </div>
         
         <div class="swiper-slide">
-            <div class="img-box">
-                <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/30.jpg" alt="image-29">
-            </div>
-            
+            <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/30.jpg" alt="">
         </div>
         
         <div class="swiper-slide">
-            <div class="img-box">
-                <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/31.jpg" alt="image-30">
-            </div>
-            
+            <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/31.jpg" alt="">
         </div>
         
         <div class="swiper-slide">
-            <div class="img-box">
-                <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/32.jpg" alt="image-31">
-            </div>
-            
+            <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/32.jpg" alt="">
         </div>
         
         <div class="swiper-slide">
-            <div class="img-box">
-                <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/33.jpg" alt="image-32">
-            </div>
-            
+            <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/33.jpg" alt="">
         </div>
         
         <div class="swiper-slide">
-            <div class="img-box">
-                <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/34.jpg" alt="image-33">
-            </div>
-            
+            <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/34.jpg" alt="">
         </div>
         
         <div class="swiper-slide">
-            <div class="img-box">
-                <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/35.jpg" alt="image-34">
-            </div>
-            
+            <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/35.jpg" alt="">
         </div>
         
     </div>
 
+    
     <div class="swiper-pagination"></div>
+
+    
     <div class="swiper-button-prev"></div>
     <div class="swiper-button-next"></div>
 </div>
@@ -539,20 +392,18 @@
 <script>
 (function () {
     var swiper = new Swiper('.blog-swiper', {
-        effect: 'slide',
-        speed: 0,         
-        loop: true,
-        autoHeight: true,
-
         pagination: '.blog-swiper .swiper-pagination',
         paginationClickable: true,
 
         nextButton: '.blog-swiper .swiper-button-next',
         prevButton: '.blog-swiper .swiper-button-prev',
 
+        autoHeight: true,        
         keyboardControl: true,
-
-        onImagesReady: function (s) { s.update(true); }
+        mousewheelControl: true,
+        lazyLoading: true,
+        lazyLoadingInPrevNext: true,
+        loop: true,
     });
 })();
 </script>

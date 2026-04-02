@@ -232,56 +232,23 @@ chatgpt答：免疫球蛋白（Immunoglobulin，简称Ig）是一种由免疫系
 }
 
  
-.blog-swiper.swiper-container .swiper-wrapper {
-    position: relative !important;
-    width: 100%;
-}
-
- 
 .blog-swiper.swiper-container .swiper-slide {
-    position: absolute !important;
-    top: 0;
-    left: 0;
-    width: 100% !important;
-    height: auto !important;
-    box-sizing: border-box;
-    opacity: 0;
-    pointer-events: none;
-    -webkit-transition: opacity 0.6s ease;
-    transition: opacity 0.6s ease;
-     
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-}
-
- 
-.blog-swiper.swiper-container .swiper-slide.swiper-slide-active {
-    position: relative !important;
-    opacity: 1 !important;
-    pointer-events: auto;
-}
-
- 
-.blog-swiper.swiper-container .img-box {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     width: 100%;
-    line-height: 0;
+    height: auto;
+    box-sizing: border-box;
 }
 
  
-.blog-swiper.swiper-container .img-box img {
+.blog-swiper.swiper-container .swiper-slide img {
     max-width: 100% !important;
     width: auto !important;
     height: auto !important;
@@ -292,25 +259,13 @@ chatgpt答：免疫球蛋白（Immunoglobulin，简称Ig）是一种由免疫系
 }
 
  
-.blog-swiper.swiper-container .img-caption {
-    text-align: center;
-    margin-top: 8px;
-    padding: 0 12px;
-    font-size: 0.875em;
-    color: #888;
-    line-height: 1.5;
-    width: 100%;
-    box-sizing: border-box;
-}
-
- 
 .blog-swiper.swiper-container .swiper-pagination {
     position: absolute !important;
     bottom: 6px !important;
     left: 0 !important;
     width: 100% !important;
     text-align: center;
-    z-index: 20 !important;
+    z-index: 10 !important;
 }
 
  
@@ -318,7 +273,7 @@ chatgpt答：免疫球蛋白（Immunoglobulin，简称Ig）是一种由免疫系
 .blog-swiper.swiper-container .swiper-button-next {
     top: calc(50% - 18px) !important;
     margin-top: 0 !important;
-    z-index: 20 !important;
+    z-index: 10 !important;
 }
 </style>
 
@@ -327,29 +282,23 @@ chatgpt答：免疫球蛋白（Immunoglobulin，简称Ig）是一种由免疫系
         
         
         <div class="swiper-slide">
-            <div class="img-box">
-                <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/GPT1.PNG" alt="image-0">
-            </div>
-            
+            <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/GPT1.PNG" alt="">
         </div>
         
         <div class="swiper-slide">
-            <div class="img-box">
-                <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/GPT2.PNG" alt="image-1">
-            </div>
-            
+            <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/GPT2.PNG" alt="">
         </div>
         
         <div class="swiper-slide">
-            <div class="img-box">
-                <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/GPT3.PNG" alt="image-2">
-            </div>
-            
+            <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/GPT3.PNG" alt="">
         </div>
         
     </div>
 
+    
     <div class="swiper-pagination"></div>
+
+    
     <div class="swiper-button-prev"></div>
     <div class="swiper-button-next"></div>
 </div>
@@ -359,20 +308,18 @@ chatgpt答：免疫球蛋白（Immunoglobulin，简称Ig）是一种由免疫系
 <script>
 (function () {
     var swiper = new Swiper('.blog-swiper', {
-        effect: 'slide',
-        speed: 0,         
-        loop: true,
-        autoHeight: true,
-
         pagination: '.blog-swiper .swiper-pagination',
         paginationClickable: true,
 
         nextButton: '.blog-swiper .swiper-button-next',
         prevButton: '.blog-swiper .swiper-button-prev',
 
+        autoHeight: true,        
         keyboardControl: true,
-
-        onImagesReady: function (s) { s.update(true); }
+        mousewheelControl: true,
+        lazyLoading: true,
+        lazyLoadingInPrevNext: true,
+        loop: true,
     });
 })();
 </script>
