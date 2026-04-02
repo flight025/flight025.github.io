@@ -260,30 +260,37 @@
 }
 
  
+.blog-swiper.swiper-container .swiper-wrapper {
+    position: relative;
+     
+}
+
+ 
 .blog-swiper.swiper-container .swiper-slide {
-    pointer-events: none;
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    width: 100%;
     opacity: 0;
-    z-index: 0;
     -webkit-transition: opacity 0.6s ease;
     transition: opacity 0.6s ease;
-     
-    max-height: 0;
-    overflow: hidden;
+    pointer-events: none;
 }
+
  
 .blog-swiper.swiper-container .swiper-slide-active {
-    pointer-events: auto;
+    position: relative !important;
     opacity: 1;
-    z-index: 1;
-    max-height: none;
-    overflow: visible;
+    pointer-events: auto;
 }
 
  
 .blog-swiper.swiper-container .swiper-button-prev,
-.blog-swiper.swiper-container .swiper-button-next,
+.blog-swiper.swiper-container .swiper-button-next {
+    z-index: 20 !important;
+}
 .blog-swiper.swiper-container .swiper-pagination {
-    z-index: 10 !important;
+    z-index: 20 !important;
 }
 </style>
 
@@ -552,10 +559,10 @@
 (function () {
     
     var swiper = new Swiper('.blog-swiper', {
-        effect: 'fade',             
-        fadeEffect: { crossFade: true },  
+        effect: 'slide',
+        speed: 0,                
         loop: true,
-        autoHeight: true,        
+        autoHeight: true,
 
         pagination: '.blog-swiper .swiper-pagination',
         paginationClickable: true,
