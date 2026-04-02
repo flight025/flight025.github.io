@@ -343,178 +343,58 @@
 <p>这个就是插入图片轮播的方式了。这里，最终我还是参考了小球飞鱼的文章<a href="https://mantyke.icu/posts/2021/cf2cf0fb/">《在文章中插入轮播图片》</a>，之前。引入<a href="https://getbootstrap.com/">Bootstrap</a>尝试了一下图片轮播，是可以实现轮播效果，但是问题是引入了Bootstrap的CSS会导致文章页面背景色出现问题。所以还是决定用小球飞鱼写的文章方法，不过我看这个轮播，这种方式是基于<a href="https://3.swiper.com.cn/">swiper</a>的滑动插件引入而成，所以。这个和Bootstrap轮播效果比起来各有千秋，没有谁更好更差的争论。过程我就不描述了，引入后的shortcode是这种表现形式：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>{/{&lt; <span style="color:#f92672">imgloop</span> <span style="color:#960050;background-color:#1e0010">&#34;</span><span style="color:#a6e22e">URL1</span><span style="color:#960050;background-color:#1e0010">,</span><span style="color:#a6e22e">URL2</span><span style="color:#960050;background-color:#1e0010">,</span><span style="color:#a6e22e">URL3</span><span style="color:#960050;background-color:#1e0010">,</span><span style="color:#a6e22e">URL4</span><span style="color:#960050;background-color:#1e0010">,</span><span style="color:#a6e22e">URL5</span><span style="color:#960050;background-color:#1e0010">&#34;</span> &gt;}/}(左右斜杠去掉就行)
 </span></span></code></pre></div>
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
-
-<style>
-.blog-swiper.swiper-container {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 36px !important;
-    box-sizing: border-box;
-    position: relative;
-}
-
- 
-.blog-swiper.swiper-container .swiper-wrapper {
-    position: relative !important;
-    width: 100%;
-}
-
- 
-.blog-swiper.swiper-container .swiper-slide {
-    position: absolute !important;
-    top: 0;
-    left: 0;
-    width: 100% !important;
-    height: auto !important;
-    box-sizing: border-box;
-    opacity: 0;
-    pointer-events: none;
-    -webkit-transition: opacity 0.6s ease;
-    transition: opacity 0.6s ease;
-     
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-}
-
- 
-.blog-swiper.swiper-container .swiper-slide.swiper-slide-active {
-    position: relative !important;
-    opacity: 1 !important;
-    pointer-events: auto;
-}
-
- 
-.blog-swiper.swiper-container .img-box {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    width: 100%;
-    line-height: 0;
-}
-
- 
-.blog-swiper.swiper-container .img-box img {
-    max-width: 100% !important;
-    width: auto !important;
-    height: auto !important;
-    display: block !important;
-    margin: 0 auto !important;
-    border: none !important;
-    vertical-align: bottom;
-}
-
- 
-.blog-swiper.swiper-container .img-caption {
-    text-align: center;
-    margin-top: 8px;
-    padding: 0 12px;
-    font-size: 0.875em;
-    color: #888;
-    line-height: 1.5;
-    width: 100%;
-    box-sizing: border-box;
-}
-
- 
-.blog-swiper.swiper-container .swiper-pagination {
-    position: absolute !important;
-    bottom: 6px !important;
-    left: 0 !important;
-    width: 100% !important;
-    text-align: center;
-    z-index: 20 !important;
-}
-
- 
-.blog-swiper.swiper-container .swiper-button-prev,
-.blog-swiper.swiper-container .swiper-button-next {
-    top: calc(50% - 18px) !important;
-    margin-top: 0 !important;
-    z-index: 20 !important;
-}
-</style>
-
-<div class="swiper-container blog-swiper">
-    <div class="swiper-wrapper">
-        
-        
-        <div class="swiper-slide">
-            <div class="img-box">
-                <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick%20and%20Morty.jpg" alt="image-0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
+    
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            
+            
+            <div class="swiper-slide">
+                <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick%20and%20Morty.jpg" alt="">
+            </div>
+            
+            <div class="swiper-slide">
+                <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Morty.jpg" alt="">
+            </div>
+            
+            <div class="swiper-slide">
+                <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Morty2.jpg" alt="">
+            </div>
+            
+            <div class="swiper-slide">
+                <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick.jpg" alt="">
+            </div>
+            
+            <div class="swiper-slide">
+                <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick2.png" alt="">
             </div>
             
         </div>
         
-        <div class="swiper-slide">
-            <div class="img-box">
-                <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Morty.jpg" alt="image-1">
-            </div>
-            
-        </div>
-        
-        <div class="swiper-slide">
-            <div class="img-box">
-                <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Morty2.jpg" alt="image-2">
-            </div>
-            
-        </div>
-        
-        <div class="swiper-slide">
-            <div class="img-box">
-                <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick.jpg" alt="image-3">
-            </div>
-            
-        </div>
-        
-        <div class="swiper-slide">
-            <div class="img-box">
-                <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Rick2.png" alt="image-4">
-            </div>
-            
-        </div>
-        
+        <div class="swiper-pagination"></div>
     </div>
 
-    <div class="swiper-pagination"></div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-</div>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
-
-<script>
-(function () {
-    var swiper = new Swiper('.blog-swiper', {
-        effect: 'slide',
-        speed: 0,         
-        loop: true,
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
+     
+     <script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+        
         autoHeight: true,
-
-        pagination: '.blog-swiper .swiper-pagination',
-        paginationClickable: true,
-
-        nextButton: '.blog-swiper .swiper-button-next',
-        prevButton: '.blog-swiper .swiper-button-prev',
-
-        keyboardControl: true,
-
-        onImagesReady: function (s) { s.update(true); }
-    });
-})();
-</script>
+        
+        keyboardControl : true,
+        
+        mousewheelControl : true,
+        
+        
+        
+        lazyLoading : true,
+        lazyLoadingInPrevNext : true,
+        
+        loop : true,
+        });
+        </script>
 
 
 <p>效果可见。😂</p>
