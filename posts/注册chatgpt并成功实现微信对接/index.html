@@ -218,50 +218,164 @@ chatgpt答：免疫球蛋白（Immunoglobulin，简称Ig）是一种由免疫系
 </span></span></code></pre></div><p>以上代码定义了三个类，分别是Immunoglobulin、HeavyChain和LightChain。其中Immunoglobulin类包含了两个属性，分别是重链和轻链，而重链和轻链各自包含了可变区域和恒定区域。这些类可以用来构建Ig分子的基本结构。当然，这只是一个简单的示例，真实的Ig结构更加复杂，需要更多的属性和方法来描述。</p>
 </blockquote>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
-    
-    <div class="swiper-container">
-        <div class="swiper-wrapper">
-            
-            
-            <div class="swiper-slide">
-                <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/GPT1.PNG" alt="">
-            </div>
-            
-            <div class="swiper-slide">
-                <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/GPT2.PNG" alt="">
-            </div>
-            
-            <div class="swiper-slide">
-                <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/GPT3.PNG" alt="">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
+
+<style>
+.blog-swiper.swiper-container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 36px !important;
+    box-sizing: border-box;
+    position: relative;
+}
+
+ 
+.blog-swiper.swiper-container .swiper-wrapper {
+    position: relative !important;
+    width: 100%;
+}
+
+ 
+.blog-swiper.swiper-container .swiper-slide {
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: auto !important;
+    box-sizing: border-box;
+    opacity: 0;
+    pointer-events: none;
+    -webkit-transition: opacity 0.6s ease;
+    transition: opacity 0.6s ease;
+     
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+ 
+.blog-swiper.swiper-container .swiper-slide.swiper-slide-active {
+    position: relative !important;
+    opacity: 1 !important;
+    pointer-events: auto;
+}
+
+ 
+.blog-swiper.swiper-container .img-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+    line-height: 0;
+}
+
+ 
+.blog-swiper.swiper-container .img-box img {
+    max-width: 100% !important;
+    width: auto !important;
+    height: auto !important;
+    display: block !important;
+    margin: 0 auto !important;
+    border: none !important;
+    vertical-align: bottom;
+}
+
+ 
+.blog-swiper.swiper-container .img-caption {
+    text-align: center;
+    margin-top: 8px;
+    padding: 0 12px;
+    font-size: 0.875em;
+    color: #888;
+    line-height: 1.5;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+ 
+.blog-swiper.swiper-container .swiper-pagination {
+    position: absolute !important;
+    bottom: 6px !important;
+    left: 0 !important;
+    width: 100% !important;
+    text-align: center;
+    z-index: 20 !important;
+}
+
+ 
+.blog-swiper.swiper-container .swiper-button-prev,
+.blog-swiper.swiper-container .swiper-button-next {
+    top: calc(50% - 18px) !important;
+    margin-top: 0 !important;
+    z-index: 20 !important;
+}
+</style>
+
+<div class="swiper-container blog-swiper">
+    <div class="swiper-wrapper">
+        
+        
+        <div class="swiper-slide">
+            <div class="img-box">
+                <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/GPT1.PNG" alt="image-0">
             </div>
             
         </div>
         
-        <div class="swiper-pagination"></div>
+        <div class="swiper-slide">
+            <div class="img-box">
+                <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/GPT2.PNG" alt="image-1">
+            </div>
+            
+        </div>
+        
+        <div class="swiper-slide">
+            <div class="img-box">
+                <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/GPT3.PNG" alt="image-2">
+            </div>
+            
+        </div>
+        
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
-     
-     <script>
-        var swiper = new Swiper('.swiper-container', {
-            pagination: '.swiper-pagination',
-            paginationClickable: true,
-        
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
+
+<script>
+(function () {
+    var swiper = new Swiper('.blog-swiper', {
+        effect: 'slide',
+        speed: 0,         
+        loop: true,
         autoHeight: true,
-        
-        keyboardControl : true,
-        
-        mousewheelControl : true,
-        
-        
-        
-        lazyLoading : true,
-        lazyLoadingInPrevNext : true,
-        
-        loop : true,
-        });
-        </script>
+
+        pagination: '.blog-swiper .swiper-pagination',
+        paginationClickable: true,
+
+        nextButton: '.blog-swiper .swiper-button-next',
+        prevButton: '.blog-swiper .swiper-button-prev',
+
+        keyboardControl: true,
+
+        onImagesReady: function (s) { s.update(true); }
+    });
+})();
+</script>
 
 
 <h1 id="2对接微信">2.对接微信</h1>
