@@ -427,6 +427,18 @@
     top: calc(50% - 18px) !important;
     margin-top: 0 !important;
 }
+
+ 
+.blog-swiper.swiper-container .swiper-slide {
+    pointer-events: none;           
+    opacity: 0;
+    -webkit-transition: opacity 0.6s ease;
+    transition: opacity 0.6s ease;
+}
+.blog-swiper.swiper-container .swiper-slide-active {
+    pointer-events: auto;
+    opacity: 1;
+}
 </style>
 
 <div class="swiper-container blog-swiper">
@@ -484,7 +496,8 @@
 (function () {
     
     var swiper = new Swiper('.blog-swiper', {
-        effect: 'slide',
+        effect: 'fade',             
+        fadeEffect: { crossFade: true },  
         loop: true,
         autoHeight: true,        
 
