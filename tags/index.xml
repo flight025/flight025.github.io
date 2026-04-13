@@ -7,8 +7,22 @@
     <generator>Hugo</generator>
     <language>zh-CN</language>
     <copyright>© &lt;a href=&#34;https://www.zaqizaba.xyz&#34;&gt;阿波尔的博客&lt;/a&gt; 2019-2026</copyright>
-    <lastBuildDate>Wed, 01 Apr 2026 14:45:56 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 13 Apr 2026 08:42:28 +0800</lastBuildDate>
     <atom:link href="https://www.zaqizaba.xyz/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>S410</title>
+      <link>https://www.zaqizaba.xyz/tags/s410/</link>
+      <pubDate>Mon, 13 Apr 2026 08:42:28 +0800</pubDate>
+      <guid>https://www.zaqizaba.xyz/tags/s410/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tiny11</title>
+      <link>https://www.zaqizaba.xyz/tags/tiny11/</link>
+      <pubDate>Mon, 13 Apr 2026 08:42:28 +0800</pubDate>
+      <guid>https://www.zaqizaba.xyz/tags/tiny11/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Hugo</title>
       <link>https://www.zaqizaba.xyz/tags/hugo/</link>
@@ -45,7 +59,7 @@
       <description></description>
     </item>
     <item>
-      <title>CasaOS</title>
+      <title>Casaos</title>
       <link>https://www.zaqizaba.xyz/tags/casaos/</link>
       <pubDate>Wed, 18 Mar 2026 21:44:35 +0800</pubDate>
       <guid>https://www.zaqizaba.xyz/tags/casaos/</guid>
@@ -77,20 +91,6 @@
       <link>https://www.zaqizaba.xyz/tags/g560/</link>
       <pubDate>Tue, 10 Mar 2026 16:04:09 +0800</pubDate>
       <guid>https://www.zaqizaba.xyz/tags/g560/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Nas</title>
-      <link>https://www.zaqizaba.xyz/tags/nas/</link>
-      <pubDate>Tue, 10 Mar 2026 16:04:09 +0800</pubDate>
-      <guid>https://www.zaqizaba.xyz/tags/nas/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>LeanCloud</title>
-      <link>https://www.zaqizaba.xyz/tags/leancloud/</link>
-      <pubDate>Fri, 27 Feb 2026 19:25:59 +0800</pubDate>
-      <guid>https://www.zaqizaba.xyz/tags/leancloud/</guid>
       <description></description>
     </item>
   </channel>
