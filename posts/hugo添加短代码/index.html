@@ -171,7 +171,7 @@
 <pre tabindex="0"><code>1.[markup.goldmark.renderer]
 2.unsafe= true
 </code></pre><p>然后自己再在网易云音乐引入 <code> iframe</code>实现在hugo博客上显示音乐。但是现在，有一种更好的方式，hugo提倡引入外链可以用短代码。</p>
-<p>方式为：新建<code>/layouts/shortcodes/music.html</code>，在其中引入：</p>
+<p>方式为：新建<code>/layouts/shortcodes/music.html</code>（此短代码接口已经出现问题，需要修改），在其中引入：</p>
 <pre tabindex="0"><code>{{- $scratch := .Page.Scratch.Get &#34;scratch&#34; -}}
 &lt;!-- require APlayer --&gt;
 &lt;link rel=&#34;stylesheet&#34; href=&#34;https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css&#34;&gt;
@@ -231,7 +231,7 @@
   var meting_api = 'https://music.zaqizaba.xyz/?server=:server&type=:type&id=:id&auth=:auth&referrer=:referrer';
   var meting_proxy = 'https://music.zaqizaba.xyz/?server=:server&type=url&id=:id&auth=:auth&referrer=:referrer';
 </script>
-<script src="https://fastly.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"></script><meting-js auto="https://music.163.com/#/album?id=496726" theme="#760411"></meting-js></strong></p>
+<script src="https://fastly.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"></script><meting-js auto="https://music.163.com/#/album?id=494077" theme="#760411"></meting-js></strong></p>
 <p>再比如，引用bilibili视频，新建<code>/layouts/shortcodes/bilibili.html</code>,在其中引入：</p>
 <pre tabindex="0"><code>&lt;div style=&#34;position: relative; padding: 32% 45%;&#34;&gt;
     &lt;iframe style=&#34;position: absolute; width: 100%; height: 100%; left: 0; top: 0;&#34; 
