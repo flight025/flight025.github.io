@@ -331,7 +331,6 @@ apt install certbot python3-certbot-nginx -y
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nginx -t
 </span></span><span style="display:flex;"><span>systemctl reload nginx
 </span></span></code></pre></div><h3 id="验证-cors-头是否正常只有一个了">验证 CORS 头是否正常(只有一个了)</h3>
-<p>bash</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>curl -I <span style="color:#e6db74">&#34;https://your domian/api?server=netease&amp;type=playlist&amp;id=7640699765&#34;</span>
 </span></span></code></pre></div><p>看输出里 <code>Access-Control-Allow-Origin</code> 这一行,应该只出现<strong>一次</strong>,值是单个 <code>*</code>,不是 <code>*, *</code>。</p>
 <p>改完之后再回浏览器测试一次播放器,应该就没有 CORS 报错了。</p>
