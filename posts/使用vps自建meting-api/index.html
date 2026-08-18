@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>使用vps自建meting-Api | 阿波尔的博客</title>
+
+  
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin>
+  <link rel="dns-prefetch" href="https://cdn.bootcdn.net">
+
+  
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5242216254086529" crossorigin="anonymous"></script>
+
+  
+  <link rel="stylesheet" href="https://www.zaqizaba.xyz/css/styles.css">
+  <link rel="stylesheet" href="https://www.zaqizaba.xyz/css/fonts.css"
+        integrity="nHA4sQes5N4kC/1rRzsd9KcxNPPEG1e4F7kjT3rg7mhweyYUuxGU985+SOHzZCsN"
+        crossorigin="anonymous">
+
+  
+   
+   <link rel="stylesheet" href="/css/highlight.min.css">
+   
+
+  
+   
+   
+  
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous">
+  </noscript>
+  
+  <style>
+  @font-face {
+    font-family: 'Font Awesome 5 Brands';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/webfonts/fa-brands-400.woff2') format('woff2');
+  }
+  @font-face {
+    font-family: 'Font Awesome 5 Free';
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/webfonts/fa-solid-900.woff2') format('woff2');
+  }
+  @font-face {
+    font-family: 'Font Awesome 5 Free';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/webfonts/fa-regular-400.woff2') format('woff2');
+  }
+</style>
+
+  
+ 
+
+  
+  <script>
+    MathJax = {
+      tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+      svg: { fontCache: 'global' }
+    };
+  </script>
+
+  
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"
+          integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw="
+          crossorigin="anonymous" defer></script>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha384-1H217gwSVyLSIfaLxHbE7dRb3v4mYCKbpQvzx0cegeju1MVsGrX5xXxAvs/HgeFs" crossorigin="anonymous" defer></script>
+
+  
+  <script src="https://www.zaqizaba.xyz/js/highlight.js" defer></script>
+  <script defer>
+    document.addEventListener('DOMContentLoaded', function () {
+      hljs.initHighlightingOnLoad();
+    });
+  </script>
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+</head>
+<body>
+<div class="container">
+    <nav class="navbar level">
+      <div class="navbar-brand">
+          <a class="nav-item" href="https://www.zaqizaba.xyz/"><h1 class="title is-3">阿波尔的博客</h1></a>
+      </div>           
+      <div class="navbar-menu has-text-centered is-active">
+          <div class="navbar-end is-centered">
+              
+                <a href="https://www.zaqizaba.xyz/about" rel="me">
+                  <span class="icon">
+                    <i class="fas fa-info"></i>
+                  </span>
+                </a>
+              
+                <a href="https://www.zaqizaba.xyz/archives" rel="me">
+                  <span class="icon">
+                    <i class="fas fa-archive"></i>
+                  </span>
+                </a>
+              
+                <a href="https://www.zaqizaba.xyz/comments" rel="me">
+                  <span class="icon">
+                    <i class="fas fa-comment"></i>
+                  </span>
+                </a>
+              
+                <a href="https://github.com/flight025" rel="me">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                </a>
+              
+                <a href="https://www.zhihu.com/people/a-gan-jing-shen" rel="me">
+                  <span class="icon">
+                    <i class="fab fa-zhihu"></i>
+                  </span>
+                </a>
+              
+                <a href="https://twitter.com/666GXF" rel="me">
+                  <span class="icon">
+                    <i class="fab fa-twitter"></i>
+                  </span>
+                </a>
+              
+                <a href="https://www.zaqizaba.xyz/index.xml" rel="me">
+                  <span class="icon">
+                    <i class="fa fa-rss"></i>
+                  </span>
+                </a>
+              
+           </div>
+      </div>
+    </nav>
+  </div>
+<div class="container">
+  <h2 class="subtitle is-6">August 18, 2026</h2>
+  <h1 class="subtitle is-size-4-mobile is-size-3-desktop">使用vps自建meting-Api</h1>
+  <div class="content">
+    <p><img 
+  src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/30165599-36623bea-93a6-11e7-8956-1ddf99ce0e6f.png?imageMogr2/format/webp" 
+  alt="meting" 
+   
+  loading="lazy" 
+  decoding="async" 
+/></p>
+<h1 id="起因">起因</h1>
+<p>我的 Hugo 博客用 APlayer + MetingJS 做音乐播放器,依赖第三方接口 <code>api.injahow.cn</code> 来解析网易云/QQ音乐的歌曲数据。某天播放器不出现了，控制台突然报错,按F12页面显示:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">Fatal</span> <span style="color:#960050;background-color:#1e0010">error:</span> <span style="color:#960050;background-color:#1e0010">Uncaught</span> <span style="color:#960050;background-color:#1e0010">RedisException:</span> <span style="color:#960050;background-color:#1e0010">MISCONF</span> <span style="color:#960050;background-color:#1e0010">Redis</span> <span style="color:#960050;background-color:#1e0010">is</span> <span style="color:#960050;background-color:#1e0010">configured</span> <span style="color:#960050;background-color:#1e0010">to</span> <span style="color:#960050;background-color:#1e0010">save</span> <span style="color:#960050;background-color:#1e0010">RDB</span> <span style="color:#960050;background-color:#1e0010">snapshots,</span> <span style="color:#960050;background-color:#1e0010">but</span> <span style="color:#960050;background-color:#1e0010">it&#39;s</span> <span style="color:#960050;background-color:#1e0010">currently</span> <span style="color:#960050;background-color:#1e0010">unable</span> <span style="color:#960050;background-color:#1e0010">to</span> <span style="color:#960050;background-color:#1e0010">persist</span> <span style="color:#960050;background-color:#1e0010">to</span> <span style="color:#960050;background-color:#1e0010">disk...</span>
+</span></span></code></pre></div><p>原因不是博客代码的问题,而是 <code>api.injahow.cn</code> 这台第三方服务器自己的 Redis 数据库出了故障——磁盘写入失败,导致 Redis 拒绝执行任何写操作(包括接口用来做访问限流的计数功能),整个接口跟着崩溃，不过现在我要让音乐接口 <strong>“死者复生”</strong> ，看我的操作。</p>
+<h1 id="1换下各种公共接口">1.换下各种公共接口</h1>
+<p>既然是别人的meting服务器出问题了，找到了以下音乐解析器接口，我决定换以下四个公共接口:</p>
+<blockquote>
+<p><code>meting-api.imsyy.top</code>:直接连接失败(<code>ERR_CONNECTION_CLOSED</code>)。</p>
+<p><code>meting-api-omega.vercel.app</code>：数据能正常显示，可惜vercel域名被墙。</p>
+<p><code>meting.mikus.ink</code>：数据正常,但被 <strong>CORS 策略拦截</strong>。</p>
+<p><code>meting.jinghuashang.cn</code>：实测请求带参数后没有返回预期的 JSON 数据,不可用。</p>
+</blockquote>
+<p>既然都有问题，我决定下一步。</p>
+<h1 id="2部署meting-api服务">2.部署meting-api服务</h1>
+<p>这里只需要：</p>
+<blockquote>
+<p>一台能ping通的vps、一个域名。</p>
+</blockquote>
+<p>打开你的vps（比如xshell、putty等登录终端），进行以下操作。</p>
+<h2 id="2-1装docker">2-1.装docker</h2>
+<pre tabindex="0"><code>curl -fsSL https://get.docker.com | sh
+</code></pre><p>其实我这里早装了。</p>
+<p>验证方式是</p>
+<pre tabindex="0"><code>docker -v
+</code></pre><p>显示版本号安装成功。</p>
+<h2 id="2-2安装拉取meting-api">2-2.安装拉取meting-api</h2>
+<pre tabindex="0"><code>docker run -d --name meting-api -p 3000:3000 --restart always intemd/meting-api:latest
+</code></pre><h2 id="2-3验证本地是否能跑起来">2-3.验证本地是否能跑起来</h2>
+<pre tabindex="0"><code>curl &#34;http://127.0.0.1:3000/api?server=netease&amp;type=playlist&amp;id=7640699765&#34;
+</code></pre><p>因为因为 API 实际路径是 <code>/api</code>，所以做了调整，输出为：</p>
+<pre tabindex="0"><code>root@racknerd-6c465f:~# curl &#34;http://127.0.0.1:3000/api?server=netease&amp;type=playlist&amp;id=7640699765&#34;
+[{&#34;title&#34;:&#34;Спокойная ночь&#34;,&#34;author&#34;:&#34;Кино&#34;,&#34;pic&#34;:&#34;https://p1.music.126.net/jrEDyug7ubULYf3UrXzHjg==/109951170416026069.jpg&#34;,&#34;url&#34;:&#34;http://127.0.0.1:3000/api?server=netease&amp;type=url&amp;id=26710593&#34;,&#34;lrc&#34;:&#34;http://127.0.0.1:3000/api?server=netease&amp;type=lrc&amp;id=26710593&#34;}.......
+</code></pre><p>代表成功。</p>
+<h1 id="3申请免费域名">3.申请免费域名</h1>
+<p>因为api接口需要域名解析到vps的ip，所以我选择的域名服务商是免费的<a href="https://www.dnshe.com/">DNSHE</a>，这个域名是免费的，而且可以延长到十年内，自己随便填写一个记录名称前缀，记录内容就是你vps的ip。</p>
+<img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/image-20260818215429942.png" alt="image-20260818215429942" style="zoom:50%;" />
+<p>填好后保存退出，等解析完成一会儿会有用。</p>
+<h1 id="4配置-nginx-反向代理">4.配置 Nginx 反向代理</h1>
+<h2 id="4-1先确定你的vps系统如果你的系统是debianubuntu一类的一般是confd结构">4-1.先确定你的vps系统，如果你的系统是debian/ubuntu一类的，一般是<code>conf.d</code>结构。</h2>
+<p>先确定Nginx用的那种结构：</p>
+<pre tabindex="0"><code>ls /etc/nginx/
+</code></pre><p>显示输出为：</p>
+<pre tabindex="0"><code>root@racknerd-6c465f:~# ls /etc/nginx/
+conf.d  fastcgi_params  mime.types  modules  nginx.conf  scgi_params  uwsgi_params
+</code></pre><p>确定Nginx为D结构后，接下来：</p>
+<pre tabindex="0"><code>nano /etc/nginx/conf.d/meting.conf
+</code></pre><p>写入：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-nginx" data-lang="nginx"><span style="display:flex;"><span><span style="color:#66d9ef">server</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">listen</span> <span style="color:#ae81ff">80</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">server_name</span> <span style="color:#e6db74">your</span> <span style="color:#e6db74">domian(your</span> <span style="color:#e6db74">domian代表是你刚刚申请的域名,后面我都用这个代替我申请的域名)</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">location</span> <span style="color:#e6db74">/</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">proxy_pass</span> <span style="color:#e6db74">http://127.0.0.1:3000</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">proxy_set_header</span> <span style="color:#e6db74">Host</span> $host;
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">proxy_set_header</span> <span style="color:#e6db74">X-Real-IP</span> $remote_addr;
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">proxy_set_header</span> <span style="color:#e6db74">X-Forwarded-For</span> $proxy_add_x_forwarded_for;
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">proxy_set_header</span> <span style="color:#e6db74">X-Forwarded-Proto</span> $scheme;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">add_header</span> <span style="color:#e6db74">&#39;Access-Control-Allow-Origin&#39;</span> <span style="color:#e6db74">&#39;*&#39;</span> <span style="color:#e6db74">always</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">add_header</span> <span style="color:#e6db74">&#39;Access-Control-Allow-Methods&#39;</span> <span style="color:#e6db74">&#39;GET,</span> <span style="color:#e6db74">POST,</span> <span style="color:#e6db74">OPTIONS&#39;</span> <span style="color:#e6db74">always</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">add_header</span> <span style="color:#e6db74">&#39;Access-Control-Allow-Headers&#39;</span> <span style="color:#e6db74">&#39;*&#39;</span> <span style="color:#e6db74">always</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>不过中间出现了小插曲，解决了。对于初步搭建meting-api的不用管，保存退出:<code>Ctrl+X</code> → <code>Y</code> → 回车就行。</p>
+<p>然后检测并重载：</p>
+<pre tabindex="0"><code>cat /etc/nginx/conf.d/meting.conf
+</code></pre><p>输出为：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-nginx" data-lang="nginx"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">root@racknerd-6c465f:~</span><span style="color:#75715e"># nano /etc/nginx/conf.d/meting.conf
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">root@racknerd-6c465f:~</span><span style="color:#75715e"># cat /etc/nginx/conf.d/meting.conf
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">server</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">listen</span> <span style="color:#ae81ff">80</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">server_name</span> <span style="color:#e6db74">your</span> <span style="color:#e6db74">domian</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">location</span> <span style="color:#e6db74">/</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">proxy_pass</span> <span style="color:#e6db74">http://127.0.0.1:3000</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">proxy_set_header</span> <span style="color:#e6db74">Host</span> $host;
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">proxy_set_header</span> <span style="color:#e6db74">X-Real-IP</span> $remote_addr;
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">proxy_set_header</span> <span style="color:#e6db74">X-Forwarded-For</span> $proxy_add_x_forwarded_for;
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">proxy_set_header</span> <span style="color:#e6db74">X-Forwarded-Proto</span> $scheme;
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">add_header</span> <span style="color:#e6db74">&#39;Access-Control-Allow-Origin&#39;</span> <span style="color:#e6db74">&#39;*&#39;</span> <span style="color:#e6db74">always</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">add_header</span> <span style="color:#e6db74">&#39;Access-Control-Allow-Methods&#39;</span> <span style="color:#e6db74">&#39;GET,</span> <span style="color:#e6db74">POST,</span> <span style="color:#e6db74">OPTIONS&#39;</span> <span style="color:#e6db74">always</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">add_header</span> <span style="color:#e6db74">&#39;Access-Control-Allow-Headers&#39;</span> <span style="color:#e6db74">&#39;*&#39;</span> <span style="color:#e6db74">always</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="4-2接下来检测并重载-nginx">4-2.接下来检测并重载 Nginx</h2>
+<pre tabindex="0"><code>nginx -t
+systemctl reload nginx
+</code></pre><p>显示看到 <code>syntax is ok</code> 和 <code>test is successful</code> 就继续。</p>
+<p>测速接口：</p>
+<pre tabindex="0"><code>curl &#34;http://your domian/api?server=netease&amp;type=playlist&amp;id=7640699765&#34;
+</code></pre><p>输出为：</p>
+<pre tabindex="0"><code>root@racknerd-6c465f:~# curl &#34;http://your domian/api?server=netease&amp;type=playlist&amp;id=7640699765&#34;
+[{&#34;title&#34;:&#34;Спокойная ночь&#34;,&#34;author&#34;:&#34;Кино&#34;,&#34;pic&#34;:&#34;https://p1.music.126.net/jrEDyug7ubULYf3UrXzHjg==/109951170416026069.jpg&#34;......
+</code></pre><p>即为成功。</p>
+<pre tabindex="0"><code>apt update
+apt install certbot python3-certbot-nginx -y
+</code></pre><p>安装并申请证书，输入：</p>
+<pre tabindex="0"><code>certbot --nginx -d your domian
+</code></pre><p>输出为：</p>
+<pre tabindex="0"><code>IMPORTANT NOTES:
+ - Congratulations! Your certificate and chain have been saved at:
+   /etc/letsencrypt/live/meting.tooyoungtoosimple.ccwu.cc/fullchain.pem
+   Your key file has been saved at:
+   /etc/letsencrypt/live/meting.tooyoungtoosimple.ccwu.cc/privkey.pem
+   Your cert will expire on 2026-11-14. To obtain a new or tweaked
+   version of this certificate in the future, simply run certbot again
+   with the &#34;certonly&#34; option. To non-interactively renew *all* of
+   your certificates, run &#34;certbot renew&#34;
+ - If you like Certbot, please consider supporting our work by:
+   Donating to ISRG / Let&#39;s Encrypt:   https://letsencrypt.org/donate
+   Donating to EFF:                    https://eff.org/donate-le
+</code></pre><p>提示你的证书申请成功，而且有效期到 2026-11-14。</p>
+<p>再次输入测试https:</p>
+<pre tabindex="0"><code>curl &#34;https://meting.tooyoungtoosimple.ccwu.cc/api?server=netease&amp;type=playlist&amp;id=7640699765&#34;
+</code></pre><p>输出为：</p>
+<pre tabindex="0"><code>root@racknerd-6c465f:~# curl &#34;https://your aomian/api?server=netease&amp;type=playlist&amp;id=7640699765&#34;
+[{&#34;title&#34;:&#34;Спокойная ночь&#34;,&#34;author&#34;:&#34;Кино&#34;,&#34;pic&#34;:&#34;https://p1.music.126.net/jrEDyug7ubULYf3UrXzHjg==/109951170416026069.jpg&#34;,&#34;url&#34;:&#34;http://your aomian/api?server=netease&amp;type=url&amp;id=26710593&#34;,&#34;lrc&#34;:&#34;http://your domian/api?server=netease&amp;type=lrc&amp;id=26710593&#34;}
+</code></pre><h2 id="4-3解决url和lrc的http问题">4-3.解决url和lrc的http问题</h2>
+<p>主接口本身返回成功了(说明 HTTPS 通了),但有个细节要注意:返回内容里<strong>嵌套的 <code>url</code> 和 <code>lrc</code> 链接依然是 <code>http://</code> 开头</strong>,不是 <code>https://</code>。这个项目有个特殊要求——它读取 <code>X-Forwarded-Host</code> 这个请求头来拼接返回链接里的协议和域名,而且格式比较特殊,需要写成 <code>$scheme://$server_name</code> 这样的形式,不是标准写法。</p>
+<p>解决办法，编辑<code>nano /etc/nginx/conf.d/meting.conf</code>：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-nginx" data-lang="nginx"><span style="display:flex;"><span>    <span style="color:#66d9ef">location</span> <span style="color:#e6db74">/</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">proxy_pass</span> <span style="color:#e6db74">http://127.0.0.1:3000</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">proxy_set_header</span> <span style="color:#e6db74">Host</span> $host;
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">proxy_set_header</span> <span style="color:#e6db74">X-Real-IP</span> $remote_addr;
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">proxy_set_header</span> <span style="color:#e6db74">X-Forwarded-For</span> $proxy_add_x_forwarded_for;
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">proxy_set_header</span> <span style="color:#e6db74">X-Forwarded-Proto</span> $scheme;
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">add_header</span> <span style="color:#e6db74">&#39;Access-Control-Allow-Origin&#39;</span> <span style="color:#e6db74">&#39;*&#39;</span> <span style="color:#e6db74">always</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">add_header</span> <span style="color:#e6db74">&#39;Access-Control-Allow-Methods&#39;</span> <span style="color:#e6db74">&#39;GET,</span> <span style="color:#e6db74">POST,</span> <span style="color:#e6db74">OPTIONS&#39;</span> <span style="color:#e6db74">always</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">add_header</span> <span style="color:#e6db74">&#39;Access-Control-Allow-Headers&#39;</span> <span style="color:#e6db74">&#39;*&#39;</span> <span style="color:#e6db74">always</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span></code></pre></div><p>在 <code>proxy_set_header X-Forwarded-Proto $scheme;</code> 这一行<strong>下面</strong>加一行:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-nginx" data-lang="nginx"><span style="display:flex;"><span>        <span style="color:#66d9ef">proxy_set_header</span> <span style="color:#e6db74">X-Forwarded-Host</span> $scheme://$server_name;
+</span></span></code></pre></div><p>保存退出:<code>Ctrl+X</code> → <code>Y</code> → 回车</p>
+<h3 id="检测并重载">检测并重载</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nginx -t
+</span></span><span style="display:flex;"><span>systemctl reload nginx
+</span></span></code></pre></div><p>重新测试：</p>
+<pre tabindex="0"><code>curl &#34;https://your domian/api?server=netease&amp;type=playlist&amp;id=7640699765&#34;
+</code></pre><p>结果显示url和lrc都有https了，成功完成。</p>
+<h1 id="5解决cors-头问题">5.解决CORS 头问题</h1>
+<p>我修改好后f12网页端提示：</p>
+<pre tabindex="0"><code>Access to fetch at &#39;https://your domian/api?server=netease&amp;type=playlist&amp;id=7640699765&amp;auth=undefined&amp;r=0.5812098791672832&#39; from origin &#39;https://www.zaqizaba.xyz&#39; has been blocked by CORS policy: The &#39;Access-Control-Allow-Origin&#39; header contains multiple values &#39;*, *&#39;, but only one is allowed. Have the server send the header with a valid value.
+</code></pre><p>解决办法是，在Ngnix除掉这三行：</p>
+<pre tabindex="0"><code>        add_header &#39;Access-Control-Allow-Origin&#39; &#39;*&#39; always;
+        add_header &#39;Access-Control-Allow-Methods&#39; &#39;GET, POST, OPTIONS&#39; always;
+        add_header &#39;Access-Control-Allow-Headers&#39; &#39;*&#39; always;
+</code></pre><p>变成：</p>
+<pre tabindex="0"><code>    location / {
+        proxy_pass http://127.0.0.1:3000;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_set_header X-Forwarded-Host $scheme://$server_name;
+    }
+</code></pre><p>保存退出:<code>Ctrl+X</code> → <code>Y</code> → 回车</p>
+<h3 id="检测并重载-1">检测并重载</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nginx -t
+</span></span><span style="display:flex;"><span>systemctl reload nginx
+</span></span></code></pre></div><h3 id="验证-cors-头是否正常只有一个了">验证 CORS 头是否正常(只有一个了)</h3>
+<p>bash</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>curl -I <span style="color:#e6db74">&#34;https://your domian/api?server=netease&amp;type=playlist&amp;id=7640699765&#34;</span>
+</span></span></code></pre></div><p>看输出里 <code>Access-Control-Allow-Origin</code> 这一行,应该只出现<strong>一次</strong>,值是单个 <code>*</code>,不是 <code>*, *</code>。</p>
+<p>改完之后再回浏览器测试一次播放器,应该就没有 CORS 报错了。</p>
+<p>输出为：</p>
+<pre tabindex="0"><code>curl -I &#34;https://your domian/api?server=netease&amp;type=playlist&amp;id=7640699765&#34;
+HTTP/1.1 200 OK
+Server: nginx/1.27.5
+Date: Sun, 16 Aug 2026 15:07:31 GMT
+Content-Type: application/json; charset=UTF-8
+Connection: keep-alive
+access-control-allow-origin: *
+</code></pre><p>输出为一个 <code>*</code>显示为成功。</p>
+<h1 id="6限制自建接口">6.限制自建接口</h1>
+<p>毕竟我是自己搭建的自建api接口，不是公共免费接口。我这个接口部署在我的vps上，不可能让别人都用，不然vps的api接口请求消耗的流量费用我hold不住。</p>
+<p>这里可以这样做。给接口加一个简单的 Referer 检查。就是 <strong>只有从我的博客页面发起的请求才放行,其他来源直接拒绝(403)。</strong></p>
+<h3 id="编辑配置文件">编辑配置文件</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nano /etc/nginx/conf.d/meting.conf
+</span></span></code></pre></div><p>在 443 端口那个 <code>server {}</code> 块里(跟 <code>listen 443 ssl;</code> 同级,<code>location /</code> 外面),加上这两行:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-nginx" data-lang="nginx"><span style="display:flex;"><span>    <span style="color:#66d9ef">valid_referers</span> <span style="color:#e6db74">none</span> <span style="color:#e6db74">blocked</span> <span style="color:#e6db74">www.zaqizaba.xyz</span> <span style="color:#e6db74">zaqizaba.xyz</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> <span style="color:#e6db74">(</span>$invalid_referer<span style="color:#e6db74">)</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">return</span> <span style="color:#ae81ff">403</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span></code></pre></div><p>完整的 443 server 块应该长这样:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-nginx" data-lang="nginx"><span style="display:flex;"><span><span style="color:#66d9ef">server</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">server_name</span> <span style="color:#e6db74">your</span> <span style="color:#e6db74">domian</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">valid_referers</span> <span style="color:#e6db74">none</span> <span style="color:#e6db74">blocked</span> <span style="color:#e6db74">www.zaqizaba.xyz</span> <span style="color:#e6db74">zaqizaba.xyz</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">if</span> <span style="color:#e6db74">(</span>$invalid_referer<span style="color:#e6db74">)</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">return</span> <span style="color:#ae81ff">403</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">location</span> <span style="color:#e6db74">/</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">proxy_pass</span> <span style="color:#e6db74">http://127.0.0.1:3000</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">proxy_set_header</span> <span style="color:#e6db74">Host</span> $host;
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">proxy_set_header</span> <span style="color:#e6db74">X-Real-IP</span> $remote_addr;
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">proxy_set_header</span> <span style="color:#e6db74">X-Forwarded-For</span> $proxy_add_x_forwarded_for;
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">proxy_set_header</span> <span style="color:#e6db74">X-Forwarded-Proto</span> $scheme;
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">proxy_set_header</span> <span style="color:#e6db74">X-Forwarded-Host</span> $scheme://$server_name;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">listen</span> <span style="color:#ae81ff">443</span> <span style="color:#e6db74">ssl</span>; <span style="color:#75715e"># managed by Certbot
+</span></span></span><span style="display:flex;"><span>    <span style="color:#f92672">ssl_certificate</span> <span style="color:#e6db74">/etc/letsencrypt/live/your</span> <span style="color:#e6db74">domian/fullchain.pem</span>; <span style="color:#75715e"># managed by Certbot
+</span></span></span><span style="display:flex;"><span>    <span style="color:#f92672">ssl_certificate_key</span> <span style="color:#e6db74">/etc/letsencrypt/live/your</span> <span style="color:#e6db74">domian/privkey.pem</span>; <span style="color:#75715e"># managed by Certbot
+</span></span></span><span style="display:flex;"><span>    <span style="color:#f92672">include</span> <span style="color:#e6db74">/etc/letsencrypt/options-ssl-nginx.conf</span>; <span style="color:#75715e"># managed by Certbot
+</span></span></span><span style="display:flex;"><span>    <span style="color:#f92672">ssl_dhparam</span> <span style="color:#e6db74">/etc/letsencrypt/ssl-dhparams.pem</span>; <span style="color:#75715e"># managed by Certbot
+</span></span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>保存生效：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nginx -t
+</span></span><span style="display:flex;"><span>systemctl reload nginx
+</span></span></code></pre></div><p>测试是不是成功；</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>curl -H <span style="color:#e6db74">&#34;Referer: https://evil-site.com&#34;</span> <span style="color:#e6db74">&#34;https://your domian/api?server=netease&amp;type=playlist&amp;id=7640699765&#34;</span>
+</span></span></code></pre></div><p>显示：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>:~# curl -H <span style="color:#e6db74">&#34;Referer: https://evil-site.com&#34;</span> <span style="color:#e6db74">&#34;https://your domian/api?server=netease&amp;type=playlist&amp;id=7640699765&#34;</span>
+</span></span><span style="display:flex;"><span>&lt;html&gt;
+</span></span><span style="display:flex;"><span>&lt;head&gt;&lt;title&gt;403 Forbidden&lt;/title&gt;&lt;/head&gt;
+</span></span><span style="display:flex;"><span>&lt;body&gt;
+</span></span><span style="display:flex;"><span>&lt;center&gt;&lt;h1&gt;403 Forbidden&lt;/h1&gt;&lt;/center&gt;
+</span></span><span style="display:flex;"><span>&lt;hr&gt;&lt;center&gt;nginx/1.27.5&lt;/center&gt;
+</span></span><span style="display:flex;"><span>&lt;/body&gt;
+</span></span><span style="display:flex;"><span>&lt;/html&gt;
+</span></span></code></pre></div><p>代表成功403，只有从你自己博客发起的请求才放行,其他来源直接返回 403。测试验证:带假 Referer 的请求确实被正确拦截了。</p>
+<p>大功告成！！！现在将music shortcodes的原来出问题的api公共音乐接口：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>var meting_api<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;https://api.injahow.cn/api?server=:server&amp;type=:type&amp;id=:id&amp;auth=:auth&amp;r=:r&#39;</span>;
+</span></span></code></pre></div><p>换成你用vps自建的api音乐接口：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>var meting_api<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;https://your domian/api?server=:server&amp;type=:type&amp;id=:id&amp;auth=:auth&amp;r=:r&#39;</span>;
+</span></span></code></pre></div><p>这样，自己用vps搭建的音乐api接口就不用受第三方的Redis 数据库故障困扰了，完全自己掌握，并且出问题还可以排查。</p>
+<p><img 
+  src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/phoenix_illustration_wide.png?imageMogr2/format/webp" 
+  alt="phoenix_illustration_wide" 
+   
+  loading="lazy" 
+  decoding="async" 
+/></p>
+
+  </div>
+</div>
+<head>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jsSocials/1.5.0/jssocials.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsSocials/1.5.0/jssocials.min.js" defer></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/nanogallery2/3.0.5/css/nanogallery2.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/nanogallery2/3.0.5/jquery.nanogallery2.min.js" defer></script>
+</head>
+<body>
+<div class="container has-text-centered">
+    
+    <aside><div id="share"></div></aside>
+    
+    <script>
+    (function() {
+        function initShare() {
+            if (typeof $ !== "undefined" && typeof $.fn.jsSocials !== "undefined") {
+                $("#share").jsSocials({
+                    showLabel: false,
+                    showCount: false,
+                    shares: ["email", "twitter"]
+                });
+            } else {
+                
+                setTimeout(initShare, 500);
+            }
+        }
+        document.addEventListener('DOMContentLoaded', initShare);
+    })();
+    </script>
+    
+    本作品采用<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+    知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>进行许可。
+</div>
+</body>
+<div class="container">
+  <link rel="stylesheet" href="https://www.zaqizaba.xyz/css/waline.css" 
+        integrity="MIWed8SQ6eGu4KgWgXR+ebvVSEPJ5dY5TddaHHyztyy2MixKV4sgE02SNvTgq/EI" 
+        crossorigin="anonymous">
+  <script src="https://unpkg.com/@waline/client@2.15.8/dist/waline.js"></script>
+
+  <div id="waline"></div>
+
+  <script>
+    var locale = {
+      nick: '😐的爱称',
+      nickError: '昵称不能少于3个字符',
+      mail: '你的📫',
+      mailError: '请填写正确的邮件地址',
+      link: '🌐的链接',
+      placeholder: '此刻你看完这篇博文脑海中的想法是什么呢，大胆说出来吧ヾ(•ω•`)o',
+      sofa: '🍿🍿🍿',
+      submit: '提交',
+      reply: '回复',
+      cancelReply: '取消回复',
+      comment: '评论',
+      more: '加载更多...',
+      preview: '预览',
+      emoji: '表情',
+      expand: '查看更多...',
+      seconds: '秒前',
+      minutes: '分钟前',
+      hours: '小时前',
+      days: '天前',
+      now: '刚刚',
+      uploading: '正在上传',
+      login: '登录',
+      logout: '退出',
+      admin: '博主',
+      word: '字',
+      wordHint: '评论字数应在 $0 到 $1 字之间！\n当前字数：$2',
+    };
+
+    document.addEventListener('DOMContentLoaded', function () {
+      if (typeof Waline !== 'undefined') {
+        Waline.init({
+          el: '#waline',
+          lang: 'zh-CN',
+          dark: 'auto',
+          search: false,
+          serverURL: 'https://www.19964662.xyz',
+          locale,
+          emoji: [
+            'https://gcore.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/',
+            'https://cdn.cbd.int/sarakale-assets@1.2.1/emoji/acfun_color/'
+          ],
+        });
+      } else {
+        console.error('Waline is not loaded correctly');
+      }
+    });
+  </script>
+</div>   
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FFW576XTMR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-FFW576XTMR');
+</script>
+
+
+
+
+<style>
+  .f-link { color: #760411; text-decoration: none; transition: .2s; }
+  .f-link:hover { color: #444 !important; text-decoration: none !important; }
+  .c-sym { font-size: 1.1rem; vertical-align: middle; }  
+</style>
+
+<footer style="text-align: center; padding: 20px; font-size: 0.9rem; color: #666;">
+  <span class="c-sym">&copy;</span> 2019-2026 <a href="/" class="f-link">阿波尔的博客</a> 
+  | <a href="/privacy/" class="f-link" target="_blank">隐私政策 (Privacy Policy)</a> 
+  | Powered by <a href="https://gohugo.io/" class="f-link">Hugo</a>
+</footer>
+</body>
+</html>

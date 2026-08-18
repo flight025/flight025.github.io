@@ -169,6 +169,29 @@
       
       <article class="columns">
         <div class="column is-2">
+          <h6 class="is-inline" style="white-space: nowrap">Aug 18</h2>
+        </div>
+        <div class="column">
+          <h2 class="subtitle is-inline is-size-4-mobile is-size-3-desktop"><a href="https://www.zaqizaba.xyz/posts/%E4%BD%BF%E7%94%A8vps%E8%87%AA%E5%BB%BAmeting-api/">使用vps自建meting-Api</a></h1>
+          <div class="content is-hidden-mobile">
+            
+起因 我的 Hugo 博客用 APlayer + MetingJS 做音乐播放器,依赖第三方接口 api.injahow.cn 来解析网易云/QQ音乐的歌曲数据。某天播放器不出现了，控制台突然报错,按F12页面显示:
+Fatal error: Uncaught RedisException: MISCONF Redis is configured to save RDB snapshots, but it&#39;s currently unable to persist to disk... 原因不是博客代码的问题,而是 api.injahow.cn 这台第三方服务器自己的 Redis 数据库出了故障——磁盘写入失败,导致 Redis 拒绝执行任何写操作(包括接口用来做访问限流的计数功能),整个接口跟着崩溃，不过现在我要让音乐接口 “死者复生” ，看我的操作。
+1.换下各种公共接口 既 …
+            
+            <br>
+            <a class="button is-marginless is-paddingless" href="https://www.zaqizaba.xyz/posts/%E4%BD%BF%E7%94%A8vps%E8%87%AA%E5%BB%BAmeting-api/">
+            <span class="icon-link is-small" style="line-height: 100%">
+                <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+              </span>
+              <p style="padding:0 5px"></p>more</p>
+            </a>
+            
+          </div>
+      </article>
+      
+      <article class="columns">
+        <div class="column is-2">
           <h6 class="is-inline" style="white-space: nowrap">Apr 13</h2>
         </div>
         <div class="column">
@@ -352,30 +375,6 @@ curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash - sudo apt …
             
             <br>
             <a class="button is-marginless is-paddingless" href="https://www.zaqizaba.xyz/posts/%E7%81%AB%E8%B5%B7%E6%9D%A5%E7%9A%84%E5%9B%BD%E4%BA%A7ai%E6%A8%A1%E5%9E%8Bdeepseek/">
-            <span class="icon-link is-small" style="line-height: 100%">
-                <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-              </span>
-              <p style="padding:0 5px"></p>more</p>
-            </a>
-            
-          </div>
-      </article>
-      
-      <article class="columns">
-        <div class="column is-2">
-          <h6 class="is-inline" style="white-space: nowrap">Jan 18</h2>
-        </div>
-        <div class="column">
-          <h2 class="subtitle is-inline is-size-4-mobile is-size-3-desktop"><a href="https://www.zaqizaba.xyz/posts/%E6%A0%87%E7%AD%BE%E5%BD%92%E7%B1%BB%E6%96%87%E7%AB%A0%E7%BB%88%E4%BA%8E%E8%B5%B7%E4%BD%9C%E7%94%A8%E4%BA%86/">标签归类文章终于起作用了</a></h1>
-          <div class="content is-hidden-mobile">
-             自从About的Frequent Tags一直不怎么起作用，一直准确显示不了tags的博客文章，为此折腾了很长时间。以前标签链接总是定位到博客首页，现在总算是能够根据标签词搜索到相应文章。
-1.开始准备 1.1在config 配置TAGS的URL逻辑映射 config.toml 配置的问题，在 config.toml 中，[taxonomies] 是用来定义逻辑名称到 URL 路径的映射：
-[taxonomies] tag = &#34;tags&#34; 给定 tag = &quot;tags&quot; 后，Hugo 会在生成的网站中以 /tags/标签名/ 的形式来访问这些标签的文章。
-1.2创建一个 layouts/taxonomy/tag.html 文件模板 在layouts/taxonomy/tag.html中添加一个自定义tag.html模板，具体是：
-&lt;div …
-            
-            <br>
-            <a class="button is-marginless is-paddingless" href="https://www.zaqizaba.xyz/posts/%E6%A0%87%E7%AD%BE%E5%BD%92%E7%B1%BB%E6%96%87%E7%AB%A0%E7%BB%88%E4%BA%8E%E8%B5%B7%E4%BD%9C%E7%94%A8%E4%BA%86/">
             <span class="icon-link is-small" style="line-height: 100%">
                 <i class="fa fa-angle-double-right" aria-hidden="true"></i>
               </span>
