@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>About on 阿波尔的博客</title>
-    <link>https://www.zaqizaba.xyz/about/</link>
-    <description>Recent content in About on 阿波尔的博客</description>
-    <generator>Hugo</generator>
-    <language>zh-CN</language>
-    <copyright>© &lt;a href=&#34;https://www.zaqizaba.xyz&#34;&gt;阿波尔的博客&lt;/a&gt; 2019-2026</copyright>
-    <atom:link href="https://www.zaqizaba.xyz/about/index.xml" rel="self" type="application/rss+xml" />
-  </channel>
+	<channel>
+		<title>About on 阿波尔的博客</title>
+		<link>https://www.zaqizaba.xyz/about/</link>
+		<description>Recent content in About on 阿波尔的博客</description>
+		<generator>Hugo</generator>
+		<language>zh-cn</language>
+		
+		
+		
+			<copyright>© &lt;a href=&#34;https://www.zaqizaba.xyz&#34;&gt;阿波尔的博客&lt;/a&gt; 2019-2026</copyright>
+		
+		
+			<atom:link href="https://www.zaqizaba.xyz/about/index.xml" rel="self" type="application/rss+xml" />
+	</channel>
 </rss>
