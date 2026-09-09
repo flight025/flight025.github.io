@@ -272,9 +272,9 @@ apt install certbot python3-certbot-nginx -y
 </code></pre><p>输出为：</p>
 <pre tabindex="0"><code>IMPORTANT NOTES:
  - Congratulations! Your certificate and chain have been saved at:
-   /etc/letsencrypt/live/meting.tooyoungtoosimple.ccwu.cc/fullchain.pem
+   /etc/letsencrypt/live/your domian/fullchain.pem
    Your key file has been saved at:
-   /etc/letsencrypt/live/meting.tooyoungtoosimple.ccwu.cc/privkey.pem
+   /etc/letsencrypt/live/your domian/privkey.pem
    Your cert will expire on 2026-11-14. To obtain a new or tweaked
    version of this certificate in the future, simply run certbot again
    with the &#34;certonly&#34; option. To non-interactively renew *all* of
@@ -286,7 +286,7 @@ apt install certbot python3-certbot-nginx -y
 <p>再次输入测试https:</p>
 <pre tabindex="0"><code>curl &#34;https://your domian/api?server=netease&amp;type=playlist&amp;id=7640699765&#34;
 </code></pre><p>输出为：</p>
-<pre tabindex="0"><code>root@racknerd-6c465f:~# curl &#34;https://your aomian/api?server=netease&amp;type=playlist&amp;id=7640699765&#34;
+<pre tabindex="0"><code>root@racknerd-6c465f:~# curl &#34;https://your domian/api?server=netease&amp;type=playlist&amp;id=7640699765&#34;
 [{&#34;title&#34;:&#34;Спокойная ночь&#34;,&#34;author&#34;:&#34;Кино&#34;,&#34;pic&#34;:&#34;https://p1.music.126.net/jrEDyug7ubULYf3UrXzHjg==/109951170416026069.jpg&#34;,&#34;url&#34;:&#34;http://your aomian/api?server=netease&amp;type=url&amp;id=26710593&#34;,&#34;lrc&#34;:&#34;http://your domian/api?server=netease&amp;type=lrc&amp;id=26710593&#34;}
 </code></pre><h2 id="4-3解决url和lrc的http问题">4-3.解决url和lrc的http问题</h2>
 <p>主接口本身返回成功了(说明 HTTPS 通了),但有个细节要注意:返回内容里<strong>嵌套的 <code>url</code> 和 <code>lrc</code> 链接依然是 <code>http://</code> 开头</strong>,不是 <code>https://</code>。这个项目有个特殊要求——它读取 <code>X-Forwarded-Host</code> 这个请求头来拼接返回链接里的协议和域名,而且格式比较特殊,需要写成 <code>$scheme://$server_name</code> 这样的形式,不是标准写法。</p>
