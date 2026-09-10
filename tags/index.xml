@@ -12,9 +12,23 @@
 			<copyright>© &lt;a href=&#34;https://www.zaqizaba.xyz&#34;&gt;阿波尔的博客&lt;/a&gt; 2019-2026</copyright>
 		
 		
-			<lastBuildDate>Tue, 18 Aug 2026 20:31:21 +0800</lastBuildDate>
+			<lastBuildDate>Thu, 10 Sep 2026 10:35:30 +0800</lastBuildDate>
 		
 			<atom:link href="https://www.zaqizaba.xyz/tags/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>故事</title>
+				<link>https://www.zaqizaba.xyz/tags/%E6%95%85%E4%BA%8B/</link>
+				<pubDate>Thu, 10 Sep 2026 10:35:30 +0800</pubDate>
+				<guid>https://www.zaqizaba.xyz/tags/%E6%95%85%E4%BA%8B/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>爱</title>
+				<link>https://www.zaqizaba.xyz/tags/%E7%88%B1/</link>
+				<pubDate>Thu, 10 Sep 2026 10:35:30 +0800</pubDate>
+				<guid>https://www.zaqizaba.xyz/tags/%E7%88%B1/</guid>
+				<description></description>
+			</item>
 			<item>
 				<title>Meting</title>
 				<link>https://www.zaqizaba.xyz/tags/meting/</link>
@@ -79,7 +93,7 @@
 				<description></description>
 			</item>
 			<item>
-				<title>Casaos</title>
+				<title>CasaOS</title>
 				<link>https://www.zaqizaba.xyz/tags/casaos/</link>
 				<pubDate>Wed, 18 Mar 2026 21:44:35 +0800</pubDate>
 				<guid>https://www.zaqizaba.xyz/tags/casaos/</guid>
@@ -139,20 +153,6 @@
 				<link>https://www.zaqizaba.xyz/tags/waline/</link>
 				<pubDate>Fri, 27 Feb 2026 19:25:59 +0800</pubDate>
 				<guid>https://www.zaqizaba.xyz/tags/waline/</guid>
-				<description></description>
-			</item>
-			<item>
-				<title>Openclaw</title>
-				<link>https://www.zaqizaba.xyz/tags/openclaw/</link>
-				<pubDate>Sat, 07 Feb 2026 16:28:41 +0800</pubDate>
-				<guid>https://www.zaqizaba.xyz/tags/openclaw/</guid>
-				<description></description>
-			</item>
-			<item>
-				<title>思考</title>
-				<link>https://www.zaqizaba.xyz/tags/%E6%80%9D%E8%80%83/</link>
-				<pubDate>Tue, 30 Sep 2025 08:53:02 +0800</pubDate>
-				<guid>https://www.zaqizaba.xyz/tags/%E6%80%9D%E8%80%83/</guid>
 				<description></description>
 			</item>
 	</channel>
