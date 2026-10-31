@@ -12,9 +12,23 @@
 			<copyright>© &lt;a href=&#34;https://www.zaqizaba.xyz&#34;&gt;阿波尔的博客&lt;/a&gt; 2019-2026</copyright>
 		
 		
-			<lastBuildDate>Thu, 10 Sep 2026 10:35:30 +0800</lastBuildDate>
+			<lastBuildDate>Sat, 31 Oct 2026 14:59:48 +0800</lastBuildDate>
 		
 			<atom:link href="https://www.zaqizaba.xyz/tags/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>人生</title>
+				<link>https://www.zaqizaba.xyz/tags/%E4%BA%BA%E7%94%9F/</link>
+				<pubDate>Sat, 31 Oct 2026 14:59:48 +0800</pubDate>
+				<guid>https://www.zaqizaba.xyz/tags/%E4%BA%BA%E7%94%9F/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>社会</title>
+				<link>https://www.zaqizaba.xyz/tags/%E7%A4%BE%E4%BC%9A/</link>
+				<pubDate>Sat, 31 Oct 2026 14:59:48 +0800</pubDate>
+				<guid>https://www.zaqizaba.xyz/tags/%E7%A4%BE%E4%BC%9A/</guid>
+				<description></description>
+			</item>
 			<item>
 				<title>故事</title>
 				<link>https://www.zaqizaba.xyz/tags/%E6%95%85%E4%BA%8B/</link>
@@ -48,20 +62,6 @@
 				<link>https://www.zaqizaba.xyz/tags/s410/</link>
 				<pubDate>Mon, 13 Apr 2026 08:42:28 +0800</pubDate>
 				<guid>https://www.zaqizaba.xyz/tags/s410/</guid>
-				<description></description>
-			</item>
-			<item>
-				<title>Tiny11</title>
-				<link>https://www.zaqizaba.xyz/tags/tiny11/</link>
-				<pubDate>Mon, 13 Apr 2026 08:42:28 +0800</pubDate>
-				<guid>https://www.zaqizaba.xyz/tags/tiny11/</guid>
-				<description></description>
-			</item>
-			<item>
-				<title>Hugo</title>
-				<link>https://www.zaqizaba.xyz/tags/hugo/</link>
-				<pubDate>Wed, 01 Apr 2026 14:45:56 +0800</pubDate>
-				<guid>https://www.zaqizaba.xyz/tags/hugo/</guid>
 				<description></description>
 			</item>
 	</channel>
