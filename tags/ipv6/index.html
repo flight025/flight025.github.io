@@ -1,7 +1,172 @@
-<!doctype html><html lang=zh-cn><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Ipv6 | 阿波尔的博客</title><link rel=preconnect href=https://cdn.jsdelivr.net crossorigin><link rel=preconnect href=https://cdnjs.cloudflare.com crossorigin><link rel=preconnect href=https://pagead2.googlesyndication.com crossorigin><link rel=dns-prefetch href=https://cdn.bootcdn.net><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5242216254086529" crossorigin=anonymous></script><link rel=stylesheet href=https://www.zaqizaba.xyz/css/styles.css><link rel=stylesheet href=https://www.zaqizaba.xyz/css/fonts.css integrity=nHA4sQes5N4kC/1rRzsd9KcxNPPEG1e4F7kjT3rg7mhweyYUuxGU985+SOHzZCsN crossorigin=anonymous><link rel=stylesheet href=/css/highlight.min.css><link rel=preload href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin=anonymous as=style onload='this.onload=null,this.rel="stylesheet"'><noscript><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css crossorigin=anonymous></noscript><style>@font-face{font-family:'font awesome 5 brands';font-style:normal;font-weight:400;font-display:swap;src:url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/webfonts/fa-brands-400.woff2)format('woff2')}@font-face{font-family:'font awesome 5 free';font-style:normal;font-weight:900;font-display:swap;src:url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/webfonts/fa-solid-900.woff2)format('woff2')}@font-face{font-family:'font awesome 5 free';font-style:normal;font-weight:400;font-display:swap;src:url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/webfonts/fa-regular-400.woff2)format('woff2')}</style><script>MathJax={tex:{inlineMath:[["$","$"],["\\(","\\)"]]},svg:{fontCache:"global"}}</script><script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin=anonymous defer></script><script src=https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js integrity=sha384-1H217gwSVyLSIfaLxHbE7dRb3v4mYCKbpQvzx0cegeju1MVsGrX5xXxAvs/HgeFs crossorigin=anonymous defer></script><script src=https://www.zaqizaba.xyz/js/highlight.js defer></script><script defer>document.addEventListener("DOMContentLoaded",function(){hljs.initHighlightingOnLoad()})</script></head><body><div class=container><nav class="navbar level"><div class=navbar-brand><a class=nav-item href=https://www.zaqizaba.xyz/><h1 class="title is-3">阿波尔的博客</h1></a></div><div class="navbar-menu has-text-centered is-active"><div class="navbar-end is-centered"><a href=https://www.zaqizaba.xyz/about rel=me><span class=icon><i class="fas fa-info"></i>
-</span></a><a href=https://www.zaqizaba.xyz/archives rel=me><span class=icon><i class="fas fa-archive"></i>
-</span></a><a href=https://www.zaqizaba.xyz/comments rel=me><span class=icon><i class="fas fa-comment"></i>
-</span></a><a href=https://github.com/flight025 rel=me><span class=icon><i class="fab fa-github"></i>
-</span></a><a href=https://www.zhihu.com/people/a-gan-jing-shen rel=me><span class=icon><i class="fab fa-zhihu"></i>
-</span></a><a href=https://twitter.com/666GXF rel=me><span class=icon><i class="fab fa-twitter"></i>
-</span></a><a href=https://www.zaqizaba.xyz/index.xml rel=me><span class=icon><i class="fa fa-rss"></i></span></a></div></div></nav></div><div class=container><h1>Ipv6</h1><ul><li><a href=https://www.zaqizaba.xyz/posts/clawcloud7%E5%88%80%E4%BC%98%E6%83%A0vps%E7%A9%B6%E7%AB%9F%E6%80%8E%E4%B9%88%E6%A0%B7/>Clawcloud7刀优惠vps究竟怎么样</a></li><li><a href=https://www.zaqizaba.xyz/posts/vps%E5%AE%9E%E7%8E%B0%E6%B5%81%E9%87%8F%E8%AE%BF%E9%97%AE%E5%B9%B6%E5%BC%80%E5%90%AFipv6/>vps实现流量访问并开启ipv6</a></li></ul></div>
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ipv6 | 阿波尔的博客</title>
+
+  
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin>
+  <link rel="dns-prefetch" href="https://cdn.bootcdn.net">
+
+  
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5242216254086529" crossorigin="anonymous"></script>
+
+  
+  <link rel="stylesheet" href="https://www.zaqizaba.xyz/css/styles.css">
+  <link rel="stylesheet" href="https://www.zaqizaba.xyz/css/fonts.css"
+        integrity="nHA4sQes5N4kC/1rRzsd9KcxNPPEG1e4F7kjT3rg7mhweyYUuxGU985+SOHzZCsN"
+        crossorigin="anonymous">
+
+  
+   
+   <link rel="stylesheet" href="/css/highlight.min.css">
+   
+
+  
+   
+   
+  
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous">
+  </noscript>
+  
+  <style>
+  @font-face {
+    font-family: 'Font Awesome 5 Brands';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/webfonts/fa-brands-400.woff2') format('woff2');
+  }
+  @font-face {
+    font-family: 'Font Awesome 5 Free';
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/webfonts/fa-solid-900.woff2') format('woff2');
+  }
+  @font-face {
+    font-family: 'Font Awesome 5 Free';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/webfonts/fa-regular-400.woff2') format('woff2');
+  }
+</style>
+
+  
+ 
+
+  
+  <script>
+    MathJax = {
+      tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+      svg: { fontCache: 'global' }
+    };
+  </script>
+
+  
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"
+          integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw="
+          crossorigin="anonymous" defer></script>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha384-1H217gwSVyLSIfaLxHbE7dRb3v4mYCKbpQvzx0cegeju1MVsGrX5xXxAvs/HgeFs" crossorigin="anonymous" defer></script>
+
+  
+  <script src="https://www.zaqizaba.xyz/js/highlight.js" defer></script>
+  <script defer>
+    document.addEventListener('DOMContentLoaded', function () {
+      hljs.initHighlightingOnLoad();
+    });
+  </script>
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+</head>
+<body>
+<div class="container">
+    <nav class="navbar level">
+      <div class="navbar-brand">
+          <a class="nav-item" href="https://www.zaqizaba.xyz/"><h1 class="title is-3">阿波尔的博客</h1></a>
+      </div>           
+      <div class="navbar-menu has-text-centered is-active">
+          <div class="navbar-end is-centered">
+              
+                <a href="https://www.zaqizaba.xyz/about" rel="me">
+                  <span class="icon">
+                    <i class="fas fa-info"></i>
+                  </span>
+                </a>
+              
+                <a href="https://www.zaqizaba.xyz/archives" rel="me">
+                  <span class="icon">
+                    <i class="fas fa-archive"></i>
+                  </span>
+                </a>
+              
+                <a href="https://www.zaqizaba.xyz/comments" rel="me">
+                  <span class="icon">
+                    <i class="fas fa-comment"></i>
+                  </span>
+                </a>
+              
+                <a href="https://github.com/flight025" rel="me">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                </a>
+              
+                <a href="https://www.zhihu.com/people/a-gan-jing-shen" rel="me">
+                  <span class="icon">
+                    <i class="fab fa-zhihu"></i>
+                  </span>
+                </a>
+              
+                <a href="https://twitter.com/666GXF" rel="me">
+                  <span class="icon">
+                    <i class="fab fa-twitter"></i>
+                  </span>
+                </a>
+              
+                <a href="https://www.zaqizaba.xyz/index.xml" rel="me">
+                  <span class="icon">
+                    <i class="fa fa-rss"></i>
+                  </span>
+                </a>
+              
+           </div>
+      </div>
+    </nav>
+  </div>
+<div class="container">
+  <h1>Ipv6</h1>
+  <ul>
+    
+      <li><a href="https://www.zaqizaba.xyz/posts/clawcloud7%E5%88%80%E4%BC%98%E6%83%A0vps%E7%A9%B6%E7%AB%9F%E6%80%8E%E4%B9%88%E6%A0%B7/">Clawcloud7刀优惠vps究竟怎么样</a></li>
+    
+      <li><a href="https://www.zaqizaba.xyz/posts/vps%E5%AE%9E%E7%8E%B0%E6%B5%81%E9%87%8F%E8%AE%BF%E9%97%AE%E5%B9%B6%E5%BC%80%E5%90%AFipv6/">vps实现流量访问并开启ipv6</a></li>
+    
+  </ul>
+</div>
