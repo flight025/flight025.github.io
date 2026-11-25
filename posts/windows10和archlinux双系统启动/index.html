@@ -1,67 +1,430 @@
-<!doctype html><html lang=zh-cn><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Windows10和archlinux双系统启动 | 阿波尔的博客</title><link rel=preconnect href=https://cdn.jsdelivr.net crossorigin><link rel=preconnect href=https://cdnjs.cloudflare.com crossorigin><link rel=preconnect href=https://pagead2.googlesyndication.com crossorigin><link rel=dns-prefetch href=https://cdn.bootcdn.net><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5242216254086529" crossorigin=anonymous></script><link rel=stylesheet href=https://www.zaqizaba.xyz/css/styles.css><link rel=stylesheet href=https://www.zaqizaba.xyz/css/fonts.css integrity=nHA4sQes5N4kC/1rRzsd9KcxNPPEG1e4F7kjT3rg7mhweyYUuxGU985+SOHzZCsN crossorigin=anonymous><link rel=stylesheet href=/css/highlight.min.css><link rel=preload href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin=anonymous as=style onload='this.onload=null,this.rel="stylesheet"'><noscript><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css crossorigin=anonymous></noscript><style>@font-face{font-family:'font awesome 5 brands';font-style:normal;font-weight:400;font-display:swap;src:url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/webfonts/fa-brands-400.woff2)format('woff2')}@font-face{font-family:'font awesome 5 free';font-style:normal;font-weight:900;font-display:swap;src:url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/webfonts/fa-solid-900.woff2)format('woff2')}@font-face{font-family:'font awesome 5 free';font-style:normal;font-weight:400;font-display:swap;src:url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/webfonts/fa-regular-400.woff2)format('woff2')}</style><script>MathJax={tex:{inlineMath:[["$","$"],["\\(","\\)"]]},svg:{fontCache:"global"}}</script><script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin=anonymous defer></script><script src=https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js integrity=sha384-1H217gwSVyLSIfaLxHbE7dRb3v4mYCKbpQvzx0cegeju1MVsGrX5xXxAvs/HgeFs crossorigin=anonymous defer></script><script src=https://www.zaqizaba.xyz/js/highlight.js defer></script><script defer>document.addEventListener("DOMContentLoaded",function(){hljs.initHighlightingOnLoad()})</script></head><body><div class=container><nav class="navbar level"><div class=navbar-brand><a class=nav-item href=https://www.zaqizaba.xyz/><h1 class="title is-3">阿波尔的博客</h1></a></div><div class="navbar-menu has-text-centered is-active"><div class="navbar-end is-centered"><a href=https://www.zaqizaba.xyz/about rel=me><span class=icon><i class="fas fa-info"></i>
-</span></a><a href=https://www.zaqizaba.xyz/archives rel=me><span class=icon><i class="fas fa-archive"></i>
-</span></a><a href=https://www.zaqizaba.xyz/comments rel=me><span class=icon><i class="fas fa-comment"></i>
-</span></a><a href=https://github.com/flight025 rel=me><span class=icon><i class="fab fa-github"></i>
-</span></a><a href=https://www.zhihu.com/people/a-gan-jing-shen rel=me><span class=icon><i class="fab fa-zhihu"></i>
-</span></a><a href=https://twitter.com/666GXF rel=me><span class=icon><i class="fab fa-twitter"></i>
-</span></a><a href=https://www.zaqizaba.xyz/index.xml rel=me><span class=icon><i class="fa fa-rss"></i></span></a></div></div></nav></div><div class=container><h2 class="subtitle is-6">November 17, 2024</h2><h1 class="subtitle is-size-4-mobile is-size-3-desktop">Windows10和archlinux双系统启动</h1><div class=content><p><img src=https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/%e4%b8%8b%e8%bd%bd.jfif?imageMogr2/format/webp alt loading=lazy decoding=async></p><p>Archlinux是一个独立开发的linux发行版，听说有“邪教”之称。你可以通过命令一步步安装引导Windows10和archlinux，从而实现win10/archlinux双系统。我也算是新手，建议如果想刷系统可以看看 <a href=https://archlinuxstudio.github.io/ArchLinuxTutorial/#/>archlinux</a>新手安装教程，从而进一步加深对archlinux的理解。</p><h1 id=你需要准备的材料为>你需要准备的材料为：</h1><blockquote><p>一台能联网的电脑（我是台式机）、一个制作了archlinux至少2G的启动U盘、一个容量不少于60G以上的压缩系统盘、一个可以制作系统启动U盘的软件（我这里推荐<a href=https://rufus.ie/zh/>rufus</a>制作启动U盘）。</p></blockquote><h1 id=方法如下>方法如下：</h1><h2 id=1制作系统盘并并压缩系统盘以及设置bios引导>1.制作系统盘并并压缩系统盘以及设置bios引导</h2><blockquote><p>1.先去archlinux下载<a href=https://archlinux.org/download/>iso</a>，打开rufus。先引导选择下好的iso系统到rufus，再在分区类型选择“GPT”，目标系统类型是“UEFI”，然后点击“开始”制作archlinux启动盘。2.打开 <strong>此电脑》管理》磁盘管理</strong>，找到安装windows的系统盘，然后压缩不少于60G的压缩盘3.主板bios，我的是技嘉。进入bios需要开机时按 <strong>F12</strong>，找到一项 <code>Secure Boot</code>，然后禁用。在<code>boot</code>选项中，调整为UEFI only，并调整最先顺序为USB启动。</p></blockquote><h2 id=2archlinux基础安装>2.Archlinux基础安装</h2><p>等待进入Archlinux安装界面，先禁用reflector：</p><pre tabindex=0><code>systemctl stop reflector.service
-</code></pre><p>确保为UEFI模式：</p><pre tabindex=0><code>ls /sys/firmware/efi/efivars
-</code></pre><p>输出为多串数字。</p><p>由于我的台式机为有线联网，所以无需<code>iwctl</code> 命令联网即可（国内可以ping下百度试试）。</p><p>更新系统时钟：</p><pre tabindex=0><code>timedatectl set-ntp true    
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Windows10和archlinux双系统启动 | 阿波尔的博客</title>
+
+  
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin>
+  <link rel="dns-prefetch" href="https://cdn.bootcdn.net">
+
+  
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5242216254086529" crossorigin="anonymous"></script>
+
+  
+  <link rel="stylesheet" href="https://www.zaqizaba.xyz/css/styles.css">
+  <link rel="stylesheet" href="https://www.zaqizaba.xyz/css/fonts.css"
+        integrity="nHA4sQes5N4kC/1rRzsd9KcxNPPEG1e4F7kjT3rg7mhweyYUuxGU985+SOHzZCsN"
+        crossorigin="anonymous">
+
+  
+   
+   <link rel="stylesheet" href="/css/highlight.min.css">
+   
+
+  
+   
+   
+  
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous">
+  </noscript>
+  
+  <style>
+  @font-face {
+    font-family: 'Font Awesome 5 Brands';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/webfonts/fa-brands-400.woff2') format('woff2');
+  }
+  @font-face {
+    font-family: 'Font Awesome 5 Free';
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/webfonts/fa-solid-900.woff2') format('woff2');
+  }
+  @font-face {
+    font-family: 'Font Awesome 5 Free';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/webfonts/fa-regular-400.woff2') format('woff2');
+  }
+</style>
+
+  
+ 
+
+  
+  <script>
+    MathJax = {
+      tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+      svg: { fontCache: 'global' }
+    };
+  </script>
+
+  
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"
+          integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw="
+          crossorigin="anonymous" defer></script>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha384-1H217gwSVyLSIfaLxHbE7dRb3v4mYCKbpQvzx0cegeju1MVsGrX5xXxAvs/HgeFs" crossorigin="anonymous" defer></script>
+
+  
+  <script src="https://www.zaqizaba.xyz/js/highlight.js" defer></script>
+  <script defer>
+    document.addEventListener('DOMContentLoaded', function () {
+      hljs.initHighlightingOnLoad();
+    });
+  </script>
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+</head>
+<body>
+<div class="container">
+    <nav class="navbar level">
+      <div class="navbar-brand">
+          <a class="nav-item" href="https://www.zaqizaba.xyz/"><h1 class="title is-3">阿波尔的博客</h1></a>
+      </div>           
+      <div class="navbar-menu has-text-centered is-active">
+          <div class="navbar-end is-centered">
+              
+                <a href="https://www.zaqizaba.xyz/about" rel="me">
+                  <span class="icon">
+                    <i class="fas fa-info"></i>
+                  </span>
+                </a>
+              
+                <a href="https://www.zaqizaba.xyz/archives" rel="me">
+                  <span class="icon">
+                    <i class="fas fa-archive"></i>
+                  </span>
+                </a>
+              
+                <a href="https://www.zaqizaba.xyz/comments" rel="me">
+                  <span class="icon">
+                    <i class="fas fa-comment"></i>
+                  </span>
+                </a>
+              
+                <a href="https://github.com/flight025" rel="me">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                </a>
+              
+                <a href="https://www.zhihu.com/people/a-gan-jing-shen" rel="me">
+                  <span class="icon">
+                    <i class="fab fa-zhihu"></i>
+                  </span>
+                </a>
+              
+                <a href="https://twitter.com/666GXF" rel="me">
+                  <span class="icon">
+                    <i class="fab fa-twitter"></i>
+                  </span>
+                </a>
+              
+                <a href="https://www.zaqizaba.xyz/index.xml" rel="me">
+                  <span class="icon">
+                    <i class="fa fa-rss"></i>
+                  </span>
+                </a>
+              
+           </div>
+      </div>
+    </nav>
+  </div>
+<div class="container">
+  <h2 class="subtitle is-6">November 17, 2024</h2>
+  <h1 class="subtitle is-size-4-mobile is-size-3-desktop">Windows10和archlinux双系统启动</h1>
+  <div class="content">
+    <p><img 
+  src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/%e4%b8%8b%e8%bd%bd.jfif?imageMogr2/format/webp" 
+  alt="" 
+   
+  loading="lazy" 
+  decoding="async" 
+/></p>
+<p>Archlinux是一个独立开发的linux发行版，听说有“邪教”之称。你可以通过命令一步步安装引导Windows10和archlinux，从而实现win10/archlinux双系统。我也算是新手，建议如果想刷系统可以看看 <a href="https://archlinuxstudio.github.io/ArchLinuxTutorial/#/">archlinux</a>新手安装教程，从而进一步加深对archlinux的理解。</p>
+<h1 id="你需要准备的材料为">你需要准备的材料为：</h1>
+<blockquote>
+<p>一台能联网的电脑（我是台式机）、一个制作了archlinux至少2G的启动U盘、一个容量不少于60G以上的压缩系统盘、一个可以制作系统启动U盘的软件（我这里推荐<a href="https://rufus.ie/zh/">rufus</a>制作启动U盘）。</p>
+</blockquote>
+<h1 id="方法如下">方法如下：</h1>
+<h2 id="1制作系统盘并并压缩系统盘以及设置bios引导">1.制作系统盘并并压缩系统盘以及设置bios引导</h2>
+<blockquote>
+<p>1.先去archlinux下载<a href="https://archlinux.org/download/">iso</a>，打开rufus。先引导选择下好的iso系统到rufus，再在分区类型选择“GPT”，目标系统类型是“UEFI”，然后点击“开始”制作archlinux启动盘。2.打开 <strong>此电脑》管理》磁盘管理</strong>，找到安装windows的系统盘，然后压缩不少于60G的压缩盘3.主板bios，我的是技嘉。进入bios需要开机时按 <strong>F12</strong>，找到一项 <code>Secure Boot</code>，然后禁用。在<code>boot</code>选项中，调整为UEFI only，并调整最先顺序为USB启动。</p>
+</blockquote>
+<h2 id="2archlinux基础安装">2.Archlinux基础安装</h2>
+<p>等待进入Archlinux安装界面，先禁用reflector：</p>
+<pre tabindex="0"><code>systemctl stop reflector.service
+</code></pre><p>确保为UEFI模式：</p>
+<pre tabindex="0"><code>ls /sys/firmware/efi/efivars
+</code></pre><p>输出为多串数字。</p>
+<p>由于我的台式机为有线联网，所以无需<code>iwctl</code> 命令联网即可（国内可以ping下百度试试）。</p>
+<p>更新系统时钟：</p>
+<pre tabindex="0"><code>timedatectl set-ntp true    
 timedatectl status          
-</code></pre><p>查看磁盘分区：</p><pre tabindex=0><code>fdisk -l
-</code></pre><p>使用<strong>cfdisk</strong>命令（假如为sdc磁盘安装）分区</p><pre tabindex=0><code>cfdisk /dev/sdc
-</code></pre><p>在<strong>Freespace</strong> 分出四个分区退出保存，假如是：</p><blockquote><ul><li>EFI 分区： <code>/efi</code> 800M（sdc1）</li><li>根目录： <code>/</code> 100G （sdc2）</li><li>用户主目录： <code>/home</code> 50G剩余全部（sdc3）</li><li>swap交换空间：<code>/swap</code> 20G(sdc4)</li></ul></blockquote><p>然后执行如下命令：</p><p>格式化根目录和用户主目录以及efi分区和swap分区</p><pre tabindex=0><code>mkfs.ext4  /dev/sdc2
+</code></pre><p>查看磁盘分区：</p>
+<pre tabindex="0"><code>fdisk -l
+</code></pre><p>使用<strong>cfdisk</strong>命令（假如为sdc磁盘安装）分区</p>
+<pre tabindex="0"><code>cfdisk /dev/sdc
+</code></pre><p>在<strong>Freespace</strong> 分出四个分区退出保存，假如是：</p>
+<blockquote>
+<ul>
+<li>EFI 分区： <code>/efi</code> 800M（sdc1）</li>
+<li>根目录： <code>/</code> 100G （sdc2）</li>
+<li>用户主目录： <code>/home</code> 50G剩余全部（sdc3）</li>
+<li>swap交换空间：<code>/swap</code> 20G(sdc4)</li>
+</ul>
+</blockquote>
+<p>然后执行如下命令：</p>
+<p>格式化根目录和用户主目录以及efi分区和swap分区</p>
+<pre tabindex="0"><code>mkfs.ext4  /dev/sdc2
 mkfs.ext4  /dev/sdc3
 mkfs.vfat  /dev/sdc1
 mkswap /dev/sdc4
-</code></pre><p>挂载分区：</p><pre tabindex=0><code>mount /dev/sdc2  /mnt
-</code></pre><p>挂载home根分区：</p><pre tabindex=0><code>mount --mkdir /dev/sdc3 /mnt/home
-</code></pre><p>挂载efi分区：</p><pre tabindex=0><code>mount --mkdir /dev/sdc1 /mnt/efi
-</code></pre><p>挂载swap分区：</p><pre tabindex=0><code>swap /dev/sdc4
-</code></pre><p>挂载自此完成。</p><p>再配置国内镜像源<code>nano /etc/pacman.d/mirrorlist</code>,添加如下镜像（<code>nano</code>按Ctrl+o保存，按Ctrl+x退出）：</p><pre tabindex=0><code>Server = https://mirrors.ustc.edu.cn/archlinux/$repo/os/$arch
+</code></pre><p>挂载分区：</p>
+<pre tabindex="0"><code>mount /dev/sdc2  /mnt
+</code></pre><p>挂载home根分区：</p>
+<pre tabindex="0"><code>mount --mkdir /dev/sdc3 /mnt/home
+</code></pre><p>挂载efi分区：</p>
+<pre tabindex="0"><code>mount --mkdir /dev/sdc1 /mnt/efi
+</code></pre><p>挂载swap分区：</p>
+<pre tabindex="0"><code>swap /dev/sdc4
+</code></pre><p>挂载自此完成。</p>
+<p>再配置国内镜像源<code>nano /etc/pacman.d/mirrorlist</code>,添加如下镜像（<code>nano</code>按Ctrl+o保存，按Ctrl+x退出）：</p>
+<pre tabindex="0"><code>Server = https://mirrors.ustc.edu.cn/archlinux/$repo/os/$arch
 Server = https://mirrors.tuna.tsinghua.edu.cn/archlinux/$repo/os/$arch
-</code></pre><p>刷新并重新安装密钥：</p><pre tabindex=0><code>pacman -Syu
+</code></pre><p>刷新并重新安装密钥：</p>
+<pre tabindex="0"><code>pacman -Syu
 pacman -Syy
 pacman -S archlinux-keyring
-</code></pre><p>安装基础包：</p><pre tabindex=0><code>pacstrap /mnt base base-devel linux linux-headers linux-firmware networkmanager grub os-prober efibootmgr ntfs-3g amd-ucode bluez
-</code></pre><p>必须的功能性软件:</p><pre tabindex=0><code>pacstrap /mnt dhcpcd iwd vim bash-completion
-</code></pre><p>等安装完成。</p><p>生成 fstab 文件，fstab 用来定义磁盘分区</p><pre tabindex=0><code>genfstab -U /mnt &gt;&gt; /mnt/etc/fstab
-</code></pre><p>然后，chroot进入系统：</p><pre tabindex=0><code>arch-chroot /mnt
-</code></pre><p>设置时区：</p><pre tabindex=0><code>ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+</code></pre><p>安装基础包：</p>
+<pre tabindex="0"><code>pacstrap /mnt base base-devel linux linux-headers linux-firmware networkmanager grub os-prober efibootmgr ntfs-3g amd-ucode bluez
+</code></pre><p>必须的功能性软件:</p>
+<pre tabindex="0"><code>pacstrap /mnt dhcpcd iwd vim bash-completion
+</code></pre><p>等安装完成。</p>
+<p>生成 fstab 文件，fstab 用来定义磁盘分区</p>
+<pre tabindex="0"><code>genfstab -U /mnt &gt;&gt; /mnt/etc/fstab
+</code></pre><p>然后，chroot进入系统：</p>
+<pre tabindex="0"><code>arch-chroot /mnt
+</code></pre><p>设置时区：</p>
+<pre tabindex="0"><code>ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 hwclock --systohc
-</code></pre><p>设置 Locale 进行本地化：</p><pre tabindex=0><code>nano /etc/locale.gen（去掉en_US.UTF-8和 zh_CN.UTF-8所在的#号）
-</code></pre><p>生成locale：</p><pre tabindex=0><code>locale-gen
-</code></pre><p>编辑/etc/locale.conf导入：</p><pre tabindex=0><code>nano /etc/locale.conf
+</code></pre><p>设置 Locale 进行本地化：</p>
+<pre tabindex="0"><code>nano /etc/locale.gen（去掉en_US.UTF-8和 zh_CN.UTF-8所在的#号）
+</code></pre><p>生成locale：</p>
+<pre tabindex="0"><code>locale-gen
+</code></pre><p>编辑/etc/locale.conf导入：</p>
+<pre tabindex="0"><code>nano /etc/locale.conf
 LANG=en_US.UTF-8
-</code></pre><p>设置主机名：</p><pre tabindex=0><code>nano /etc/hostname （比如就叫Archlinux)
-</code></pre><p>接下来在<code>/etc/hosts</code>设置与其匹配的条目加入内容:</p><pre tabindex=0><code>nano /etc/hosts
+</code></pre><p>设置主机名：</p>
+<pre tabindex="0"><code>nano /etc/hostname （比如就叫Archlinux)
+</code></pre><p>接下来在<code>/etc/hosts</code>设置与其匹配的条目加入内容:</p>
+<pre tabindex="0"><code>nano /etc/hosts
 127.0.0.1   localhost
 ::1         localhost
 127.0.1.1   Archlinux
-</code></pre><p>设置root密码：</p><pre tabindex=0><code>passwd
-</code></pre><p>创建普通用户名并创建密码：</p><pre tabindex=0><code>useradd -m -G wheel aboer(假如用户名就是aboer)
+</code></pre><p>设置root密码：</p>
+<pre tabindex="0"><code>passwd
+</code></pre><p>创建普通用户名并创建密码：</p>
+<pre tabindex="0"><code>useradd -m -G wheel aboer(假如用户名就是aboer)
 passwd aboer
-</code></pre><p>编辑sudoers赋予用户root权限：</p><pre tabindex=0><code>nano /etc/sudoers
-</code></pre><p>删除<code>%wheel ALL=(ALL:ALL)</code>前面的<code>#</code></p><p>启用网络连接和蓝牙：</p><pre tabindex=0><code>systemctl enable NetworkManager
+</code></pre><p>编辑sudoers赋予用户root权限：</p>
+<pre tabindex="0"><code>nano /etc/sudoers
+</code></pre><p>删除<code>%wheel ALL=(ALL:ALL)</code>前面的<code>#</code></p>
+<p>启用网络连接和蓝牙：</p>
+<pre tabindex="0"><code>systemctl enable NetworkManager
 systemctl enable bluetooth
-</code></pre><p>编辑grub：</p><pre tabindex=0><code>GRUB_DISABLE_OS_PROBER=flase（去掉前面的#）
-</code></pre><p>安装grub引导：</p><pre tabindex=0><code>grub-install --target=x86_64-efi --efi-directory=/efi --bootloader-id=GRUB
-</code></pre><p>更新grub引导源：</p><pre tabindex=0><code>grub-mkconfig -o /boot/grub/grub.cfg
-</code></pre><p>完成安装重启：</p><pre tabindex=0><code>exit                # 退回安装环境#
+</code></pre><p>编辑grub：</p>
+<pre tabindex="0"><code>GRUB_DISABLE_OS_PROBER=flase（去掉前面的#）
+</code></pre><p>安装grub引导：</p>
+<pre tabindex="0"><code>grub-install --target=x86_64-efi --efi-directory=/efi --bootloader-id=GRUB
+</code></pre><p>更新grub引导源：</p>
+<pre tabindex="0"><code>grub-mkconfig -o /boot/grub/grub.cfg
+</code></pre><p>完成安装重启：</p>
+<pre tabindex="0"><code>exit                # 退回安装环境#
 umount -R  /mnt     # 卸载新分区
 reboot              # 重启
-</code></pre><p>注意重启前U盘拔掉。</p><p>重启后，开启 dhcp 服务，即可连接网络：</p><pre tabindex=0><code>systemctl start dhcpcd（启动dhcp）
+</code></pre><p>注意重启前U盘拔掉。</p>
+<p>重启后，开启 dhcp 服务，即可连接网络：</p>
+<pre tabindex="0"><code>systemctl start dhcpcd（启动dhcp）
 ping www.baidu.com
-</code></pre><h2 id=3安装archlinux桌面>3.安装Archlinux桌面</h2><p>安装KDE Plasma桌面：</p><pre tabindex=0><code>pacman -S plasma-meta konsole dolphin
-</code></pre><p>所有选项皆为默认，直到安装Plasma桌面安装完成。</p><p>开启自启显示管理：</p><pre tabindex=0><code>systemctl enanble sddm
-</code></pre><p>安装其它应用</p><pre tabindex=0><code>pacman -S konsole dolphin ark kate
-</code></pre><p>再退出，重启：</p><pre tabindex=0><code>exit
+</code></pre><h2 id="3安装archlinux桌面">3.安装Archlinux桌面</h2>
+<p>安装KDE Plasma桌面：</p>
+<pre tabindex="0"><code>pacman -S plasma-meta konsole dolphin
+</code></pre><p>所有选项皆为默认，直到安装Plasma桌面安装完成。</p>
+<p>开启自启显示管理：</p>
+<pre tabindex="0"><code>systemctl enanble sddm
+</code></pre><p>安装其它应用</p>
+<pre tabindex="0"><code>pacman -S konsole dolphin ark kate
+</code></pre><p>再退出，重启：</p>
+<pre tabindex="0"><code>exit
 reboot
-</code></pre><h2 id=4引导archlinux和windows10双系统>4.引导Archlinux和windows10双系统</h2><p>进入KDE Plasma桌面并命令：</p><pre tabindex=0><code>sudo grub-mkcofig -o /boot/grub/grub.cfg
-</code></pre><p>安装中文字体：</p><pre tabindex=0><code>sudo pacman -S abobe-source-han-sans-cn-fonts
-</code></pre><p>再次重启，引导可以看到windows了</p><pre tabindex=0><code>reboot
-</code></pre><p>至于其它安装配置不在讨论范围内，后续自己折腾可以看看 <a href=https://archlinuxstudio.github.io/ArchLinuxTutorial/#/>archlinux</a>教程。至此，安装教程完成。</p><hr><p>参考：<a href=https://archlinuxstudio.github.io/ArchLinuxTutorial/#/>archlinux教程</a></p><p><img src=https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Toronto-Itinerary.jpg?imageMogr2/format/webp alt=toront loading=lazy decoding=async></p></div></div><head><script src=https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js defer></script><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/jsSocials/1.5.0/jssocials.min.css><script src=https://cdnjs.cloudflare.com/ajax/libs/jsSocials/1.5.0/jssocials.min.js defer></script><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/nanogallery2/3.0.5/css/nanogallery2.min.css><script src=https://cdnjs.cloudflare.com/ajax/libs/nanogallery2/3.0.5/jquery.nanogallery2.min.js defer></script></head><body><div class="container has-text-centered"><aside><div id=share></div></aside><script>(function(){function e(){typeof $!="undefined"&&typeof $.fn.jsSocials!="undefined"?$("#share").jsSocials({showLabel:!1,showCount:!1,shares:["email","twitter"]}):setTimeout(e,500)}document.addEventListener("DOMContentLoaded",e)})()</script>本作品采用<a rel=license href=http://creativecommons.org/licenses/by-nc-sa/4.0/>
-知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>进行许可。</div></body><div class=container><link rel=stylesheet href=https://www.zaqizaba.xyz/css/waline.css integrity=MIWed8SQ6eGu4KgWgXR+ebvVSEPJ5dY5TddaHHyztyy2MixKV4sgE02SNvTgq/EI crossorigin=anonymous><script src=https://unpkg.com/@waline/client@2.15.8/dist/waline.js></script><div id=waline></div><script>var locale={nick:"😐的爱称",nickError:"昵称不能少于3个字符",mail:"你的📫",mailError:"请填写正确的邮件地址",link:"🌐的链接",placeholder:"此刻你看完这篇博文脑海中的想法是什么呢，大胆说出来吧ヾ(•ω•`)o",sofa:"🍿🍿🍿",submit:"提交",reply:"回复",cancelReply:"取消回复",comment:"评论",more:"加载更多...",preview:"预览",emoji:"表情",expand:"查看更多...",seconds:"秒前",minutes:"分钟前",hours:"小时前",days:"天前",now:"刚刚",uploading:"正在上传",login:"登录",logout:"退出",admin:"博主",word:"字",wordHint:`评论字数应在 $0 到 $1 字之间！
-当前字数：$2`};document.addEventListener("DOMContentLoaded",function(){typeof Waline!="undefined"?Waline.init({el:"#waline",lang:"zh-CN",dark:"auto",search:!1,serverURL:"https://www.19964662.xyz",locale,emoji:["https://gcore.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/","https://cdn.cbd.int/sarakale-assets@1.2.1/emoji/acfun_color/"]}):console.error("Waline is not loaded correctly")})</script></div><script async src="https://www.googletagmanager.com/gtag/js?id=G-FFW576XTMR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-FFW576XTMR")</script><style>.f-link{color:#760411;text-decoration:none;transition:.2s}.f-link:hover{color:#444!important;text-decoration:none!important}.c-sym{font-size:1.1rem;vertical-align:middle}</style><footer style=text-align:center;padding:20px;font-size:.9rem;color:#666><span class=c-sym>&copy;</span> 2019-2026 <a href=/ class=f-link>阿波尔的博客</a>
-| <a href=/privacy/ class=f-link target=_blank>隐私政策 (Privacy Policy)</a>
-| Powered by <a href=https://gohugo.io/ class=f-link>Hugo</a></footer></body></html>
+</code></pre><h2 id="4引导archlinux和windows10双系统">4.引导Archlinux和windows10双系统</h2>
+<p>进入KDE Plasma桌面并命令：</p>
+<pre tabindex="0"><code>sudo grub-mkcofig -o /boot/grub/grub.cfg
+</code></pre><p>安装中文字体：</p>
+<pre tabindex="0"><code>sudo pacman -S abobe-source-han-sans-cn-fonts
+</code></pre><p>再次重启，引导可以看到windows了</p>
+<pre tabindex="0"><code>reboot
+</code></pre><p>至于其它安装配置不在讨论范围内，后续自己折腾可以看看 <a href="https://archlinuxstudio.github.io/ArchLinuxTutorial/#/">archlinux</a>教程。至此，安装教程完成。</p>
+<hr>
+<p>参考：<a href="https://archlinuxstudio.github.io/ArchLinuxTutorial/#/">archlinux教程</a></p>
+<p><img 
+  src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/Toronto-Itinerary.jpg?imageMogr2/format/webp" 
+  alt="toront" 
+   
+  loading="lazy" 
+  decoding="async" 
+/></p>
+
+  </div>
+</div>
+<head>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jsSocials/1.5.0/jssocials.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsSocials/1.5.0/jssocials.min.js" defer></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/nanogallery2/3.0.5/css/nanogallery2.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/nanogallery2/3.0.5/jquery.nanogallery2.min.js" defer></script>
+</head>
+<body>
+<div class="container has-text-centered">
+    
+    <aside><div id="share"></div></aside>
+    
+    <script>
+    (function() {
+        function initShare() {
+            if (typeof $ !== "undefined" && typeof $.fn.jsSocials !== "undefined") {
+                $("#share").jsSocials({
+                    showLabel: false,
+                    showCount: false,
+                    shares: ["email", "twitter"]
+                });
+            } else {
+                
+                setTimeout(initShare, 500);
+            }
+        }
+        document.addEventListener('DOMContentLoaded', initShare);
+    })();
+    </script>
+    
+    本作品采用<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+    知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>进行许可。
+</div>
+</body>
+<div class="container">
+  <link rel="stylesheet" href="https://www.zaqizaba.xyz/css/waline.css" 
+        integrity="MIWed8SQ6eGu4KgWgXR+ebvVSEPJ5dY5TddaHHyztyy2MixKV4sgE02SNvTgq/EI" 
+        crossorigin="anonymous">
+  <script src="https://unpkg.com/@waline/client@2.15.8/dist/waline.js"></script>
+
+  <div id="waline"></div>
+
+  <script>
+    var locale = {
+      nick: '😐的爱称',
+      nickError: '昵称不能少于3个字符',
+      mail: '你的📫',
+      mailError: '请填写正确的邮件地址',
+      link: '🌐的链接',
+      placeholder: '此刻你看完这篇博文脑海中的想法是什么呢，大胆说出来吧ヾ(•ω•`)o',
+      sofa: '🍿🍿🍿',
+      submit: '提交',
+      reply: '回复',
+      cancelReply: '取消回复',
+      comment: '评论',
+      more: '加载更多...',
+      preview: '预览',
+      emoji: '表情',
+      expand: '查看更多...',
+      seconds: '秒前',
+      minutes: '分钟前',
+      hours: '小时前',
+      days: '天前',
+      now: '刚刚',
+      uploading: '正在上传',
+      login: '登录',
+      logout: '退出',
+      admin: '博主',
+      word: '字',
+      wordHint: '评论字数应在 $0 到 $1 字之间！\n当前字数：$2',
+    };
+
+    document.addEventListener('DOMContentLoaded', function () {
+      if (typeof Waline !== 'undefined') {
+        Waline.init({
+          el: '#waline',
+          lang: 'zh-CN',
+          dark: 'auto',
+          search: false,
+          serverURL: 'https://www.19964662.xyz',
+          locale,
+          emoji: [
+            'https://gcore.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/',
+            'https://cdn.cbd.int/sarakale-assets@1.2.1/emoji/acfun_color/'
+          ],
+        });
+      } else {
+        console.error('Waline is not loaded correctly');
+      }
+    });
+  </script>
+</div>   
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FFW576XTMR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-FFW576XTMR');
+</script>
+
+
+
+
+<style>
+  .f-link { color: #760411; text-decoration: none; transition: .2s; }
+  .f-link:hover { color: #444 !important; text-decoration: none !important; }
+  .c-sym { font-size: 1.1rem; vertical-align: middle; }  
+</style>
+
+<footer style="text-align: center; padding: 20px; font-size: 0.9rem; color: #666;">
+  <span class="c-sym">&copy;</span> 2019-2026 <a href="/" class="f-link">阿波尔的博客</a> 
+  | <a href="/privacy/" class="f-link" target="_blank">隐私政策 (Privacy Policy)</a> 
+  | Powered by <a href="https://gohugo.io/" class="f-link">Hugo</a>
+</footer>
+</body>
+</html>

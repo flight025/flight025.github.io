@@ -1,44 +1,250 @@
-<!doctype html><html lang=zh-cn><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Typora的一些扩展应用 | 阿波尔的博客</title><link rel=preconnect href=https://cdn.jsdelivr.net crossorigin><link rel=preconnect href=https://cdnjs.cloudflare.com crossorigin><link rel=preconnect href=https://pagead2.googlesyndication.com crossorigin><link rel=dns-prefetch href=https://cdn.bootcdn.net><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5242216254086529" crossorigin=anonymous></script><link rel=stylesheet href=https://www.zaqizaba.xyz/css/styles.css><link rel=stylesheet href=https://www.zaqizaba.xyz/css/fonts.css integrity=nHA4sQes5N4kC/1rRzsd9KcxNPPEG1e4F7kjT3rg7mhweyYUuxGU985+SOHzZCsN crossorigin=anonymous><link rel=stylesheet href=/css/highlight.min.css><link rel=preload href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin=anonymous as=style onload='this.onload=null,this.rel="stylesheet"'><noscript><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css crossorigin=anonymous></noscript><style>@font-face{font-family:'font awesome 5 brands';font-style:normal;font-weight:400;font-display:swap;src:url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/webfonts/fa-brands-400.woff2)format('woff2')}@font-face{font-family:'font awesome 5 free';font-style:normal;font-weight:900;font-display:swap;src:url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/webfonts/fa-solid-900.woff2)format('woff2')}@font-face{font-family:'font awesome 5 free';font-style:normal;font-weight:400;font-display:swap;src:url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/webfonts/fa-regular-400.woff2)format('woff2')}</style><script>MathJax={tex:{inlineMath:[["$","$"],["\\(","\\)"]]},svg:{fontCache:"global"}}</script><script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin=anonymous defer></script><script src=https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js integrity=sha384-1H217gwSVyLSIfaLxHbE7dRb3v4mYCKbpQvzx0cegeju1MVsGrX5xXxAvs/HgeFs crossorigin=anonymous defer></script><script src=https://www.zaqizaba.xyz/js/highlight.js defer></script><script defer>document.addEventListener("DOMContentLoaded",function(){hljs.initHighlightingOnLoad()})</script><script src=https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.min.js defer></script><script src=https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js defer></script></head><body><div class=container><nav class="navbar level"><div class=navbar-brand><a class=nav-item href=https://www.zaqizaba.xyz/><h1 class="title is-3">阿波尔的博客</h1></a></div><div class="navbar-menu has-text-centered is-active"><div class="navbar-end is-centered"><a href=https://www.zaqizaba.xyz/about rel=me><span class=icon><i class="fas fa-info"></i>
-</span></a><a href=https://www.zaqizaba.xyz/archives rel=me><span class=icon><i class="fas fa-archive"></i>
-</span></a><a href=https://www.zaqizaba.xyz/comments rel=me><span class=icon><i class="fas fa-comment"></i>
-</span></a><a href=https://github.com/flight025 rel=me><span class=icon><i class="fab fa-github"></i>
-</span></a><a href=https://www.zhihu.com/people/a-gan-jing-shen rel=me><span class=icon><i class="fab fa-zhihu"></i>
-</span></a><a href=https://twitter.com/666GXF rel=me><span class=icon><i class="fab fa-twitter"></i>
-</span></a><a href=https://www.zaqizaba.xyz/index.xml rel=me><span class=icon><i class="fa fa-rss"></i></span></a></div></div></nav></div><div class=container><h2 class="subtitle is-6">November 24, 2021</h2><h1 class="subtitle is-size-4-mobile is-size-3-desktop">Typora的一些扩展应用</h1><div class=content><img src=https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/iF31zInH.png?imageMogr2/format/webp loading=lazy style=zoom:150%><p>Typora有一些扩展应用,可以说对于有些专业来讲,真的很顶。👍</p><h4 id=1latex的应用>1.$LaTeX$的应用</h4><p>$LaTeX$主要是应用在文章公式排版上,具体是：</p><blockquote><p><strong>1.行内公式(inline)</strong>：用 <code>$...$</code>括起公式，公式会出现在行内。</p><p><strong>2.块间公式（display）</strong>：用 <code>$$...$$</code> 括起公式（注意 <code>$$ </code>后需要换行），公式会默认显示在行中间。</p></blockquote><p>比如一元二次方程：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-latex data-lang=latex><span style=display:flex><span><span style=color:#e6db74>$$</span>{a\mathop{{x}}\nolimits^{{<span style=color:#ae81ff>2</span>}}<span style=color:#f92672>+</span>bx<span style=color:#f92672>+</span>c<span style=color:#f92672>=</span><span style=color:#ae81ff>0</span>}<span style=color:#e6db74>$$</span>
-</span></span></code></pre></div><p>$${a\mathop{{x}}\nolimits^{{2}}+bx+c=0}$$</p><p>又比如统计：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-latex data-lang=latex><span style=display:flex><span><span style=color:#e6db74>$$</span><span style=color:#f92672>(</span>\bar x<span style=color:#f92672>)</span> \bar x <span style=color:#f92672>(</span>\hat y<span style=color:#f92672>=</span>\hat ax <span style=color:#f92672>+</span> \hat b<span style=color:#f92672>)</span> \hat y<span style=color:#f92672>=</span>\hat a x <span style=color:#f92672>+</span> \hat b <span style=color:#f92672>(</span>\sum\limits_{i<span style=color:#f92672>=</span><span style=color:#ae81ff>1</span>}^{n}{x_i}<span style=color:#f92672>)</span> \sum\limits_{i<span style=color:#f92672>=</span><span style=color:#ae81ff>1</span>}^{n}{x_i}<span style=color:#e6db74>$$</span>
-</span></span></code></pre></div><p>$$(\bar x) \bar x (\hat y=\hat ax + \hat b) \hat y=\hat a x + \hat b (\sum\limits_{i=1}^{n}{x_i}) \sum\limits_{i=1}^{n}{x_i}$$</p><p>还有逻辑表示：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-latex data-lang=latex><span style=display:flex><span><span style=color:#e6db74>$$</span><span style=color:#f92672>(</span>\neg p:x^<span style=color:#ae81ff>2</span>\lt <span style=color:#ae81ff>1</span><span style=color:#f92672>)</span> \neg p:x^<span style=color:#ae81ff>2</span>\lt <span style=color:#ae81ff>1</span> <span style=color:#f92672>(</span>\forall x<span style=color:#f92672>)</span> \forall x <span style=color:#f92672>(</span>\exists y<span style=color:#f92672>)</span> \exists y <span style=color:#f92672>(</span>p\lor q \Rightarrow p \land q<span style=color:#f92672>)</span> p\lor q \Rightarrow p \land q <span style=color:#f92672>((</span>p \to q<span style=color:#f92672>)</span>\land <span style=color:#f92672>(</span>p \gets q<span style=color:#f92672>))</span> <span style=color:#f92672>(</span>p \to q<span style=color:#f92672>)</span>\land <span style=color:#f92672>(</span>p \gets q<span style=color:#f92672>)</span> <span style=color:#f92672>(</span>\Leftrightarrow<span style=color:#f92672>)</span> \Leftrightarrow <span style=color:#f92672>(</span>\Leftarrow<span style=color:#f92672>)</span> \Leftarrow<span style=color:#e6db74>$$</span>
-</span></span></code></pre></div><p>$$(\neg p:x^2\lt 1) \neg p:x^2\lt 1 (\forall x) \forall x (\exists y) \exists y (p\lor q \Rightarrow p \land q) p\lor q \Rightarrow p \land q ((p \to q)\land (p \gets q)) (p \to q)\land (p \gets q) (\Leftrightarrow) \Leftrightarrow (\Leftarrow) \Leftarrow$$</p><h4 id=2上标和下标表示>2.上标和下标表示</h4><p>上标，例如X的平方：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-apl data-lang=apl><span style=display:flex><span><span style=color:#f92672>&lt;</span>center<span style=color:#f92672>&gt;</span>X<span style=color:#f92672>&lt;</span>sup<span style=color:#f92672>&gt;</span><span style=color:#ae81ff>2</span><span style=color:#f92672>&lt;</span><span style=color:#a6e22e>/</span>sup<span style=color:#f92672>&gt;&lt;</span><span style=color:#a6e22e>/</span>center<span style=color:#f92672>&gt;</span>
-</span></span></code></pre></div><center>X<sup>2</sup></center><p>下标，例如水的分子式：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-apl data-lang=apl><span style=display:flex><span><span style=color:#f92672>&lt;</span>center<span style=color:#f92672>&gt;</span>H<span style=color:#f92672>&lt;</span>sub<span style=color:#f92672>&gt;</span><span style=color:#ae81ff>2</span><span style=color:#f92672>&lt;</span><span style=color:#a6e22e>/</span>sub<span style=color:#f92672>&gt;</span>O<span style=color:#f92672>&lt;</span><span style=color:#a6e22e>/</span>center<span style=color:#f92672>&gt;</span>
-</span></span></code></pre></div><center>H<sub>2</sub>O</center><p>著名的<strong>质能转换公式</strong>（m指代静止质量时），就可以用上下标表示为：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-apl data-lang=apl><span style=display:flex><span><span style=color:#f92672>&lt;</span>center<span style=color:#f92672>&gt;</span>E<span style=color:#f92672>&lt;</span>sub<span style=color:#f92672>&gt;</span><span style=color:#ae81ff>0</span><span style=color:#f92672>&lt;</span><span style=color:#a6e22e>/</span>sub<span style=color:#f92672>&gt;=</span>mc<span style=color:#f92672>&lt;</span>sup<span style=color:#f92672>&gt;</span><span style=color:#ae81ff>2</span><span style=color:#f92672>&lt;</span><span style=color:#a6e22e>/</span>sup<span style=color:#f92672>&gt;&lt;</span><span style=color:#a6e22e>/</span>center<span style=color:#f92672>&gt;</span>
-</span></span></code></pre></div><center>E<sub>0</sub>=mc<sup>2</sup></center><p>用$LaTeX$表示以上三个例子：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-latex data-lang=latex><span style=display:flex><span><span style=color:#e6db74>$$</span>X^<span style=color:#ae81ff>2</span><span style=color:#e6db74>$$</span>
-</span></span><span style=display:flex><span><span style=color:#e6db74>$$</span>{H_<span style=color:#ae81ff>2</span>O}<span style=color:#e6db74>$$</span>
-</span></span><span style=display:flex><span><span style=color:#e6db74>$$</span>E_<span style=color:#ae81ff>0</span><span style=color:#f92672>=</span>mc^<span style=color:#ae81ff>2</span><span style=color:#e6db74>$$</span>
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Typora的一些扩展应用 | 阿波尔的博客</title>
+
+  
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin>
+  <link rel="dns-prefetch" href="https://cdn.bootcdn.net">
+
+  
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5242216254086529" crossorigin="anonymous"></script>
+
+  
+  <link rel="stylesheet" href="https://www.zaqizaba.xyz/css/styles.css">
+  <link rel="stylesheet" href="https://www.zaqizaba.xyz/css/fonts.css"
+        integrity="nHA4sQes5N4kC/1rRzsd9KcxNPPEG1e4F7kjT3rg7mhweyYUuxGU985+SOHzZCsN"
+        crossorigin="anonymous">
+
+  
+   
+   <link rel="stylesheet" href="/css/highlight.min.css">
+   
+
+  
+   
+   
+  
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous">
+  </noscript>
+  
+  <style>
+  @font-face {
+    font-family: 'Font Awesome 5 Brands';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/webfonts/fa-brands-400.woff2') format('woff2');
+  }
+  @font-face {
+    font-family: 'Font Awesome 5 Free';
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/webfonts/fa-solid-900.woff2') format('woff2');
+  }
+  @font-face {
+    font-family: 'Font Awesome 5 Free';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/webfonts/fa-regular-400.woff2') format('woff2');
+  }
+</style>
+
+  
+ 
+
+  
+  <script>
+    MathJax = {
+      tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+      svg: { fontCache: 'global' }
+    };
+  </script>
+
+  
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"
+          integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw="
+          crossorigin="anonymous" defer></script>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha384-1H217gwSVyLSIfaLxHbE7dRb3v4mYCKbpQvzx0cegeju1MVsGrX5xXxAvs/HgeFs" crossorigin="anonymous" defer></script>
+
+  
+  <script src="https://www.zaqizaba.xyz/js/highlight.js" defer></script>
+  <script defer>
+    document.addEventListener('DOMContentLoaded', function () {
+      hljs.initHighlightingOnLoad();
+    });
+  </script>
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.min.js" defer></script>
+  
+
+  
+  
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js" defer></script>
+  
+
+</head>
+<body>
+<div class="container">
+    <nav class="navbar level">
+      <div class="navbar-brand">
+          <a class="nav-item" href="https://www.zaqizaba.xyz/"><h1 class="title is-3">阿波尔的博客</h1></a>
+      </div>           
+      <div class="navbar-menu has-text-centered is-active">
+          <div class="navbar-end is-centered">
+              
+                <a href="https://www.zaqizaba.xyz/about" rel="me">
+                  <span class="icon">
+                    <i class="fas fa-info"></i>
+                  </span>
+                </a>
+              
+                <a href="https://www.zaqizaba.xyz/archives" rel="me">
+                  <span class="icon">
+                    <i class="fas fa-archive"></i>
+                  </span>
+                </a>
+              
+                <a href="https://www.zaqizaba.xyz/comments" rel="me">
+                  <span class="icon">
+                    <i class="fas fa-comment"></i>
+                  </span>
+                </a>
+              
+                <a href="https://github.com/flight025" rel="me">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                </a>
+              
+                <a href="https://www.zhihu.com/people/a-gan-jing-shen" rel="me">
+                  <span class="icon">
+                    <i class="fab fa-zhihu"></i>
+                  </span>
+                </a>
+              
+                <a href="https://twitter.com/666GXF" rel="me">
+                  <span class="icon">
+                    <i class="fab fa-twitter"></i>
+                  </span>
+                </a>
+              
+                <a href="https://www.zaqizaba.xyz/index.xml" rel="me">
+                  <span class="icon">
+                    <i class="fa fa-rss"></i>
+                  </span>
+                </a>
+              
+           </div>
+      </div>
+    </nav>
+  </div>
+<div class="container">
+  <h2 class="subtitle is-6">November 24, 2021</h2>
+  <h1 class="subtitle is-size-4-mobile is-size-3-desktop">Typora的一些扩展应用</h1>
+  <div class="content">
+    <img src="https://css-1252531711.cos.ap-chongqing.myqcloud.com/picture/iF31zInH.png?imageMogr2/format/webp" loading="lazy" style="zoom:150%;" />
+<p>Typora有一些扩展应用,可以说对于有些专业来讲,真的很顶。👍</p>
+<h4 id="1latex的应用">1.$LaTeX$的应用</h4>
+<p>$LaTeX$主要是应用在文章公式排版上,具体是：</p>
+<blockquote>
+<p><strong>1.行内公式(inline)</strong>：用 <code>$...$</code>括起公式，公式会出现在行内。</p>
+<p><strong>2.块间公式（display）</strong>：用 <code>$$...$$</code> 括起公式（注意 <code>$$ </code>后需要换行），公式会默认显示在行中间。</p>
+</blockquote>
+<p>比如一元二次方程：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-latex" data-lang="latex"><span style="display:flex;"><span><span style="color:#e6db74">$$</span>{a\mathop{{x}}\nolimits^{{<span style="color:#ae81ff">2</span>}}<span style="color:#f92672">+</span>bx<span style="color:#f92672">+</span>c<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>}<span style="color:#e6db74">$$</span>
+</span></span></code></pre></div><p>$${a\mathop{{x}}\nolimits^{{2}}+bx+c=0}$$</p>
+<p>又比如统计：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-latex" data-lang="latex"><span style="display:flex;"><span><span style="color:#e6db74">$$</span><span style="color:#f92672">(</span>\bar x<span style="color:#f92672">)</span> \bar x <span style="color:#f92672">(</span>\hat y<span style="color:#f92672">=</span>\hat ax <span style="color:#f92672">+</span> \hat b<span style="color:#f92672">)</span> \hat y<span style="color:#f92672">=</span>\hat a x <span style="color:#f92672">+</span> \hat b <span style="color:#f92672">(</span>\sum\limits_{i<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>}^{n}{x_i}<span style="color:#f92672">)</span> \sum\limits_{i<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>}^{n}{x_i}<span style="color:#e6db74">$$</span>
+</span></span></code></pre></div><p>$$(\bar x) \bar x (\hat y=\hat ax + \hat b) \hat y=\hat a x + \hat b (\sum\limits_{i=1}^{n}{x_i}) \sum\limits_{i=1}^{n}{x_i}$$</p>
+<p>还有逻辑表示：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-latex" data-lang="latex"><span style="display:flex;"><span><span style="color:#e6db74">$$</span><span style="color:#f92672">(</span>\neg p:x^<span style="color:#ae81ff">2</span>\lt <span style="color:#ae81ff">1</span><span style="color:#f92672">)</span> \neg p:x^<span style="color:#ae81ff">2</span>\lt <span style="color:#ae81ff">1</span> <span style="color:#f92672">(</span>\forall x<span style="color:#f92672">)</span> \forall x <span style="color:#f92672">(</span>\exists y<span style="color:#f92672">)</span> \exists y <span style="color:#f92672">(</span>p\lor q \Rightarrow p \land q<span style="color:#f92672">)</span> p\lor q \Rightarrow p \land q <span style="color:#f92672">((</span>p \to q<span style="color:#f92672">)</span>\land <span style="color:#f92672">(</span>p \gets q<span style="color:#f92672">))</span> <span style="color:#f92672">(</span>p \to q<span style="color:#f92672">)</span>\land <span style="color:#f92672">(</span>p \gets q<span style="color:#f92672">)</span> <span style="color:#f92672">(</span>\Leftrightarrow<span style="color:#f92672">)</span> \Leftrightarrow <span style="color:#f92672">(</span>\Leftarrow<span style="color:#f92672">)</span> \Leftarrow<span style="color:#e6db74">$$</span>
+</span></span></code></pre></div><p>$$(\neg p:x^2\lt 1) \neg p:x^2\lt 1 (\forall x) \forall x (\exists y) \exists y (p\lor q \Rightarrow p \land q) p\lor q \Rightarrow p \land q ((p \to q)\land (p \gets q)) (p \to q)\land (p \gets q) (\Leftrightarrow) \Leftrightarrow (\Leftarrow) \Leftarrow$$</p>
+<h4 id="2上标和下标表示">2.上标和下标表示</h4>
+<p>上标，例如X的平方：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-apl" data-lang="apl"><span style="display:flex;"><span><span style="color:#f92672">&lt;</span>center<span style="color:#f92672">&gt;</span>X<span style="color:#f92672">&lt;</span>sup<span style="color:#f92672">&gt;</span><span style="color:#ae81ff">2</span><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">/</span>sup<span style="color:#f92672">&gt;&lt;</span><span style="color:#a6e22e">/</span>center<span style="color:#f92672">&gt;</span>
+</span></span></code></pre></div><center>X<sup>2</sup></center>
+<p>下标，例如水的分子式：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-apl" data-lang="apl"><span style="display:flex;"><span><span style="color:#f92672">&lt;</span>center<span style="color:#f92672">&gt;</span>H<span style="color:#f92672">&lt;</span>sub<span style="color:#f92672">&gt;</span><span style="color:#ae81ff">2</span><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">/</span>sub<span style="color:#f92672">&gt;</span>O<span style="color:#f92672">&lt;</span><span style="color:#a6e22e">/</span>center<span style="color:#f92672">&gt;</span>
+</span></span></code></pre></div><center>H<sub>2</sub>O</center>                               
+<p>著名的<strong>质能转换公式</strong>（m指代静止质量时），就可以用上下标表示为：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-apl" data-lang="apl"><span style="display:flex;"><span><span style="color:#f92672">&lt;</span>center<span style="color:#f92672">&gt;</span>E<span style="color:#f92672">&lt;</span>sub<span style="color:#f92672">&gt;</span><span style="color:#ae81ff">0</span><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">/</span>sub<span style="color:#f92672">&gt;=</span>mc<span style="color:#f92672">&lt;</span>sup<span style="color:#f92672">&gt;</span><span style="color:#ae81ff">2</span><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">/</span>sup<span style="color:#f92672">&gt;&lt;</span><span style="color:#a6e22e">/</span>center<span style="color:#f92672">&gt;</span>
+</span></span></code></pre></div><center>E<sub>0</sub>=mc<sup>2</sup></center>  
+<p>用$LaTeX$表示以上三个例子：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-latex" data-lang="latex"><span style="display:flex;"><span><span style="color:#e6db74">$$</span>X^<span style="color:#ae81ff">2</span><span style="color:#e6db74">$$</span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">$$</span>{H_<span style="color:#ae81ff">2</span>O}<span style="color:#e6db74">$$</span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">$$</span>E_<span style="color:#ae81ff">0</span><span style="color:#f92672">=</span>mc^<span style="color:#ae81ff">2</span><span style="color:#e6db74">$$</span>
 </span></span></code></pre></div><p><strong>$$X^2$$</strong>
 <strong>$${H_2O}$$</strong>
-<strong>$$E_0=mc^2$$</strong></p><h4 id=3高亮表示>3.高亮表示</h4><p>文字高亮：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-dart data-lang=dart><span style=display:flex><span><span style=color:#960050;background-color:#1e0010>这将会是一次压倒性的</span><span style=color:#f92672>&lt;</span>font color<span style=color:#f92672>=</span>blue<span style=color:#f92672>&gt;</span><span style=color:#960050;background-color:#1e0010>胜利</span><span style=color:#f92672>&lt;/</span>font<span style=color:#f92672>&gt;</span>
-</span></span></code></pre></div><p>这将会是一次压倒性的 <strong><font color=blue>胜利</font></strong></p><p>英文单词高亮：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-scala data-lang=scala><span style=display:flex><span><span style=color:#f92672>&lt;</span>font color<span style=color:#66d9ef>=</span>tomato<span style=color:#f92672>&gt;</span><span style=color:#a6e22e>Only</span> those who will risk<span style=color:#f92672>&lt;/</span>font<span style=color:#f92672>&gt;</span>going too far can possibly find out how far one can go<span style=color:#f92672>.--</span>T<span style=color:#f92672>.</span> S<span style=color:#f92672>.</span> <span style=color:#a6e22e>Eliot</span>
-</span></span></code></pre></div><p><strong><font color=tomato>Only those who will risk</font></strong> going too far can possibly find out how far one can go.</p><p>​<p align=right><strong>&ndash;T. S. Eliot</strong></p></p><p>代码高亮:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-go data-lang=go><span style=display:flex><span><span style=color:#f92672>package</span> <span style=color:#a6e22e>main</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#f92672>import</span> <span style=color:#e6db74>&#34;&lt;font color=yellow&gt;fmt&lt;/font&gt;&#34;</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>func</span> <span style=color:#a6e22e>main</span>() {
-</span></span><span style=display:flex><span>    <span style=color:#a6e22e>fmt</span>.<span style=color:#a6e22e>Println</span>(&lt;<span style=color:#a6e22e>font</span> <span style=color:#a6e22e>color</span>=<span style=color:#a6e22e>yellow</span>&gt;<span style=color:#e6db74>&#34;Hello, world&#34;</span>&lt;<span style=color:#f92672>/</span><span style=color:#a6e22e>font</span>&gt;)
-</span></span><span style=display:flex><span>}
-</span></span></code></pre></div><p>package main</p><p>import &ldquo;<strong><font color=yellow>fmt</font></strong>&rdquo;</p><p>func main() {
+<strong>$$E_0=mc^2$$</strong></p>
+<h4 id="3高亮表示">3.高亮表示</h4>
+<p>文字高亮：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-dart" data-lang="dart"><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">这将会是一次压倒性的</span><span style="color:#f92672">&lt;</span>font color<span style="color:#f92672">=</span>blue<span style="color:#f92672">&gt;</span><span style="color:#960050;background-color:#1e0010">胜利</span><span style="color:#f92672">&lt;/</span>font<span style="color:#f92672">&gt;</span>
+</span></span></code></pre></div><p>这将会是一次压倒性的 <strong><font color=blue>胜利</font></strong></p>
+<p>英文单词高亮：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-scala" data-lang="scala"><span style="display:flex;"><span><span style="color:#f92672">&lt;</span>font color<span style="color:#66d9ef">=</span>tomato<span style="color:#f92672">&gt;</span><span style="color:#a6e22e">Only</span> those who will risk<span style="color:#f92672">&lt;/</span>font<span style="color:#f92672">&gt;</span>going too far can possibly find out how far one can go<span style="color:#f92672">.--</span>T<span style="color:#f92672">.</span> S<span style="color:#f92672">.</span> <span style="color:#a6e22e">Eliot</span>
+</span></span></code></pre></div><p><strong><font color=tomato>Only those who will risk</font></strong> going too far can possibly find out how far one can go.</p>
+<p>​                                                                                                                                                 <p align="right"><strong>&ndash;T. S. Eliot</strong></p></p>
+<p>代码高亮:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> <span style="color:#e6db74">&#34;&lt;font color=yellow&gt;fmt&lt;/font&gt;&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(&lt;<span style="color:#a6e22e">font</span> <span style="color:#a6e22e">color</span>=<span style="color:#a6e22e">yellow</span>&gt;<span style="color:#e6db74">&#34;Hello, world&#34;</span>&lt;<span style="color:#f92672">/</span><span style="color:#a6e22e">font</span>&gt;)
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>package main</p>
+<p>import &ldquo;<strong><font color=yellow>fmt</font></strong>&rdquo;</p>
+<p>func main() {
 fmt.Println(<strong><font color=yellow>&ldquo;Hello, world&rdquo;</font></strong>)
-}</p><h4 id=4mermaid>4.mermaid</h4><h5 id=4-1序列图>4-1.序列图</h5><pre tabindex=0><code>sequenceDiagram
+}</p>
+<h4 id="4mermaid">4.mermaid</h4>
+<h5 id="4-1序列图">4-1.序列图</h5>
+<pre tabindex="0"><code>sequenceDiagram
     Alice-&gt;&gt;John: Hello John, how are you?
     activate John
     John--&gt;&gt;Alice: Great!
     deactivate John
-</code></pre><div class=mermaid>sequenceDiagram
-Alice->>John: Hello John, how are you?
-activate John
-John-->>Alice: Great!
-deactivate John</div><h5 id=4-2流程图>4-2.流程图</h5><pre tabindex=0><code>flowchart TB
+</code></pre><div class="mermaid">sequenceDiagram
+    Alice->>John: Hello John, how are you?
+    activate John
+    John-->>Alice: Great!
+    deactivate John
+</div>
+<h5 id="4-2流程图">4-2.流程图</h5>
+<pre tabindex="0"><code>flowchart TB
     A &amp; B--&gt; C &amp; D
-</code></pre><div class=mermaid>flowchart TB
-A & B--> C & D</div><h5 id=4-3类图>4-3.类图</h5><pre tabindex=0><code>classDiagram
+</code></pre><div class="mermaid">
+flowchart TB
+    A & B--> C & D
+</div>
+<h5 id="4-3类图">4-3.类图</h5>
+<pre tabindex="0"><code>classDiagram
 classA &lt;|-- classB
 classC *-- classD
 classE o-- classF
@@ -47,7 +253,7 @@ classI -- classJ
 classK &lt;.. classL
 classM &lt;|.. classN
 classO .. classP
-</code></pre><div class=mermaid>classDiagram
+</code></pre><div class="mermaid">classDiagram
 classA <|-- classB
 classC *-- classD
 classE o-- classF
@@ -55,7 +261,10 @@ classG <-- classH
 classI -- classJ
 classK <.. classL
 classM <|.. classN
-classO .. classP</div><h5 id=4-4gantt图>4-4.Gantt图</h5><pre tabindex=0><code>gantt
+classO .. classP
+</div>
+<h5 id="4-4gantt图">4-4.Gantt图</h5>
+<pre tabindex="0"><code>gantt
     title A Gantt Diagram
     dateFormat  YYYY-MM-DD
     section Section
@@ -64,22 +273,29 @@ classO .. classP</div><h5 id=4-4gantt图>4-4.Gantt图</h5><pre tabindex=0><code>
     section Another
     Task in sec      :2021-11-26  , 12d
     another task      : 24d
-</code></pre><div class=mermaid>gantt
+</code></pre><div class="mermaid">gantt
 title A Gantt Diagram
-dateFormat YYYY-MM-DD
-section Section
-A task :a1, 2021-11-22, 30d
-Another task :after a1 , 20d
-section Another
-Task in sec :2021-11-26 , 12d
-another task : 24d</div><h5 id=4-5饼状图>4-5.饼状图</h5><pre tabindex=0><code>pie title Pets adopted by volunteers
+    dateFormat  YYYY-MM-DD
+    section Section
+    A task           :a1, 2021-11-22, 30d
+    Another task     :after a1  , 20d
+    section Another
+    Task in sec      :2021-11-26  , 12d
+    another task      : 24d 
+</div>
+<h5 id="4-5饼状图">4-5.饼状图</h5>
+<pre tabindex="0"><code>pie title Pets adopted by volunteers
     &#34;dog&#34; : 386
     &#34;cat&#34; : 85
     &#34;rat&#34; : 15
-</code></pre><div class=mermaid>pie title Pets adopted by volunteers
-"dog" : 386
-"cat" : 85
-"rat" : 15</div><h4 id=5goat-图-ascii>5.GoAT 图 (Ascii)</h4><h5 id=5-1环形>5-1.环形</h5><pre tabindex=0><code>```goat
+</code></pre><div class="mermaid">pie title Pets adopted by volunteers
+    "dog" : 386
+    "cat" : 85
+    "rat" : 15
+</div>
+<h4 id="5goat-图-ascii">5.GoAT 图 (Ascii)</h4>
+<h5 id="5-1环形">5-1.环形</h5>
+<pre tabindex="0"><code>```goat
           .-.           .-.           .-.           .-.           .-.           .-.
          |   |         |   |         |   |         |   |         |   |         |   |
       .---------.   .--+---+--.   .--+---+--.   .--|   |--.   .--+   +--.   .------|--.
@@ -88,7 +304,125 @@ another task : 24d</div><h5 id=4-5饼状图>4-5.饼状图</h5><pre tabindex=0><c
          |   |         |   |         |   |         |   |         |   |         |   |
           &#39;-&#39;           &#39;-&#39;           &#39;-&#39;           &#39;-&#39;           &#39;-&#39;           &#39;-&#39;
 ```
-</code></pre><div class="goat svg-container"><svg font-family="Menlo,Lucida Console,monospace" viewBox="0 0 704 121"><g transform="translate(8,16)"><path d="M48 32h64" fill="none" stroke="currentColor"/><path d="M160 32h16" fill="none" stroke="currentColor"/><path d="M176 32h32" fill="none" stroke="currentColor"/><path d="M208 32h16" fill="none" stroke="currentColor"/><path d="M272 32h16" fill="none" stroke="currentColor"/><path d="M288 32h32" fill="none" stroke="currentColor"/><path d="M320 32h16" fill="none" stroke="currentColor"/><path d="M384 32h8" fill="none" stroke="currentColor"/><path d="M440 32h8" fill="none" stroke="currentColor"/><path d="M496 32h16" fill="none" stroke="currentColor"/><path d="M544 32h16" fill="none" stroke="currentColor"/><path d="M608 32h40" fill="none" stroke="currentColor"/><path d="M664 32h8" fill="none" stroke="currentColor"/><path d="M48 64h64" fill="none" stroke="currentColor"/><path d="M160 64h16" fill="none" stroke="currentColor"/><path d="M176 64h32" fill="none" stroke="currentColor"/><path d="M208 64h16" fill="none" stroke="currentColor"/><path d="M272 64h16" fill="none" stroke="currentColor"/><path d="M288 64h32" fill="none" stroke="currentColor"/><path d="M320 64h16" fill="none" stroke="currentColor"/><path d="M384 64h8" fill="none" stroke="currentColor"/><path d="M440 64h8" fill="none" stroke="currentColor"/><path d="M496 64h16" fill="none" stroke="currentColor"/><path d="M544 64h16" fill="none" stroke="currentColor"/><path d="M608 64h8" fill="none" stroke="currentColor"/><path d="M632 64h40" fill="none" stroke="currentColor"/><path d="M176 16V32" fill="none" stroke="currentColor"/><path d="M176 64V80" fill="none" stroke="currentColor"/><path d="M208 16V32" fill="none" stroke="currentColor"/><path d="M208 64V80" fill="none" stroke="currentColor"/><path d="M288 16V32" fill="none" stroke="currentColor"/><path d="M288 32V64" fill="none" stroke="currentColor"/><path d="M288 64V80" fill="none" stroke="currentColor"/><path d="M320 16V32" fill="none" stroke="currentColor"/><path d="M320 32V64" fill="none" stroke="currentColor"/><path d="M320 64V80" fill="none" stroke="currentColor"/><path d="M4e2 16V80" fill="none" stroke="currentColor"/><path d="M432 16V80" fill="none" stroke="currentColor"/><path d="M512 16V32" fill="none" stroke="currentColor"/><path d="M512 64V80" fill="none" stroke="currentColor"/><path d="M544 16V32" fill="none" stroke="currentColor"/><path d="M544 64V80" fill="none" stroke="currentColor"/><path d="M624 48V80" fill="none" stroke="currentColor"/><path d="M656 16V48" fill="none" stroke="currentColor"/><path d="M64 16v8" fill="none" stroke="currentColor"/><path d="M64 72v8" fill="none" stroke="currentColor"/><path d="M96 16v8" fill="none" stroke="currentColor"/><path d="M96 72v8" fill="none" stroke="currentColor"/><path d="M624 16v8" fill="none" stroke="currentColor"/><path d="M624 40v8" fill="none" stroke="currentColor"/><path d="M656 48v8" fill="none" stroke="currentColor"/><path d="M656 72v8" fill="none" stroke="currentColor"/><path d="M80 0A16 16 0 0064 16" fill="none" stroke="currentColor"/><path d="M80 0A16 16 0 0196 16" fill="none" stroke="currentColor"/><path d="M192 0A16 16 0 00176 16" fill="none" stroke="currentColor"/><path d="M192 0a16 16 0 0116 16" fill="none" stroke="currentColor"/><path d="M304 0A16 16 0 00288 16" fill="none" stroke="currentColor"/><path d="M304 0a16 16 0 0116 16" fill="none" stroke="currentColor"/><path d="M416 0A16 16 0 004e2 16" fill="none" stroke="currentColor"/><path d="M416 0a16 16 0 0116 16" fill="none" stroke="currentColor"/><path d="M528 0A16 16 0 00512 16" fill="none" stroke="currentColor"/><path d="M528 0a16 16 0 0116 16" fill="none" stroke="currentColor"/><path d="M640 0A16 16 0 00624 16" fill="none" stroke="currentColor"/><path d="M640 0a16 16 0 0116 16" fill="none" stroke="currentColor"/><path d="M48 32A16 16 0 0032 48" fill="none" stroke="currentColor"/><path d="M112 32a16 16 0 0116 16" fill="none" stroke="currentColor"/><path d="M160 32A16 16 0 00144 48" fill="none" stroke="currentColor"/><path d="M224 32a16 16 0 0116 16" fill="none" stroke="currentColor"/><path d="M272 32A16 16 0 00256 48" fill="none" stroke="currentColor"/><path d="M336 32a16 16 0 0116 16" fill="none" stroke="currentColor"/><path d="M384 32A16 16 0 00368 48" fill="none" stroke="currentColor"/><path d="M448 32a16 16 0 0116 16" fill="none" stroke="currentColor"/><path d="M496 32A16 16 0 00480 48" fill="none" stroke="currentColor"/><path d="M560 32a16 16 0 0116 16" fill="none" stroke="currentColor"/><path d="M608 32A16 16 0 00592 48" fill="none" stroke="currentColor"/><path d="M672 32a16 16 0 0116 16" fill="none" stroke="currentColor"/><path d="M32 48A16 16 0 0048 64" fill="none" stroke="currentColor"/><path d="M128 48A16 16 0 01112 64" fill="none" stroke="currentColor"/><path d="M144 48a16 16 0 0016 16" fill="none" stroke="currentColor"/><path d="M240 48A16 16 0 01224 64" fill="none" stroke="currentColor"/><path d="M256 48a16 16 0 0016 16" fill="none" stroke="currentColor"/><path d="M352 48A16 16 0 01336 64" fill="none" stroke="currentColor"/><path d="M368 48a16 16 0 0016 16" fill="none" stroke="currentColor"/><path d="M464 48A16 16 0 01448 64" fill="none" stroke="currentColor"/><path d="M480 48a16 16 0 0016 16" fill="none" stroke="currentColor"/><path d="M576 48A16 16 0 01560 64" fill="none" stroke="currentColor"/><path d="M592 48a16 16 0 0016 16" fill="none" stroke="currentColor"/><path d="M688 48A16 16 0 01672 64" fill="none" stroke="currentColor"/><path d="M64 80A16 16 0 0080 96" fill="none" stroke="currentColor"/><path d="M96 80A16 16 0 0180 96" fill="none" stroke="currentColor"/><path d="M176 80a16 16 0 0016 16" fill="none" stroke="currentColor"/><path d="M208 80A16 16 0 01192 96" fill="none" stroke="currentColor"/><path d="M288 80a16 16 0 0016 16" fill="none" stroke="currentColor"/><path d="M320 80A16 16 0 01304 96" fill="none" stroke="currentColor"/><path d="M4e2 80a16 16 0 0016 16" fill="none" stroke="currentColor"/><path d="M432 80A16 16 0 01416 96" fill="none" stroke="currentColor"/><path d="M512 80a16 16 0 0016 16" fill="none" stroke="currentColor"/><path d="M544 80A16 16 0 01528 96" fill="none" stroke="currentColor"/><path d="M624 80a16 16 0 0016 16" fill="none" stroke="currentColor"/><path d="M656 80A16 16 0 01640 96" fill="none" stroke="currentColor"/></g></svg></div><h5 id=5-2树状>5-2.树状</h5><pre tabindex=0><code>```goat
+</code></pre>
+
+
+<div class="goat svg-container ">
+	
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			font-family="Menlo,Lucida Console,monospace"
+			
+				viewBox="0 0 704 121"
+			>
+			<g transform='translate(8,16)'>
+<path d='M 48,32 L 112,32' fill='none' stroke='currentColor'></path>
+<path d='M 160,32 L 176,32' fill='none' stroke='currentColor'></path>
+<path d='M 176,32 L 208,32' fill='none' stroke='currentColor'></path>
+<path d='M 208,32 L 224,32' fill='none' stroke='currentColor'></path>
+<path d='M 272,32 L 288,32' fill='none' stroke='currentColor'></path>
+<path d='M 288,32 L 320,32' fill='none' stroke='currentColor'></path>
+<path d='M 320,32 L 336,32' fill='none' stroke='currentColor'></path>
+<path d='M 384,32 L 392,32' fill='none' stroke='currentColor'></path>
+<path d='M 440,32 L 448,32' fill='none' stroke='currentColor'></path>
+<path d='M 496,32 L 512,32' fill='none' stroke='currentColor'></path>
+<path d='M 544,32 L 560,32' fill='none' stroke='currentColor'></path>
+<path d='M 608,32 L 648,32' fill='none' stroke='currentColor'></path>
+<path d='M 664,32 L 672,32' fill='none' stroke='currentColor'></path>
+<path d='M 48,64 L 112,64' fill='none' stroke='currentColor'></path>
+<path d='M 160,64 L 176,64' fill='none' stroke='currentColor'></path>
+<path d='M 176,64 L 208,64' fill='none' stroke='currentColor'></path>
+<path d='M 208,64 L 224,64' fill='none' stroke='currentColor'></path>
+<path d='M 272,64 L 288,64' fill='none' stroke='currentColor'></path>
+<path d='M 288,64 L 320,64' fill='none' stroke='currentColor'></path>
+<path d='M 320,64 L 336,64' fill='none' stroke='currentColor'></path>
+<path d='M 384,64 L 392,64' fill='none' stroke='currentColor'></path>
+<path d='M 440,64 L 448,64' fill='none' stroke='currentColor'></path>
+<path d='M 496,64 L 512,64' fill='none' stroke='currentColor'></path>
+<path d='M 544,64 L 560,64' fill='none' stroke='currentColor'></path>
+<path d='M 608,64 L 616,64' fill='none' stroke='currentColor'></path>
+<path d='M 632,64 L 672,64' fill='none' stroke='currentColor'></path>
+<path d='M 176,16 L 176,32' fill='none' stroke='currentColor'></path>
+<path d='M 176,64 L 176,80' fill='none' stroke='currentColor'></path>
+<path d='M 208,16 L 208,32' fill='none' stroke='currentColor'></path>
+<path d='M 208,64 L 208,80' fill='none' stroke='currentColor'></path>
+<path d='M 288,16 L 288,32' fill='none' stroke='currentColor'></path>
+<path d='M 288,32 L 288,64' fill='none' stroke='currentColor'></path>
+<path d='M 288,64 L 288,80' fill='none' stroke='currentColor'></path>
+<path d='M 320,16 L 320,32' fill='none' stroke='currentColor'></path>
+<path d='M 320,32 L 320,64' fill='none' stroke='currentColor'></path>
+<path d='M 320,64 L 320,80' fill='none' stroke='currentColor'></path>
+<path d='M 400,16 L 400,80' fill='none' stroke='currentColor'></path>
+<path d='M 432,16 L 432,80' fill='none' stroke='currentColor'></path>
+<path d='M 512,16 L 512,32' fill='none' stroke='currentColor'></path>
+<path d='M 512,64 L 512,80' fill='none' stroke='currentColor'></path>
+<path d='M 544,16 L 544,32' fill='none' stroke='currentColor'></path>
+<path d='M 544,64 L 544,80' fill='none' stroke='currentColor'></path>
+<path d='M 624,48 L 624,80' fill='none' stroke='currentColor'></path>
+<path d='M 656,16 L 656,48' fill='none' stroke='currentColor'></path>
+<path d='M 64,16 L 64,24' fill='none' stroke='currentColor'></path>
+<path d='M 64,72 L 64,80' fill='none' stroke='currentColor'></path>
+<path d='M 96,16 L 96,24' fill='none' stroke='currentColor'></path>
+<path d='M 96,72 L 96,80' fill='none' stroke='currentColor'></path>
+<path d='M 624,16 L 624,24' fill='none' stroke='currentColor'></path>
+<path d='M 624,40 L 624,48' fill='none' stroke='currentColor'></path>
+<path d='M 656,48 L 656,56' fill='none' stroke='currentColor'></path>
+<path d='M 656,72 L 656,80' fill='none' stroke='currentColor'></path>
+<path d='M 80,0 A 16,16 0 0,0 64,16' fill='none' stroke='currentColor'></path>
+<path d='M 80,0 A 16,16 0 0,1 96,16' fill='none' stroke='currentColor'></path>
+<path d='M 192,0 A 16,16 0 0,0 176,16' fill='none' stroke='currentColor'></path>
+<path d='M 192,0 A 16,16 0 0,1 208,16' fill='none' stroke='currentColor'></path>
+<path d='M 304,0 A 16,16 0 0,0 288,16' fill='none' stroke='currentColor'></path>
+<path d='M 304,0 A 16,16 0 0,1 320,16' fill='none' stroke='currentColor'></path>
+<path d='M 416,0 A 16,16 0 0,0 400,16' fill='none' stroke='currentColor'></path>
+<path d='M 416,0 A 16,16 0 0,1 432,16' fill='none' stroke='currentColor'></path>
+<path d='M 528,0 A 16,16 0 0,0 512,16' fill='none' stroke='currentColor'></path>
+<path d='M 528,0 A 16,16 0 0,1 544,16' fill='none' stroke='currentColor'></path>
+<path d='M 640,0 A 16,16 0 0,0 624,16' fill='none' stroke='currentColor'></path>
+<path d='M 640,0 A 16,16 0 0,1 656,16' fill='none' stroke='currentColor'></path>
+<path d='M 48,32 A 16,16 0 0,0 32,48' fill='none' stroke='currentColor'></path>
+<path d='M 112,32 A 16,16 0 0,1 128,48' fill='none' stroke='currentColor'></path>
+<path d='M 160,32 A 16,16 0 0,0 144,48' fill='none' stroke='currentColor'></path>
+<path d='M 224,32 A 16,16 0 0,1 240,48' fill='none' stroke='currentColor'></path>
+<path d='M 272,32 A 16,16 0 0,0 256,48' fill='none' stroke='currentColor'></path>
+<path d='M 336,32 A 16,16 0 0,1 352,48' fill='none' stroke='currentColor'></path>
+<path d='M 384,32 A 16,16 0 0,0 368,48' fill='none' stroke='currentColor'></path>
+<path d='M 448,32 A 16,16 0 0,1 464,48' fill='none' stroke='currentColor'></path>
+<path d='M 496,32 A 16,16 0 0,0 480,48' fill='none' stroke='currentColor'></path>
+<path d='M 560,32 A 16,16 0 0,1 576,48' fill='none' stroke='currentColor'></path>
+<path d='M 608,32 A 16,16 0 0,0 592,48' fill='none' stroke='currentColor'></path>
+<path d='M 672,32 A 16,16 0 0,1 688,48' fill='none' stroke='currentColor'></path>
+<path d='M 32,48 A 16,16 0 0,0 48,64' fill='none' stroke='currentColor'></path>
+<path d='M 128,48 A 16,16 0 0,1 112,64' fill='none' stroke='currentColor'></path>
+<path d='M 144,48 A 16,16 0 0,0 160,64' fill='none' stroke='currentColor'></path>
+<path d='M 240,48 A 16,16 0 0,1 224,64' fill='none' stroke='currentColor'></path>
+<path d='M 256,48 A 16,16 0 0,0 272,64' fill='none' stroke='currentColor'></path>
+<path d='M 352,48 A 16,16 0 0,1 336,64' fill='none' stroke='currentColor'></path>
+<path d='M 368,48 A 16,16 0 0,0 384,64' fill='none' stroke='currentColor'></path>
+<path d='M 464,48 A 16,16 0 0,1 448,64' fill='none' stroke='currentColor'></path>
+<path d='M 480,48 A 16,16 0 0,0 496,64' fill='none' stroke='currentColor'></path>
+<path d='M 576,48 A 16,16 0 0,1 560,64' fill='none' stroke='currentColor'></path>
+<path d='M 592,48 A 16,16 0 0,0 608,64' fill='none' stroke='currentColor'></path>
+<path d='M 688,48 A 16,16 0 0,1 672,64' fill='none' stroke='currentColor'></path>
+<path d='M 64,80 A 16,16 0 0,0 80,96' fill='none' stroke='currentColor'></path>
+<path d='M 96,80 A 16,16 0 0,1 80,96' fill='none' stroke='currentColor'></path>
+<path d='M 176,80 A 16,16 0 0,0 192,96' fill='none' stroke='currentColor'></path>
+<path d='M 208,80 A 16,16 0 0,1 192,96' fill='none' stroke='currentColor'></path>
+<path d='M 288,80 A 16,16 0 0,0 304,96' fill='none' stroke='currentColor'></path>
+<path d='M 320,80 A 16,16 0 0,1 304,96' fill='none' stroke='currentColor'></path>
+<path d='M 400,80 A 16,16 0 0,0 416,96' fill='none' stroke='currentColor'></path>
+<path d='M 432,80 A 16,16 0 0,1 416,96' fill='none' stroke='currentColor'></path>
+<path d='M 512,80 A 16,16 0 0,0 528,96' fill='none' stroke='currentColor'></path>
+<path d='M 544,80 A 16,16 0 0,1 528,96' fill='none' stroke='currentColor'></path>
+<path d='M 624,80 A 16,16 0 0,0 640,96' fill='none' stroke='currentColor'></path>
+<path d='M 656,80 A 16,16 0 0,1 640,96' fill='none' stroke='currentColor'></path>
+</g>
+
+		</svg>
+	
+</div>
+<h5 id="5-2树状">5-2.树状</h5>
+<pre tabindex="0"><code>```goat
           .               .                .               .--- 1          .-- 1     / 1
          / \              |                |           .---+            .-+         +
         /   \         .---+---.         .--+--.        |   &#39;--- 2      |   &#39;-- 2   / \ 2
@@ -98,7 +432,113 @@ another task : 24d</div><h5 id=4-5饼状图>4-5.饼状图</h5><pre tabindex=0><c
      1   2 3   4    1   2   3   4    1   2   3   4         &#39;--- 4          &#39;-- 4     \ 4
 
 ```
-</code></pre><div class="goat svg-container"><svg font-family="Menlo,Lucida Console,monospace" viewBox="0 0 712 137"><g transform="translate(8,16)"><path d="M472 16h24" fill="none" stroke="currentColor"/><path d="M608 16h8" fill="none" stroke="currentColor"/><path d="M440 32h32" fill="none" stroke="currentColor"/><path d="M584 32h8" fill="none" stroke="currentColor"/><path d="M176 48h32" fill="none" stroke="currentColor"/><path d="M208 48h32" fill="none" stroke="currentColor"/><path d="M328 48h16" fill="none" stroke="currentColor"/><path d="M344 48h16" fill="none" stroke="currentColor"/><path d="M472 48h24" fill="none" stroke="currentColor"/><path d="M608 48h8" fill="none" stroke="currentColor"/><path d="M416 64h24" fill="none" stroke="currentColor"/><path d="M544 64h24" fill="none" stroke="currentColor"/><path d="M160 80h16" fill="none" stroke="currentColor"/><path d="M176 80h16" fill="none" stroke="currentColor"/><path d="M224 80h16" fill="none" stroke="currentColor"/><path d="M240 80h16" fill="none" stroke="currentColor"/><path d="M472 80h24" fill="none" stroke="currentColor"/><path d="M608 80h8" fill="none" stroke="currentColor"/><path d="M440 96h32" fill="none" stroke="currentColor"/><path d="M584 96h8" fill="none" stroke="currentColor"/><path d="M472 112h24" fill="none" stroke="currentColor"/><path d="M608 112h8" fill="none" stroke="currentColor"/><path d="M160 80V96" fill="none" stroke="currentColor"/><path d="M176 48V80" fill="none" stroke="currentColor"/><path d="M192 80V96" fill="none" stroke="currentColor"/><path d="M208 16V48" fill="none" stroke="currentColor"/><path d="M224 80V96" fill="none" stroke="currentColor"/><path d="M240 48V80" fill="none" stroke="currentColor"/><path d="M256 80V96" fill="none" stroke="currentColor"/><path d="M312 64V80" fill="none" stroke="currentColor"/><path d="M344 16V48" fill="none" stroke="currentColor"/><path d="M376 64V80" fill="none" stroke="currentColor"/><path d="M440 32V64" fill="none" stroke="currentColor"/><path d="M440 64V96" fill="none" stroke="currentColor"/><path d="M472 16V32" fill="none" stroke="currentColor"/><path d="M472 32V48" fill="none" stroke="currentColor"/><path d="M472 80V96" fill="none" stroke="currentColor"/><path d="M472 96v16" fill="none" stroke="currentColor"/><path d="M568 48V64" fill="none" stroke="currentColor"/><path d="M568 64V80" fill="none" stroke="currentColor"/><path d="M40 96 56 64" fill="none" stroke="currentColor"/><path d="M56 64 80 16" fill="none" stroke="currentColor"/><path d="M88 96l16-32" fill="none" stroke="currentColor"/><path d="M656 64l16-32" fill="none" stroke="currentColor"/><path d="M672 32l8-16" fill="none" stroke="currentColor"/><path d="M672 96l8-16" fill="none" stroke="currentColor"/><path d="M56 64 72 96" fill="none" stroke="currentColor"/><path d="M80 16l24 48" fill="none" stroke="currentColor"/><path d="M104 64l16 32" fill="none" stroke="currentColor"/><path d="M656 64l16 32" fill="none" stroke="currentColor"/><path d="M672 96l8 16" fill="none" stroke="currentColor"/><path d="M672 32l8 16" fill="none" stroke="currentColor"/><path d="M608 16A16 16 0 00592 32" fill="none" stroke="currentColor"/><path d="M584 32A16 16 0 00568 48" fill="none" stroke="currentColor"/><path d="M328 48A16 16 0 00312 64" fill="none" stroke="currentColor"/><path d="M360 48a16 16 0 0116 16" fill="none" stroke="currentColor"/><path d="M592 32a16 16 0 0016 16" fill="none" stroke="currentColor"/><path d="M312 80A16 16 0 00296 96" fill="none" stroke="currentColor"/><path d="M312 80a16 16 0 0116 16" fill="none" stroke="currentColor"/><path d="M376 80A16 16 0 00360 96" fill="none" stroke="currentColor"/><path d="M376 80a16 16 0 0116 16" fill="none" stroke="currentColor"/><path d="M608 80A16 16 0 00592 96" fill="none" stroke="currentColor"/><path d="M568 80a16 16 0 0016 16" fill="none" stroke="currentColor"/><path d="M592 96a16 16 0 0016 16" fill="none" stroke="currentColor"/><text text-anchor="middle" x="40" y="116" fill="currentColor" style="font-size:1em">1</text><text text-anchor="middle" x="72" y="116" fill="currentColor" style="font-size:1em">2</text><text text-anchor="middle" x="88" y="116" fill="currentColor" style="font-size:1em">3</text><text text-anchor="middle" x="120" y="116" fill="currentColor" style="font-size:1em">4</text><text text-anchor="middle" x="160" y="116" fill="currentColor" style="font-size:1em">1</text><text text-anchor="middle" x="192" y="116" fill="currentColor" style="font-size:1em">2</text><text text-anchor="middle" x="224" y="116" fill="currentColor" style="font-size:1em">3</text><text text-anchor="middle" x="256" y="116" fill="currentColor" style="font-size:1em">4</text><text text-anchor="middle" x="296" y="116" fill="currentColor" style="font-size:1em">1</text><text text-anchor="middle" x="328" y="116" fill="currentColor" style="font-size:1em">2</text><text text-anchor="middle" x="360" y="116" fill="currentColor" style="font-size:1em">3</text><text text-anchor="middle" x="392" y="116" fill="currentColor" style="font-size:1em">4</text><text text-anchor="middle" x="512" y="20" fill="currentColor" style="font-size:1em">1</text><text text-anchor="middle" x="512" y="52" fill="currentColor" style="font-size:1em">2</text><text text-anchor="middle" x="512" y="84" fill="currentColor" style="font-size:1em">3</text><text text-anchor="middle" x="512" y="116" fill="currentColor" style="font-size:1em">4</text><text text-anchor="middle" x="632" y="20" fill="currentColor" style="font-size:1em">1</text><text text-anchor="middle" x="632" y="52" fill="currentColor" style="font-size:1em">2</text><text text-anchor="middle" x="632" y="84" fill="currentColor" style="font-size:1em">3</text><text text-anchor="middle" x="632" y="116" fill="currentColor" style="font-size:1em">4</text><text text-anchor="middle" x="696" y="20" fill="currentColor" style="font-size:1em">1</text><text text-anchor="middle" x="696" y="52" fill="currentColor" style="font-size:1em">2</text><text text-anchor="middle" x="696" y="84" fill="currentColor" style="font-size:1em">3</text><text text-anchor="middle" x="696" y="116" fill="currentColor" style="font-size:1em">4</text></g></svg></div><h5 id=5-3网格>5-3.网格</h5><pre tabindex=0><code>```goat
+</code></pre>
+
+
+<div class="goat svg-container ">
+	
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			font-family="Menlo,Lucida Console,monospace"
+			
+				viewBox="0 0 712 137"
+			>
+			<g transform='translate(8,16)'>
+<path d='M 472,16 L 496,16' fill='none' stroke='currentColor'></path>
+<path d='M 608,16 L 616,16' fill='none' stroke='currentColor'></path>
+<path d='M 440,32 L 472,32' fill='none' stroke='currentColor'></path>
+<path d='M 584,32 L 592,32' fill='none' stroke='currentColor'></path>
+<path d='M 176,48 L 208,48' fill='none' stroke='currentColor'></path>
+<path d='M 208,48 L 240,48' fill='none' stroke='currentColor'></path>
+<path d='M 328,48 L 344,48' fill='none' stroke='currentColor'></path>
+<path d='M 344,48 L 360,48' fill='none' stroke='currentColor'></path>
+<path d='M 472,48 L 496,48' fill='none' stroke='currentColor'></path>
+<path d='M 608,48 L 616,48' fill='none' stroke='currentColor'></path>
+<path d='M 416,64 L 440,64' fill='none' stroke='currentColor'></path>
+<path d='M 544,64 L 568,64' fill='none' stroke='currentColor'></path>
+<path d='M 160,80 L 176,80' fill='none' stroke='currentColor'></path>
+<path d='M 176,80 L 192,80' fill='none' stroke='currentColor'></path>
+<path d='M 224,80 L 240,80' fill='none' stroke='currentColor'></path>
+<path d='M 240,80 L 256,80' fill='none' stroke='currentColor'></path>
+<path d='M 472,80 L 496,80' fill='none' stroke='currentColor'></path>
+<path d='M 608,80 L 616,80' fill='none' stroke='currentColor'></path>
+<path d='M 440,96 L 472,96' fill='none' stroke='currentColor'></path>
+<path d='M 584,96 L 592,96' fill='none' stroke='currentColor'></path>
+<path d='M 472,112 L 496,112' fill='none' stroke='currentColor'></path>
+<path d='M 608,112 L 616,112' fill='none' stroke='currentColor'></path>
+<path d='M 160,80 L 160,96' fill='none' stroke='currentColor'></path>
+<path d='M 176,48 L 176,80' fill='none' stroke='currentColor'></path>
+<path d='M 192,80 L 192,96' fill='none' stroke='currentColor'></path>
+<path d='M 208,16 L 208,48' fill='none' stroke='currentColor'></path>
+<path d='M 224,80 L 224,96' fill='none' stroke='currentColor'></path>
+<path d='M 240,48 L 240,80' fill='none' stroke='currentColor'></path>
+<path d='M 256,80 L 256,96' fill='none' stroke='currentColor'></path>
+<path d='M 312,64 L 312,80' fill='none' stroke='currentColor'></path>
+<path d='M 344,16 L 344,48' fill='none' stroke='currentColor'></path>
+<path d='M 376,64 L 376,80' fill='none' stroke='currentColor'></path>
+<path d='M 440,32 L 440,64' fill='none' stroke='currentColor'></path>
+<path d='M 440,64 L 440,96' fill='none' stroke='currentColor'></path>
+<path d='M 472,16 L 472,32' fill='none' stroke='currentColor'></path>
+<path d='M 472,32 L 472,48' fill='none' stroke='currentColor'></path>
+<path d='M 472,80 L 472,96' fill='none' stroke='currentColor'></path>
+<path d='M 472,96 L 472,112' fill='none' stroke='currentColor'></path>
+<path d='M 568,48 L 568,64' fill='none' stroke='currentColor'></path>
+<path d='M 568,64 L 568,80' fill='none' stroke='currentColor'></path>
+<path d='M 40,96 L 56,64' fill='none' stroke='currentColor'></path>
+<path d='M 56,64 L 80,16' fill='none' stroke='currentColor'></path>
+<path d='M 88,96 L 104,64' fill='none' stroke='currentColor'></path>
+<path d='M 656,64 L 672,32' fill='none' stroke='currentColor'></path>
+<path d='M 672,32 L 680,16' fill='none' stroke='currentColor'></path>
+<path d='M 672,96 L 680,80' fill='none' stroke='currentColor'></path>
+<path d='M 56,64 L 72,96' fill='none' stroke='currentColor'></path>
+<path d='M 80,16 L 104,64' fill='none' stroke='currentColor'></path>
+<path d='M 104,64 L 120,96' fill='none' stroke='currentColor'></path>
+<path d='M 656,64 L 672,96' fill='none' stroke='currentColor'></path>
+<path d='M 672,96 L 680,112' fill='none' stroke='currentColor'></path>
+<path d='M 672,32 L 680,48' fill='none' stroke='currentColor'></path>
+<path d='M 608,16 A 16,16 0 0,0 592,32' fill='none' stroke='currentColor'></path>
+<path d='M 584,32 A 16,16 0 0,0 568,48' fill='none' stroke='currentColor'></path>
+<path d='M 328,48 A 16,16 0 0,0 312,64' fill='none' stroke='currentColor'></path>
+<path d='M 360,48 A 16,16 0 0,1 376,64' fill='none' stroke='currentColor'></path>
+<path d='M 592,32 A 16,16 0 0,0 608,48' fill='none' stroke='currentColor'></path>
+<path d='M 312,80 A 16,16 0 0,0 296,96' fill='none' stroke='currentColor'></path>
+<path d='M 312,80 A 16,16 0 0,1 328,96' fill='none' stroke='currentColor'></path>
+<path d='M 376,80 A 16,16 0 0,0 360,96' fill='none' stroke='currentColor'></path>
+<path d='M 376,80 A 16,16 0 0,1 392,96' fill='none' stroke='currentColor'></path>
+<path d='M 608,80 A 16,16 0 0,0 592,96' fill='none' stroke='currentColor'></path>
+<path d='M 568,80 A 16,16 0 0,0 584,96' fill='none' stroke='currentColor'></path>
+<path d='M 592,96 A 16,16 0 0,0 608,112' fill='none' stroke='currentColor'></path>
+<text text-anchor='middle' x='40' y='116' fill='currentColor' style='font-size:1em'>1</text>
+<text text-anchor='middle' x='72' y='116' fill='currentColor' style='font-size:1em'>2</text>
+<text text-anchor='middle' x='88' y='116' fill='currentColor' style='font-size:1em'>3</text>
+<text text-anchor='middle' x='120' y='116' fill='currentColor' style='font-size:1em'>4</text>
+<text text-anchor='middle' x='160' y='116' fill='currentColor' style='font-size:1em'>1</text>
+<text text-anchor='middle' x='192' y='116' fill='currentColor' style='font-size:1em'>2</text>
+<text text-anchor='middle' x='224' y='116' fill='currentColor' style='font-size:1em'>3</text>
+<text text-anchor='middle' x='256' y='116' fill='currentColor' style='font-size:1em'>4</text>
+<text text-anchor='middle' x='296' y='116' fill='currentColor' style='font-size:1em'>1</text>
+<text text-anchor='middle' x='328' y='116' fill='currentColor' style='font-size:1em'>2</text>
+<text text-anchor='middle' x='360' y='116' fill='currentColor' style='font-size:1em'>3</text>
+<text text-anchor='middle' x='392' y='116' fill='currentColor' style='font-size:1em'>4</text>
+<text text-anchor='middle' x='512' y='20' fill='currentColor' style='font-size:1em'>1</text>
+<text text-anchor='middle' x='512' y='52' fill='currentColor' style='font-size:1em'>2</text>
+<text text-anchor='middle' x='512' y='84' fill='currentColor' style='font-size:1em'>3</text>
+<text text-anchor='middle' x='512' y='116' fill='currentColor' style='font-size:1em'>4</text>
+<text text-anchor='middle' x='632' y='20' fill='currentColor' style='font-size:1em'>1</text>
+<text text-anchor='middle' x='632' y='52' fill='currentColor' style='font-size:1em'>2</text>
+<text text-anchor='middle' x='632' y='84' fill='currentColor' style='font-size:1em'>3</text>
+<text text-anchor='middle' x='632' y='116' fill='currentColor' style='font-size:1em'>4</text>
+<text text-anchor='middle' x='696' y='20' fill='currentColor' style='font-size:1em'>1</text>
+<text text-anchor='middle' x='696' y='52' fill='currentColor' style='font-size:1em'>2</text>
+<text text-anchor='middle' x='696' y='84' fill='currentColor' style='font-size:1em'>3</text>
+<text text-anchor='middle' x='696' y='116' fill='currentColor' style='font-size:1em'>4</text>
+</g>
+
+		</svg>
+	
+</div>
+<h5 id="5-3网格">5-3.网格</h5>
+<pre tabindex="0"><code>```goat
        ___     ___      .---+---+---+---+---.     .---+---+---+---.  .---.   .---.
    ___/   \___/   \     |   |   |   |   |   |    / \ / \ / \ / \ /   |   +---+   |
   /   \___/   \___/     +---+---+---+---+---+   +---+---+---+---+    +---+   +---+
@@ -108,7 +548,185 @@ another task : 24d</div><h5 id=4-5饼状图>4-5.饼状图</h5><pre tabindex=0><c
       \___/   \___/     &#39;---+---+---+---+---&#39;   &#39;---+---+---+---&#39;    &#39;---&#39;   &#39;---&#39;
 
 ```
-</code></pre><div class="goat svg-container"><svg font-family="Menlo,Lucida Console,monospace" viewBox="0 0 664 121"><g transform="translate(8,16)"><path d="M192 0h32" fill="none" stroke="currentColor"/><path d="M224 0h32" fill="none" stroke="currentColor"/><path d="M256 0h32" fill="none" stroke="currentColor"/><path d="M288 0h32" fill="none" stroke="currentColor"/><path d="M320 0h32" fill="none" stroke="currentColor"/><path d="M4e2.0h32" fill="none" stroke="currentColor"/><path d="M432 0h32" fill="none" stroke="currentColor"/><path d="M464 0h32" fill="none" stroke="currentColor"/><path d="M496 0h32" fill="none" stroke="currentColor"/><path d="M552 0h32" fill="none" stroke="currentColor"/><path d="M616 0h32" fill="none" stroke="currentColor"/><path d="M584 16h32" fill="none" stroke="currentColor"/><path d="M192 32h32" fill="none" stroke="currentColor"/><path d="M224 32h32" fill="none" stroke="currentColor"/><path d="M256 32h32" fill="none" stroke="currentColor"/><path d="M288 32h32" fill="none" stroke="currentColor"/><path d="M320 32h32" fill="none" stroke="currentColor"/><path d="M384 32h32" fill="none" stroke="currentColor"/><path d="M416 32h32" fill="none" stroke="currentColor"/><path d="M448 32h32" fill="none" stroke="currentColor"/><path d="M480 32h32" fill="none" stroke="currentColor"/><path d="M552 32h32" fill="none" stroke="currentColor"/><path d="M616 32h32" fill="none" stroke="currentColor"/><path d="M584 48h32" fill="none" stroke="currentColor"/><path d="M192 64h32" fill="none" stroke="currentColor"/><path d="M224 64h32" fill="none" stroke="currentColor"/><path d="M256 64h32" fill="none" stroke="currentColor"/><path d="M288 64h32" fill="none" stroke="currentColor"/><path d="M320 64h32" fill="none" stroke="currentColor"/><path d="M4e2 64h32" fill="none" stroke="currentColor"/><path d="M432 64h32" fill="none" stroke="currentColor"/><path d="M464 64h32" fill="none" stroke="currentColor"/><path d="M496 64h32" fill="none" stroke="currentColor"/><path d="M552 64h32" fill="none" stroke="currentColor"/><path d="M616 64h32" fill="none" stroke="currentColor"/><path d="M584 80h32" fill="none" stroke="currentColor"/><path d="M192 96h32" fill="none" stroke="currentColor"/><path d="M224 96h32" fill="none" stroke="currentColor"/><path d="M256 96h32" fill="none" stroke="currentColor"/><path d="M288 96h32" fill="none" stroke="currentColor"/><path d="M320 96h32" fill="none" stroke="currentColor"/><path d="M384 96h32" fill="none" stroke="currentColor"/><path d="M416 96h32" fill="none" stroke="currentColor"/><path d="M448 96h32" fill="none" stroke="currentColor"/><path d="M480 96h32" fill="none" stroke="currentColor"/><path d="M552 96h32" fill="none" stroke="currentColor"/><path d="M616 96h32" fill="none" stroke="currentColor"/><path d="M52 8H76" fill="none" stroke="currentColor"/><path d="M116 8h24" fill="none" stroke="currentColor"/><path d="M20 24H44" fill="none" stroke="currentColor"/><path d="M84 24h24" fill="none" stroke="currentColor"/><path d="M52 40H76" fill="none" stroke="currentColor"/><path d="M116 40h24" fill="none" stroke="currentColor"/><path d="M20 56H44" fill="none" stroke="currentColor"/><path d="M84 56h24" fill="none" stroke="currentColor"/><path d="M52 72H76" fill="none" stroke="currentColor"/><path d="M116 72h24" fill="none" stroke="currentColor"/><path d="M20 88H44" fill="none" stroke="currentColor"/><path d="M84 88h24" fill="none" stroke="currentColor"/><path d="M52 104H76" fill="none" stroke="currentColor"/><path d="M116 104h24" fill="none" stroke="currentColor"/><path d="M192 0V32" fill="none" stroke="currentColor"/><path d="M192 32V64" fill="none" stroke="currentColor"/><path d="M192 64V96" fill="none" stroke="currentColor"/><path d="M224 0V32" fill="none" stroke="currentColor"/><path d="M224 32V64" fill="none" stroke="currentColor"/><path d="M224 64V96" fill="none" stroke="currentColor"/><path d="M256 0V32" fill="none" stroke="currentColor"/><path d="M256 32V64" fill="none" stroke="currentColor"/><path d="M256 64V96" fill="none" stroke="currentColor"/><path d="M288 0V32" fill="none" stroke="currentColor"/><path d="M288 32V64" fill="none" stroke="currentColor"/><path d="M288 64V96" fill="none" stroke="currentColor"/><path d="M320 0V32" fill="none" stroke="currentColor"/><path d="M320 32V64" fill="none" stroke="currentColor"/><path d="M320 64V96" fill="none" stroke="currentColor"/><path d="M352 0V32" fill="none" stroke="currentColor"/><path d="M352 32V64" fill="none" stroke="currentColor"/><path d="M352 64V96" fill="none" stroke="currentColor"/><path d="M552 0V32" fill="none" stroke="currentColor"/><path d="M552 32V64" fill="none" stroke="currentColor"/><path d="M552 64V96" fill="none" stroke="currentColor"/><path d="M584 0V16" fill="none" stroke="currentColor"/><path d="M584 16V32" fill="none" stroke="currentColor"/><path d="M584 32V48" fill="none" stroke="currentColor"/><path d="M584 48V64" fill="none" stroke="currentColor"/><path d="M584 64V80" fill="none" stroke="currentColor"/><path d="M584 80V96" fill="none" stroke="currentColor"/><path d="M616 0V16" fill="none" stroke="currentColor"/><path d="M616 16V32" fill="none" stroke="currentColor"/><path d="M616 32V48" fill="none" stroke="currentColor"/><path d="M616 48V64" fill="none" stroke="currentColor"/><path d="M616 64V80" fill="none" stroke="currentColor"/><path d="M616 80V96" fill="none" stroke="currentColor"/><path d="M648 0V32" fill="none" stroke="currentColor"/><path d="M648 32V64" fill="none" stroke="currentColor"/><path d="M648 64V96" fill="none" stroke="currentColor"/><path d="M12 40l8-16" fill="none" stroke="currentColor"/><path d="M12 72l8-16" fill="none" stroke="currentColor"/><path d="M44 24 52 8" fill="none" stroke="currentColor"/><path d="M44 56l8-16" fill="none" stroke="currentColor"/><path d="M44 88l8-16" fill="none" stroke="currentColor"/><path d="M76 40l8-16" fill="none" stroke="currentColor"/><path d="M76 72l8-16" fill="none" stroke="currentColor"/><path d="M108 24l8-16" fill="none" stroke="currentColor"/><path d="M76 104l8-16" fill="none" stroke="currentColor"/><path d="M108 56l8-16" fill="none" stroke="currentColor"/><path d="M108 88l8-16" fill="none" stroke="currentColor"/><path d="M140 40l8-16" fill="none" stroke="currentColor"/><path d="M140 72l8-16" fill="none" stroke="currentColor"/><path d="M140 104l8-16" fill="none" stroke="currentColor"/><path d="M384 32 4e2.0" fill="none" stroke="currentColor"/><path d="M384 96l16-32" fill="none" stroke="currentColor"/><path d="M4e2 64l16-32" fill="none" stroke="currentColor"/><path d="M416 32 432 0" fill="none" stroke="currentColor"/><path d="M416 96l16-32" fill="none" stroke="currentColor"/><path d="M432 64l16-32" fill="none" stroke="currentColor"/><path d="M448 32 464 0" fill="none" stroke="currentColor"/><path d="M448 96l16-32" fill="none" stroke="currentColor"/><path d="M464 64l16-32" fill="none" stroke="currentColor"/><path d="M480 32 496 0" fill="none" stroke="currentColor"/><path d="M480 96l16-32" fill="none" stroke="currentColor"/><path d="M496 64l16-32" fill="none" stroke="currentColor"/><path d="M512 32 528 0" fill="none" stroke="currentColor"/><path d="M512 96l16-32" fill="none" stroke="currentColor"/><path d="M12 72l8 16" fill="none" stroke="currentColor"/><path d="M12 40l8 16" fill="none" stroke="currentColor"/><path d="M44 88l8 16" fill="none" stroke="currentColor"/><path d="M44 56l8 16" fill="none" stroke="currentColor"/><path d="M44 24l8 16" fill="none" stroke="currentColor"/><path d="M76 72l8 16" fill="none" stroke="currentColor"/><path d="M76 40l8 16" fill="none" stroke="currentColor"/><path d="M108 88l8 16" fill="none" stroke="currentColor"/><path d="M76 8l8 16" fill="none" stroke="currentColor"/><path d="M108 56l8 16" fill="none" stroke="currentColor"/><path d="M108 24l8 16" fill="none" stroke="currentColor"/><path d="M140 72l8 16" fill="none" stroke="currentColor"/><path d="M140 40l8 16" fill="none" stroke="currentColor"/><path d="M140 8l8 16" fill="none" stroke="currentColor"/><path d="M384 32l16 32" fill="none" stroke="currentColor"/><path d="M4e2 64l16 32" fill="none" stroke="currentColor"/><path d="M4e2.0l16 32" fill="none" stroke="currentColor"/><path d="M416 32l16 32" fill="none" stroke="currentColor"/><path d="M432 64l16 32" fill="none" stroke="currentColor"/><path d="M432 0l16 32" fill="none" stroke="currentColor"/><path d="M448 32l16 32" fill="none" stroke="currentColor"/><path d="M464 64l16 32" fill="none" stroke="currentColor"/><path d="M464 0l16 32" fill="none" stroke="currentColor"/><path d="M480 32l16 32" fill="none" stroke="currentColor"/><path d="M496 64l16 32" fill="none" stroke="currentColor"/><path d="M496 0l16 32" fill="none" stroke="currentColor"/><path d="M512 32l16 32" fill="none" stroke="currentColor"/><text text-anchor="middle" x="32" y="68" fill="currentColor" style="font-size:1em">a</text><text text-anchor="middle" x="64" y="52" fill="currentColor" style="font-size:1em">b</text><text text-anchor="middle" x="240" y="84" fill="currentColor" style="font-size:1em">a</text><text text-anchor="middle" x="272" y="52" fill="currentColor" style="font-size:1em">b</text><text text-anchor="middle" x="432" y="52" fill="currentColor" style="font-size:1em">a</text><text text-anchor="middle" x="464" y="52" fill="currentColor" style="font-size:1em">b</text><text text-anchor="middle" x="568" y="84" fill="currentColor" style="font-size:1em">a</text><text text-anchor="middle" x="600" y="68" fill="currentColor" style="font-size:1em">b</text></g></svg></div><h5 id=5-4晶体振荡器电路图>5-4.晶体振荡器电路图</h5><pre><code>```goat 
+</code></pre>
+
+
+<div class="goat svg-container ">
+	
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			font-family="Menlo,Lucida Console,monospace"
+			
+				viewBox="0 0 664 121"
+			>
+			<g transform='translate(8,16)'>
+<path d='M 192,0 L 224,0' fill='none' stroke='currentColor'></path>
+<path d='M 224,0 L 256,0' fill='none' stroke='currentColor'></path>
+<path d='M 256,0 L 288,0' fill='none' stroke='currentColor'></path>
+<path d='M 288,0 L 320,0' fill='none' stroke='currentColor'></path>
+<path d='M 320,0 L 352,0' fill='none' stroke='currentColor'></path>
+<path d='M 400,0 L 432,0' fill='none' stroke='currentColor'></path>
+<path d='M 432,0 L 464,0' fill='none' stroke='currentColor'></path>
+<path d='M 464,0 L 496,0' fill='none' stroke='currentColor'></path>
+<path d='M 496,0 L 528,0' fill='none' stroke='currentColor'></path>
+<path d='M 552,0 L 584,0' fill='none' stroke='currentColor'></path>
+<path d='M 616,0 L 648,0' fill='none' stroke='currentColor'></path>
+<path d='M 584,16 L 616,16' fill='none' stroke='currentColor'></path>
+<path d='M 192,32 L 224,32' fill='none' stroke='currentColor'></path>
+<path d='M 224,32 L 256,32' fill='none' stroke='currentColor'></path>
+<path d='M 256,32 L 288,32' fill='none' stroke='currentColor'></path>
+<path d='M 288,32 L 320,32' fill='none' stroke='currentColor'></path>
+<path d='M 320,32 L 352,32' fill='none' stroke='currentColor'></path>
+<path d='M 384,32 L 416,32' fill='none' stroke='currentColor'></path>
+<path d='M 416,32 L 448,32' fill='none' stroke='currentColor'></path>
+<path d='M 448,32 L 480,32' fill='none' stroke='currentColor'></path>
+<path d='M 480,32 L 512,32' fill='none' stroke='currentColor'></path>
+<path d='M 552,32 L 584,32' fill='none' stroke='currentColor'></path>
+<path d='M 616,32 L 648,32' fill='none' stroke='currentColor'></path>
+<path d='M 584,48 L 616,48' fill='none' stroke='currentColor'></path>
+<path d='M 192,64 L 224,64' fill='none' stroke='currentColor'></path>
+<path d='M 224,64 L 256,64' fill='none' stroke='currentColor'></path>
+<path d='M 256,64 L 288,64' fill='none' stroke='currentColor'></path>
+<path d='M 288,64 L 320,64' fill='none' stroke='currentColor'></path>
+<path d='M 320,64 L 352,64' fill='none' stroke='currentColor'></path>
+<path d='M 400,64 L 432,64' fill='none' stroke='currentColor'></path>
+<path d='M 432,64 L 464,64' fill='none' stroke='currentColor'></path>
+<path d='M 464,64 L 496,64' fill='none' stroke='currentColor'></path>
+<path d='M 496,64 L 528,64' fill='none' stroke='currentColor'></path>
+<path d='M 552,64 L 584,64' fill='none' stroke='currentColor'></path>
+<path d='M 616,64 L 648,64' fill='none' stroke='currentColor'></path>
+<path d='M 584,80 L 616,80' fill='none' stroke='currentColor'></path>
+<path d='M 192,96 L 224,96' fill='none' stroke='currentColor'></path>
+<path d='M 224,96 L 256,96' fill='none' stroke='currentColor'></path>
+<path d='M 256,96 L 288,96' fill='none' stroke='currentColor'></path>
+<path d='M 288,96 L 320,96' fill='none' stroke='currentColor'></path>
+<path d='M 320,96 L 352,96' fill='none' stroke='currentColor'></path>
+<path d='M 384,96 L 416,96' fill='none' stroke='currentColor'></path>
+<path d='M 416,96 L 448,96' fill='none' stroke='currentColor'></path>
+<path d='M 448,96 L 480,96' fill='none' stroke='currentColor'></path>
+<path d='M 480,96 L 512,96' fill='none' stroke='currentColor'></path>
+<path d='M 552,96 L 584,96' fill='none' stroke='currentColor'></path>
+<path d='M 616,96 L 648,96' fill='none' stroke='currentColor'></path>
+<path d='M 52,8 L 76,8' fill='none' stroke='currentColor'></path>
+<path d='M 116,8 L 140,8' fill='none' stroke='currentColor'></path>
+<path d='M 20,24 L 44,24' fill='none' stroke='currentColor'></path>
+<path d='M 84,24 L 108,24' fill='none' stroke='currentColor'></path>
+<path d='M 52,40 L 76,40' fill='none' stroke='currentColor'></path>
+<path d='M 116,40 L 140,40' fill='none' stroke='currentColor'></path>
+<path d='M 20,56 L 44,56' fill='none' stroke='currentColor'></path>
+<path d='M 84,56 L 108,56' fill='none' stroke='currentColor'></path>
+<path d='M 52,72 L 76,72' fill='none' stroke='currentColor'></path>
+<path d='M 116,72 L 140,72' fill='none' stroke='currentColor'></path>
+<path d='M 20,88 L 44,88' fill='none' stroke='currentColor'></path>
+<path d='M 84,88 L 108,88' fill='none' stroke='currentColor'></path>
+<path d='M 52,104 L 76,104' fill='none' stroke='currentColor'></path>
+<path d='M 116,104 L 140,104' fill='none' stroke='currentColor'></path>
+<path d='M 192,0 L 192,32' fill='none' stroke='currentColor'></path>
+<path d='M 192,32 L 192,64' fill='none' stroke='currentColor'></path>
+<path d='M 192,64 L 192,96' fill='none' stroke='currentColor'></path>
+<path d='M 224,0 L 224,32' fill='none' stroke='currentColor'></path>
+<path d='M 224,32 L 224,64' fill='none' stroke='currentColor'></path>
+<path d='M 224,64 L 224,96' fill='none' stroke='currentColor'></path>
+<path d='M 256,0 L 256,32' fill='none' stroke='currentColor'></path>
+<path d='M 256,32 L 256,64' fill='none' stroke='currentColor'></path>
+<path d='M 256,64 L 256,96' fill='none' stroke='currentColor'></path>
+<path d='M 288,0 L 288,32' fill='none' stroke='currentColor'></path>
+<path d='M 288,32 L 288,64' fill='none' stroke='currentColor'></path>
+<path d='M 288,64 L 288,96' fill='none' stroke='currentColor'></path>
+<path d='M 320,0 L 320,32' fill='none' stroke='currentColor'></path>
+<path d='M 320,32 L 320,64' fill='none' stroke='currentColor'></path>
+<path d='M 320,64 L 320,96' fill='none' stroke='currentColor'></path>
+<path d='M 352,0 L 352,32' fill='none' stroke='currentColor'></path>
+<path d='M 352,32 L 352,64' fill='none' stroke='currentColor'></path>
+<path d='M 352,64 L 352,96' fill='none' stroke='currentColor'></path>
+<path d='M 552,0 L 552,32' fill='none' stroke='currentColor'></path>
+<path d='M 552,32 L 552,64' fill='none' stroke='currentColor'></path>
+<path d='M 552,64 L 552,96' fill='none' stroke='currentColor'></path>
+<path d='M 584,0 L 584,16' fill='none' stroke='currentColor'></path>
+<path d='M 584,16 L 584,32' fill='none' stroke='currentColor'></path>
+<path d='M 584,32 L 584,48' fill='none' stroke='currentColor'></path>
+<path d='M 584,48 L 584,64' fill='none' stroke='currentColor'></path>
+<path d='M 584,64 L 584,80' fill='none' stroke='currentColor'></path>
+<path d='M 584,80 L 584,96' fill='none' stroke='currentColor'></path>
+<path d='M 616,0 L 616,16' fill='none' stroke='currentColor'></path>
+<path d='M 616,16 L 616,32' fill='none' stroke='currentColor'></path>
+<path d='M 616,32 L 616,48' fill='none' stroke='currentColor'></path>
+<path d='M 616,48 L 616,64' fill='none' stroke='currentColor'></path>
+<path d='M 616,64 L 616,80' fill='none' stroke='currentColor'></path>
+<path d='M 616,80 L 616,96' fill='none' stroke='currentColor'></path>
+<path d='M 648,0 L 648,32' fill='none' stroke='currentColor'></path>
+<path d='M 648,32 L 648,64' fill='none' stroke='currentColor'></path>
+<path d='M 648,64 L 648,96' fill='none' stroke='currentColor'></path>
+<path d='M 12,40 L 20,24' fill='none' stroke='currentColor'></path>
+<path d='M 12,72 L 20,56' fill='none' stroke='currentColor'></path>
+<path d='M 44,24 L 52,8' fill='none' stroke='currentColor'></path>
+<path d='M 44,56 L 52,40' fill='none' stroke='currentColor'></path>
+<path d='M 44,88 L 52,72' fill='none' stroke='currentColor'></path>
+<path d='M 76,40 L 84,24' fill='none' stroke='currentColor'></path>
+<path d='M 76,72 L 84,56' fill='none' stroke='currentColor'></path>
+<path d='M 108,24 L 116,8' fill='none' stroke='currentColor'></path>
+<path d='M 76,104 L 84,88' fill='none' stroke='currentColor'></path>
+<path d='M 108,56 L 116,40' fill='none' stroke='currentColor'></path>
+<path d='M 108,88 L 116,72' fill='none' stroke='currentColor'></path>
+<path d='M 140,40 L 148,24' fill='none' stroke='currentColor'></path>
+<path d='M 140,72 L 148,56' fill='none' stroke='currentColor'></path>
+<path d='M 140,104 L 148,88' fill='none' stroke='currentColor'></path>
+<path d='M 384,32 L 400,0' fill='none' stroke='currentColor'></path>
+<path d='M 384,96 L 400,64' fill='none' stroke='currentColor'></path>
+<path d='M 400,64 L 416,32' fill='none' stroke='currentColor'></path>
+<path d='M 416,32 L 432,0' fill='none' stroke='currentColor'></path>
+<path d='M 416,96 L 432,64' fill='none' stroke='currentColor'></path>
+<path d='M 432,64 L 448,32' fill='none' stroke='currentColor'></path>
+<path d='M 448,32 L 464,0' fill='none' stroke='currentColor'></path>
+<path d='M 448,96 L 464,64' fill='none' stroke='currentColor'></path>
+<path d='M 464,64 L 480,32' fill='none' stroke='currentColor'></path>
+<path d='M 480,32 L 496,0' fill='none' stroke='currentColor'></path>
+<path d='M 480,96 L 496,64' fill='none' stroke='currentColor'></path>
+<path d='M 496,64 L 512,32' fill='none' stroke='currentColor'></path>
+<path d='M 512,32 L 528,0' fill='none' stroke='currentColor'></path>
+<path d='M 512,96 L 528,64' fill='none' stroke='currentColor'></path>
+<path d='M 12,72 L 20,88' fill='none' stroke='currentColor'></path>
+<path d='M 12,40 L 20,56' fill='none' stroke='currentColor'></path>
+<path d='M 44,88 L 52,104' fill='none' stroke='currentColor'></path>
+<path d='M 44,56 L 52,72' fill='none' stroke='currentColor'></path>
+<path d='M 44,24 L 52,40' fill='none' stroke='currentColor'></path>
+<path d='M 76,72 L 84,88' fill='none' stroke='currentColor'></path>
+<path d='M 76,40 L 84,56' fill='none' stroke='currentColor'></path>
+<path d='M 108,88 L 116,104' fill='none' stroke='currentColor'></path>
+<path d='M 76,8 L 84,24' fill='none' stroke='currentColor'></path>
+<path d='M 108,56 L 116,72' fill='none' stroke='currentColor'></path>
+<path d='M 108,24 L 116,40' fill='none' stroke='currentColor'></path>
+<path d='M 140,72 L 148,88' fill='none' stroke='currentColor'></path>
+<path d='M 140,40 L 148,56' fill='none' stroke='currentColor'></path>
+<path d='M 140,8 L 148,24' fill='none' stroke='currentColor'></path>
+<path d='M 384,32 L 400,64' fill='none' stroke='currentColor'></path>
+<path d='M 400,64 L 416,96' fill='none' stroke='currentColor'></path>
+<path d='M 400,0 L 416,32' fill='none' stroke='currentColor'></path>
+<path d='M 416,32 L 432,64' fill='none' stroke='currentColor'></path>
+<path d='M 432,64 L 448,96' fill='none' stroke='currentColor'></path>
+<path d='M 432,0 L 448,32' fill='none' stroke='currentColor'></path>
+<path d='M 448,32 L 464,64' fill='none' stroke='currentColor'></path>
+<path d='M 464,64 L 480,96' fill='none' stroke='currentColor'></path>
+<path d='M 464,0 L 480,32' fill='none' stroke='currentColor'></path>
+<path d='M 480,32 L 496,64' fill='none' stroke='currentColor'></path>
+<path d='M 496,64 L 512,96' fill='none' stroke='currentColor'></path>
+<path d='M 496,0 L 512,32' fill='none' stroke='currentColor'></path>
+<path d='M 512,32 L 528,64' fill='none' stroke='currentColor'></path>
+<text text-anchor='middle' x='32' y='68' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='64' y='52' fill='currentColor' style='font-size:1em'>b</text>
+<text text-anchor='middle' x='240' y='84' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='272' y='52' fill='currentColor' style='font-size:1em'>b</text>
+<text text-anchor='middle' x='432' y='52' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='464' y='52' fill='currentColor' style='font-size:1em'>b</text>
+<text text-anchor='middle' x='568' y='84' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='600' y='68' fill='currentColor' style='font-size:1em'>b</text>
+</g>
+
+		</svg>
+	
+</div>
+<h5 id="5-4晶体振荡器电路图">5-4.晶体振荡器电路图</h5>
+<pre><code>```goat 
     CMOS or HCMOS inverter
               |\
            +--| &gt;0---+----&gt; OUT
@@ -129,66 +747,426 @@ another task : 24d</div><h5 id=4-5饼状图>4-5.饼状图</h5><pre tabindex=0><c
           _|_       _|_
           \ /       \ /                                            
  ```                                                 
-</code></pre><p>​</p><div class="goat svg-container"><svg font-family="Menlo,Lucida Console,monospace" viewBox="0 0 544 313"><g transform="translate(8,16)"><path d="M88 32h16" fill="none" stroke="currentColor"/><path d="M168 32h40" fill="none" stroke="currentColor"/><path d="M88 80h16" fill="none" stroke="currentColor"/><path d="M152 80h16" fill="none" stroke="currentColor"/><path d="M88 224h24" fill="none" stroke="currentColor"/><path d="M80 248h8" fill="none" stroke="currentColor"/><path d="M88 248h8" fill="none" stroke="currentColor"/><path d="M160 248h8" fill="none" stroke="currentColor"/><path d="M168 248h8" fill="none" stroke="currentColor"/><path d="M80 264H96" fill="none" stroke="currentColor"/><path d="M160 264h16" fill="none" stroke="currentColor"/><path d="M76 280H88" fill="none" stroke="currentColor"/><path d="M88 280h12" fill="none" stroke="currentColor"/><path d="M156 280h12" fill="none" stroke="currentColor"/><path d="M168 280h12" fill="none" stroke="currentColor"/><path d="M88 32V80" fill="none" stroke="currentColor"/><path d="M88 80V224" fill="none" stroke="currentColor"/><path d="M88 224v16" fill="none" stroke="currentColor"/><path d="M88 264v16" fill="none" stroke="currentColor"/><path d="M112 16V48" fill="none" stroke="currentColor"/><path d="M168 32V80" fill="none" stroke="currentColor"/><path d="M168 80v32" fill="none" stroke="currentColor"/><path d="M168 192v32" fill="none" stroke="currentColor"/><path d="M168 224v16" fill="none" stroke="currentColor"/><path d="M168 264v16" fill="none" stroke="currentColor"/><path d="M116 56l8-16" fill="none" stroke="currentColor"/><path d="M116 88l8-16" fill="none" stroke="currentColor"/><path d="M128 96l8-16" fill="none" stroke="currentColor"/><path d="M92 296l8-16" fill="none" stroke="currentColor"/><path d="M164 152l8-16" fill="none" stroke="currentColor"/><path d="M164 184l8-16" fill="none" stroke="currentColor"/><path d="M172 296l8-16" fill="none" stroke="currentColor"/><path d="M72 272l12 24" fill="none" stroke="currentColor"/><path d="M152 272l12 24" fill="none" stroke="currentColor"/><path d="M108 72l8 16" fill="none" stroke="currentColor"/><path d="M124 72l8 16" fill="none" stroke="currentColor"/><path d="M164 152l8 16" fill="none" stroke="currentColor"/><path d="M140 72l8 16" fill="none" stroke="currentColor"/><path d="M164 120l8 16" fill="none" stroke="currentColor"/><path d="M116 8l8 16" fill="none" stroke="currentColor"/><path d="M88 240v8" fill="none" stroke="currentColor"/><path d="M88 264v8" fill="none" stroke="currentColor"/><path d="M168 240v8" fill="none" stroke="currentColor"/><path d="M168 264v8" fill="none" stroke="currentColor"/><polygon points="216.000000,32.000000 204.000000,26.400000 204.000000,37.599998" fill="currentColor" transform="rotate(0.000000, 208.000000, 32.000000)"/><circle cx="128" cy="96" r="6" stroke="currentColor" fill="#fff"/><text text-anchor="middle" x="16" y="260" fill="currentColor" style="font-size:1em">5</text><text text-anchor="middle" x="24" y="260" fill="currentColor" style="font-size:1em">5</text><text text-anchor="middle" x="32" y="4" fill="currentColor" style="font-size:1em">C</text><text text-anchor="middle" x="32" y="260" fill="currentColor" style="font-size:1em">p</text><text text-anchor="middle" x="40" y="4" fill="currentColor" style="font-size:1em">M</text><text text-anchor="middle" x="40" y="260" fill="currentColor" style="font-size:1em">f</text><text text-anchor="middle" x="48" y="4" fill="currentColor" style="font-size:1em">O</text><text text-anchor="middle" x="56" y="4" fill="currentColor" style="font-size:1em">S</text><text text-anchor="middle" x="72" y="4" fill="currentColor" style="font-size:1em">o</text><text text-anchor="middle" x="80" y="4" fill="currentColor" style="font-size:1em">r</text><text text-anchor="middle" x="96" y="4" fill="currentColor" style="font-size:1em">H</text><text text-anchor="middle" x="104" y="4" fill="currentColor" style="font-size:1em">C</text><text text-anchor="middle" x="104" y="100" fill="currentColor" style="font-size:1em">1</text><text text-anchor="middle" x="112" y="4" fill="currentColor" style="font-size:1em">M</text><text text-anchor="middle" x="120" y="4" fill="currentColor" style="font-size:1em">O</text><text text-anchor="middle" x="120" y="100" fill="currentColor" style="font-size:1em">M</text><text text-anchor="middle" x="120" y="212" fill="currentColor" style="font-size:1em">1</text><text text-anchor="middle" x="120" y="228" fill="currentColor" style="font-size:1em">|</text><text text-anchor="middle" x="128" y="4" fill="currentColor" style="font-size:1em">S</text><text text-anchor="middle" x="128" y="36" fill="currentColor" style="font-size:1em">&gt;</text><text text-anchor="middle" x="128" y="212" fill="currentColor" style="font-size:1em">M</text><text text-anchor="middle" x="128" y="228" fill="currentColor" style="font-size:1em">[</text><text text-anchor="middle" x="136" y="36" fill="currentColor" style="font-size:1em">0</text><text text-anchor="middle" x="136" y="100" fill="currentColor" style="font-size:1em">h</text><text text-anchor="middle" x="136" y="212" fill="currentColor" style="font-size:1em">H</text><text text-anchor="middle" x="136" y="228" fill="currentColor" style="font-size:1em">]</text><text text-anchor="middle" x="144" y="4" fill="currentColor" style="font-size:1em">i</text><text text-anchor="middle" x="144" y="36" fill="currentColor" style="font-size:1em">-</text><text text-anchor="middle" x="144" y="100" fill="currentColor" style="font-size:1em">m</text><text text-anchor="middle" x="144" y="212" fill="currentColor" style="font-size:1em">z</text><text text-anchor="middle" x="144" y="228" fill="currentColor" style="font-size:1em">|</text><text text-anchor="middle" x="152" y="4" fill="currentColor" style="font-size:1em">n</text><text text-anchor="middle" x="152" y="36" fill="currentColor" style="font-size:1em">-</text><text text-anchor="middle" x="152" y="228" fill="currentColor" style="font-size:1em">-</text><text text-anchor="middle" x="160" y="4" fill="currentColor" style="font-size:1em">v</text><text text-anchor="middle" x="160" y="36" fill="currentColor" style="font-size:1em">-</text><text text-anchor="middle" x="160" y="228" fill="currentColor" style="font-size:1em">-</text><text text-anchor="middle" x="168" y="4" fill="currentColor" style="font-size:1em">e</text><text text-anchor="middle" x="176" y="4" fill="currentColor" style="font-size:1em">r</text><text text-anchor="middle" x="184" y="4" fill="currentColor" style="font-size:1em">t</text><text text-anchor="middle" x="184" y="148" fill="currentColor" style="font-size:1em">2</text><text text-anchor="middle" x="192" y="4" fill="currentColor" style="font-size:1em">e</text><text text-anchor="middle" x="192" y="148" fill="currentColor" style="font-size:1em">.</text><text text-anchor="middle" x="200" y="4" fill="currentColor" style="font-size:1em">r</text><text text-anchor="middle" x="200" y="148" fill="currentColor" style="font-size:1em">7</text><text text-anchor="middle" x="200" y="212" fill="currentColor" style="font-size:1em">p</text><text text-anchor="middle" x="200" y="260" fill="currentColor" style="font-size:1em">6</text><text text-anchor="middle" x="208" y="212" fill="currentColor" style="font-size:1em">a</text><text text-anchor="middle" x="208" y="260" fill="currentColor" style="font-size:1em">0</text><text text-anchor="middle" x="216" y="148" fill="currentColor" style="font-size:1em">k</text><text text-anchor="middle" x="216" y="212" fill="currentColor" style="font-size:1em">r</text><text text-anchor="middle" x="216" y="260" fill="currentColor" style="font-size:1em">p</text><text text-anchor="middle" x="224" y="36" fill="currentColor" style="font-size:1em">O</text><text text-anchor="middle" x="224" y="148" fill="currentColor" style="font-size:1em">o</text><text text-anchor="middle" x="224" y="212" fill="currentColor" style="font-size:1em">a</text><text text-anchor="middle" x="224" y="260" fill="currentColor" style="font-size:1em">f</text><text text-anchor="middle" x="232" y="36" fill="currentColor" style="font-size:1em">U</text><text text-anchor="middle" x="232" y="148" fill="currentColor" style="font-size:1em">h</text><text text-anchor="middle" x="232" y="212" fill="currentColor" style="font-size:1em">l</text><text text-anchor="middle" x="240" y="36" fill="currentColor" style="font-size:1em">T</text><text text-anchor="middle" x="240" y="148" fill="currentColor" style="font-size:1em">m</text><text text-anchor="middle" x="240" y="212" fill="currentColor" style="font-size:1em">l</text><text text-anchor="middle" x="248" y="148" fill="currentColor" style="font-size:1em">s</text><text text-anchor="middle" x="248" y="212" fill="currentColor" style="font-size:1em">e</text><text text-anchor="middle" x="256" y="212" fill="currentColor" style="font-size:1em">l</text><text text-anchor="middle" x="272" y="212" fill="currentColor" style="font-size:1em">r</text><text text-anchor="middle" x="280" y="212" fill="currentColor" style="font-size:1em">e</text><text text-anchor="middle" x="288" y="212" fill="currentColor" style="font-size:1em">s</text><text text-anchor="middle" x="296" y="212" fill="currentColor" style="font-size:1em">o</text><text text-anchor="middle" x="304" y="212" fill="currentColor" style="font-size:1em">n</text><text text-anchor="middle" x="312" y="212" fill="currentColor" style="font-size:1em">a</text><text text-anchor="middle" x="320" y="212" fill="currentColor" style="font-size:1em">n</text><text text-anchor="middle" x="328" y="212" fill="currentColor" style="font-size:1em">t</text></g></svg></div><h4 id=6表格>6.表格</h4><p>例如血型遗传表：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-ABAP data-lang=ABAP><span style=display:flex><span>            血型遗传表
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>  |<span style=color:#e6db74> 父母血型 </span>| 子女血型 |<span style=color:#e6db74> 不可能出现的血型 </span>|
-</span></span><span style=display:flex><span>|<span style=color:#e6db74> :------: </span>| :<span style=color:#f92672>------</span>: |<span style=color:#e6db74> :--------------: </span>|
-</span></span><span style=display:flex><span>|<span style=color:#e6db74>   O+O    </span>|    O     |<span style=color:#e6db74>      A,B,AB      </span>|
-</span></span><span style=display:flex><span>|<span style=color:#e6db74>   O+A    </span>|   A,O    |<span style=color:#e6db74>       B,AB       </span>|
-</span></span><span style=display:flex><span>|<span style=color:#e6db74>   O+B    </span>|   B,O    |<span style=color:#e6db74>       A,AB       </span>|
-</span></span><span style=display:flex><span>|<span style=color:#e6db74>   O+AB   </span>|   A,B    |<span style=color:#e6db74>       O,AB       </span>|
-</span></span><span style=display:flex><span>|<span style=color:#e6db74>   A+A    </span>|   A,O    |<span style=color:#e6db74>       AB,B       </span>|
-</span></span><span style=display:flex><span>|<span style=color:#e6db74>   A+B    </span>| A,B,AB,O |<span style=color:#e6db74>        /         </span>|
-</span></span><span style=display:flex><span>|<span style=color:#e6db74>   A+AB   </span>|  A,B,AB  |<span style=color:#e6db74>        O         </span>|
-</span></span><span style=display:flex><span>|<span style=color:#e6db74>   B +B   </span>|   B,O    |<span style=color:#e6db74>       A,AB       </span>|
-</span></span><span style=display:flex><span>|<span style=color:#e6db74>   B+AB   </span>|  A,B,AB  |<span style=color:#e6db74>        O         </span>|
-</span></span><span style=display:flex><span>|<span style=color:#e6db74>  AB+AB   </span>|  A,B,AB  |<span style=color:#e6db74>        O         </span>|
-</span></span></code></pre></div><p>​<center><strong>血型遗传表</strong></center></p><table><thead><tr><th style=text-align:left>父母血型</th><th style=text-align:center>子女血型</th><th style=text-align:center>不可能出现的血型</th></tr></thead><tbody><tr><td style=text-align:left>O+O</td><td style=text-align:center>O</td><td style=text-align:center>A,B,AB</td></tr><tr><td style=text-align:left>O+A</td><td style=text-align:center>A,O</td><td style=text-align:center>B,AB</td></tr><tr><td style=text-align:left>O+B</td><td style=text-align:center>B,O</td><td style=text-align:center>A,AB</td></tr><tr><td style=text-align:left>O+AB</td><td style=text-align:center>A,B</td><td style=text-align:center>O,AB</td></tr><tr><td style=text-align:left>A+A</td><td style=text-align:center>A,O</td><td style=text-align:center>AB,B</td></tr><tr><td style=text-align:left>A+B</td><td style=text-align:center>A,B,AB,O</td><td style=text-align:center>/</td></tr><tr><td style=text-align:left>A+AB</td><td style=text-align:center>A,B,AB</td><td style=text-align:center>O</td></tr><tr><td style=text-align:left>B +B</td><td style=text-align:center>B,O</td><td style=text-align:center>A,AB</td></tr><tr><td style=text-align:left>B+AB</td><td style=text-align:center>A,B,AB</td><td style=text-align:center>O</td></tr><tr><td style=text-align:left>AB+AB</td><td style=text-align:center>A,B,AB</td><td style=text-align:center>O</td></tr></tbody></table><h4 id=7引入echarts图表库>7.引入echarts图表库</h4><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-html data-lang=html><span style=display:flex><span><span style=color:#75715e>&lt;!DOCTYPE html&gt;</span>
-</span></span><span style=display:flex><span>&lt;<span style=color:#f92672>html</span>&gt;
-</span></span><span style=display:flex><span>  &lt;<span style=color:#f92672>head</span>&gt;
-</span></span><span style=display:flex><span>    &lt;<span style=color:#f92672>div</span> <span style=color:#a6e22e>class</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;container&#34;</span>&gt;
-</span></span><span style=display:flex><span>    &lt;<span style=color:#f92672>meta</span> <span style=color:#a6e22e>charset</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;utf-8&#34;</span> /&gt;
-</span></span><span style=display:flex><span>    &lt;<span style=color:#f92672>title</span>&gt;ECharts&lt;/<span style=color:#f92672>title</span>&gt;
-</span></span><span style=display:flex><span>    <span style=color:#75715e>&lt;!-- 引入刚刚下载的 ECharts 文件 --&gt;</span>
-</span></span><span style=display:flex><span>    &lt;<span style=color:#f92672>script</span> <span style=color:#a6e22e>src</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;https://fastly.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js&#34;</span>&gt;&lt;/<span style=color:#f92672>script</span>&gt;
-</span></span><span style=display:flex><span>  &lt;/<span style=color:#f92672>head</span>&gt;
-</span></span><span style=display:flex><span>  &lt;<span style=color:#f92672>body</span>&gt;
-</span></span><span style=display:flex><span>    <span style=color:#75715e>&lt;!-- 为 ECharts 准备一个定义了宽高的 DOM --&gt;</span>
-</span></span><span style=display:flex><span>    &lt;<span style=color:#f92672>div</span> <span style=color:#a6e22e>id</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;main&#34;</span> <span style=color:#a6e22e>style</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;width: 600px;height:400px;&#34;</span>&gt;&lt;/<span style=color:#f92672>div</span>&gt;
-</span></span><span style=display:flex><span>    &lt;<span style=color:#f92672>script</span> <span style=color:#a6e22e>type</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;text/javascript&#34;</span>&gt;
-</span></span><span style=display:flex><span>      <span style=color:#75715e>// 基于准备好的dom，初始化echarts实例
-</span></span></span><span style=display:flex><span>      <span style=color:#66d9ef>var</span> <span style=color:#a6e22e>myChart</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>echarts</span>.<span style=color:#a6e22e>init</span>(document.<span style=color:#a6e22e>getElementById</span>(<span style=color:#e6db74>&#39;main&#39;</span>));
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>      <span style=color:#75715e>// 指定图表的配置项和数据
-</span></span></span><span style=display:flex><span> <span style=color:#a6e22e>option</span> <span style=color:#f92672>=</span> {
-</span></span><span style=display:flex><span>  <span style=color:#a6e22e>legend</span><span style=color:#f92672>:</span> {
-</span></span><span style=display:flex><span>    <span style=color:#75715e>// Try &#39;horizontal&#39;
-</span></span></span><span style=display:flex><span>    <span style=color:#a6e22e>orient</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#39;vertical&#39;</span>,
-</span></span><span style=display:flex><span>    <span style=color:#a6e22e>right</span><span style=color:#f92672>:</span> <span style=color:#ae81ff>10</span>,
-</span></span><span style=display:flex><span>    <span style=color:#a6e22e>top</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#39;center&#39;</span>
-</span></span><span style=display:flex><span>  },
-</span></span><span style=display:flex><span>  <span style=color:#a6e22e>dataset</span><span style=color:#f92672>:</span> {
-</span></span><span style=display:flex><span>    <span style=color:#a6e22e>source</span><span style=color:#f92672>:</span> [
-</span></span><span style=display:flex><span>      [<span style=color:#e6db74>&#39;product&#39;</span>, <span style=color:#e6db74>&#39;2015&#39;</span>, <span style=color:#e6db74>&#39;2016&#39;</span>, <span style=color:#e6db74>&#39;2017&#39;</span>],
-</span></span><span style=display:flex><span>      [<span style=color:#e6db74>&#39;Matcha Latte&#39;</span>, <span style=color:#ae81ff>43.3</span>, <span style=color:#ae81ff>85.8</span>, <span style=color:#ae81ff>93.7</span>],
-</span></span><span style=display:flex><span>      [<span style=color:#e6db74>&#39;Milk Tea&#39;</span>, <span style=color:#ae81ff>83.1</span>, <span style=color:#ae81ff>73.4</span>, <span style=color:#ae81ff>55.1</span>],
-</span></span><span style=display:flex><span>      [<span style=color:#e6db74>&#39;Cheese Cocoa&#39;</span>, <span style=color:#ae81ff>86.4</span>, <span style=color:#ae81ff>65.2</span>, <span style=color:#ae81ff>82.5</span>],
-</span></span><span style=display:flex><span>      [<span style=color:#e6db74>&#39;Walnut Brownie&#39;</span>, <span style=color:#ae81ff>72.4</span>, <span style=color:#ae81ff>53.9</span>, <span style=color:#ae81ff>39.1</span>]
-</span></span><span style=display:flex><span>    ]
-</span></span><span style=display:flex><span>  },
-</span></span><span style=display:flex><span>  <span style=color:#a6e22e>xAxis</span><span style=color:#f92672>:</span> { <span style=color:#a6e22e>type</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#39;category&#39;</span> },
-</span></span><span style=display:flex><span>  <span style=color:#a6e22e>yAxis</span><span style=color:#f92672>:</span> {},
-</span></span><span style=display:flex><span>  <span style=color:#a6e22e>series</span><span style=color:#f92672>:</span> [{ <span style=color:#a6e22e>type</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#39;bar&#39;</span> }, { <span style=color:#a6e22e>type</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#39;bar&#39;</span> }, { <span style=color:#a6e22e>type</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#39;bar&#39;</span> }]
-</span></span><span style=display:flex><span>};
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>      <span style=color:#75715e>// 使用刚指定的配置项和数据显示图表。
-</span></span></span><span style=display:flex><span>      <span style=color:#a6e22e>myChart</span>.<span style=color:#a6e22e>setOption</span>(<span style=color:#a6e22e>option</span>);
-</span></span><span style=display:flex><span>    &lt;/<span style=color:#f92672>script</span>&gt;
-</span></span><span style=display:flex><span>  &lt;/<span style=color:#f92672>body</span>&gt;
-</span></span><span style=display:flex><span>&lt;/<span style=color:#f92672>html</span>&gt;
-</span></span></code></pre></div><!doctype html><html><head><div class=container><meta charset=utf-8><title>ECharts</title><script src=https://fastly.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js></script></head><body><div id=main style=width:600px;height:400px></div><script type=text/javascript>var myChart=echarts.init(document.getElementById("main"));option={legend:{orient:"vertical",right:10,top:"center"},dataset:{source:[["product","2015","2016","2017"],["Matcha Latte",43.3,85.8,93.7],["Milk Tea",83.1,73.4,55.1],["Cheese Cocoa",86.4,65.2,82.5],["Walnut Brownie",72.4,53.9,39.1]]},xAxis:{type:"category"},yAxis:{},series:[{type:"bar"},{type:"bar"},{type:"bar"}]},myChart.setOption(option)</script></body></html><p>作为初学者，今天已经码字码了这么多，其实Typora上的MD公式表格排版功能很有限，更多要去相关的网站找到代码在主题中配置才能实现（原博客主题不带这些功能，而我也懒得折腾其它带有这些功能的主题）。如果对数理公式.图表排版一类感兴趣的话。下面三个网站基本上能很好的帮你。只要按照网页上的做，基本上你也能和我一样做出漂亮的公式和图表，网站我会放在参考下面。</p><hr><p>参考：1.<a href=https://www.mathjax.org/>mathjax</a>2.<a href=https://mermaid-js.github.io/mermaid/#/>mermaid</a>3.<a href=https://echarts.apache.org/zh/index.html>echarts</a></p><p><img src=https://www.langan.com/wp-content/uploads/2020/07/dallas-996x554-1.png?imageMogr2/format/webp alt=达拉斯 loading=lazy decoding=async></p></div></div><head><script src=https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js defer></script><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/jsSocials/1.5.0/jssocials.min.css><script src=https://cdnjs.cloudflare.com/ajax/libs/jsSocials/1.5.0/jssocials.min.js defer></script><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/nanogallery2/3.0.5/css/nanogallery2.min.css><script src=https://cdnjs.cloudflare.com/ajax/libs/nanogallery2/3.0.5/jquery.nanogallery2.min.js defer></script></head><body><div class="container has-text-centered"><aside><div id=share></div></aside><script>(function(){function e(){typeof $!="undefined"&&typeof $.fn.jsSocials!="undefined"?$("#share").jsSocials({showLabel:!1,showCount:!1,shares:["email","twitter"]}):setTimeout(e,500)}document.addEventListener("DOMContentLoaded",e)})()</script>本作品采用<a rel=license href=http://creativecommons.org/licenses/by-nc-sa/4.0/>
-知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>进行许可。</div></body><div class=container><link rel=stylesheet href=https://www.zaqizaba.xyz/css/waline.css integrity=MIWed8SQ6eGu4KgWgXR+ebvVSEPJ5dY5TddaHHyztyy2MixKV4sgE02SNvTgq/EI crossorigin=anonymous><script src=https://unpkg.com/@waline/client@2.15.8/dist/waline.js></script><div id=waline></div><script>var locale={nick:"😐的爱称",nickError:"昵称不能少于3个字符",mail:"你的📫",mailError:"请填写正确的邮件地址",link:"🌐的链接",placeholder:"此刻你看完这篇博文脑海中的想法是什么呢，大胆说出来吧ヾ(•ω•`)o",sofa:"🍿🍿🍿",submit:"提交",reply:"回复",cancelReply:"取消回复",comment:"评论",more:"加载更多...",preview:"预览",emoji:"表情",expand:"查看更多...",seconds:"秒前",minutes:"分钟前",hours:"小时前",days:"天前",now:"刚刚",uploading:"正在上传",login:"登录",logout:"退出",admin:"博主",word:"字",wordHint:`评论字数应在 $0 到 $1 字之间！
-当前字数：$2`};document.addEventListener("DOMContentLoaded",function(){typeof Waline!="undefined"?Waline.init({el:"#waline",lang:"zh-CN",dark:"auto",search:!1,serverURL:"https://www.19964662.xyz",locale,emoji:["https://gcore.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/","https://cdn.cbd.int/sarakale-assets@1.2.1/emoji/acfun_color/"]}):console.error("Waline is not loaded correctly")})</script></div><script async src="https://www.googletagmanager.com/gtag/js?id=G-FFW576XTMR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-FFW576XTMR")</script><script type=module>
+</code></pre>
+<p>​</p>
+
+
+
+<div class="goat svg-container ">
+	
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			font-family="Menlo,Lucida Console,monospace"
+			
+				viewBox="0 0 544 313"
+			>
+			<g transform='translate(8,16)'>
+<path d='M 88,32 L 104,32' fill='none' stroke='currentColor'></path>
+<path d='M 168,32 L 208,32' fill='none' stroke='currentColor'></path>
+<path d='M 88,80 L 104,80' fill='none' stroke='currentColor'></path>
+<path d='M 152,80 L 168,80' fill='none' stroke='currentColor'></path>
+<path d='M 88,224 L 112,224' fill='none' stroke='currentColor'></path>
+<path d='M 80,248 L 88,248' fill='none' stroke='currentColor'></path>
+<path d='M 88,248 L 96,248' fill='none' stroke='currentColor'></path>
+<path d='M 160,248 L 168,248' fill='none' stroke='currentColor'></path>
+<path d='M 168,248 L 176,248' fill='none' stroke='currentColor'></path>
+<path d='M 80,264 L 96,264' fill='none' stroke='currentColor'></path>
+<path d='M 160,264 L 176,264' fill='none' stroke='currentColor'></path>
+<path d='M 76,280 L 88,280' fill='none' stroke='currentColor'></path>
+<path d='M 88,280 L 100,280' fill='none' stroke='currentColor'></path>
+<path d='M 156,280 L 168,280' fill='none' stroke='currentColor'></path>
+<path d='M 168,280 L 180,280' fill='none' stroke='currentColor'></path>
+<path d='M 88,32 L 88,80' fill='none' stroke='currentColor'></path>
+<path d='M 88,80 L 88,224' fill='none' stroke='currentColor'></path>
+<path d='M 88,224 L 88,240' fill='none' stroke='currentColor'></path>
+<path d='M 88,264 L 88,280' fill='none' stroke='currentColor'></path>
+<path d='M 112,16 L 112,48' fill='none' stroke='currentColor'></path>
+<path d='M 168,32 L 168,80' fill='none' stroke='currentColor'></path>
+<path d='M 168,80 L 168,112' fill='none' stroke='currentColor'></path>
+<path d='M 168,192 L 168,224' fill='none' stroke='currentColor'></path>
+<path d='M 168,224 L 168,240' fill='none' stroke='currentColor'></path>
+<path d='M 168,264 L 168,280' fill='none' stroke='currentColor'></path>
+<path d='M 116,56 L 124,40' fill='none' stroke='currentColor'></path>
+<path d='M 116,88 L 124,72' fill='none' stroke='currentColor'></path>
+<path d='M 128,96 L 136,80' fill='none' stroke='currentColor'></path>
+<path d='M 92,296 L 100,280' fill='none' stroke='currentColor'></path>
+<path d='M 164,152 L 172,136' fill='none' stroke='currentColor'></path>
+<path d='M 164,184 L 172,168' fill='none' stroke='currentColor'></path>
+<path d='M 172,296 L 180,280' fill='none' stroke='currentColor'></path>
+<path d='M 72,272 L 84,296' fill='none' stroke='currentColor'></path>
+<path d='M 152,272 L 164,296' fill='none' stroke='currentColor'></path>
+<path d='M 108,72 L 116,88' fill='none' stroke='currentColor'></path>
+<path d='M 124,72 L 132,88' fill='none' stroke='currentColor'></path>
+<path d='M 164,152 L 172,168' fill='none' stroke='currentColor'></path>
+<path d='M 140,72 L 148,88' fill='none' stroke='currentColor'></path>
+<path d='M 164,120 L 172,136' fill='none' stroke='currentColor'></path>
+<path d='M 116,8 L 124,24' fill='none' stroke='currentColor'></path>
+<path d='M 88,240 L 88,248' fill='none' stroke='currentColor'></path>
+<path d='M 88,264 L 88,272' fill='none' stroke='currentColor'></path>
+<path d='M 168,240 L 168,248' fill='none' stroke='currentColor'></path>
+<path d='M 168,264 L 168,272' fill='none' stroke='currentColor'></path>
+<polygon points='216.000000,32.000000 204.000000,26.400000 204.000000,37.599998' fill='currentColor' transform='rotate(0.000000, 208.000000, 32.000000)'></polygon>
+<circle cx='128' cy='96' r='6' stroke='currentColor' fill='#fff'></circle>
+<text text-anchor='middle' x='16' y='260' fill='currentColor' style='font-size:1em'>5</text>
+<text text-anchor='middle' x='24' y='260' fill='currentColor' style='font-size:1em'>5</text>
+<text text-anchor='middle' x='32' y='4' fill='currentColor' style='font-size:1em'>C</text>
+<text text-anchor='middle' x='32' y='260' fill='currentColor' style='font-size:1em'>p</text>
+<text text-anchor='middle' x='40' y='4' fill='currentColor' style='font-size:1em'>M</text>
+<text text-anchor='middle' x='40' y='260' fill='currentColor' style='font-size:1em'>f</text>
+<text text-anchor='middle' x='48' y='4' fill='currentColor' style='font-size:1em'>O</text>
+<text text-anchor='middle' x='56' y='4' fill='currentColor' style='font-size:1em'>S</text>
+<text text-anchor='middle' x='72' y='4' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='80' y='4' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='96' y='4' fill='currentColor' style='font-size:1em'>H</text>
+<text text-anchor='middle' x='104' y='4' fill='currentColor' style='font-size:1em'>C</text>
+<text text-anchor='middle' x='104' y='100' fill='currentColor' style='font-size:1em'>1</text>
+<text text-anchor='middle' x='112' y='4' fill='currentColor' style='font-size:1em'>M</text>
+<text text-anchor='middle' x='120' y='4' fill='currentColor' style='font-size:1em'>O</text>
+<text text-anchor='middle' x='120' y='100' fill='currentColor' style='font-size:1em'>M</text>
+<text text-anchor='middle' x='120' y='212' fill='currentColor' style='font-size:1em'>1</text>
+<text text-anchor='middle' x='120' y='228' fill='currentColor' style='font-size:1em'>|</text>
+<text text-anchor='middle' x='128' y='4' fill='currentColor' style='font-size:1em'>S</text>
+<text text-anchor='middle' x='128' y='36' fill='currentColor' style='font-size:1em'>&gt;</text>
+<text text-anchor='middle' x='128' y='212' fill='currentColor' style='font-size:1em'>M</text>
+<text text-anchor='middle' x='128' y='228' fill='currentColor' style='font-size:1em'>[</text>
+<text text-anchor='middle' x='136' y='36' fill='currentColor' style='font-size:1em'>0</text>
+<text text-anchor='middle' x='136' y='100' fill='currentColor' style='font-size:1em'>h</text>
+<text text-anchor='middle' x='136' y='212' fill='currentColor' style='font-size:1em'>H</text>
+<text text-anchor='middle' x='136' y='228' fill='currentColor' style='font-size:1em'>]</text>
+<text text-anchor='middle' x='144' y='4' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='144' y='36' fill='currentColor' style='font-size:1em'>-</text>
+<text text-anchor='middle' x='144' y='100' fill='currentColor' style='font-size:1em'>m</text>
+<text text-anchor='middle' x='144' y='212' fill='currentColor' style='font-size:1em'>z</text>
+<text text-anchor='middle' x='144' y='228' fill='currentColor' style='font-size:1em'>|</text>
+<text text-anchor='middle' x='152' y='4' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='152' y='36' fill='currentColor' style='font-size:1em'>-</text>
+<text text-anchor='middle' x='152' y='228' fill='currentColor' style='font-size:1em'>-</text>
+<text text-anchor='middle' x='160' y='4' fill='currentColor' style='font-size:1em'>v</text>
+<text text-anchor='middle' x='160' y='36' fill='currentColor' style='font-size:1em'>-</text>
+<text text-anchor='middle' x='160' y='228' fill='currentColor' style='font-size:1em'>-</text>
+<text text-anchor='middle' x='168' y='4' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='176' y='4' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='184' y='4' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='184' y='148' fill='currentColor' style='font-size:1em'>2</text>
+<text text-anchor='middle' x='192' y='4' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='192' y='148' fill='currentColor' style='font-size:1em'>.</text>
+<text text-anchor='middle' x='200' y='4' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='200' y='148' fill='currentColor' style='font-size:1em'>7</text>
+<text text-anchor='middle' x='200' y='212' fill='currentColor' style='font-size:1em'>p</text>
+<text text-anchor='middle' x='200' y='260' fill='currentColor' style='font-size:1em'>6</text>
+<text text-anchor='middle' x='208' y='212' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='208' y='260' fill='currentColor' style='font-size:1em'>0</text>
+<text text-anchor='middle' x='216' y='148' fill='currentColor' style='font-size:1em'>k</text>
+<text text-anchor='middle' x='216' y='212' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='216' y='260' fill='currentColor' style='font-size:1em'>p</text>
+<text text-anchor='middle' x='224' y='36' fill='currentColor' style='font-size:1em'>O</text>
+<text text-anchor='middle' x='224' y='148' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='224' y='212' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='224' y='260' fill='currentColor' style='font-size:1em'>f</text>
+<text text-anchor='middle' x='232' y='36' fill='currentColor' style='font-size:1em'>U</text>
+<text text-anchor='middle' x='232' y='148' fill='currentColor' style='font-size:1em'>h</text>
+<text text-anchor='middle' x='232' y='212' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='240' y='36' fill='currentColor' style='font-size:1em'>T</text>
+<text text-anchor='middle' x='240' y='148' fill='currentColor' style='font-size:1em'>m</text>
+<text text-anchor='middle' x='240' y='212' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='248' y='148' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='248' y='212' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='256' y='212' fill='currentColor' style='font-size:1em'>l</text>
+<text text-anchor='middle' x='272' y='212' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='280' y='212' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='288' y='212' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='296' y='212' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='304' y='212' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='312' y='212' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='320' y='212' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='328' y='212' fill='currentColor' style='font-size:1em'>t</text>
+</g>
+
+		</svg>
+	
+</div>
+<h4 id="6表格">6.表格</h4>
+<p>例如血型遗传表：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-ABAP" data-lang="ABAP"><span style="display:flex;"><span>            血型遗传表
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  |<span style="color:#e6db74"> 父母血型 </span>| 子女血型 |<span style="color:#e6db74"> 不可能出现的血型 </span>|
+</span></span><span style="display:flex;"><span>|<span style="color:#e6db74"> :------: </span>| :<span style="color:#f92672">------</span>: |<span style="color:#e6db74"> :--------------: </span>|
+</span></span><span style="display:flex;"><span>|<span style="color:#e6db74">   O+O    </span>|    O     |<span style="color:#e6db74">      A,B,AB      </span>|
+</span></span><span style="display:flex;"><span>|<span style="color:#e6db74">   O+A    </span>|   A,O    |<span style="color:#e6db74">       B,AB       </span>|
+</span></span><span style="display:flex;"><span>|<span style="color:#e6db74">   O+B    </span>|   B,O    |<span style="color:#e6db74">       A,AB       </span>|
+</span></span><span style="display:flex;"><span>|<span style="color:#e6db74">   O+AB   </span>|   A,B    |<span style="color:#e6db74">       O,AB       </span>|
+</span></span><span style="display:flex;"><span>|<span style="color:#e6db74">   A+A    </span>|   A,O    |<span style="color:#e6db74">       AB,B       </span>|
+</span></span><span style="display:flex;"><span>|<span style="color:#e6db74">   A+B    </span>| A,B,AB,O |<span style="color:#e6db74">        /         </span>|
+</span></span><span style="display:flex;"><span>|<span style="color:#e6db74">   A+AB   </span>|  A,B,AB  |<span style="color:#e6db74">        O         </span>|
+</span></span><span style="display:flex;"><span>|<span style="color:#e6db74">   B +B   </span>|   B,O    |<span style="color:#e6db74">       A,AB       </span>|
+</span></span><span style="display:flex;"><span>|<span style="color:#e6db74">   B+AB   </span>|  A,B,AB  |<span style="color:#e6db74">        O         </span>|
+</span></span><span style="display:flex;"><span>|<span style="color:#e6db74">  AB+AB   </span>|  A,B,AB  |<span style="color:#e6db74">        O         </span>|
+</span></span></code></pre></div><p>​                                                                         <center>  <strong>血型遗传表</strong></center></p>
+<table>
+	<thead>
+			<tr>
+					<th style="text-align: left">父母血型</th>
+					<th style="text-align: center">子女血型</th>
+					<th style="text-align: center">不可能出现的血型</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td style="text-align: left">O+O</td>
+					<td style="text-align: center">O</td>
+					<td style="text-align: center">A,B,AB</td>
+			</tr>
+			<tr>
+					<td style="text-align: left">O+A</td>
+					<td style="text-align: center">A,O</td>
+					<td style="text-align: center">B,AB</td>
+			</tr>
+			<tr>
+					<td style="text-align: left">O+B</td>
+					<td style="text-align: center">B,O</td>
+					<td style="text-align: center">A,AB</td>
+			</tr>
+			<tr>
+					<td style="text-align: left">O+AB</td>
+					<td style="text-align: center">A,B</td>
+					<td style="text-align: center">O,AB</td>
+			</tr>
+			<tr>
+					<td style="text-align: left">A+A</td>
+					<td style="text-align: center">A,O</td>
+					<td style="text-align: center">AB,B</td>
+			</tr>
+			<tr>
+					<td style="text-align: left">A+B</td>
+					<td style="text-align: center">A,B,AB,O</td>
+					<td style="text-align: center">/</td>
+			</tr>
+			<tr>
+					<td style="text-align: left">A+AB</td>
+					<td style="text-align: center">A,B,AB</td>
+					<td style="text-align: center">O</td>
+			</tr>
+			<tr>
+					<td style="text-align: left">B +B</td>
+					<td style="text-align: center">B,O</td>
+					<td style="text-align: center">A,AB</td>
+			</tr>
+			<tr>
+					<td style="text-align: left">B+AB</td>
+					<td style="text-align: center">A,B,AB</td>
+					<td style="text-align: center">O</td>
+			</tr>
+			<tr>
+					<td style="text-align: left">AB+AB</td>
+					<td style="text-align: center">A,B,AB</td>
+					<td style="text-align: center">O</td>
+			</tr>
+	</tbody>
+</table>
+<h4 id="7引入echarts图表库">7.引入echarts图表库</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">html</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;container&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">charset</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;utf-8&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">title</span>&gt;ECharts&lt;/<span style="color:#f92672">title</span>&gt;
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">&lt;!-- 引入刚刚下载的 ECharts 文件 --&gt;</span>
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://fastly.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;/<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">&lt;!-- 为 ECharts 准备一个定义了宽高的 DOM --&gt;</span>
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;main&#34;</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;width: 600px;height:400px;&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text/javascript&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e">// 基于准备好的dom，初始化echarts实例
+</span></span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">myChart</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">echarts</span>.<span style="color:#a6e22e">init</span>(document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#39;main&#39;</span>));
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e">// 指定图表的配置项和数据
+</span></span></span><span style="display:flex;"><span> <span style="color:#a6e22e">option</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">legend</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Try &#39;horizontal&#39;
+</span></span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">orient</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;vertical&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">right</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">10</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">top</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;center&#39;</span>
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">dataset</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">source</span><span style="color:#f92672">:</span> [
+</span></span><span style="display:flex;"><span>      [<span style="color:#e6db74">&#39;product&#39;</span>, <span style="color:#e6db74">&#39;2015&#39;</span>, <span style="color:#e6db74">&#39;2016&#39;</span>, <span style="color:#e6db74">&#39;2017&#39;</span>],
+</span></span><span style="display:flex;"><span>      [<span style="color:#e6db74">&#39;Matcha Latte&#39;</span>, <span style="color:#ae81ff">43.3</span>, <span style="color:#ae81ff">85.8</span>, <span style="color:#ae81ff">93.7</span>],
+</span></span><span style="display:flex;"><span>      [<span style="color:#e6db74">&#39;Milk Tea&#39;</span>, <span style="color:#ae81ff">83.1</span>, <span style="color:#ae81ff">73.4</span>, <span style="color:#ae81ff">55.1</span>],
+</span></span><span style="display:flex;"><span>      [<span style="color:#e6db74">&#39;Cheese Cocoa&#39;</span>, <span style="color:#ae81ff">86.4</span>, <span style="color:#ae81ff">65.2</span>, <span style="color:#ae81ff">82.5</span>],
+</span></span><span style="display:flex;"><span>      [<span style="color:#e6db74">&#39;Walnut Brownie&#39;</span>, <span style="color:#ae81ff">72.4</span>, <span style="color:#ae81ff">53.9</span>, <span style="color:#ae81ff">39.1</span>]
+</span></span><span style="display:flex;"><span>    ]
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">xAxis</span><span style="color:#f92672">:</span> { <span style="color:#a6e22e">type</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;category&#39;</span> },
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">yAxis</span><span style="color:#f92672">:</span> {},
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">series</span><span style="color:#f92672">:</span> [{ <span style="color:#a6e22e">type</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;bar&#39;</span> }, { <span style="color:#a6e22e">type</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;bar&#39;</span> }, { <span style="color:#a6e22e">type</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;bar&#39;</span> }]
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e">// 使用刚指定的配置项和数据显示图表。
+</span></span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">myChart</span>.<span style="color:#a6e22e">setOption</span>(<span style="color:#a6e22e">option</span>);
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">script</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;/<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">html</span>&gt;
+</span></span></code></pre></div><!DOCTYPE html>
+<html>
+  <head>
+    <div class="container">
+    <meta charset="utf-8" />
+    <title>ECharts</title>
+    <!-- 引入刚刚下载的 ECharts 文件 -->
+    <script src="https://fastly.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js"></script>
+  </head>
+  <body>
+    <!-- 为 ECharts 准备一个定义了宽高的 DOM -->
+    <div id="main" style="width: 600px;height:400px;"></div>
+    <script type="text/javascript">
+      // 基于准备好的dom，初始化echarts实例
+      var myChart = echarts.init(document.getElementById('main'));
+          // 指定图表的配置项和数据
+      option = {
+  legend: {
+    // Try 'horizontal'
+    orient: 'vertical',
+    right: 10,
+    top: 'center'
+  },
+  dataset: {
+    source: [
+      ['product', '2015', '2016', '2017'],
+      ['Matcha Latte', 43.3, 85.8, 93.7],
+      ['Milk Tea', 83.1, 73.4, 55.1],
+      ['Cheese Cocoa', 86.4, 65.2, 82.5],
+      ['Walnut Brownie', 72.4, 53.9, 39.1]
+    ]
+  },
+  xAxis: { type: 'category' },
+  yAxis: {},
+  series: [{ type: 'bar' }, { type: 'bar' }, { type: 'bar' }]
+};
+          // 使用刚指定的配置项和数据显示图表。
+  myChart.setOption(option);
+     </script>
+   </body>
+</html>
+<p>作为初学者，今天已经码字码了这么多，其实Typora上的MD公式表格排版功能很有限，更多要去相关的网站找到代码在主题中配置才能实现（原博客主题不带这些功能，而我也懒得折腾其它带有这些功能的主题）。如果对数理公式.图表排版一类感兴趣的话。下面三个网站基本上能很好的帮你。只要按照网页上的做，基本上你也能和我一样做出漂亮的公式和图表，网站我会放在参考下面。</p>
+<hr>
+<p>参考：1.<a href="https://www.mathjax.org/">mathjax</a>2.<a href="https://mermaid-js.github.io/mermaid/#/">mermaid</a>3.<a href="https://echarts.apache.org/zh/index.html">echarts</a></p>
+<p><img 
+  src="https://www.langan.com/wp-content/uploads/2020/07/dallas-996x554-1.png?imageMogr2/format/webp" 
+  alt="达拉斯" 
+   
+  loading="lazy" 
+  decoding="async" 
+/></p>
+
+  </div>
+</div>
+<head>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jsSocials/1.5.0/jssocials.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsSocials/1.5.0/jssocials.min.js" defer></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/nanogallery2/3.0.5/css/nanogallery2.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/nanogallery2/3.0.5/jquery.nanogallery2.min.js" defer></script>
+</head>
+<body>
+<div class="container has-text-centered">
+    
+    <aside><div id="share"></div></aside>
+    
+    <script>
+    (function() {
+        function initShare() {
+            if (typeof $ !== "undefined" && typeof $.fn.jsSocials !== "undefined") {
+                $("#share").jsSocials({
+                    showLabel: false,
+                    showCount: false,
+                    shares: ["email", "twitter"]
+                });
+            } else {
+                
+                setTimeout(initShare, 500);
+            }
+        }
+        document.addEventListener('DOMContentLoaded', initShare);
+    })();
+    </script>
+    
+    本作品采用<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+    知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>进行许可。
+</div>
+</body>
+<div class="container">
+  <link rel="stylesheet" href="https://www.zaqizaba.xyz/css/waline.css" 
+        integrity="MIWed8SQ6eGu4KgWgXR+ebvVSEPJ5dY5TddaHHyztyy2MixKV4sgE02SNvTgq/EI" 
+        crossorigin="anonymous">
+  <script src="https://unpkg.com/@waline/client@2.15.8/dist/waline.js"></script>
+
+  <div id="waline"></div>
+
+  <script>
+    var locale = {
+      nick: '😐的爱称',
+      nickError: '昵称不能少于3个字符',
+      mail: '你的📫',
+      mailError: '请填写正确的邮件地址',
+      link: '🌐的链接',
+      placeholder: '此刻你看完这篇博文脑海中的想法是什么呢，大胆说出来吧ヾ(•ω•`)o',
+      sofa: '🍿🍿🍿',
+      submit: '提交',
+      reply: '回复',
+      cancelReply: '取消回复',
+      comment: '评论',
+      more: '加载更多...',
+      preview: '预览',
+      emoji: '表情',
+      expand: '查看更多...',
+      seconds: '秒前',
+      minutes: '分钟前',
+      hours: '小时前',
+      days: '天前',
+      now: '刚刚',
+      uploading: '正在上传',
+      login: '登录',
+      logout: '退出',
+      admin: '博主',
+      word: '字',
+      wordHint: '评论字数应在 $0 到 $1 字之间！\n当前字数：$2',
+    };
+
+    document.addEventListener('DOMContentLoaded', function () {
+      if (typeof Waline !== 'undefined') {
+        Waline.init({
+          el: '#waline',
+          lang: 'zh-CN',
+          dark: 'auto',
+          search: false,
+          serverURL: 'https://www.19964662.xyz',
+          locale,
+          emoji: [
+            'https://gcore.jsdelivr.net/gh/zhheo/Sticker-Heo@main/Sticker-100/',
+            'https://cdn.cbd.int/sarakale-assets@1.2.1/emoji/acfun_color/'
+          ],
+        });
+      } else {
+        console.error('Waline is not loaded correctly');
+      }
+    });
+  </script>
+</div>   
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FFW576XTMR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-FFW576XTMR');
+</script>
+
+
+<script type="module">
   import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
 
   mermaid.initialize({ startOnLoad: false, theme: 'default' });
@@ -203,6 +1181,23 @@ another task : 24d</div><h5 id=4-5饼状图>4-5.饼状图</h5><pre tabindex=0><c
 
     await mermaid.run({ querySelector: '.mermaid' });
   });
-</script><style>.mermaid svg{display:block;margin:auto}</style><style>.f-link{color:#760411;text-decoration:none;transition:.2s}.f-link:hover{color:#444!important;text-decoration:none!important}.c-sym{font-size:1.1rem;vertical-align:middle}</style><footer style=text-align:center;padding:20px;font-size:.9rem;color:#666><span class=c-sym>&copy;</span> 2019-2026 <a href=/ class=f-link>阿波尔的博客</a>
-| <a href=/privacy/ class=f-link target=_blank>隐私政策 (Privacy Policy)</a>
-| Powered by <a href=https://gohugo.io/ class=f-link>Hugo</a></footer></body></html>
+</script>
+<style>
+  .mermaid svg { display: block; margin: auto; }
+</style>
+
+
+
+<style>
+  .f-link { color: #760411; text-decoration: none; transition: .2s; }
+  .f-link:hover { color: #444 !important; text-decoration: none !important; }
+  .c-sym { font-size: 1.1rem; vertical-align: middle; }  
+</style>
+
+<footer style="text-align: center; padding: 20px; font-size: 0.9rem; color: #666;">
+  <span class="c-sym">&copy;</span> 2019-2026 <a href="/" class="f-link">阿波尔的博客</a> 
+  | <a href="/privacy/" class="f-link" target="_blank">隐私政策 (Privacy Policy)</a> 
+  | Powered by <a href="https://gohugo.io/" class="f-link">Hugo</a>
+</footer>
+</body>
+</html>
